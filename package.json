@@ -1,0 +1,27 @@
+{
+  "name": "MysticDiscord",
+  "version": "1.0.0",
+  "description": "Discord chatbot that is made for pokemon go group",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "author": "Mystic Delft: gvlekke, oppetiebarie",
+  "engines": {
+    "node": "8.2.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord": "^0.8.2"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
