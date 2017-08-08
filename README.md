@@ -25,6 +25,10 @@ Install eslint plugin in your favorite editor.
 Atom: linter-eslint
 Sublime: SublimeLinter-eslint
 
+### Editorconfig
+Editorconfig takes care that all developers have the same settings in there editor.
+So install editorconfig for atom or sublime text (or any other editor you have).
+
 ## Usage
 ```
 npm start
