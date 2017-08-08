@@ -22,10 +22,6 @@ client.on("message", (message) => {
   let moderator = settings.moderator;
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-  if(message.content === '!glenn') {
-    message.reply('he is the greatest pokemon catcher');
-  }
-
 //help
   if (message.content === '!help') {
    message.reply("Hey! Mijn naam is Blanche, en ik ben de teamleider van het beste team, Mystic! Naast het appraisen van jouw pokemon in game, kan ik jullie ook op discord assistentie verlenen. Ik kan bijvoorbeeld laten zien welke cp's en aanvallen je zoekt in raid bosses, typ bijvoorbeeld eens !tyranitar. Na jaren van studie heb ik ook alle type voordelen uit mijn hoofd geleerd, welke op te vragen zijn via !type. Verder help ik in deze discord met het verdelen van rollen (aan te vragen in het speler registratie kanaal) en kan ik ook informatie geven over de verschillende teams. Succes met het spel en maak me trots!");
