@@ -1,3 +1,5 @@
+'use strict';
+
 var Discord = require('discord.js');
 var client = new Discord.Client();
 var settings = require("./settings.json")
@@ -6,7 +8,7 @@ client.login(settings.token);
 var express = require('express');
 var app = express();
 
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 9222));
 
 app.use(express.static(__dirname + '/public'));
 app.listen(app.get('port'), function() {
@@ -208,129 +210,15 @@ client.on("message", (message) => {
     message.delete()
   } else
 
+var gyms = require('data/gyms.json')
 
+gymMatch = gyms.find( (gym) => {
+  return key === message.content.startsWith(gym.key);
+});
 
-//gyms
-if (message.content.startsWith("!3 variaties op een vierkant 2")) {message.reply("**Gym: 3 Variaties op een vierkant 2**\n<https://goo.gl/maps/WBmE2s8ypYU2>")} else
-if (message.content.startsWith("!3 variaties op een vierkant 3")) {message.reply("**Gym: 3 Variaties op een vierkant 3**\n<https://goo.gl/maps/yYa2qy8XJ9p>")} else
-if (message.content.startsWith("!artful")) {message.reply("**Gym: Artful Cube**\n<https://goo.gl/maps/DsUvD9NEPLx>")} else
-if (message.content.startsWith("!bicycle")) {message.reply("**Gym: Bicycle Love**\n<https://goo.gl/maps/e5CBn5ixBDy>")} else
-if (message.content.startsWith("!blue")) {message.reply("**Gym: Blue Birds Honkbal**\n<https://goo.gl/maps/WFiksvKEiR32>")} else
-if (message.content.startsWith("!blauw-geel")) {message.reply("**Gym: Blauw-Geel Keramiek Object**\n<https://goo.gl/maps/RFLjygKU6LC2>")} else
-if (message.content.startsWith("!blauw geel")) {message.reply("**Gym: Blauw-Geel Keramiek Object**\n<https://goo.gl/maps/RFLjygKU6LC2>")} else
-if (message.content.startsWith("!cannon")) {message.reply("**Gym: Cannon**\n<https://goo.gl/maps/on2P21Zky4L2>")} else
-if (message.content.startsWith("!climb")) {message.reply("**Gym: Climb the Frogs**\n<https://goo.gl/maps/XWeyq5BrBV22>")} else
-if (message.content.startsWith("!color")) {message.reply("**Gym: Color Sculpture**\n<https://goo.gl/maps/kR2QeheLsZz>")} else
-if (message.content.startsWith("!coligny")) {message.reply("**Gym: De Coligny**\n<https://goo.gl/maps/fNgWYGgmQQD2>")} else
-if (message.content.startsWith("!delftse")) {message.reply("**Gym: De Delftse Pauw**\n<https://goo.gl/maps/CVrYXSJfwf32>")} else
-if (message.content.startsWith("!hofstee")) {message.reply("**Gym: De Hofstee**\n<https://goo.gl/maps/kkwdPP9jce82>")} else
-if (message.content.startsWith("!kamer")) {message.reply("**Gym: De Kamer van Charilabla 1614**\n<https://goo.gl/maps/jC6osbaZcaG2>")} else
-if (message.content.startsWith("!nieuwe")) {message.reply("**Gym: De Nieuwe Lente**\n<https://goo.gl/maps/D1ZGGvH1ED72>")} else
-if (message.content.startsWith("!oostpoort")) {message.reply("**Gym: De Oostpoort**\n<https://goo.gl/maps/APDKGayWZZN2>")} else
-if (message.content.startsWith("!r.k.")) {message.reply("**Gym: De R.K. Kerk Antonius en Cornelius**\n<https://goo.gl/maps/3rbWddkmpaA2>")} else
-if (message.content.startsWith("!rk")) {message.reply("**Gym: De R.K. Kerk Antonius en Cornelius**\n<https://goo.gl/maps/3rbWddkmpaA2>")} else
-if (message.content.startsWith("!stier")) {message.reply("**Gym: De Stier**\n<https://goo.gl/maps/Xq77BkHMGbz>")} else
-if (message.content.startsWith("!delft central")) {message.reply("**Gym: Delft Central Station**\n<https://goo.gl/maps/a5ypCkobkQ22>")} else
-if (message.content.startsWith("!delfts blauwe")) {message.reply("**Gym: Delfts Blauwe Stenen**\n<https://goo.gl/maps/kJSKksZZPwq>")} else
-if (message.content.startsWith("!delftse tegelmannen")) {message.reply("**Gym: Delftse Tegelmannen**\n<https://goo.gl/maps/eVA5ufuajzo>")} else
-if (message.content.startsWith("!delftshout")) {message.reply("**Gym: Delftshout Levenslust**\n<https://goo.gl/maps/uwD9bsXTb5U2>")} else
-if (message.content.startsWith("!delta rescue")) {message.reply("**Gym: Delta Rescue**\n<https://goo.gl/maps/s3nxAxVVu9G2>")} else
-if (message.content.startsWith("!dok")) {message.reply("**Gym: Dok Delft Bibliotheek**\n<https://goo.gl/maps/KPuHh3CV2Yk>")} else
-if (message.content.startsWith("!door")) {message.reply("**Gym: Door Art**\n<https://goo.gl/maps/74i4MtAuVzy>")} else
-if (message.content.startsWith("!dsm")) {message.reply("**Gym: DSM Kunstwerk**\n<https://goo.gl/maps/ZUQ1PpQ5BiL2>")} else
-if (message.content.startsWith("!dvv")) {message.reply("**Gym: Dvv Delft Tennis**\n<https://goo.gl/maps/btjqpgqHFY72>")} else
-if (message.content.startsWith("!egg")) {message.reply("**Gym: Egg Mosaic**\n<https://goo.gl/maps/SjdaZoAmshn>")} else
-if (message.content.startsWith("!engelse")) {message.reply("**Gym: Engelse Drop**\n<https://goo.gl/maps/ho5zAycvXqr>")} else
-if (message.content.startsWith("!entrance")) {message.reply("**Gym: Entrance Bieslandse Bos Delft**\n<https://goo.gl/maps/187vzFFiCoE2>")} else
-if (message.content.startsWith("!evenwicht")) {message.reply("**Gym: Evenwicht Ijzer**\n<https://goo.gl/maps/DYDKU8bcxCU2>")} else
-if (message.content.startsWith("!giant grill")) {message.reply("**Gym: Giant Grill**\n<https://goo.gl/maps/q2gpVLkihu12>")} else
-if (message.content.startsWith("!giant tripod")) {message.reply("**Gym: Giant Tripod at Rijkswaterstaat**\n<https://goo.gl/maps/qopEWA7HRMS2>")} else
-if (message.content.startsWith("!glasbak")) {message.reply("**Gym: Glasbak Art**\n<https://goo.gl/maps/JUddhCkME9s>")} else
-if (message.content.startsWith("!green")) {message.reply("**Gym: Green Chair with White Table**\n<https://goo.gl/maps/htvsSYTW5Qu>")} else
-if (message.content.startsWith("!guardian")) {message.reply("**Gym: Guardian Angels**\n<https://goo.gl/maps/JmRrwx7rCQS2>")} else
-if (message.content.startsWith("!hamenpoort")) {message.reply("**Gym: Hamenpoort Speelnatuur**\n<https://goo.gl/maps/JTAYj8BcdrR2>")} else
-if (message.content.startsWith("!hbsv")) {message.reply("**Gym: HBSV Willem Tell**\n<https://goo.gl/maps/KgiMKZ57CeL2>")} else
-if (message.content.startsWith("!hello")) {message.reply("**Gym: Hello Rainbow**\n<https://goo.gl/maps/muPhuRcYTpH2>")} else
-if (message.content.startsWith("!blauwe hart")) {message.reply("**Gym: Het Blauwe Hart**\n<https://goo.gl/maps/oTH8eqavW132>")} else
-if (message.content.startsWith("!veldje")) {message.reply("**Gym: Het Veldje**\n<https://goo.gl/maps/9cwyqtsBCos>")} else
-if (message.content.startsWith("!high")) {message.reply("**Gym: High Water Bridge**\n<https://goo.gl/maps/e4BLwM2FAUm>")} else
-if (message.content.startsWith("!highway")) {message.reply("**Gym: Highway Fitness Point**\n<https://goo.gl/maps/oW66Z3MJL3x>")} else
-if (message.content.startsWith("!historic")) {message.reply("**Gym: Historic TU Delft Faculty Building**\n<https://goo.gl/maps/cVsDHyduBAT2>")} else
-if (message.content.startsWith("!hoven")) {message.reply("**Gym: Hoven Passage**\n<https://goo.gl/maps/QBLQDrRAM1H2>")} else
-if (message.content.startsWith("!ichtus")) {message.reply("**Gym: Ichtus**\n<https://goo.gl/maps/gMy63or6ZL62>")} else
-if (message.content.startsWith("!kerkpolder")) {message.reply("**Gym: Kerkpolder**\n<https://goo.gl/maps/JKWRc8eAKyA2>")} else
-if (message.content.startsWith("!klein")) {message.reply("**Gym: Klein Vrijenban**\n<https://goo.gl/maps/jvKQy7MFp9E2>")} else
-if (message.content.startsWith("!klm")) {message.reply("**Gym: KLM Photon Torpedo**\n<https://goo.gl/maps/s2e3P8NbRNo>")} else
-if (message.content.startsWith("!knooppunt")) {message.reply("**Gym: Knooppunt 59**\n<https://goo.gl/maps/BhUCRAaHHSH2>")} else
-if (message.content.startsWith("!kolom")) {message.reply("**Gym: Kolom Van De Mensenrechten**\n<https://goo.gl/maps/dWKCFHijMbu>")} else
-if (message.content.startsWith("!koninkrijkszaal")) {message.reply("**Gym: Koninkrijkszaal Van Jehovah's Getuigen**\n<https://goo.gl/maps/pbTxo6DKFXy>")} else
-if (message.content.startsWith("!kwakkie")) {message.reply("**Gym: Kwakkie Verf**\n<https://goo.gl/maps/ruBbC96Mk1L2>")} else
-if (message.content.startsWith("!library")) {message.reply("**Gym: Library TU Delft**\n<https://goo.gl/maps/VB27CE8egKG2>")} else
-if (message.content.startsWith("!maria")) {message.reply("**Gym: Maria van Jesse kerk**\n<https://goo.gl/maps/4csETP8VSq62>")} else
-if (message.content.startsWith("!mijlpaal")) {message.reply("**Gym: Mijlpaal**\n<https://goo.gl/maps/Zfj68NhETTS2>")} else
-if (message.content.startsWith("!molen de")) {message.reply("**Gym: Molen De Klokkenmaker**\n<https://goo.gl/maps/Dj8Vx6FxbM62>")} else
-if (message.content.startsWith("!molen steen")) {message.reply("**Gym: Molen Steen**\n<https://goo.gl/maps/cumNzZkTDkN2>")} else
-if (message.content.startsWith("!monument")) {message.reply("**Gym: Monument JC Van Marken**\n<https://goo.gl/maps/hE8sKBJCpFy>")} else
-if (message.content.startsWith("!moose")) {message.reply("**Gym: Moose Toy**\n<https://goo.gl/maps/9zBgbusGJbw>")} else
-if (message.content.startsWith("!mural")) {message.reply("**Gym: Mural Pootstraat Carthuyzerstraat**\n<https://goo.gl/maps/cAy8ifVBgit>")} else
-if (message.content.startsWith("!nep")) {message.reply("**Gym: Nep Ruïne**\n<https://goo.gl/maps/FqJQKw1jnBw>")} else
-if (message.content.startsWith("!nieuwe")) {message.reply("**Gym: Nieuwe Kerk**\n<https://goo.gl/maps/muAF9RW6e3U2>")} else
-if (message.content.startsWith("!old")) {message.reply("**Gym: Old Town Wall**\n<https://goo.gl/maps/z3XgKDttVxN2>")} else
-if (message.content.startsWith("!overkapping")) {message.reply("**Gym: Overkapping Nr 5**\n<https://goo.gl/maps/uo2UzHiYS132>")} else
-if (message.content.startsWith("!paddestoelen")) {message.reply("**Gym: Paddestoelen**\n<https://goo.gl/maps/U6PmwMxX5382>")} else
-if (message.content.startsWith("!paint")) {message.reply("**Gym: Paint Jobs**\n<https://goo.gl/maps/3LW1TyqmFUT2>")} else
-if (message.content.startsWith("!papegaaien")) {message.reply("**Gym: Papegaaien**\n<https://goo.gl/maps/8wwDTDqxxet>")} else
-if (message.content.startsWith("!plaquette")) {message.reply("**Gym: Plaquette op bank**\n<https://goo.gl/maps/DjkYPsFRez82>")} else
-if (message.content.startsWith("!playground brahmslaan")) {message.reply("**Gym: Playground Brahmslaan**\n<https://goo.gl/maps/EQTAJqWWshL2>")} else
-if (message.content.startsWith("!playground straat")) {message.reply("**Gym: Playground Straat van Ormoes**\n<https://goo.gl/maps/LUroxsba6eP2>")} else
-if (message.content.startsWith("!playground vivaldilaan")) {message.reply("**Gym: Playground Vivaldilaan**\n<https://goo.gl/maps/Sx4CwasGcju>")} else
-if (message.content.startsWith("!prinses")) {message.reply("**Gym: Prinses Irene Tunnel**\n<https://goo.gl/maps/y9tMD3yrRc72>")} else
-if (message.content.startsWith("!public")) {message.reply("**Gym: Public Library**\n<https://goo.gl/maps/26GDpDcz1gt>")} else
-if (message.content.startsWith("!race")) {message.reply("**Gym: Race Planet Delft**\n<https://goo.gl/maps/TGuxkCTzPBT2>")} else
-if (message.content.startsWith("!relief")) {message.reply("**Gym: Reliëf Driemaster Den Hoorn**\n<https://goo.gl/maps/4ThC211kxEm>")} else
-if (message.content.startsWith("!royal")) {message.reply("**Gym: Royal Blue Bench**\n<https://goo.gl/maps/quM5tfFo8gH2>")} else
-if (message.content.startsWith("!seats")) {message.reply("**Gym: Seats**\n<https://goo.gl/maps/Zo3UYRuvgVF2>")} else
-if (message.content.startsWith("!solar")) {message.reply("**Gym: Solar Panel Art Sculpture**\n<https://goo.gl/maps/1HcF9hMXNrL2>")} else
-if (message.content.startsWith("!space engineering")) {message.reply("**Gym: Space Engineering Faculty**\n<https://goo.gl/maps/kb4EmbwywYS2>")} else
-if (message.content.startsWith("!space rocket")) {message.reply("**Gym: Space Rocket**\n<https://goo.gl/maps/T2so1vhEBGF2>")} else
-if (message.content.startsWith("!speelplastiek")) {message.reply("**Gym: Speelplastiek Paarden**\n<https://goo.gl/maps/7TW2opLBW3p>")} else
-if (message.content.startsWith("!speeltuintje")) {message.reply("**Gym: Speeltuintje Van Nora en Zoë**\n<https://goo.gl/maps/63f6kBZzr282>")} else
-if (message.content.startsWith("!stadhuis")) {message.reply("**Gym: Stadhuis Delft**\n<https://goo.gl/maps/VDDXxhaAm922>")} else
-if (message.content.startsWith("!stadsherberg")) {message.reply("**Gym: Stadsherberg De Mol**\n<https://goo.gl/maps/DfJUyD2AebE2>")} else
-if (message.content.startsWith("!stalpaert")) {message.reply("**Gym: Stalpaert van der Wiele Statue**\n<https://goo.gl/maps/SWTWpzzBA6p>")} else
-if (message.content.startsWith("!station")) {message.reply("**Gym: Station Delft-Zuid**\n<https://goo.gl/maps/UUuZexYicuS2>")} else
-if (message.content.startsWith("!statue ")) {message.reply("**Gym: Statue Of Prometheus**\n<https://goo.gl/maps/C4Jtr7HKyVB2>")} else
-if (message.content.startsWith("!stop")) {message.reply("**Gym: Stop Child Labor Wall Painting**\n<https://goo.gl/maps/uwVfaadDRyQ2>")} else
-if (message.content.startsWith("!street")) {message.reply("**Gym: Street Art**\n<https://goo.gl/maps/5ETxB6masnr>")} else
-if (message.content.startsWith("!sudden")) {message.reply("**Gym: Sudden Cow**\n<https://goo.gl/maps/tjd9BC6qXyG2>")} else
-if (message.content.startsWith("!technische")) {message.reply("**Gym: Technische Universiteit Delft - EWI**\n<https://goo.gl/maps/nMzwudtx8sS2>")} else
-if (message.content.startsWith("!whale")) {message.reply("**Gym: The Whale**\n<https://goo.gl/maps/JzYRD9ZdQmn>")} else
-if (message.content.startsWith("!tiny")) {message.reply("**Gym: Tiny Castle**\n<https://goo.gl/maps/KFBsFjDAjVp>")} else
-if (message.content.startsWith("!tno")) {message.reply("**Gym: TNO**\n<https://goo.gl/maps/fE81ibPTcpR2>")} else
-if (message.content.startsWith("!tu delft - christiaan")) {message.reply("**Gym: TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>")} else
-if (message.content.startsWith("!tu delft christiaan")) {message.reply("**Gym: TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>")} else
-if (message.content.startsWith("!tu delft pyramide")) {message.reply("**Gym: TU Delft Pyramide**\n<https://goo.gl/maps/HuvMJPUacU92>")} else
-if (message.content.startsWith("!2 haasje")) {message.reply("**Gym: Twee haasje over spelende kinderen**\n<https://goo.gl/maps/JM76fQWjjC92>")} else
-if (message.content.startsWith("!twee")) {message.reply("**Gym: Twee haasje over spelende kinderen**\n<https://goo.gl/maps/JM76fQWjjC92>")} else
-if (message.content.startsWith("!uitkijkpunt")) {message.reply("**Gym: Uitkijkpunt**\n<https://goo.gl/maps/Zj7vPbr4sER2>")} else
-if (message.content.startsWith("!uitlaatstrook")) {message.reply("**Gym: Uitlaatstrook**\n<https://goo.gl/maps/EGnxgXEJaTq>")} else
-if (message.content.startsWith("!vanons")) {message.reply("**Gym: VanOns**\n<https://goo.gl/maps/HFxZfao4QRN2>")} else
-if (message.content.startsWith("!veld")) {message.reply("**Gym: Veld 23**\n<https://goo.gl/maps/AqfHtcSczH82>")} else
-if (message.content.startsWith("!verkeer")) {message.reply("**Gym: Verkeer**\n<https://goo.gl/maps/Rps8xih9y3v>")} else
-if (message.content.startsWith("!veulentje")) {message.reply("**Gym: Veulentje**\n<https://goo.gl/maps/LYnU2UDUDpF2>")} else
-if (message.content.startsWith("!voormalige")) {message.reply("**Gym: Voormalige Universiteitsbibliotheek**\n<https://goo.gl/maps/JVtRcbL2ecx>")} else
-if (message.content.startsWith("!vrouw")) {message.reply("**Gym: Vrouw Met Bloemen**\n<https://goo.gl/maps/KCUd4GiCAWK2>")} else
-if (message.content.startsWith("!wapenschild")) {message.reply("**Gym: Wapenschild Holland**\n<https://goo.gl/maps/RpJDxyYk4QM2>")} else
-if (message.content.startsWith("!watertoren")) {message.reply("**Gym: Watertoren**\n<https://goo.gl/maps/SjjGCspruhM2>")} else
-if (message.content.startsWith("!wijkcentrum")) {message.reply("**Gym: Wijkcentrum De Parel**\n<https://goo.gl/maps/q9gSyAfqcPq>")} else
-if (message.content.startsWith("!wild")) {message.reply("**Gym: Wild Bee House**\n<https://goo.gl/maps/Emy3RmYRtYx>")} else
-if (message.content.startsWith("!willem")) {message.reply("**Gym: Willem van Oranje (Willem de Zwijger)**\n<https://goo.gl/maps/B98NGDnXYcP2>")} else
-if (message.content.startsWith("!wood")) {message.reply("**Gym: Wood Frog**\n<https://goo.gl/maps/cxT5hEw8vHK2>")} else
-if (message.content.startsWith("!world")) {message.reply("**Gym: World Art Delft**\n<https://goo.gl/maps/dVww6WFVY9u>")} else
-if (message.content.startsWith("!zeehond")) {message.reply("**Gym: Zeehond**\n<https://goo.gl/maps/Qm9bmcStv322>")} else
-if (message.content.startsWith("!zoas")) {message.reply("**Gym: Zoäs Birdhouse**\n<https://goo.gl/maps/gejprGbGVcL2>")} else
-if (message.content.startsWith("!zonnewijzer")) {message.reply("**Gym: Zonnewijzer**\n<https://goo.gl/maps/U19CmCWSus82>")} else
-if (message.content.startsWith("!zwarte")) {message.reply("**Gym: Zwarte Zwaan**\n<https://goo.gl/maps/jvts7BQZzC42>")} else
+if(gymMatch) {
+  message.reply(gymMatch.reply);
+}
 
 
 //give trusted role, admin only
