@@ -24,315 +24,280 @@ client.on("message", (message) => {
   let moderator = settings.moderator;
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-//help
+  //help
   if (message.content === '!help') {
-   message.reply("Hey! Mijn naam is Blanche, en ik ben de teamleider van het beste team, Mystic! Naast het appraisen van jouw pokemon in game, kan ik jullie ook op discord assistentie verlenen. Ik kan bijvoorbeeld laten zien welke cp's en aanvallen je zoekt in raid bosses, typ bijvoorbeeld eens !tyranitar. Na jaren van studie heb ik ook alle type voordelen uit mijn hoofd geleerd, welke op te vragen zijn via !type. Verder help ik in deze discord met het verdelen van rollen (aan te vragen in het speler registratie kanaal) en kan ik ook informatie geven over de verschillende teams. Succes met het spel en maak me trots!");
-   message.delete()
+    message.reply("Hey! Mijn naam is Blanche, en ik ben de teamleider van het beste team, Mystic! Naast het appraisen van jouw pokemon in game, kan ik jullie ook op discord assistentie verlenen. Ik kan bijvoorbeeld laten zien welke cp's en aanvallen je zoekt in raid bosses, typ bijvoorbeeld eens !tyranitar. Na jaren van studie heb ik ook alle type voordelen uit mijn hoofd geleerd, welke op te vragen zijn via !type. Verder help ik in deze discord met het verdelen van rollen (aan te vragen in het speler registratie kanaal) en kan ik ook informatie geven over de verschillende teams. Succes met het spel en maak me trots!");
+    message.delete()
   } else
 
-// Request pokemon info
+  // Request pokemon info
   if (message.content === '!type') {
     message.reply("Zie hier een tabel met type effectiviteit:", {
-    file: "https://image.ibb.co/mxRthv/Untitled.png"});
+      file: "https://image.ibb.co/mxRthv/Untitled.png"
+    });
     message.delete()
-  } else
-
-  if (message.content === '!charizard') {
+  } else if (message.content === '!charizard') {
     message.reply('**#3 - Charizard** [Fire Flying]\nweakness: x1.96 [Rock] x1.4: [Electric Water]\nWonder CP: 1498 - 1535 \n```Att: Fire Spin Overheat```');
     message.delete()
-  } else
-  if (message.content === '!venusaur') {
+  } else if (message.content === '!venusaur') {
     message.reply('**#6 - Venusaur** [Grass Poison]\nweakness: x1.4: [Fire Flying Ice Psychic]\nWonder CP: 1434 - 1467 \n```Att: Vine Whip Solar Beam```');
     message.delete()
-  } else
-  if (message.content === '!blastoise') {
+  } else if (message.content === '!blastoise') {
     message.reply('**#9 - Blastoise** [Water]\nweakness: x1.4: [electric Grass]\nWonder CP: 1280 - 1309 \n```Att: Water Gun Hydro Pump```');
     message.delete()
-  } else
-  if (message.content === '!alakazam') {
+  } else if (message.content === '!alakazam') {
     message.reply('**#65 - Alakazam** [Psychic]\nweakness: x1.4: [dark bug]\nWonder CP: 1608 - 1649 \n```Att: Psycho Cut  Future Sight```');
     message.delete()
-  } else
-  if (message.content === '!machamp') {
+  } else if (message.content === '!machamp') {
     message.reply('**#68 - Machamp** [Fighting]\nweakness: x1.4: [Fairy Flying Psychic]\nWonder CP: 1612 - 1649 \n```Att: Counter   Dynamic Punch```');
     message.delete()
-  } else
-  if (message.content === '!muk') {
+  } else if (message.content === '!muk') {
     message.reply('**#89 - Muk** [Poison]\nweakness: x1.4: [Ground Psychic]\nWonder CP: 1517 - 1548 \n```Att&Def: Poison Jab Gunk Shot```');
     message.delete()
-  } else
-  if (message.content === '!gengar') {
+  } else if (message.content === '!gengar') {
     message.reply('**#94 - Gengar** [Ghost Poison]\nweakness: x1.4: [Dark Ground Ghost Psychic]\nWonder CP: 1454 - 1496 \n```Att: Hex  Shadow Ball```');
     message.delete()
-  } else
-  if (message.content === '!magikarp') {
+  } else if (message.content === '!magikarp') {
     message.reply('**#103 - Magikarp** [Water]\nweakness: alles\nWonder CP: 119 - 125 \n```Att: Splash  Struggle```');
     message.delete()
-  } else
-  if (message.content === '!weezing') {
+  } else if (message.content === '!weezing') {
     message.reply('**#136 - Weezing** [Poison]\nweakness: x1.4: [Ground Psychic]\nWonder CP: 1218 - 1247 \n```Att&Def: Infestation Sludge Bomb```');
     message.delete()
-  } else
-  if (message.content === '!rhydon') {
+  } else if (message.content === '!rhydon') {
     message.reply('**#112 - Rhydon** [Ground Rock]\nweakness: x1.96 [Grass Water] x1.4: [Ground Steel Fighting Ice]\nWonder CP: 1849 - 1886 \n```Att: Mud Slap Earthquake/Stone Edge```');
     message.delete()
-  } else
-  if (message.content === '!electabuzz') {
+  } else if (message.content === '!electabuzz') {
     message.reply('**#125 - Electabuzz** [Electric]\nweakness: x1.4: [Ground]\nWonder CP: 1222 - 1255 \n```Att: Thunder Shock Thunderbolt\n```');
     message.delete()
-  } else
-  if (message.content === '!magmar') {
+  } else if (message.content === '!magmar') {
     message.reply('**#136 - Magmar** [Fire]\nweakness: x1.4: [Rock Ground Water]\nWonder CP: 1254 - 1288 \n```Att: Ember Flamethrower```');
     message.delete()
-  } else
-  if (message.content === '!exeggutor') {
+  } else if (message.content === '!exeggutor') {
     message.reply('**#129 - Exeggutor** [Grass Psychic]\nweakness: x1.96 [Bug] x1.4: [Fire Dark Flying oison Ghost Ice]\nWonder CP: 1628 - 1666 \n```Att: Bullet Seed   Solar Beam\nDef: Extrasensory Solar Beam```');
     message.delete()
-  } else
-  if (message.content === '!lapras') {
+  } else if (message.content === '!lapras') {
     message.reply('**#131 - Lapras** [Ice Water]\nweakness: x1.4: [electric Grass Rock Fighting]\nWonder CP: 1459 - 1487 \n```Att: Frost Breath  Blizzard\n\nDef: Frost Breath  Ice Beam```');
     message.delete()
-  } else
-  if (message.content === '!vaporeon') {
+  } else if (message.content === '!vaporeon') {
     message.reply('**#134 - Vaporeon** [Water]\nweakness: x1.4: [electric Grass]\nWonder CP: 1769 - 1804 \n```Att: Water Gun  Hydro Pump```');
     message.delete()
-  } else
-  if (message.content === '!jolteon') {
+  } else if (message.content === '!jolteon') {
     message.reply('**#135 - Jolteon** [Ground]\nweakness: x1.4: []\nWonder CP: 1520 - 1560 \n```Att: Thunder Shock Thunderbolt\n\nDef: Volt Switch Discharge```');
     message.delete()
-  } else
-  if (message.content === '!flareon') {
+  } else if (message.content === '!flareon') {
     message.reply('**#136 - Flareon** [Fire]\nweakness: x1.4: [Rock Ground Water]\nWonder CP: 1619 - 1659 \n```Att: Fire Spin Overheat\n\nDef: Fire Spin Flamethrower```');
     message.delete()
-  } else
-  if (message.content === '!snorlax') {
+  } else if (message.content === '!snorlax') {
     message.reply('**#143 - Snorlax** [Normal]\nweakness: x1.4: [Fighting]\nWonder CP: 1885 - 1917 \n```Def: Zen Headbutt  Heavy Slam```');
     message.delete()
-  } else
-  if (message.content === '!articuno') {
+  } else if (message.content === '!articuno') {
     message.reply('**#144 - Articuno** [Ice Flying]\nweakness: x1.96: [Rock] x1.4: [Electric Fire Steel]\nWonder CP: 1644 - 1676 \n```Att: Frost Breath    Blizzard```');
     message.delete()
-  } else
-  if (message.content === '!zapdos') {
+  } else if (message.content === '!zapdos') {
     message.reply('**#145 - Zapdos** [Electric Flying]\nweakness: x1.4: [Rock Ice]\nWonder CP: 1861 - 1902 \n```Att: Charge Beam    Zap Cannon```');
     message.delete()
-  } else
-  if (message.content === '!moltres') {
+  } else if (message.content === '!moltres') {
     message.reply('**#146 - Moltres** [Fire Flying]\nweakness: x1.96: [Rock] x1.4: [Water]\nWonder CP: 1828 - 1870 \n```Att: Fire Spin    Overheat```');
     message.delete()
-  } else
-
-  if (message.content === '!quilava') {
+  } else if (message.content === '!quilava') {
     message.reply('**#156 - Quilava** [Fire]\nweakness: x1.4: [Rock Ground Water]\nWonder CP: 821 - 847');
     message.delete()
-  } else
-  if (message.content === '!croconaw') {
+  } else if (message.content === '!croconaw') {
     message.reply('**#159 - Croconaw** [Water]\nweakness: x1.4: [electric Grass]\nWonder CP: 888 - 913');
     message.delete()
-  } else
-  if (message.content === '!bayleef') {
+  } else if (message.content === '!bayleef') {
     message.reply('**#153 - Bayleef** [Grass]\nweakness: x1.4: [Bug Fire Flying Poison Ice]\nWonder CP: 719 - 740');
     message.delete()
-  } else
-  if (message.content === '!shuckle') {
+  } else if (message.content === '!shuckle') {
     message.reply('**#213 - Shuckle** [Bug Rock]\nweakness: x1.4: [Rock Steel Water]\nWonder CP: 165 - 171 \n```Att: Rock Throw Stone Edge```\nIk geef verder nog hetvolgende advies:\nDONT FUCKLE WITH SHUCKLE');
     message.delete()
-  } else
-  if (message.content === '!tyranitar' || message.content === '!ttar') {
+  } else if (message.content === '!tyranitar' || message.content === '!ttar') {
     message.reply('**#248 - Tyranitar** [Dark Rock]\nweakness: x1.96: [Fighting] x1.4: [Bug Grass Fairy Ground Steel Water]\nWonder CP: 2055 - 2097 \n```Att: Bite Stone Edge```');
     message.delete()
-  } else
-  if (message.content === '!lugia') {
+  } else if (message.content === '!lugia') {
     message.reply('**#249 - Lugia** [Psychic Flying]\nweakness: x1.4: [Electric Rock Dark Ghost Ice]\nWonder CP: 2023 - 2053 \n```Att: Extrasensory    Sky Attack \nAtt: Extrasensory    Future Sight```');
-   message.delete()
-  } else
-  if (message.content === '!ho-oh' || message.content === '!ho oh') {
+    message.delete()
+  } else if (message.content === '!ho-oh' || message.content === '!ho oh') {
     message.reply('**#250 - Ho-Oh** [Fire Flying]\nweakness: x1.96: [Rock] x1.4: [Electric Water]\nWonder CP: 2613 - 2657 \n```Att: ???```');
     message.delete()
-  } else
-  if (message.content === '!missingno') {
+  } else if (message.content === '!missingno') {
     message.reply('**# けつばん - Missingno** [Normal 999]\nweakness: x1.4: [Fighting]\nWonder CP: 0x5E - 0xB5  \n```Att: Water Gun Sky Attack```\n');
     message.delete()
   } else
 
-//justforlol
+  //justforlol
   if (message.content === '!mystic') {
     message.channel.send('**Team Mystic**\nI am Blanche, leader of Team Mystic. The wisdom of Pokémon is immeasurably deep. I am researching why it is that they evolve.\nMy team? With our calm analysis of overy situation, we cant lose!', {
-      file: "https://pogosa.net/images/mystic_leader.png" });
+      file: "https://pogosa.net/images/mystic_leader.png"
+    });
     setTimeout(() => {
-    message.channel.send('Wat een prachtige woorden vind je niet? Met onze wijsheid kunnen we samen met onze Pokémon elke uitdaging aan!');;},1000);
+      message.channel.send('Wat een prachtige woorden vind je niet? Met onze wijsheid kunnen we samen met onze Pokémon elke uitdaging aan!');;
+    }, 1000);
     message.delete()
-  } else
-  if (message.content === '!valor') {
+  } else if (message.content === '!valor') {
     message.channel.send('**Team Valor**\nI am Candela, Tem Valor Leader!. Pokemon are stronger than humans, and they are warmhearted, too! I am researching ways to enhance Pokémon natural power in the pursuit of true strength. There is no doubt that the Pokémon in our team have trained are the strongest in battle! Are you ready?', {
-      file: "https://pogosa.net/images/valor_leader.png" });
+      file: "https://pogosa.net/images/valor_leader.png"
+    });
     setTimeout(() => {
-    message.channel.send('Pokemon sterker dan mensen? Bij jullie team twijfel ik daar soms over.... Dat onderzoek van jullie om pokemon sterker te maken is in elk geval hard nodig bij team faler!');;},1000);
+      message.channel.send('Pokemon sterker dan mensen? Bij jullie team twijfel ik daar soms over.... Dat onderzoek van jullie om pokemon sterker te maken is in elk geval hard nodig bij team faler!');;
+    }, 1000);
     message.delete()
-  } else
-  if (message.content === '!instinct') {
+  } else if (message.content === '!instinct') {
     message.channel.send('**Team Instinct**\nHey! The names Spark- the leader of Team Instinct. Pokémon are creatures with excellent intuition. I bet the secret to their intuition is related to how theyre hatched. Come on and join my team! You never lose when you trust your instincts!', {
-      file: "https://pogosa.net/images/instinct_leader.png" });
+      file: "https://pogosa.net/images/instinct_leader.png"
+    });
     setTimeout(() => {
-    message.channel.send('Vertrouwen op je intuitie? We leven toch zeker niet meer in de steentijd? En wat heeft hebben die eieren daar nu weer mee te maken? Met dit soort uitspraken lijkt het soms alsof je zelf uit een ei bent gekomen...');;},1000);
+      message.channel.send('Vertrouwen op je intuitie? We leven toch zeker niet meer in de steentijd? En wat heeft hebben die eieren daar nu weer mee te maken? Met dit soort uitspraken lijkt het soms alsof je zelf uit een ei bent gekomen...');;
+    }, 1000);
     message.delete()
-  } else
-  if (message.content === '!delft') {
+  } else if (message.content === '!delft') {
     message.reply('Delft is het gebied waar wij proberen orde op zaken te stellen. Met de invasie van Candela en Spark hebben we flink werk aan de winkel. De gyms die we blauw willen houden, en de verschillende gebieden vanuit waar we dat organiseren zijn te vinden in: <https://www.google.com/maps/d/u/0/edit?mid=11DnpOBi-AsstZGT07NGO9txzxsU&ll=52.00888637739794%2C4.361529349999955&z=13>');
     message.delete()
-  } else
-  if (message.content === '!spoofer') {
+  } else if (message.content === '!spoofer') {
     message.reply('Een spoofer is iemand die het een goed idee vind om dit spel vanaf de bank te spelen. Dit soort treurige personen die hun pokemon niet waard zijn manipuleren hun GPS om het spel te spelen. Moge Niantics banhamer genadeloos zijn');
     message.delete()
-  } else
-  if (message.content === '!delft') {
+  } else if (message.content === '!delft') {
     message.reply('Delft is het gebied waar wij proberen orde op zaken te stellen. Met de invasie van Candela en Spark hebben we flink werk aan de winkel. De gyms die we blauw willen houden, en de verschillende gebieden vanuit waar we dat organiseren zijn te vinden in: <https://www.google.com/maps/d/u/0/edit?mid=11DnpOBi-AsstZGT07NGO9txzxsU&ll=52.00888637739794%2C4.361529349999955&z=13>');
     message.delete()
-  } else
-  if (message.content === '!minortextfixes') {
+  } else if (message.content === '!minortextfixes') {
     message.reply('Minor text fixes verwijst gekmakend naar het regelmatig incapabele niantic. Het is een referentie naar een van de eerste updates waar het spel bijzonder slecht functioneerde en iedereen aan het wachten was op optimalisaties. Na de lange tijd van wachten verscheen eindelijk de update, en de change log was: *minor text fixes*');
     message.delete()
-  } else
-  if (message.content === '!niantic') {
+  } else if (message.content === '!niantic') {
     message.reply('Niantic is het bedrijf dat Ingress 2 ontwikkelde en het Pokémon Go noemde. Door de gigantische populariteit van Pokémon is dit spel echter veel groter geworden, waardoor ze flink aan het groeien zijn.');
     message.delete()
-  } else
-  if (message.content === '!pokemon' || message.content === '!pokémon') {
+  } else if (message.content === '!pokemon' || message.content === '!pokémon') {
     message.reply('Pokémon zijn de loslopende beestjes die je kunt vangen om ze voor de glorie van team Mystic tegen Valor en Instinct te laten strijden.');
     message.delete()
-  } else
-  if (message.content === '!weerbericht') {
+  } else if (message.content === '!weerbericht') {
     message.reply('Weer of geen weer, Valor en Instinct moeten uit hun gyms geschopt! Dus pak je revives, en ga ervoor! Articuno is niet voor niets de stormvogel!');
     message.delete()
-  } else
-  if (message.content === '!ash') {
+  } else if (message.content === '!ash') {
     message.reply('Een trainer uit Palet Town waardoor alle Pokémon hype is begonnen. Als hij trouw was gebleven aan zijn goede pokemon had hij het waarschijnlijk ver geschopt, maar hij vond het blijkbaar leuker om steeds opnieuw te beginnen.');
     message.delete()
   } else
 
-var gyms = require('data/gyms.json')
+    var gyms = require('data/gyms.json')
 
-gymMatch = gyms.find( (gym) => {
-  return key === message.content.startsWith(gym.key);
-});
+  gymMatch = gyms.find((gym) => {
+    return key === message.content.startsWith(gym.key);
+  });
 
-if(gymMatch) {
-  message.reply(gymMatch.reply);
-}
+  if (gymMatch) {
+    message.reply(gymMatch.reply);
+  }
 
 
-//give trusted role, admin only
- if (message.content.startsWith('!add')) {
- if(message.member.roles.has(moderator)) {
- let member = message.mentions.members.first();
- let role = message.guild.roles.find("name", "makingdelftblueagain");
- member.addRole(role).catch(console.error);
- message.channel.send('Welkom ' + member + ', je bent nu officieel toegevoegd! In het kanaal #welkom is te lezen hoe deze discord werkt, lees dat dus vooral eens door! ;)');
- } else { message.reply('Leden verifieren kan alleen door een moderator worden gedaan') }
- message.delete() }  else
+  //give trusted role, admin only
+  if (message.content.startsWith('!add')) {
+    if (message.member.roles.has(moderator)) {
+      let member = message.mentions.members.first();
+      let role = message.guild.roles.find("name", "makingdelftblueagain");
+      member.addRole(role).catch(console.error);
+      message.channel.send('Welkom ' + member + ', je bent nu officieel toegevoegd! In het kanaal #welkom is te lezen hoe deze discord werkt, lees dat dus vooral eens door! ;)');
+    } else {
+      message.reply('Leden verifieren kan alleen door een moderator worden gedaan')
+    }
+    message.delete()
+  } else
 
-//request gym roles
- if (message.content.startsWith('!+centrum')) {
- let role = message.guild.roles.find("name", "Centrum");
- message.member.addRole(role).catch(console.error);
- message.reply('Je hebt nu toegang tot het centrum gym kanaal!');
- message.delete()
- } else
- if (message.content.startsWith('!+hoven')) {
- let role = message.guild.roles.find("name", "Hoven");
- message.member.addRole(role).catch(console.error);
- message.reply('Je hebt nu toegang tot het hoven gym kanaal!');
- message.delete()
- } else
- if (message.content.startsWith('!+tu')) {
- let role = message.guild.roles.find("name", "TU");
- message.member.addRole(role).catch(console.error);
- message.reply('Je hebt nu toegang tot het tu-wijk gym kanaal!');
- message.delete()
- } else
- if (message.content.startsWith('!+tanthof')) {
- let role = message.guild.roles.find("name", "Tanthof");
- message.member.addRole(role).catch(console.error);
- message.reply('Je hebt nu toegang tot het tanthof gym kanaal!');
- message.delete()
- } else
- if (message.content.startsWith('!+noord')) {
- let role = message.guild.roles.find("name", "DelftNoord");
- message.member.addRole(role).catch(console.error);
- message.reply('Je hebt nu toegang tot het Noord-Delft gym kanaal!');
- message.delete()
- } else
- if (message.content.startsWith('!+oost')) {
- let role = message.guild.roles.find("name", "DelftOost");
- message.member.addRole(role).catch(console.error);
- message.reply('Je hebt nu toegang tot het Oost-Delft gym kanaal!');
- message.delete()
- } else
- if (message.content.startsWith('!+english')) {
- let role = message.guild.roles.find("name", "English");
- message.member.addRole(role).catch(console.error);
- message.reply('You now have access to the English channel!');
- message.delete()
- } else
+  //request gym roles
+  if (message.content.startsWith('!+centrum')) {
+    let role = message.guild.roles.find("name", "Centrum");
+    message.member.addRole(role).catch(console.error);
+    message.reply('Je hebt nu toegang tot het centrum gym kanaal!');
+    message.delete()
+  } else if (message.content.startsWith('!+hoven')) {
+    let role = message.guild.roles.find("name", "Hoven");
+    message.member.addRole(role).catch(console.error);
+    message.reply('Je hebt nu toegang tot het hoven gym kanaal!');
+    message.delete()
+  } else if (message.content.startsWith('!+tu')) {
+    let role = message.guild.roles.find("name", "TU");
+    message.member.addRole(role).catch(console.error);
+    message.reply('Je hebt nu toegang tot het tu-wijk gym kanaal!');
+    message.delete()
+  } else if (message.content.startsWith('!+tanthof')) {
+    let role = message.guild.roles.find("name", "Tanthof");
+    message.member.addRole(role).catch(console.error);
+    message.reply('Je hebt nu toegang tot het tanthof gym kanaal!');
+    message.delete()
+  } else if (message.content.startsWith('!+noord')) {
+    let role = message.guild.roles.find("name", "DelftNoord");
+    message.member.addRole(role).catch(console.error);
+    message.reply('Je hebt nu toegang tot het Noord-Delft gym kanaal!');
+    message.delete()
+  } else if (message.content.startsWith('!+oost')) {
+    let role = message.guild.roles.find("name", "DelftOost");
+    message.member.addRole(role).catch(console.error);
+    message.reply('Je hebt nu toegang tot het Oost-Delft gym kanaal!');
+    message.delete()
+  } else if (message.content.startsWith('!+english')) {
+    let role = message.guild.roles.find("name", "English");
+    message.member.addRole(role).catch(console.error);
+    message.reply('You now have access to the English channel!');
+    message.delete()
+  } else
 
-//remove gym roles
- if (message.content.startsWith('!-centrum')) {
- let role = message.guild.roles.find("name", "Centrum");
- message.member.removeRole(role).catch(console.error);
- message.reply('Je hebt nu geen toegang meer tot het centrum gym kanaal!');
- message.delete()
- } else
- if (message.content.startsWith('!-hoven')) {
- let role = message.guild.roles.find("name", "Hoven");
- message.member.removeRole(role).catch(console.error);
- message.reply('Je hebt nu geen toegang meer tot het hoven gym kanaal!');
- message.delete()
- } else
- if (message.content.startsWith('!-tu')) {
- let role = message.guild.roles.find("name", "TU");
- message.member.removeRole(role).catch(console.error);
- message.reply('Je hebt nu geen toegang meer tot het tu-wijk gym kanaal!');
- message.delete()
- } else
- if (message.content.startsWith('!-tanthof')) {
- let role = message.guild.roles.find("name", "Tanthof");
- message.member.removeRole(role).catch(console.error);
- message.reply('Je hebt nu geen toegang meer tot het tanthof gym kanaal!');
- message.delete()
- } else
- if (message.content.startsWith('!-noord')) {
- let role = message.guild.roles.find("name", "DelftNoord");
- message.member.removeRole(role).catch(console.error);
- message.reply('Je hebt nu geen toegang meer tot het Noord-Delft gym kanaal!');
- message.delete()
- } else
- if (message.content.startsWith('!-oost')) {
- let role = message.guild.roles.find("name", "DelftOost");
- message.member.removeRole(role).catch(console.error);
- message.reply('Je hebt nu geen toegang meer tot het Oost-Delft gym kanaal!');
- message.delete()
- } else
- if (message.content.startsWith('!-english')) {
- let role = message.guild.roles.find("name", "English");
- message.member.removeRole(role).catch(console.error);
- message.reply('You now have lost access to the English channel!');
- message.delete()
- } else
+  //remove gym roles
+  if (message.content.startsWith('!-centrum')) {
+    let role = message.guild.roles.find("name", "Centrum");
+    message.member.removeRole(role).catch(console.error);
+    message.reply('Je hebt nu geen toegang meer tot het centrum gym kanaal!');
+    message.delete()
+  } else if (message.content.startsWith('!-hoven')) {
+    let role = message.guild.roles.find("name", "Hoven");
+    message.member.removeRole(role).catch(console.error);
+    message.reply('Je hebt nu geen toegang meer tot het hoven gym kanaal!');
+    message.delete()
+  } else if (message.content.startsWith('!-tu')) {
+    let role = message.guild.roles.find("name", "TU");
+    message.member.removeRole(role).catch(console.error);
+    message.reply('Je hebt nu geen toegang meer tot het tu-wijk gym kanaal!');
+    message.delete()
+  } else if (message.content.startsWith('!-tanthof')) {
+    let role = message.guild.roles.find("name", "Tanthof");
+    message.member.removeRole(role).catch(console.error);
+    message.reply('Je hebt nu geen toegang meer tot het tanthof gym kanaal!');
+    message.delete()
+  } else if (message.content.startsWith('!-noord')) {
+    let role = message.guild.roles.find("name", "DelftNoord");
+    message.member.removeRole(role).catch(console.error);
+    message.reply('Je hebt nu geen toegang meer tot het Noord-Delft gym kanaal!');
+    message.delete()
+  } else if (message.content.startsWith('!-oost')) {
+    let role = message.guild.roles.find("name", "DelftOost");
+    message.member.removeRole(role).catch(console.error);
+    message.reply('Je hebt nu geen toegang meer tot het Oost-Delft gym kanaal!');
+    message.delete()
+  } else if (message.content.startsWith('!-english')) {
+    let role = message.guild.roles.find("name", "English");
+    message.member.removeRole(role).catch(console.error);
+    message.reply('You now have lost access to the English channel!');
+    message.delete()
+  } else
 
-//delete messages
+  //delete messages
 
-if (message.content.startsWith('!delete')) {
-if(message.member.roles.has(moderator)) {
-  var del = message.content.split(" ");
-  del.splice(0, 1);
-  message.channel.bulkDelete(del);
-} else { message.reply('Alleen moderators kunnen berichten verwijderen') }
-message.delete() }
+  if (message.content.startsWith('!delete')) {
+    if (message.member.roles.has(moderator)) {
+      var del = message.content.split(" ");
+      del.splice(0, 1);
+      message.channel.bulkDelete(del);
+    } else {
+      message.reply('Alleen moderators kunnen berichten verwijderen')
+    }
+    message.delete()
+  }
 });
 
 //welcome new users
 
 client.on('guildMemberAdd', member => {
-setTimeout(() => {
-member.guild.defaultChannel.send(`Welkom op de Mystic Delft Discord en leuk dat je onze groep wilt versterken, ${member}!\nOm toegang te krijgen tot de volledige groep vragen wij een screenshot van je pokemon go profiel (dat is waar je naast je buddy staat). Als je deze kan uploaden zal een van de moderators je zo snel mogelijk te woord staan.\n\nWelcome to our Mystic Delft Discord group, ${member}!\nIn order to get full access to our server, we would like to verify you are indeed mystic. If  you would be so kind as to upload a screenshot of your Pokémon Go profile (where you are standing next to your buddy) one of our moderators will contact you as soon as possible.`);},1000);
+  setTimeout(() => {
+    member.guild.defaultChannel.send(`Welkom op de Mystic Delft Discord en leuk dat je onze groep wilt versterken, ${member}!
+Om toegang te krijgen tot de volledige groep vragen wij een screenshot van je pokemon go profiel (dat is waar je naast je buddy staat). Als je deze kan uploaden zal een van de moderators je zo snel mogelijk te woord staan.
+
+Welcome to our Mystic Delft Discord group, ${member}!
+In order to get full access to our server, we would like to verify you are indeed mystic. If  you would be so kind as to upload a screenshot of your Pokémon Go profile (where you are standing next to your buddy) one of our moderators will contact you as soon as possible.`);
+  }, 1000);
 });
