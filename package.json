@@ -12,7 +12,7 @@
     "node": "8.2.1"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node --inspect index.js"
   },
   "dependencies": {
     "discord.js": "^11.1.0",
