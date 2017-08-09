@@ -1,10 +1,6 @@
 [
   {
     "key": "!3 variaties op een vierkant 2",
-    "reply": "**Gym: 3 Variaties op een vierkant 2**\n<https://goo.gl/maps/WBmE2s8ypYU2"
-  },
-  {
-    "key": "!3 variaties op een vierkant 2",
     "reply": "**Gym: 3 Variaties op een vierkant 2**\n<https://goo.gl/maps/WBmE2s8ypYU2>"
   },
   {
@@ -375,6 +371,10 @@
     "key": "!technische",
     "reply": "**Gym: Technische Universiteit Delft - EWI**\n<https://goo.gl/maps/nMzwudtx8sS2>"
   },
+   {
+    "key": "!ewi",
+    "reply": "**Gym: Technische Universiteit Delft - EWI**\n<https://goo.gl/maps/nMzwudtx8sS2>"
+  },
   {
     "key": "!whale",
     "reply": "**Gym: The Whale**\n<https://goo.gl/maps/JzYRD9ZdQmn>"
@@ -393,6 +393,14 @@
   },
   {
     "key": "!tu delft christiaan",
+    "reply": "**Gym: TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>"
+  },
+  {
+    "key": "!ch",
+    "reply": "**Gym: TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>"
+  },
+   {
+    "key": "!christiaan",
     "reply": "**Gym: TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>"
   },
   {
