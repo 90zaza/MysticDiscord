@@ -180,11 +180,15 @@ client.on("message", (message) => {
     message.delete()
   } else
   if (message.content === '!spoofer') {
-    message.reply('Een spoofer is iemand die het een goed idee vind om dit spel vanaf de bank te spelen. Dit soort treurige personen die hun pokemon niet waard zijn manipuleren hun GPS om het spel te spelen. Moge Niantics banhamer genadeloos zijn');
+    message.reply('Een spoofer is iemand die het een goed idee vind om dit spel vanaf de bank te spelen. Dit soort treurige personen die hun pokemon niet waard zijn manipuleren hun GPS om het spel te spelen. Report dit soort faalhazen hier:\n\n<https://support.pokemongo.nianticlabs.com/hc/en-us/requests/new?ticket_form_id=319948>\nMoge Niantics banhamer genadeloos zijn');
     message.delete()
   } else
   if (message.content === '!delft') {
     message.reply('Delft is het gebied waar wij proberen orde op zaken te stellen. Met de invasie van Candela en Spark hebben we flink werk aan de winkel. De gyms die we blauw willen houden, en de verschillende gebieden vanuit waar we dat organiseren zijn te vinden in: <https://www.google.com/maps/d/u/0/edit?mid=11DnpOBi-AsstZGT07NGO9txzxsU&ll=52.00888637739794%2C4.361529349999955&z=13>');
+    message.delete()
+  } else
+  if (message.content === '!gyms') {
+    message.reply('Hier is een kaart van alle gyms en regios in Delft, maak ze allemaal van ons! <https://www.google.com/maps/d/u/0/edit?mid=11DnpOBi-AsstZGT07NGO9txzxsU&ll=52.00888580917186%2C4.361529349999955&z=13>');
     message.delete()
   } else
   if (message.content === '!minortextfixes') {
@@ -199,8 +203,24 @@ client.on("message", (message) => {
     message.reply('Pokémon zijn de loslopende beestjes die je kunt vangen om ze voor de glorie van team Mystic tegen Valor en Instinct te laten strijden.');
     message.delete()
   } else
+  if (message.content === '!stats') {
+    message.reply('Zoek je meer data van een pokemon dan ik je kan geven? Kijk hier eens rond! <https://pokemongo.gamepress.gg/pokemon-list>');
+    message.delete()
+  } else
   if (message.content === '!weerbericht') {
     message.reply('Weer of geen weer, Valor en Instinct moeten uit hun gyms geschopt! Dus pak je revives, en ga ervoor! Articuno is niet voor niets de stormvogel!');
+    message.delete()
+  } else
+  if (message.content === '!tutorial') {
+    message.reply('Pokémon go lijkt simpel, maar stiekem is het een best complex spel. Niet gevreesd, er is een hele tutorial voor geschreven! <https://delftmystic.wordpress.com/>');
+    message.delete()
+  } else
+  if (message.content === '!iv' || message.content === '!ivs' || message.content === '!IVs') {
+    message.reply('Zoek je nauwkeurigere IV informatie dan ik je kan geven? Gebruik deze apps:\nVoor apple: <https://itunes.apple.com/us/app/poke-genie-for-pokemon-go-auto-iv-calculator/id1143920524?mt=8>\nVoor android: <https://play.google.com/store/apps/details?id=tesmath.calcy&hl=en>\nVoor android optie 2: <https://github.com/farkam135/GoIV/releases>');
+    message.delete()
+  } else
+  if (message.content === '!nest') {
+    message.reply('Naast de spawns die biome afhankelijk zijn heb je ook plekken die steeds dezelfde pokemon spawnen. Als je zon nest gevonden hebt of zoekt kun je dat hier aangeven: <https://thesilphroad.com/atlas#13.18/52.0073/4.3599>');
     message.delete()
   } else
   if (message.content === '!ash') {
