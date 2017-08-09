@@ -186,6 +186,16 @@ client.on("message", (message) => {
     message.reply(gymMatch.reply);
   }
 
+  //pokestop spins
+   var stops = require('data/pokestops.json')
+
+   stopMatch = stops.find((stop) => {
+     return key === message.content.startsWith(stop.key);
+   });
+
+   if (stopMatch) {
+    message.reply(stopMatch.reply);
+   }
 
   //give trusted role, admin only
   if (message.content.startsWith('!add')) {
