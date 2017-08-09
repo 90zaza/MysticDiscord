@@ -298,13 +298,15 @@ client.on("message", (message) => {
     message.delete()
   } else {
     const gymMatch = gyms.find((gym) => {
-      if (!gym.key) {
+      if (!gym.keys) {
         console.log('gym has no key', gym);
         return;
       }
-      return message.content.startsWith(gym.key);
-    });
 
+      return gym.keys.find((key) => {
+        return message.content.startsWith(key);
+      });
+    });
 
     if (gymMatch) {
       message.reply(gymMatch.reply);

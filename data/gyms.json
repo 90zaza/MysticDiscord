@@ -1,494 +1,617 @@
-[
-  {
-    "key": "!3 variaties op een vierkant 2",
-    "reply": "**Gym: 3 Variaties op een vierkant 2**\n<https://goo.gl/maps/WBmE2s8ypYU2>"
-  },
-  {
-    "key": "!3 variaties op een vierkant 3",
-    "reply": "**Gym: 3 Variaties op een vierkant 3**\n<https://goo.gl/maps/yYa2qy8XJ9p>"
-  },
-  {
-    "key": "!artful",
-    "reply": "**Gym: Artful Cube**\n<https://goo.gl/maps/DsUvD9NEPLx>"
-  },
-  {
-    "key": "!bicycle",
-    "reply": "**Gym: Bicycle Love**\n<https://goo.gl/maps/e5CBn5ixBDy>"
-  },
-  {
-    "key": "!blue",
-    "reply": "**Gym: Blue Birds Honkbal**\n<https://goo.gl/maps/WFiksvKEiR32>"
-  },
-  {
-    "key": "!blauw-geel",
-    "reply": "**Gym: Blauw-Geel Keramiek Object**\n<https://goo.gl/maps/RFLjygKU6LC2>"
-  },
-  {
-    "key": "!blauw geel",
-    "reply": "**Gym: Blauw-Geel Keramiek Object**\n<https://goo.gl/maps/RFLjygKU6LC2>"
-  },
-  {
-    "key": "!cannon",
-    "reply": "**Gym: Cannon**\n<https://goo.gl/maps/on2P21Zky4L2>"
-  },
-  {
-    "key": "!climb",
-    "reply": "**Gym: Climb the Frogs**\n<https://goo.gl/maps/XWeyq5BrBV22>"
-  },
-  {
-    "key": "!color",
-    "reply": "**Gym: Color Sculpture**\n<https://goo.gl/maps/kR2QeheLsZz>"
-  },
-  {
-    "key": "!coligny",
-    "reply": "**Gym: De Coligny**\n<https://goo.gl/maps/fNgWYGgmQQD2>"
-  },
-  {
-    "key": "!delftse",
-    "reply": "**Gym: De Delftse Pauw**\n<https://goo.gl/maps/CVrYXSJfwf32>"
-  },
-  {
-    "key": "!hofstee",
-    "reply": "**Gym: De Hofstee**\n<https://goo.gl/maps/kkwdPP9jce82>"
-  },
-  {
-    "key": "!kamer",
-    "reply": "**Gym: De Kamer van Charilabla 1614**\n<https://goo.gl/maps/jC6osbaZcaG2>"
-  },
-  {
-    "key": "!nieuwe",
-    "reply": "**Gym: De Nieuwe Lente**\n<https://goo.gl/maps/D1ZGGvH1ED72>"
-  },
-  {
-    "key": "!oostpoort",
-    "reply": "**Gym: De Oostpoort**\n<https://goo.gl/maps/APDKGayWZZN2>"
-  },
-  {
-    "key": "!r.k.",
-    "reply": "**Gym: De R.K. Kerk Antonius en Cornelius**\n<https://goo.gl/maps/3rbWddkmpaA2>"
-  },
-  {
-    "key": "!rk",
-    "reply": "**Gym: De R.K. Kerk Antonius en Cornelius**\n<https://goo.gl/maps/3rbWddkmpaA2>"
-  },
-  {
-    "key": "!stier",
-    "reply": "**Gym: De Stier**\n<https://goo.gl/maps/Xq77BkHMGbz>"
-  },
-  {
-    "key": "!delft central",
-    "reply": "**Gym: Delft Central Station**\n<https://goo.gl/maps/a5ypCkobkQ22>"
-  },
-  {
-    "key": "!delfts blauwe",
-    "reply": "**Gym: Delfts Blauwe Stenen**\n<https://goo.gl/maps/kJSKksZZPwq>"
-  },
-  {
-    "key": "!delftse tegelmannen",
-    "reply": "**Gym: Delftse Tegelmannen**\n<https://goo.gl/maps/eVA5ufuajzo>"
-  },
-  {
-    "key": "!delftshout",
-    "reply": "**Gym: Delftshout Levenslust**\n<https://goo.gl/maps/uwD9bsXTb5U2>"
-  },
-  {
-    "key": "!delta rescue",
-    "reply": "**Gym: Delta Rescue**\n<https://goo.gl/maps/s3nxAxVVu9G2>"
-  },
-  {
-    "key": "!dok",
-    "reply": "**Gym: Dok Delft Bibliotheek**\n<https://goo.gl/maps/KPuHh3CV2Yk>"
-  },
-  {
-    "key": "!door",
-    "reply": "**Gym: Door Art**\n<https://goo.gl/maps/74i4MtAuVzy>"
-  },
-  {
-    "key": "!dsm",
-    "reply": "**Gym: DSM Kunstwerk**\n<https://goo.gl/maps/ZUQ1PpQ5BiL2>"
-  },
-  {
-    "key": "!dvv",
-    "reply": "**Gym: Dvv Delft Tennis**\n<https://goo.gl/maps/btjqpgqHFY72>"
-  },
-  {
-    "key": "!egg",
-    "reply": "**Gym: Egg Mosaic**\n<https://goo.gl/maps/SjdaZoAmshn>"
-  },
-  {
-    "key": "!engelse",
-    "reply": "**Gym: Engelse Drop**\n<https://goo.gl/maps/ho5zAycvXqr>"
-  },
-  {
-    "key": "!entrance",
-    "reply": "**Gym: Entrance Bieslandse Bos Delft**\n<https://goo.gl/maps/187vzFFiCoE2>"
-  },
-  {
-    "key": "!evenwicht",
-    "reply": "**Gym: Evenwicht Ijzer**\n<https://goo.gl/maps/DYDKU8bcxCU2>"
-  },
-  {
-    "key": "!giant grill",
-    "reply": "**Gym: Giant Grill**\n<https://goo.gl/maps/q2gpVLkihu12>"
-  },
-  {
-    "key": "!giant tripod",
-    "reply": "**Gym: Giant Tripod at Rijkswaterstaat**\n<https://goo.gl/maps/qopEWA7HRMS2>"
-  },
-  {
-    "key": "!glasbak",
-    "reply": "**Gym: Glasbak Art**\n<https://goo.gl/maps/JUddhCkME9s>"
-  },
-  {
-    "key": "!green",
-    "reply": "**Gym: Green Chair with White Table**\n<https://goo.gl/maps/htvsSYTW5Qu>"
-  },
-  {
-    "key": "!guardian",
-    "reply": "**Gym: Guardian Angels**\n<https://goo.gl/maps/JmRrwx7rCQS2>"
-  },
-  {
-    "key": "!hamenpoort",
-    "reply": "**Gym: Hamenpoort Speelnatuur**\n<https://goo.gl/maps/JTAYj8BcdrR2>"
-  },
-  {
-    "key": "!hbsv",
-    "reply": "**Gym: HBSV Willem Tell**\n<https://goo.gl/maps/KgiMKZ57CeL2>"
-  },
-  {
-    "key": "!hello",
-    "reply": "**Gym: Hello Rainbow**\n<https://goo.gl/maps/muPhuRcYTpH2>"
-  },
-  {
-    "key": "!blauwe hart",
-    "reply": "**Gym: Het Blauwe Hart**\n<https://goo.gl/maps/oTH8eqavW132>"
-  },
-  {
-    "key": "!veldje",
-    "reply": "**Gym: Het Veldje**\n<https://goo.gl/maps/9cwyqtsBCos>"
-  },
-  {
-    "key": "!high",
-    "reply": "**Gym: High Water Bridge**\n<https://goo.gl/maps/e4BLwM2FAUm>"
-  },
-  {
-    "key": "!highway",
-    "reply": "**Gym: Highway Fitness Point**\n<https://goo.gl/maps/oW66Z3MJL3x>"
-  },
-  {
-    "key": "!historic",
-    "reply": "**Gym: Historic TU Delft Faculty Building**\n<https://goo.gl/maps/cVsDHyduBAT2>"
-  },
-  {
-    "key": "!hoven",
-    "reply": "**Gym: Hoven Passage**\n<https://goo.gl/maps/QBLQDrRAM1H2>"
-  },
-  {
-    "key": "!ichtus",
-    "reply": "**Gym: Ichtus**\n<https://goo.gl/maps/gMy63or6ZL62>"
-  },
-  {
-    "key": "!kerkpolder",
-    "reply": "**Gym: Kerkpolder**\n<https://goo.gl/maps/JKWRc8eAKyA2>"
-  },
-  {
-    "key": "!klein",
-    "reply": "**Gym: Klein Vrijenban**\n<https://goo.gl/maps/jvKQy7MFp9E2>"
-  },
-  {
-    "key": "!klm",
-    "reply": "**Gym: KLM Photon Torpedo**\n<https://goo.gl/maps/s2e3P8NbRNo>"
-  },
-  {
-    "key": "!knooppunt",
-    "reply": "**Gym: Knooppunt 59**\n<https://goo.gl/maps/BhUCRAaHHSH2>"
-  },
-  {
-    "key": "!kolom",
-    "reply": "**Gym: Kolom Van De Mensenrechten**\n<https://goo.gl/maps/dWKCFHijMbu>"
-  },
-  {
-    "key": "!koninkrijkszaal",
-    "reply": "**Gym: Koninkrijkszaal Van Jehovah\"s Getuigen**\n<https://goo.gl/maps/pbTxo6DKFXy>"
-  },
-  {
-    "key": "!kwakkie",
-    "reply": "**Gym: Kwakkie Verf**\n<https://goo.gl/maps/ruBbC96Mk1L2>"
-  },
-  {
-    "key": "!library",
-    "reply": "**Gym: Library TU Delft**\n<https://goo.gl/maps/VB27CE8egKG2>"
-  },
-  {
-    "key": "!maria",
-    "reply": "**Gym: Maria van Jesse kerk**\n<https://goo.gl/maps/4csETP8VSq62>"
-  },
-  {
-    "key": "!mijlpaal",
-    "reply": "**Gym: Mijlpaal**\n<https://goo.gl/maps/Zfj68NhETTS2>"
-  },
-  {
-    "key": "!molen de",
-    "reply": "**Gym: Molen De Klokkenmaker**\n<https://goo.gl/maps/Dj8Vx6FxbM62>"
-  },
-  {
-    "key": "!molen steen",
-    "reply": "**Gym: Molen Steen**\n<https://goo.gl/maps/cumNzZkTDkN2>"
-  },
-  {
-    "key": "!monument",
-    "reply": "**Gym: Monument JC Van Marken**\n<https://goo.gl/maps/hE8sKBJCpFy>"
-  },
-  {
-    "key": "!moose",
-    "reply": "**Gym: Moose Toy**\n<https://goo.gl/maps/9zBgbusGJbw>"
-  },
-  {
-    "key": "!mural",
-    "reply": "**Gym: Mural Pootstraat Carthuyzerstraat**\n<https://goo.gl/maps/cAy8ifVBgit>"
-  },
-  {
-    "key": "!nep",
-    "reply": "**Gym: Nep Ruïne**\n<https://goo.gl/maps/FqJQKw1jnBw>"
-  },
-  {
-    "key": "!nieuwe",
-    "reply": "**Gym: Nieuwe Kerk**\n<https://goo.gl/maps/muAF9RW6e3U2>"
-  },
-  {
-    "key": "!old",
-    "reply": "**Gym: Old Town Wall**\n<https://goo.gl/maps/z3XgKDttVxN2>"
-  },
-  {
-    "key": "!overkapping",
-    "reply": "**Gym: Overkapping Nr 5**\n<https://goo.gl/maps/uo2UzHiYS132>"
-  },
-  {
-    "key": "!paddestoelen",
-    "reply": "**Gym: Paddestoelen**\n<https://goo.gl/maps/U6PmwMxX5382>"
-  },
-  {
-    "key": "!paint",
-    "reply": "**Gym: Paint Jobs**\n<https://goo.gl/maps/3LW1TyqmFUT2>"
-  },
-  {
-    "key": "!papegaaien",
-    "reply": "**Gym: Papegaaien**\n<https://goo.gl/maps/8wwDTDqxxet>"
-  },
-  {
-    "key": "!plaquette",
-    "reply": "**Gym: Plaquette op bank**\n<https://goo.gl/maps/DjkYPsFRez82>"
-  },
-  {
-    "key": "!playground brahmslaan",
-    "reply": "**Gym: Playground Brahmslaan**\n<https://goo.gl/maps/EQTAJqWWshL2>"
-  },
-  {
-    "key": "!playground straat",
-    "reply": "**Gym: Playground Straat van Ormoes**\n<https://goo.gl/maps/LUroxsba6eP2>"
-  },
-  {
-    "key": "!playground vivaldilaan",
-    "reply": "**Gym: Playground Vivaldilaan**\n<https://goo.gl/maps/Sx4CwasGcju>"
-  },
-  {
-    "key": "!prinses",
-    "reply": "**Gym: Prinses Irene Tunnel**\n<https://goo.gl/maps/y9tMD3yrRc72>"
-  },
-  {
-    "key": "!public",
-    "reply": "**Gym: Public Library**\n<https://goo.gl/maps/26GDpDcz1gt>"
-  },
-  {
-    "key": "!race",
-    "reply": "**Gym: Race Planet Delft**\n<https://goo.gl/maps/TGuxkCTzPBT2>"
-  },
-  {
-    "key": "!relief",
-    "reply": "**Gym: Reliëf Driemaster Den Hoorn**\n<https://goo.gl/maps/4ThC211kxEm>"
-  },
-  {
-    "key": "!royal",
-    "reply": "**Gym: Royal Blue Bench**\n<https://goo.gl/maps/quM5tfFo8gH2>"
-  },
-  {
-    "key": "!seats",
-    "reply": "**Gym: Seats**\n<https://goo.gl/maps/Zo3UYRuvgVF2>"
-  },
-  {
-    "key": "!solar",
-    "reply": "**Gym: Solar Panel Art Sculpture**\n<https://goo.gl/maps/1HcF9hMXNrL2>"
-  },
-  {
-    "key": "!space engineering",
-    "reply": "**Gym: Space Engineering Faculty**\n<https://goo.gl/maps/kb4EmbwywYS2>"
-  },
-  {
-    "key": "!space rocket",
-    "reply": "**Gym: Space Rocket**\n<https://goo.gl/maps/T2so1vhEBGF2>"
-  },
-  {
-    "key": "!speelplastiek",
-    "reply": "**Gym: Speelplastiek Paarden**\n<https://goo.gl/maps/7TW2opLBW3p>"
-  },
-  {
-    "key": "!speeltuintje",
-    "reply": "**Gym: Speeltuintje Van Nora en Zoë**\n<https://goo.gl/maps/63f6kBZzr282>"
-  },
-  {
-    "key": "!stadhuis",
-    "reply": "**Gym: Stadhuis Delft**\n<https://goo.gl/maps/VDDXxhaAm922>"
-  },
-  {
-    "key": "!stadsherberg",
-    "reply": "**Gym: Stadsherberg De Mol**\n<https://goo.gl/maps/DfJUyD2AebE2>"
-  },
-  {
-    "key": "!stalpaert",
-    "reply": "**Gym: Stalpaert van der Wiele Statue**\n<https://goo.gl/maps/SWTWpzzBA6p>"
-  },
-  {
-    "key": "!station",
-    "reply": "**Gym: Station Delft-Zuid**\n<https://goo.gl/maps/UUuZexYicuS2>"
-  },
-  {
-    "key": "!statue ",
-    "reply": "**Gym: Statue Of Prometheus**\n<https://goo.gl/maps/C4Jtr7HKyVB2>"
-  },
-  {
-    "key": "!stop",
-    "reply": "**Gym: Stop Child Labor Wall Painting**\n<https://goo.gl/maps/uwVfaadDRyQ2>"
-  },
-  {
-    "key": "!street",
-    "reply": "**Gym: Street Art**\n<https://goo.gl/maps/5ETxB6masnr>"
-  },
-  {
-    "key": "!sudden",
-    "reply": "**Gym: Sudden Cow**\n<https://goo.gl/maps/tjd9BC6qXyG2>"
-  },
-  {
-    "key": "!technische",
-    "reply": "**Gym: Technische Universiteit Delft - EWI**\n<https://goo.gl/maps/nMzwudtx8sS2>"
-  },
-   {
-    "key": "!ewi",
-    "reply": "**Gym: Technische Universiteit Delft - EWI**\n<https://goo.gl/maps/nMzwudtx8sS2>"
-  },
-  {
-    "key": "!whale",
-    "reply": "**Gym: The Whale**\n<https://goo.gl/maps/JzYRD9ZdQmn>"
-  },
-  {
-    "key": "!tiny",
-    "reply": "**Gym: Tiny Castle**\n<https://goo.gl/maps/KFBsFjDAjVp>"
-  },
-  {
-    "key": "!tno",
-    "reply": "**Gym: TNO**\n<https://goo.gl/maps/fE81ibPTcpR2>"
-  },
-  {
-    "key": "!tu delft - christiaan",
-    "reply": "**Gym: TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>"
-  },
-  {
-    "key": "!tu delft christiaan",
-    "reply": "**Gym: TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>"
-  },
-  {
-    "key": "!ch",
-    "reply": "**Gym: TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>"
-  },
-   {
-    "key": "!christiaan",
-    "reply": "**Gym: TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>"
-  },
-  {
-    "key": "!tu delft pyramide",
-    "reply": "**Gym: TU Delft Pyramide**\n<https://goo.gl/maps/HuvMJPUacU92>"
-  },
-  {
-    "key": "!2 haasje",
-    "reply": "**Gym: Twee haasje over spelende kinderen**\n<https://goo.gl/maps/JM76fQWjjC92>"
-  },
-  {
-    "key": "!twee",
-    "reply": "**Gym: Twee haasje over spelende kinderen**\n<https://goo.gl/maps/JM76fQWjjC92>"
-  },
-  {
-    "key": "!uitkijkpunt",
-    "reply": "**Gym: Uitkijkpunt**\n<https://goo.gl/maps/Zj7vPbr4sER2>"
-  },
-  {
-    "key": "!uitlaatstrook",
-    "reply": "**Gym: Uitlaatstrook**\n<https://goo.gl/maps/EGnxgXEJaTq>"
-  },
-  {
-    "key": "!vanons",
-    "reply": "**Gym: VanOns**\n<https://goo.gl/maps/HFxZfao4QRN2>"
-  },
-  {
-    "key": "!veld",
-    "reply": "**Gym: Veld 23**\n<https://goo.gl/maps/AqfHtcSczH82>"
-  },
-  {
-    "key": "!verkeer",
-    "reply": "**Gym: Verkeer**\n<https://goo.gl/maps/Rps8xih9y3v>"
-  },
-  {
-    "key": "!veulentje",
-    "reply": "**Gym: Veulentje**\n<https://goo.gl/maps/LYnU2UDUDpF2>"
-  },
-  {
-    "key": "!voormalige",
-    "reply": "**Gym: Voormalige Universiteitsbibliotheek**\n<https://goo.gl/maps/JVtRcbL2ecx>"
-  },
-  {
-    "key": "!vrouw",
-    "reply": "**Gym: Vrouw Met Bloemen**\n<https://goo.gl/maps/KCUd4GiCAWK2>"
-  },
-  {
-    "key": "!wapenschild",
-    "reply": "**Gym: Wapenschild Holland**\n<https://goo.gl/maps/RpJDxyYk4QM2>"
-  },
-  {
-    "key": "!watertoren",
-    "reply": "**Gym: Watertoren**\n<https://goo.gl/maps/SjjGCspruhM2>"
-  },
-  {
-    "key": "!wijkcentrum",
-    "reply": "**Gym: Wijkcentrum De Parel**\n<https://goo.gl/maps/q9gSyAfqcPq>"
-  },
-  {
-    "key": "!wild",
-    "reply": "**Gym: Wild Bee House**\n<https://goo.gl/maps/Emy3RmYRtYx>"
-  },
-  {
-    "key": "!willem",
-    "reply": "**Gym: Willem van Oranje (Willem de Zwijger)**\n<https://goo.gl/maps/B98NGDnXYcP2>"
-  },
-  {
-    "key": "!wood",
-    "reply": "**Gym: Wood Frog**\n<https://goo.gl/maps/cxT5hEw8vHK2>"
-  },
-  {
-    "key": "!world",
-    "reply": "**Gym: World Art Delft**\n<https://goo.gl/maps/dVww6WFVY9u>"
-  },
-  {
-    "key": "!zeehond",
-    "reply": "**Gym: Zeehond**\n<https://goo.gl/maps/Qm9bmcStv322>"
-  },
-  {
-    "key": "!zoas",
-    "reply": "**Gym: Zoäs Birdhouse**\n<https://goo.gl/maps/gejprGbGVcL2>"
-  },
-  {
-    "key": "!zonnewijzer",
-    "reply": "**Gym: Zonnewijzer**\n<https://goo.gl/maps/U19CmCWSus82>"
-  },
-  {
-    "key": "!zwarte",
-    "reply": "**Gym: Zwarte Zwaan**\n<https://goo.gl/maps/jvts7BQZzC42>"
-  }
-]
+[{
+  "keys": [
+    "!3 variaties op een vierkant 2"
+  ],
+  "reply": "**Gym: 3 Variaties op een vierkant 2**\n<https://goo.gl/maps/WBmE2s8ypYU2>"
+}, {
+  "keys": [
+    "!3 variaties op een vierkant 3"
+  ],
+  "reply": "**Gym: 3 Variaties op een vierkant 3**\n<https://goo.gl/maps/yYa2qy8XJ9p>"
+}, {
+  "keys": [
+    "!artful"
+  ],
+  "reply": "**Gym: Artful Cube**\n<https://goo.gl/maps/DsUvD9NEPLx>"
+}, {
+  "keys": [
+    "!bicycle"
+  ],
+  "reply": "**Gym: Bicycle Love**\n<https://goo.gl/maps/e5CBn5ixBDy>"
+}, {
+  "keys": [
+    "!blue"
+  ],
+  "reply": "**Gym: Blue Birds Honkbal**\n<https://goo.gl/maps/WFiksvKEiR32>"
+}, {
+  "keys": [
+    "!blauw-geel"
+  ],
+  "reply": "**Gym: Blauw-Geel Keramiek Object**\n<https://goo.gl/maps/RFLjygKU6LC2>"
+}, {
+  "keys": [
+    "!blauw geel"
+  ],
+  "reply": "**Gym: Blauw-Geel Keramiek Object**\n<https://goo.gl/maps/RFLjygKU6LC2>"
+}, {
+  "keys": [
+    "!cannon"
+  ],
+  "reply": "**Gym: Cannon**\n<https://goo.gl/maps/on2P21Zky4L2>"
+}, {
+  "keys": [
+    "!climb"
+  ],
+  "reply": "**Gym: Climb the Frogs**\n<https://goo.gl/maps/XWeyq5BrBV22>"
+}, {
+  "keys": [
+    "!color"
+  ],
+  "reply": "**Gym: Color Sculpture**\n<https://goo.gl/maps/kR2QeheLsZz>"
+}, {
+  "keys": [
+    "!coligny"
+  ],
+  "reply": "**Gym: De Coligny**\n<https://goo.gl/maps/fNgWYGgmQQD2>"
+}, {
+  "keys": [
+    "!delftse"
+  ],
+  "reply": "**Gym: De Delftse Pauw**\n<https://goo.gl/maps/CVrYXSJfwf32>"
+}, {
+  "keys": [
+    "!hofstee"
+  ],
+  "reply": "**Gym: De Hofstee**\n<https://goo.gl/maps/kkwdPP9jce82>"
+}, {
+  "keys": [
+    "!kamer"
+  ],
+  "reply": "**Gym: De Kamer van Charilabla 1614**\n<https://goo.gl/maps/jC6osbaZcaG2>"
+}, {
+  "keys": [
+    "!nieuwe"
+  ],
+  "reply": "**Gym: De Nieuwe Lente**\n<https://goo.gl/maps/D1ZGGvH1ED72>"
+}, {
+  "keys": [
+    "!oostpoort",
+    "!op"
+  ],
+  "reply": "**Gym: De Oostpoort**\n<https://goo.gl/maps/APDKGayWZZN2>"
+}, {
+  "keys": [
+    "!r.k."
+  ],
+  "reply": "**Gym: De R.K. Kerk Antonius en Cornelius**\n<https://goo.gl/maps/3rbWddkmpaA2>"
+}, {
+  "keys": [
+    "!rk"
+  ],
+  "reply": "**Gym: De R.K. Kerk Antonius en Cornelius**\n<https://goo.gl/maps/3rbWddkmpaA2>"
+}, {
+  "keys": [
+    "!stier"
+  ],
+  "reply": "**Gym: De Stier**\n<https://goo.gl/maps/Xq77BkHMGbz>"
+}, {
+  "keys": [
+    "!delft central"
+  ],
+  "reply": "**Gym: Delft Central Station**\n<https://goo.gl/maps/a5ypCkobkQ22>"
+}, {
+  "keys": [
+    "!delfts blauwe"
+  ],
+  "reply": "**Gym: Delfts Blauwe Stenen**\n<https://goo.gl/maps/kJSKksZZPwq>"
+}, {
+  "keys": [
+    "!delftse tegelmannen"
+  ],
+  "reply": "**Gym: Delftse Tegelmannen**\n<https://goo.gl/maps/eVA5ufuajzo>"
+}, {
+  "keys": [
+    "!delftshout"
+  ],
+  "reply": "**Gym: Delftshout Levenslust**\n<https://goo.gl/maps/uwD9bsXTb5U2>"
+}, {
+  "keys": [
+    "!delta rescue"
+  ],
+  "reply": "**Gym: Delta Rescue**\n<https://goo.gl/maps/s3nxAxVVu9G2>"
+}, {
+  "keys": [
+    "!dok"
+  ],
+  "reply": "**Gym: Dok Delft Bibliotheek**\n<https://goo.gl/maps/KPuHh3CV2Yk>"
+}, {
+  "keys": [
+    "!door"
+  ],
+  "reply": "**Gym: Door Art**\n<https://goo.gl/maps/74i4MtAuVzy>"
+}, {
+  "keys": [
+    "!dsm"
+  ],
+  "reply": "**Gym: DSM Kunstwerk**\n<https://goo.gl/maps/ZUQ1PpQ5BiL2>"
+}, {
+  "keys": [
+    "!dvv"
+  ],
+  "reply": "**Gym: Dvv Delft Tennis**\n<https://goo.gl/maps/btjqpgqHFY72>"
+}, {
+  "keys": [
+    "!egg"
+  ],
+  "reply": "**Gym: Egg Mosaic**\n<https://goo.gl/maps/SjdaZoAmshn>"
+}, {
+  "keys": [
+    "!engelse"
+  ],
+  "reply": "**Gym: Engelse Drop**\n<https://goo.gl/maps/ho5zAycvXqr>"
+}, {
+  "keys": [
+    "!entrance"
+  ],
+  "reply": "**Gym: Entrance Bieslandse Bos Delft**\n<https://goo.gl/maps/187vzFFiCoE2>"
+}, {
+  "keys": [
+    "!evenwicht"
+  ],
+  "reply": "**Gym: Evenwicht Ijzer**\n<https://goo.gl/maps/DYDKU8bcxCU2>"
+}, {
+  "keys": [
+    "!giant grill"
+  ],
+  "reply": "**Gym: Giant Grill**\n<https://goo.gl/maps/q2gpVLkihu12>"
+}, {
+  "keys": [
+    "!giant tripod"
+  ],
+  "reply": "**Gym: Giant Tripod at Rijkswaterstaat**\n<https://goo.gl/maps/qopEWA7HRMS2>"
+}, {
+  "keys": [
+    "!glasbak"
+  ],
+  "reply": "**Gym: Glasbak Art**\n<https://goo.gl/maps/JUddhCkME9s>"
+}, {
+  "keys": [
+    "!green"
+  ],
+  "reply": "**Gym: Green Chair with White Table**\n<https://goo.gl/maps/htvsSYTW5Qu>"
+}, {
+  "keys": [
+    "!guardian"
+  ],
+  "reply": "**Gym: Guardian Angels**\n<https://goo.gl/maps/JmRrwx7rCQS2>"
+}, {
+  "keys": [
+    "!hamenpoort"
+  ],
+  "reply": "**Gym: Hamenpoort Speelnatuur**\n<https://goo.gl/maps/JTAYj8BcdrR2>"
+}, {
+  "keys": [
+    "!hbsv"
+  ],
+  "reply": "**Gym: HBSV Willem Tell**\n<https://goo.gl/maps/KgiMKZ57CeL2>"
+}, {
+  "keys": [
+    "!hello"
+  ],
+  "reply": "**Gym: Hello Rainbow**\n<https://goo.gl/maps/muPhuRcYTpH2>"
+}, {
+  "keys": [
+    "!blauwe hart"
+  ],
+  "reply": "**Gym: Het Blauwe Hart**\n<https://goo.gl/maps/oTH8eqavW132>"
+}, {
+  "keys": [
+    "!veldje"
+  ],
+  "reply": "**Gym: Het Veldje**\n<https://goo.gl/maps/9cwyqtsBCos>"
+}, {
+  "keys": [
+    "!high"
+  ],
+  "reply": "**Gym: High Water Bridge**\n<https://goo.gl/maps/e4BLwM2FAUm>"
+}, {
+  "keys": [
+    "!highway"
+  ],
+  "reply": "**Gym: Highway Fitness Point**\n<https://goo.gl/maps/oW66Z3MJL3x>"
+}, {
+  "keys": [
+    "!historic"
+  ],
+  "reply": "**Gym: Historic TU Delft Faculty Building**\n<https://goo.gl/maps/cVsDHyduBAT2>"
+}, {
+  "keys": [
+    "!hoven"
+  ],
+  "reply": "**Gym: Hoven Passage**\n<https://goo.gl/maps/QBLQDrRAM1H2>"
+}, {
+  "keys": [
+    "!ichtus"
+  ],
+  "reply": "**Gym: Ichtus**\n<https://goo.gl/maps/gMy63or6ZL62>"
+}, {
+  "keys": [
+    "!kerkpolder"
+  ],
+  "reply": "**Gym: Kerkpolder**\n<https://goo.gl/maps/JKWRc8eAKyA2>"
+}, {
+  "keys": [
+    "!klein"
+  ],
+  "reply": "**Gym: Klein Vrijenban**\n<https://goo.gl/maps/jvKQy7MFp9E2>"
+}, {
+  "keys": [
+    "!klm"
+  ],
+  "reply": "**Gym: KLM Photon Torpedo**\n<https://goo.gl/maps/s2e3P8NbRNo>"
+}, {
+  "keys": [
+    "!knooppunt"
+  ],
+  "reply": "**Gym: Knooppunt 59**\n<https://goo.gl/maps/BhUCRAaHHSH2>"
+}, {
+  "keys": [
+    "!kolom"
+  ],
+  "reply": "**Gym: Kolom Van De Mensenrechten**\n<https://goo.gl/maps/dWKCFHijMbu>"
+}, {
+  "keys": [
+    "!koninkrijkszaal"
+  ],
+  "reply": "**Gym: Koninkrijkszaal Van Jehovah\"s Getuigen**\n<https://goo.gl/maps/pbTxo6DKFXy>"
+}, {
+  "keys": [
+    "!kwakkie"
+  ],
+  "reply": "**Gym: Kwakkie Verf**\n<https://goo.gl/maps/ruBbC96Mk1L2>"
+}, {
+  "keys": [
+    "!library"
+  ],
+  "reply": "**Gym: Library TU Delft**\n<https://goo.gl/maps/VB27CE8egKG2>"
+}, {
+  "keys": [
+    "!maria"
+  ],
+  "reply": "**Gym: Maria van Jesse kerk**\n<https://goo.gl/maps/4csETP8VSq62>"
+}, {
+  "keys": [
+    "!mijlpaal"
+  ],
+  "reply": "**Gym: Mijlpaal**\n<https://goo.gl/maps/Zfj68NhETTS2>"
+}, {
+  "keys": [
+    "!molen de"
+  ],
+  "reply": "**Gym: Molen De Klokkenmaker**\n<https://goo.gl/maps/Dj8Vx6FxbM62>"
+}, {
+  "keys": [
+    "!molen steen"
+  ],
+  "reply": "**Gym: Molen Steen**\n<https://goo.gl/maps/cumNzZkTDkN2>"
+}, {
+  "keys": [
+    "!monument"
+  ],
+  "reply": "**Gym: Monument JC Van Marken**\n<https://goo.gl/maps/hE8sKBJCpFy>"
+}, {
+  "keys": [
+    "!moose"
+  ],
+  "reply": "**Gym: Moose Toy**\n<https://goo.gl/maps/9zBgbusGJbw>"
+}, {
+  "keys": [
+    "!mural"
+  ],
+  "reply": "**Gym: Mural Pootstraat Carthuyzerstraat**\n<https://goo.gl/maps/cAy8ifVBgit>"
+}, {
+  "keys": [
+    "!nep"
+  ],
+  "reply": "**Gym: Nep Ruïne**\n<https://goo.gl/maps/FqJQKw1jnBw>"
+}, {
+  "keys": [
+    "!nieuwe"
+  ],
+  "reply": "**Gym: Nieuwe Kerk**\n<https://goo.gl/maps/muAF9RW6e3U2>"
+}, {
+  "keys": [
+    "!old"
+  ],
+  "reply": "**Gym: Old Town Wall**\n<https://goo.gl/maps/z3XgKDttVxN2>"
+}, {
+  "keys": [
+    "!overkapping"
+  ],
+  "reply": "**Gym: Overkapping Nr 5**\n<https://goo.gl/maps/uo2UzHiYS132>"
+}, {
+  "keys": [
+    "!paddestoelen"
+  ],
+  "reply": "**Gym: Paddestoelen**\n<https://goo.gl/maps/U6PmwMxX5382>"
+}, {
+  "keys": [
+    "!paint"
+  ],
+  "reply": "**Gym: Paint Jobs**\n<https://goo.gl/maps/3LW1TyqmFUT2>"
+}, {
+  "keys": [
+    "!papegaaien"
+  ],
+  "reply": "**Gym: Papegaaien**\n<https://goo.gl/maps/8wwDTDqxxet>"
+}, {
+  "keys": [
+    "!plaquette"
+  ],
+  "reply": "**Gym: Plaquette op bank**\n<https://goo.gl/maps/DjkYPsFRez82>"
+}, {
+  "keys": [
+    "!playground brahmslaan"
+  ],
+  "reply": "**Gym: Playground Brahmslaan**\n<https://goo.gl/maps/EQTAJqWWshL2>"
+}, {
+  "keys": [
+    "!playground straat"
+  ],
+  "reply": "**Gym: Playground Straat van Ormoes**\n<https://goo.gl/maps/LUroxsba6eP2>"
+}, {
+  "keys": [
+    "!playground vivaldilaan"
+  ],
+  "reply": "**Gym: Playground Vivaldilaan**\n<https://goo.gl/maps/Sx4CwasGcju>"
+}, {
+  "keys": [
+    "!prinses"
+  ],
+  "reply": "**Gym: Prinses Irene Tunnel**\n<https://goo.gl/maps/y9tMD3yrRc72>"
+}, {
+  "keys": [
+    "!public"
+  ],
+  "reply": "**Gym: Public Library**\n<https://goo.gl/maps/26GDpDcz1gt>"
+}, {
+  "keys": [
+    "!race"
+  ],
+  "reply": "**Gym: Race Planet Delft**\n<https://goo.gl/maps/TGuxkCTzPBT2>"
+}, {
+  "keys": [
+    "!relief"
+  ],
+  "reply": "**Gym: Reliëf Driemaster Den Hoorn**\n<https://goo.gl/maps/4ThC211kxEm>"
+}, {
+  "keys": [
+    "!royal"
+  ],
+  "reply": "**Gym: Royal Blue Bench**\n<https://goo.gl/maps/quM5tfFo8gH2>"
+}, {
+  "keys": [
+    "!seats"
+  ],
+  "reply": "**Gym: Seats**\n<https://goo.gl/maps/Zo3UYRuvgVF2>"
+}, {
+  "keys": [
+    "!solar"
+  ],
+  "reply": "**Gym: Solar Panel Art Sculpture**\n<https://goo.gl/maps/1HcF9hMXNrL2>"
+}, {
+  "keys": [
+    "!space engineering"
+  ],
+  "reply": "**Gym: Space Engineering Faculty**\n<https://goo.gl/maps/kb4EmbwywYS2>"
+}, {
+  "keys": [
+    "!space rocket"
+  ],
+  "reply": "**Gym: Space Rocket**\n<https://goo.gl/maps/T2so1vhEBGF2>"
+}, {
+  "keys": [
+    "!speelplastiek"
+  ],
+  "reply": "**Gym: Speelplastiek Paarden**\n<https://goo.gl/maps/7TW2opLBW3p>"
+}, {
+  "keys": [
+    "!speeltuintje"
+  ],
+  "reply": "**Gym: Speeltuintje Van Nora en Zoë**\n<https://goo.gl/maps/63f6kBZzr282>"
+}, {
+  "keys": [
+    "!stadhuis"
+  ],
+  "reply": "**Gym: Stadhuis Delft**\n<https://goo.gl/maps/VDDXxhaAm922>"
+}, {
+  "keys": [
+    "!stadsherberg"
+  ],
+  "reply": "**Gym: Stadsherberg De Mol**\n<https://goo.gl/maps/DfJUyD2AebE2>"
+}, {
+  "keys": [
+    "!stalpaert"
+  ],
+  "reply": "**Gym: Stalpaert van der Wiele Statue**\n<https://goo.gl/maps/SWTWpzzBA6p>"
+}, {
+  "keys": [
+    "!station"
+  ],
+  "reply": "**Gym: Station Delft-Zuid**\n<https://goo.gl/maps/UUuZexYicuS2>"
+}, {
+  "keys": [
+    "!statue "
+  ],
+  "reply": "**Gym: Statue Of Prometheus**\n<https://goo.gl/maps/C4Jtr7HKyVB2>"
+}, {
+  "keys": [
+    "!stop"
+  ],
+  "reply": "**Gym: Stop Child Labor Wall Painting**\n<https://goo.gl/maps/uwVfaadDRyQ2>"
+}, {
+  "keys": [
+    "!street"
+  ],
+  "reply": "**Gym: Street Art**\n<https://goo.gl/maps/5ETxB6masnr>"
+}, {
+  "keys": [
+    "!sudden"
+  ],
+  "reply": "**Gym: Sudden Cow**\n<https://goo.gl/maps/tjd9BC6qXyG2>"
+}, {
+  "keys": [
+    "!technische"
+  ],
+  "reply": "**Gym: Technische Universiteit Delft - EWI**\n<https://goo.gl/maps/nMzwudtx8sS2>"
+}, {
+  "keys": [
+    "!ewi"
+  ],
+  "reply": "**Gym: Technische Universiteit Delft - EWI**\n<https://goo.gl/maps/nMzwudtx8sS2>"
+}, {
+  "keys": [
+    "!whale"
+  ],
+  "reply": "**Gym: The Whale**\n<https://goo.gl/maps/JzYRD9ZdQmn>"
+}, {
+  "keys": [
+    "!tiny"
+  ],
+  "reply": "**Gym: Tiny Castle**\n<https://goo.gl/maps/KFBsFjDAjVp>"
+}, {
+  "keys": [
+    "!tno"
+  ],
+  "reply": "**Gym: TNO**\n<https://goo.gl/maps/fE81ibPTcpR2>"
+}, {
+  "keys": [
+    "!tu delft - christiaan"
+  ],
+  "reply": "**Gym: TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>"
+}, {
+  "keys": [
+    "!tu delft christiaan"
+  ],
+  "reply": "**Gym: TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>"
+}, {
+  "keys": [
+    "!ch"
+  ],
+  "reply": "**Gym: TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>"
+}, {
+  "keys": [
+    "!christiaan"
+  ],
+  "reply": "**Gym: TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>"
+}, {
+  "keys": [
+    "!tu delft pyramide"
+  ],
+  "reply": "**Gym: TU Delft Pyramide**\n<https://goo.gl/maps/HuvMJPUacU92>"
+}, {
+  "keys": [
+    "!2 haasje"
+  ],
+  "reply": "**Gym: Twee haasje over spelende kinderen**\n<https://goo.gl/maps/JM76fQWjjC92>"
+}, {
+  "keys": [
+    "!twee"
+  ],
+  "reply": "**Gym: Twee haasje over spelende kinderen**\n<https://goo.gl/maps/JM76fQWjjC92>"
+}, {
+  "keys": [
+    "!uitkijkpunt"
+  ],
+  "reply": "**Gym: Uitkijkpunt**\n<https://goo.gl/maps/Zj7vPbr4sER2>"
+}, {
+  "keys": [
+    "!uitlaatstrook"
+  ],
+  "reply": "**Gym: Uitlaatstrook**\n<https://goo.gl/maps/EGnxgXEJaTq>"
+}, {
+  "keys": [
+    "!vanons"
+  ],
+  "reply": "**Gym: VanOns**\n<https://goo.gl/maps/HFxZfao4QRN2>"
+}, {
+  "keys": [
+    "!veld"
+  ],
+  "reply": "**Gym: Veld 23**\n<https://goo.gl/maps/AqfHtcSczH82>"
+}, {
+  "keys": [
+    "!verkeer"
+  ],
+  "reply": "**Gym: Verkeer**\n<https://goo.gl/maps/Rps8xih9y3v>"
+}, {
+  "keys": [
+    "!veulentje"
+  ],
+  "reply": "**Gym: Veulentje**\n<https://goo.gl/maps/LYnU2UDUDpF2>"
+}, {
+  "keys": [
+    "!voormalige"
+  ],
+  "reply": "**Gym: Voormalige Universiteitsbibliotheek**\n<https://goo.gl/maps/JVtRcbL2ecx>"
+}, {
+  "keys": [
+    "!vrouw"
+  ],
+  "reply": "**Gym: Vrouw Met Bloemen**\n<https://goo.gl/maps/KCUd4GiCAWK2>"
+}, {
+  "keys": [
+    "!wapenschild"
+  ],
+  "reply": "**Gym: Wapenschild Holland**\n<https://goo.gl/maps/RpJDxyYk4QM2>"
+}, {
+  "keys": [
+    "!watertoren"
+  ],
+  "reply": "**Gym: Watertoren**\n<https://goo.gl/maps/SjjGCspruhM2>"
+}, {
+  "keys": [
+    "!wijkcentrum"
+  ],
+  "reply": "**Gym: Wijkcentrum De Parel**\n<https://goo.gl/maps/q9gSyAfqcPq>"
+}, {
+  "keys": [
+    "!wild"
+  ],
+  "reply": "**Gym: Wild Bee House**\n<https://goo.gl/maps/Emy3RmYRtYx>"
+}, {
+  "keys": [
+    "!willem"
+  ],
+  "reply": "**Gym: Willem van Oranje (Willem de Zwijger)**\n<https://goo.gl/maps/B98NGDnXYcP2>"
+}, {
+  "keys": [
+    "!wood"
+  ],
+  "reply": "**Gym: Wood Frog**\n<https://goo.gl/maps/cxT5hEw8vHK2>"
+}, {
+  "keys": [
+    "!world"
+  ],
+  "reply": "**Gym: World Art Delft**\n<https://goo.gl/maps/dVww6WFVY9u>"
+}, {
+  "keys": [
+    "!zeehond"
+  ],
+  "reply": "**Gym: Zeehond**\n<https://goo.gl/maps/Qm9bmcStv322>"
+}, {
+  "keys": [
+    "!zoas"
+  ],
+  "reply": "**Gym: Zoäs Birdhouse**\n<https://goo.gl/maps/gejprGbGVcL2>"
+}, {
+  "keys": [
+    "!zonnewijzer"
+  ],
+  "reply": "**Gym: Zonnewijzer**\n<https://goo.gl/maps/U19CmCWSus82>"
+}, {
+  "keys": [
+    "!zwarte"
+  ],
+  "reply": "**Gym: Zwarte Zwaan**\n<https://goo.gl/maps/jvts7BQZzC42>"
+}]
