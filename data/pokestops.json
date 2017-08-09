@@ -1,7 +1,4 @@
-//pokestops
-[
-  {
-	"key": "!hvl",
-	"reply" : "you have spinned high voltage lab"
-  }
-]
+[{
+  "key": "!hvl",
+  "reply": "you have spinned high voltage lab"
+}]
