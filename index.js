@@ -2,7 +2,7 @@
 
 var Discord = require('discord.js');
 var client = new Discord.Client();
-var https = require("http");
+var https = require("https");
 var settings = require("./settings.json")
 const gyms = require('./data/gyms.json');
 const stops = require('./data/pokestops.json')
