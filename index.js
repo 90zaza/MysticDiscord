@@ -309,7 +309,7 @@ client.on("message", (message) => {
     });
 
     if (gymMatch) {
-      message.reply(gymMatch.reply);
+      message.reply(`**Gym: ${gymMatch.reply}`);
     }
 
     //pokestop spins
