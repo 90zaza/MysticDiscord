@@ -39,7 +39,6 @@ client.on("message", (message) => {
       'Hé hoorde ik daar mijn naam?',
       'Wat wil je weten?',
       'Ja ik ben online :)',
-      'Dame blanche he voor jou ;)',
       'Benieuwd hoe ik er uit zie? https://www.youtube.com/watch?v=9U6LLHjcUyE'
     ]
     const reply = replies[Math.floor(Math.random() * replies.length)];
@@ -449,9 +448,12 @@ client.on("message", (message) => {
         message.reply('Alleen moderators kunnen berichten verwijderen')
       }
       message.delete()
+    } else {
+      if (message.content === "!test") {
+        message.reply("Alles lijkt te werken!")
+      }
+      ;
     }
-    else {
-        if (message.content === "!test") {message.reply("Alles lijkt te werken!")};}
   }
 });
 
