@@ -1,5 +1,5 @@
 {
   "token": "MzQyOTkxOTg2ODcxMjM4NjU3.DGx8eQ.qwEG3dUWqE6Hwn2-2-EXvExgbY0",
-  "prefix": "!",
+  "prefix": ["!", "/"],
   "moderator": "319380867438870528"
 }
