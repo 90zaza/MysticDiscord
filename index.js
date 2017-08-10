@@ -179,8 +179,8 @@ client.on("message", (message) => {
       }
 
       // filter for 1.96 and 1.4
-      var verystrong = def.filter(function(d){ return d.mult > 1.5; });
-      var strong = def.filter(function(d){ return (d.mult > 1.1 && d.mult < 1.5); });
+      var verystrong = def.filter( (d) => { return d.mult > 1.5; });
+      var strong = def.filter( (d) => { return (d.mult > 1.1 && d.mult < 1.5); });
 
       // compose message
       var reply = '**#' + mon.number + ' - ' + text.capitalizeWord(mon.name) + '** [' + mon.type.join(', ') + ']\nWeakness:';
@@ -195,8 +195,8 @@ client.on("message", (message) => {
         reply += ']';
       }
       reply += '\nWonder CP: ' + mon.wonder[0] + ' - ' + mon.wonder[1] + '\n';
-      reply += 'Attacks: ' + mon.attacks[0] + ' & ' + mon.attacks[1] + '\n';
-//      reply += 'I recommend you battle ' + text.capitalizeWord(mon.name) + ' with a group of ' + mon.recplayers + ' trainers.';
+      reply += '```Attacks: ' + mon.attacks[0] + ' & ' + mon.attacks[1] + '```\n';
+      reply += 'I recommend you battle ' + text.capitalizeWord(mon.name) + ' with a group of ' + mon.recplayers + ' trainers.';
 
       message.reply(reply);
     }
