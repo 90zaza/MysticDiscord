@@ -1,0 +1,234 @@
+[
+  {
+    "name": "venusaur",
+    "number":  3,
+    "type": ["grass", "poison"],
+    "wonder": [1434, 1467],
+    "attacks": ["Vine Whip", "Solar Beam"],
+    "recplayers": 0
+  },
+  {
+    "name": "charizard",
+    "number":  6,
+    "type": ["fire", "flying"],
+    "wonder": [1498, 1498],
+    "attacks": ["Fire Spin", "Overheat"],
+    "recplayers": 0
+  },
+  {
+    "name": "blastoise",
+    "number":  9,
+    "type": ["water"],
+    "wonder": [1280, 1309],
+    "attacks": ["Water Gun", "Hydro Pump"],
+    "recplayers": 0
+  },
+  {
+    "name": "alakazam",
+    "number":  65,
+    "type": ["psychic"],
+    "wonder": [1608, 1649],
+    "attacks": ["Psycho Cut", "Future Sight"],
+    "recplayers": 0
+  },
+  {
+    "name": "machamp",
+    "number":  68,
+    "type": ["fighting"],
+    "wonder": [1612, 1649],
+    "attacks": ["Counter", "Dynamic Punch"],
+    "recplayers": 0
+  },
+  {
+    "name": "muk",
+    "number":  89,
+    "type": ["poison"],
+    "wonder": [1517, 1548],
+    "attacks": ["Poison Jab", "Gunk Shot"],
+    "recplayers": 0
+  },
+  {
+    "name": "gengar",
+    "number":  94,
+    "type": ["ghost", "poison"],
+    "wonder": [1454, 1496],
+    "attacks": ["Hex", "Shadow Ball"],
+    "recplayers": 0
+  },
+  {
+    "name": "magikarp",
+    "number":  103,
+    "type": ["water"],
+    "wonder": [119, 125],
+    "attacks": ["Splash", "Struggle"],
+    "recplayers": 0
+  },
+  {
+    "name": "weezing",
+    "number":  136,
+    "type": ["poison"],
+    "wonder": [1218, 1247],
+    "attacks": ["Infestation", "Sludge Bomb"],
+    "recplayers": 0
+  },
+  {
+    "name": "rhydon",
+    "number":  112,
+    "type": ["ground", "rock"],
+    "wonder": [1849, 1886],
+    "attacks": ["Mud Slap", "Earthquake/Stone Edge"],
+    "recplayers": 0
+  },
+  {
+    "name": "electabuzz",
+    "number":  125,
+    "type": ["electric"],
+    "wonder": [1222, 1255],
+    "attacks": ["Thunder Shock", "Thunderbolt"],
+    "recplayers": 0
+  },
+  {
+    "name": "magmar",
+    "number":  129,
+    "type": ["fire"],
+    "wonder": [1254, 1288],
+    "attacks": ["Ember", "Flamethrower"],
+    "recplayers": 0
+  },
+  {
+    "name": "exeggutor",
+    "number":  129,
+    "type": ["grass", "psychic"],
+    "wonder": [1628, 1666],
+    "attacks": ["Bullet Seed", "Solar Beam"],
+    "recplayers": 0
+  },
+  {
+    "name": "lapras",
+    "number":  144,
+    "type": ["ice", "1487"],
+    "wonder": [1459, 1676],
+    "attacks": ["Frost Breath", "Blizzard"],
+    "recplayers": 0
+  },
+  {
+    "name": "vaporeon",
+    "number":  134,
+    "type": ["water"],
+    "wonder": [1769, 1804],
+    "attacks": ["Water Gun", "Hydro Pump"],
+    "recplayers": 0
+  },
+  {
+    "name": "jolteon",
+    "number":  135,
+    "type": ["electric"],
+    "wonder": [1520, 1560],
+    "attacks": ["Thunder Shock", "Thunderbolt"],
+    "recplayers": 0
+  },
+  {
+    "name": "flareon",
+    "number":  144,
+    "type": ["fire"],
+    "wonder": [1619, 1659],
+    "attacks": ["Fire Spin", "Overheat"],
+    "recplayers": 0
+  },
+  {
+    "name": "snorlax",
+    "number":  143,
+    "type": ["normal"],
+    "wonder": [1885, 1917],
+    "attacks": ["Zen Headbutt", "Heavy Slam"],
+    "recplayers": 0
+  },
+  {
+    "name": "articuno",
+    "number":  144,
+    "type": ["ice", "flying"],
+    "wonder": [1664, 1676],
+    "attacks": ["Frost Breath", "Blizzard"],
+    "recplayers": 0
+  },
+  {
+    "name": "zapdos",
+    "number":  145,
+    "type": ["electric", "flying"],
+    "wonder": [1861, 1902],
+    "attacks": ["Charge Beam", "Zap Cannon"],
+    "recplayers": 0
+  },
+  {
+    "name": "moltres",
+    "number":  146,
+    "type": ["fire", "flying"],
+    "wonder": [1828, 1870],
+    "attacks": ["Fire Spin ", "Overheat"],
+    "recplayers": 0
+  },
+  {
+    "name": "quilava",
+    "number":  156,
+    "type": ["fire"],
+    "wonder": [821, 847],
+    "attacks": [],
+    "recplayers": 0
+  },
+  {
+    "name": "croconaw",
+    "number":  159,
+    "type": ["water"],
+    "wonder": [888, 913],
+    "attacks": [],
+    "recplayers": 0
+  },
+  {
+    "name": "bayleef",
+    "number":  153,
+    "type": ["grass"],
+    "wonder": [719, 740],
+    "attacks": [],
+    "recplayers": 0
+  },
+  {
+    "name": "shuckle",
+    "number":  213,
+    "type": ["bug", "rock"],
+    "wonder": [165, 171],
+    "attacks": ["Rock Throw", "Stone Edge"],
+    "recplayers": 0
+  },
+  {
+    "name": "tyranitar",
+    "number":  248,
+    "type": ["dark", "rock"],
+    "wonder": [2055, 2097],
+    "attacks": ["Bite", "Stone Edge"],
+    "recplayers": 0
+  },
+  {
+    "name": "lugia",
+    "number":  249,
+    "type": ["psychic", "flying"],
+    "wonder": [2023, 2053],
+    "attacks": ["Extrasensory", "Sky Attack/Future Sight"],
+    "recplayers": 0
+  },
+  {
+    "name": "ho-oh",
+    "number":  250,
+    "type": ["fire", "flying"],
+    "wonder": [2613, 2657],
+    "attacks": [],
+    "recplayers": 0
+  },
+  {
+    "name": "missingno",
+    "number":  "",
+    "type": ["normal"],
+    "wonder": ["0x5E", "0xB5"],
+    "attacks": [],
+    "recplayers": 0
+  }
+]

@@ -6,10 +6,14 @@ var https = require("http");
 var settings = require("./settings.json")
 const gyms = require('./data/gyms.json');
 const stops = require('./data/pokestops.json')
+const pokemon = require('./data/pokemon.json');
+const defense = require('./data/defense.json')
 client.login(settings.token);
 
 var express = require('express');
 var app = express();
+
+const text = require('./helpers/text.js');
 
 app.set('port', (process.env.PORT || 9222));
 
@@ -45,152 +49,6 @@ client.on("message", (message) => {
     message.reply("Zie hier een tabel met type effectiviteit:", {
       file: "https://image.ibb.co/mxRthv/Untitled.png"
     });
-    message.delete()
-  } else if (message.content === '!charizard') {
-    message.reply(
-      '**#3 - Charizard** [Fire Flying]\nweakness: x1.96 [Rock] x1.4: [Electric Water]\nWonder CP: 1498 - 1535 \n```Att: Fire Spin Overheat```'
-    );
-    message.delete()
-  } else if (message.content === '!venusaur') {
-    message.reply(
-      '**#6 - Venusaur** [Grass Poison]\nweakness: x1.4: [Fire Flying Ice Psychic]\nWonder CP: 1434 - 1467 \n```Att: Vine Whip Solar Beam```'
-    );
-    message.delete()
-  } else if (message.content === '!blastoise') {
-    message.reply(
-      '**#9 - Blastoise** [Water]\nweakness: x1.4: [electric Grass]\nWonder CP: 1280 - 1309 \n```Att: Water Gun Hydro Pump```'
-    );
-    message.delete()
-  } else if (message.content === '!alakazam') {
-    message.reply(
-      '**#65 - Alakazam** [Psychic]\nweakness: x1.4: [dark bug]\nWonder CP: 1608 - 1649 \n```Att: Psycho Cut  Future Sight```'
-    );
-    message.delete()
-  } else if (message.content === '!machamp') {
-    message.reply(
-      '**#68 - Machamp** [Fighting]\nweakness: x1.4: [Fairy Flying Psychic]\nWonder CP: 1612 - 1649 \n```Att: Counter   Dynamic Punch```'
-    );
-    message.delete()
-  } else if (message.content === '!muk') {
-    message.reply(
-      '**#89 - Muk** [Poison]\nweakness: x1.4: [Ground Psychic]\nWonder CP: 1517 - 1548 \n```Att&Def: Poison Jab Gunk Shot```'
-    );
-    message.delete()
-  } else if (message.content === '!gengar') {
-    message.reply(
-      '**#94 - Gengar** [Ghost Poison]\nweakness: x1.4: [Dark Ground Ghost Psychic]\nWonder CP: 1454 - 1496 \n```Att: Hex  Shadow Ball```'
-    );
-    message.delete()
-  } else if (message.content === '!magikarp') {
-    message.reply(
-      '**#103 - Magikarp** [Water]\nweakness: alles\nWonder CP: 119 - 125 \n```Att: Splash  Struggle```'
-    );
-    message.delete()
-  } else if (message.content === '!weezing') {
-    message.reply(
-      '**#136 - Weezing** [Poison]\nweakness: x1.4: [Ground Psychic]\nWonder CP: 1218 - 1247 \n```Att&Def: Infestation Sludge Bomb```'
-    );
-    message.delete()
-  } else if (message.content === '!rhydon') {
-    message.reply(
-      '**#112 - Rhydon** [Ground Rock]\nweakness: x1.96 [Grass Water] x1.4: [Ground Steel Fighting Ice]\nWonder CP: 1849 - 1886 \n```Att: Mud Slap Earthquake/Stone Edge```'
-    );
-    message.delete()
-  } else if (message.content === '!electabuzz') {
-    message.reply(
-      '**#125 - Electabuzz** [Electric]\nweakness: x1.4: [Ground]\nWonder CP: 1222 - 1255 \n```Att: Thunder Shock Thunderbolt\n```'
-    );
-    message.delete()
-  } else if (message.content === '!magmar') {
-    message.reply(
-      '**#136 - Magmar** [Fire]\nweakness: x1.4: [Rock Ground Water]\nWonder CP: 1254 - 1288 \n```Att: Ember Flamethrower```'
-    );
-    message.delete()
-  } else if (message.content === '!exeggutor') {
-    message.reply(
-      '**#129 - Exeggutor** [Grass Psychic]\nweakness: x1.96 [Bug] x1.4: [Fire Dark Flying oison Ghost Ice]\nWonder CP: 1628 - 1666 \n```Att: Bullet Seed   Solar Beam\nDef: Extrasensory Solar Beam```'
-    );
-    message.delete()
-  } else if (message.content === '!lapras') {
-    message.reply(
-      '**#131 - Lapras** [Ice Water]\nweakness: x1.4: [electric Grass Rock Fighting]\nWonder CP: 1459 - 1487 \n```Att: Frost Breath  Blizzard\n\nDef: Frost Breath  Ice Beam```'
-    );
-    message.delete()
-  } else if (message.content === '!vaporeon') {
-    message.reply(
-      '**#134 - Vaporeon** [Water]\nweakness: x1.4: [electric Grass]\nWonder CP: 1769 - 1804 \n```Att: Water Gun  Hydro Pump```'
-    );
-    message.delete()
-  } else if (message.content === '!jolteon') {
-    message.reply(
-      '**#135 - Jolteon** [Ground]\nweakness: x1.4: []\nWonder CP: 1520 - 1560 \n```Att: Thunder Shock Thunderbolt\n\nDef: Volt Switch Discharge```'
-    );
-    message.delete()
-  } else if (message.content === '!flareon') {
-    message.reply(
-      '**#136 - Flareon** [Fire]\nweakness: x1.4: [Rock Ground Water]\nWonder CP: 1619 - 1659 \n```Att: Fire Spin Overheat\n\nDef: Fire Spin Flamethrower```'
-    );
-    message.delete()
-  } else if (message.content === '!snorlax') {
-    message.reply(
-      '**#143 - Snorlax** [Normal]\nweakness: x1.4: [Fighting]\nWonder CP: 1885 - 1917 \n```Def: Zen Headbutt  Heavy Slam```'
-    );
-    message.delete()
-  } else if (message.content === '!articuno') {
-    message.reply(
-      '**#144 - Articuno** [Ice Flying]\nweakness: x1.96: [Rock] x1.4: [Electric Fire Steel]\nWonder CP: 1644 - 1676 \n```Att: Frost Breath    Blizzard```'
-    );
-    message.delete()
-  } else if (message.content === '!zapdos') {
-    message.reply(
-      '**#145 - Zapdos** [Electric Flying]\nweakness: x1.4: [Rock Ice]\nWonder CP: 1861 - 1902 \n```Att: Charge Beam    Zap Cannon```'
-    );
-    message.delete()
-  } else if (message.content === '!moltres') {
-    message.reply(
-      '**#146 - Moltres** [Fire Flying]\nweakness: x1.96: [Rock] x1.4: [Water]\nWonder CP: 1828 - 1870 \n```Att: Fire Spin    Overheat```'
-    );
-    message.delete()
-  } else if (message.content === '!quilava') {
-    message.reply(
-      '**#156 - Quilava** [Fire]\nweakness: x1.4: [Rock Ground Water]\nWonder CP: 821 - 847'
-    );
-    message.delete()
-  } else if (message.content === '!croconaw') {
-    message.reply(
-      '**#159 - Croconaw** [Water]\nweakness: x1.4: [electric Grass]\nWonder CP: 888 - 913'
-    );
-    message.delete()
-  } else if (message.content === '!bayleef') {
-    message.reply(
-      '**#153 - Bayleef** [Grass]\nweakness: x1.4: [Bug Fire Flying Poison Ice]\nWonder CP: 719 - 740'
-    );
-    message.delete()
-  } else if (message.content === '!shuckle') {
-    message.reply(
-      '**#213 - Shuckle** [Bug Rock]\nweakness: x1.4: [Rock Steel Water]\nWonder CP: 165 - 171 \n```Att: Rock Throw Stone Edge```\nIk geef verder nog hetvolgende advies:\nDONT FUCKLE WITH SHUCKLE'
-    );
-    message.delete()
-  } else if (message.content === '!tyranitar' || message.content ===
-    '!ttar') {
-    message.reply(
-      '**#248 - Tyranitar** [Dark Rock]\nweakness: x1.96: [Fighting] x1.4: [Bug Grass Fairy Ground Steel Water]\nWonder CP: 2055 - 2097 \n```Att: Bite Stone Edge```'
-    );
-    message.delete()
-  } else if (message.content === '!lugia') {
-    message.reply(
-      '**#249 - Lugia** [Psychic Flying]\nweakness: x1.4: [Electric Rock Dark Ghost Ice]\nWonder CP: 2023 - 2053 \n```Att: Extrasensory    Sky Attack \nAtt: Extrasensory    Future Sight```'
-    );
-    message.delete()
-  } else if (message.content === '!ho-oh' || message.content === '!ho oh') {
-    message.reply(
-      '**#250 - Ho-Oh** [Fire Flying]\nweakness: x1.96: [Rock] x1.4: [Electric Water]\nWonder CP: 2613 - 2657 \n```Att: ???```'
-    );
-    message.delete()
-  } else if (message.content === '!missingno') {
-    message.reply(
-      '**# けつばん - Missingno** [Normal 999]\nweakness: x1.4: [Fighting]\nWonder CP: 0x5E - 0xB5  \n```Att: Water Gun Sky Attack```\n'
-    );
     message.delete()
   } else
 
@@ -297,6 +155,53 @@ client.on("message", (message) => {
     );
     message.delete()
   } else {
+
+    const mon = pokemon.find((p) => {
+      if (!p.name) {
+        console.log('pokemon has no key', p);
+        return;
+      }
+
+      return message.content.startsWith("!" + p.name);
+    });
+
+
+    if (mon) {
+
+      // dynamically compute defense values for type combinations
+      var def = JSON.parse(JSON.stringify(defense[mon.type[0]]));
+      for( var i = 1; i < mon.type.length; i++ )
+      {
+        for( var j = 0; j < def.length; j++ )
+        {
+          def[j].mult *= defense[mon.type[i]][j].mult;
+        }
+      }
+
+      // filter for 1.96 and 1.4
+      var verystrong = def.filter(function(d){ return d.mult > 1.5; });
+      var strong = def.filter(function(d){ return (d.mult > 1.1 && d.mult < 1.5); });
+
+      // compose message
+      var reply = '**#' + mon.number + ' - ' + text.capitalizeWord(mon.name) + '** [' + mon.type.join(', ') + ']\nWeakness:';
+      if(verystrong.length > 0){
+        reply += 'x1.96: [';
+        for( var i = 0; i < verystrong.length; i++ ){ reply += verystrong[i].type; if(i < verystrong.length - 1){ reply += ", ";} }
+        reply += ']';
+      }
+      if(strong.length > 0){
+        reply += 'x1.4: [';
+        for( var i = 0; i < strong.length; i++ ){ reply += strong[i].type; if(i < strong.length - 1){ reply += ", ";} }
+        reply += ']';
+      }
+      reply += '\nWonder CP: ' + mon.wonder[0] + ' - ' + mon.wonder[1] + '\n';
+      reply += 'Attacks: ' + mon.attacks[0] + ' & ' + mon.attacks[1] + '\n';
+//      reply += 'I recommend you battle ' + text.capitalizeWord(mon.name) + ' with a group of ' + mon.recplayers + ' trainers.';
+
+      message.reply(reply);
+    }
+
+
     const gymMatch = gyms.find((gym) => {
       if (!gym.key) {
         console.log('gym has no key', gym);
