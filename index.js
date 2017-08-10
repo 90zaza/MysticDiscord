@@ -30,7 +30,19 @@ client.on('ready', () => {
 client.on("message", (message) => {
   let prefix = settings.prefix;
   let moderator = settings.moderator;
+  if (message.content.includes('blanche')) {
+    const replies = [
+      'Hé hoorde ik daar mijn naam?',
+      'Wat wil je weten?',
+      'Ja ik ben online :)',
+      'Dame blanche he voor jou ;)'
+    ]
+    const reply = replies[Math.floor(Math.random() * replies.length)];
+    message.reply(reply);
+  }
+
   if (!message.content.startsWith(prefix) || message.author.bot) return;
+
 
   //help
   if (message.content === '!help') {
@@ -325,14 +337,16 @@ client.on("message", (message) => {
     if (message.content.startsWith('!add')) {
       if (message.member.roles.has(moderator)) {
         let member = message.mentions.members.first();
-        let role = message.guild.roles.find("name", "makingdelftblueagain");
+        let role = message.guild.roles.find("name",
+          "makingdelftblueagain");
         member.addRole(role).catch(console.error);
         message.channel.send('Welkom ' + member +
           ', je bent nu officieel toegevoegd! In het kanaal #welkom is te lezen hoe deze discord werkt, lees dat dus vooral eens door! ;)'
         );
       } else {
         message.reply(
-          'Leden verifieren kan alleen door een moderator worden gedaan')
+          'Leden verifieren kan alleen door een moderator worden gedaan'
+        )
       }
       message.delete()
     } else
