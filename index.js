@@ -6,7 +6,7 @@ var https = require("https");
 var settings = require("./settings.json")
 const gyms = require('./data/gyms.json');
 const stops = require('./data/pokestops.json')
-const pokemon = require('./data/pokemon.json');
+const pokemons = require('./data/pokemons.json');
 const defense = require('./data/defense.json')
 client.login(settings.token);
 
@@ -153,25 +153,27 @@ client.on("message", (message) => {
     message.delete()
   } else {
 
-    const mon = pokemon.find((p) => {
-      if (!p.name) {
+    const pokemon = pokemons.find((p) => {
+      if (!p.keys) {
         console.log('pokemon has no key', p);
         return;
       }
 
-      return msg.startsWith(p.name);
+      return p.keys.find((key) => {
+        return msg == key;
+      });
     });
 
 
-    if (mon) {
+    if (pokemon) {
 
       // dynamically compute defense values for type combinations
-      var def = JSON.parse(JSON.stringify(defense[mon.type[0]]));
-      for( var i = 1; i < mon.type.length; i++ )
+      var def = JSON.parse(JSON.stringify(defense[pokemon.type[0]]));
+      for( var i = 1; i < pokemon.type.length; i++ )
       {
         for( var j = 0; j < def.length; j++ )
         {
-          def[j].mult *= defense[mon.type[i]][j].mult;
+          def[j].mult *= defense[pokemon.type[i]][j].mult;
         }
       }
 
@@ -180,20 +182,24 @@ client.on("message", (message) => {
       var strong = def.filter( (d) => { return (d.mult > 1.1 && d.mult < 1.5); });
 
       // compose message
-      var reply = '**#' + mon.number + ' - ' + text.capitalizeWord(mon.name) + '** [' + mon.type.join(', ') + ']\nWeakness:';
+      var reply = '**#' + pokemon.number + ' - ' + pokemon.name + '** [' + pokemon.type.join(', ') + ']\nWeakness:';
       if(verystrong.length > 0){
-        reply += 'x1.96: [';
+        reply += ' x1.96: [';
         for( var i = 0; i < verystrong.length; i++ ){ reply += verystrong[i].type; if(i < verystrong.length - 1){ reply += ", ";} }
         reply += ']';
       }
       if(strong.length > 0){
-        reply += 'x1.4: [';
+        reply += ' x1.4: [';
         for( var i = 0; i < strong.length; i++ ){ reply += strong[i].type; if(i < strong.length - 1){ reply += ", ";} }
         reply += ']';
       }
-      reply += '\nWonder CP: ' + mon.wonder[0] + ' - ' + mon.wonder[1] + '\n';
-      reply += '```Attacks: ' + mon.attacks[0] + ' & ' + mon.attacks[1] + '```\n';
-      reply += 'I recommend you battle ' + text.capitalizeWord(mon.name) + ' with a group of ' + mon.recplayers + ' trainers.';
+      if(pokemon.recplayers > 0 ){ reply += '\nI recommend you battle ' + pokemon.name + ' with a group of ' + pokemon.recplayers + ' trainers.'; }
+      // needs to be computed
+      //reply += '\nWonder CP: ' + pokemon.wonder[0] + ' - ' + pokemon.wonder[1] + '\n';
+      if(pokemon.attacks.length || pokemon.defence.length){ reply += '```'; }
+      if(pokemon.attacks.length){ reply += 'Best Attacks: ' + pokemon.attacks[0] + ' & ' + pokemon.attacks[1] + '\n'; }
+      if(pokemon.defence.length){ reply += 'Best Defense: ' + pokemon.defence[0] + ' & ' + pokemon.defence[1] + '\n'; }
+      if(pokemon.attacks.length || pokemon.defence.length){ reply += '```'; }
 
       message.reply(reply);
     }
