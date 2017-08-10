@@ -11,6 +11,7 @@ client.login(settings.token);
 var express = require('express');
 var app = express();
 
+
 app.set('port', (process.env.PORT || 9222));
 
 app.use(express.static(__dirname + '/public'));
@@ -24,8 +25,11 @@ app.listen(app.get('port'), function() {
 });
 
 client.on('ready', () => {
+  client.user.setGame('Pokemon Go');
   console.log('Blanche: I am ready!');
 });
+
+
 
 client.on("message", (message) => {
   let prefix = settings.prefix;
