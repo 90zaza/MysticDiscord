@@ -39,7 +39,8 @@ client.on("message", (message) => {
       'Hé hoorde ik daar mijn naam?',
       'Wat wil je weten?',
       'Ja ik ben online :)',
-      'Dame blanche he voor jou ;)'
+      'Dame blanche he voor jou ;)',
+      'Benieuwd hoe ik er uit zie? https://www.youtube.com/watch?v=9U6LLHjcUyE'
     ]
     const reply = replies[Math.floor(Math.random() * replies.length)];
     message.reply(reply);
