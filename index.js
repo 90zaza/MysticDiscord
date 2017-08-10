@@ -328,7 +328,7 @@ client.on("message", (message) => {
         let role = message.guild.roles.find("name", "makingdelftblueagain");
         member.addRole(role).catch(console.error);
         message.channel.send('Welkom ' + member +
-          ', je bent nu officieel toegevoegd! In het kanaal #welkom is te lezen hoe deze discord werkt, lees dat dus vooral eens door! ;)'
+          ', je bent nu officieel toegevoegd! In het kanaal #welkom is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, zodat we weten wie iedereen is;)'
         );
       } else {
         message.reply(
