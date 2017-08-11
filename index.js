@@ -29,22 +29,6 @@ client.on('ready', () => {
   console.log('Blanche: I am ready!');
 });
 
-
-
-client.on("message", (message) => {
-  let prefix = settings.prefix;
-  let moderator = settings.moderator;
-  if (message.content.includes('blanche')) {
-    const replies = [
-      'Hé hoorde ik daar mijn naam?',
-      'Wat wil je weten?',
-      'Ja ik ben online :)',
-      'Benieuwd hoe ik er uit zie? https://www.youtube.com/watch?v=9U6LLHjcUyE'
-    ]
-    const reply = replies[Math.floor(Math.random() * replies.length)];
-    message.reply(reply);
-  }
-
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 
