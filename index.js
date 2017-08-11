@@ -15,13 +15,8 @@ var app = express();
 app.set('port', (process.env.PORT || 9222));
 
 app.use(express.static(__dirname + '/public'));
-app.get('/msg', function(req, res) {
-  const channel = client.get("name", "My Server").defaultChannel;
-  client.sendMessage(channel, "Hello");
-})
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
-
 
   setInterval(function() {
     https.get("https://discord-pokemon.herokuapp.com/helloworld.html");
