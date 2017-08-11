@@ -15,13 +15,8 @@ var app = express();
 app.set('port', (process.env.PORT || 9222));
 
 app.use(express.static(__dirname + '/public'));
-app.get('/msg', function(req, res) {
-  const channel = client.get("name", "My Server").defaultChannel;
-  client.sendMessage(channel, "Hello");
-})
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
-
 
   setInterval(function() {
     https.get("https://discord-pokemon.herokuapp.com/helloworld.html");
@@ -35,11 +30,15 @@ client.on('ready', () => {
 client.on("msg", (msg) => {
   let prefix = settings.prefix;
   let moderator = settings.moderator;
-  if (!msg.content.startsWith(prefix) || msg.author.bot) return;
+
+  const havePrefix = prefixs.find((prefix) => {
+    return msg.content.startsWith(prefix);
+  })
+  if (!havePrefix || msg.author.bot) return;
 
   //help
   if (msg.content === '!help') {
-    msg.reply(
+    msg.channel.send(
       "Hey! Mijn naam is Blanche, en ik ben de teamleider van het beste team, Mystic! Naast het appraisen van jouw pokemon in game, kan ik jullie ook op discord assistentie verlenen. Ik reageer onder andere op de volgende commando's zolang ze zonder hoofdletters geschreven zijn:\n![pokemon]      voor info over raid bosses\n![gym naam]    voor de locatie van een gym\n!+[regio]           zie #speler_registratie"
     );
     msg.delete()
