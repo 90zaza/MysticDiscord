@@ -28,9 +28,10 @@ client.on('ready', () => {
   client.user.setGame('Pokemon Go');
   console.log('Blanche: I am ready!');
 });
-
+client.on("message", (message) => {
+  let prefix = settings.prefix;
+  let moderator = settings.moderator;
   if (!message.content.startsWith(prefix) || message.author.bot) return;
-
 
   //help
   if (message.content === '!help') {
