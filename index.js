@@ -45,7 +45,7 @@ client.on("msg", (msg) => {
     msg.delete()
   } else
 
-  // Request pokemon info
+  // Request pokemon info test
   if (msg.content === '!type') {
     msg.reply("Zie hier een tabel met type effectiviteit:", {
       file: "https://image.ibb.co/mxRthv/Untitled.png"
