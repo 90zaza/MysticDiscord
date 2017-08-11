@@ -27,11 +27,15 @@ client.on('ready', () => {
   client.user.setGame('Pokemon Go');
   console.log('Blanche: I am ready!');
 });
-client.on("msg", (msg) => {
-  let prefix = settings.prefix;
+client.on("message", (msg) => {
+  let prefixs = settings.prefixs;
   let moderator = settings.moderator;
-  if (!msg.content.startsWith(prefix) || msg.author.bot) return;
-  
+
+  const havePrefix = prefixs.find((prefix) => {
+    return msg.content.startsWith(prefix);
+  })
+  if (!havePrefix || msg.author.bot) return;
+
   //help
   if (msg.content === '!help') {
     msg.reply(
