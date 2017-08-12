@@ -759,6 +759,125 @@
     "defence": [],
     "recplayers": 0
   },
+  { "keys": ["ponita"],
+    "name": "Ponita",
+    "number": 77,
+    "type": ["fire"],
+    "stats": [170, 132, 100],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["rapidash"],
+    "name": "Rapidash",
+    "number": 78,
+    "type": ["fire"],
+    "stats": [207, 167, 130],
+    "attacks": ["Fire Spin", "Fire Blast"],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["slowpoke"],
+    "name": "Slowpoke",
+    "number": 79,
+    "type": ["water", "psychic"],
+    "stats": [109, 109, 180],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["slowbro", "slobro"],
+    "name": "Slowbro",
+    "number": 80,
+    "type": ["water", "psychic"],
+    "stats": [177, 194, 190],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["magnemite"],
+    "name": "Magnemite",
+    "number": 81,
+    "type": ["electic", "steel"],
+    "stats": [165, 128, 50],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["magneton"],
+    "name": "Magneton",
+    "number": 82,
+    "type": ["electric", "steel"],
+    "stats": [223, 182, 100],
+    "attacks": ["Spark", "Zap Cannon"],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["farfetch", "farfetchd", "farfetch'd", "farfetcht"],
+    "name": "Farfetch'd",
+    "number": 83,
+    "type": ["normal", "flying"],
+    "stats": [124, 118, 104],
+    "attacks": ["Fury Cutter", "Leaf Blade"],
+    "defence": ["Fury Cutter", "Leaf Blade"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["doduo"],
+    "name": "Doduo",
+    "number": 84,
+    "type": ["normal", "flying"],
+    "stats": [158, 88, 70],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["dodrio"],
+    "name": "Dodrio",
+    "number": 85,
+    "type": ["normal", "flying"],
+    "stats": [218, 145, 120],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["seel", "seal"],
+    "name": "Seel",
+    "number": 86,
+    "type": ["water"],
+    "stats": [85, 128, 130],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["dewgong"],
+    "name": "Dewgong",
+    "number": 87,
+    "type": ["water", "ice"],
+    "stats": [139, 184, 180],
+    "attacks": ["Frost Breath", "Blizzard"],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["grimer"],
+    "name": "Grimer",
+    "number": 88,
+    "type": ["poison"],
+    "stats": [135, 90, 160],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
   {
     "keys": ["muk"],
     "name": "Muk",
@@ -768,6 +887,46 @@
     "attacks": ["Poison Jab", "Gunk Shot"],
     "defence": [],
     "recplayers": 2
+  },
+  {
+    "keys": ["shellder", "shelder"],
+    "name": "Shellder",
+    "number": 90,
+    "type": ["water"],
+    "stats": [116, 168, 60],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["cloyster", "cloister"],
+    "name": "Cloyster",
+    "number": 91,
+    "type": ["water", "ice"],
+    "stats": [186, 323, 100],
+    "attacks": ["Frost Breath", "Avalanche"],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["gastly", "ghastly"],
+    "name": "Gastly",
+    "number": 92,
+    "type": ["ghost", "poison"],
+    "stats": [186, 70, 60],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["hounter", "haunter"],
+    "name": "Haunter",
+    "number": 93,
+    "type": ["ghost", "poison"],
+    "stats": [223, 112, 90],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
   },
   {
     "keys": ["gengar"],
@@ -780,7 +939,88 @@
     "recplayers": 1
   },
   {
-    "keys": ["exeggutor"],
+    "keys": ["onix"],
+    "name": "Onix",
+    "number": 95,
+    "type": ["rock", "ground"],
+    "stats": [85, 288, 70],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["drowzee"],
+    "name": "Drowzee",
+    "number": 96,
+    "type": ["psychic"],
+    "stats": [89, 158, 120],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["hypno"],
+    "name": "Hypno",
+    "number": 97,
+    "type": ["psychic"],
+    "stats": [144, 215, 170],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["krabby", "kraby"],
+    "name": "Krabby",
+    "number": 98,
+    "type": ["water"],
+    "stats": [181, 156, 60],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["kingler"],
+    "name": "Kingler",
+    "number": 99,
+    "type": ["water"],
+    "stats": [240, 214, 110],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["voltorb"],
+    "name": "Voltorb",
+    "number": 100,
+    "type": ["electric"],
+    "stats": [109, 114, 80],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["electrode"],
+    "name": "Electrode",
+    "number": 101,
+    "type": ["electric"],
+    "stats": [173, 179, 120],
+    "attacks": ["Spark", "Thunderbolt"],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["exeggcute", "exeggute", "eggecute", "exegute", "execute", "eggsecute"],
+    "name": "Exeggute",
+    "number": 102,
+    "type": ["grass", "psycic"],
+    "stats": [107, 140, 120],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+
+  {
+    "keys": ["exeggutor", "exegutor", "eggecutor", "Eggsecutor", "exeggcutor"],
     "name": "Exeggutor",
     "number":  103,
     "type": ["grass", "psychic"],
@@ -788,6 +1028,66 @@
     "attacks": ["Bullet Seed", "Solar Beam"],
     "defence": [],
     "recplayers": 2
+  },
+  {
+    "keys": ["cubone"],
+    "name": "Cubone",
+    "number": 104,
+    "type": ["ground"],
+    "stats": [90, 165, 100],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["marowak", "marrowak"],
+    "name": "Marowak",
+    "number": 105,
+    "type": ["ground"],
+    "stats": [144, 200, 120],
+    "attacks": ["Mud-Slap", "Earthquake"],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["hitmonlee"],
+    "name": "Hitmonlee",
+    "number": 106,
+    "type": ["fighting"],
+    "stats": [224, 211, 100],
+    "attacks": ["Rock Smash", "Close Combat"],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["hitmonchan"],
+    "name": "Hitmonchan",
+    "number": 107,
+    "type": ["fighting"],
+    "stats": [193, 212, 100],
+    "attacks": ["Counter", "Close Combat"],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["lickytung", "lickitung"],
+    "name": "Lickytung",
+    "number": 108,
+    "type": ["normal"],
+    "stats": [108, 137, 180],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["koffing"],
+    "name": "Koffing",
+    "number": 109,
+    "type": ["poison"],
+    "stats": [119, 164, 80],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
   },
   {
     "keys": ["weezing"],
@@ -800,6 +1100,16 @@
     "recplayers": 2
   },
   {
+    "keys": ["rhyhorn", "ryhorn"],
+    "name": "Rhyhorn",
+    "number": 111,
+    "type": ["ground, rock"],
+    "stats": [140, 157, 160],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
     "keys": ["rhydon"],
     "name": "Rhydon",
     "number":  112,
@@ -808,6 +1118,126 @@
     "attacks": ["Mud Slap", "Earthquake/Stone Edge"],
     "defence": [],
     "recplayers": 4
+  },
+  {
+    "keys": ["chansey"],
+    "name": "Chansey",
+    "number": 113,
+    "type": ["normal"],
+    "stats": [60, 176, 500],
+    "attacks": [],
+    "defence": ["Zen Headbutt", "Dazzling Gleam"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["tangela"],
+    "name": "Tangela",
+    "number": 114,
+    "type": ["grass"],
+    "stats": [183, 205, 130],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["kangaskhan", "kanghaskan", "kangaskan", "khangaskan"],
+    "name": "Kangaskhan",
+    "number": 115,
+    "type": ["normal"],
+    "stats": [181, 165, 210],
+    "attacks": [],
+    "defence": ["Mud-Slap", "Outrage"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["horsea", "horsee"],
+    "name": "Horsea",
+    "number": 116,
+    "type": ["water"],
+    "stats": [129, 125, 60],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["seadra", "seedra"],
+    "name": "Seadra",
+    "number": 117,
+    "type": ["water"],
+    "stats": [187, 182, 110],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["goldeen"],
+    "name": "Goldeen",
+    "number": 118,
+    "type": ["water"],
+    "stats": [123, 115, 90],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["seaking", "seeking"],
+    "name": "Seaking",
+    "number": 119,
+    "type": ["water"],
+    "stats": [175, 154, 160],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["staryu"],
+    "name": "Staryu",
+    "number": 120,
+    "type": ["water"],
+    "stats": [137, 112, 60],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["starmie"],
+    "name": "Starmie",
+    "number": 121,
+    "type": ["water", "psychic"],
+    "stats": [210, 184, 120],
+    "attacks": ["Water Gun", "Hydro Pump"],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["mr mime", "mr. mime", "mrmime"],
+    "name": "Mr. Mime",
+    "number": 122,
+    "type": ["psychic", "fairy"],
+    "stats": [192, 233, 80],
+    "attacks": ["Confusion", "Psychic"],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["scyther", "syther", "scyter"],
+    "name": "Scyther",
+    "number": 123,
+    "type": ["bug", "flying"],
+    "stats": [218, 170, 140],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["jynx"],
+    "name": "Jynx",
+    "number": 124,
+    "type": ["ice, psychic"],
+    "stats": [223, 182, 130],
+    "attacks": ["Frost Breath", "Avalanche"],
+    "defence": [],
+    "recplayers": 0
   },
   {
     "keys": ["electabuzz"],
@@ -830,6 +1260,26 @@
     "recplayers": 2
   },
   {
+    "keys": ["pinsir"],
+    "name": "Pinsir",
+    "number": 127,
+    "type": ["bug"],
+    "stats": [238, 197, 130],
+    "attacks": ["Bug Bite", "X-Scissor"],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["tauros"],
+    "name": "Tauros",
+    "number": 128,
+    "type": ["normal"],
+    "stats": [198, 197, 150],
+    "attacks": ["Tackle", "Earthquake"],
+    "defence": ["Zen Headbutt", "Iron Head"],
+    "recplayers": 0
+  },
+  {
     "keys": ["magikarp"],
     "name": "Magikarp",
     "number": 129,
@@ -840,6 +1290,16 @@
     "recplayers": 1
   },
   {
+    "keys": ["gyarados", "garados", "gyrados"],
+    "name": "Gyarados",
+    "number": 130,
+    "type": ["water", "flying"],
+    "stats": [237, 197, 190],
+    "attacks": ["Dragon Tail", "Outrage"],
+    "defence": ["Dragon Tail", "Hydro Pump"],
+    "recplayers": 0
+  },
+  {
     "keys": ["lapras"],
     "name": "Lapras",
     "number": 131,
@@ -848,6 +1308,26 @@
     "attacks": ["Frost Breath", "Blizzard"],
     "defence": ["Frost Breath", "Ice Beam"],
     "recplayers": 5
+  },
+  {
+    "keys": ["ditto", "dito"],
+    "name": "Ditto",
+    "number": 132,
+    "type": ["normal"],
+    "stats": [91, 91, 96],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["eevee"],
+    "name": "Eevee",
+    "number": 133,
+    "type": ["normal"],
+    "stats": [104, 121, 110],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
   },
   {
     "keys": ["vaporeon"],
@@ -872,12 +1352,72 @@
   {
     "keys": ["flareon"],
     "name": "Flareon",
-    "number": 144,
+    "number": 136,
     "type": ["fire"],
     "stats": [246, 204, 130],
     "attacks": ["Fire Spin", "Overheat"],
     "defence": [],
     "recplayers": 3
+  },
+  {
+    "keys": ["porygon"],
+    "name": "Porygon",
+    "number": 137,
+    "type": ["normal"],
+    "stats": [153, 139, 130],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["omanyte", "omanite"],
+    "name": "Omanyte",
+    "number": 138,
+    "type": ["rock", "water"],
+    "stats": [155, 174, 70],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["omastar"],
+    "name": "Omastar",
+    "number": 139,
+    "type": ["rock", "water"],
+    "stats": [207, 227, 140],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["kabuto"],
+    "name": "Kabuto",
+    "number": 140,
+    "type": ["rock", "water"],
+    "stats": [148, 162, 60],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["kabutops"],
+    "name": "Kabutops",
+    "number": 141,
+    "type": ["rock", "water"],
+    "stats": [220, 203, 120],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["aerodactyl", "arodactyl", "aerodactil"],
+    "name": "Aerodactyl",
+    "number": 142,
+    "type": ["rock", "flying"],
+    "stats": [221, 164, 160],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
   },
   {
     "keys": ["snorlax"],
@@ -920,24 +1460,64 @@
     "recplayers": 4
   },
   {
-    "keys": ["quilava"],
-    "name": "Quilava",
-    "number": 156,
-    "type": ["fire"],
-    "stats": [158, 129, 116],
+    "keys": ["dratini"],
+    "name": "Dratini",
+    "number": 147,
+    "type": ["dragon"],
+    "stats": [119, 94, 82],
     "attacks": [],
     "defence": [],
-    "recplayers": 1
+    "recplayers": 0
   },
   {
-    "keys": ["croconaw"],
-    "name": "Croconaw",
-    "number": 159,
-    "type": ["water"],
-    "stats": [150, 151, 130],
+    "keys": ["dragonair"],
+    "name": "Dragonair",
+    "number": 148,
+    "type": ["dragon"],
+    "stats": [163, 138, 122],
     "attacks": [],
     "defence": [],
-    "recplayers": 1
+    "recplayers": 0
+  },
+  {
+    "keys": ["dragonite"],
+    "name": "Dragonite",
+    "number": 149,
+    "type": ["dragon", "flying"],
+    "stats": [263, 201, 182],
+    "attacks": ["Dragon Tail", "Outrage"],
+    "defence": ["Dragon Tail", "Outrage"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["mewtwo"],
+    "name": "Mewtwo",
+    "number": 150,
+    "type": ["psychic"],
+    "stats": [330, 200, 212],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["mew"],
+    "name": "Mew",
+    "number": 151,
+    "type": ["psychic"],
+    "stats": [210, 209, 200],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["chikorita", "chicorita"],
+    "name": "Chicorita",
+    "number": 152,
+    "type": ["grass"],
+    "stats": [92, 122, 90],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
   },
   {
     "keys": ["bayleef"],
@@ -950,7 +1530,557 @@
     "recplayers": 1
   },
   {
-    "keys": ["tyranitar"],
+    "keys": ["meganium"],
+    "name": "Meganium",
+    "number": 154,
+    "type": ["grass"],
+    "stats": [168, 202, 160],
+    "attacks": ["Razor Leaf", "Solar Beam"],
+    "defence": ["Razor Leaf", "Solar Beam"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["cindaquil", "cindaquill"],
+    "name": "Cindaquil",
+    "number": 155,
+    "type": ["fire"],
+    "stats": [116, 96, 78],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["quilava"],
+    "name": "Quilava",
+    "number": 156,
+    "type": ["fire"],
+    "stats": [158, 129, 116],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 1
+  },
+  {
+    "keys": ["typhlosion", "typlosion"],
+    "name": "typhlosion",
+    "number": 157,
+    "type": ["fire"],
+    "stats": [223, 176, 156],
+    "attacks": ["Ember", "Overheat"],
+    "defence": ["Ember", "Overheat"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["totodyle", "totodyl", "totodile"],
+    "name": "Totodile",
+    "number": 158,
+    "type": ["water"],
+    "stats": [117, 116, 100],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["croconaw"],
+    "name": "Croconaw",
+    "number": 159,
+    "type": ["water"],
+    "stats": [150, 151, 130],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 1
+  },
+  {
+    "keys": ["feraligatr", "fraligatr", "feraligater", "fraligator", "feraligator"],
+    "name": "Feraligatr",
+    "number": 160,
+    "type": ["water"],
+    "stats": [205, 197, 170],
+    "attacks": ["Water Gun", "Hydro Pump"],
+    "defence": ["Water Gun", "Ice Beam"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["sentret"],
+    "name": "Sentret",
+    "number": 161,
+    "type": ["normal"],
+    "stats": [79, 77, 70],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["furret"],
+    "name": "Furret",
+    "number": 162,
+    "type": ["normal"],
+    "stats": [148, 130, 170],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["hoothoot", "hoot hoot", "hoot-hoot"],
+    "name": "Hoothoot",
+    "number": 163,
+    "type": ["normal", "flying"],
+    "stats": [57, 101, 120],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["noctowl", "noctol"],
+    "name": "Noctowl",
+    "number": 164,
+    "type": ["normal", "flying"],
+    "stats": [145, 179, 200],
+    "attacks": ["Wing Attack", "Sky Attack"],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["lediba", "ledyba"],
+    "name": "Ledyba",
+    "number": 165,
+    "type": ["bug", "flying"],
+    "stats": [72, 142, 80],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["ledian"],
+    "name": "Ledian",
+    "number": 166,
+    "type": ["bug", "flying"],
+    "stats": [107, 209, 110],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["spinarak"],
+    "name": "Spinarak",
+    "number": 167,
+    "type": ["bug", "poison"],
+    "stats": [105, 73, 80],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["ariados"],
+    "name": "Ariados",
+    "number": 168,
+    "type": ["bug", "poison"],
+    "stats": [161, 128, 140],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["crobat"],
+    "name": "Crobat",
+    "number": 169,
+    "type": ["poison", "flying"],
+    "stats": [],
+    "attacks": ["Air Slash", "Sludge Bomb"],
+    "defence": ["Air Slash", "Sludge Bomb"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["chinchou"],
+    "name": "Chinchou",
+    "number": 170,
+    "type": ["water", "electric"],
+    "stats": [106, 106, 150],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["lanturn"],
+    "name": "Lanturn",
+    "number": 171,
+    "type": ["water", "electric"],
+    "stats": [],
+    "attacks": ["Water Gun", "Hydro Pump"],
+    "defence": ["Charge Beam", "Thunderbolt"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["pichu"],
+    "name": "Pichu",
+    "number": 172,
+    "type": ["electric"],
+    "stats": [90, 61, 40],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["cleffa"],
+    "name": "Cleffa",
+    "number": 173,
+    "type": ["normal"],
+    "stats": [74, 86, 100],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["igglybuff", "iglybuff", "iglybuf", "igglybuf"],
+    "name": "Igglybuff",
+    "number": 174,
+    "type": ["normal"],
+    "stats": [77, 42, 180],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["togepi"],
+    "name": "Togepi",
+    "number": 175,
+    "type": ["normal"],
+    "stats": [65, 138, 70],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["togetic"],
+    "name": "Togetic",
+    "number": 176,
+    "type": ["normal", "flying"],
+    "stats": [139, 191, 110],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["natu"],
+    "name": "Natu",
+    "number": 177,
+    "type": ["psychic", "flying"],
+    "stats": [134, 89, 80],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["xatu"],
+    "name": "Xatu",
+    "number": 178,
+    "type": ["psychic", "flying"],
+    "stats": [192, 146, 130],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["mareep"],
+    "name": "Mareep",
+    "number": 179,
+    "type": ["electric"],
+    "stats": [114, 82, 110],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["flaaffy", "flafy", "flaafy"],
+    "name": "Flaaffy",
+    "number": 180,
+    "type": ["electric"],
+    "stats": [145, 112, 140],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["ampharos", "amparos"],
+    "name": "Ampharos",
+    "number": 181,
+    "type": ["electric"],
+    "stats": [211, 172, 180],
+    "attacks": ["Volt Switch", "Zap Cannon"],
+    "defence": ["Volt Switch", "Zap Cannon"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["bellossom", "belosom", "bellosom", "belossom"],
+    "name": "Bellossom",
+    "number": 182,
+    "type": ["grass"],
+    "stats": [169, 189, 150],
+    "attacks": ["Razor Lear", "Leaf Blade"],
+    "defence": ["Razor Lear", "Leaf Blade"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["marill", "maril"],
+    "name": "Marill",
+    "number": 183,
+    "type": ["water"],
+    "stats": [37, 93, 140],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["azumarill", "azumaril"],
+    "name": "Azumarill",
+    "number": 184,
+    "type": ["water"],
+    "stats": [112, 152, 200],
+    "attacks": [],
+    "defence": ["Rock Smash", "Play Rough"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["sudowoodo", "sudowodo", "sodowodo", "sodowoodo"],
+    "name": "Sudowoodo",
+    "number": 185,
+    "type": ["rock"],
+    "stats": [167, 198, 140],
+    "attacks": ["Rock Throw", "Rock Slide"],
+    "defence": ["Rock Throw", "Rock Slide"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["politoed"],
+    "name": "Politoed",
+    "number": 186,
+    "type": ["water"],
+    "stats": [174, 192, 180],
+    "attacks": ["Bubble", "Hydro Pump"],
+    "defence": ["Bubble", "Hydro Pump"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["hoppip"],
+    "name": "Hoppip",
+    "number": 187,
+    "type": ["grass", "flying"],
+    "stats": [67, 101, 70],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["skiploom"],
+    "name": "Skiploom",
+    "number": 188,
+    "type": ["grass", "flying"],
+    "stats": [91, 127, 110],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["jumpluff", "jumpluf"],
+    "name": "Jumpluff",
+    "number": 189,
+    "type": ["grass", "flying"],
+    "stats": [118, 197, 150],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["aipom"],
+    "name": "Aipom",
+    "number": 190,
+    "type": ["normal"],
+    "stats": [136, 112, 110],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["sunkern"],
+    "name": "Sunkern",
+    "number": 191,
+    "type": ["grass"],
+    "stats": [55, 55, 60],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["sunflora"],
+    "name": "Sunflora",
+    "number": 192,
+    "type": ["grass"],
+    "stats": [185, 148, 150],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["yanma"],
+    "name": "Yanma",
+    "number": 193,
+    "type": ["bug", "flying"],
+    "stats": [154, 94, 130],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["wooper"],
+    "name": "Wooper",
+    "number": 194,
+    "type": ["water", "ground"],
+    "stats": [75, 75, 110],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["quagsire", "quacsire"],
+    "name": "Quagsire",
+    "number": 195,
+    "type": ["water", "ground"],
+    "stats": [152, 152, 190],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["espeon"],
+    "name": "Espeon",
+    "number": 196,
+    "type": ["psychic"],
+    "stats": [261, 194, 130],
+    "attacks": ["Confusion", "Future Sight"],
+    "defence": ["Confusion", "Psybeam"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["umbreon"],
+    "name": "Umbreon",
+    "number": 197,
+    "type": ["dark"],
+    "stats": [126, 250, 190],
+    "attacks": ["Snarl", "Foul Play"],
+    "defence": ["Snarl", "Foul Play"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["murkrow"],
+    "name": "Murkrow",
+    "number": 198,
+    "type": ["dark", "flying"],
+    "stats": [175, 87, 120],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["slowking"],
+    "name": "Slowking",
+    "number": 199,
+    "type": ["water", "psychic"],
+    "stats": [177, 194, 190],
+    "attacks": ["Confusion", "Psychic"],
+    "defence": ["Confusion", "Psychic"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["misdreavus", "misdrevus", "misdravus"],
+    "name": "Misdreavus",
+    "number": 200,
+    "type": ["ghost"],
+    "stats": [167, 167, 120],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["unown", "unknown"],
+    "name": "Unown",
+    "number": 201,
+    "type": ["psychic"],
+    "stats": [136, 91, 96],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["wobbuffet", "wobufet", "wobbufet", "wobuffet"],
+    "name": "Wobbuffet",
+    "number": 202,
+    "type": ["psychic"],
+    "stats": [60, 106, 380],
+    "attacks": [],
+    "defence": ["Counter", "Mirror Coat"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["girafarig"],
+    "name": "Girafarig",
+    "number": 203,
+    "type": ["normal", "psychic"],
+    "stats": [182, 133, 140],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["pineco"],
+    "name": "Pineco",
+    "number": 204,
+    "type": ["bug"],
+    "stats": [108, 146, 100],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["forretress", "forretres", "foretress", "foretres"],
+    "name": "Forretress",
+    "number": 205,
+    "type": ["bug", "steel"],
+    "stats": [161, 242, 150],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["dunsparce", "dunspars"],
+    "name": "Dunsparce",
+    "number": 206,
+    "type": ["normal"],
+    "stats": [131, 131, 200],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["gligar"],
+    "name": "Gligar",
+    "number": 207,
+    "type": ["ground", "flying"],
+    "stats": [143, 204, 130],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["steelix"],
+    "name": "Steelix",
+    "number": 208,
+    "type": ["steel", "ground"],
+    "stats": [],
+    "attacks": ["Iron Tail", "Heavy Slam"],
+    "defence": ["Iron Tail", "Heavy Slam"],
+    "recplayers": 0
+  },
+  {
+    "keys": ["tyranitar", "ttar", "tyra"],
     "name": "Tyranitar",
     "number": 248,
     "type": ["dark", "rock"],
@@ -970,7 +2100,7 @@
     "recplayers": 7
   },
   {
-    "keys": ["ho-oh", "hooh"],
+    "keys": ["ho-oh", "hooh", "ho oh"],
     "name": "Ho-Oh",
     "number": 250,
     "type": ["fire", "flying"],
