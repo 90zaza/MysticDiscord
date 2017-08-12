@@ -31,6 +31,7 @@ client.on('ready', () => {
   console.log('Blanche: I am ready!');
 });
 
+
 //mysql
 var con = {
   host: "ec2-23-23-221-255.compute-1.amazonaws.com",
@@ -43,8 +44,10 @@ var con = {
 var connection = new pg.Client(con);
 connection.connect();
 
+
 client.on("message", (msg) => {
   let prefixs = settings.prefixs;
+
   let moderator = settings.moderator;
 
   // get the first character of the message content
@@ -52,7 +55,7 @@ client.on("message", (msg) => {
   // get the message content, cut the first character, convert it to al lowercase and save to new variable
   var msgText = msg.content.toLowerCase().substr(1);
 
-  if (!prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
+  if (prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
 
 
 
