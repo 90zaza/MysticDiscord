@@ -56,7 +56,7 @@ client.on("message", (msg) => {
 
 
 
-  if (msgText.split(" ")[0] = 'raid'){
+  if (msgText.split(' ')[0] == 'raid'){
 
     var messages = msg.content.split(' ');
     var raidboss = messages[1];
