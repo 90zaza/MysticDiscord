@@ -13,6 +13,7 @@ client.login(settings.token);
 var express = require('express');
 var app = express();
 
+const pokemonStats = require('./helpers/pokemon.js');
 
 app.set('port', (process.env.PORT || 9222));
 
@@ -36,7 +37,7 @@ client.on("message", (msg) => {
 
   // get the first character of the message content
   let msgPrefix = msg.content[0];
-  // get the message content, cut the first character, convert it to al lowercase and save to new variable
+  // get the message content, cut the first character, convert it to all lowercase and save to new variable
   var msgText = msg.content.toLowerCase().substr(1);
 
   if (prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
@@ -201,13 +202,19 @@ client.on("message", (msg) => {
         for( var i = 0; i < strong.length; i++ ){ reply += strong[i].type; if(i < strong.length - 1){ reply += ", ";} }
         reply += ']';
       }
-      if(pokemon.recplayers > 0 ){ reply += '\nI recommend you battle ' + pokemon.name + ' with a group of ' + pokemon.recplayers + ' trainers.'; }
-      // needs to be computed
-      //reply += '\nWonder CP: ' + pokemon.wonder[0] + ' - ' + pokemon.wonder[1] + '\n';
-      if(pokemon.attacks.length || pokemon.defence.length){ reply += '```'; }
+      // pokemon.recplayers can be used to identify whether the pokemon is also a raid boss
+      if(pokemon.recplayers > 0){
+        reply += '\nI recommend you battle ' + pokemon.name + ' with a group of ' + pokemon.recplayers + ' trainers.';
+      }
+      if(pokemon.attacks.length || pokemon.defence.length || pokemon.recplayers > 0){ reply += '```'; }
+      if(pokemon.recplayers > 0){
+        // needs to be computed
+        let cpRange =  pokemonStats.cpRangeWonder(pokemon, 20);
+        reply += 'Wonder CP: ' + cpRange[0] + ' - ' + cpRange[1] + '\n';
+      }
       if(pokemon.attacks.length){ reply += 'Best Attacks: ' + pokemon.attacks[0] + ' & ' + pokemon.attacks[1] + '\n'; }
       if(pokemon.defence.length){ reply += 'Best Defense: ' + pokemon.defence[0] + ' & ' + pokemon.defence[1] + '\n'; }
-      if(pokemon.attacks.length || pokemon.defence.length){ reply += '```'; }
+      if(pokemon.attacks.length || pokemon.defence.length || pokemon.recplayers > 0){ reply += '```'; }
 
       msg.reply(reply);
     }
