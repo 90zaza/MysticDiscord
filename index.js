@@ -28,17 +28,31 @@ app.listen(app.get('port'), function() {
 });
 
 client.on('ready', () => {
+  client.user.setGame('Pokemon Go');
   console.log('Blanche: I am ready!');
 });
+
+
 
 client.on("message", (message) => {
   let prefix = settings.prefix;
   let moderator = settings.moderator;
-
-  var msg_prefix = message.content[0];
+  
+  const msg = message.content.toLowerCase().substr(1);
+  const msg_prefix = message.content[0];
+  
+  if (msg.content.includes('@blanche')) {
+    const replies = [
+      'Hé hoorde ik daar mijn naam?',
+      'Wat wil je weten?',
+      'Ja ik ben online :)',
+      'Benieuwd hoe ik er uit zie? https://www.youtube.com/watch?v=9U6LLHjcUyE'
+    ]
+    const reply = replies[Math.floor(Math.random() * replies.length)];
+    msg.reply(reply);
+  }
+  
   if (!prefix.indexOf(msg_prefix) < 0 || message.author.bot) return;
-
-  var msg = message.content.toLowerCase().substr(1);
 
   //help
   if (msg === 'help') {
@@ -233,14 +247,16 @@ client.on("message", (message) => {
     if (msg.startsWith('add')) {
       if (message.member.roles.has(moderator)) {
         let member = message.mentions.members.first();
-        let role = message.guild.roles.find("name", "makingdelftblueagain");
+        let role = message.guild.roles.find("name",
+          "makingdelftblueagain");
         member.addRole(role).catch(console.error);
         message.channel.send('Welkom ' + member +
           ', je bent nu officieel toegevoegd! In het kanaal #welkom is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Daarnaast sta ik natuurlijk ook tot je beschikking! Door "!help" te typen kun je zien wat ik allemaal voor je kan doen! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, zodat we weten wie iedereen is;)'
         );
       } else {
         message.reply(
-          'Leden verifieren kan alleen door een moderator worden gedaan')
+          'Leden verifieren kan alleen door een moderator worden gedaan'
+        )
       }
       message.delete()
     } else
@@ -338,9 +354,12 @@ client.on("message", (message) => {
         message.reply('Alleen moderators kunnen berichten verwijderen')
       }
       message.delete()
+    } else {
+      if (message.content === "!test") {
+        message.reply("Alles lijkt te werken!")
+      }
+      ;
     }
-    else {
-        if (msg === "test") {message.reply("Alles lijkt te werken!")};}
   }
 });
 
