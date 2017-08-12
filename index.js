@@ -1,5 +1,6 @@
 'use strict';
 
+var pg = require('pg');
 var Discord = require('discord.js');
 var client = new Discord.Client();
 var https = require("https");
@@ -30,6 +31,18 @@ client.on('ready', () => {
   console.log('Blanche: I am ready!');
 });
 
+//mysql
+var con = {
+  host: "ec2-23-23-221-255.compute-1.amazonaws.com",
+  port: 5432,
+  database: "d4nplae62mj8j7",
+  user: "imiosejcivqljb",
+  password: "bdf834eba171721c921d94fa6d173ad7719a04d6477588e4d18d53b8c1eeaab5",
+  ssl: true
+};
+var connection = new pg.Client(con);
+connection.connect();
+
 client.on("message", (msg) => {
   let prefixs = settings.prefixs;
   let moderator = settings.moderator;
@@ -40,6 +53,46 @@ client.on("message", (msg) => {
   var msgText = msg.content.toLowerCase().substr(1);
 
   if (!prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
+
+
+
+  if (msgText.split(" ")[0] = 'raid'){
+
+    var messages = msg.content.split(' ');
+    var raidboss = messages[1];
+    console.log(messages)
+
+    var info = [raidboss,0,0];
+    connection.query("INSERT INTO raids (raidboss, raidEndTime, raidBattleTime) values($1, $2, $3)", info, function(error){console.log(error)})
+    connection.end
+  }
+
+  if (msgText == 'del raid'){
+    messages = msg.content.split(" ");
+    var id = messages[2]
+    connection.query("SELECT idraid,raidboss, FROM raids WHERE idraids = ?", id, function(error, result,fields){
+      console.log(result)
+       connection.query("DELETE FROM raids WHERE idraids = ?", id, function(error){console.log(error)})
+    })
+    console.log(id);
+    //connection.query("DELETE FROM raids WHERE idraids = ?", id, function(error){console.log(error)})
+  }
+
+
+  if (msgText == "find raids"){
+    var info = connection.query("SELECT raidboss, idraids FROM raids", function (error, result, fields){
+      console.log(result["rows"][0]["idraids"])
+      for (var i = 0; i <= result["rows"].length - 1; i++) {
+      msg.reply('raid id: ' + result["rows"][i]["idraids"] +  ' raid boss: ' + result["rows"][i]["raidboss"]);
+    }
+    });
+  }
+
+  if (msgText == "reset raidid"){
+    connection.query("ALTER TABLE `raids` DROP `idraids`",function(error){console.log(error);})
+    connection.query(" ALTER TABLE `raids` AUTO_INCREMENT = 1",function(error){console.log(error);})
+    connection.query("ALTER TABLE `raids` ADD `idraids` int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST", function (error){console.log(error);})
+  }
 
   //help
   if (msgText === 'help') {
