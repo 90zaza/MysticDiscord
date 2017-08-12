@@ -3,7 +3,8 @@
 var Discord = require('discord.js');
 var client = new Discord.Client();
 var https = require("https");
-var settings = require("./settings.json")
+const Message = require("./models/message")
+const settings = require("./settings.json")
 const gyms = require('./data/gyms.json');
 const stops = require('./data/pokestops.json');
 const pokemons = require('./data/pokemons.json');
@@ -44,13 +45,10 @@ client.on("message", (msg) => {
 
   if (prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
 
-  //help
-  if (msgText === 'help') {
-    msg.channel.send(
-      "Hey! Mijn naam is Blanche, en ik ben de teamleider van het beste team, Mystic! Naast het appraisen van jouw pokemon in game, kan ik jullie ook op discord assistentie verlenen. Ik reageer onder andere op de volgende commando's zolang ze zonder hoofdletters geschreven zijn:\n![pokemon]      voor info over raid bosses\n![gym naam]    voor de locatie van een gym\n!+[regio]           zie #speler_registratie"
-    );
-    msg.delete()
-  } else
+  new Message(msg).newMessage(
+    "help",
+    "Hey! Mijn naam is Blanche, en ik ben de teamleider van het beste team, Mystic! Naast het appraisen van jouw pokemon in game, kan ik jullie ook op discord assistentie verlenen. Ik reageer onder andere op de volgende commando's zolang ze zonder hoofdletters geschreven zijn:\n![pokemon]      voor info over raid bosses\n![gym naam]    voor de locatie van een gym\n!+[regio]           zie #speler_registratie"
+  );
 
   // Request pokemon info test
   if (msgText === 'type') {
@@ -109,60 +107,52 @@ client.on("message", (msg) => {
       'Hier is een kaart van alle gyms en regios in Delft, maak ze allemaal van ons! <https://www.google.com/maps/d/u/0/edit?mid=11DnpOBi-AsstZGT07NGO9txzxsU&ll=52.00888580917186%2C4.361529349999955&z=13>'
     );
     msg.delete()
-  } else if (msgText === 'minortextfixes') {
-    msg.reply(
-      'Minor text fixes verwijst gekmakend naar het regelmatig incapabele niantic. Het is een referentie naar een van de eerste updates waar het spel bijzonder slecht functioneerde en iedereen aan het wachten was op optimalisaties. Na de lange tijd van wachten verscheen eindelijk de update, en de change log was: *minor text fixes*'
-    );
-    msg.delete()
-  } else if (msgText === 'niantic') {
-    msg.reply(
-      'Niantic is het bedrijf dat Ingress 2 ontwikkelde en het Pokémon Go noemde. Door de gigantische populariteit van Pokémon is dit spel echter veel groter geworden, waardoor ze flink aan het groeien zijn.'
-    );
-    msg.delete()
   } else if (msgText === 'pokemon' || msgText ===
     'pokémon') {
     msg.reply(
       'Pokémon zijn de loslopende beestjes die je kunt vangen om ze voor de glorie van team Mystic tegen Valor en Instinct te laten strijden.'
     );
     msg.delete()
-  } else if (msgText === 'weerbericht') {
-    msg.reply(
-      'Weer of geen weer, Valor en Instinct moeten uit hun gyms geschopt! Dus pak je revives, en ga ervoor! Articuno is niet voor niets de stormvogel!'
-    );
-    msg.delete()
-  } else if (msgText === 'stats') {
-    msg.reply(
-      'Zoek je meer data van een pokemon dan ik je kan geven? Kijk hier eens rond! <https://pokemongo.gamepress.gg/pokemon-list>'
-    );
-    msg.delete()
-  } else if (msgText === 'weerbericht') {
-    msg.reply(
-      'Weer of geen weer, Valor en Instinct moeten uit hun gyms geschopt! Dus pak je revives, en ga ervoor! Articuno is niet voor niets de stormvogel!'
-    );
-    msg.delete()
-  } else if (msgText === 'tutorial') {
-    msg.reply(
-      'Pokémon go lijkt simpel, maar stiekem is het een best complex spel. Niet gevreesd, er is een hele tutorial voor geschreven! <https://delftmystic.wordpress.com/>'
-    );
-    msg.delete()
-  } else if (msgText === 'iv' || msgText === 'ivs' ||
-    msgText ===
-    'IVs') {
+  } else if (msgText === 'iv' || msgText === 'ivs' || msgText === 'IVs') {
     msg.reply(
       'Zoek je nauwkeurigere IV informatie dan ik je kan geven? Gebruik deze apps:\nVoor apple: <https://itunes.apple.com/us/app/poke-genie-for-pokemon-go-auto-iv-calculator/id1143920524?mt=8>\nVoor android: <https://play.google.com/store/apps/details?id=tesmath.calcy&hl=en>\nVoor android optie 2: <https://github.com/farkam135/GoIV/releases>'
     );
     msg.delete()
-  } else if (msgText === 'nest') {
-    msg.reply(
-      'Naast de spawns die biome afhankelijk zijn heb je ook plekken die steeds dezelfde pokemon spawnen. Als je zon nest gevonden hebt of zoekt kun je dat hier aangeven: <https://thesilphroad.com/atlas#13.18/52.0073/4.3599>'
-    );
-    msg.delete()
-  } else if (msgText === 'ash') {
-    msg.reply(
-      'Een trainer uit Palet Town waardoor alle Pokémon hype is begonnen. Als hij trouw was gebleven aan zijn goede pokemon had hij het waarschijnlijk ver geschopt, maar hij vond het blijkbaar leuker om steeds opnieuw te beginnen.'
-    );
-    msg.delete()
   } else {
+    new Message(msg).newMessage(
+      "minortextfixes",
+      "Minor text fixes verwijst gekmakend naar het regelmatig incapabele niantic. Het is een referentie naar een van de eerste updates waar het spel bijzonder slecht functioneerde en iedereen aan het wachten was op optimalisaties. Na de lange tijd van wachten verscheen eindelijk de update, en de change log was: *minor text fixes*"
+    );
+
+    new Message(msg).newMessage(
+      "niantic",
+      "Niantic is het bedrijf dat Ingress 2 ontwikkelde en het Pokémon Go noemde. Door de gigantische populariteit van Pokémon is dit spel echter veel groter geworden, waardoor ze flink aan het groeien zijn."
+    );
+
+    new Message(msg).newMessage(
+      "stats",
+      "Zoek je meer data van een pokemon dan ik je kan geven? Kijk hier eens rond! <https://pokemongo.gamepress.gg/pokemon-list>"
+    );
+
+    new Message(msg).newMessage(
+      "weerbericht",
+      "Weer of geen weer, Valor en Instinct moeten uit hun gyms geschopt! Dus pak je revives, en ga ervoor! Articuno is niet voor niets de stormvogel!"
+    );
+
+    new Message(msg).newMessage(
+      "tutorial",
+      "Pokémon go lijkt simpel, maar stiekem is het een best complex spel. Niet gevreesd, er is een hele tutorial voor geschreven! <https://delftmystic.wordpress.com/>"
+    );
+
+    new Message(msg).newMessage(
+      "nest",
+      "Naast de spawns die biome afhankelijk zijn heb je ook plekken die steeds dezelfde pokemon spawnen. Als je zon nest gevonden hebt of zoekt kun je dat hier aangeven: <https://thesilphroad.com/atlas#13.18/52.0073/4.3599>"
+    );
+
+    new Message(msg).newMessage(
+      "ash",
+      "Een trainer uit Palet Town waardoor alle Pokémon hype is begonnen. Als hij trouw was gebleven aan zijn goede pokemon had hij het waarschijnlijk ver geschopt, maar hij vond het blijkbaar leuker om steeds opnieuw te beginnen."
+    );
 
     let pokemon = pokemons.find((p) => {
 
@@ -180,43 +170,69 @@ client.on("message", (msg) => {
 
       // dynamically compute defense values for type combinations
       let def = JSON.parse(JSON.stringify(defense[pokemon.type[0]]));
-      for( var i = 1; i < pokemon.type.length; i++ )
-      {
-        for( var j = 0; j < def.length; j++ )
-        {
+      for (var i = 1; i < pokemon.type.length; i++) {
+        for (var j = 0; j < def.length; j++) {
           def[j].mult *= defense[pokemon.type[i]][j].mult;
         }
       }
 
       // filter for 1.96 and 1.4
-      let verystrong = def.filter( (d) => { return d.mult > 1.5; });
-      let strong = def.filter( (d) => { return (d.mult > 1.1 && d.mult < 1.5); });
+      let verystrong = def.filter((d) => {
+        return d.mult > 1.5;
+      });
+      let strong = def.filter((d) => {
+        return (d.mult > 1.1 && d.mult < 1.5);
+      });
 
       // compose message
-      let reply = '**#' + pokemon.number + ' - ' + pokemon.name + '** [' + pokemon.type.join(', ') + ']\nWeakness:';
-      if(verystrong.length > 0){
+      let reply = '**#' + pokemon.number + ' - ' + pokemon.name + '** [' +
+        pokemon.type.join(', ') + ']\nWeakness:';
+      if (verystrong.length > 0) {
         reply += ' x1.96: [';
-        for( var i = 0; i < verystrong.length; i++ ){ reply += verystrong[i].type; if(i < verystrong.length - 1){ reply += ", ";} }
+        for (var i = 0; i < verystrong.length; i++) {
+          reply += verystrong[i].type;
+          if (i < verystrong.length - 1) {
+            reply += ", ";
+          }
+        }
         reply += ']';
       }
-      if(strong.length > 0){
+      if (strong.length > 0) {
         reply += ' x1.4: [';
-        for( var i = 0; i < strong.length; i++ ){ reply += strong[i].type; if(i < strong.length - 1){ reply += ", ";} }
+        for (var i = 0; i < strong.length; i++) {
+          reply += strong[i].type;
+          if (i < strong.length - 1) {
+            reply += ", ";
+          }
+        }
         reply += ']';
       }
       // pokemon.recplayers can be used to identify whether the pokemon is also a raid boss
-      if(pokemon.recplayers > 0){
-        reply += '\nI recommend you battle ' + pokemon.name + ' with a group of ' + pokemon.recplayers + ' trainers.';
+      if (pokemon.recplayers > 0) {
+        reply += '\nI recommend you battle ' + pokemon.name +
+          ' with a group of ' + pokemon.recplayers + ' trainers.';
       }
-      if(pokemon.attacks.length || pokemon.defence.length || pokemon.recplayers > 0){ reply += '```'; }
-      if(pokemon.recplayers > 0){
+      if (pokemon.attacks.length || pokemon.defence.length || pokemon.recplayers >
+        0) {
+        reply += '```';
+      }
+      if (pokemon.recplayers > 0) {
         // needs to be computed
-        let cpRange =  pokemonStats.cpRangeWonder(pokemon, 20);
+        let cpRange = pokemonStats.cpRangeWonder(pokemon, 20);
         reply += 'Wonder CP: ' + cpRange[0] + ' - ' + cpRange[1] + '\n';
       }
-      if(pokemon.attacks.length){ reply += 'Best Attacks: ' + pokemon.attacks[0] + ' & ' + pokemon.attacks[1] + '\n'; }
-      if(pokemon.defence.length){ reply += 'Best Defense: ' + pokemon.defence[0] + ' & ' + pokemon.defence[1] + '\n'; }
-      if(pokemon.attacks.length || pokemon.defence.length || pokemon.recplayers > 0){ reply += '```'; }
+      if (pokemon.attacks.length) {
+        reply += 'Best Attacks: ' + pokemon.attacks[0] + ' & ' + pokemon.attacks[
+            1] + '\n';
+      }
+      if (pokemon.defence.length) {
+        reply += 'Best Defense: ' + pokemon.defence[0] + ' & ' + pokemon.defence[
+            1] + '\n';
+      }
+      if (pokemon.attacks.length || pokemon.defence.length || pokemon.recplayers >
+        0) {
+        reply += '```';
+      }
 
       msg.reply(reply);
     }
