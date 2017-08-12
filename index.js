@@ -33,15 +33,14 @@ client.on('ready', () => {
 });
 
 
-
 client.on("message", (message) => {
   let prefix = settings.prefix;
   let moderator = settings.moderator;
-  
+
   const msg = message.content.toLowerCase().substr(1);
   const msg_prefix = message.content[0];
-  
-  if (msg.content.includes('@blanche')) {
+
+  if (msg.includes('@blanche')) {
     const replies = [
       'Hé hoorde ik daar mijn naam?',
       'Wat wil je weten?',
@@ -51,7 +50,7 @@ client.on("message", (message) => {
     const reply = replies[Math.floor(Math.random() * replies.length)];
     msg.reply(reply);
   }
-  
+
   if (!prefix.indexOf(msg_prefix) < 0 || message.author.bot) return;
 
   //help
