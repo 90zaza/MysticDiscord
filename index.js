@@ -41,7 +41,7 @@ client.on("message", (msg) => {
   // get the message content, cut the first character, convert it to al lowercase and save to new variable
   var msgText = msg.content.toLowerCase().substr(1);
 
-  if (!prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
+  if (prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
 
   //help
   if (msgText === 'help') {
