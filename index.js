@@ -105,11 +105,6 @@ client.on("message", (msg) => {
       'Hier is een kaart van alle gyms en regios in Delft, maak ze allemaal van ons! <https://www.google.com/maps/d/u/0/edit?mid=11DnpOBi-AsstZGT07NGO9txzxsU&ll=52.00888580917186%2C4.361529349999955&z=13>'
     );
     msg.delete()
-  } else if (msgText === 'minortextfixes') {
-    msg.reply(
-      'Minor text fixes verwijst gekmakend naar het regelmatig incapabele niantic. Het is een referentie naar een van de eerste updates waar het spel bijzonder slecht functioneerde en iedereen aan het wachten was op optimalisaties. Na de lange tijd van wachten verscheen eindelijk de update, en de change log was: *minor text fixes*'
-    );
-    msg.delete()
   } else if (msgText === 'pokemon' || msgText ===
     'pokémon') {
     msg.reply(
@@ -123,9 +118,15 @@ client.on("message", (msg) => {
     msg.delete()
   } else {
     new Message(msg).newMessage(
+      "minortextfixes",
+      "Minor text fixes verwijst gekmakend naar het regelmatig incapabele niantic. Het is een referentie naar een van de eerste updates waar het spel bijzonder slecht functioneerde en iedereen aan het wachten was op optimalisaties. Na de lange tijd van wachten verscheen eindelijk de update, en de change log was: *minor text fixes*"
+    );
+
+    new Message(msg).newMessage(
       "niantic",
       "Niantic is het bedrijf dat Ingress 2 ontwikkelde en het Pokémon Go noemde. Door de gigantische populariteit van Pokémon is dit spel echter veel groter geworden, waardoor ze flink aan het groeien zijn."
     );
+
     new Message(msg).newMessage(
       "stats",
       "Zoek je meer data van een pokemon dan ik je kan geven? Kijk hier eens rond! <https://pokemongo.gamepress.gg/pokemon-list>"
