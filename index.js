@@ -116,11 +116,6 @@ client.on("message", (msg) => {
       'Pokémon zijn de loslopende beestjes die je kunt vangen om ze voor de glorie van team Mystic tegen Valor en Instinct te laten strijden.'
     );
     msg.delete()
-  } else if (msgText === 'weerbericht') {
-    msg.reply(
-      'Weer of geen weer, Valor en Instinct moeten uit hun gyms geschopt! Dus pak je revives, en ga ervoor! Articuno is niet voor niets de stormvogel!'
-    );
-    msg.delete()
   } else if (msgText === 'iv' || msgText === 'ivs' || msgText === 'IVs') {
     msg.reply(
       'Zoek je nauwkeurigere IV informatie dan ik je kan geven? Gebruik deze apps:\nVoor apple: <https://itunes.apple.com/us/app/poke-genie-for-pokemon-go-auto-iv-calculator/id1143920524?mt=8>\nVoor android: <https://play.google.com/store/apps/details?id=tesmath.calcy&hl=en>\nVoor android optie 2: <https://github.com/farkam135/GoIV/releases>'
