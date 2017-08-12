@@ -67,7 +67,7 @@ client.on("message", (msg) => {
     connection.end
   }
 
-  if (msgText == 'del raid'){
+  if (msgText.startsWith('del raid')){
     messages = msg.content.split(" ");
     var id = messages[2]
     connection.query("SELECT idraid,raidboss, FROM raids WHERE idraids = ?", id, function(error, result,fields){
