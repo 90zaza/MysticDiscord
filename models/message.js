@@ -7,7 +7,14 @@ module.exports = class Message {
 
   replyTo(content, reply) {
     const isAMatch = settings.prefixs.some((prefix) => {
-      this.message.content === `${prefix}${content}`;
+      if (Array.isArray(content)) {
+        return content.find((key) => {
+          return this.message.content.startsWith(`${prefix}${key}`);
+        });
+      } else {
+        return this.message.content.toLowerCase() ===
+          `${prefix}${content}`;
+      }
     });
     if (isAMatch) {
       this.message.reply(reply);
@@ -17,8 +24,15 @@ module.exports = class Message {
 
   newMessage(content, reply) {
     const isAMatch = settings.prefixs.some((prefix) => {
-      return this.message.content.toLowerCase() ===
-        `${prefix}${content}`;
+      if (Array.isArray(content)) {
+        return content.find((key) => {
+          return this.message.content.startsWith(`${prefix}${key}`);
+        });
+      } else {
+        return this.message.content.toLowerCase() ===
+          `${prefix}${content}`;
+      }
+
     });
     if (isAMatch) {
       this.message.channel.send(reply);
