@@ -1494,8 +1494,8 @@
     "name": "Mewtwo",
     "number": 150,
     "type": ["psychic"],
-    "stats": [330, 200, 212],
-    "attacks": [],
+    "stats": [300, 182, 193],
+    "attacks": ["Confusion", "Psychic"],
     "defence": [],
     "recplayers": 6
   },
