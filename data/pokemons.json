@@ -2083,7 +2083,7 @@
     "recplayers": 0
   },
   {
-    "keys": ["tyranitar", "ttar", "tyra"],
+    "keys": ["tyranitar", "ttar", "tyra", "tyranitair"],
     "name": "Tyranitar",
     "number": 248,
     "type": ["dark", "rock"],
