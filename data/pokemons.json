@@ -1305,8 +1305,8 @@
     "keys": ["lapras"],
     "name": "Lapras",
     "number": 131,
-    "type": ["ice", "1487"],
-    "wonder": [186, 190, 260],
+    "type": ["ice"],
+    "stats": [186, 190, 260],
     "attacks": ["Frost Breath", "Blizzard"],
     "defence": ["Frost Breath", "Ice Beam"],
     "recplayers": 5
