@@ -2112,4 +2112,14 @@
     "defence": [],
     "recplayers": 5
   }
+  {
+    "keys": ["missingno"],
+    "name": "Missingno",
+    "number": 0,
+    "type": ["normal", "flying"],
+    "stats": [218, 10, 66],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  }
 ]
