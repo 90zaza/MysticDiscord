@@ -1,5 +1,6 @@
 'use strict';
 
+const Sequelize = require('sequelize');
 var pg = require('pg');
 var Discord = require('discord.js');
 var client = new Discord.Client();
@@ -13,6 +14,7 @@ const defense = require('./data/defense.json');
 const messages = require('./data/messages.json');
 
 client.login(settings.token);
+
 
 var express = require('express');
 var app = express();
@@ -37,7 +39,7 @@ client.on('ready', () => {
 
 
 //mysql
-var con = {
+/*var con = {
   host: "ec2-23-23-221-255.compute-1.amazonaws.com",
   port: 5432,
   database: "d4nplae62mj8j7",
@@ -47,7 +49,62 @@ var con = {
 };
 var connection = new pg.Client(con);
 connection.connect();
+*/
 
+const connection = new Sequelize('d4nplae62mj8j7', 'imiosejcivqljb', 'bdf834eba171721c921d94fa6d173ad7719a04d6477588e4d18d53b8c1eeaab5', {
+  host: 'ec2-23-23-221-255.compute-1.amazonaws.com',
+  port: 5432,
+  dialect: 'postgres',
+  dialectOptions: {
+     "ssl":{
+         "require":true
+      }
+  },
+  timezone : "+02:00",
+
+  pool: {
+    max: 5,
+    min: 0,
+    idle: 10000
+  }
+});
+
+connection
+  .authenticate()
+  .then(() => {
+    console.log('Connection has been established successfully.');
+  })
+  .catch(err => {
+    console.error('Unable to connect to the database:', err);
+  });
+
+connection.sync({force: true})
+
+const raid = connection.define('raid',{
+  idraids: {
+    type: Sequelize.INTEGER,
+    primaryKey: true,
+    autoIncrement: true
+  },
+  raidboss: {
+    type: Sequelize.STRING,
+    defaultValue: "to be added"
+  },
+  raidendtime: {
+    type: Sequelize.STRING,
+    defaultValue: "to be added"
+  },
+  raidbattletime: {
+    type: Sequelize.STRING,
+    defaultValue: "to be determined"
+  },
+  raidgym: {
+    type: Sequelize.STRING,
+    defaultValue: "to be added"
+  }
+})
+
+//connection.sync({force: true})
 
 client.on("message", (msg) => {
   let prefixs = settings.prefixs;
@@ -63,23 +120,90 @@ client.on("message", (msg) => {
 
 
 
+  /*if (msgText.split(' ')[0] == 'raid'){
+    var msgs = msg.content.split(' ');
+    var raidboss = msgs[1];
+    var gm = msgs[2];
+    var value = msgs[3]
+
+    //console.log(gyms)
+    console.log(isNaN(raidboss))
+    if (!isNaN(raidboss)){
+      raid.update({"raidendtime" : value},
+        {where: {"idraids" : raidboss}})
+
+    }else{
+    if (gm != null){
+
+
+      info = {"raidboss": raidboss, "raidgym": gm}
+    }else{
+    info = {"raidboss": raidboss}
+  }
+    raid.create(info);
+  }
+}*/
+
   if (msgText.split(' ')[0] == 'raid'){
-
-    var messages = msg.content.split(' ');
-    var raidboss = messages[1];
-    console.log(messages)
-
-    var info = [raidboss,0,0];
-    connection.query("INSERT INTO raids (raidboss, raidEndTime, raidBattleTime) values($1, $2, $3)", info, function(error){console.log(error)})
-    connection.end
+    var info = {}
+    var splits = msg.content.split(' ');
+    var second = splits[1];
+    console.log(second)
+      if (isNaN(second)){
+        if (second == "del"){
+          var third = splits[2]
+          if(third = "all"){
+            raid.destroy({where: {}})
+          }else{
+          raid.destroy({where:{"idraids" : third }})
+          }
+        }else{
+          info = {"raidboss" : second}
+          i = 2
+          while(splits[i] != null){
+            if(splits[i] == 'e'){
+              info["raidendtime"] =  splits[i+1];
+              i += 2;
+            }else if(splits[i] == 'b'){
+              info["raidbattletime"] =  splits[i+1];
+              i += 2;
+            }else if (splits[i] == 'g'){
+              info["raidgym"] = splits[i+1];
+              i += 2;
+            }else{
+              i += 2;
+            }
+        }
+      raid.create(info)
+      }
+    }else{
+      i = 2
+      while(splits[i] != null){
+          if(splits[i] == 'e'){
+            console.log(splits[i+1])
+            info["raidendtime"] =  splits[i+1];
+            i += 2;
+          }else if(splits[i] == 'b'){
+            info["raidbattletime"] =  splits[i+1];
+            i += 2;
+          }else if (splits[i] == 'g'){
+            info["raidgym"] = splits[i+1];
+            i += 2;
+          }else{
+            i += 2;
+          }
+        }
+        raid.update(info,{where: {"idraids" : second}})
+    }
   }
 
+
   if (msgText.startsWith('del raid')){
-    messages = msg.content.split(" ");
-    var id = messages[2]
+    msgs = msg.content.split(" ");
+    var id = msgs[2]
     connection.query("SELECT idraid,raidboss, FROM raids WHERE idraids = ?", id, function(error, result,fields){
       console.log(result)
-       connection.query("DELETE FROM raids WHERE idraids = ?", id, function(error){console.log(error)})
+       connection.query("DELETE FROM raids WHERE idraids == ?", id, function(error){console.log(error)})
     })
     console.log(id);
     //connection.query("DELETE FROM raids WHERE idraids = ?", id, function(error){console.log(error)})
@@ -224,7 +348,7 @@ client.on("message", (msg) => {
 
     msg.reply(reply);
   }
-  console.log(gyms)
+
 
   //gyms reply
   const gymMatch = gyms.find((gym) => {
@@ -241,7 +365,7 @@ client.on("message", (msg) => {
   if (gymMatch) {
     msg.reply(`**Gym: ${gymMatch.reply}`);
   }
-  console.log(messages)
+
   //message reply
   const messageMatch = messages.find((message) => {
     new Message(msg).newMessage(
