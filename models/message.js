@@ -26,7 +26,8 @@ module.exports = class Message {
     const isAMatch = settings.prefixs.some((prefix) => {
       if (Array.isArray(content)) {
         return content.find((key) => {
-          return this.message.content.startsWith(`${prefix}${key}`);
+          return this.message.content.toLowerCase().startsWith(
+            `${prefix}${key}`);
         });
       } else {
         return this.message.content.toLowerCase() ===
