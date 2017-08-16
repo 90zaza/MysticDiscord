@@ -12,7 +12,6 @@ const stops = require('./data/pokestops.json');
 const pokemons = require('./data/pokemons.json');
 const defense = require('./data/defense.json');
 const messages = require('./data/messages.json');
-const raidreply = require('./raidreply')
 
 client.login(settings.token);
 
@@ -52,23 +51,24 @@ var connection = new pg.Client(con);
 connection.connect();
 */
 
-const connection = new Sequelize('d4nplae62mj8j7', 'imiosejcivqljb', 'bdf834eba171721c921d94fa6d173ad7719a04d6477588e4d18d53b8c1eeaab5', {
-  host: 'ec2-23-23-221-255.compute-1.amazonaws.com',
-  port: 5432,
-  dialect: 'postgres',
-  dialectOptions: {
-     "ssl":{
-         "require":true
+const connection = new Sequelize('d4nplae62mj8j7', 'imiosejcivqljb',
+  'bdf834eba171721c921d94fa6d173ad7719a04d6477588e4d18d53b8c1eeaab5', {
+    host: 'ec2-23-23-221-255.compute-1.amazonaws.com',
+    port: 5432,
+    dialect: 'postgres',
+    dialectOptions: {
+      "ssl": {
+        "require": true
       }
-  },
-  timezone : "+02:00",
+    },
+    timezone: "+02:00",
 
-  pool: {
-    max: 5,
-    min: 0,
-    idle: 10000
-  }
-});
+    pool: {
+      max: 5,
+      min: 0,
+      idle: 10000
+    }
+  });
 
 connection
   .authenticate()
@@ -79,9 +79,11 @@ connection
     console.error('Unable to connect to the database:', err);
   });
 
-connection.sync({force: true})
+connection.sync({
+  force: true
+})
 
-const raid = connection.define('raid',{
+const raid = connection.define('raid', {
   idraids: {
     type: Sequelize.INTEGER,
     primaryKey: true,
@@ -107,7 +109,7 @@ const raid = connection.define('raid',{
 
 //connection.sync({force: true})
 
-client.on("message", (msg) => {
+client.on("message", async (msg) => {
   let prefixs = settings.prefixs;
 
   let moderator = settings.moderator;
@@ -145,128 +147,164 @@ client.on("message", (msg) => {
   }
 }*/
 
-  if (msgText.split(' ')[0] == 'raid'){
+  if (msgText.split(' ')[0] == 'raid') {
     var update = false
     var info = {}
     var splits = msg.content.split(' ');
     var second = splits[1];
     console.log(second)
-      if (isNaN(second)){
-        if (second == "del"){
-          var third = splits[2]
-          if(third == "all"){
-            raid.destroy({where: {}})
-          }else{
-          raid.destroy({where:{"idraids" : third }})
-          }
-        }else{
-          info = {"raidboss" : second}
-          i = 2
-          while(splits[i] != null){
-            if(splits[i] == 'e'){
-              info["raidendtime"] =  splits[i+1];
-              i += 2;
-            }else if(splits[i] == 'b'){
-              info["raidbattletime"] =  splits[i+1];
-              i += 2;
-            }else if (splits[i] == 'g'){
-              info["raidgym"] = splits[i+1];
-              i += 2;
-            }else{
-              i += 2;
+    if (isNaN(second)) {
+      if (second == "del") {
+        var third = splits[2]
+        if (third == "all") {
+          raid.destroy({
+            where: {}
+          })
+        } else {
+          raid.destroy({
+            where: {
+              "idraids": third
             }
+          })
         }
-      raid.create(info).then(function(x){
-        msg.guild.channels.find("name","raids_meldingen").send({embed: {
-          color: 3447003,
-          fields: [{
-            name: "raid ",
-            value: "raid #" + x["idraids"] + " " + x["raidboss"] + " tot " + x["raidendtime"]
-          },
-          {
-            name: "gym",
-            value: x["raidgym"]
-          },
-          {
-            name: "raid battle time",
-            value: x["raidbattletime"]
+      } else {
+        info = {
+          "raidboss": second
+        }
+        i = 2
+        while (splits[i] != null) {
+          if (splits[i] == 'e') {
+            info["raidendtime"] = splits[i + 1];
+            i += 2;
+          } else if (splits[i] == 'b') {
+            info["raidbattletime"] = splits[i + 1];
+            i += 2;
+          } else if (splits[i] == 'g') {
+            info["raidgym"] = splits[i + 1];
+            i += 2;
+          } else {
+            i += 2;
           }
-          ]
         }
-      })
+        raid.create(info).then(function(x) {
+            msg.guild.channels.find("name", "raids_meldingen").send({
+              embed: {
+                color: 3447003,
+                fields: [{
+                    name: "raid ",
+                    value: "raid #" + x["idraids"] + " " + x[
+                      "raidboss"] + " tot " + x["raidendtime"]
+              },
+                  {
+                    name: "gym",
+                    value: x["raidgym"]
+                },
+                  {
+                    name: "raid battle time",
+                    value: x["raidbattletime"]
+                }
+              ]
+              }
+            })
+          })
+          //console.log(x)
+          //console.log(createdraid(raid_create))
       }
-      )
-      //console.log(x)
-      //console.log(createdraid(raid_create))
-      }
-    }else{
+    } else {
       i = 2
-      while(splits[i] != null){
-          if(splits[i] == 'e'){
-            console.log(splits[i+1])
-            info["raidendtime"] =  splits[i+1];
-            i += 2;
-          }else if(splits[i] == 'b'){
-            info["raidbattletime"] =  splits[i+1];
-            i += 2;
-          }else if (splits[i] == 'g'){
-            info["raidgym"] = splits[i+1];
-            i += 2;
-          }else{
-            i += 2;
-          }
+      while (splits[i] != null) {
+        if (splits[i] == 'e') {
+          console.log(splits[i + 1])
+          info["raidendtime"] = splits[i + 1];
+          i += 2;
+        } else if (splits[i] == 'b') {
+          info["raidbattletime"] = splits[i + 1];
+          i += 2;
+        } else if (splits[i] == 'g') {
+          info["raidgym"] = splits[i + 1];
+          i += 2;
+        } else {
+          i += 2;
         }
+      }
 
-        raid.update(info,{where: {"idraids" : second}})
-        raid.findOne({where:{"idraids" : second}}).then(function(x){
-        msg.guild.channels.find("name","raids_meldingen").send({embed: {
-          color: 3447003,
-          fields: [{
-            name: "raid ",
-            value: "raid #" + x["idraids"] + " " + x["raidboss"] + " tot " + x["raidendtime"]
-          },
-          {
-            name: "gym",
-            value: x["raidgym"]
-          },
-          {
-            name: "raid battle time",
-            value: x["raidbattletime"]
-          }
-          ]
+      await raid.update(info, {
+        where: {
+          "idraids": second
         }
+      });
+
+      raid.findOne({
+        where: {
+          "idraids": second
+        }
+      }).then(function(x) {
+        msg.guild.channels.find("name", "raids_meldingen").send({
+          embed: {
+            color: 3447003,
+            fields: [{
+                name: "raid ",
+                value: "raid #" + x["idraids"] + " " + x[
+                  "raidboss"] + " tot " + x["raidendtime"]
+            },
+              {
+                name: "gym",
+                value: x["raidgym"]
+              },
+              {
+                name: "raid battle time",
+                value: x["raidbattletime"]
+              }
+            ]
+          }
+        })
       })
-      })
-        update = true
+      update = true
     }
   }
 
 
-  if (msgText.startsWith('del raid')){
+  if (msgText.startsWith('del raid')) {
     msgs = msg.content.split(" ");
     var id = msgs[2]
-    connection.query("SELECT idraid,raidboss, FROM raids WHERE idraids = ?", id, function(error, result,fields){
-      console.log(result)
-       connection.query("DELETE FROM raids WHERE idraids == ?", id, function(error){console.log(error)})
-    })
+    connection.query("SELECT idraid,raidboss, FROM raids WHERE idraids = ?",
+      id,
+      function(error, result, fields) {
+        console.log(result)
+        connection.query("DELETE FROM raids WHERE idraids == ?", id,
+          function(error) {
+            console.log(error)
+          })
+      })
     console.log(id);
     //connection.query("DELETE FROM raids WHERE idraids = ?", id, function(error){console.log(error)})
   }
 
 
-  if (msgText == "find raids"){
-    var info = connection.query("SELECT raidboss, idraids FROM raids", function (error, result, fields){
-      console.log(result["rows"][0]["idraids"])
-      for (var i = 0; i <= result["rows"].length - 1; i++) {
-      msg.reply('raid id: ' + result["rows"][i]["idraids"] +  ' raid boss: ' + result["rows"][i]["raidboss"]);
-    }
-    });
+  if (msgText == "find raids") {
+    var info = connection.query("SELECT raidboss, idraids FROM raids",
+      function(error, result, fields) {
+        console.log(result["rows"][0]["idraids"])
+        for (var i = 0; i <= result["rows"].length - 1; i++) {
+          msg.reply('raid id: ' + result["rows"][i]["idraids"] +
+            ' raid boss: ' + result["rows"][i]["raidboss"]);
+        }
+      });
   }
 
-  if (msgText == "reset raidid"){
-    connection.query("ALTER TABLE `raids` DROP `idraids`",function(error){console.log(error);})
-    connection.query(" ALTER TABLE `raids` AUTO_INCREMENT = 1",function(error){console.log(error);})
-    connection.query("ALTER TABLE `raids` ADD `idraids` int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST", function (error){console.log(error);})
+  if (msgText == "reset raidid") {
+    connection.query("ALTER TABLE `raids` DROP `idraids`", function(error) {
+      console.log(error);
+    })
+    connection.query(" ALTER TABLE `raids` AUTO_INCREMENT = 1", function(
+      error) {
+      console.log(error);
+    })
+    connection.query(
+      "ALTER TABLE `raids` ADD `idraids` int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST",
+      function(error) {
+        console.log(error);
+      })
   }
 
 
@@ -379,11 +417,11 @@ client.on("message", (msg) => {
     }
     if (pokemon.attacks.length) {
       reply += 'Best Attacks: ' + pokemon.attacks[0] + ' & ' + pokemon.attacks[
-          1] + '\n';
+        1] + '\n';
     }
     if (pokemon.defence.length) {
       reply += 'Best Defense: ' + pokemon.defence[0] + ' & ' + pokemon.defence[
-          1] + '\n';
+        1] + '\n';
     }
     if (pokemon.attacks.length || pokemon.defence.length || pokemon.recplayers >
       0) {
