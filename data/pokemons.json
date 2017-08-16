@@ -2,7 +2,7 @@
   {
     "keys": ["bulba", "bulbasaur"],
     "name": "Bulbasaur",
-    "number":  1,
+    "number": 1,
     "stats": [118, 118, 90],
     "type": ["grass", "poison"],
     "attacks": [],
@@ -12,7 +12,7 @@
   {
     "keys": ["ivysaur"],
     "name": "Ivysaur",
-    "number":  2,
+    "number": 2,
     "stats": [151, 151, 120],
     "type": ["grass", "poison"],
     "attacks": [],
@@ -22,7 +22,7 @@
   {
     "keys": ["venusaur"],
     "name": "Venusaur",
-    "number":  3,
+    "number": 3,
     "stats": [198, 198, 160],
     "type": ["grass", "poison"],
     "attacks": ["Vine Whip", "Solar Beam"],
@@ -32,7 +32,7 @@
   {
     "keys": ["charmander"],
     "name": "Charmander",
-    "number":  4,
+    "number": 4,
     "stats": [116, 96, 78],
     "type": ["fire"],
     "attacks": [],
@@ -42,7 +42,7 @@
   {
     "keys": ["charmeleon"],
     "name": "Charmeleon",
-    "number":  5,
+    "number": 5,
     "stats": [158, 129, 116],
     "type": ["fire"],
     "attacks": [],
@@ -52,7 +52,7 @@
   {
     "keys": ["charizard"],
     "name": "Charizard",
-    "number":  6,
+    "number": 6,
     "type": ["fire", "flying"],
     "stats": [223, 176, 156],
     "attacks": ["Fire Spin", "Overheat"],
@@ -82,7 +82,7 @@
   {
     "keys": ["blastoise"],
     "name": "Blastoise",
-    "number":  9,
+    "number": 9,
     "type": ["water"],
     "stats": [171, 210, 158],
     "attacks": ["Water Gun", "Hydro Pump"],
@@ -759,7 +759,8 @@
     "defence": [],
     "recplayers": 0
   },
-  { "keys": ["ponita"],
+  {
+    "keys": ["ponita"],
     "name": "Ponita",
     "number": 77,
     "type": ["fire"],
@@ -1009,7 +1010,8 @@
     "recplayers": 0
   },
   {
-    "keys": ["exeggcute", "exeggute", "eggecute", "exegute", "execute", "eggsecute"],
+    "keys": ["exeggcute", "exeggute", "eggecute", "exegute", "execute",
+      "eggsecute"],
     "name": "Exeggute",
     "number": 102,
     "type": ["grass", "psycic"],
@@ -1022,7 +1024,7 @@
   {
     "keys": ["exeggutor", "exegutor", "eggecutor", "Eggsecutor", "exeggcutor"],
     "name": "Exeggutor",
-    "number":  103,
+    "number": 103,
     "type": ["grass", "psychic"],
     "wonder": [233, 158, 190],
     "attacks": ["Bullet Seed", "Solar Beam"],
@@ -1092,7 +1094,7 @@
   {
     "keys": ["weezing"],
     "name": "Weezing",
-    "number":  110,
+    "number": 110,
     "type": ["poison"],
     "wonder": [174, 221, 130],
     "attacks": ["Infestation", "Sludge Bomb"],
@@ -1112,7 +1114,7 @@
   {
     "keys": ["rhydon"],
     "name": "Rhydon",
-    "number":  112,
+    "number": 112,
     "type": ["ground", "rock"],
     "stats": [222, 206, 210],
     "attacks": ["Mud Slap", "Earthquake/Stone Edge"],
@@ -1210,7 +1212,7 @@
     "recplayers": 0
   },
   {
-    "keys": ["mr mime", "mr. mime", "mrmime"],
+    "keys": ["mr mime", "mr. mime", "mrmime", "mister mime"],
     "name": "Mr. Mime",
     "number": 122,
     "type": ["psychic", "fairy"],
@@ -1290,7 +1292,7 @@
     "recplayers": 1
   },
   {
-    "keys": ["gyarados", "garados", "gyrados"],
+    "keys": ["gyarados", "garados", "gyrados", "gerados"],
     "name": "Gyarados",
     "number": 130,
     "type": ["water", "flying"],
@@ -1590,7 +1592,8 @@
     "recplayers": 1
   },
   {
-    "keys": ["feraligatr", "fraligatr", "feraligater", "fraligator", "feraligator"],
+    "keys": ["feraligatr", "fraligatr", "feraligater", "fraligator",
+      "feraligator"],
     "name": "Feraligatr",
     "number": 160,
     "type": ["water"],
@@ -2080,7 +2083,7 @@
     "recplayers": 0
   },
   {
-    "keys": ["tyranitar", "ttar", "tyra"],
+    "keys": ["tyranitar", "ttar", "tyra", "tyranitair"],
     "name": "Tyranitar",
     "number": 248,
     "type": ["dark", "rock"],
