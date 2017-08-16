@@ -12,6 +12,7 @@ const stops = require('./data/pokestops.json');
 const pokemons = require('./data/pokemons.json');
 const defense = require('./data/defense.json');
 const messages = require('./data/messages.json');
+const raidreply = require('./raidreply')
 
 client.login(settings.token);
 
@@ -145,6 +146,7 @@ client.on("message", (msg) => {
 }*/
 
   if (msgText.split(' ')[0] == 'raid'){
+    var update = false
     var info = {}
     var splits = msg.content.split(' ');
     var second = splits[1];
@@ -152,7 +154,7 @@ client.on("message", (msg) => {
       if (isNaN(second)){
         if (second == "del"){
           var third = splits[2]
-          if(third = "all"){
+          if(third == "all"){
             raid.destroy({where: {}})
           }else{
           raid.destroy({where:{"idraids" : third }})
@@ -174,7 +176,28 @@ client.on("message", (msg) => {
               i += 2;
             }
         }
-      raid.create(info)
+      raid.create(info).then(function(x){
+        msg.guild.channels.find("name","raids_meldingen").send({embed: {
+          color: 3447003,
+          fields: [{
+            name: "raid ",
+            value: "raid #" + x["idraids"] + " " + x["raidboss"] + " tot " + x["raidendtime"]
+          },
+          {
+            name: "gym",
+            value: x["raidgym"]
+          },
+          {
+            name: "raid battle time",
+            value: x["raidbattletime"]
+          }
+          ]
+        }
+      })
+      }
+      )
+      //console.log(x)
+      //console.log(createdraid(raid_create))
       }
     }else{
       i = 2
@@ -193,7 +216,28 @@ client.on("message", (msg) => {
             i += 2;
           }
         }
+
         raid.update(info,{where: {"idraids" : second}})
+        raid.findOne({where:{"idraids" : second}}).then(function(x){
+        msg.guild.channels.find("name","raids_meldingen").send({embed: {
+          color: 3447003,
+          fields: [{
+            name: "raid ",
+            value: "raid #" + x["idraids"] + " " + x["raidboss"] + " tot " + x["raidendtime"]
+          },
+          {
+            name: "gym",
+            value: x["raidgym"]
+          },
+          {
+            name: "raid battle time",
+            value: x["raidbattletime"]
+          }
+          ]
+        }
+      })
+      })
+        update = true
     }
   }
 
