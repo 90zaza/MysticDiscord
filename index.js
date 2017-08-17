@@ -1,7 +1,13 @@
 'use strict';
 
+
 const Sequelize = require('sequelize');
-var pg = require('pg');
+
+require('dotenv').config()
+
+console.log(process.env);
+
+
 var Discord = require('discord.js');
 var client = new Discord.Client();
 var https = require("https");
@@ -114,6 +120,7 @@ client.on("message", async (msg) => {
   let msgPrefix = msg.content[0];
   // get the message content, cut the first character, convert it to all lowercase and save to new variable
   var msgText = msg.content.toLowerCase().substr(1);
+  var pokemon;
 
   if (prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
 
@@ -489,37 +496,28 @@ client.on("message", async (msg) => {
       );;
     }, 1000);
     msg.delete();
-  }
+  } else if ((pokemon = pokemonStats.checkForPokemon(msgText)) != undefined) {
 
-  //pokemon reply
-  let pokemon = pokemons.find((p) => {
+    pokemonStats.reply(msg, pokemon);
+  } else {
 
-    if (!p.keys) {
-      console.log('pokemon has no key', p);
-      return;
-    }
-    return p.keys.find((key) => {
-      return msgText == key;
-    });
-  });
-
-  if (pokemon) {
-
-    // dynamically compute defense values for type combinations
-    let def = JSON.parse(JSON.stringify(defense[pokemon.type[0]]));
-    for (var i = 1; i < pokemon.type.length; i++) {
-      for (var j = 0; j < def.length; j++) {
-        def[j].mult *= defense[pokemon.type[i]][j].mult;
+    //gyms reply
+    const gymMatch = gyms.find((gym) => {
+      if (!gym.keys) {
+        console.log('gym has no key', gym);
+        return;
       }
+
+      return gym.keys.find((key) => {
+        return msgText.startsWith(key);
+      });
+    });
+
+
+    if (gymMatch) {
+      msg.reply(`**Gym: ${gymMatch.reply}`);
     }
 
-    // filter for 1.96 and 1.4
-    let verystrong = def.filter((d) => {
-      return d.mult > 1.5;
-    });
-    let strong = def.filter((d) => {
-      return (d.mult > 1.1 && d.mult < 1.5);
-    });
 
     // compose message
     let reply = '**#' + pokemon.number + ' - ' + pokemon.name + '** [' +
@@ -569,160 +567,143 @@ client.on("message", async (msg) => {
     if (pokemon.attacks.length || pokemon.defence.length || pokemon.recplayers >
       0) {
       reply += '```';
-    }
-
-    msg.reply(reply);
   }
 
 
-  //gyms reply
-  const gymMatch = gyms.find((gym) => {
-    if (!gym.keys) {
-      console.log('gym has no key', gym);
-      return;
-    }
-
-    return gym.keys.find((key) => {
-      return msgText.startsWith(key);
-    });
-  });
-
-  if (gymMatch) {
-    msg.reply(`**Gym: ${gymMatch.reply}`);
-  }
-
-  //message reply
-  const messageMatch = messages.find((message) => {
-    new Message(msg).newMessage(
-      message.keys,
-      message.reply
-    );
-  });
-
-  if (messageMatch) {
-    msg.reply(`${messageMatch.reply}`);
-  }
-
-  //pokestop spins
-  const stopMatch = stops.find((stop) => {
-    return msgText.startsWith(stop.key);
-  });
-
-  if (stopMatch) {
-    msg.reply(stopMatch.reply);
-  }
-
-  //give trusted role, admin only
-  if (msgText.startsWith('add')) {
-    if (msg.member.roles.has(moderator)) {
-      let member = msg.mentions.members.first();
-      let role = msg.guild.roles.find("name",
-        "makingdelftblueagain");
-      member.addRole(role).catch(console.error);
-      msg.channel.send('Welkom ' + member +
-        ', je bent nu officieel toegevoegd! In het kanaal #welkom is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Daarnaast sta ik natuurlijk ook tot je beschikking! Door "!help" te typen kun je zien wat ik allemaal voor je kan doen! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, zodat we weten wie iedereen is;)'
+    //message reply
+    const messageMatch = messages.find((message) => {
+      new Message(msg).newMessage(
+        message.keys,
+        message.reply
       );
-    } else {
+    });
+
+
+    if (messageMatch) {
+      msg.reply(`${messageMatch.reply}`);
+    }
+
+    //pokestop spins
+    const stopMatch = stops.find((stop) => {
+      return msgText.startsWith(stop.key);
+    });
+
+    if (stopMatch) {
+      msg.reply(stopMatch.reply);
+    }
+
+    //give trusted role, admin only
+    if (msgText.startsWith('add')) {
+      if (msg.member.roles.has(moderator)) {
+        let member = msg.mentions.members.first();
+        let role = msg.guild.roles.find("name",
+          "makingdelftblueagain");
+        member.addRole(role).catch(console.error);
+        msg.channel.send('Welkom ' + member +
+          ', je bent nu officieel toegevoegd! In het kanaal #welkom is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Daarnaast sta ik natuurlijk ook tot je beschikking! Door "!help" te typen kun je zien wat ik allemaal voor je kan doen! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, zodat we weten wie iedereen is;)'
+        );
+      } else {
+        msg.reply(
+          'Leden verifieren kan alleen door een moderator worden gedaan'
+        )
+      }
+      msg.delete()
+    } else
+
+    //request gym roles
+    if (msgText.startsWith('+centrum')) {
+      let role = msg.guild.roles.find("name", "Centrum");
+      msg.member.addRole(role).catch(console.error);
+      msg.reply('Je hebt nu toegang tot het centrum gym kanaal!');
+      msg.delete()
+    } else if (msgText.startsWith('+hoven')) {
+      let role = msg.guild.roles.find("name", "Hoven");
+      msg.member.addRole(role).catch(console.error);
+      msg.reply('Je hebt nu toegang tot het hoven gym kanaal!');
+      msg.delete()
+    } else if (msgText.startsWith('+tu')) {
+      let role = msg.guild.roles.find("name", "TU");
+      msg.member.addRole(role).catch(console.error);
+      msg.reply('Je hebt nu toegang tot het tu-wijk gym kanaal!');
+      msg.delete()
+    } else if (msgText.startsWith('+tanthof')) {
+      let role = msg.guild.roles.find("name", "Tanthof");
+      msg.member.addRole(role).catch(console.error);
+      msg.reply('Je hebt nu toegang tot het tanthof gym kanaal!');
+      msg.delete()
+    } else if (msgText.startsWith('+noord')) {
+      let role = msg.guild.roles.find("name", "DelftNoord");
+      msg.member.addRole(role).catch(console.error);
+      msg.reply('Je hebt nu toegang tot het Noord-Delft gym kanaal!');
+      msg.delete()
+    } else if (msgText.startsWith('+oost')) {
+      let role = msg.guild.roles.find("name", "DelftOost");
+      msg.member.addRole(role).catch(console.error);
+      msg.reply('Je hebt nu toegang tot het Oost-Delft gym kanaal!');
+      msg.delete()
+    } else if (msgText.startsWith('+english')) {
+      let role = msg.guild.roles.find("name", "English");
+      msg.member.addRole(role).catch(console.error);
+      msg.reply('You now have access to the English channel!');
+      msg.delete()
+    } else
+
+    //remove gym roles
+    if (msgText.startsWith('-centrum')) {
+      let role = msg.guild.roles.find("name", "Centrum");
+      msg.member.removeRole(role).catch(console.error);
       msg.reply(
-        'Leden verifieren kan alleen door een moderator worden gedaan'
-      )
+        'Je hebt nu geen toegang meer tot het centrum gym kanaal!');
+      msg.delete()
+    } else if (msgText.startsWith('-hoven')) {
+      let role = msg.guild.roles.find("name", "Hoven");
+      msg.member.removeRole(role).catch(console.error);
+      msg.reply(
+        'Je hebt nu geen toegang meer tot het hoven gym kanaal!');
+      msg.delete()
+    } else if (msgText.startsWith('-tu')) {
+      let role = msg.guild.roles.find("name", "TU");
+      msg.member.removeRole(role).catch(console.error);
+      msg.reply(
+        'Je hebt nu geen toegang meer tot het tu-wijk gym kanaal!');
+      msg.delete()
+    } else if (msgText.startsWith('-tanthof')) {
+      let role = msg.guild.roles.find("name", "Tanthof");
+      msg.member.removeRole(role).catch(console.error);
+      msg.reply(
+        'Je hebt nu geen toegang meer tot het tanthof gym kanaal!');
+      msg.delete()
+    } else if (msgText.startsWith('-noord')) {
+      let role = msg.guild.roles.find("name", "DelftNoord");
+      msg.member.removeRole(role).catch(console.error);
+      msg.reply(
+        'Je hebt nu geen toegang meer tot het Noord-Delft gym kanaal!');
+      msg.delete()
+    } else if (msgText.startsWith('-oost')) {
+      let role = msg.guild.roles.find("name", "DelftOost");
+      msg.member.removeRole(role).catch(console.error);
+      msg.reply(
+        'Je hebt nu geen toegang meer tot het Oost-Delft gym kanaal!');
+      msg.delete()
+    } else if (msgText.startsWith('-english')) {
+      let role = msg.guild.roles.find("name", "English");
+      msg.member.removeRole(role).catch(console.error);
+      msg.reply('You now have lost access to the English channel!');
+      msg.delete()
+    } else
+
+    //delete msgs
+
+    if (msgText.startsWith('delete')) {
+      if (msg.member.roles.has(moderator)) {
+        var del = msgText.split(" ");
+        del.splice(0, 1);
+        msg.channel.bulkDelete(del);
+      } else {
+        msg.reply('Alleen moderators kunnen berichten verwijderen')
+      }
+      msg.delete()
     }
-    msg.delete()
-  } else
-
-  //request gym roles
-  if (msgText.startsWith('+centrum')) {
-    let role = msg.guild.roles.find("name", "Centrum");
-    msg.member.addRole(role).catch(console.error);
-    msg.reply('Je hebt nu toegang tot het centrum gym kanaal!');
-    msg.delete()
-  } else if (msgText.startsWith('+hoven')) {
-    let role = msg.guild.roles.find("name", "Hoven");
-    msg.member.addRole(role).catch(console.error);
-    msg.reply('Je hebt nu toegang tot het hoven gym kanaal!');
-    msg.delete()
-  } else if (msgText.startsWith('+tu')) {
-    let role = msg.guild.roles.find("name", "TU");
-    msg.member.addRole(role).catch(console.error);
-    msg.reply('Je hebt nu toegang tot het tu-wijk gym kanaal!');
-    msg.delete()
-  } else if (msgText.startsWith('+tanthof')) {
-    let role = msg.guild.roles.find("name", "Tanthof");
-    msg.member.addRole(role).catch(console.error);
-    msg.reply('Je hebt nu toegang tot het tanthof gym kanaal!');
-    msg.delete()
-  } else if (msgText.startsWith('+noord')) {
-    let role = msg.guild.roles.find("name", "DelftNoord");
-    msg.member.addRole(role).catch(console.error);
-    msg.reply('Je hebt nu toegang tot het Noord-Delft gym kanaal!');
-    msg.delete()
-  } else if (msgText.startsWith('+oost')) {
-    let role = msg.guild.roles.find("name", "DelftOost");
-    msg.member.addRole(role).catch(console.error);
-    msg.reply('Je hebt nu toegang tot het Oost-Delft gym kanaal!');
-    msg.delete()
-  } else if (msgText.startsWith('+english')) {
-    let role = msg.guild.roles.find("name", "English");
-    msg.member.addRole(role).catch(console.error);
-    msg.reply('You now have access to the English channel!');
-    msg.delete()
-  } else
-
-  //remove gym roles
-  if (msgText.startsWith('-centrum')) {
-    let role = msg.guild.roles.find("name", "Centrum");
-    msg.member.removeRole(role).catch(console.error);
-    msg.reply(
-      'Je hebt nu geen toegang meer tot het centrum gym kanaal!');
-    msg.delete()
-  } else if (msgText.startsWith('-hoven')) {
-    let role = msg.guild.roles.find("name", "Hoven");
-    msg.member.removeRole(role).catch(console.error);
-    msg.reply(
-      'Je hebt nu geen toegang meer tot het hoven gym kanaal!');
-    msg.delete()
-  } else if (msgText.startsWith('-tu')) {
-    let role = msg.guild.roles.find("name", "TU");
-    msg.member.removeRole(role).catch(console.error);
-    msg.reply(
-      'Je hebt nu geen toegang meer tot het tu-wijk gym kanaal!');
-    msg.delete()
-  } else if (msgText.startsWith('-tanthof')) {
-    let role = msg.guild.roles.find("name", "Tanthof");
-    msg.member.removeRole(role).catch(console.error);
-    msg.reply(
-      'Je hebt nu geen toegang meer tot het tanthof gym kanaal!');
-    msg.delete()
-  } else if (msgText.startsWith('-noord')) {
-    let role = msg.guild.roles.find("name", "DelftNoord");
-    msg.member.removeRole(role).catch(console.error);
-    msg.reply(
-      'Je hebt nu geen toegang meer tot het Noord-Delft gym kanaal!');
-    msg.delete()
-  } else if (msgText.startsWith('-oost')) {
-    let role = msg.guild.roles.find("name", "DelftOost");
-    msg.member.removeRole(role).catch(console.error);
-    msg.reply(
-      'Je hebt nu geen toegang meer tot het Oost-Delft gym kanaal!');
-    msg.delete()
-  } else if (msgText.startsWith('-english')) {
-    let role = msg.guild.roles.find("name", "English");
-    msg.member.removeRole(role).catch(console.error);
-    msg.reply('You now have lost access to the English channel!');
-    msg.delete()
-  } else
-
-  //delete msgs
-
-  if (msgText.startsWith('delete')) {
-    if (msg.member.roles.has(moderator)) {
-      var del = msgText.split(" ");
-      del.splice(0, 1);
-      msg.channel.bulkDelete(del);
-    } else {
-      msg.reply('Alleen moderators kunnen berichten verwijderen')
-    }
-    msg.delete()
   }
 });
 
