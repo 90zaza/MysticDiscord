@@ -161,7 +161,7 @@ client.on("message", async (msg) => {
               name: "raid id",
               value: "raid id can be found in message from Blanche"
             },
-            { name: "join/leave a raid"
+            { name: "join/leave a raid",
               value: "!raid join [id] to join, !raid leave [id] to leave"
             }
             ]
