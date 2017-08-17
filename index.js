@@ -5,7 +5,7 @@ const Sequelize = require('sequelize');
 
 require('dotenv').config()
 
-console.log(process.env);
+console.log(process.env.token);
 
 
 var Discord = require('discord.js');
@@ -19,7 +19,7 @@ const pokemons = require('./data/pokemons.json');
 const defense = require('./data/defense.json');
 const messages = require('./data/messages.json');
 
-client.login(settings.token);
+client.login(process.env.TOKEN);
 
 
 var express = require('express');
