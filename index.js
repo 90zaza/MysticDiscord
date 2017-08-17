@@ -143,16 +143,16 @@ client.on("message", async (msg) => {
 
           if (splits[i] == 'e') {
             info["raidendtime"] = splits[i + 1];
-            i += 2;
+            i += 1;
           } else if (splits[i] == 'b') {
             info["raidbattletime"] = splits[i + 1];
-            i += 2;
+            i += 1;
           } else if (splits[i] == 'g') {
             var id = index.indexOf(splits.indexOf('g'))
             info["raidgym"] = splits.slice(index[id]+1,index[id+1]).join(' ');
-            i += index[id+1];
+            i += 1;
           } else {
-            i += 2;
+            i += 1;
           }
         }
         raid.create(info).then(function(x) {
@@ -212,10 +212,10 @@ client.on("message", async (msg) => {
         var index = [splits.indexOf('e'),splits.indexOf('b'),splits.indexOf('g'),splits.length].sort()
         if (splits[i] == 'e') {
           info["raidendtime"] = splits[i + 1];
-          i += 2;
+          i += 1;
         } else if (splits[i] == 'b') {
           info["raidbattletime"] = splits[i + 1];
-          i += 2;
+          i += 1;
         } else if (splits[i] == 'g') {
           var id = index.indexOf(splits.indexOf('g'))
           info["raidgym"] = splits.slice(index[id]+1,index[id+1]).join(' ');
