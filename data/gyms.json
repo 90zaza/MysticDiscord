@@ -26,10 +26,10 @@
   "keys": ["color", "colour"],
   "reply": "Color Sculpture**\n<https://goo.gl/maps/kR2QeheLsZz>"
 }, {
-  "keys": ["coligny"],
+  "keys": ["coligny", "de coligny"],
   "reply": "De Coligny**\n<https://goo.gl/maps/fNgWYGgmQQD2>"
 }, {
-  "keys": ["delftse"],
+  "keys": ["delftse", "de delftse"],
   "reply": "De Delftse Pauw**\n<https://goo.gl/maps/CVrYXSJfwf32>"
 }, {
   "keys": ["hofstee", "de hofstee"],
@@ -41,13 +41,13 @@
   "keys": ["nieuwe", "de nieuwe"],
   "reply": "De Nieuwe Lente**\n<https://goo.gl/maps/D1ZGGvH1ED72>"
 }, {
-  "keys": ["oostpoort"],
+  "keys": ["oostpoort", "de oostpoort"],
   "reply": "De Oostpoort**\n<https://goo.gl/maps/APDKGayWZZN2>"
 }, {
-  "keys": ["r.k.", "rk"],
+  "keys": ["r.k.", "rk", "de r.k.", "de rk"],
   "reply": "De R.K. Kerk Antonius en Cornelius**\n<https://goo.gl/maps/3rbWddkmpaA2>"
 }, {
-  "keys": ["stier"],
+  "keys": ["stier", "de stier"],
   "reply": "De Stier**\n<https://goo.gl/maps/Xq77BkHMGbz>"
 }, {
   "keys": ["delft central", "delft centraal", "centraal", "delft cs"],
@@ -155,7 +155,7 @@
   "keys": ["kolom"],
   "reply": "Kolom Van De Mensenrechten**\n<https://goo.gl/maps/dWKCFHijMbu>"
 }, {
-  "keys": ["koninkrijkszaal"],
+  "keys": ["koninkrijkszaal", "jehova"],
   "reply": "Koninkrijkszaal Van Jehovah\"s Getuigen**\n<https://goo.gl/maps/pbTxo6DKFXy>"
 }, {
   "keys": ["kwakkie"],
@@ -203,8 +203,11 @@
   "keys": ["paddestoelen"],
   "reply": "Paddestoelen**\n<https://goo.gl/maps/U6PmwMxX5382>"
 }, {
-  "keys": ["paint"],
+  "keys": ["paint jobs"],
   "reply": "Paint Jobs**\n<https://goo.gl/maps/3LW1TyqmFUT2>"
+}, {
+  "keys": ["Painting"],
+  "reply": "Plaquette op bank**\n<https://goo.gl/maps/kBB6EDmab6t>"
 }, {
   "keys": ["papegaaien"],
   "reply": "Papegaaien**\n<https://goo.gl/maps/8wwDTDqxxet>"
@@ -212,16 +215,16 @@
   "keys": ["plaquette"],
   "reply": "Plaquette op bank**\n<https://goo.gl/maps/DjkYPsFRez82>"
 }, {
-  "keys": ["playground brahmslaan"],
+  "keys": ["playground b"],
   "reply": "Playground Brahmslaan**\n<https://goo.gl/maps/EQTAJqWWshL2>"
 }, {
-  "keys": ["playground straat"],
+  "keys": ["playground s"],
   "reply": "Playground Straat van Ormoes**\n<https://goo.gl/maps/LUroxsba6eP2>"
 }, {
-  "keys": ["playground vivaldilaan"],
+  "keys": ["playground v"],
   "reply": "Playground Vivaldilaan**\n<https://goo.gl/maps/Sx4CwasGcju>"
 }, {
-  "keys": ["prinses", "!prinses"],
+  "keys": ["prinses", "princes"],
   "reply": "Prinses Irene Tunnel**\n<https://goo.gl/maps/y9tMD3yrRc72>"
 }, {
   "keys": ["public"],
@@ -269,7 +272,7 @@
   "keys": ["statue "],
   "reply": "Statue Of Prometheus**\n<https://goo.gl/maps/C4Jtr7HKyVB2>"
 }, {
-  "keys": ["stop"],
+  "keys": ["stop", "child labor"],
   "reply": "Stop Child Labor Wall Painting**\n<https://goo.gl/maps/uwVfaadDRyQ2>"
 }, {
   "keys": ["street"],
@@ -281,7 +284,7 @@
   "keys": ["technische", "ewi"],
   "reply": "Technische Universiteit Delft - EWI**\n<https://goo.gl/maps/nMzwudtx8sS2>"
 }, {
-  "keys": ["whale", "!the whale"],
+  "keys": ["whale", "the whale"],
   "reply": "The Whale**\n<https://goo.gl/maps/JzYRD9ZdQmn>"
 }, {
   "keys": ["tiny"],
@@ -294,7 +297,7 @@
   "reply": "TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>"
 }, {
   "keys": ["tu delft pyramide", "pyramide", "floppy"],
-  "reply": "TU Delft Pyramide**\n<https://goo.gl/maps/HuvMJPUacU92>"
+  "reply": "Floppy tower**\n<https://goo.gl/maps/HuvMJPUacU92>"
 }, {
   "keys": ["2 haasje", "twee"],
   "reply": "Twee haasje over spelende kinderen**\n<https://goo.gl/maps/JM76fQWjjC92>"
