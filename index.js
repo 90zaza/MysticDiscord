@@ -2,7 +2,7 @@
 
 require('dotenv').config()
 
-console.log(process.env);
+console.log(process.env.token);
 
 var Discord = require('discord.js');
 var client = new Discord.Client();
@@ -14,7 +14,7 @@ const stops = require('./data/pokestops.json');
 const pokemons = require('./data/pokemons.json');
 const messages = require('./data/messages.json')
 
-client.login(settings.token);
+client.login(process.env.TOKEN);
 
 var express = require('express');
 var app = express();
