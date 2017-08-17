@@ -34,8 +34,10 @@ client.on('ready', () => {
   console.log('Blanche: I am ready!');
 });
 
+
 client.on("message", (msg) => {
   let prefixs = settings.prefixs;
+
   let moderator = settings.moderator;
 
   // get the first character of the message content
