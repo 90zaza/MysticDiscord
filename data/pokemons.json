@@ -2085,7 +2085,7 @@
   {
     "keys": ["snubbel", "snubbell"],
     "name": "Snubbell",
-    "number": ,
+    "number": 209,
     "type": ["fairy"],
     "stats": [137, 89, 120],
     "attacks": [],
