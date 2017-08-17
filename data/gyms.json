@@ -173,6 +173,9 @@
   "keys": ["mijlpaal"],
   "reply": "Mijlpaal**\n<https://goo.gl/maps/Zfj68NhETTS2>"
 }, {
+  "keys": ["molen aan"],
+  "reply": "Molen Aan Look**\n<https://goo.gl/maps/jM7bSq677dL2>"
+}, {
   "keys": ["molen de"],
   "reply": "Molen De Klokkenmaker**\n<https://goo.gl/maps/Dj8Vx6FxbM62>"
 }, {
@@ -301,6 +304,9 @@
 }, {
   "keys": ["2 haasje", "twee"],
   "reply": "Twee haasje over spelende kinderen**\n<https://goo.gl/maps/JM76fQWjjC92>"
+}, {
+  "keys": ["uil"],
+  "reply": "Uil Totempaal**\n<https://goo.gl/maps/yHphVRj9j5L2>"
 }, {
   "keys": ["uitkijkpunt"],
   "reply": "Uitkijkpunt**\n<https://goo.gl/maps/Zj7vPbr4sER2>"
