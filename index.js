@@ -107,7 +107,6 @@ const raid = connection.define('raid', {
   }
 })
 
-connection.sync({force:true})
 
 
 client.on("message", async (msg) => {
