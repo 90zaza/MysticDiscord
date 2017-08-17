@@ -7,6 +7,9 @@ const cpMultiplier = [0.094,      0.16639787, 0.21573247, 0.25572005, 0.29024988
                       0.73776948, 0.74378943, 0.74976104, 0.75568551, 0.76156384,
                       0.76739717, 0.7731865,  0.77893275, 0.78463697, 0.79030001];
 
+// This function computes the CP range for a guaranteed wonder of a pokemon at a given level
+// guaranteed wonder is different from the complete wonder range, because of CP overlap between different IV ranges
+// i.e. a 80% IV with a lot of attack can have a higher CP than an 82.2% IV with little attack
 exports.cpRangeWonder = function(pokemon, level) {
 
   let m = cpMultiplier[level - 1];
@@ -15,26 +18,25 @@ exports.cpRangeWonder = function(pokemon, level) {
   let atkval = (pokemon.stats[0] + 15) * m;
   let defval = Math.sqrt((pokemon.stats[1] + 15) * m);
   let staval = Math.sqrt((pokemon.stats[2] + 15) * m);
-  let maxCP = Math.floor( atkval * defval * staval * 0.1);
+  let maxCP = Math.floor(atkval * defval * staval * 0.1);
 
-  // a wonder has at least a combined 82.5% IV (37 out of 45)
-  // since the the stats vary its not fixed which combination is the lowest, so we test all that result in 82.5%IV
-  let minCP = 9999;
-  for(var a = 7; a < 16; a++){
-    for(var s = 7; s < 16; s++){
-      for(var d = 7; d < 16; d++){
-        if(a + s + d == 37)
-        {
-          atkval = (pokemon.stats[0] + a) * m;
-          defval = Math.sqrt((pokemon.stats[1] + d) * m);
-          staval = Math.sqrt((pokemon.stats[2] + s) * m);
-          let cp = Math.floor( atkval * defval * staval * 0.1);
+  // Search for the highest CP for 80% IV. This will always be atk = 15 so we check for (def + sta == 21)
+  // The min guaranteed CP for a wonder is then the max 80% CP + 1
+  let minCP = 0;
+  for(var s = 7; s < 16; s++){
+    for(var d = 7; d < 16; d++){
+      if(s + d == 21)
+      {
+        defval = Math.sqrt((pokemon.stats[1] + d) * m);
+        staval = Math.sqrt((pokemon.stats[2] + s) * m);
+        let cp = Math.floor( atkval * defval * staval * 0.1);
 
-          if( cp < minCP ){ minCP = cp; }
-        }
+        if( cp > minCP ){ minCP = cp; }
       }
     }
   }
+
+  ++minCP;
 
   return [minCP, maxCP];
 }
