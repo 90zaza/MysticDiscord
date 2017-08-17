@@ -1,3 +1,7 @@
+const Discord = require('discord.js');
+const pokemons = require('../data/pokemons.json');
+const defense = require('../data/defense.json');
+
 const cpMultiplier = [0.094,      0.16639787, 0.21573247, 0.25572005, 0.29024988,
                       0.3210876 , 0.34921268, 0.37523559, 0.39956728, 0.42250001,
                       0.44310755, 0.46279839, 0.48168495, 0.49985844, 0.51739395,
@@ -10,7 +14,7 @@ const cpMultiplier = [0.094,      0.16639787, 0.21573247, 0.25572005, 0.29024988
 // This function computes the CP range for a guaranteed wonder of a pokemon at a given level
 // guaranteed wonder is different from the complete wonder range, because of CP overlap between different IV ranges
 // i.e. a 80% IV with a lot of attack can have a higher CP than an 82.2% IV with little attack
-exports.cpRangeWonder = function(pokemon, level) {
+exports.cpRangeWonder = function (pokemon, level) {
 
   let m = cpMultiplier[level - 1];
 
@@ -23,15 +27,17 @@ exports.cpRangeWonder = function(pokemon, level) {
   // Search for the highest CP for 80% IV. This will always be atk = 15 so we check for (def + sta == 21)
   // The min guaranteed CP for a wonder is then the max 80% CP + 1
   let minCP = 0;
-  for(var s = 7; s < 16; s++){
-    for(var d = 7; d < 16; d++){
-      if(s + d == 21)
+  for (var s = 7; s < 16; s++) {
+    for (var d = 7; d < 16; d++) {
+      if (s + d == 21)
       {
         defval = Math.sqrt((pokemon.stats[1] + d) * m);
         staval = Math.sqrt((pokemon.stats[2] + s) * m);
         let cp = Math.floor( atkval * defval * staval * 0.1);
 
-        if( cp > minCP ){ minCP = cp; }
+        if (cp > minCP) {
+          minCP = cp;
+        }
       }
     }
   }
@@ -39,4 +45,100 @@ exports.cpRangeWonder = function(pokemon, level) {
   ++minCP;
 
   return [minCP, maxCP];
+}
+
+exports.checkForPokemon = function (msgText) {
+
+  let pokemon = pokemons.find((p) => {
+
+    if (!p.keys) {
+      console.log('pokemon has no key', p);
+      return;
+    }
+    return p.keys.find((key) => {
+      return msgText == key;
+    });
+  });
+
+  return pokemon;
+}
+
+exports.reply = function (msg, pokemon) {
+
+  let embed = new Discord.RichEmbed()
+    .setTitle("#" + pokemon.number + " - " + pokemon.name + " [" + pokemon.type.join(", ") + "]")
+    .setColor(0xFFFFFF);
+
+  // pokemon.recplayers can be used to identify whether the pokemon is also a raid boss
+  if (pokemon.recplayers > 0) {
+    embed.setDescription("Bring at least " + pokemon.recplayers + " trainers to a raid battle.");
+  }
+
+  // dynamically compute defense values for type combinations
+  let def = JSON.parse(JSON.stringify(defense[pokemon.type[0]]));
+  for (var i = 1; i < pokemon.type.length; i++) {
+    for (var j = 0; j < def.length; j++) {
+      def[j].mult *= defense[pokemon.type[i]][j].mult;
+    }
+  }
+
+  // filter for 1.96 and 1.4
+  let verystrong = def.filter((d) => {
+    return d.mult > 1.5;
+  });
+  let strong = def.filter((d) => {
+    return (d.mult > 1.1 && d.mult < 1.5);
+  });
+
+  let weakness = "";
+  if (verystrong.length > 0) {
+    weakness += ' x1.96: ';
+    if (verystrong.length > 1) {
+      weakness += '[';
+    }
+    for (var i = 0; i < verystrong.length; i++) {
+      weakness += verystrong[i].type;
+      if (i < verystrong.length - 1) {
+        weakness += ", ";
+      }
+    }
+    if (verystrong.length > 1) {
+      weakness += ']';
+    }
+  }
+  if (strong.length > 0) {
+    weakness += ' x1.4: ';
+    if (verystrong.length > 1) {
+      weakness += '[';
+    }
+    for (var i = 0; i < strong.length; i++) {
+      weakness += strong[i].type;
+      if (i < strong.length - 1) {
+        weakness += ", ";
+      }
+    }
+    if (verystrong.length > 1) {
+      weakness += ']';
+    }
+  }
+
+  embed.addField("Weakness", weakness);
+
+  if (pokemon.recplayers > 0) {
+
+    let cpRange = this.cpRangeWonder(pokemon, 20);
+    embed.addField("CP range for guaranteed level 20 wonder", cpRange[0] + " - " + cpRange[1]);
+  }
+
+  if (pokemon.attacks.length ) {
+
+    embed.addField("Best Attack Moveset", pokemon.attacks[0] + ' & ' + pokemon.attacks[1], true);
+  }
+
+  if (pokemon.defence.length ) {
+
+    embed.addField("Best Defense Moveset", pokemon.defence[0] + ' & ' + pokemon.defence[1], true);
+  }
+
+  msg.channel.send({embed});
 }

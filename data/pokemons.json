@@ -1428,7 +1428,7 @@
     "type": ["normal"],
     "stats": [190, 190, 320],
     "attacks": ["Zen Headbutt", "Heavy Slam"],
-    "defence:": [],
+    "defence": [],
     "recplayers": 5
   },
   {
