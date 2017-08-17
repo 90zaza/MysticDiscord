@@ -37,20 +37,6 @@ client.on('ready', () => {
   console.log('Blanche: I am ready!');
 });
 
-
-//mysql
-/*var con = {
-  host: "ec2-23-23-221-255.compute-1.amazonaws.com",
-  port: 5432,
-  database: "d4nplae62mj8j7",
-  user: "imiosejcivqljb",
-  password: "bdf834eba171721c921d94fa6d173ad7719a04d6477588e4d18d53b8c1eeaab5",
-  ssl: true
-};
-var connection = new pg.Client(con);
-connection.connect();
-*/
-
 const connection = new Sequelize('d4nplae62mj8j7', 'imiosejcivqljb',
   'bdf834eba171721c921d94fa6d173ad7719a04d6477588e4d18d53b8c1eeaab5', {
     host: 'ec2-23-23-221-255.compute-1.amazonaws.com',
@@ -79,10 +65,6 @@ connection
     console.error('Unable to connect to the database:', err);
   });
 
-connection.sync({
-  force: true
-})
-
 const raid = connection.define('raid', {
   idraids: {
     type: Sequelize.INTEGER,
@@ -104,12 +86,22 @@ const raid = connection.define('raid', {
   raidgym: {
     type: Sequelize.STRING,
     defaultValue: "to be added"
+  },
+  messageid: {
+    type: Sequelize.STRING,
+    defaultValue: "ID"
+  },
+  expireat: {
+    type: Sequelize.DATE,
+    defaultValue: Sequelize.literal("now() + '2 hours'::interval")
   }
 })
 
-//connection.sync({force: true})
+connection.sync({force:true})
+
 
 client.on("message", async (msg) => {
+  //console.log(msg)
   let prefixs = settings.prefixs;
 
   let moderator = settings.moderator;
@@ -122,37 +114,11 @@ client.on("message", async (msg) => {
   if (prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
 
 
-
-  /*if (msgText.split(' ')[0] == 'raid'){
-    var msgs = msg.content.split(' ');
-    var raidboss = msgs[1];
-    var gm = msgs[2];
-    var value = msgs[3]
-
-    //console.log(gyms)
-    console.log(isNaN(raidboss))
-    if (!isNaN(raidboss)){
-      raid.update({"raidendtime" : value},
-        {where: {"idraids" : raidboss}})
-
-    }else{
-    if (gm != null){
-
-
-      info = {"raidboss": raidboss, "raidgym": gm}
-    }else{
-    info = {"raidboss": raidboss}
-  }
-    raid.create(info);
-  }
-}*/
-
   if (msgText.split(' ')[0] == 'raid') {
     var update = false
     var info = {}
     var splits = msg.content.split(' ');
     var second = splits[1];
-    console.log(second)
     if (isNaN(second)) {
       if (second == "del") {
         var third = splits[2]
@@ -173,6 +139,8 @@ client.on("message", async (msg) => {
         }
         i = 2
         while (splits[i] != null) {
+          var index = [splits.indexOf('e'),splits.indexOf('b'),splits.indexOf('g'),splits.length].sort()
+
           if (splits[i] == 'e') {
             info["raidendtime"] = splits[i + 1];
             i += 2;
@@ -180,13 +148,33 @@ client.on("message", async (msg) => {
             info["raidbattletime"] = splits[i + 1];
             i += 2;
           } else if (splits[i] == 'g') {
-            info["raidgym"] = splits[i + 1];
-            i += 2;
+            var id = index.indexOf(splits.indexOf('g'))
+            info["raidgym"] = splits.slice(index[id]+1,index[id+1]).join(' ');
+            i += index[id+1];
           } else {
             i += 2;
           }
         }
         raid.create(info).then(function(x) {
+            var id = x.idraids;
+
+            const gymMatch = gyms.find((gym) => {
+            if (!gym.keys) {
+                console.log('gym has no key', gym);
+                return;
+              }
+
+             return gym.keys.find((key) => {
+                return x["raidgym"].startsWith(key);
+              });
+            });
+            var gym
+            if (gymMatch) {
+              gym = gymMatch.reply;
+            }else{
+              gym = x["raidgym"]
+            }
+
             msg.guild.channels.find("name", "raids_meldingen").send({
               embed: {
                 color: 3447003,
@@ -197,7 +185,7 @@ client.on("message", async (msg) => {
               },
                   {
                     name: "gym",
-                    value: x["raidgym"]
+                    value: gym
                 },
                   {
                     name: "raid battle time",
@@ -205,26 +193,35 @@ client.on("message", async (msg) => {
                 }
               ]
               }
+            }).then(function(x){
+              var messageinfo = {"messageid": x.id}
+              raid.update(messageinfo,{where:{"idraids":id}})
             })
           })
-          //console.log(x)
-          //console.log(createdraid(raid_create))
+          connection.query("DELETE FROM raids WHERE expireat < NOW() RETURNING *").then(function(x){
+            for (i = 0 ; i < x[0].length ; i++){
+              console.log(x[0][i]["messageid"])
+              msg.guild.channels.find("name", "raids_meldingen").messages.find("id",x[0][i]["messageid"]).delete()
+          }
+
+          })
       }
     } else {
       i = 2
       while (splits[i] != null) {
+        var index = [splits.indexOf('e'),splits.indexOf('b'),splits.indexOf('g'),splits.length].sort()
         if (splits[i] == 'e') {
-          console.log(splits[i + 1])
           info["raidendtime"] = splits[i + 1];
           i += 2;
         } else if (splits[i] == 'b') {
           info["raidbattletime"] = splits[i + 1];
           i += 2;
         } else if (splits[i] == 'g') {
-          info["raidgym"] = splits[i + 1];
-          i += 2;
+          var id = index.indexOf(splits.indexOf('g'))
+          info["raidgym"] = splits.slice(index[id]+1,index[id+1]).join(' ');
+          i += 1;
         } else {
-          i += 2;
+          i += 1;
         }
       }
 
@@ -239,7 +236,25 @@ client.on("message", async (msg) => {
           "idraids": second
         }
       }).then(function(x) {
-        msg.guild.channels.find("name", "raids_meldingen").send({
+        x["messageid"]
+        const gymMatch = gyms.find((gym) => {
+            if (!gym.keys) {
+                console.log('gym has no key', gym);
+                return;
+              }
+
+             return gym.keys.find((key) => {
+                return x["raidgym"].startsWith(key);
+              });
+            });
+
+            if (gymMatch) {
+              var gym = gymMatch.reply;
+            }else{
+              gym = x["raidgym"]
+            }
+
+        msg.guild.channels.find("name", "raids_meldingen").messages.find("id",x["messageid"]).edit({
           embed: {
             color: 3447003,
             fields: [{
@@ -249,7 +264,7 @@ client.on("message", async (msg) => {
             },
               {
                 name: "gym",
-                value: x["raidgym"]
+                value: gym
               },
               {
                 name: "raid battle time",
@@ -258,54 +273,10 @@ client.on("message", async (msg) => {
             ]
           }
         })
-      })
-      update = true
-    }
-  }
 
-
-  if (msgText.startsWith('del raid')) {
-    msgs = msg.content.split(" ");
-    var id = msgs[2]
-    connection.query("SELECT idraid,raidboss, FROM raids WHERE idraids = ?",
-      id,
-      function(error, result, fields) {
-        console.log(result)
-        connection.query("DELETE FROM raids WHERE idraids == ?", id,
-          function(error) {
-            console.log(error)
-          })
-      })
-    console.log(id);
-    //connection.query("DELETE FROM raids WHERE idraids = ?", id, function(error){console.log(error)})
-  }
-
-
-  if (msgText == "find raids") {
-    var info = connection.query("SELECT raidboss, idraids FROM raids",
-      function(error, result, fields) {
-        console.log(result["rows"][0]["idraids"])
-        for (var i = 0; i <= result["rows"].length - 1; i++) {
-          msg.reply('raid id: ' + result["rows"][i]["idraids"] +
-            ' raid boss: ' + result["rows"][i]["raidboss"]);
-        }
-      });
-  }
-
-  if (msgText == "reset raidid") {
-    connection.query("ALTER TABLE `raids` DROP `idraids`", function(error) {
-      console.log(error);
     })
-    connection.query(" ALTER TABLE `raids` AUTO_INCREMENT = 1", function(
-      error) {
-      console.log(error);
-    })
-    connection.query(
-      "ALTER TABLE `raids` ADD `idraids` int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST",
-      function(error) {
-        console.log(error);
-      })
   }
+}
 
 
   if (msgText === 'type') {
