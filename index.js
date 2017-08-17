@@ -48,7 +48,6 @@ const connection = new Sequelize('d4nplae62mj8j7', 'imiosejcivqljb',
       }
     },
     timezone: "+02:00",
-
     pool: {
       max: 5,
       min: 0,
@@ -64,6 +63,7 @@ connection
   .catch(err => {
     console.error('Unable to connect to the database:', err);
   });
+
 
 const raid = connection.define('raid', {
   idraids: {
@@ -86,6 +86,10 @@ const raid = connection.define('raid', {
   raidgym: {
     type: Sequelize.STRING,
     defaultValue: "to be added"
+  },
+  joining: {
+    type: Sequelize.ARRAY(Sequelize.STRING),
+    defaultValue : []
   },
   messageid: {
     type: Sequelize.STRING,
@@ -133,7 +137,91 @@ client.on("message", async (msg) => {
             }
           })
         }
-      } else {
+      }else if(second == 'help'){
+        msg.channel.send({
+          embed: {
+            color: 3447003,
+            fields: [{
+              name: "add a raid",
+              value: "!raid [boss] e [end time] g [gym] b [battle time]"
+            },{
+              name: "required/optional",
+              value: "required: boss; optional: e,g,b"
+            },{
+               name: "change raid parameters",
+              value: "!raid [raid id] [e/g/b] [value]"
+            },{
+              name: "raid id",
+              value: "raid id can be found in message from Blanche"
+            }
+            ]
+          }})
+      }else if(second == 'join'){
+        var id = splits[2]
+        raid.findOne({where:{"idraids": id}
+
+        }).then(function(x){
+          var join = x["dataValues"]["joining"]
+          if (join.indexOf(msg["author"]["username"]) < 0){
+            join.push(msg["author"]["username"])
+          }
+           raid.update({"joining": join}, {
+            where: {
+              "idraids": id
+            },returning: true
+          }).then(function(x){
+        const gymMatch = gyms.find((gym) => {
+            if (!gym.keys) {
+                console.log('gym has no key', gym);
+                return;
+              }
+
+             return gym.keys.find((key) => {
+                return x[1][0]["dataValues"]["raidgym"].startsWith(key);
+              });
+            });
+
+            if (gymMatch) {
+              var gym = gymMatch.reply;
+            }else{
+              gym = x[1][0]["dataValues"]["raidgym"]
+            }
+
+            var joining = null
+            if (x[1][0]["dataValues"]["joining"].length > 0){
+              joining = x[1][0]["dataValues"]["joining"].join(', ')
+            }else{
+              joining = "no people interested yet"
+            }
+
+        msg.guild.channels.find("name", "raids_meldingen").messages.find("id",x[1][0]["dataValues"]["messageid"]).edit({
+          embed: {
+            color: 3447003,
+            fields: [{
+                name: "raid ",
+                value: "raid #" + x[1][0]["dataValues"]["idraids"] + " " + x[1][0]["dataValues"][
+                  "raidboss"] + " tot " + x[1][0]["dataValues"]["raidendtime"]
+            },
+              {
+                name: "gym",
+                value: gym
+              },
+              {
+                name: "raid battle time",
+                value: x[1][0]["dataValues"]["raidbattletime"]
+              },
+              {
+                name: "joining",
+                value: joining
+              }
+            ]
+          }
+        })
+          })
+        })
+      }
+
+      else {
         info = {
           "raidboss": second
         }
@@ -174,6 +262,12 @@ client.on("message", async (msg) => {
             }else{
               gym = x["raidgym"]
             }
+            var joining = null
+            if (x["joining"].length > 0){
+              joining = x["joining"].join(', ')
+            }else{
+              joining = "no people interested yet"
+            }
 
             msg.guild.channels.find("name", "raids_meldingen").send({
               embed: {
@@ -190,6 +284,9 @@ client.on("message", async (msg) => {
                   {
                     name: "raid battle time",
                     value: x["raidbattletime"]
+                },{
+                  name: "joining",
+                  value: joining
                 }
               ]
               }
@@ -225,7 +322,7 @@ client.on("message", async (msg) => {
         }
       }
 
-      await raid.update(info, {
+       await raid.update(info, {
         where: {
           "idraids": second
         }
@@ -254,6 +351,13 @@ client.on("message", async (msg) => {
               gym = x["raidgym"]
             }
 
+            var joining = null
+            if (x["joining"].length > 0){
+              joining = x["joining"].join(', ')
+            }else{
+              joining = "no people interested yet"
+            }
+
         msg.guild.channels.find("name", "raids_meldingen").messages.find("id",x["messageid"]).edit({
           embed: {
             color: 3447003,
@@ -269,6 +373,10 @@ client.on("message", async (msg) => {
               {
                 name: "raid battle time",
                 value: x["raidbattletime"]
+              },
+              {
+                name: "joining",
+                value: joining
               }
             ]
           }
