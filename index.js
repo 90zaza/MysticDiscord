@@ -219,6 +219,70 @@ client.on("message", async (msg) => {
         })
           })
         })
+      }else if(second == 'leave'){
+        var id = splits[2]
+        raid.findOne({where:{"idraids": id}
+
+        }).then(function(x){
+          var join = x["dataValues"]["joining"]
+          if (join.indexOf(msg["author"]["username"]) >= 0){
+            var idj = join.indexOf(msg["author"]["username"])
+            join.splice(idj,1)
+          }
+           raid.update({"joining": join}, {
+            where: {
+              "idraids": id
+            },returning: true
+          }).then(function(x){
+        const gymMatch = gyms.find((gym) => {
+            if (!gym.keys) {
+                console.log('gym has no key', gym);
+                return;
+              }
+
+             return gym.keys.find((key) => {
+                return x[1][0]["dataValues"]["raidgym"].startsWith(key);
+              });
+            });
+
+            if (gymMatch) {
+              var gym = gymMatch.reply;
+            }else{
+              gym = x[1][0]["dataValues"]["raidgym"]
+            }
+
+            var joining = null
+            if (x[1][0]["dataValues"]["joining"].length > 0){
+              joining = x[1][0]["dataValues"]["joining"].join(', ')
+            }else{
+              joining = "no people interested yet"
+            }
+
+        msg.guild.channels.find("name", "raids_meldingen").messages.find("id",x[1][0]["dataValues"]["messageid"]).edit({
+          embed: {
+            color: 3447003,
+            fields: [{
+                name: "raid ",
+                value: "raid #" + x[1][0]["dataValues"]["idraids"] + " " + x[1][0]["dataValues"][
+                  "raidboss"] + " tot " + x[1][0]["dataValues"]["raidendtime"]
+            },
+              {
+                name: "gym",
+                value: gym
+              },
+              {
+                name: "raid battle time",
+                value: x[1][0]["dataValues"]["raidbattletime"]
+              },
+              {
+                name: "joining",
+                value: joining
+              }
+            ]
+          }
+        })
+          })
+        })
       }
 
       else {
