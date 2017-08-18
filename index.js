@@ -133,10 +133,20 @@ client.on("message", async (msg) => {
       if (second == "del") {
         var third = splits[2]
         if (third == "all") {
+          raid.findAll({where:{}}).then(function(x){
+            for (i = 0; i < x.length; i++){
+              msg.guild.channels.find("name", "raids_meldingen").messages.find("id",x[i]["messageid"]).delete()
+            }
+          })
           raid.destroy({
             where: {}
           })
         } else {
+          raid.findOne({
+            where: {"idraids": third}
+          }).then(function(x){
+              msg.guild.channels.find("name", "raids_meldingen").messages.find("id",x["messageid"]).delete()
+            })
           raid.destroy({
             where: {
               "idraids": third
@@ -162,6 +172,9 @@ client.on("message", async (msg) => {
             },
             { name: "join/leave a raid",
               value: "!raid join [id] to join, !raid leave [id] to leave"
+            },{
+              name: "delete a raid / delete all raids",
+              value: "!raid del [id] / !raid del all"
             }
             ]
           }})
@@ -292,9 +305,9 @@ client.on("message", async (msg) => {
         })
           })
         })
-      }
-
-      else {
+      }else if (second == "resetid"){
+        connection.query("ALTER SEQUENCE raids_idraids_seq RESTART 1")
+      }else {
         info = {
           "raidboss": second
         }
