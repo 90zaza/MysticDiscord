@@ -184,8 +184,8 @@ client.on("message", async (msg) => {
 
         }).then(function(x){
           var join = x["dataValues"]["joining"]
-          if (join.indexOf(msg["author"]["username"]) < 0){
-            join.push(msg["author"]["username"])
+          if (join.indexOf("<@"+msg["author"]["id"]+">") < 0){
+            join.push("<@"+msg["author"]["id"]+">")
           }
            raid.update({"joining": join}, {
             where: {
@@ -247,8 +247,8 @@ client.on("message", async (msg) => {
 
         }).then(function(x){
           var join = x["dataValues"]["joining"]
-          if (join.indexOf(msg["author"]["username"]) >= 0){
-            var idj = join.indexOf(msg["author"]["username"])
+          if (join.indexOf("<@"+msg["author"]["id"]+">") >= 0){
+            var idj = join.indexOf("<@"+msg["author"]["id"]+">")
             join.splice(idj,1)
           }
            raid.update({"joining": join}, {
