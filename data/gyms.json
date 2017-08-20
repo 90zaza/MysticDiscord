@@ -1,367 +1,489 @@
 [{
   "keys": ["3 variaties op een vierkant 2"],
-  "reply": "3 Variaties op een vierkant 2**\n<https://goo.gl/maps/WBmE2s8ypYU2>"
+  "name": "3 Variaties op een vierkant 2",
+  "url": "https://goo.gl/maps/WBmE2s8ypYU2"
 }, {
   "keys": ["3 variaties op een vierkant 3"],
-  "reply": "3 Variaties op een vierkant 3**\n<https://goo.gl/maps/yYa2qy8XJ9p>"
+  "name": "3 Variaties op een vierkant 3",
+  "url": "https://goo.gl/maps/yYa2qy8XJ9p"
 }, {
   "keys": ["artful"],
-  "reply": "Artful Cube**\n<https://goo.gl/maps/DsUvD9NEPLx>"
+  "name": "Artful Cube",
+  "url": "https://goo.gl/maps/DsUvD9NEPLx"
 }, {
   "keys": ["bicycle"],
-  "reply": "Bicycle Love**\n<https://goo.gl/maps/e5CBn5ixBDy>"
+  "name": "Bicycle Love",
+  "url": "https://goo.gl/maps/e5CBn5ixBDy"
 }, {
   "keys": ["blue"],
-  "reply": "Blue Birds Honkbal**\n<https://goo.gl/maps/WFiksvKEiR32>"
+  "name": "Blue Birds Honkbal",
+  "url": "https://goo.gl/maps/WFiksvKEiR32"
 }, {
   "keys": ["blauw-geel", "blauw geel"],
-  "reply": "Blauw-Geel Keramiek Object**\n<https://goo.gl/maps/RFLjygKU6LC2>"
+  "name": "Blauw-Geel Keramiek Object",
+  "url": "https://goo.gl/maps/RFLjygKU6LC2"
 }, {
   "keys": ["cannon"],
-  "reply": "Cannon**\n<https://goo.gl/maps/on2P21Zky4L2>"
+  "name": "Cannon",
+  "url": "https://goo.gl/maps/on2P21Zky4L2"
 }, {
   "keys": ["climb"],
-  "reply": "Climb the Frogs**\n<https://goo.gl/maps/XWeyq5BrBV22>"
+  "name": "Climb the Frogs",
+	"url": "https://goo.gl/maps/XWeyq5BrBV22"
 }, {
   "keys": ["color", "colour"],
-  "reply": "Color Sculpture**\n<https://goo.gl/maps/kR2QeheLsZz>"
+  "name": "Color Sculpture",
+	"url": "https://goo.gl/maps/kR2QeheLsZz"
 }, {
   "keys": ["coligny", "de coligny"],
-  "reply": "De Coligny**\n<https://goo.gl/maps/fNgWYGgmQQD2>"
+  "name": "De Coligny",
+	"url": "https://goo.gl/maps/fNgWYGgmQQD2"
 }, {
   "keys": ["delftse", "de delftse"],
-  "reply": "De Delftse Pauw**\n<https://goo.gl/maps/CVrYXSJfwf32>"
+  "name": "De Delftse Pauw",
+	"url": "https://goo.gl/maps/CVrYXSJfwf32"
 }, {
   "keys": ["hofstee", "de hofstee"],
-  "reply": "De Hofstee**\n<https://goo.gl/maps/kkwdPP9jce82>"
+  "name": "De Hofstee",
+	"url": "https://goo.gl/maps/kkwdPP9jce82"
 }, {
   "keys": ["kamer", "de kamer"],
-  "reply": "De Kamer van Charilabla 1614**\n<https://goo.gl/maps/jC6osbaZcaG2>"
+  "name": "De Kamer van Charilabla 1614",
+	"url": "https://goo.gl/maps/jC6osbaZcaG2"
 }, {
   "keys": ["nieuwe", "de nieuwe"],
-  "reply": "De Nieuwe Lente**\n<https://goo.gl/maps/D1ZGGvH1ED72>"
+  "name": "De Nieuwe Lente",
+	"url": "https://goo.gl/maps/D1ZGGvH1ED72"
 }, {
   "keys": ["oostpoort", "de oostpoort"],
-  "reply": "De Oostpoort**\n<https://goo.gl/maps/APDKGayWZZN2>"
+  "name": "De Oostpoort",
+	"url": "https://goo.gl/maps/APDKGayWZZN2"
 }, {
   "keys": ["r.k.", "rk", "de r.k.", "de rk"],
-  "reply": "De R.K. Kerk Antonius en Cornelius**\n<https://goo.gl/maps/3rbWddkmpaA2>"
+  "name": "De R.K. Kerk Antonius en Cornelius",
+	"url": "https://goo.gl/maps/3rbWddkmpaA2"
 }, {
   "keys": ["stier", "de stier"],
-  "reply": "De Stier**\n<https://goo.gl/maps/Xq77BkHMGbz>"
+  "name": "De Stier",
+	"url": "https://goo.gl/maps/Xq77BkHMGbz"
 }, {
   "keys": ["delft central", "delft centraal", "centraal", "delft cs"],
-  "reply": "Delft Central Station**\n<https://goo.gl/maps/a5ypCkobkQ22>"
+  "name": "Delft Central Station",
+	"url": "https://goo.gl/maps/a5ypCkobkQ22"
 }, {
   "keys": ["delfts blauwe", "blauwe stenen"],
-  "reply": "Delfts Blauwe Stenen**\n<https://goo.gl/maps/kJSKksZZPwq>"
+  "name": "Delfts Blauwe Stenen",
+	"url": "https://goo.gl/maps/kJSKksZZPwq"
 }, {
   "keys": ["delftse tegelmannen", "tegelmannen"],
-  "reply": "Delftse Tegelmannen**\n<https://goo.gl/maps/eVA5ufuajzo>"
+  "name": "Delftse Tegelmannen",
+	"url": "https://goo.gl/maps/eVA5ufuajzo"
 }, {
   "keys": ["delftshout", "levenslust"],
-  "reply": "Delftshout Levenslust**\n<https://goo.gl/maps/uwD9bsXTb5U2>"
+  "name": "Delftshout Levenslust",
+	"url": "https://goo.gl/maps/uwD9bsXTb5U2"
 }, {
   "keys": ["delta rescue"],
-  "reply": "Delta Rescue**\n<https://goo.gl/maps/s3nxAxVVu9G2>"
+  "name": "Delta Rescue",
+	"url": "https://goo.gl/maps/s3nxAxVVu9G2"
 }, {
   "keys": ["dok"],
-  "reply": "Dok Delft Bibliotheek**\n<https://goo.gl/maps/KPuHh3CV2Yk>"
+  "name": "Dok Delft Bibliotheek",
+	"url": "https://goo.gl/maps/KPuHh3CV2Yk"
 }, {
   "keys": ["door"],
-  "reply": "Door Art**\n<https://goo.gl/maps/74i4MtAuVzy>"
+  "name": "Door Art",
+	"url": "https://goo.gl/maps/74i4MtAuVzy"
 }, {
   "keys": ["dsm"],
-  "reply": "DSM Kunstwerk**\n<https://goo.gl/maps/ZUQ1PpQ5BiL2>"
+  "name": "DSM Kunstwerk",
+	"url": "https://goo.gl/maps/ZUQ1PpQ5BiL2"
 }, {
   "keys": ["dvv"],
-  "reply": "Dvv Delft Tennis**\n<https://goo.gl/maps/btjqpgqHFY72>"
+  "name": "Dvv Delft Tennis",
+	"url": "https://goo.gl/maps/btjqpgqHFY72"
 }, {
   "keys": ["egg"],
-  "reply": "Egg Mosaic**\n<https://goo.gl/maps/SjdaZoAmshn>"
+  "name": "Egg Mosaic",
+	"url": "https://goo.gl/maps/SjdaZoAmshn"
 }, {
   "keys": ["engelse"],
-  "reply": "Engelse Drop**\n<https://goo.gl/maps/ho5zAycvXqr>"
+  "name": "Engelse Drop",
+	"url": "https://goo.gl/maps/ho5zAycvXqr"
 }, {
   "keys": ["entrance"],
-  "reply": "Entrance Bieslandse Bos Delft**\n<https://goo.gl/maps/187vzFFiCoE2>"
+  "name": "Entrance Bieslandse Bos Delft",
+	"url": "https://goo.gl/maps/187vzFFiCoE2"
 }, {
   "keys": ["evenwicht"],
-  "reply": "Evenwicht Ijzer**\n<https://goo.gl/maps/DYDKU8bcxCU2>"
+  "name": "Evenwicht Ijzer",
+	"url": "https://goo.gl/maps/DYDKU8bcxCU2"
 }, {
   "keys": ["giant grill"],
-  "reply": "Giant Grill**\n<https://goo.gl/maps/q2gpVLkihu12>"
+  "name": "Giant Grill",
+	"url": "https://goo.gl/maps/q2gpVLkihu12"
 }, {
     "keys": ["giant tripod"],
-  "reply": "Giant Tripod at Rijkswaterstaat**\n<https://goo.gl/maps/qopEWA7HRMS2>"
+  "name": "Giant Tripod at Rijkswaterstaat",
+	"url": "https://goo.gl/maps/qopEWA7HRMS2"
 }, {
     "keys": ["glasbak"],
-  "reply": "Glasbak Art**\n<https://goo.gl/maps/JUddhCkME9s>"
+  "name": "Glasbak Art",
+	"url": "https://goo.gl/maps/JUddhCkME9s"
 }, {
   "keys": ["green"],
-  "reply": "Green Chair with White Table**\n<https://goo.gl/maps/htvsSYTW5Qu>"
+  "name": "Green Chair with White Table",
+	"url": "https://goo.gl/maps/htvsSYTW5Qu"
 }, {
   "keys": ["guardian"],
-  "reply": "Guardian Angels**\n<https://goo.gl/maps/JmRrwx7rCQS2>"
+  "name": "Guardian Angels",
+	"url": "https://goo.gl/maps/JmRrwx7rCQS2"
 }, {
   "keys": ["hamenpoort", "hammenpoort"],
-  "reply": "Hamenpoort Speelnatuur**\n<https://goo.gl/maps/JTAYj8BcdrR2>"
+  "name": "Hamenpoort Speelnatuur",
+	"url": "https://goo.gl/maps/JTAYj8BcdrR2"
 }, {
   "keys": ["happy"],
-  "reply": "Happy Hippos**\n<https://goo.gl/maps/QrE6yhg3qDP2>"
+  "name": "Happy Hippos",
+	"url": "https://goo.gl/maps/QrE6yhg3qDP2"
 }, {
   "keys": ["hbsv"],
-  "reply": "HBSV Willem Tell**\n<https://goo.gl/maps/KgiMKZ57CeL2>"
+  "name": "HBSV Willem Tell",
+	"url": "https://goo.gl/maps/KgiMKZ57CeL2"
 }, {
   "keys": ["hello"],
-  "reply": "Hello Rainbow**\n<https://goo.gl/maps/muPhuRcYTpH2>"
+  "name": "Hello Rainbow",
+	"url": "https://goo.gl/maps/muPhuRcYTpH2"
 }, {
   "keys": ["blauwe hart"],
-  "reply": "Het Blauwe Hart**\n<https://goo.gl/maps/oTH8eqavW132>"
+  "name": "Het Blauwe Hart",
+	"url": "https://goo.gl/maps/oTH8eqavW132"
 }, {
   "keys": ["veldje"],
-  "reply": "Het Veldje**\n<https://goo.gl/maps/9cwyqtsBCos>"
+  "name": "Het Veldje",
+	"url": "https://goo.gl/maps/9cwyqtsBCos"
 }, {
   "keys": ["high"],
-  "reply": "High Water Bridge**\n<https://goo.gl/maps/e4BLwM2FAUm>"
+  "name": "High Water Bridge",
+	"url": "https://goo.gl/maps/e4BLwM2FAUm"
 }, {
   "keys": ["highway"],
-  "reply": "Highway Fitness Point**\n<https://goo.gl/maps/oW66Z3MJL3x>"
+  "name": "Highway Fitness Point",
+	"url": "https://goo.gl/maps/oW66Z3MJL3x"
 }, {
   "keys": ["historic"],
-  "reply": "Historic TU Delft Faculty Building**\n<https://goo.gl/maps/cVsDHyduBAT2>"
+  "name": "Historic TU Delft Faculty Building",
+	"url": "https://goo.gl/maps/cVsDHyduBAT2"
 }, {
   "keys": ["hoven"],
-  "reply": "Hoven Passage**\n<https://goo.gl/maps/QBLQDrRAM1H2>"
+  "name": "Hoven Passage",
+	"url": "https://goo.gl/maps/QBLQDrRAM1H2"
 }, {
   "keys": ["ichtus"],
-  "reply": "Ichtus**\n<https://goo.gl/maps/gMy63or6ZL62>"
+  "name": "Ichtus",
+	"url": "https://goo.gl/maps/gMy63or6ZL62"
 }, {
   "keys": ["kerkpolder"],
-  "reply": "Kerkpolder**\n<https://goo.gl/maps/JKWRc8eAKyA2>"
+  "name": "Kerkpolder",
+	"url": "https://goo.gl/maps/JKWRc8eAKyA2"
 }, {
   "keys": ["jan", "o jan", "oh jan"],
-  "reply": "Jan, Wat Zit Je Haar Mooi!**\n<https://goo.gl/maps/49VygjLMg8E2>"
+  "name": "Jan, Wat Zit Je Haar Mooi!",
+	"url": "https://goo.gl/maps/49VygjLMg8E2"
 }, {
   "keys": ["klein"],
-  "reply": "Klein Vrijenban**\n<https://goo.gl/maps/jvKQy7MFp9E2>"
+  "name": "Klein Vrijenban",
+	"url": "https://goo.gl/maps/jvKQy7MFp9E2"
 }, {
   "keys": ["klm"],
-  "reply": "KLM Photon Torpedo**\n<https://goo.gl/maps/s2e3P8NbRNo>"
+  "name": "KLM Photon Torpedo",
+	"url": "https://goo.gl/maps/s2e3P8NbRNo"
 }, {
   "keys": ["knooppunt"],
-  "reply": "Knooppunt 59**\n<https://goo.gl/maps/BhUCRAaHHSH2>"
+  "name": "Knooppunt 59",
+	"url": "https://goo.gl/maps/BhUCRAaHHSH2"
 }, {
   "keys": ["kolom"],
-  "reply": "Kolom Van De Mensenrechten**\n<https://goo.gl/maps/dWKCFHijMbu>"
+  "name": "Kolom Van De Mensenrechten",
+	"url": "https://goo.gl/maps/dWKCFHijMbu"
 }, {
   "keys": ["koninkrijkszaal", "jehova"],
-  "reply": "Koninkrijkszaal Van Jehovah\"s Getuigen**\n<https://goo.gl/maps/pbTxo6DKFXy>"
+  "name": "Koninkrijkszaal Van Jehovah\"s Getuigen",
+	"url": "https://goo.gl/maps/pbTxo6DKFXy"
 }, {
   "keys": ["kwakkie"],
-  "reply": "Kwakkie Verf**\n<https://goo.gl/maps/ruBbC96Mk1L2>"
+  "name": "Kwakkie Verf",
+	"url": "https://goo.gl/maps/ruBbC96Mk1L2"
 }, {
   "keys": ["library"],
-  "reply": "Library TU Delft**\n<https://goo.gl/maps/VB27CE8egKG2>"
+  "name": "Library TU Delft",
+	"url": "https://goo.gl/maps/VB27CE8egKG2"
 }, {
   "keys": ["maria"],
-  "reply": "Maria van Jesse kerk**\n<https://goo.gl/maps/4csETP8VSq62>"
+  "name": "Maria van Jesse kerk",
+	"url": "https://goo.gl/maps/4csETP8VSq62"
   }, {
     "keys": ["mental"],
-    "reply": "Mental Birdhouse**\n<https://goo.gl/maps/8UWqFMJKq3r>"
+    "name": "Mental Birdhouse",
+	"url": "https://goo.gl/maps/8UWqFMJKq3r"
 }, {
   "keys": ["mijlpaal"],
-  "reply": "Mijlpaal**\n<https://goo.gl/maps/Zfj68NhETTS2>"
+  "name": "Mijlpaal",
+	"url": "https://goo.gl/maps/Zfj68NhETTS2"
 }, {
   "keys": ["molen aan"],
-  "reply": "Molen Aan Look**\n<https://goo.gl/maps/jM7bSq677dL2>"
+  "name": "Molen Aan Look",
+	"url": "https://goo.gl/maps/jM7bSq677dL2"
 }, {
   "keys": ["molen de"],
-  "reply": "Molen De Klokkenmaker**\n<https://goo.gl/maps/Dj8Vx6FxbM62>"
+  "name": "Molen De Klokkenmaker",
+	"url": "https://goo.gl/maps/Dj8Vx6FxbM62"
 }, {
   "keys": ["molen steen"],
-  "reply": "Molen Steen**\n<https://goo.gl/maps/cumNzZkTDkN2>"
+  "name": "Molen Steen",
+	"url": "https://goo.gl/maps/cumNzZkTDkN2"
 }, {
   "keys": ["monument"],
-  "reply": "Monument JC Van Marken**\n<https://goo.gl/maps/hE8sKBJCpFy>"
+  "name": "Monument JC Van Marken",
+	"url": "https://goo.gl/maps/hE8sKBJCpFy"
 }, {
   "keys": ["moose"],
-  "reply": "Moose Toy**\n<https://goo.gl/maps/9zBgbusGJbw>"
+  "name": "Moose Toy",
+	"url": "https://goo.gl/maps/9zBgbusGJbw"
 }, {
   "keys": ["mural"],
-  "reply": "Mural Pootstraat Carthuyzerstraat**\n<https://goo.gl/maps/cAy8ifVBgit>"
+  "name": "Mural Pootstraat Carthuyzerstraat",
+	"url": "https://goo.gl/maps/cAy8ifVBgit"
 }, {
   "keys": ["nep"],
-  "reply": "Nep Ruïne**\n<https://goo.gl/maps/FqJQKw1jnBw>"
+  "name": "Nep Ruïne",
+	"url": "https://goo.gl/maps/FqJQKw1jnBw"
 }, {
   "keys": ["nieuwe"],
-  "reply": "Nieuwe Kerk**\n<https://goo.gl/maps/muAF9RW6e3U2>"
+  "name": "Nieuwe Kerk",
+	"url": "https://goo.gl/maps/muAF9RW6e3U2"
 }, {
   "keys": ["old"],
-  "reply": "Old Town Wall**\n<https://goo.gl/maps/z3XgKDttVxN2>"
+  "name": "Old Town Wall",
+	"url": "https://goo.gl/maps/z3XgKDttVxN2"
 }, {
   "keys": ["overkapping"],
-  "reply": "Overkapping Nr 5**\n<https://goo.gl/maps/uo2UzHiYS132>"
+  "name": "Overkapping Nr 5",
+	"url": "https://goo.gl/maps/uo2UzHiYS132"
 }, {
   "keys": ["paddestoelen"],
-  "reply": "Paddestoelen**\n<https://goo.gl/maps/U6PmwMxX5382>"
+  "name": "Paddestoelen",
+	"url": "https://goo.gl/maps/U6PmwMxX5382"
 }, {
   "keys": ["paint jobs"],
-  "reply": "Paint Jobs**\n<https://goo.gl/maps/3LW1TyqmFUT2>"
+  "name": "Paint Jobs",
+	"url": "https://goo.gl/maps/3LW1TyqmFUT2"
 }, {
   "keys": ["Painting"],
-  "reply": "Plaquette op bank**\n<https://goo.gl/maps/kBB6EDmab6t>"
+  "name": "Plaquette op bank",
+	"url": "https://goo.gl/maps/kBB6EDmab6t"
 }, {
   "keys": ["papegaaien"],
-  "reply": "Papegaaien**\n<https://goo.gl/maps/8wwDTDqxxet>"
+  "name": "Papegaaien",
+	"url": "https://goo.gl/maps/8wwDTDqxxet"
 }, {
   "keys": ["plaquette"],
-  "reply": "Plaquette op bank**\n<https://goo.gl/maps/DjkYPsFRez82>"
+  "name": "Plaquette op bank",
+	"url": "https://goo.gl/maps/DjkYPsFRez82"
 }, {
   "keys": ["playground b"],
-  "reply": "Playground Brahmslaan**\n<https://goo.gl/maps/EQTAJqWWshL2>"
+  "name": "Playground Brahmslaan",
+	"url": "https://goo.gl/maps/EQTAJqWWshL2"
 }, {
   "keys": ["playground s"],
-  "reply": "Playground Straat van Ormoes**\n<https://goo.gl/maps/LUroxsba6eP2>"
+  "name": "Playground Straat van Ormoes",
+	"url": "https://goo.gl/maps/LUroxsba6eP2"
 }, {
   "keys": ["playground v"],
-  "reply": "Playground Vivaldilaan**\n<https://goo.gl/maps/Sx4CwasGcju>"
+  "name": "Playground Vivaldilaan",
+	"url": "https://goo.gl/maps/Sx4CwasGcju"
 }, {
   "keys": ["prinses", "princes"],
-  "reply": "Prinses Irene Tunnel**\n<https://goo.gl/maps/y9tMD3yrRc72>"
+  "name": "Prinses Irene Tunnel",
+	"url": "https://goo.gl/maps/y9tMD3yrRc72"
 }, {
   "keys": ["public"],
-  "reply": "Public Library**\n<https://goo.gl/maps/26GDpDcz1gt>"
+  "name": "Public Library",
+	"url": "https://goo.gl/maps/26GDpDcz1gt"
 }, {
   "keys": ["race"],
-  "reply": "Race Planet Delft**\n<https://goo.gl/maps/TGuxkCTzPBT2>"
+  "name": "Race Planet Delft",
+	"url": "https://goo.gl/maps/TGuxkCTzPBT2"
 }, {
   "keys": ["relief"],
-  "reply": "Reliëf Driemaster Den Hoorn**\n<https://goo.gl/maps/4ThC211kxEm>"
+  "name": "Reliëf Driemaster Den Hoorn",
+	"url": "https://goo.gl/maps/4ThC211kxEm"
 }, {
   "keys": ["royal"],
-  "reply": "Royal Blue Bench**\n<https://goo.gl/maps/quM5tfFo8gH2>"
+  "name": "Royal Blue Bench",
+	"url": "https://goo.gl/maps/quM5tfFo8gH2"
 }, {
   "keys": ["seats"],
-  "reply": "Seats**\n<https://goo.gl/maps/Zo3UYRuvgVF2>"
+  "name": "Seats",
+	"url": "https://goo.gl/maps/Zo3UYRuvgVF2"
 }, {
   "keys": ["solar"],
-  "reply": "Solar Panel Art Sculpture**\n<https://goo.gl/maps/1HcF9hMXNrL2>"
+  "name": "Solar Panel Art Sculpture",
+	"url": "https://goo.gl/maps/1HcF9hMXNrL2"
 }, {
   "keys": ["space engineering"],
-  "reply": "Space Engineering Faculty**\n<https://goo.gl/maps/kb4EmbwywYS2>"
+  "name": "Space Engineering Faculty",
+	"url": "https://goo.gl/maps/kb4EmbwywYS2"
 }, {
   "keys": ["space rocket"],
-  "reply": "Space Rocket**\n<https://goo.gl/maps/T2so1vhEBGF2>"
+  "name": "Space Rocket",
+	"url": "https://goo.gl/maps/T2so1vhEBGF2"
 }, {
   "keys": ["speelplastiek"],
-  "reply": "Speelplastiek Paarden**\n<https://goo.gl/maps/7TW2opLBW3p>"
+  "name": "Speelplastiek Paarden",
+	"url": "https://goo.gl/maps/7TW2opLBW3p"
 }, {
   "keys": ["speeltuintje"],
-  "reply": "Speeltuintje Van Nora en Zoë**\n<https://goo.gl/maps/63f6kBZzr282>"
+  "name": "Speeltuintje Van Nora en Zoë",
+	"url": "https://goo.gl/maps/63f6kBZzr282"
 }, {
   "keys": ["stadhuis"],
-  "reply": "Stadhuis Delft**\n<https://goo.gl/maps/VDDXxhaAm922>"
+  "name": "Stadhuis Delft",
+	"url": "https://goo.gl/maps/VDDXxhaAm922"
 }, {
   "keys": ["stadsherberg"],
-  "reply": "Stadsherberg De Mol**\n<https://goo.gl/maps/DfJUyD2AebE2>"
+  "name": "Stadsherberg De Mol",
+	"url": "https://goo.gl/maps/DfJUyD2AebE2"
 }, {
   "keys": ["stalpaert"],
-  "reply": "Stalpaert van der Wiele Statue**\n<https://goo.gl/maps/SWTWpzzBA6p>"
+  "name": "Stalpaert van der Wiele Statue",
+	"url": "https://goo.gl/maps/SWTWpzzBA6p"
 }, {
   "keys": ["station", "delft zuid", "delft-zuid"],
-  "reply": "Station Delft-Zuid**\n<https://goo.gl/maps/UUuZexYicuS2>"
+  "name": "Station Delft-Zuid",
+	"url": "https://goo.gl/maps/UUuZexYicuS2"
 }, {
   "keys": ["statue "],
-  "reply": "Statue Of Prometheus**\n<https://goo.gl/maps/C4Jtr7HKyVB2>"
+  "name": "Statue Of Prometheus",
+	"url": "https://goo.gl/maps/C4Jtr7HKyVB2"
 }, {
   "keys": ["stop", "child labor"],
-  "reply": "Stop Child Labor Wall Painting**\n<https://goo.gl/maps/uwVfaadDRyQ2>"
+  "name": "Stop Child Labor Wall Painting",
+	"url": "https://goo.gl/maps/uwVfaadDRyQ2"
 }, {
   "keys": ["street"],
-  "reply": "Street Art**\n<https://goo.gl/maps/5ETxB6masnr>"
+  "name": "Street Art",
+	"url": "https://goo.gl/maps/5ETxB6masnr"
 }, {
   "keys": ["sudden"],
-  "reply": "Sudden Cow**\n<https://goo.gl/maps/tjd9BC6qXyG2>"
+  "name": "Sudden Cow",
+	"url": "https://goo.gl/maps/tjd9BC6qXyG2"
 }, {
   "keys": ["technische", "ewi"],
-  "reply": "Technische Universiteit Delft - EWI**\n<https://goo.gl/maps/nMzwudtx8sS2>"
+  "name": "Technische Universiteit Delft - EWI",
+	"url": "https://goo.gl/maps/nMzwudtx8sS2"
 }, {
   "keys": ["whale", "the whale"],
-  "reply": "The Whale**\n<https://goo.gl/maps/JzYRD9ZdQmn>"
+  "name": "The Whale",
+	"url": "https://goo.gl/maps/JzYRD9ZdQmn"
 }, {
   "keys": ["tiny"],
-  "reply": "Tiny Castle**\n<https://goo.gl/maps/KFBsFjDAjVp>"
+  "name": "Tiny Castle",
+	"url": "https://goo.gl/maps/KFBsFjDAjVp"
 }, {
   "keys": ["tno"],
-  "reply": "TNO**\n<https://goo.gl/maps/fE81ibPTcpR2>"
+  "name": "TNO",
+	"url": "https://goo.gl/maps/fE81ibPTcpR2"
 }, {
   "keys": ["tu delft - christiaan", "tu delft christiaan", "christiaan"],
-  "reply": "TU Delft - Christiaan Huygens Statue**\n<https://goo.gl/maps/5XgjKNUJMEm>"
+  "name": "TU Delft - Christiaan Huygens Statue",
+	"url": "https://goo.gl/maps/5XgjKNUJMEm"
 }, {
   "keys": ["tu delft pyramide", "pyramide", "floppy"],
-  "reply": "Floppy tower**\n<https://goo.gl/maps/HuvMJPUacU92>"
+  "name": "Floppy tower",
+	"url": "https://goo.gl/maps/HuvMJPUacU92"
 }, {
   "keys": ["2 haasje", "twee"],
-  "reply": "Twee haasje over spelende kinderen**\n<https://goo.gl/maps/JM76fQWjjC92>"
+  "name": "Twee haasje over spelende kinderen",
+	"url": "https://goo.gl/maps/JM76fQWjjC92"
 }, {
   "keys": ["uil"],
-  "reply": "Uil Totempaal**\n<https://goo.gl/maps/yHphVRj9j5L2>"
+  "name": "Uil Totempaal",
+	"url": "https://goo.gl/maps/yHphVRj9j5L2"
 }, {
   "keys": ["uitkijkpunt"],
-  "reply": "Uitkijkpunt**\n<https://goo.gl/maps/Zj7vPbr4sER2>"
+  "name": "Uitkijkpunt",
+	"url": "https://goo.gl/maps/Zj7vPbr4sER2"
 }, {
   "keys": ["uitlaatstrook"],
-  "reply": "Uitlaatstrook**\n<https://goo.gl/maps/EGnxgXEJaTq>"
+  "name": "Uitlaatstrook",
+	"url": "https://goo.gl/maps/EGnxgXEJaTq"
 }, {
   "keys": ["vanons", "van ons"],
-  "reply": "VanOns**\n<https://goo.gl/maps/HFxZfao4QRN2>"
+  "name": "VanOns",
+	"url": "https://goo.gl/maps/HFxZfao4QRN2"
 }, {
   "keys": ["veld"],
-  "reply": "Veld 23**\n<https://goo.gl/maps/AqfHtcSczH82>"
+  "name": "Veld 23",
+	"url": "https://goo.gl/maps/AqfHtcSczH82"
 }, {
   "keys": ["verkeer"],
-  "reply": "Verkeer**\n<https://goo.gl/maps/Rps8xih9y3v>"
+  "name": "Verkeer",
+	"url": "https://goo.gl/maps/Rps8xih9y3v"
 }, {
   "keys": ["veulentje"],
-  "reply": "Veulentje**\n<https://goo.gl/maps/LYnU2UDUDpF2>"
+  "name": "Veulentje",
+	"url": "https://goo.gl/maps/LYnU2UDUDpF2"
 }, {
   "keys": ["voormalige"],
-  "reply": "Voormalige Universiteitsbibliotheek**\n<https://goo.gl/maps/JVtRcbL2ecx>"
+  "name": "Voormalige Universiteitsbibliotheek",
+	"url": "https://goo.gl/maps/JVtRcbL2ecx"
 }, {
   "keys": ["vrouw"],
-  "reply": "Vrouw Met Bloemen**\n<https://goo.gl/maps/KCUd4GiCAWK2>"
+  "name": "Vrouw Met Bloemen",
+	"url": "https://goo.gl/maps/KCUd4GiCAWK2"
 }, {
   "keys": ["wapenschild"],
-  "reply": "Wapenschild Holland**\n<https://goo.gl/maps/RpJDxyYk4QM2>"
+  "name": "Wapenschild Holland",
+	"url": "https://goo.gl/maps/RpJDxyYk4QM2"
 }, {
   "keys": ["watertoren"],
-  "reply": "Watertoren**\n<https://goo.gl/maps/SjjGCspruhM2>"
+  "name": "Watertoren",
+	"url": "https://goo.gl/maps/SjjGCspruhM2"
 }, {
   "keys": ["wijkcentrum"],
-  "reply": "Wijkcentrum De Parel**\n<https://goo.gl/maps/q9gSyAfqcPq>"
+  "name": "Wijkcentrum De Parel",
+	"url": "https://goo.gl/maps/q9gSyAfqcPq"
 }, {
   "keys": ["wild"],
-  "reply": "Wild Bee House**\n<https://goo.gl/maps/Emy3RmYRtYx>"
+  "name": "Wild Bee House",
+	"url": "https://goo.gl/maps/Emy3RmYRtYx"
 }, {
   "keys": ["willem"],
-  "reply": "Willem van Oranje (Willem de Zwijger)**\n<https://goo.gl/maps/B98NGDnXYcP2>"
+  "name": "Willem van Oranje (Willem de Zwijger)",
+	"url": "https://goo.gl/maps/B98NGDnXYcP2"
 }, {
   "keys": ["wood"],
-  "reply": "Wood Frog**\n<https://goo.gl/maps/cxT5hEw8vHK2>"
+  "name": "Wood Frog",
+	"url": "https://goo.gl/maps/cxT5hEw8vHK2"
 }, {
   "keys": ["world"],
-  "reply": "World Art Delft**\n<https://goo.gl/maps/dVww6WFVY9u>"
+  "name": "World Art Delft",
+	"url": "https://goo.gl/maps/dVww6WFVY9u"
 }, {
   "keys": ["zeehond"],
-  "reply": "Zeehond**\n<https://goo.gl/maps/Qm9bmcStv322>"
+  "name": "Zeehond",
+	"url": "https://goo.gl/maps/Qm9bmcStv322"
 }, {
   "keys": ["zoas"],
-  "reply": "Zoäs Birdhouse**\n<https://goo.gl/maps/gejprGbGVcL2>"
+  "name": "Zoäs Birdhouse",
+	"url": "https://goo.gl/maps/gejprGbGVcL2"
 }, {
   "keys": ["zonnewijzer"],
-  "reply": "Zonnewijzer**\n<https://goo.gl/maps/U19CmCWSus82>"
+  "name": "Zonnewijzer",
+	"url": "https://goo.gl/maps/U19CmCWSus82"
 }, {
   "keys": ["zwarte"],
-  "reply": "Zwarte Zwaan**\n<https://goo.gl/maps/jvts7BQZzC42>"
+  "name": "Zwarte Zwaan",
+	"url": "https://goo.gl/maps/jvts7BQZzC42"
 }]

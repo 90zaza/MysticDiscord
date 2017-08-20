@@ -1026,7 +1026,7 @@
     "name": "Exeggutor",
     "number": 103,
     "type": ["grass", "psychic"],
-    "wonder": [233, 158, 190],
+    "stats": [233, 158, 190],
     "attacks": ["Bullet Seed", "Solar Beam"],
     "defence": [],
     "recplayers": 2
@@ -1096,7 +1096,7 @@
     "name": "Weezing",
     "number": 110,
     "type": ["poison"],
-    "wonder": [174, 221, 130],
+    "stats": [174, 221, 130],
     "attacks": ["Infestation", "Sludge Bomb"],
     "defence": [],
     "recplayers": 2

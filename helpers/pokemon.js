@@ -11,6 +11,48 @@ const cpMultiplier = [0.094,      0.16639787, 0.21573247, 0.25572005, 0.29024988
                       0.73776948, 0.74378943, 0.74976104, 0.75568551, 0.76156384,
                       0.76739717, 0.7731865,  0.77893275, 0.78463697, 0.79030001];
 
+const colors = {
+  "normal": 0x212121,
+  "fighting": 0xd56723,
+  "flying": 0x3dc7ef,
+  "poison": 0xb97fc9,
+  "ground": 0xab9842,
+  "rock": 0xa38c21,
+  "bug": 0x729f3f,
+  "ghost": 0x7b62a3,
+  "steel": 0x9eb7b8,
+  "fire": 0xfd7d24,
+  "water": 0x4592c4,
+  "grass": 0x9bcc50,
+  "electric": 0xeed535,
+  "psychic": 0xf366b9,
+  "ice": 0x51c4e7,
+  "dragon": 0xf16e57,
+  "dark": 0x707070,
+  "fairy": 0xfdb9e9
+}
+
+exports.calculateRanks = function () {
+
+  for (let i = 0; i < pokemons.length; i++) {
+
+    pokemons[i].ranks = [1, 1, 1];
+    let stats = pokemons[i].stats;
+    for (let j = 0; j < pokemons.length; j++) {
+
+      if (pokemons[j].stats[0] > stats[0]) {
+        ++pokemons[i].ranks[0];
+      }
+      if (pokemons[j].stats[1] > stats[1]) {
+        ++pokemons[i].ranks[1];
+      }
+      if (pokemons[j].stats[2] > stats[2]) {
+        ++pokemons[i].ranks[2];
+      }
+    }
+  }
+}
+
 // This function computes the CP range for a guaranteed wonder of a pokemon at a given level
 // guaranteed wonder is different from the complete wonder range, because of CP overlap between different IV ranges
 // i.e. a 80% IV with a lot of attack can have a higher CP than an 82.2% IV with little attack
@@ -65,9 +107,16 @@ exports.checkForPokemon = function (msgText) {
 
 exports.reply = function (msg, pokemon) {
 
+  let leadingZeroes = "";
+  if (pokemon.number < 100 )
+  {
+    leadingZeroes = pokemon.number < 10 ? "00" : "0";
+  }
+
   let embed = new Discord.RichEmbed()
     .setTitle("#" + pokemon.number + " - " + pokemon.name + " [" + pokemon.type.join(", ") + "]")
-    .setColor(0xFFFFFF);
+    .setThumbnail("https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + leadingZeroes + pokemon.number + ".png")
+    .setColor(colors[pokemon.type[0]]);
 
   // pokemon.recplayers can be used to identify whether the pokemon is also a raid boss
   if (pokemon.recplayers > 0) {
@@ -123,6 +172,8 @@ exports.reply = function (msg, pokemon) {
   }
 
   embed.addField("Weakness", weakness);
+
+  embed.addField("Basestats", "atk: " + pokemon.stats[0] + " (" + pokemon.ranks[0] + "), def: " + pokemon.stats[1] + " (" + pokemon.ranks[1] + "), sta: " + pokemon.stats[2] + " (" + pokemon.ranks[2] + ")");
 
   if (pokemon.recplayers > 0) {
 

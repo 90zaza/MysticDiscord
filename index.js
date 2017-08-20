@@ -5,7 +5,7 @@ const Sequelize = require('sequelize');
 
 require('dotenv').config()
 
-console.log(process.env.token);
+console.log(process.env.TOKEN);
 
 
 var Discord = require('discord.js');
@@ -26,6 +26,7 @@ var express = require('express');
 var app = express();
 
 const pokemonStats = require('./helpers/pokemon.js');
+pokemonStats.calculateRanks();
 
 app.set('port', (process.env.PORT || 9222));
 
@@ -204,7 +205,7 @@ client.on("message", async (msg) => {
             });
 
             if (gymMatch) {
-              var gym = gymMatch.reply;
+              var gym = gymMatch.name;
             }else{
               gym = x[1][0]["dataValues"]["raidgym"]
             }
@@ -268,7 +269,7 @@ client.on("message", async (msg) => {
             });
 
             if (gymMatch) {
-              var gym = gymMatch.reply;
+              var gym = gymMatch.name;
             }else{
               gym = x[1][0]["dataValues"]["raidgym"]
             }
@@ -284,9 +285,8 @@ client.on("message", async (msg) => {
           embed: {
             color: 3447003,
             fields: [{
-                name: "raid ",
-                value: "raid #" + x[1][0]["dataValues"]["idraids"] + " " + x[1][0]["dataValues"][
-                  "raidboss"] + " tot " + x[1][0]["dataValues"]["raidendtime"]
+                name: "raid #" + x[1][0]["dataValues"]["idraids"],
+                value: x[1][0]["dataValues"]["raidboss"] + " tot " + x[1][0]["dataValues"]["raidendtime"]
             },
               {
                 name: "gym",
@@ -344,7 +344,7 @@ client.on("message", async (msg) => {
             });
             var gym
             if (gymMatch) {
-              gym = gymMatch.reply;
+              gym = gymMatch.name;
             }else{
               gym = x["raidgym"]
             }
@@ -432,7 +432,7 @@ client.on("message", async (msg) => {
             });
 
             if (gymMatch) {
-              var gym = gymMatch.reply;
+              var gym = gymMatch.name;
             }else{
               gym = x["raidgym"]
             }
@@ -530,7 +530,12 @@ client.on("message", async (msg) => {
 
 
     if (gymMatch) {
-      msg.reply(`**Gym: ${gymMatch.reply}`);
+      let embed = new Discord.RichEmbed()
+        .setColor(0xffffff)
+        .setURL(gymMatch.url)
+        .setAuthor(gymMatch.name, "https://focalpointx.com/images/icons/icon-findmylocation.png");
+
+      msg.channel.send({embed});
     }
 
 
