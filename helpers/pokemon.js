@@ -112,10 +112,11 @@ exports.reply = function (msg, pokemon) {
   {
     leadingZeroes = pokemon.number < 10 ? "00" : "0";
   }
+  let imageURL = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + leadingZeroes + pokemon.number + ".png";
 
   let embed = new Discord.RichEmbed()
-    .setTitle("#" + pokemon.number + " - " + pokemon.name + " [" + pokemon.type.join(", ") + "]")
-    .setThumbnail("https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + leadingZeroes + pokemon.number + ".png")
+    .setAuthor("#" + pokemon.number + " - " + pokemon.name + " [" + pokemon.type.join(", ") + "]", imageURL)
+    .setThumbnail(imageURL)
     .setColor(colors[pokemon.type[0]]);
 
   // pokemon.recplayers can be used to identify whether the pokemon is also a raid boss
