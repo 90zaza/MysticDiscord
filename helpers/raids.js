@@ -294,7 +294,7 @@ function deleteRaid (msg, id) {
       where: {"idraids": id}
     })
     .then(function(x){
-      msg.guild.channels.find("name", "raids_meldingen").messages.find("id",x.messageid).delete()
+      msg.guild.channels.find("name", "raids_meldingen").messages.find("id",x["messageid"]).delete()
     });
     raid.destroy({
       where: {
@@ -307,7 +307,7 @@ function deleteRaid (msg, id) {
     raid.findAll({where:{}}).then(function(x){
       for (i = 0; i < x.length; i++){
         let channel = msg.guild.channels.find("name", "raids_meldingen");
-        let message = channel.messages.find("id",x[i].messageid);
+        let message = channel.messages.find("id",x[i]["messageid"]);
         if (message) {
           message.delete();
         }
