@@ -161,10 +161,11 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
   let embed = new Discord.RichEmbed()
     .setColor(0xffffff)
     .setURL(gym ? gym.url : "")
-    .setAuthor("Raid #" + id + ": " + (pokemon ? pokemon.name : bossName) + " @ " + (gym ? gym.name : gymName))
+    .setAuthor("Raid #" + id + ": " + (pokemon ? pokemon.name : bossName))
+    .setTitle("📍 " + (gym ? gym.name : gymName))
     .setThumbnail(imageURL)
     .addField("Times", "Ends:\t" + endTime + "\nFight:\t" + battleTime )
-    .addField("Joining", joinedPlayers);
+    .addField("Joining (bring at least " + pokemon.recplayers + " trainers)", joinedPlayers);
 
   let channel = msg.guild.channels.find("name", "raids_meldingen");
   let message = channel.messages.find("id", msgId);

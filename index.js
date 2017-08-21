@@ -25,6 +25,8 @@ client.login(process.env.TOKEN);
 var express = require('express');
 var app = express();
 
+const Gym = require('./helpers/gym.js');
+
 const pokemonStats = require('./helpers/pokemon.js');
 pokemonStats.calculateRanks();
 
@@ -57,7 +59,7 @@ client.on("message", async (msg) => {
   let msgPrefix = msg.content[0];
   // get the message content, cut the first character, convert it to all lowercase and save to new variable
   var msgText = msg.content.toLowerCase().substr(1);
-  var pokemon;
+  var pokemon, gym;
 
   if (prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
 
@@ -106,30 +108,12 @@ client.on("message", async (msg) => {
   } else if ((pokemon = pokemonStats.checkForPokemon(msgText)) != undefined) {
 
     pokemonStats.reply(msg, pokemon);
+
+  } else if ((gym = Gym.checkForGym(msgText)) != undefined) {
+
+    Gym.reply(msg, gym);
+
   } else {
-
-    //gyms reply
-    const gymMatch = gyms.find((gym) => {
-      if (!gym.keys) {
-        console.log('gym has no key', gym);
-        return;
-      }
-
-      return gym.keys.find((key) => {
-        return msgText.startsWith(key);
-      });
-    });
-
-
-    if (gymMatch) {
-      let embed = new Discord.RichEmbed()
-        .setColor(0xffffff)
-        .setURL(gymMatch.url)
-        .setAuthor(gymMatch.name, "https://focalpointx.com/images/icons/icon-findmylocation.png");
-
-      msg.channel.send({embed});
-    }
-
 
     //message reply
     const messageMatch = messages.find((message) => {
