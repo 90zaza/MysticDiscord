@@ -238,20 +238,20 @@ async function updateRaid(msg) {
   }
 
   var info = {};
-
+  indexes = [textArray.indexOf("e"), textArray.indexOf("b"),textArray.indexOf("g"), textArray.length].sort();
   let endIdx = textArray.indexOf("e");
   if (endIdx >= 0) {
-    info.raidendtime = textArray[endIdx+ 1];
+    info.raidendtime = textArray.slice(endIdx,indexes[indexes.indexOf(endIdx)+1]);
   }
 
   let battleIdx = textArray.indexOf("b");
   if (battleIdx >= 0) {
-    info.raidbattletime = textArray[battleIdx+ 1];
+    info.raidbattletime =  textArray.slice(battleIdx,indexes[indexes.indexOf(battleIdx)+1]);
   }
 
   let gymIdx = textArray.indexOf("g");
   if (gymIdx >= 0) {
-    info.raidgym = textArray.slice(gymIdx+1, textArray.length).join(' ');
+    info.raidgym = textArray.slice(gymIdx+1, indexes[indexes.indexOf(gymIdx)+1]).join(' ');
   }
 
   if(endIdx < 0 && battleIdx < 0 && gymIdx < 0) {
@@ -326,8 +326,9 @@ function joinRaid (msg, id) {
     .then (function (dbRaid) {
 
       let join = dbRaid.dataValues.joining
-      if (join.indexOf("<@"+msg.author.id+">") < 0) {
-        join.push("<@"+msg.author.id+">")
+      let author = msg.author.lastMessage.member.nickname;
+      if (join.indexOf(author) < 0) {
+        join.push(author)
       }
 
       raid.update ( {"joining": join}, {
@@ -361,10 +362,10 @@ function leaveRaid (msg, id) {
 
   raid.findOne ( {where: {"idraids": id} } )
     .then (function (dbRaid) {
-
+      let author = msg.author.lastMessage.member.nickname;
       let join = dbRaid.dataValues.joining
-      if (join.indexOf("<@"+msg.author.id+">") >= 0) {
-        join.splice (join.indexOf("<@"+msg.author.id+">"), 1);
+      if (join.indexOf(author) >= 0) {
+        join.splice (join.indexOf(author), 1);
       }
 
       raid.update ( {"joining": join}, {
