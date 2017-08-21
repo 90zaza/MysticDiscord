@@ -328,7 +328,6 @@ function joinRaid (msg, id) {
       let join = dbRaid.dataValues.joining
       let author = msg.author.lastMessage.member.nickname;
       if (author == null){
-        console.log(msg.author)
         author = msg.author.username
       }
       if (join.indexOf(author) < 0) {
@@ -368,6 +367,9 @@ function leaveRaid (msg, id) {
     .then (function (dbRaid) {
       let author = msg.author.lastMessage.member.nickname;
       let join = dbRaid.dataValues.joining
+      if (author == null){
+        author = msg.author.username
+      }
       if (join.indexOf(author) >= 0) {
         join.splice (join.indexOf(author), 1);
       }
