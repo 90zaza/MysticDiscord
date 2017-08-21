@@ -288,7 +288,7 @@ async function updateRaid(msg) {
 
 function deleteRaid (msg, id) {
 
-  if (id) {
+  if (!isNaN(id)) {
 
     raid.findOne({
       where: {"idraids": id}
@@ -307,7 +307,7 @@ function deleteRaid (msg, id) {
     raid.findAll({where:{}}).then(function(x){
       for (i = 0; i < x.length; i++){
         let channel = msg.guild.channels.find("name", "raids_meldingen");
-        let message = messages.find("id",x[i].messageid);
+        let message = channel.messages.find("id",x[i].messageid);
         if (message) {
           message.delete();
         }
