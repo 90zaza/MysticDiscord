@@ -241,17 +241,19 @@ async function updateRaid(msg) {
   indexes = [textArray.indexOf("e"), textArray.indexOf("b"),textArray.indexOf("g"), textArray.length].sort();
   let endIdx = textArray.indexOf("e");
   if (endIdx >= 0) {
-    info.raidendtime = textArray.slice(endIdx,indexes[indexes.indexOf(endIdx)+1]);
+    info.raidendtime = textArray.slice(endIdx=1,indexes[indexes.indexOf(endIdx)+1]).join(' ');
   }
 
   let battleIdx = textArray.indexOf("b");
+  console.log("battleind" + battleIdx)
   if (battleIdx >= 0) {
-    info.raidbattletime =  textArray.slice(battleIdx,indexes[indexes.indexOf(battleIdx)+1]);
+    console.log(indexes[indexes.indexOf(battleIdx)+1])
+    info.raidbattletime =  textArray.slice(battleIdx+1,indexes[indexes.indexOf(battleIdx)+1]).join(' ');
   }
 
   let gymIdx = textArray.indexOf("g");
   if (gymIdx >= 0) {
-    info.raidgym = textArray.slice(gymIdx+1, indexes[indexes.indexOf(gymIdx)+1]).join(' ');
+    info.raidgym = textArray.slice(gymIdx+1, indexes[indexes.indexOf(gymIdx)+1]).join(' ')
   }
 
   if(endIdx < 0 && battleIdx < 0 && gymIdx < 0) {
