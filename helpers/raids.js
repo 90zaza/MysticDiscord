@@ -246,7 +246,6 @@ async function updateRaid(msg) {
   }
 
   let battleIdx = textArray.indexOf("b");
-  console.log("battleind" + battleIdx)
   if (battleIdx >= 0) {
     console.log(indexes[indexes.indexOf(battleIdx)+1])
     info.raidbattletime =  textArray.slice(battleIdx+1,indexes[indexes.indexOf(battleIdx)+1]).join(' ');
