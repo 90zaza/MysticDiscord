@@ -327,6 +327,10 @@ function joinRaid (msg, id) {
 
       let join = dbRaid.dataValues.joining
       let author = msg.author.lastMessage.member.nickname;
+      if (author == null){
+        console.log(msg.author)
+        author = msg.author.username
+      }
       if (join.indexOf(author) < 0) {
         join.push(author)
       }
