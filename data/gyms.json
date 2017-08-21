@@ -183,13 +183,17 @@
   "name": "Ichtus",
 	"url": "https://goo.gl/maps/gMy63or6ZL62"
 }, {
+  "keys": ["jan", "o jan", "oh jan"],
+  "name": "Jan, Wat Zit Je Haar Mooi!",
+  "url": "https://goo.gl/maps/49VygjLMg8E2"
+}, {
+  "keys": ["karthuizer"],
+  "name": "Karthuizer Klooster",
+  "url": "https://goo.gl/maps/7H6a46m7Y5D2"
+}, {
   "keys": ["kerkpolder"],
   "name": "Kerkpolder",
 	"url": "https://goo.gl/maps/JKWRc8eAKyA2"
-}, {
-  "keys": ["jan", "o jan", "oh jan"],
-  "name": "Jan, Wat Zit Je Haar Mooi!",
-	"url": "https://goo.gl/maps/49VygjLMg8E2"
 }, {
   "keys": ["klein"],
   "name": "Klein Vrijenban",
