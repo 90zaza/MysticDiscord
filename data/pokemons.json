@@ -2077,7 +2077,7 @@
     "name": "Steelix",
     "number": 208,
     "type": ["steel", "ground"],
-    "stats": [],
+    "stats": [148, 333, 150],
     "attacks": ["Iron Tail", "Heavy Slam"],
     "defence": ["Iron Tail", "Heavy Slam"],
     "recplayers": 0
@@ -2317,9 +2317,9 @@
     "name": "Donphan",
     "number": 233,
     "type": ["ground"],
-    "stats": [],
+    "stats": [214, 214, 180],
     "attacks": [],
-    "defence": [],
+    "defence": ["Counter", "Play Rough"],
     "recplayers": 0
   },
   {
