@@ -2503,6 +2503,16 @@
     "recplayers": 5
   },
   {
+    "keys": ["celebi", "celeby"],
+    "name": "Celebi",
+    "number": 251,
+    "type": ["psychic", "grass"],
+    "stats": [210, 210, 200],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
     "keys": ["missingno"],
     "name": "Missingno",
     "number": 0,
