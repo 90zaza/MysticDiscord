@@ -5,8 +5,6 @@ const Sequelize = require('sequelize');
 
 require('dotenv').config()
 
-console.log(process.env.TOKEN);
-
 var Discord = require('discord.js');
 var client = new Discord.Client();
 var https = require("https");
