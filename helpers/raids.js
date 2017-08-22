@@ -7,18 +7,16 @@ const Gym = require('./gym.js');
 var connection;
 var raid;
 
-exports.init = function () {
+exports.init = async () => {
 
-  connection = new Sequelize('d4nplae62mj8j7', 'imiosejcivqljb',
-    'bdf834eba171721c921d94fa6d173ad7719a04d6477588e4d18d53b8c1eeaab5', {
-      host: 'ec2-23-23-221-255.compute-1.amazonaws.com',
-      port: 5432,
-      dialect: 'postgres',
-      dialectOptions: {
-        "ssl": {
-          "require": true
-        }
-      },
+  connection = new Sequelize(
+    process.env.DB_DATABASE,
+    process.env.DB_USER,
+    process.env.DB_PASSWORD,
+    {
+      host: process.env.DB_HOST,
+      port: 3306,
+      dialect: 'mysql',
       timezone: "+02:00",
       pool: {
         max: 5,
@@ -35,7 +33,6 @@ exports.init = function () {
     .catch(err => {
       console.error('Unable to connect to the database:', err);
     });
-
 
   raid = connection.define('raid', {
     idraids: {
@@ -60,18 +57,18 @@ exports.init = function () {
       defaultValue: "to be added"
     },
     joining: {
-      type: Sequelize.ARRAY(Sequelize.STRING),
-      defaultValue : []
+      type: Sequelize.TEXT
     },
     messageid: {
       type: Sequelize.STRING,
       defaultValue: "ID"
     },
     expireat: {
-      type: Sequelize.DATE,
-      defaultValue: Sequelize.literal("now() + '2 hours'::interval")
+      type: Sequelize.DATE
     }
   });
+
+  await raid.sync();
 }
 
 exports.scan = function (msg) {
@@ -327,6 +324,11 @@ function joinRaid (msg, id) {
     .then (function (dbRaid) {
 
       let join = dbRaid.dataValues.joining
+      if (!join) {
+        join = [];
+      } else {
+        join = JSON.parse(join);
+      }
       let author = msg.author.lastMessage.member.nickname;
       if (author == null){
         author = msg.author.username
@@ -335,27 +337,34 @@ function joinRaid (msg, id) {
         join.push(author)
       }
 
-      raid.update ( {"joining": join}, {
+      raid.update ( {"joining": JSON.stringify(join)}, {
        where: {"idraids": id},
        returning: true
       })
-      .then (function (dbRaid) {
+      .then (async function (result) {
+
+        let id = result[1];
+        dbRaid = await raid.findOne ( {where: {"idraids": id} } )
+
+        console.log(dbRaid);
+
+        let joiningArray = JSON.parse(dbRaid.dataValues.joining)
 
         var joining = null;
-        if (dbRaid[1][0].dataValues.joining.length > 0){
-          joining = dbRaid[1][0].dataValues.joining.join('\n')
+        if (joiningArray.length > 0){
+          joining = joiningArray.join('\n')
         } else {
           joining = "no people interested yet."
         }
 
         updateMessage(
           msg,
-          dbRaid[1][0].dataValues.messageid,
-          dbRaid[1][0].dataValues.idraids,
-          dbRaid[1][0].dataValues.raidboss,
-          dbRaid[1][0].dataValues.raidgym,
-          dbRaid[1][0].dataValues.raidendtime,
-          dbRaid[1][0].dataValues.raidbattletime,
+          dbRaid.dataValues.messageid,
+          dbRaid.dataValues.idraids,
+          dbRaid.dataValues.raidboss,
+          dbRaid.dataValues.raidgym,
+          dbRaid.dataValues.raidendtime,
+          dbRaid.dataValues.raidbattletime,
           joining
         )
      })
@@ -367,7 +376,7 @@ function leaveRaid (msg, id) {
   raid.findOne ( {where: {"idraids": id} } )
     .then (function (dbRaid) {
       let author = msg.author.lastMessage.member.nickname;
-      let join = dbRaid.dataValues.joining
+      let join = JSON.parse(dbRaid.dataValues.joining);
       if (author == null){
         author = msg.author.username
       }
@@ -375,27 +384,29 @@ function leaveRaid (msg, id) {
         join.splice (join.indexOf(author), 1);
       }
 
-      raid.update ( {"joining": join}, {
-        where: {"idraids": id},
-        returning: true
+      raid.update ( {"joining": JSON.stringify(join)}, {
+        where: {"idraids": id}
       })
-      .then (function (dbRaid) {
+      .then (async function (result) {
+        let dbRaid = await raid.findOne ( {where: {"idraids": id} } )
+        console.log(dbRaid, id);
+        let joiningArray = JSON.parse(dbRaid.dataValues.joining)
 
         var joining = null;
-        if (dbRaid[1][0].dataValues.joining.length > 0){
-          joining = dbRaid[1][0].dataValues.joining.join('\n')
+        if (joiningArray.length > 0){
+          joining = joiningArray.join('\n')
         } else {
           joining = "no people interested yet."
         }
 
         updateMessage(
           msg,
-          dbRaid[1][0].dataValues.messageid,
-          dbRaid[1][0].dataValues.idraids,
-          dbRaid[1][0].dataValues.raidboss,
-          dbRaid[1][0].dataValues.raidgym,
-          dbRaid[1][0].dataValues.raidendtime,
-          dbRaid[1][0].dataValues.raidbattletime,
+          dbRaid.dataValues.messageid,
+          dbRaid.dataValues.idraids,
+          dbRaid.dataValues.raidboss,
+          dbRaid.dataValues.raidgym,
+          dbRaid.dataValues.raidendtime,
+          dbRaid.dataValues.raidbattletime,
           joining
         )
      })

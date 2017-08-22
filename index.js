@@ -16,9 +16,9 @@ const pokemons = require("./data/pokemons.json");
 const defense = require("./data/defense.json");
 const messages = require("./data/messages.json");
 
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN)
 
-var express = require("express");
+var express = require('express');
 var app = express();
 
 const Gym = require("./helpers/gym.js");
@@ -212,6 +212,11 @@ else {
 client.on("guildMemberAdd", member => {
   setTimeout(() => {
     member.guild.defaultChannel.send(
-    `Welkom op de Mystic Delft Discord en leuk dat je onze groep wilt versterken, ${member}!\nOm toegang te krijgen tot de volledige groep vragen wij een screenshot van je pokemon go profiel (dat is waar je naast je buddy staat). Als je deze kan uploaden zal een van de moderators je zo snel mogelijk te woord staan.\n\nWelcome to our Mystic Delft Discord group, ${member}!\nIn order to get full access to our server, we would like to verify you are indeed mystic. If  you would be so kind as to upload a screenshot of your Pokémon Go profile (where you are standing next to your buddy) one of our moderators will contact you as soon as possible.`);
-    }, 1000);
+      `Welkom op de Mystic Delft Discord en leuk dat je onze groep wilt versterken, ${member}!
+Om toegang te krijgen tot de volledige groep vragen wij een screenshot van je pokemon go profiel (dat is waar je naast je buddy staat). Als je deze kan uploaden zal een van de moderators je zo snel mogelijk te woord staan.
+
+Welcome to our Mystic Delft Discord group, ${member}!
+In order to get full access to our server, we would like to verify you are indeed mystic. If  you would be so kind as to upload a screenshot of your Pokémon Go profile (where you are standing next to your buddy) one of our moderators will contact you as soon as possible.`
+    );
+  }, 1000);
 });
