@@ -67,7 +67,7 @@ client.on("message", async (msg) => {
 
 //text replies with extra options
 else if (msgText === "dobbel" || msgText === "gamble") {
- msg.reply(Math.floor(Math.random()*6)+1)
+ msg.reply("<:game_die:349868481673428992>: " + (Math.floor(Math.random()*6)+1));
  msg.delete()}
 else if (msgText === "type") {msg.channel.send(
   "Zie hier een tabel met type effectiviteit:", {file: "https://image.ibb.co/mxRthv/Untitled.png"});
