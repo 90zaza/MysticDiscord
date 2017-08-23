@@ -64,45 +64,31 @@ client.on("message", async (msg) => {
 
     raids.scan(msg);
   }
-  else if (msgText === 'type') {
-    msg.reply("Zie hier een tabel met type effectiviteit:", {
-      file: "https://image.ibb.co/mxRthv/Untitled.png"
-    });
-    msg.delete()
-  } else if (msgText === 'mystic') {
-    msg.channel.send(
-      '**Team Mystic**\nI am Blanche, leader of Team Mystic. The wisdom of Pokémon is immeasurably deep. I am researching why it is that they evolve.\nMy team? With our calm analysis of overy situation, we cant lose!', {
-        file: "https://pogosa.net/images/mystic_leader.png"
-      });
-    setTimeout(() => {
-      msg.channel.send(
-        'Wat een prachtige woorden vind je niet? Met onze wijsheid kunnen we samen met onze Pokémon elke uitdaging aan!'
-      );;
-    }, 1000);
-    msg.delete()
-  } else if (msgText === 'valor') {
-    msg.channel.send(
-      '**Team Valor**\nI am Candela, Tem Valor Leader!. Pokemon are stronger than humans, and they are warmhearted, too! I am researching ways to enhance Pokémon natural power in the pursuit of true strength. There is no doubt that the Pokémon in our team have trained are the strongest in battle! Are you ready?', {
-        file: "https://pogosa.net/images/valor_leader.png"
-      });
-    setTimeout(() => {
-      msg.channel.send(
-        'Pokemon sterker dan mensen? Bij jullie team twijfel ik daar soms over.... Dat onderzoek van jullie om pokemon sterker te maken is in elk geval hard nodig bij team faler!'
-      );;
-    }, 1000);
-    msg.delete()
-  } else if (msgText === 'instinct') {
-    msg.channel.send(
-      '**Team Instinct**\nHey! The names Spark- the leader of Team Instinct. Pokémon are creatures with excellent intuition. I bet the secret to their intuition is related to how theyre hatched. Come on and join my team! You never lose when you trust your instincts!', {
-        file: "https://pogosa.net/images/instinct_leader.png"
-      });
-    setTimeout(() => {
-      msg.channel.send(
-        'Vertrouwen op je intuitie? We leven toch zeker niet meer in de steentijd? En wat heeft hebben die eieren daar nu weer mee te maken? Met dit soort uitspraken lijkt het soms alsof je zelf uit een ei bent gekomen...'
-      );;
-    }, 1000);
-    msg.delete();
-  } else if ((pokemon = pokemonStats.checkForPokemon(msgText)) != undefined) {
+
+//text replies with extra options
+else if (msgText === "dobbel" || msgText === "gamble") {
+ msg.reply(Math.floor(Math.random()*6)+1)
+ msg.delete()}
+else if (msgText === "type") {msg.channel.send(
+  "Zie hier een tabel met type effectiviteit:", {file: "https://image.ibb.co/mxRthv/Untitled.png"});
+  msg.delete()}
+else if (msgText === "mystic") {msg.channel.send(
+ "**Team Mystic**\nI am Blanche, leader of Team Mystic. The wisdom of Pokémon is immeasurably deep. I am researching why it is that they evolve.\nMy team? With our calm analysis of overy situation, we cant lose!", {
+ file: "https://vignette2.wikia.nocookie.net/pokemon/images/3/35/Blanche-GO.png/revision/latest?cb=20160726200247.png"});
+ setTimeout(() => {msg.channel.send("Wat een prachtige woorden vind je niet? Met onze wijsheid kunnen we samen met onze Pokémon elke uitdaging aan!");;}, 1000);
+ msg.delete()}
+else if (msgText === "valor") {msg.channel.send(
+  "**Team Valor**\nI am Candela, Tem Valor Leader!. Pokemon are stronger than humans, and they are warmhearted, too! I am researching ways to enhance Pokémon natural power in the pursuit of true strength. There is no doubt that the Pokémon in our team have trained are the strongest in battle! Are you ready?", {
+  file: "https://vignette4.wikia.nocookie.net/pokemon/images/c/ce/Candela-GO.png/revision/latest?cb=20160726200643.png"});
+  setTimeout(() => {msg.channel.send("Pokemon sterker dan mensen? Bij jullie team twijfel ik daar soms over.... Dat onderzoek van jullie om pokemon sterker te maken is in elk geval hard nodig bij team faler!");;}, 1000);
+  msg.delete()}
+else if (msgText === "instinct") {msg.channel.send(
+  "**Team Instinct**\nHey! The names Spark- the leader of Team Instinct. Pokémon are creatures with excellent intuition. I bet the secret to their intuition is related to how theyre hatched. Come on and join my team! You never lose when you trust your instincts!", {
+  file: "https://vignette2.wikia.nocookie.net/pokemon/images/8/86/Spark-GO.png/revision/latest?cb=20160726200039.png"});
+  setTimeout(() => {msg.channel.send("Vertrouwen op je intuitie? We leven toch zeker niet meer in de steentijd? En wat heeft hebben die eieren daar nu weer mee te maken? Met dit soort uitspraken lijkt het soms alsof je zelf uit een ei bent gekomen...");;}, 1000);
+  msg.delete()}
+
+ else if ((pokemon = pokemonStats.checkForPokemon(msgText)) != undefined) {
 
     pokemonStats.reply(msg, pokemon);
 
