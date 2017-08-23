@@ -18,7 +18,6 @@ const messages = require("./data/messages.json");
 
 client.login(process.env.TOKEN);
 
-
 var express = require("express");
 var app = express();
 
@@ -29,6 +28,17 @@ pokemonStats.calculateRanks();
 
 const raids = require("./helpers/raids.js");
 raids.init();
+
+app.set("port", (process.env.PORT || 9222));
+
+app.use(express.static(__dirname + "/public"));
+app.listen(app.get("port"), function() {
+  console.log("Node app is running on port", app.get("port"));
+
+  setInterval(function() {
+    https.get("https://discord-pokemon.herokuapp.com/helloworld.html");
+  }, 300000); // every 5 minutes (300000)
+});
 
 client.on("message", async (msg) => {
 let prefixs = settings.prefixs;
