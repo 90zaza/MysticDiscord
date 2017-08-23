@@ -214,7 +214,7 @@
     { "type": "grass", "mult": 1.4 },
     { "type": "electric", "mult": 1.4 },
     { "type": "psychic", "mult": 1.0 },
-    { "type": "ice", "mult": 1.4 },
+    { "type": "ice", "mult": 0.714 },
     { "type": "dragon", "mult": 1.0 },
     { "type": "dark", "mult": 1.0 },
     { "type": "fairy", "mult": 1.0 }
