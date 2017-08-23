@@ -30,6 +30,13 @@ Editorconfig takes care that all developers have the same settings in there edit
 So install editorconfig for atom or sublime text (or any other editor you have).
 
 ## Usage
+When you pull something alwasy do this to install new packages:
+
+```
+npm install
+```
+and then start the chatbot:
+
 ```
 npm start
 ```
