@@ -587,7 +587,7 @@
     "type": ["Fire"],
     "attacks": ["Fire Fang", "Fire Blast"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 3
   },
   {
     "keys": ["poliwag"],
@@ -937,7 +937,7 @@
     "stats": [261, 156, 120],
     "attacks": ["Hex", "Shadow Ball"],
     "defence": [],
-    "recplayers": 1
+    "recplayers": 2
   },
   {
     "keys": ["onix"],
@@ -1119,7 +1119,7 @@
     "stats": [222, 206, 210],
     "attacks": ["Mud Slap", "Earthquake/Stone Edge"],
     "defence": [],
-    "recplayers": 4
+    "recplayers": 5
   },
   {
     "keys": ["chansey"],
@@ -1309,7 +1309,7 @@
     "stats": [186, 190, 260],
     "attacks": ["Frost Breath", "Blizzard"],
     "defence": ["Frost Breath", "Ice Beam"],
-    "recplayers": 5
+    "recplayers": 7
   },
   {
     "keys": ["ditto", "dito"],
@@ -1429,10 +1429,10 @@
     "stats": [190, 190, 320],
     "attacks": ["Zen Headbutt", "Heavy Slam"],
     "defence": [],
-    "recplayers": 5
+    "recplayers": 7
   },
   {
-    "keys": ["articuno"],
+    "keys": ["articuno", "arti"],
     "name": "Articuno",
     "number": 144,
     "type": ["ice", "flying"],
