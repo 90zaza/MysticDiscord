@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const Sequelize = require('sequelize');
+const moment = require('moment');
 
 const Pokemon = require('./pokemon.js');
 const Gym = require('./gym.js');
@@ -68,7 +69,9 @@ exports.init = async () => {
     }
   });
 
-  await raid.sync();
+  await raid.sync({
+    // force: true
+  });
 }
 
 exports.scan = function (msg) {
@@ -173,7 +176,7 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
   }
 }
 
-function addRaid (msg, boss) {
+async function addRaid (msg, boss) {
 
   let text = msg.content.toLowerCase().substr(1);
   let textArray = text.split(" ");
@@ -196,6 +199,8 @@ function addRaid (msg, boss) {
     info.raidgym = textArray.slice(gymIdx+1, indexes[indexes.indexOf(gymIdx)+1]).join(' ')
   }
 
+  info.expireat = moment().add(2, 'hours')
+
   raid.create(info)
     .then(function(x) {
 
@@ -217,11 +222,22 @@ function addRaid (msg, boss) {
       });
     });
 
-  connection.query("DELETE FROM raids WHERE expireat < NOW() RETURNING *").then(function(x){
-    for (i = 0 ; i < x[0].length ; i++){
-      msg.guild.channels.find("name", "raids_meldingen").messages.find("id",x[0][i]["messageid"]).delete();
+
+  let raidsNeedToBeDeleted = await raid.findAll(
+    {
+      where: {
+        expireat: {
+          $lt: new Date()
+        }
+      }
     }
-  });
+  );
+
+
+
+  for (let raid in raidsNeedToBeDeleted) {
+    msg.guild.channels.find("name", "raids_meldingen").messages.find("id", raid.dataValues.messageid).delete();
+  }
 }
 
 async function updateRaid(msg) {
@@ -260,13 +276,14 @@ async function updateRaid(msg) {
     where: {"idraids": raidId}
   });
 
-  raid.findOne({
+  let result = await raid.findOne({
     where: {"idraids": raidId}
-  }).then(function(x) {
+  });
 
+  if(result) {
     var joining = null
-    if (x["joining"].length > 0){
-      joining = x["joining"].join(', ')
+    if (result.dataValues.joining && result.dataValues.joining.length > 0){
+      joining = result.dataValues.joining.join(', ')
     }else{
       joining = "no people interested yet"
     }
@@ -280,25 +297,32 @@ async function updateRaid(msg) {
       x.raidendtime,
       x.raidbattletime,
       joining
-    )
-  });
+    );
+  }
+
 }
 
-function deleteRaid (msg, id) {
+async function deleteRaid (msg, id) {
 
   if (!isNaN(id)) {
 
-    raid.findOne({
-      where: {"idraids": id}
-    })
-    .then(function(x){
-      msg.guild.channels.find("name", "raids_meldingen").messages.find("id",x["messageid"]).delete()
-    });
-    raid.destroy({
-      where: {
-        "idraids": id
-      }
-    })
+    try {
+      result = await raid.findOne({
+        where: {"idraids": id}
+      })
+      msg.guild.channels.find("name", "raids_meldingen").messages.find("id",result.dataValues["messageid"]).delete()
+
+      raid.destroy({
+        where: {
+          "idraids": id
+        }
+      })
+    } catch (error) {
+      // do nothing
+    }
+
+
+
 
   } else {
 
@@ -346,9 +370,10 @@ function joinRaid (msg, id) {
         let id = result[1];
         dbRaid = await raid.findOne ( {where: {"idraids": id} } )
 
-        console.log(dbRaid);
-
-        let joiningArray = JSON.parse(dbRaid.dataValues.joining)
+        let joiningArray = []
+        if (dbRaid && dbRaid.dataValues.joining) {
+          joiningArray = JSON.parse(dbRaid.dataValues.joining)
+        }
 
         var joining = null;
         if (joiningArray.length > 0){
