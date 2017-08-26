@@ -295,6 +295,10 @@
   "name": "Plaquette op bank",
 	"url": "https://goo.gl/maps/DjkYPsFRez82"
 }, {
+  "keys": ["???"],
+  "name": "Playground",
+	"url": "https://goo.gl/maps/daZ3xX1g87Q2"
+}, {
   "keys": ["playground b"],
   "name": "Playground Brahmslaan",
 	"url": "https://goo.gl/maps/EQTAJqWWshL2"
@@ -319,7 +323,7 @@
   "name": "Race Planet Delft",
 	"url": "https://goo.gl/maps/TGuxkCTzPBT2"
 }, {
-  "keys": ["relief"],
+  "keys": ["relief", "reliëf"],
   "name": "Reliëf Driemaster Den Hoorn",
 	"url": "https://goo.gl/maps/4ThC211kxEm"
 }, {
