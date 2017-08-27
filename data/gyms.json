@@ -52,7 +52,7 @@
   "name": "De Hofstee",
 	"url": "https://goo.gl/maps/kkwdPP9jce82"
 }, {
-  "keys": ["kamer", "de kamer"],
+  "keys": ["kamer", "de kamer", "charilabla"],
   "name": "De Kamer van Charilabla 1614",
 	"url": "https://goo.gl/maps/jC6osbaZcaG2"
 }, {
@@ -232,6 +232,10 @@
   "name": "Library TU Delft",
 	"url": "https://goo.gl/maps/VB27CE8egKG2"
 }, {
+  "keys": ["lome", "lomé"],
+  "name": "Lomé Speeltoestel",
+	"url": "https://goo.gl/maps/fNTcP71fpe22"
+  }, {
   "keys": ["maria"],
   "name": "Maria van Jesse kerk",
 	"url": "https://goo.gl/maps/4csETP8VSq62"
