@@ -384,9 +384,13 @@
   "name": "Station Delft-Zuid",
 	"url": "https://goo.gl/maps/UUuZexYicuS2"
 }, {
-  "keys": ["statue "],
+  "keys": ["statue"],
   "name": "Statue Of Prometheus",
 	"url": "https://goo.gl/maps/C4Jtr7HKyVB2"
+}, {
+  "keys": ["stonehenge", "stonehedge"],
+  "name": "Stonehenge,delft",
+	"url": "https://goo.gl/maps/pAhadHNAKBU2"
 }, {
   "keys": ["stop", "child labor"],
   "name": "Stop Child Labor Wall Painting",
