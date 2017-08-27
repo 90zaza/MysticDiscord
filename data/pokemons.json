@@ -1242,7 +1242,7 @@
     "recplayers": 0
   },
   {
-    "keys": ["electabuzz"],
+    "keys": ["electabuzz", "electabuz", "electabus"],
     "name": "Electabuzz",
     "number": 125,
     "type": ["electric"],
