@@ -1437,8 +1437,8 @@
     "number": 143,
     "type": ["normal"],
     "stats": [190, 190, 320],
-    "attacks": ["Zen Headbutt", "Heavy Slam"],
-    "defence": [],
+    "attacks": [],
+    "defence": ["Zen Headbutt", "Heavy Slam"],
     "recplayers": 7
   },
   {
