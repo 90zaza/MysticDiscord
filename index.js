@@ -213,6 +213,6 @@ else {
 client.on("guildMemberAdd", member => {
   setTimeout(() => {
     member.guild.defaultChannel.send(
-    'Welkom op de Mystic Delft Discord en leuk dat je onze groep wilt versterken, ${member}!\nOm toegang te krijgen tot de volledige groep vragen wij een screenshot van je pokemon go profiel (dat is waar je naast je buddy staat). Als je deze kan uploaden zal een van de moderators je zo snel mogelijk te woord staan.\n\nWelcome to our Mystic Delft Discord group, ${member}!\nIn order to get full access to our server, we would like to verify you are indeed mystic. If  you would be so kind as to upload a screenshot of your Pokémon Go profile (where you are standing next to your buddy) one of our moderators will contact you as soon as possible.');
+    `Welkom op de Mystic Delft Discord en leuk dat je onze groep wilt versterken, ${member}!\nOm toegang te krijgen tot de volledige groep vragen wij een screenshot van je pokemon go profiel (dat is waar je naast je buddy staat). Als je deze kan uploaden zal een van de moderators je zo snel mogelijk te woord staan.\n\nWelcome to our Mystic Delft Discord group, ${member}!\nIn order to get full access to our server, we would like to verify you are indeed mystic. If  you would be so kind as to upload a screenshot of your Pokémon Go profile (where you are standing next to your buddy) one of our moderators will contact you as soon as possible.`);
     }, 1000);
 });
