@@ -1,4 +1,9 @@
 [{
+  "keys": ["3 variaties op een vierkant 1"],
+  "name": "3 Variaties op een vierkant 1",
+  "url": "https://goo.gl/maps/kVTjneBJ4rG2"
+},
+{
   "keys": ["3 variaties op een vierkant 2"],
   "name": "3 Variaties op een vierkant 2",
   "url": "https://goo.gl/maps/WBmE2s8ypYU2"
@@ -162,6 +167,10 @@
   "keys": ["veldje"],
   "name": "Het Veldje",
 	"url": "https://goo.gl/maps/9cwyqtsBCos"
+}, {
+  "keys": ["hidden"],
+  "name": "Hidden Artwork",
+	"url": "https://goo.gl/maps/Yjwxm9Ysmuz"
 }, {
   "keys": ["high"],
   "name": "High Water Bridge",
