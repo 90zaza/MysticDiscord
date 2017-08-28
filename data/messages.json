@@ -35,6 +35,9 @@
   "keys": ["help"],
   "reply": "Hey! Mijn naam is Blanche, en ik ben de teamleider van het beste team, Mystic! Naast het appraisen van jouw pokemon in game, kan ik jullie ook op discord assistentie verlenen. Ik reageer onder andere op de volgende commando's zolang ze zonder hoofdletters geschreven zijn:\n![pokemon]      voor info over pokémon\n![gym naam]    voor de locatie van een gym\n!raid ...   het raid commando [!raid help voor meer info]\n!+[regio]           zie #speler_registratie"
 }, {
+  "keys": ["type"],
+  "reply": "Zie hier een tabel met type effectiviteit:\nhttps://image.ibb.co/mxRthv/Untitled.png"
+}, {
   "keys": ["test"],
   "reply": "Alles lijkt te werken! ;)"
 }]
