@@ -76,7 +76,7 @@ exports.init = function () {
 
 exports.scan = function (msg) {
 
-  let text = msg.content.toLowerCase().substr(1);
+  let text = msg.content.toLowerCase().substr(1).trim();
   let textArray = text.split(" ");
 
   if (textArray.length < 2) {
