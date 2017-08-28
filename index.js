@@ -46,7 +46,7 @@ let moderator = settings.moderator;
 
 // get the first character of the message content, remove it and convert the rest to lowercase
 let msgPrefix = msg.content[0];
-var msgText = msg.content.toLowerCase().substr(1);
+var msgText = msg.content.toLowerCase().substr(1).trim();
 var pokemon, gym;
 
 //determine if the bot activates or not
