@@ -2325,7 +2325,7 @@
   {
     "keys": ["donphan"],
     "name": "Donphan",
-    "number": 233,
+    "number": 232,
     "type": ["ground"],
     "stats": [214, 214, 180],
     "attacks": [],
