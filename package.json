@@ -12,7 +12,8 @@
     "node": "8.2.1"
   },
   "scripts": {
-    "start": "node --inspect index.js"
+    "start": "node --inspect index.js",
+    "shipit": "shipit"
   },
   "dependencies": {
     "discord.js": "^11.1.0",
@@ -22,12 +23,18 @@
     "mysql2": "^1.4.1",
     "pg": "^7.1.2",
     "pg-hstore": "^2.3.2",
-    "sequelize": "^4.5.0"
+    "sequelize": "^4.5.0",
+    "shipit-deploy": "^2.5.1",
+    "shipit-pm2": "0.0.4",
+    "shipit-shared": "^4.4.2"
   },
   "keywords": [
     "node",
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "shipit-cli": "^3.0.0"
+  }
 }
