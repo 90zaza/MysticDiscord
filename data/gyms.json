@@ -80,6 +80,10 @@
   "name": "Delfts Blauwe Stenen",
 	"url": "https://goo.gl/maps/kJSKksZZPwq"
 }, {
+  "keys": ["delftse hout"],
+  "name": "Delftse Hout Leisure National Park",
+  "url": "https://goo.gl/maps/eGPmiZZqD712"
+}, {
   "keys": ["delftse tegelmannen", "tegelmannen"],
   "name": "Delftse Tegelmannen",
 	"url": "https://goo.gl/maps/eVA5ufuajzo"
@@ -135,6 +139,10 @@
     "keys": ["glasbak"],
   "name": "Glasbak Art",
 	"url": "https://goo.gl/maps/JUddhCkME9s"
+}, {
+  "keys": ["granito"],
+  "name": "Granito-Vier Objecten",
+  "url": "https://goo.gl/maps/61TcrfRPLdH2"
 }, {
   "keys": ["green"],
   "name": "Green Chair with White Table",
@@ -343,6 +351,14 @@
   "keys": ["royal"],
   "name": "Royal Blue Bench",
 	"url": "https://goo.gl/maps/quM5tfFo8gH2"
+}, {
+  "keys": ["route"],
+  "name": "Route Paal Delftse Hout",
+	"url": "https://goo.gl/maps/zuN5qL6r8xn"
+}, {
+  "keys": ["roze"],
+  "name": "Roze Vlinder Op Boom",
+	"url": "https://goo.gl/maps/ae37wANjU8S2"
 }, {
   "keys": ["seats"],
   "name": "Seats",
