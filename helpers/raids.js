@@ -66,6 +66,10 @@ exports.init = async () => {
     },
     expireat: {
       type: Sequelize.DATE
+    },
+    isMystic: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false
     }
   });
 
@@ -138,12 +142,13 @@ function printHelp (msg) {
     .addField("Change Raid Parameters", "**!raid [raid ID] [e/g/b] [value]**")
     .addField("Raid ID", "The raid ID is the number in Blanches raid announcement.")
     .addField("Join/Leave a Raid", "**!raid join [id]** to join, **!raid leave [id]** to leave")
-    .addField("Delete a Raid / Delete All Raids", "**!raid del [id]** / **!raid del all**");
+    .addField("Delete a Raid / Delete All Raids", "**!raid del [id]** / **!raid del all**")
+    .addField("Add the word mystic or :mystic: anywhere to indicate the gym is controlled by our team");
 
     msg.channel.send({embed});
 }
 
-function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, joinedPlayers) {
+function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, joinedPlayers, isMystic) {
 
   let pokemon = Pokemon.checkForPokemon(bossName);
 
@@ -157,15 +162,20 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
     imageURL = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + leadingZeroes + pokemon.number + ".png";
   }
 
+  var joining = "no people interested yet";
+  if (joinedPlayers && joinedPlayers.length > 0){
+    joining = joinedPlayers.join("\n");
+  }
+
   let gym = Gym.checkForGym(gymName);
   let embed = new Discord.RichEmbed()
-    .setColor(0xffffff)
+    .setColor(isMystic ? 0x0677ee : 0xffffff)
     .setURL(gym ? gym.url : "")
     .setAuthor("Raid #" + id + ": " + (pokemon ? pokemon.name : bossName))
-    .setTitle("📍 " + (gym ? gym.name : gymName))
+    .setTitle("📍 " + (gym ? gym.name : gymName) + (isMystic ? " (:mystic: Gym)" : "") )
     .setThumbnail(imageURL)
     .addField("Times", "Ends:\t" + endTime + "\nFight:\t" + battleTime )
-    .addField("Joining (bring at least " + pokemon.recplayers + " trainers)", joinedPlayers);
+    .addField("Joining (bring at least " + pokemon.recplayers + " trainers)", joining);
 
   let channel = msg.guild.channels.find("name", "raids_meldingen");
   let message = channel.messages.find("id", msgId);
@@ -180,6 +190,19 @@ async function addRaid (msg, boss) {
 
   let text = msg.content.toLowerCase().substr(1);
   let textArray = text.split(" ");
+
+  // check if array contains the word mystic
+  let isMystic = textArray.indexOf("mystic");
+  if (isMystic < 0) {
+    // or the mystic icon
+    isMystic = textArray.indexOf(":mystic:");
+  }
+  if (isMystic >= 0) { // if yes
+    // remove the element from the array
+    textArray.splice(isMystic, 1);
+  }
+  // if gym is blue this is > 0 otherwise 0
+  ++isMystic;
 
   let info = { "raidboss": boss.keys[0] };
 
@@ -196,10 +219,12 @@ async function addRaid (msg, boss) {
 
   let gymIdx = textArray.indexOf("g");
   if (gymIdx >= 0) {
-    info.raidgym = textArray.slice(gymIdx+1, indexes[indexes.indexOf(gymIdx)+1]).join(' ')
+    info.raidgym = textArray.slice(gymIdx+1, indexes[indexes.indexOf(gymIdx)+1]).join(' ');
   }
 
-  info.expireat = moment().add(2, 'hours')
+  info.expireat = moment().add(2, 'hours');
+
+  info.isMystic = isMystic > 0;
 
   raid.create(info)
     .then(function(x) {
@@ -214,7 +239,8 @@ async function addRaid (msg, boss) {
         x.raidgym,
         x.raidendtime,
         x.raidbattletime,
-        "no people interested yet"
+        [],
+        x.isMystic
       ).then( function(x) {
 
         var messageinfo = {"messageid": x.id}
@@ -252,6 +278,19 @@ async function updateRaid(msg) {
   }
 
   var info = {};
+
+  // check if array contains the word mystic
+  let isMystic = textArray.indexOf("mystic");
+  if (isMystic < 0) {
+    // or the mystic icon
+    isMystic = textArray.indexOf(":mystic:");
+  }
+  if (isMystic >= 0) { // if yes
+    // remove the element from the array
+    textArray.splice(isMystic, 1);
+    info.isMystic = true;
+  }
+
   indexes = [textArray.indexOf("e"), textArray.indexOf("b"),textArray.indexOf("g"), textArray.length].sort();
   let endIdx = textArray.indexOf("e");
   if (endIdx >= 0) {
@@ -268,7 +307,7 @@ async function updateRaid(msg) {
     info.raidgym = textArray.slice(gymIdx+1, indexes[indexes.indexOf(gymIdx)+1]).join(' ')
   }
 
-  if(endIdx < 0 && battleIdx < 0 && gymIdx < 0) {
+  if(endIdx < 0 && battleIdx < 0 && gymIdx < 0 && isMystic < 0) {
     return;
   }
 
@@ -281,22 +320,16 @@ async function updateRaid(msg) {
   });
 
   if(result) {
-    var joining = null
-    if (result.dataValues.joining && result.dataValues.joining.length > 0){
-      joining = result.dataValues.joining.join('\n')
-    }else{
-      joining = "no people interested yet"
-    }
-
     updateMessage (
       msg,
-      x.messageid,
-      x.idraids,
-      x.raidboss,
-      x.raidgym,
-      x.raidendtime,
-      x.raidbattletime,
-      joining
+      result.dataValues.messageid,
+      result.dataValues.idraids,
+      result.dataValues.raidboss,
+      result.dataValues.raidgym,
+      result.dataValues.raidendtime,
+      result.dataValues.raidbattletime,
+      JSON.parse(result.dataValues.joining),
+      result.dataValues.isMystic
     );
   }
 
@@ -320,9 +353,6 @@ async function deleteRaid (msg, id) {
     } catch (error) {
       // do nothing
     }
-
-
-
 
   } else {
 
@@ -367,21 +397,6 @@ function joinRaid (msg, id) {
       })
       .then (async function (result) {
 
-        let id = result[1];
-        dbRaid = await raid.findOne ( {where: {"idraids": id} } )
-
-        let joiningArray = []
-        if (dbRaid && dbRaid.dataValues.joining) {
-          joiningArray = JSON.parse(dbRaid.dataValues.joining)
-        }
-
-        var joining = null;
-        if (joiningArray.length > 0){
-          joining = joiningArray.join('\n')
-        } else {
-          joining = "no people interested yet."
-        }
-
         updateMessage(
           msg,
           dbRaid.dataValues.messageid,
@@ -390,7 +405,8 @@ function joinRaid (msg, id) {
           dbRaid.dataValues.raidgym,
           dbRaid.dataValues.raidendtime,
           dbRaid.dataValues.raidbattletime,
-          joining
+          join,
+          dbRaid.dataValues.isMystic
         )
      })
     });
@@ -413,16 +429,6 @@ function leaveRaid (msg, id) {
         where: {"idraids": id}
       })
       .then (async function (result) {
-        let dbRaid = await raid.findOne ( {where: {"idraids": id} } )
-        console.log(dbRaid, id);
-        let joiningArray = JSON.parse(dbRaid.dataValues.joining)
-
-        var joining = null;
-        if (joiningArray.length > 0){
-          joining = joiningArray.join('\n')
-        } else {
-          joining = "no people interested yet."
-        }
 
         updateMessage(
           msg,
@@ -432,7 +438,8 @@ function leaveRaid (msg, id) {
           dbRaid.dataValues.raidgym,
           dbRaid.dataValues.raidendtime,
           dbRaid.dataValues.raidbattletime,
-          joining
+          join,
+          dbRaid.dataValues.isMystic
         )
      })
     });
