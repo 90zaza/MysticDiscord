@@ -283,7 +283,7 @@ async function updateRaid(msg) {
   if(result) {
     var joining = null
     if (result.dataValues.joining && result.dataValues.joining.length > 0){
-      joining = result.dataValues.joining.join(', ')
+      joining = result.dataValues.joining.join('\n')
     }else{
       joining = "no people interested yet"
     }
