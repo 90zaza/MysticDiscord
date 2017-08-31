@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies, global-require */
 module.exports = (shipit) => {
   require('./node_modules/shipit-deploy')(shipit);
+  require('./node_modules/shipit-yarn')(shipit);
   require('./node_modules/shipit-pm2')(shipit);
   require('./node_modules/shipit-shared')(shipit);
 
@@ -12,9 +13,9 @@ module.exports = (shipit) => {
       keepReleases: 4,
       shallowClone: true,
       dirToCopy: '',
-      npm: {
-        remote: true,
-        installFlags: ['--only=production'],
+      yarn: {
+       remote: true,
+       installFlags: ['--only=production'],
       },
       shared: {
         overwrite: true,
@@ -31,5 +32,10 @@ module.exports = (shipit) => {
       deployTo: '/home/pi/app',
       servers: 'pi@83.84.3.165',
     }
+  });
+
+  shipit.blTask('precompile:assets', () => {
+    let cmd = `cd ${shipit.config.workspace} && npm install`;
+    return shipit.local(cmd);
   });
 };
