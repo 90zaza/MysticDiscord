@@ -2428,7 +2428,7 @@
     "number": 243,
     "type": ["electric"],
     "stats": [241, 210, 180],
-    "attacks": [],
+    "attacks": ["Volt Switch", "Wild Charge"],
     "defence": [],
     "recplayers": 5
   },
@@ -2438,7 +2438,7 @@
     "number": 244,
     "type": ["fire"],
     "stats": [235, 180, 230],
-    "attacks": [],
+    "attacks": ["Fire Spin", "Overheat"],
     "defence": [],
     "recplayers": 5
   },
@@ -2448,7 +2448,7 @@
     "number": 245,
     "type": ["water"],
     "stats": [180, 235, 200],
-    "attacks": [],
+    "attacks": ["xxx", "Bubble Beam"],
     "defence": [],
     "recplayers": 6
   },
