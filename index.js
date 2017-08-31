@@ -46,16 +46,12 @@ let moderator = settings.moderator;
 
 //determine if the bot activates or not
 let msgPrefix = msg.content[0];
-<<<<<<< HEAD
 var msgText = msg.content.toLowerCase().substr(1).trim();
-=======
 if (prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
 
 //removes prefix and spaces, and convert the rest to lowercase
 var msgText = msg.content.toLowerCase().substr(1).trim();
 
-
->>>>>>> feature/add_space_prefix
 var pokemon, gym;
 
 
