@@ -2440,7 +2440,7 @@
     "stats": [241, 210, 180],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 5
   },
   {
     "keys": ["entei"],
@@ -2450,7 +2450,7 @@
     "stats": [235, 180, 230],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 5
   },
   {
     "keys": ["suicune"],
@@ -2460,7 +2460,7 @@
     "stats": [180, 235, 200],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 6
   },
   {
     "keys": ["larvitar"],
