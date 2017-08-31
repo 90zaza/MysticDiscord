@@ -28,14 +28,18 @@ module.exports = (shipit) => {
       },
     },
     production: {
-      branch: 'master',
+      branch: 'feature/deploy_to_raspberry',
       deployTo: '/home/pi/app',
       servers: 'pi@83.84.3.165',
     }
   });
 
   shipit.blTask('precompile:assets', () => {
-    let cmd = `cd ${shipit.config.workspace} && npm install`;
+    let cmd = `cd ${shipit.config.workspace} && yarn install`;
     return shipit.local(cmd);
+  });
+
+  shipit.on('fetched', () => {
+    shipit.start('precompile:assets');
   });
 };
