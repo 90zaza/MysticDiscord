@@ -15,7 +15,6 @@ module.exports = (shipit) => {
       dirToCopy: '',
       yarn: {
        remote: true,
-       installFlags: ['--only=production'],
       },
       shared: {
         overwrite: true,
