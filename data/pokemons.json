@@ -2437,7 +2437,7 @@
     "name": "Entei",
     "number": 244,
     "type": ["fire"],
-    "stats": [235, 180, 230],
+    "stats": [235, 176, 230],
     "attacks": ["Fire Spin", "Overheat"],
     "defence": [],
     "recplayers": 5
