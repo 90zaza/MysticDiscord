@@ -39,6 +39,16 @@ module.exports = (shipit) => {
     return shipit.local(cmd);
   });
 
+  shipit.blTask('clean-up', () => {
+    const command = 'rm -r tmp';
+    shipit.local(command);
+  });
+
+  shipit.on('deployed', () => {
+    shipit.remote('pm2 save');
+    shipit.start('clean-up');
+  });
+
   shipit.on('fetched', () => {
     shipit.start('precompile:assets');
   });
