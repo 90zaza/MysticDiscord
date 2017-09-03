@@ -19,6 +19,13 @@ if you have nvm, but don't have node 8.2.1 execute:
 nvm install 8.2.1
 ```
 
+### mysql2
+You need to have a mysql server. On OSX you can install it with homebrew.
+
+install homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+install mysql: `brew install mysql`
+
 ### Linter
 Install eslint plugin in your favorite editor.
 
@@ -50,5 +57,8 @@ npm start
 - After merging we pick a moment to deploy the new features or fixes
 
 ## Deployment
-Deployment is done by contributors. They can merge the develop branch into the master branch.
-There is a hook that automagicly deploys to the server.
+Deployment is done by contributors that have access to the server. To deploy execute:
+
+```
+npm run shipit production deploy
+```
