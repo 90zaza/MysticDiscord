@@ -9,12 +9,12 @@ module.exports = (shipit) => {
     default: {
       workspace: 'tmp',
       repositoryUrl: 'git@github.com:gvlekke/MysticDiscord.git',
-      ignores: ['.git', 'node_modules'],
+      ignores: ['.git'],
       keepReleases: 4,
       shallowClone: true,
       dirToCopy: '',
       yarn: {
-       remote: true,
+       remote: false,
       },
       shared: {
         overwrite: true,
@@ -33,10 +33,10 @@ module.exports = (shipit) => {
     }
   });
 
-  shipit.blTask('precompile:assets', () => {
-    let cmd = `cd ${shipit.config.workspace} && yarn install`;
-    return shipit.local(cmd);
-  });
+  // shipit.blTask('precompile:assets', () => {
+  //   let cmd = `cd ${shipit.config.workspace} && yarn install`;
+  //   return shipit.local(cmd);
+  // });
 
   shipit.blTask('clean-up', () => {
     const command = 'rm -r tmp';
@@ -48,7 +48,7 @@ module.exports = (shipit) => {
     shipit.start('clean-up');
   });
 
-  shipit.on('fetched', () => {
-    shipit.start('precompile:assets');
-  });
+  // shipit.on('fetched', () => {
+  //   shipit.start('precompile:assets');
+  // });
 };
