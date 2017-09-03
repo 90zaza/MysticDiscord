@@ -57,5 +57,8 @@ npm start
 - After merging we pick a moment to deploy the new features or fixes
 
 ## Deployment
-Deployment is done by contributors. They can merge the develop branch into the master branch.
-There is a hook that automagicly deploys to the server.
+Deployment is done by contributors that have access to the server. To deploy execute:
+
+```
+npm run shipit production deploy
+```
