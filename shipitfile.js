@@ -27,7 +27,7 @@ module.exports = (shipit) => {
       },
     },
     production: {
-      branch: 'feature/deploy_to_raspberry',
+      branch: 'master',
       deployTo: '/home/pi/app',
       servers: 'pi@83.84.3.165',
     }
