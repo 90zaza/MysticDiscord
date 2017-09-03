@@ -19,6 +19,13 @@ if you have nvm, but don't have node 8.2.1 execute:
 nvm install 8.2.1
 ```
 
+### mysql2
+You need to have a mysql server. On OSX you can install it with homebrew.
+
+install homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+install mysql: `brew install mysql`
+
 ### Linter
 Install eslint plugin in your favorite editor.
 
