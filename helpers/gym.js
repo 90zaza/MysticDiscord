@@ -24,4 +24,5 @@ exports.reply = function (msg, gym) {
     .setTitle("📍 " + gym.name);
 
   msg.channel.send({embed});
+  msg.delete()
 }

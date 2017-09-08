@@ -194,4 +194,5 @@ exports.reply = function (msg, pokemon) {
   }
 
   msg.channel.send({embed});
+  msg.delete()
 }
