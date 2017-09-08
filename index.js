@@ -15,6 +15,7 @@ const stops = require("./data/pokestops.json");
 const pokemons = require("./data/pokemons.json");
 const defense = require("./data/defense.json");
 const messages = require("./data/messages.json");
+const rarepokemons = require("./data/rarepokemon.json");
 
 client.login(process.env.TOKEN)
 
@@ -22,7 +23,7 @@ var express = require('express');
 var app = express();
 
 const Gym = require("./helpers/gym.js");
-
+const Rarepokemon = require("./helpers/rarepokemon.js");
 const pokemonStats = require("./helpers/pokemon.js");
 pokemonStats.calculateRanks();
 
@@ -41,24 +42,29 @@ app.listen(app.get("port"), function() {
 });
 
 client.on("message", async (msg) => {
+if (msg.author.bot) return;
+var pokemon, gym, rarepokemon;
+
+if (Message.channel.ID == "352853913684148225") {
+var msgText = msg.content.toLowerCase()
+if ((rarepokemon = Rarepokemon.checkForRarepokemon(msgText)) != undefined) {
+    Rarepokemon.reply(msg, rarepokemon);}
+ }
+
 let prefixs = settings.prefixs;
 let moderator = settings.moderator;
 
 //determine if the bot activates or not
 let msgPrefix = msg.content[0];
 var msgText = msg.content.toLowerCase().substr(1).trim();
-if (prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
+if (prefixs.indexOf(msgPrefix) < 0) return;
 
 //removes prefix and spaces, and convert the rest to lowercase
 var msgText = msg.content.toLowerCase().substr(1).trim();
 
-var pokemon, gym;
-
-
 //raid reply
 if (msgText.split(' ')[0] == "raid") {
     raids.scan(msg);}
-
 
 //pokemon reply
 if ((pokemon = pokemonStats.checkForPokemon(msgText)) != undefined) {
