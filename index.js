@@ -45,7 +45,9 @@ client.on("message", async (msg) => {
 if (msg.author.bot) return;
 var pokemon, gym, rarepokemon;
 
-if (Message.channel.ID == "352853913684148225") {
+//pokemon spotting
+let spotting = msg.guild.channels.find("name", "pokemon_spotting");
+if (msg.channel == spotting) {
 var msgText = msg.content.toLowerCase()
 if ((rarepokemon = Rarepokemon.checkForRarepokemon(msgText)) != undefined) {
     Rarepokemon.reply(msg, rarepokemon);}
