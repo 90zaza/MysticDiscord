@@ -115,8 +115,9 @@ exports.reply = function (msg, pokemon) {
   let imageURL = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + leadingZeroes + pokemon.number + ".png";
 
   let embed = new Discord.RichEmbed()
-    .setAuthor("#" + pokemon.number + " - " + pokemon.name + " [" + pokemon.type.join(", ") + "]", imageURL)
+    .setTitle("#" + pokemon.number + " - " + pokemon.name + " [" + pokemon.type.join(", ") + "]", imageURL)
     .setThumbnail(imageURL)
+    .setURL("https://pokemongo.gamepress.gg/pokemon/" + pokemon.number)
     .setColor(colors[pokemon.type[0]]);
 
   // pokemon.recplayers can be used to identify whether the pokemon is also a raid boss
