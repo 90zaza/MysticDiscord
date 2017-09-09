@@ -107,12 +107,24 @@ exports.checkForPokemon = function (msgText) {
 
 exports.reply = function (msg, pokemon) {
 
-  let leadingZeroes = "";
-  if (pokemon.number < 100 )
-  {
-    leadingZeroes = pokemon.number < 10 ? "00" : "0";
+
+  if (Math.random()>0.02) {
+    sprite = 'normal';
+  } //2% chance on a shiny sprite
+  else {
+    sprite = 'shiny';
   }
-  let imageURL = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + leadingZeroes + pokemon.number + ".png";
+
+
+  gender=""; //50/50 gender
+
+  if (pokemon.gender == true) {
+    if (Math.random() > 0.5) {
+      gender = '-f';
+    };
+  } //gender
+
+  let imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${pokemon.name.toLowerCase()}${gender}.png`;
 
   let embed = new Discord.RichEmbed()
     .setTitle("#" + pokemon.number + " - " + pokemon.name + " [" + pokemon.type.join(", ") + "]", imageURL)
