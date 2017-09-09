@@ -114,9 +114,8 @@ exports.reply = function (msg, pokemon) {
 
   gender=""; //50/50 gender
 
- //if pokemon.gender blabla
-
-  if (Math.random()>0.5) {gender="-f"};} //gender
+  if (pokemon.gender==true) {
+    if (Math.random()>0.5) {gender="-f"};} //gender
 
   let imageURL = "https://img.pokemondb.net/sprites/x-y/" + sprite + "/" + pokemon.name.toLowerCase() + gender +".png";
 

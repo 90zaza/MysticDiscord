@@ -154,7 +154,12 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
 
   if (Math.random()>0.01) {sprite="normal"} //1% chance on a shiny sprite
   else {sprite="shiny"}
-  let imageURL = "https://img.pokemondb.net/sprites/x-y/" + sprite + "/" + pokemon.name.toLowerCase() + ".png";
+
+  gender="";
+  if (pokemon.gender==true) {
+    if (Math.random()>0.5) {gender="-f"};} //50/50 gender
+
+  let imageURL = "https://img.pokemondb.net/sprites/x-y/" + sprite + "/" + pokemon.name.toLowerCase() + gender +".png";
 
   var joining = "no people interested yet";
   if (joinedPlayers && joinedPlayers.length > 0){
