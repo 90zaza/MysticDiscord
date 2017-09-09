@@ -117,7 +117,7 @@ exports.reply = function (msg, pokemon) {
   if (pokemon.gender==true) {
     if (Math.random()>0.5) {gender="-f"};} //gender
 
-  let imageURL = "https://img.pokemondb.net/sprites/x-y/" + sprite + "/" + pokemon.name.toLowerCase() + gender +".png";
+  let imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${pokemon.name.toLowerCase()}${gender}.png`;
 
   let embed = new Discord.RichEmbed()
     .setTitle("#" + pokemon.number + " - " + pokemon.name + " [" + pokemon.type.join(", ") + "]", imageURL)
