@@ -82,9 +82,8 @@ if (msgText === "dobbel" || msgText === "gamble") {
    msg.delete()}
 
 if (msgText === "muziek" || msgText === "music") {
-msgText = Math.floor(Math.random() * 3);
+  msgText = Math.floor(Math.random() * 24);
   if ((music = Music.checkForMusic(msgText)) != undefined) {
-
     Music.reply(msg, music);}
 }
 
