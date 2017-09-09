@@ -1,6 +1,8 @@
 # MysticDiscord
 ![Mystic](public/images/mystic.png)
 
+[ ![Codeship Status for gvlekke/MysticDiscord](https://app.codeship.com/projects/bdf56ed0-7788-0135-3bad-4e446a0e9604/status?branch=master)](https://app.codeship.com/projects/244703)
+
 ## Prerequisites
 
 ### Install Node
