@@ -152,15 +152,9 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
 
   let pokemon = Pokemon.checkForPokemon(bossName);
 
-  let imageURL = "";
-  if (pokemon) {
-    let leadingZeroes = "";
-    if (pokemon.number < 100 )
-    {
-      leadingZeroes = pokemon.number < 10 ? "00" : "0";
-    }
-    imageURL = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + leadingZeroes + pokemon.number + ".png";
-  }
+  if (Math.random()>0.01) {sprite="normal"} //1% chance on a shiny sprite
+  else {sprite="shiny"}
+  let imageURL = "https://img.pokemondb.net/sprites/x-y/" + sprite + "/" + pokemon.name.toLowerCase() + ".png";
 
   var joining = "no people interested yet";
   if (joinedPlayers && joinedPlayers.length > 0){
