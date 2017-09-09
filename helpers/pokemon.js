@@ -108,14 +108,21 @@ exports.checkForPokemon = function (msgText) {
 exports.reply = function (msg, pokemon) {
 
 
-  if (Math.random()>0.02) {sprite="normal"} //2% chance on a shiny sprite
-  else {sprite="shiny"}
+  if (Math.random()>0.02) {
+    sprite = 'normal';
+  } //2% chance on a shiny sprite
+  else {
+    sprite = 'shiny';
+  }
 
 
   gender=""; //50/50 gender
 
-  if (pokemon.gender==true) {
-    if (Math.random()>0.5) {gender="-f"};} //gender
+  if (pokemon.gender == true) {
+    if (Math.random() > 0.5) {
+      gender = '-f';
+    };
+  } //gender
 
   let imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${pokemon.name.toLowerCase()}${gender}.png`;
 

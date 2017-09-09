@@ -152,12 +152,18 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
 
   let pokemon = Pokemon.checkForPokemon(bossName);
 
-  if (Math.random()>0.01) {sprite="normal"} //1% chance on a shiny sprite
-  else {sprite="shiny"}
+  if (Math.random() > 0.01) {
+    sprite="normal"
+  }  else { // 1% chance on a shiny sprite
+    sprite = 'shiny';
+  }
 
-  gender="";
-  if (pokemon.gender==true) {
-    if (Math.random()>0.5) {gender="-f"};} //50/50 gender
+  let gender="";
+  if (pokemon.gender === true) {
+    if (Math.random() > 0.5) {
+      gender = '-f';
+    };
+  } //50/50 gender
 
   let imageURL = "https://img.pokemondb.net/sprites/x-y/" + sprite + "/" + pokemon.name.toLowerCase() + gender +".png";
 
