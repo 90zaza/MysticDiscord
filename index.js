@@ -15,7 +15,6 @@ const stops = require("./data/pokestops.json");
 const pokemons = require("./data/pokemons.json");
 const defense = require("./data/defense.json");
 const messages = require("./data/messages.json");
-const musics= require("./data/music.json")
 
 client.login(process.env.TOKEN)
 
@@ -23,7 +22,8 @@ var express = require('express');
 var app = express();
 
 const Gym = require("./helpers/gym.js");
-const Music = require("./helpers/music.js")
+const Music = require("./helpers/music.js");
+const Rarepokemon = require("./helpers/rarepokemon.js");
 const pokemonStats = require("./helpers/pokemon.js");
 pokemonStats.calculateRanks();
 
