@@ -47,13 +47,37 @@ client.on('ready', () => {
 })
 
 client.on("message", async (msg) => {
+if (msg.author.bot) return;
+var pokemon, gym;
+
+//pokemon spotting
+let spotting = msg.guild.channels.find("name", "pokemon_spotting");
+if (msg.channel == spotting) {
+  var msgText = msg.content.toLowerCase()
+
+  if (msgText.includes("shiny")) {
+    msg.author.send(`Shiny's zijn helaas individueel bepaald. Voor jou een shiny is voor een ander dus waarschijnlijk gewoon normaal.`);
+    msg.delete();
+    return;
+  }
+  if (msgText.includes("100%") || msgText.includes("100 %") || msgText.includes("perfect")) {
+    msg.channel.send(`Er is een 100% IV pokémon gespot, @everyone! (alleen voor lvl 30+)`);
+    return;
+  }
+
+
+  if ((pokemon = Rarepokemon.checkForPokemon(msgText)) != undefined) {
+    Rarepokemon.reply(msg, pokemon);
+  }
+}
+
 let prefixs = settings.prefixs;
 let moderator = settings.moderator;
 
 //determine if the bot activates or not
 let msgPrefix = msg.content[0];
 var msgText = msg.content.toLowerCase().substr(1).trim();
-if (prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
+if (prefixs.indexOf(msgPrefix) < 0) return;
 
 //removes prefix and spaces, and convert the rest to lowercase
 var msgText = msg.content.toLowerCase().substr(1).trim();
@@ -64,7 +88,6 @@ var pokemon, gym, music;
 //raid reply
 if (msgText.split(' ')[0] == "raid") {
     raids.scan(msg);}
-
 
 //pokemon reply
 if ((pokemon = pokemonStats.checkForPokemon(msgText)) != undefined) {

@@ -1,5 +1,16 @@
 [
   {
+    "keys": ["missingno"],
+    "name": "Missingno",
+    "number": 0,
+    "type": ["normal", "flying"],
+    "stats": [218, 10, 66],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0,
+    "rare":  false
+  },
+  {
     "keys": ["bulba", "bulbasaur"],
     "name": "Bulbasaur",
     "number": 1,
@@ -7,7 +18,8 @@
     "type": ["grass", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["ivysaur"],
@@ -17,7 +29,8 @@
     "type": ["grass", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["venusaur"],
@@ -27,7 +40,8 @@
     "type": ["grass", "poison"],
     "attacks": ["Vine Whip", "Solar Beam"],
     "defence": [],
-    "recplayers": 5
+    "recplayers": 5,
+    "rare":  false
   },
   {
     "keys": ["charmander"],
@@ -37,7 +51,8 @@
     "type": ["fire"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["charmeleon"],
@@ -47,7 +62,8 @@
     "type": ["fire"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["charizard"],
@@ -57,7 +73,8 @@
     "stats": [223, 176, 156],
     "attacks": ["Fire Spin", "Overheat"],
     "defence": [],
-    "recplayers": 4
+    "recplayers": 4,
+    "rare":  false
   },
   {
     "keys": ["squirtle"],
@@ -67,7 +84,8 @@
     "type": ["water"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["wartortle"],
@@ -77,7 +95,8 @@
     "type": ["water"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["blastoise"],
@@ -87,7 +106,8 @@
     "stats": [171, 210, 158],
     "attacks": ["Water Gun", "Hydro Pump"],
     "defence": [],
-    "recplayers": 5
+    "recplayers": 5,
+    "rare":  false
   },
   {
     "keys": ["caterpie"],
@@ -97,7 +117,8 @@
     "type": ["bug"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["metapod"],
@@ -107,7 +128,8 @@
     "type": ["bug"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["buterfree"],
@@ -117,7 +139,8 @@
     "type": ["bug", "flying"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["weedle"],
@@ -127,7 +150,8 @@
     "type": ["bug"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["kakuna"],
@@ -137,7 +161,8 @@
     "type": ["bug", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["beedrill"],
@@ -147,7 +172,8 @@
     "type": ["bug", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["pidgey"],
@@ -157,7 +183,8 @@
     "type": ["normal", "flying"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["pidgeotto"],
@@ -167,7 +194,8 @@
     "type": ["normal", "flying"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["pidgeot"],
@@ -177,7 +205,8 @@
     "type": ["normal", "flying"],
     "attacks": ["Air Slash", "Hurricane"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["rattata"],
@@ -187,7 +216,8 @@
     "type": ["normal"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["raticate"],
@@ -197,7 +227,8 @@
     "type": ["normal"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["spearow"],
@@ -207,7 +238,8 @@
     "type": ["normal", "flying"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["fearow"],
@@ -217,7 +249,8 @@
     "type": ["normal", "flying"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["ekans"],
@@ -227,7 +260,8 @@
     "type": ["poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["arbok"],
@@ -237,7 +271,8 @@
     "type": ["poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["pikachu"],
@@ -247,7 +282,8 @@
     "type": ["electric"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["raichu"],
@@ -257,7 +293,8 @@
     "type": ["electric"],
     "attacks": ["Spark", "Wild Charge"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["sandshrew"],
@@ -267,7 +304,8 @@
     "type": ["ground"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["sandslash"],
@@ -277,7 +315,8 @@
     "type": ["ground"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["nidoranf"],
@@ -287,7 +326,8 @@
     "type": ["poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["nidorina"],
@@ -297,7 +337,8 @@
     "type": ["poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["nidoqueen"],
@@ -307,7 +348,8 @@
     "type": ["ground", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["nidoranm"],
@@ -317,7 +359,8 @@
     "type": ["poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["nidorino"],
@@ -327,7 +370,8 @@
     "type": ["poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["nidoking"],
@@ -337,7 +381,8 @@
     "type": ["ground", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["clefairy"],
@@ -347,7 +392,8 @@
     "type": ["fairy"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["clefable"],
@@ -357,7 +403,8 @@
     "type": ["fairy"],
     "attacks": [],
     "defence": ["Zen Headbutt", "Dazzling Gleam"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["vulpix"],
@@ -367,7 +414,8 @@
     "type": ["fire"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["ninetales"],
@@ -377,7 +425,8 @@
     "type": ["fire"],
     "attacks": ["Fire Spin", "Overheat"],
     "defence": ["Fire Spin", "Overheat"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["jigglypuff"],
@@ -387,7 +436,8 @@
     "type": ["fairy", "normal"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["wigglytuff"],
@@ -397,7 +447,8 @@
     "type": ["fairy", "normal"],
     "attacks": ["Pound", "Play Rough"],
     "defence": ["Pound", "Play Rough"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["zubat"],
@@ -407,7 +458,8 @@
     "type": ["flying", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["golbat"],
@@ -417,7 +469,8 @@
     "type": ["flying", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["oddish"],
@@ -427,7 +480,8 @@
     "type": ["grass", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["gloom"],
@@ -437,7 +491,8 @@
     "type": ["grass", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["vileplume"],
@@ -447,7 +502,8 @@
     "type": ["grass", "poison"],
     "attacks": ["Razor Leaf", "Solar Beam"],
     "defence": ["Razor Leaf", "Solar Beam"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["paras"],
@@ -457,7 +513,8 @@
     "type": ["bug", "grass"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["parasect"],
@@ -467,7 +524,8 @@
     "type": ["bug", "grass"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["venonat"],
@@ -477,7 +535,8 @@
     "type": ["bug", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["venomoth"],
@@ -487,7 +546,8 @@
     "type": ["bug", "flying"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["diglett"],
@@ -497,7 +557,8 @@
     "type": ["ground"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["dugtrio"],
@@ -507,7 +568,8 @@
     "type": ["ground"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["meowth"],
@@ -517,7 +579,8 @@
     "type": ["normal"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["persian"],
@@ -527,7 +590,8 @@
     "type": ["normal"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["psyduck"],
@@ -537,7 +601,8 @@
     "type": ["water"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["golduck"],
@@ -547,7 +612,8 @@
     "type": ["water"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["mankey"],
@@ -557,7 +623,8 @@
     "type": ["fighting"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["primeape"],
@@ -567,7 +634,8 @@
     "type": ["fighting"],
     "attacks": ["Counter", "Close Combat"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["growlithe"],
@@ -577,7 +645,8 @@
     "type": ["fire"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["arcanine"],
@@ -587,7 +656,8 @@
     "type": ["Fire"],
     "attacks": ["Fire Fang", "Fire Blast"],
     "defence": [],
-    "recplayers": 3
+    "recplayers": 3,
+    "rare":  false
   },
   {
     "keys": ["poliwag"],
@@ -597,7 +667,8 @@
     "type": ["water"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["poliwhirl"],
@@ -607,7 +678,8 @@
     "type": ["water"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["poliwrath"],
@@ -617,7 +689,8 @@
     "type": ["fighting", "water"],
     "attacks": ["Rock Smash", "Dynamic Punch"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["abra"],
@@ -627,7 +700,8 @@
     "type": ["psychic"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["kadabra"],
@@ -637,7 +711,8 @@
     "type": ["Psychic"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["alakazam"],
@@ -647,7 +722,8 @@
     "stats": [271, 194, 110],
     "attacks": ["Psycho Cut", "Future Sight"],
     "defence": [],
-    "recplayers": 2
+    "recplayers": 2,
+    "rare":  false
   },
   {
     "keys": ["machop"],
@@ -657,7 +733,8 @@
     "stats": [137, 88, 140],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["machoke"],
@@ -667,7 +744,8 @@
     "stats": [177, 130, 160],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["machamp"],
@@ -677,7 +755,8 @@
     "stats": [234, 162, 180],
     "attacks": ["Counter", "Dynamic Punch"],
     "defence": [],
-    "recplayers": 2
+    "recplayers": 2,
+    "rare":  false
   },
   {
     "keys": ["bellsprout"],
@@ -687,7 +766,8 @@
     "stats": [139, 64, 100],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["weepinbell"],
@@ -697,7 +777,8 @@
     "stats": [172, 95, 130],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["victreebel"],
@@ -707,7 +788,8 @@
     "stats": [207, 138, 160],
     "attacks": ["Razor Leaf", "Solar Beam"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["tentacool"],
@@ -717,7 +799,8 @@
     "stats": [97, 182, 80],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["tentacruel"],
@@ -727,7 +810,8 @@
     "stats": [166, 237, 160],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["geodude"],
@@ -737,7 +821,8 @@
     "stats": [132, 163, 80],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["graveler"],
@@ -747,7 +832,8 @@
     "stats": [164, 196, 110],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["golem"],
@@ -757,7 +843,8 @@
     "stats": [211, 229, 160],
     "attacks": ["rock Throw", "Stone Edge"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["ponita"],
@@ -767,7 +854,8 @@
     "stats": [170, 132, 100],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["rapidash"],
@@ -777,7 +865,8 @@
     "stats": [207, 167, 130],
     "attacks": ["Fire Spin", "Fire Blast"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["slowpoke"],
@@ -787,7 +876,8 @@
     "stats": [109, 109, 180],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["slowbro", "slobro"],
@@ -797,7 +887,8 @@
     "stats": [177, 194, 190],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["magnemite"],
@@ -807,7 +898,8 @@
     "stats": [165, 128, 50],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["magneton"],
@@ -817,7 +909,8 @@
     "stats": [223, 182, 100],
     "attacks": ["Spark", "Zap Cannon"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["farfetch", "farfetchd", "farfetch'd", "farfetcht"],
@@ -827,7 +920,8 @@
     "stats": [124, 118, 104],
     "attacks": ["Fury Cutter", "Leaf Blade"],
     "defence": ["Fury Cutter", "Leaf Blade"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["doduo"],
@@ -837,7 +931,8 @@
     "stats": [158, 88, 70],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["dodrio"],
@@ -847,7 +942,8 @@
     "stats": [218, 145, 120],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["seel", "seal"],
@@ -857,7 +953,8 @@
     "stats": [85, 128, 130],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["dewgong"],
@@ -867,7 +964,8 @@
     "stats": [139, 184, 180],
     "attacks": ["Frost Breath", "Blizzard"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["grimer"],
@@ -877,7 +975,8 @@
     "stats": [135, 90, 160],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["muk"],
@@ -887,7 +986,8 @@
     "stats": [190, 184, 210],
     "attacks": ["Poison Jab", "Gunk Shot"],
     "defence": [],
-    "recplayers": 2
+    "recplayers": 2,
+    "rare":  false
   },
   {
     "keys": ["shellder", "shelder"],
@@ -897,7 +997,8 @@
     "stats": [116, 168, 60],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["cloyster", "cloister"],
@@ -907,7 +1008,8 @@
     "stats": [186, 323, 100],
     "attacks": ["Frost Breath", "Avalanche"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["gastly", "ghastly"],
@@ -917,7 +1019,8 @@
     "stats": [186, 70, 60],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["hounter", "haunter"],
@@ -927,7 +1030,8 @@
     "stats": [223, 112, 90],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["gengar"],
@@ -937,7 +1041,8 @@
     "stats": [261, 156, 120],
     "attacks": ["Hex", "Shadow Ball"],
     "defence": [],
-    "recplayers": 2
+    "recplayers": 2,
+    "rare":  false
   },
   {
     "keys": ["onix"],
@@ -947,7 +1052,8 @@
     "stats": [85, 288, 70],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["drowzee"],
@@ -957,7 +1063,8 @@
     "stats": [89, 158, 120],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["hypno"],
@@ -967,7 +1074,8 @@
     "stats": [144, 215, 170],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["krabby", "kraby"],
@@ -977,7 +1085,8 @@
     "stats": [181, 156, 60],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["kingler"],
@@ -987,7 +1096,8 @@
     "stats": [240, 214, 110],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["voltorb"],
@@ -997,7 +1107,8 @@
     "stats": [109, 114, 80],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["electrode"],
@@ -1007,7 +1118,8 @@
     "stats": [173, 179, 120],
     "attacks": ["Spark", "Thunderbolt"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["exeggcute", "exeggute", "eggecute", "exegute", "execute",
@@ -1018,7 +1130,8 @@
     "stats": [107, 140, 120],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
 
   {
@@ -1029,7 +1142,8 @@
     "stats": [233, 158, 190],
     "attacks": ["Bullet Seed", "Solar Beam"],
     "defence": [],
-    "recplayers": 2
+    "recplayers": 2,
+    "rare":  false
   },
   {
     "keys": ["cubone"],
@@ -1039,7 +1153,8 @@
     "stats": [90, 165, 100],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["marowak", "marrowak"],
@@ -1049,7 +1164,8 @@
     "stats": [144, 200, 120],
     "attacks": ["Mud-Slap", "Earthquake"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["hitmonlee"],
@@ -1059,7 +1175,8 @@
     "stats": [224, 211, 100],
     "attacks": ["Rock Smash", "Close Combat"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["hitmonchan"],
@@ -1069,7 +1186,8 @@
     "stats": [193, 212, 100],
     "attacks": ["Counter", "Close Combat"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["lickytung", "lickitung"],
@@ -1079,7 +1197,8 @@
     "stats": [108, 137, 180],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["koffing"],
@@ -1089,7 +1208,8 @@
     "stats": [119, 164, 80],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["weezing"],
@@ -1099,7 +1219,8 @@
     "stats": [174, 221, 130],
     "attacks": ["Infestation", "Sludge Bomb"],
     "defence": [],
-    "recplayers": 2
+    "recplayers": 2,
+    "rare":  false
   },
   {
     "keys": ["rhyhorn", "ryhorn"],
@@ -1109,7 +1230,8 @@
     "stats": [140, 157, 160],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["rhydon"],
@@ -1119,17 +1241,19 @@
     "stats": [222, 206, 210],
     "attacks": ["Mud Slap", "Earthquake/Stone Edge"],
     "defence": [],
-    "recplayers": 5
+    "recplayers": 5,
+    "rare":  false
   },
   {
-    "keys": ["chansey"],
+    "keys": ["chansey", "chansy"],
     "name": "Chansey",
     "number": 113,
     "type": ["normal"],
     "stats": [60, 176, 500],
     "attacks": [],
     "defence": ["Zen Headbutt", "Dazzling Gleam"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  true
   },
   {
     "keys": ["tangela"],
@@ -1139,7 +1263,8 @@
     "stats": [183, 205, 130],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["kangaskhan", "kanghaskan", "kangaskan", "khangaskan"],
@@ -1149,7 +1274,8 @@
     "stats": [181, 165, 210],
     "attacks": [],
     "defence": ["Mud-Slap", "Outrage"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["horsea", "horsee"],
@@ -1159,7 +1285,8 @@
     "stats": [129, 125, 60],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["seadra", "seedra"],
@@ -1169,7 +1296,8 @@
     "stats": [187, 182, 110],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["goldeen"],
@@ -1179,7 +1307,8 @@
     "stats": [123, 115, 90],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["seaking", "seeking"],
@@ -1189,7 +1318,8 @@
     "stats": [175, 154, 160],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["staryu"],
@@ -1199,7 +1329,8 @@
     "stats": [137, 112, 60],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["starmie"],
@@ -1209,7 +1340,8 @@
     "stats": [210, 184, 120],
     "attacks": ["Water Gun", "Hydro Pump"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["mr mime", "mr. mime", "mrmime", "mister mime"],
@@ -1219,7 +1351,8 @@
     "stats": [192, 233, 80],
     "attacks": ["Confusion", "Psychic"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["scyther", "syther", "scyter"],
@@ -1229,7 +1362,8 @@
     "stats": [218, 170, 140],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["jynx"],
@@ -1239,7 +1373,8 @@
     "stats": [223, 182, 130],
     "attacks": ["Frost Breath", "Avalanche"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["electabuzz", "electabuz", "electabus"],
@@ -1249,7 +1384,8 @@
     "stats": [198, 173, 130],
     "attacks": ["Thunder Shock", "Thunderbolt"],
     "defence": [],
-    "recplayers": 2
+    "recplayers": 2,
+    "rare":  false
   },
   {
     "keys": ["magmar"],
@@ -1259,7 +1395,8 @@
     "stats": [206, 169, 130],
     "attacks": ["Ember", "Flamethrower"],
     "defence": [],
-    "recplayers": 2
+    "recplayers": 2,
+    "rare":  false
   },
   {
     "keys": ["pinsir"],
@@ -1269,7 +1406,8 @@
     "stats": [238, 197, 130],
     "attacks": ["Bug Bite", "X-Scissor"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["tauros"],
@@ -1279,7 +1417,8 @@
     "stats": [198, 197, 150],
     "attacks": ["Tackle", "Earthquake"],
     "defence": ["Zen Headbutt", "Iron Head"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["magikarp"],
@@ -1289,7 +1428,8 @@
     "stats": [29, 102, 40],
     "attacks": [],
     "defence": [],
-    "recplayers": 1
+    "recplayers": 1,
+    "rare":  false
   },
   {
     "keys": ["gyarados", "garados", "gyrados", "gerados"],
@@ -1299,7 +1439,8 @@
     "stats": [237, 197, 190],
     "attacks": ["Dragon Tail", "Outrage"],
     "defence": ["Dragon Tail", "Hydro Pump"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["lapras"],
@@ -1309,7 +1450,8 @@
     "stats": [186, 190, 260],
     "attacks": ["Frost Breath", "Blizzard"],
     "defence": ["Frost Breath", "Ice Beam"],
-    "recplayers": 7
+    "recplayers": 7,
+    "rare":  true
   },
   {
     "keys": ["ditto", "dito"],
@@ -1319,7 +1461,8 @@
     "stats": [91, 91, 96],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["eevee"],
@@ -1329,7 +1472,8 @@
     "stats": [104, 121, 110],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["vaporeon"],
@@ -1339,7 +1483,8 @@
     "stats": [205, 177, 260],
     "attacks": ["Water Gun", "Hydro Pump"],
     "defence": [],
-    "recplayers": 3
+    "recplayers": 3,
+    "rare":  false
   },
   {
     "keys": ["jolteon"],
@@ -1349,7 +1494,8 @@
     "stats": [232, 201, 130],
     "attacks": ["Thunder Shock", "Thunderbolt"],
     "defence": [],
-    "recplayers": 3
+    "recplayers": 3,
+    "rare":  false
   },
   {
     "keys": ["flareon"],
@@ -1359,7 +1505,8 @@
     "stats": [246, 204, 130],
     "attacks": ["Fire Spin", "Overheat"],
     "defence": [],
-    "recplayers": 3
+    "recplayers": 3,
+    "rare":  false
   },
   {
     "keys": ["porygon"],
@@ -1369,7 +1516,8 @@
     "stats": [153, 139, 130],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["omanyte", "omanite"],
@@ -1379,7 +1527,8 @@
     "stats": [155, 174, 70],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["omastar"],
@@ -1389,7 +1538,8 @@
     "stats": [207, 227, 140],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["kabuto"],
@@ -1399,7 +1549,8 @@
     "stats": [148, 162, 60],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["kabutops"],
@@ -1409,7 +1560,8 @@
     "stats": [220, 203, 120],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["aerodactyl", "arodactyl", "aerodactil"],
@@ -1419,7 +1571,8 @@
     "stats": [221, 164, 160],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["snorlax"],
@@ -1429,7 +1582,8 @@
     "stats": [190, 190, 320],
     "attacks": [],
     "defence": ["Zen Headbutt", "Heavy Slam"],
-    "recplayers": 7
+    "recplayers": 7,
+    "rare":  true
   },
   {
     "keys": ["articuno", "arti"],
@@ -1439,7 +1593,8 @@
     "stats": [192, 249, 180],
     "attacks": ["Frost Breath", "Blizzard"],
     "defence": [],
-    "recplayers": 5
+    "recplayers": 5,
+    "rare":  false
   },
   {
     "keys": ["zapdos"],
@@ -1449,7 +1604,8 @@
     "stats": [253, 188, 180],
     "attacks": ["Charge Beam", "Thunderbolt"],
     "defence": [],
-    "recplayers": 5
+    "recplayers": 5,
+    "rare":  false
   },
   {
     "keys": ["moltres"],
@@ -1459,7 +1615,8 @@
     "stats": [251, 184, 180],
     "attacks": ["Fire Spin ", "Overheat"],
     "defence": [],
-    "recplayers": 4
+    "recplayers": 4,
+    "rare":  false
   },
   {
     "keys": ["dratini"],
@@ -1469,7 +1626,8 @@
     "stats": [119, 94, 82],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["dragonair"],
@@ -1479,7 +1637,8 @@
     "stats": [163, 138, 122],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["dragonite"],
@@ -1489,7 +1648,8 @@
     "stats": [263, 201, 182],
     "attacks": ["Dragon Tail", "Outrage"],
     "defence": ["Dragon Tail", "Outrage"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  true
   },
   {
     "keys": ["mewtwo"],
@@ -1499,7 +1659,8 @@
     "stats": [300, 182, 193],
     "attacks": ["Confusion", "Psychic"],
     "defence": [],
-    "recplayers": 6
+    "recplayers": 6,
+    "rare":  false
   },
   {
     "keys": ["mew"],
@@ -1509,7 +1670,8 @@
     "stats": [210, 209, 200],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["chikorita", "chicorita"],
@@ -1519,7 +1681,8 @@
     "stats": [92, 122, 90],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["bayleef"],
@@ -1529,7 +1692,8 @@
     "stats": [122, 155, 120],
     "attacks": [],
     "defence": [],
-    "recplayers": 1
+    "recplayers": 1,
+    "rare":  false
   },
   {
     "keys": ["meganium"],
@@ -1539,7 +1703,8 @@
     "stats": [168, 202, 160],
     "attacks": ["Razor Leaf", "Solar Beam"],
     "defence": ["Razor Leaf", "Solar Beam"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["cindaquil", "cindaquill"],
@@ -1549,7 +1714,8 @@
     "stats": [116, 96, 78],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["quilava"],
@@ -1559,7 +1725,8 @@
     "stats": [158, 129, 116],
     "attacks": [],
     "defence": [],
-    "recplayers": 1
+    "recplayers": 1,
+    "rare":  false
   },
   {
     "keys": ["typhlosion", "typlosion"],
@@ -1569,7 +1736,8 @@
     "stats": [223, 176, 156],
     "attacks": ["Ember", "Overheat"],
     "defence": ["Ember", "Overheat"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["totodyle", "totodyl", "totodile"],
@@ -1579,7 +1747,8 @@
     "stats": [117, 116, 100],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["croconaw"],
@@ -1589,7 +1758,8 @@
     "stats": [150, 151, 130],
     "attacks": [],
     "defence": [],
-    "recplayers": 1
+    "recplayers": 1,
+    "rare":  false
   },
   {
     "keys": ["feraligatr", "fraligatr", "feraligater", "fraligator",
@@ -1600,7 +1770,8 @@
     "stats": [205, 197, 170],
     "attacks": ["Water Gun", "Hydro Pump"],
     "defence": ["Water Gun", "Ice Beam"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["sentret"],
@@ -1610,7 +1781,8 @@
     "stats": [79, 77, 70],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["furret"],
@@ -1620,7 +1792,8 @@
     "stats": [148, 130, 170],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["hoothoot", "hoot hoot", "hoot-hoot"],
@@ -1630,7 +1803,8 @@
     "stats": [57, 101, 120],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["noctowl", "noctol"],
@@ -1640,7 +1814,8 @@
     "stats": [145, 179, 200],
     "attacks": ["Wing Attack", "Sky Attack"],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["lediba", "ledyba"],
@@ -1650,7 +1825,8 @@
     "stats": [72, 142, 80],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["ledian"],
@@ -1660,7 +1836,8 @@
     "stats": [107, 209, 110],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["spinarak"],
@@ -1670,7 +1847,8 @@
     "stats": [105, 73, 80],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["ariados"],
@@ -1680,7 +1858,8 @@
     "stats": [161, 128, 140],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["crobat"],
@@ -1690,7 +1869,8 @@
     "stats": [],
     "attacks": ["Air Slash", "Sludge Bomb"],
     "defence": ["Air Slash", "Sludge Bomb"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["chinchou"],
@@ -1700,7 +1880,8 @@
     "stats": [106, 106, 150],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["lanturn"],
@@ -1710,7 +1891,8 @@
     "stats": [],
     "attacks": ["Water Gun", "Hydro Pump"],
     "defence": ["Charge Beam", "Thunderbolt"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["pichu"],
@@ -1720,7 +1902,8 @@
     "stats": [90, 61, 40],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["cleffa"],
@@ -1730,7 +1913,8 @@
     "stats": [74, 86, 100],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["igglybuff", "iglybuff", "iglybuf", "igglybuf"],
@@ -1740,7 +1924,8 @@
     "stats": [77, 42, 180],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["togepi"],
@@ -1750,7 +1935,8 @@
     "stats": [65, 138, 70],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["togetic"],
@@ -1760,7 +1946,8 @@
     "stats": [139, 191, 110],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["natu"],
@@ -1770,7 +1957,8 @@
     "stats": [134, 89, 80],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["xatu"],
@@ -1780,7 +1968,8 @@
     "stats": [192, 146, 130],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["mareep"],
@@ -1790,7 +1979,8 @@
     "stats": [114, 82, 110],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  true
   },
   {
     "keys": ["flaaffy", "flafy", "flaafy"],
@@ -1800,7 +1990,8 @@
     "stats": [145, 112, 140],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  true
   },
   {
     "keys": ["ampharos", "amparos"],
@@ -1810,7 +2001,8 @@
     "stats": [211, 172, 180],
     "attacks": ["Volt Switch", "Zap Cannon"],
     "defence": ["Volt Switch", "Zap Cannon"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  true
   },
   {
     "keys": ["bellossom", "belosom", "bellosom", "belossom"],
@@ -1820,7 +2012,8 @@
     "stats": [169, 189, 150],
     "attacks": ["Razor Lear", "Leaf Blade"],
     "defence": ["Razor Lear", "Leaf Blade"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["marill", "maril"],
@@ -1830,7 +2023,8 @@
     "stats": [37, 93, 140],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["azumarill", "azumaril"],
@@ -1840,7 +2034,8 @@
     "stats": [112, 152, 200],
     "attacks": [],
     "defence": ["Rock Smash", "Play Rough"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["sudowoodo", "sudowodo", "sodowodo", "sodowoodo"],
@@ -1850,7 +2045,8 @@
     "stats": [167, 198, 140],
     "attacks": ["Rock Throw", "Rock Slide"],
     "defence": ["Rock Throw", "Rock Slide"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["politoed"],
@@ -1860,7 +2056,8 @@
     "stats": [174, 192, 180],
     "attacks": ["Bubble", "Hydro Pump"],
     "defence": ["Bubble", "Hydro Pump"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["hoppip"],
@@ -1870,7 +2067,8 @@
     "stats": [67, 101, 70],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["skiploom"],
@@ -1880,7 +2078,8 @@
     "stats": [91, 127, 110],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["jumpluff", "jumpluf"],
@@ -1890,7 +2089,8 @@
     "stats": [118, 197, 150],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["aipom"],
@@ -1900,7 +2100,8 @@
     "stats": [136, 112, 110],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["sunkern"],
@@ -1910,7 +2111,8 @@
     "stats": [55, 55, 60],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["sunflora"],
@@ -1920,7 +2122,8 @@
     "stats": [185, 148, 150],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["yanma"],
@@ -1930,7 +2133,8 @@
     "stats": [154, 94, 130],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["wooper"],
@@ -1940,7 +2144,8 @@
     "stats": [75, 75, 110],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["quagsire", "quacsire"],
@@ -1950,7 +2155,8 @@
     "stats": [152, 152, 190],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["espeon"],
@@ -1960,7 +2166,8 @@
     "stats": [261, 194, 130],
     "attacks": ["Confusion", "Future Sight"],
     "defence": ["Confusion", "Psybeam"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["umbreon"],
@@ -1970,7 +2177,8 @@
     "stats": [126, 250, 190],
     "attacks": ["Snarl", "Foul Play"],
     "defence": ["Snarl", "Foul Play"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["murkrow"],
@@ -1980,7 +2188,8 @@
     "stats": [175, 87, 120],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["slowking"],
@@ -1990,7 +2199,8 @@
     "stats": [177, 194, 190],
     "attacks": ["Confusion", "Psychic"],
     "defence": ["Confusion", "Psychic"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["misdreavus", "misdrevus", "misdravus"],
@@ -2000,7 +2210,8 @@
     "stats": [167, 167, 120],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["unown", "unknown"],
@@ -2010,7 +2221,8 @@
     "stats": [136, 91, 96],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  true
   },
   {
     "keys": ["wobbuffet", "wobufet", "wobbufet", "wobuffet"],
@@ -2020,7 +2232,8 @@
     "stats": [60, 106, 380],
     "attacks": [],
     "defence": ["Counter", "Mirror Coat"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["girafarig"],
@@ -2030,7 +2243,8 @@
     "stats": [182, 133, 140],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["pineco"],
@@ -2040,7 +2254,8 @@
     "stats": [108, 146, 100],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["forretress", "forretres", "foretress", "foretres"],
@@ -2050,7 +2265,8 @@
     "stats": [161, 242, 150],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["dunsparce", "dunspars"],
@@ -2060,7 +2276,8 @@
     "stats": [131, 131, 200],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["gligar"],
@@ -2070,7 +2287,8 @@
     "stats": [143, 204, 130],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["steelix"],
@@ -2080,7 +2298,8 @@
     "stats": [148, 333, 150],
     "attacks": ["Iron Tail", "Heavy Slam"],
     "defence": ["Iron Tail", "Heavy Slam"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["snubbel", "snubbell"],
@@ -2090,7 +2309,8 @@
     "stats": [137, 89, 120],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["granbull", "granbul"],
@@ -2100,7 +2320,8 @@
     "stats": [212, 137, 180],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["qwilfish", "quilfish"],
@@ -2110,7 +2331,8 @@
     "stats": [184, 148, 130],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["scizor", "sizor"],
@@ -2120,7 +2342,8 @@
     "stats": [236, 191, 140],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["shuckle", "shukle"],
@@ -2130,7 +2353,8 @@
     "stats": [17, 396, 40],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["heracross", "heracros"],
@@ -2140,7 +2364,8 @@
     "stats": [234, 189, 160],
     "attacks": ["Counter", "Close Combat"],
     "defence": ["Stuggle Bug", "Close Combat"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["sneasel"],
@@ -2150,7 +2375,8 @@
     "stats": [189, 157, 110],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["teddiursa", "tediursa"],
@@ -2160,7 +2386,8 @@
     "stats": [142, 93, 120],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["ursaring"],
@@ -2170,7 +2397,8 @@
     "stats": [236, 144, 180],
     "attacks": ["Counter", "Hyper Beam"],
     "defence": ["Counter", "Play Rough"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["slugma"],
@@ -2180,7 +2408,8 @@
     "stats": [118, 71, 80],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["magcargo", "magarco"],
@@ -2190,7 +2419,8 @@
     "stats": [139, 209, 100],
     "attacks": ["Rock Throw", "Stone Edge"],
     "defence": ["Rock Throw", "Stone Edge"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["swinub"],
@@ -2200,7 +2430,8 @@
     "stats": [90, 74, 100],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["piloswine", "pilowswine"],
@@ -2210,7 +2441,8 @@
     "stats": [181, 147, 200],
     "attacks": ["Ice Shard", "Avalanche"],
     "defence": ["Ice Shard", "Avalanche"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["corsola"],
@@ -2220,7 +2452,8 @@
     "stats": [118, 156, 110],
     "attacks": ["Bubble", "Buggle Beam"],
     "defence": ["Buggle", "Power Gem"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["remoraid"],
@@ -2230,7 +2463,8 @@
     "stats": [127, 69, 70],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["octillery", "octilery"],
@@ -2240,7 +2474,8 @@
     "stats": [197, 141, 150],
     "attacks": ["Water Gun", "Water Pulse"],
     "defence": ["Water Gun", "Water Pulse"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["delibird"],
@@ -2250,7 +2485,8 @@
     "stats": [128, 90, 90],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["mantine"],
@@ -2260,7 +2496,8 @@
     "stats": [148, 260, 130],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["skarmory"],
@@ -2270,7 +2507,8 @@
     "stats": [148, 260, 130],
     "attacks": ["Steel Wing", "Flash Cannon"],
     "defence": ["Air Slash", "Sky Attack"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["houndour"],
@@ -2280,7 +2518,8 @@
     "stats": [152, 93, 90],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["houndoom"],
@@ -2290,7 +2529,8 @@
     "stats": [224, 159, 150],
     "attacks": ["Snarl", "Foul Play"],
     "defence": ["Snarl", "Foul Play"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["kingdra"],
@@ -2300,7 +2540,8 @@
     "stats": [194, 194, 150],
     "attacks": ["Water Gun", "Hydro Pump"],
     "defence": ["Dragon Breath", "Outrage"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["phanpy", "phanphy"],
@@ -2310,7 +2551,8 @@
     "stats": [107, 107, 180],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["donphan"],
@@ -2320,7 +2562,8 @@
     "stats": [214, 214, 180],
     "attacks": [],
     "defence": ["Counter", "Play Rough"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["porygon2", "porygon 2", "porigon2", "porigon 2"],
@@ -2330,7 +2573,8 @@
     "stats": [198, 183, 170],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["stantler"],
@@ -2340,7 +2584,8 @@
     "stats": [192, 132, 146],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["smeargle"],
@@ -2350,7 +2595,8 @@
     "stats": [40, 88, 110],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["tyrogue", "tyroge"],
@@ -2360,7 +2606,8 @@
     "stats": [64, 64, 70],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["hitmontop"],
@@ -2370,7 +2617,8 @@
     "stats": [173, 214, 100],
     "attacks": ["Counter", "Close Combat"],
     "defence": ["Rock Smash", "Stone Edge"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["smoochum"],
@@ -2380,7 +2628,8 @@
     "stats": [153, 116, 90],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["elekid"],
@@ -2390,7 +2639,8 @@
     "stats": [135, 110, 90],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["magby"],
@@ -2400,7 +2650,8 @@
     "stats": [151, 108, 90],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["miltank"],
@@ -2410,7 +2661,8 @@
     "stats": [157, 211, 190],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   },
   {
     "keys": ["blissey", "blisey", "blissy", "blisy"],
@@ -2420,7 +2672,8 @@
     "stats": [129, 229, 510],
     "attacks": [],
     "defence": ["Zen Headbutt", "Dazzling Gleam"],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  true
   },
   {
     "keys": ["raikou"],
@@ -2430,7 +2683,8 @@
     "stats": [241, 210, 180],
     "attacks": ["Volt Switch", "Wild Charge"],
     "defence": [],
-    "recplayers": 5
+    "recplayers": 5,
+    "rare":  false
   },
   {
     "keys": ["entei"],
@@ -2440,7 +2694,8 @@
     "stats": [235, 176, 230],
     "attacks": ["Fire Spin", "Overheat"],
     "defence": [],
-    "recplayers": 5
+    "recplayers": 5,
+    "rare":  false
   },
   {
     "keys": ["suicune"],
@@ -2450,7 +2705,8 @@
     "stats": [180, 235, 200],
     "attacks": ["xxx", "Bubble Beam"],
     "defence": [],
-    "recplayers": 6
+    "recplayers": 6,
+    "rare":  false
   },
   {
     "keys": ["larvitar"],
@@ -2460,7 +2716,8 @@
     "stats": [115, 93, 100],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  true
   },
   {
     "keys": ["pupitar"],
@@ -2470,7 +2727,8 @@
     "stats": [155, 133, 140],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  true
   },
   {
     "keys": ["tyranitar", "ttar", "tyra", "tyranitair"],
@@ -2480,7 +2738,8 @@
     "stats": [251, 212, 200],
     "attacks": ["Bite", "Stone Edge"],
     "defence": [],
-    "recplayers": 5
+    "recplayers": 5,
+    "rare":  true
   },
   {
     "keys": ["lugia"],
@@ -2490,7 +2749,8 @@
     "stats": [193, 323, 212],
     "attacks": ["Extrasensory", "Sky Attack/Future Sight"],
     "defence": [],
-    "recplayers": 7
+    "recplayers": 7,
+    "rare":  false
   },
   {
     "keys": ["ho-oh", "hooh", "ho oh"],
@@ -2500,7 +2760,8 @@
     "stats": [263, 301, 212],
     "attacks": [],
     "defence": [],
-    "recplayers": 5
+    "recplayers": 5,
+    "rare":  false
   },
   {
     "keys": ["celebi", "celeby"],
@@ -2510,16 +2771,7 @@
     "stats": [210, 210, 200],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
-  },
-  {
-    "keys": ["missingno"],
-    "name": "Missingno",
-    "number": 0,
-    "type": ["normal", "flying"],
-    "stats": [218, 10, 66],
-    "attacks": [],
-    "defence": [],
-    "recplayers": 0
+    "recplayers": 0,
+    "rare":  false
   }
 ]
