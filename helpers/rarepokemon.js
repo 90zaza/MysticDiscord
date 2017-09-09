@@ -9,7 +9,7 @@ exports.checkForRarepokemon = function (msgText) {
       return;
     }
     return g.keys.find((key) => {
-      return msgText.startsWith(key);
+      return msgText.includes(key);
     });
   });
 
