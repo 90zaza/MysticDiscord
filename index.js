@@ -55,10 +55,10 @@ var pokemon, gym, rarepokemon;
 //pokemon spotting
 let spotting = msg.guild.channels.find("name", "pokemon_spotting");
 if (msg.channel == spotting) {
-var msgText = msg.content.toLowerCase()
-if ((rarepokemon = Rarepokemon.checkForRarepokemon(msgText)) != undefined) {
+  var msgText = msg.content.toLowerCase()
+  if ((rarepokemon = Rarepokemon.checkForRarepokemon(msgText)) != undefined) {
     Rarepokemon.reply(msg, rarepokemon);}
- }
+}
 
 let prefixs = settings.prefixs;
 let moderator = settings.moderator;
