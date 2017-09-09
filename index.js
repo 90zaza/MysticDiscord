@@ -15,6 +15,7 @@ const stops = require("./data/pokestops.json");
 const pokemons = require("./data/pokemons.json");
 const defense = require("./data/defense.json");
 const messages = require("./data/messages.json");
+const musics= require("./data/music.json")
 
 client.login(process.env.TOKEN)
 
@@ -22,7 +23,7 @@ var express = require('express');
 var app = express();
 
 const Gym = require("./helpers/gym.js");
-
+const Music = require("./helpers/music.js")
 const pokemonStats = require("./helpers/pokemon.js");
 pokemonStats.calculateRanks();
 
@@ -40,6 +41,11 @@ app.listen(app.get("port"), function() {
   }, 300000); // every 5 minutes (300000)
 });
 
+client.on('ready', () => {
+  client.user.setGame('Pokémon Go');
+  console.log('Blanche: I am ready!');
+})
+
 client.on("message", async (msg) => {
 let prefixs = settings.prefixs;
 let moderator = settings.moderator;
@@ -52,7 +58,7 @@ if (prefixs.indexOf(msgPrefix) < 0 || msg.author.bot) return;
 //removes prefix and spaces, and convert the rest to lowercase
 var msgText = msg.content.toLowerCase().substr(1).trim();
 
-var pokemon, gym;
+var pokemon, gym, music;
 
 
 //raid reply
@@ -74,6 +80,13 @@ if ((gym = Gym.checkForGym(msgText)) != undefined) {
 if (msgText === "dobbel" || msgText === "gamble") {
    msg.reply("<:game_die:349868481673428992>: " + (Math.floor(Math.random()*6)+1));
    msg.delete()}
+
+if (msgText === "muziek" || msgText === "music") {
+msgText = Math.floor(Math.random() * 3);
+  if ((music = Music.checkForMusic(msgText)) != undefined) {
+
+    Music.reply(msg, music);}
+}
 
 if (msgText === "mystic") {
   msg.delete()
