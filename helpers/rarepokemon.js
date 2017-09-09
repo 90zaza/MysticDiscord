@@ -1,21 +1,23 @@
 const Discord = require('discord.js');
-const Rarepokemons = require('../data/rarepokemon.json');
+const pokemons = require('../data/pokemons.json');
 
-exports.checkForRarepokemon = function (msgText) {
+exports.checkForPokemon = function (msgText) {
 
-  let rarepokemon = Rarepokemons.find((g) => {
-    if (!g.keys) {
-      console.log('rarepokemon has no key', g);
+  let pokemon = pokemons.find((p) => {
+
+    if (!p.keys) {
+      console.log('no rare pokemon found', p);
       return;
     }
-    return g.keys.find((key) => {
+    return p.keys.find((key) => {
       return msgText.includes(key);
     });
   });
 
-  return rarepokemon;
+  return pokemon;
 }
 
-exports.reply = function (msg, rarepokemon) {
-  msg.channel.send(rarepokemon.name + ` is gespot @everyone!`);
+exports.reply = function (msg, pokemon) {
+  if (pokemon.rare == false) {return}
+  msg.channel.send(pokemon.name + ` is gevonden, @everyone!`);
 }

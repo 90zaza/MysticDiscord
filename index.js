@@ -15,7 +15,6 @@ const stops = require("./data/pokestops.json");
 const pokemons = require("./data/pokemons.json");
 const defense = require("./data/defense.json");
 const messages = require("./data/messages.json");
-const rarepokemons = require("./data/rarepokemon.json");
 
 client.login(process.env.TOKEN)
 
@@ -43,14 +42,19 @@ app.listen(app.get("port"), function() {
 
 client.on("message", async (msg) => {
 if (msg.author.bot) return;
-var pokemon, gym, rarepokemon;
+var pokemon, gym;
 
 //pokemon spotting
 let spotting = msg.guild.channels.find("name", "pokemon_spotting");
 if (msg.channel == spotting) {
   var msgText = msg.content.toLowerCase()
-  if ((rarepokemon = Rarepokemon.checkForRarepokemon(msgText)) != undefined) {
-    Rarepokemon.reply(msg, rarepokemon);}
+
+  if (msgText.includes("100%") || msgText.includes("100% ") || msgText.includes("perfect")) {
+    msg.channel.send(`Er is een 100% IV pokémon gespot, @everyone! (alleen voor lvl 30+)`);
+    return;}
+
+  if ((pokemon = Rarepokemon.checkForPokemon(msgText)) != undefined) {
+      Rarepokemon.reply(msg, pokemon);}
 }
 
 let prefixs = settings.prefixs;
