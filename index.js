@@ -49,12 +49,20 @@ let spotting = msg.guild.channels.find("name", "pokemon_spotting");
 if (msg.channel == spotting) {
   var msgText = msg.content.toLowerCase()
 
-  if (msgText.includes("100%") || msgText.includes("100% ") || msgText.includes("perfect")) {
+  if (msgText.includes("shiny")) {
+    msg.author.send(`Shiny's zijn helaas individueel bepaald. Voor jou een shiny is voor een ander dus waarschijnlijk gewoon normaal.`);
+    msg.delete();
+    return;
+  }
+  if (msgText.includes("100%") || msgText.includes("100 %") || msgText.includes("perfect")) {
     msg.channel.send(`Er is een 100% IV pokémon gespot, @everyone! (alleen voor lvl 30+)`);
-    return;}
+    return;
+  }
+
 
   if ((pokemon = Rarepokemon.checkForPokemon(msgText)) != undefined) {
-      Rarepokemon.reply(msg, pokemon);}
+    Rarepokemon.reply(msg, pokemon);
+  }
 }
 
 let prefixs = settings.prefixs;
