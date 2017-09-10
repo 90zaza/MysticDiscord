@@ -61,26 +61,6 @@ client.on('message', async (msg) => {
 // const raids = require("./helpers/raids.js");
 // raids.init();
 //
-// app.set("port", (process.env.PORT || 9222));
-//
-// app.use(express.static(__dirname + "/public"));
-// app.listen(app.get("port"), function() {
-//   console.log("Node app is running on port", app.get("port"));
-//
-//   setInterval(function() {
-//     https.get("https://discord-pokemon.herokuapp.com/helloworld.html");
-//   }, 300000); // every 5 minutes (300000)
-// });
-//
-// client.on('ready', () => {
-//   client.user.setGame('Pokémon Go');
-//   console.log('Blanche: I am ready!');
-// })
-//
-// client.on("message", async (msg) => {
-// if (msg.author.bot) return;
-// var pokemon, gym, music, reply;
-//
 // //pokemon spotting
 // let spotting = msg.guild.channels.find("name", "pokemon_spotting");
 // if (msg.channel == spotting) {
@@ -104,39 +84,18 @@ client.on('message', async (msg) => {
 //
 // let prefixs = settings.prefixs;
 // let moderator = settings.moderator;
-//
-// //determine if the bot activates or not
-// let msgPrefix = msg.content[0];
-// var msgText = msg.content.toLowerCase().substr(1).trim();
-// if (prefixs.indexOf(msgPrefix) < 0) return;
-//
-// //removes prefix and spaces, and convert the rest to lowercase
-// var msgText = msg.content.toLowerCase().substr(1).trim();
-//
+
 // //raid reply
 // if (msgText.split(' ')[0] == "raid") {
 //     raids.scan(msg);}
 //
-// //pokemon reply
-// if ((pokemon = pokemonStats.checkForPokemon(msgText)) != undefined) {
-//     pokemonStats.reply(msg, pokemon);}
-//
-//
-// //gym location reply
-// if ((gym = Gym.checkForGym(msgText)) != undefined) {
-//     Gym.reply(msg, gym);}
 //
 //
 // //reply with extra options
 // if (msgText === "dobbel" || msgText === "gamble") {
 //    msg.reply("<:game_die:349868481673428992>: " + (Math.floor(Math.random()*6)+1));
 //    msg.delete()}
-//
-// if (msgText === "muziek" || msgText === "music") {
-//   msgText = Math.floor(Math.random() * 29);
-//   if ((music = Music.checkForMusic(msgText)) != undefined) {
-//     Music.reply(msg, music);}
-// }
+
 //
 // if (msgText === "mystic") {
 //   msg.delete()
@@ -166,9 +125,6 @@ client.on('message', async (msg) => {
 //   setTimeout(() => {msg.channel.send("Vertrouwen op je intuitie? We leven toch zeker niet meer in de steentijd? En wat hebben die eieren daar nu weer mee te maken? Met dit soort uitspraken lijkt het soms alsof je zelf uit een ei bent gekomen...");;},1000);}
 //
 //
-// //message reply
-// if ((reply = Reply.checkForReply(msgText)) != undefined) {
-//     Reply.reply(msg, reply);}
 //
 //
 // //give trusted role, admin only
