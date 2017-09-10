@@ -1366,7 +1366,7 @@
     "attacks": [],
     "defence": ["Zen Headbutt", "Dazzling Gleam"],
     "recplayers": 0,
-    "gender": fals,e
+    "gender": false,
     "rare":  true
   },
   {
@@ -2423,7 +2423,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": fals,e
+    "gender": false,
     "rare":  true
   },
   {
@@ -2915,7 +2915,7 @@
     "attacks": [],
     "defence": ["Zen Headbutt", "Dazzling Gleam"],
     "recplayers": 0,
-    "gender": fals,e
+    "gender": false,
     "rare":  true
   },
   {
