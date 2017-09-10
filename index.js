@@ -141,7 +141,6 @@ if (msgText === "instinct") {
 //message reply
 const messageMatch = messages.find((message) => {
 new Message(msg).newMessage(message.keys, message.reply);
-msg.delete()
 });
 
 if (messageMatch) {
