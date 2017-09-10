@@ -179,7 +179,7 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
     .setAuthor("Raid #" + id + ": " + (pokemon ? pokemon.name : bossName))
     .setTitle("📍 " + (gym ? gym.name : gymName) + (isMystic ? " (:mystic: Gym)" : "") )
     .setThumbnail(imageURL)
-    .addField("Times", "Ends:\t" + endTime + "\nFight:\t" + battleTime )
+    .addField("Times", "Ends:\t" + endTime + "\nBattle:\t" + battleTime )
     .addField("Joining (bring at least " + pokemon.recplayers + " trainers)", joining);
 
   let channel = msg.guild.channels.find("name", "raids_meldingen");
