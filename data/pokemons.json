@@ -800,7 +800,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": false,
     "rare":  false
   },
   {
@@ -812,7 +812,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": false,
     "rare":  false
   },
   {
@@ -824,7 +824,7 @@
     "attacks": ["Counter", "Dynamic Punch"],
     "defence": [],
     "recplayers": 2,
-    "gender": true,
+    "gender": false,
     "rare":  false
   },
   {
