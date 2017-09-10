@@ -53,23 +53,9 @@ In order to get full access to our server, we would like to verify you are indee
 
 // const Message = require("./models/message");
 // const settings = require("./settings.json");
-// const gyms = require("./data/gyms.json");
-// const pokemons = require("./data/pokemons.json");
-// const defense = require("./data/defense.json");
-// const reply = require("./data/reply.json");
-//
-// client.login(process.env.TOKEN)
-//
-// var express = require('express');
-// var app = express();
-//
-// const Gym = require("./helpers/gym.js");
 // const Reply = require("./helpers/reply.js");
 // const Text = require("./helpers/text.js");
-// const Music = require("./helpers/music.js");
 // const Rarepokemon = require("./helpers/rarepokemon.js");
-// const pokemonStats = require("./helpers/pokemon.js");
-// pokemonStats.calculateRanks();
 //
 // const raids = require("./helpers/raids.js");
 // raids.init();
@@ -136,10 +122,7 @@ In order to get full access to our server, we would like to verify you are indee
 //     .addField("Team Instinct","Hey! The name's Spark- the leader of Team Instinct. Pokémon are creatures with excellent intuition. I bet the secret to their intuition is related to how they're hatched. Come on and join my team! You never lose when you trust your instincts!")
 //   msg.channel.send({embed});
 //   setTimeout(() => {msg.channel.send("Vertrouwen op je intuitie? We leven toch zeker niet meer in de steentijd? En wat hebben die eieren daar nu weer mee te maken? Met dit soort uitspraken lijkt het soms alsof je zelf uit een ei bent gekomen...");;},1000);}
-//
-//
-//
-//
+
 // //give trusted role, admin only
 // if (msgText.startsWith("add")) {
 //   if (msg.member.roles.has(moderator)) {
