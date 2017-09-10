@@ -8,8 +8,8 @@ require("dotenv").config()
 var Discord = require("discord.js");
 var client = new Discord.Client();
 var https = require("https");
-const Message = require("./models/message")
-const settings = require("./settings.json")
+const Message = require("./models/message");
+const settings = require("./settings.json");
 const gyms = require("./data/gyms.json");
 const pokemons = require("./data/pokemons.json");
 const defense = require("./data/defense.json");
@@ -21,8 +21,8 @@ var express = require('express');
 var app = express();
 
 const Gym = require("./helpers/gym.js");
-const Reply = require("./helpers/reply.js")
-const Text = require("./helpers/text.js")
+const Reply = require("./helpers/reply.js");
+const Text = require("./helpers/text.js");
 const Music = require("./helpers/music.js");
 const Rarepokemon = require("./helpers/rarepokemon.js");
 const pokemonStats = require("./helpers/pokemon.js");
