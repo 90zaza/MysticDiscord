@@ -11,10 +11,9 @@ var https = require("https");
 const Message = require("./models/message")
 const settings = require("./settings.json")
 const gyms = require("./data/gyms.json");
-const stops = require("./data/pokestops.json");
 const pokemons = require("./data/pokemons.json");
 const defense = require("./data/defense.json");
-const messages = require("./data/messages.json");
+const reply = require("./data/reply.json");
 
 client.login(process.env.TOKEN)
 
@@ -22,6 +21,8 @@ var express = require('express');
 var app = express();
 
 const Gym = require("./helpers/gym.js");
+const Reply = require("./helpers/reply.js")
+const Text = require("./helpers/text.js")
 const Music = require("./helpers/music.js");
 const Rarepokemon = require("./helpers/rarepokemon.js");
 const pokemonStats = require("./helpers/pokemon.js");
@@ -48,7 +49,7 @@ client.on('ready', () => {
 
 client.on("message", async (msg) => {
 if (msg.author.bot) return;
-var pokemon, gym;
+var pokemon, gym, music, reply;
 
 //pokemon spotting
 let spotting = msg.guild.channels.find("name", "pokemon_spotting");
@@ -81,9 +82,6 @@ if (prefixs.indexOf(msgPrefix) < 0) return;
 
 //removes prefix and spaces, and convert the rest to lowercase
 var msgText = msg.content.toLowerCase().substr(1).trim();
-
-var pokemon, gym, music;
-
 
 //raid reply
 if (msgText.split(' ')[0] == "raid") {
@@ -139,20 +137,8 @@ if (msgText === "instinct") {
 
 
 //message reply
-const messageMatch = messages.find((message) => {
-new Message(msg).newMessage(message.keys, message.reply);
-});
-
-if (messageMatch) {
-   msg.reply(`${messageMatch.reply}`);}
-
-
-//pokestop spins
-const stopMatch = stops.find((stop) => {
-  return msgText.startsWith(stop.key);});
-
-if (stopMatch) {
-    msg.reply(stopMatch.reply);}
+if ((reply = Reply.checkForReply(msgText)) != undefined) {
+    Reply.reply(msg, reply);}
 
 
 //give trusted role, admin only
