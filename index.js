@@ -11,6 +11,11 @@ client.login(process.env.TOKEN)
 // other dependencies
 const Sequelize = require('sequelize');
 const GymResponse = require('./models/gym-response');
+const Pokemons = require('./models/pokemons');
+const PokemonResponse = require('./models/pokemon-response');
+
+//stuff that the bot should do once
+const pokemons = new Pokemons().get();
 
 // start script
 client.on('ready', () => {
@@ -19,12 +24,12 @@ client.on('ready', () => {
 });
 
 client.on('message', async (msg) => {
-  console.log('we got a message');
-  // if (msg.author.bot) {
-  //   return;
-  // }
+  if (msg.author.bot) {
+    return;
+  }
 
   new GymResponse(msg);
+  new PokemonResponse(msg, pokemons);
 
 });
 

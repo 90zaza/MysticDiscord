@@ -6,6 +6,18 @@ module.exports = class Message {
     this.message.content = this.message.content.trim();
   }
 
+  startsWithKey(data) {
+    return data.find((item) => {
+      if (!item.keys) {
+        console.log('item has no key', g);
+        return;
+      }
+      return item.keys.find((key) => {
+        return this.startsWith(key);
+      });
+    });
+  }
+
   startsWith(items) {
     return settings.prefixs.some((prefix) => {
       if (Array.isArray(items)) {

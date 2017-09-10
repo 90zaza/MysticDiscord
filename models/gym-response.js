@@ -6,21 +6,14 @@ module.exports = class GymResponse extends Message {
   constructor(message) {
     super(message);
     this.gym = this.getGym();
-    this.reply();
+
+    if(this.gym) {
+      this.reply();
+    }
   }
 
   getGym() {
-    let gym = gyms.find((gym) => {
-      if (!gym.keys) {
-        console.log('gym has no key', g);
-        return;
-      }
-      return gym.keys.find((key) => {
-        return this.startsWith(key);
-      });
-    });
-
-    return gym;
+    return this.startsWithKey(gyms);
   }
 
   reply() {
