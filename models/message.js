@@ -3,7 +3,7 @@ const settings = require('../settings.json');
 module.exports = class Message {
   constructor(message) {
     this.message = message;
-    this.message.content = this.message.content.trim();
+    this.message.content = this.message.content.trim().toLowerCase();
   }
 
   startsWithKey(data) {
