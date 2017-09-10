@@ -6,39 +6,39 @@ module.exports = class Message {
     this.message.content = this.message.content.trim();
   }
 
-  replyTo(content, reply) {
-    const isAMatch = settings.prefixs.some((prefix) => {
-      if (Array.isArray(content)) {
-        return content.find((key) => {
-          return this.message.content.startsWith(`${prefix}${key}`);
+  startsWith(items) {
+    return settings.prefixs.some((prefix) => {
+      if (Array.isArray(items)) {
+        return items.find((item) => {
+          return this.message.content.startsWith(`${prefix}${item}`);
         });
       } else {
-        return this.message.content.toLowerCase() ===
-          `${prefix}${content}`;
+        return this.message.content.startsWith(`${prefix}${items}`);
       }
     });
-    if (isAMatch) {
-      this.message.reply(reply);
-      this.message.delete();
-    }
   }
 
-  newMessage(content, reply) {
-    const isAMatch = settings.prefixs.some((prefix) => {
-      if (Array.isArray(content)) {
-        return content.find((key) => {
-          return this.message.content.toLowerCase().startsWith(
-            `${prefix}${key}`);
-        });
-      } else {
-        return this.message.content.toLowerCase() ===
-          `${prefix}${content}`;
-      }
-
-    });
-    if (isAMatch) {
-      this.message.channel.send(reply);
-      this.message.delete();
-    }
+  reply(reply) {
+    this.message.reply(reply);
+    this.message.delete();
   }
+
+  // newMessage(content, reply) {
+  //   const isAMatch = settings.prefixs.some((prefix) => {
+  //     if (Array.isArray(content)) {
+  //       return content.find((key) => {
+  //         return this.message.content.toLowerCase().startsWith(
+  //           `${prefix}${key}`);
+  //       });
+  //     } else {
+  //       return this.message.content.toLowerCase() ===
+  //         `${prefix}${content}`;
+  //     }
+  //
+  //   });
+  //   if (isAMatch) {
+  //     this.message.channel.send(reply);
+  //     this.message.delete();
+  //   }
+  // }
 }
