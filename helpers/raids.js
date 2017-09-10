@@ -74,7 +74,7 @@ exports.init = async () => {
   });
 
   await raid.sync({
-    force: true
+    // force: true
   });
 }
 
