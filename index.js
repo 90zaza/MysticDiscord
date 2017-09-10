@@ -11,7 +11,6 @@ var https = require("https");
 const Message = require("./models/message")
 const settings = require("./settings.json")
 const gyms = require("./data/gyms.json");
-const stops = require("./data/pokestops.json");
 const pokemons = require("./data/pokemons.json");
 const defense = require("./data/defense.json");
 const reply = require("./data/reply.json");
@@ -140,13 +139,6 @@ if (msgText === "instinct") {
 //message reply
 if ((reply = Reply.checkForReply(msgText)) != undefined) {
     Reply.reply(msg, reply);}
-
-//pokestop spins
-const stopMatch = stops.find((stop) => {
-  return msgText.startsWith(stop.key);});
-
-if (stopMatch) {
-    msg.reply(stopMatch.reply);}
 
 
 //give trusted role, admin only
