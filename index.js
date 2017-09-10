@@ -13,6 +13,7 @@ const Sequelize = require('sequelize');
 const GymResponse = require('./models/gym-response');
 const Pokemons = require('./models/pokemons');
 const PokemonResponse = require('./models/pokemon-response');
+const GenericMessageResponse = require('./models/generic-response');
 
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
@@ -30,6 +31,7 @@ client.on('message', async (msg) => {
 
   new GymResponse(msg);
   new PokemonResponse(msg, pokemons);
+  new GenericMessageResponse(msg)
 
 });
 
