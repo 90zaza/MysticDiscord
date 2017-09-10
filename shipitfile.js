@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies, global-require */
 module.exports = (shipit) => {
   require('./node_modules/shipit-deploy')(shipit);
-  require('./node_modules/shipit-yarn')(shipit);
+  require('./node_modules/shipit-npm')(shipit);
   require('./node_modules/shipit-pm2')(shipit);
   require('./node_modules/shipit-shared')(shipit);
 
