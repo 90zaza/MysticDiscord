@@ -16,6 +16,7 @@ const PokemonResponse = require('./models/pokemon-response');
 const PokemonSpottingResponse = require('./models/pokemon-spotting-response');
 const GenericResponse = require('./models/generic-response');
 const MusicResponse = require('./models/music-response');
+const GambleResponse = require('./models/gamble-response');
 
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
@@ -36,6 +37,7 @@ client.on('message', async (msg) => {
   new PokemonSpottingResponse(msg);
   new GenericResponse(msg);
   new MusicResponse(msg);
+  new GambleResponse(msg);
 
 });
 
@@ -68,13 +70,6 @@ In order to get full access to our server, we would like to verify you are indee
 // //raid reply
 // if (msgText.split(' ')[0] == "raid") {
 //     raids.scan(msg);}
-//
-//
-//
-// //reply with extra options
-// if (msgText === "dobbel" || msgText === "gamble") {
-//    msg.reply("<:game_die:349868481673428992>: " + (Math.floor(Math.random()*6)+1));
-//    msg.delete()}
 
 //
 // if (msgText === "mystic") {
