@@ -13,6 +13,7 @@ const Sequelize = require('sequelize');
 const GymResponse = require('./models/gym-response');
 const Pokemons = require('./models/pokemons');
 const PokemonResponse = require('./models/pokemon-response');
+const PokemonSpottingResponse = require('./models/pokemon-spotting-response');
 const GenericResponse = require('./models/generic-response');
 const MusicResponse = require('./models/music-response');
 
@@ -32,6 +33,7 @@ client.on('message', async (msg) => {
 
   new GymResponse(msg);
   new PokemonResponse(msg, pokemons);
+  new PokemonSpottingResponse(msg);
   new GenericResponse(msg);
   new MusicResponse(msg);
 
@@ -59,27 +61,6 @@ In order to get full access to our server, we would like to verify you are indee
 //
 // const raids = require("./helpers/raids.js");
 // raids.init();
-//
-// //pokemon spotting
-// let spotting = msg.guild.channels.find("name", "pokemon_spotting");
-// if (msg.channel == spotting) {
-//   var msgText = msg.content.toLowerCase()
-//
-//   if (msgText.includes("shiny")) {
-//     msg.author.send(`Shiny's zijn helaas individueel bepaald. Voor jou een shiny is voor een ander dus waarschijnlijk gewoon normaal.`);
-//     msg.delete();
-//     return;
-//   }
-//   if (msgText.includes("100%") || msgText.includes("100 %") || msgText.includes("perfect")) {
-//     msg.channel.send(`Er is een 100% IV pokémon gespot, @everyone! (alleen voor lvl 30+)`);
-//     return;
-//   }
-//
-//
-//   if ((pokemon = Rarepokemon.checkForPokemon(msgText)) != undefined) {
-//     Rarepokemon.reply(msg, pokemon);
-//   }
-// }
 //
 // let prefixs = settings.prefixs;
 // let moderator = settings.moderator;

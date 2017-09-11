@@ -6,10 +6,22 @@ module.exports = class Message {
     this.message.content = this.message.content.trim().toLowerCase();
   }
 
+  includes(data) {
+    return data.find((item) => {
+      if (!item.keys) {
+        console.log('item has no key', item);
+        return;
+      }
+      return item.keys.find((key) => {
+        return this.message.content.includes(key);
+      });
+    });
+  }
+
   startsWithKey(data) {
     return data.find((item) => {
       if (!item.keys) {
-        console.log('item has no key', g);
+        console.log('item has no key', item);
         return;
       }
       return item.keys.find((key) => {
@@ -30,27 +42,18 @@ module.exports = class Message {
     });
   }
 
-  reply(reply) {
+  reply(reply, keepOriginalMessage) {
     this.message.reply(reply);
-    this.message.delete();
+    if(!keepOriginalMessage) {
+      this.message.delete();
+    }
   }
 
-  // newMessage(content, reply) {
-  //   const isAMatch = settings.prefixs.some((prefix) => {
-  //     if (Array.isArray(content)) {
-  //       return content.find((key) => {
-  //         return this.message.content.toLowerCase().startsWith(
-  //           `${prefix}${key}`);
-  //       });
-  //     } else {
-  //       return this.message.content.toLowerCase() ===
-  //         `${prefix}${content}`;
-  //     }
-  //
-  //   });
-  //   if (isAMatch) {
-  //     this.message.channel.send(reply);
-  //     this.message.delete();
-  //   }
-  // }
+  newMessage(reply, keepOriginalMessage) {
+    this.message.channel.send(reply);
+
+    if(!keepOriginalMessage) {
+      this.message.delete();
+    }
+  }
 }
