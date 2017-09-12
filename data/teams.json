@@ -1,0 +1,32 @@
+[
+  {
+    "keys": ["mystic"],
+    "color": "0x0000ff",
+    "thumbnail": "https://vignette2.wikia.nocookie.net/pokemon/images/3/35/Blanche-GO.png/revision/latest?cb=20160726200247.png",
+    "field": {
+        "key": "Team Mystic",
+        "value": "I am Blanche, leader of Team Mystic. The wisdom of Pokémon is immeasurably deep. I am researching why it is that they evolve.\nMy team? With our calm analysis of overy situation, we can't lose!"
+    },
+    "afterMessage": "Wat een prachtige woorden vind je niet? Met onze wijsheid kunnen we samen met onze Pokémon elke uitdaging aan!"
+  },
+  {
+    "keys": ["valor"],
+    "color": "0xff0000",
+    "thumbnail": "https://vignette4.wikia.nocookie.net/pokemon/images/c/ce/Candela-GO.png/revision/latest?cb=20160726200643.png",
+    "field": {
+        "key": "Team Valor",
+        "value": "I am Candela, Team Valor Leader! Pokemon are stronger than humans, and they are warmhearted, too! I am researching ways to enhance Pokémon natural power in the pursuit of true strength. There is no doubt that the Pokémon in our team have trained are the strongest in battle! Are you ready?"
+    },
+    "afterMessage": "Pokemon sterker dan mensen? Bij jullie team twijfel ik daar soms over.... Dat onderzoek van jullie om pokemon sterker te maken is in elk geval hard nodig bij team faler!"
+  },
+  {
+    "keys": ["instinct"],
+    "color": "0xffff00",
+    "thumbnail": "https://vignette2.wikia.nocookie.net/pokemon/images/8/86/Spark-GO.png/revision/latest?cb=20160726200039.png",
+    "field": {
+        "key": "Team Instinct",
+        "value": "Hey! The name's Spark- the leader of Team Instinct. Pokémon are creatures with excellent intuition. I bet the secret to their intuition is related to how they're hatched. Come on and join my team! You never lose when you trust your instincts!"
+    },
+    "afterMessage": "Vertrouwen op je intuitie? We leven toch zeker niet meer in de steentijd? En wat hebben die eieren daar nu weer mee te maken? Met dit soort uitspraken lijkt het soms alsof je zelf uit een ei bent gekomen..."
+  }
+]

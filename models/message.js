@@ -18,6 +18,30 @@ module.exports = class Message {
     });
   }
 
+  totalMatchKey(data) {
+    return data.find((item) => {
+      if (!item.keys) {
+        console.log('item has no key', item);
+        return;
+      }
+      return item.keys.find((key) => {
+        return this.totalMatch(key);
+      });
+    });
+  }
+
+  totalMatch(items) {
+    return settings.prefixs.some((prefix) => {
+      if (Array.isArray(items)) {
+        return items.find((item) => {
+          return this.message.content === `${prefix}${item}`;
+        });
+      } else {
+        return this.message.content == `${prefix}${items}`;
+      }
+    });
+  }
+
   startsWithKey(data) {
     return data.find((item) => {
       if (!item.keys) {

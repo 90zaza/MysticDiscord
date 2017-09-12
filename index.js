@@ -17,6 +17,7 @@ const PokemonSpottingResponse = require('./models/pokemon-spotting-response');
 const GenericResponse = require('./models/generic-response');
 const MusicResponse = require('./models/music-response');
 const GambleResponse = require('./models/gamble-response');
+const TeamResponse = require('./models/team-response');
 
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
@@ -38,6 +39,7 @@ client.on('message', async (msg) => {
   new GenericResponse(msg);
   new MusicResponse(msg);
   new GambleResponse(msg);
+  new TeamResponse(msg);
 
 });
 
@@ -54,12 +56,8 @@ In order to get full access to our server, we would like to verify you are indee
   }, 1000);
 });
 
-
-// const Message = require("./models/message");
 // const settings = require("./settings.json");
-// const Reply = require("./helpers/reply.js");
 // const Text = require("./helpers/text.js");
-// const Rarepokemon = require("./helpers/rarepokemon.js");
 //
 // const raids = require("./helpers/raids.js");
 // raids.init();
@@ -70,34 +68,6 @@ In order to get full access to our server, we would like to verify you are indee
 // //raid reply
 // if (msgText.split(' ')[0] == "raid") {
 //     raids.scan(msg);}
-
-//
-// if (msgText === "mystic") {
-//   msg.delete()
-//   let embed = new Discord.RichEmbed()
-//     .setColor(0x0000ff)
-//     .setThumbnail("https://vignette2.wikia.nocookie.net/pokemon/images/3/35/Blanche-GO.png/revision/latest?cb=20160726200247.png")
-//     .addField("Team Mystic","I am Blanche, leader of Team Mystic. The wisdom of Pokémon is immeasurably deep. I am researching why it is that they evolve.\nMy team? With our calm analysis of overy situation, we can't lose!")
-//   msg.channel.send({embed});
-//   setTimeout(() => {msg.channel.send("Wat een prachtige woorden vind je niet? Met onze wijsheid kunnen we samen met onze Pokémon elke uitdaging aan!");;},1000);}
-//
-// if (msgText === "valor") {
-//   msg.delete()
-//   let embed = new Discord.RichEmbed()
-//     .setColor(0xff0000)
-//     .setThumbnail("https://vignette4.wikia.nocookie.net/pokemon/images/c/ce/Candela-GO.png/revision/latest?cb=20160726200643.png")
-//     .addField("Team Valor","I am Candela, Team Valor Leader! Pokemon are stronger than humans, and they are warmhearted, too! I am researching ways to enhance Pokémon natural power in the pursuit of true strength. There is no doubt that the Pokémon in our team have trained are the strongest in battle! Are you ready?")
-//   msg.channel.send({embed});
-//   setTimeout(() => {msg.channel.send("Pokemon sterker dan mensen? Bij jullie team twijfel ik daar soms over.... Dat onderzoek van jullie om pokemon sterker te maken is in elk geval hard nodig bij team faler!");;},1000);}
-//
-// if (msgText === "instinct") {
-//   msg.delete()
-//   let embed = new Discord.RichEmbed()
-//     .setColor(0xffff00)
-//     .setThumbnail("https://vignette2.wikia.nocookie.net/pokemon/images/8/86/Spark-GO.png/revision/latest?cb=20160726200039.png")
-//     .addField("Team Instinct","Hey! The name's Spark- the leader of Team Instinct. Pokémon are creatures with excellent intuition. I bet the secret to their intuition is related to how they're hatched. Come on and join my team! You never lose when you trust your instincts!")
-//   msg.channel.send({embed});
-//   setTimeout(() => {msg.channel.send("Vertrouwen op je intuitie? We leven toch zeker niet meer in de steentijd? En wat hebben die eieren daar nu weer mee te maken? Met dit soort uitspraken lijkt het soms alsof je zelf uit een ei bent gekomen...");;},1000);}
 
 // //give trusted role, admin only
 // if (msgText.startsWith("add")) {
