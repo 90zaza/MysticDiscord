@@ -264,7 +264,7 @@
   "name": "Molen De Klokkenmaker",
 	"url": "https://goo.gl/maps/Dj8Vx6FxbM62"
 }, {
-  "keys": ["molen steen"],
+  "keys": ["molen steen", "molensteen"],
   "name": "Molen Steen",
 	"url": "https://goo.gl/maps/cumNzZkTDkN2"
 }, {
@@ -372,7 +372,7 @@
   "name": "Space Engineering Faculty",
 	"url": "https://goo.gl/maps/kb4EmbwywYS2"
 }, {
-  "keys": ["space rocket"],
+  "keys": ["space rocket", "spacerocket"],
   "name": "Space Rocket",
 	"url": "https://goo.gl/maps/T2so1vhEBGF2"
 }, {

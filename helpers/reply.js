@@ -9,7 +9,7 @@ exports.checkForReply = function (msgText) {
       return;
     }
     return g.keys.find((key) => {
-      return msgText.startsWith(key);
+      return msgText == key;
     });
   });
 
