@@ -265,8 +265,9 @@ async function addRaid (msg, boss) {
 
 //text in #raids with mention of role
   let role = msg.guild.roles.find("name", boss);
+  let channel = msg.guild.channels.find("name", "raids");
+  channel.send(`${boss}`)
   if (boss === "Snorlax" || boss === "Machamp" ||boss === "Tyranitar" ||boss === "Lapras") {
-    let channel = msg.guild.channels.find("name", "raids");
     channel.send(`Raid #${id}: ${role}`)
   } else {
     channel.send(`Raid #${id}: ${boss}`)
