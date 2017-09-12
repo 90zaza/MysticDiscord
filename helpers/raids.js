@@ -119,7 +119,6 @@ exports.scan = function (msg) {
     if (boss) {
 
       addRaid(msg, boss);
-//      msg.reply(`Raid #${id}: ${pokemon.name}`)
 
     } else {
 
@@ -167,19 +166,11 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
     joining = joinedPlayers.join("\n");
   }
 
-
-var raidpokemon = pokemon.name;
-if (pokemon.name === "Lapras" || pokemon.name === "Snorlax" || pokemon.name === "Tyranitar" || pokemon.name === "Machamp") {
-  let role = msg.guild.roles.find("name", raidpokemon);
-  var raidpokemon = `${role}`;
-}
-
-
   let gym = Gym.checkForGym(gymName);
   let embed = new Discord.RichEmbed()
     .setColor(isMystic ? 0x0677ee : 0xffffff)
     .setURL(gym ? gym.url : "")
-    .setAuthor("Raid #" + id + ": " + raidpokemon)
+    .setAuthor("Raid #" + id + ": " + (pokemon ? pokemon.name : BossName))
     .setTitle("📍 " + (gym ? gym.name : gymName) + (isMystic ? " (:mystic: Gym)" : "") )
     .setThumbnail(imageURL)
     .addField("Times", "Ends:\t" + endTime + "\nBattle:\t" + battleTime )
@@ -195,7 +186,6 @@ if (pokemon.name === "Lapras" || pokemon.name === "Snorlax" || pokemon.name === 
 }
 
 async function addRaid (msg, boss) {
-
   let text = msg.content.toLowerCase().substr(1);
   let textArray = text.split(" ");
 
@@ -272,6 +262,17 @@ async function addRaid (msg, boss) {
   for (let raid in raidsNeedToBeDeleted) {
     msg.guild.channels.find("name", "raids_meldingen").messages.find("id", raid.dataValues.messageid).delete();
   }
+
+//text in #raids with mention of role
+  let role = msg.guild.roles.find("name", boss);
+  if (boss === "Snorlax" || boss === "Machamp" ||boss === "Tyranitar" ||boss === "Lapras" ||) {
+    let channel = msg.guild.channels.find("name", "raids");
+    channel.send(`Raid #${id}: ${role}`)
+  } else {
+    channel.send(`Raid #${id}: ${boss}`)
+  }
+
+
 }
 
 async function updateRaid(msg) {
