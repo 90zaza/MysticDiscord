@@ -9,7 +9,7 @@
   },
   "author": "Mystic Delft: gvlekke, oppetiebarie",
   "engines": {
-    "node": "8.2.1"
+    "node": "8.4.0"
   },
   "scripts": {
     "start": "node --inspect index.js",
