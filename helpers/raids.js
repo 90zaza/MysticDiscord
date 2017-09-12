@@ -119,7 +119,7 @@ exports.scan = function (msg) {
     if (boss) {
 
       addRaid(msg, boss);
-      msg.reply(`Raid #${id}: ${pokemon.name}`)
+//      msg.reply(`Raid #${id}: ${pokemon.name}`)
 
     } else {
 
