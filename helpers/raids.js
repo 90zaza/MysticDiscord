@@ -119,6 +119,7 @@ exports.scan = function (msg) {
     if (boss) {
 
       addRaid(msg, boss);
+      msg.reply(`Raid #${id}: ${pokemon.name}`)
 
     } else {
 
@@ -166,11 +167,19 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
     joining = joinedPlayers.join("\n");
   }
 
+
+var raidpokemon = pokemon.name;
+if (pokemon.name === "Lapras" || pokemon.name === "Snorlax" || pokemon.name === "Tyranitar" || pokemon.name === "Machamp") {
+  let role = msg.guild.roles.find("name", raidpokemon);
+  var raidpokemon = `${role}`;
+}
+
+
   let gym = Gym.checkForGym(gymName);
   let embed = new Discord.RichEmbed()
     .setColor(isMystic ? 0x0677ee : 0xffffff)
     .setURL(gym ? gym.url : "")
-    .setAuthor("Raid #" + id + ": " + (pokemon ? pokemon.name : bossName))
+    .setAuthor("Raid #" + id + ": " + mention + raidpokemon)
     .setTitle("📍 " + (gym ? gym.name : gymName) + (isMystic ? " (:mystic: Gym)" : "") )
     .setThumbnail(imageURL)
     .addField("Times", "Ends:\t" + endTime + "\nBattle:\t" + battleTime )

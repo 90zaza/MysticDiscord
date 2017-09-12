@@ -190,45 +190,84 @@ if (msgText.startsWith("+english")) {
     msg.member.addRole(role).catch(console.error);
     msg.reply("You now have access to the English channel!");
     msg.delete()}
+if (msgText.startsWith("+lapras")) {
+    let role = msg.guild.roles.find("name", "Lapras");
+    msg.member.addRole(role).catch(console.error);
+    msg.reply("Je krijgt nu notificaties van Lapras Raids!");
+    msg.delete()}
+if (msgText.startsWith("+snorlax")) {
+    let role = msg.guild.roles.find("name", "Snorlax");
+    msg.member.addRole(role).catch(console.error);
+    msg.reply("Je krijgt nu notificaties van Snorlax Raids!");
+    msg.delete()}
+if (msgText.startsWith("+tyranitar")) {
+    let role = msg.guild.roles.find("name", "Tyranitar");
+    msg.member.addRole(role).catch(console.error);
+    msg.reply("Je krijgt nu notificaties van Tyranitar Raids!");
+    msg.delete()}
+if (msgText.startsWith("+machamp")) {
+    let role = msg.guild.roles.find("name", "Machamp");
+    msg.member.addRole(role).catch(console.error);
+    msg.reply("Je krijgt nu notificaties van Machamp Raids!");
+    msg.delete()}
 
 
 //remove gym roles
 if (msgText.startsWith("-centrum")) {
     let role = msg.guild.roles.find("name", "Centrum");
     msg.member.removeRole(role).catch(console.error);
-    msg.reply("Je hebt nu geen toegang meer tot het centrum gym kanaal!");
+    msg.reply("Je hebt nu **geen** toegang meer tot het centrum gym kanaal!");
     msg.delete()}
 if (msgText.startsWith("-hoven")) {
     let role = msg.guild.roles.find("name", "Hoven");
     msg.member.removeRole(role).catch(console.error);
-    msg.reply("Je hebt nu geen toegang meer tot het hoven gym kanaal!");
+    msg.reply("Je hebt nu **geen** toegang meer tot het hoven gym kanaal!");
     msg.delete()}
 if (msgText.startsWith("-tu")) {
     let role = msg.guild.roles.find("name", "TU");
     msg.member.removeRole(role).catch(console.error);
-    msg.reply("Je hebt nu geen toegang meer tot het tu-wijk gym kanaal!");
+    msg.reply("Je hebt nu **geen** toegang meer tot het tu-wijk gym kanaal!");
     msg.delete()}
 if (msgText.startsWith("-tanthof")) {
     let role = msg.guild.roles.find("name", "Tanthof");
     msg.member.removeRole(role).catch(console.error);
-    msg.reply("Je hebt nu geen toegang meer tot het tanthof gym kanaal!");
+    msg.reply("Je hebt nu **geen** toegang meer tot het tanthof gym kanaal!");
     msg.delete()}
 if (msgText.startsWith("-noord")) {
     let role = msg.guild.roles.find("name", "DelftNoord");
     msg.member.removeRole(role).catch(console.error);
-    msg.reply("Je hebt nu geen toegang meer tot het Noord-Delft gym kanaal!");
+    msg.reply("Je hebt nu **geen** toegang meer tot het Noord-Delft gym kanaal!");
     msg.delete()}
 if (msgText.startsWith("-oost")) {
     let role = msg.guild.roles.find("name", "DelftOost");
     msg.member.removeRole(role).catch(console.error);
-    msg.reply("Je hebt nu geen toegang meer tot het Oost-Delft gym kanaal!");
+    msg.reply("Je hebt nu **geen** toegang meer tot het Oost-Delft gym kanaal!");
     msg.delete()}
 if (msgText.startsWith("-english")) {
     let role = msg.guild.roles.find("name", "English");
     msg.member.removeRole(role).catch(console.error);
-    msg.reply("You now have lost access to the English channel!");
+    msg.reply("You now have **lost** access to the English channel!");
     msg.delete()}
-
+if (msgText.startsWith("-lapras")) {
+    let role = msg.guild.roles.find("name", "Lapras");
+    msg.member.removeRole(role).catch(console.error);
+    msg.reply("Je krijgt nu **geen** notificaties meer van Lapras Raids!");
+    msg.delete()}
+if (msgText.startsWith("-snorlax")) {
+    let role = msg.guild.roles.find("name", "Snorlax");
+    msg.member.removeRole(role).catch(console.error);
+    msg.reply("You now have access to the English channel!");
+    msg.delete()}
+if (msgText.startsWith("-tyranitar")) {
+    let role = msg.guild.roles.find("name", "Tyranitar");
+    msg.member.removeRole(role).catch(console.error);
+    msg.reply("You now have access to the English channel!");
+    msg.delete()}
+if (msgText.startsWith("-machamp")) {
+    let role = msg.guild.roles.find("name", "Machamp");
+    msg.member.removeRole(role).catch(console.error);
+    msg.reply("You now have access to the English channel!");
+    msg.delete()}
 
 //delete msgs
 if (msgText.startsWith("delete")) {
