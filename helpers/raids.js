@@ -179,7 +179,7 @@ if (pokemon.name === "Lapras" || pokemon.name === "Snorlax" || pokemon.name === 
   let embed = new Discord.RichEmbed()
     .setColor(isMystic ? 0x0677ee : 0xffffff)
     .setURL(gym ? gym.url : "")
-    .setAuthor("Raid #" + id + ": " + mention + raidpokemon)
+    .setAuthor("Raid #" + id + ": " + raidpokemon)
     .setTitle("📍 " + (gym ? gym.name : gymName) + (isMystic ? " (:mystic: Gym)" : "") )
     .setThumbnail(imageURL)
     .addField("Times", "Ends:\t" + endTime + "\nBattle:\t" + battleTime )
