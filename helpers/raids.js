@@ -152,14 +152,7 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
 
   let pokemon = Pokemon.checkForPokemon(bossName);
 
-  let gender="";
-  if (pokemon.gender === true) {
-    if (Math.random() > 0.5) {
-      gender = '-f';
-    };
-  } //50/50 gender
-
-  let imageURL = `https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}${gender}.png`;
+  let imageURL = `https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`;
 
   var joining = "no people interested yet";
   if (joinedPlayers && joinedPlayers.length > 0){
@@ -264,14 +257,13 @@ async function addRaid (msg, boss) {
   }
 
 //text in #raids with mention of role
-  let role = msg.guild.roles.find("name", pokemon.name);
-  let channel = msg.guild.channels.find("name", "raids");
-  channel.send(`${pokemon.name}`)
-  if (pokemon.name === "Snorlax" || pokemon.name === "Machamp" || pokemon.name === "Tyranitar" || pokemon.name === "Lapras") {
-    channel.send(`Raid #${id}: ${role}`)
-  } else {
-    channel.send(`Raid #${id}: ${boss}`)
-  }
+//let role = msg.guild.roles.find("name", pokemon.name);
+//let channel = msg.guild.channels.find("name", "raids");
+//if (pokemon.name === "Snorlax" || pokemon.name === "Machamp" || pokemon.name === "Tyranitar" || pokemon.name === "Lapras") {
+//  channel.send(`Raid #${id}: ${role}`)
+//} else {
+//  channel.send(`Raid #${id}: ${boss}`)
+//}
 
 
 }
