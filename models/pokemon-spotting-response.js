@@ -22,7 +22,7 @@ module.exports = class PokemonSpottingResponse extends Message {
 
       this.pokemon = this.getPokemon();
       if (this.pokemon && this.pokemon.rare) {
-        this.newMessage(`${this.pokemon.name} is gevonden, @everyone!`);
+        this.newMessage(`${this.pokemon.name} is gevonden, @everyone!`, true);
       }
     }
   }
