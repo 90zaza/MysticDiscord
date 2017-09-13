@@ -96,7 +96,6 @@ exports.scan = async function (msg) {
 
     if (textArray[2] === "all") {
       await deleteRaid(msg);
-      await raid.truncate();
     } else {
       deleteRaid(msg, textArray[2]);
     }
@@ -113,7 +112,6 @@ exports.scan = async function (msg) {
     return true;
 
   } else if(command === "resetid") {
-    await deleteRaid(msg);
     await raid.truncate();
     return true;
 
