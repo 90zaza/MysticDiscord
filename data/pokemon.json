@@ -2511,7 +2511,7 @@
     "rare":  false
   },
   {
-    "keys": ["snubbel", "snubbell"],
+    "keys": ["snubbel", "snubbell", "snubbel"],
     "name": "Snubbell",
     "number": 209,
     "type": ["fairy"],
