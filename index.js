@@ -10,6 +10,11 @@ client.login(process.env.TOKEN)
 
 // other dependencies
 const Sequelize = require('sequelize');
+
+const raids = require("./helpers/raids.js");
+const settings = require("./settings.json");
+const Text = require("./helpers/text.js");
+
 const GymResponse = require('./models/gym-response');
 const Pokemons = require('./models/pokemons');
 const PokemonResponse = require('./models/pokemon-response');
@@ -22,6 +27,8 @@ const ChannelRolesResponse = require('./models/channel-roles-response');
 
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
+
+raids.init();
 
 // start script
 client.on('ready', () => {
@@ -43,6 +50,35 @@ client.on('message', async (msg) => {
   new TeamResponse(msg);
   new ChannelRolesResponse(msg);
 
+  // delete amount of messages
+  if (msg.content.startsWith("delete")) {
+    if (msg.member.roles.has(moderator)) {
+      var del = msg.content.split(" ");
+      del.splice(0, 1);
+      msg.channel.bulkDelete(del);
+    } else {
+      msg.reply("Alleen moderators kunnen berichten verwijderen");
+    }
+    msg.delete();
+  }
+
+
+  let prefixs = settings.prefixs;
+  let moderator = settings.moderator;
+
+  //determine if the bot activates or not
+  let msgPrefix = msg.content[0];
+  var msgText = msg.content.toLowerCase().substr(1).trim();
+  if (prefixs.indexOf(msgPrefix) < 0) return;
+
+  //removes prefix and spaces, and convert the rest to lowercase
+  var msgText = msg.content.toLowerCase().substr(1).trim();
+
+  //raid reply
+  if (msgText.split(' ')[0] == "raid") {
+    raids.scan(msg);
+  }
+
 });
 
 //welcome new users
@@ -57,41 +93,3 @@ In order to get full access to our server, we would like to verify you are indee
     );
   }, 1000);
 });
-
-// const settings = require("./settings.json");
-// const Text = require("./helpers/text.js");
-//
-// const raids = require("./helpers/raids.js");
-// raids.init();
-//
-// let prefixs = settings.prefixs;
-// let moderator = settings.moderator;
-
-// //raid reply
-// if (msgText.split(' ')[0] == "raid") {
-//     raids.scan(msg);}
-
-// //give trusted role, admin only
-// if (msgText.startsWith("add")) {
-//   if (msg.member.roles.has(moderator)) {
-//      let member = msg.mentions.members.first();
-//      let role = msg.guild.roles.find("name",
-//      "makingdelftblueagain");
-//      member.addRole(role).catch(console.error);
-//      msg.channel.send(`Welkom ` + member + `, je bent nu officieel toegevoegd! In het kanaal <#` + settings.welkom + `> is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Daarnaast sta ik natuurlijk ook tot je beschikking! Door '!help' te typen kun je zien wat ik allemaal voor je kan doen! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, met je level erachter (channel settings, change nickname), zodat we weten wie iedereen is;)`);}
-//   else {
-//      msg.reply("Leden verifieren kan alleen door een moderator worden gedaan")}
-//      msg.delete()}
-//
-// //delete msgs
-// if (msgText.startsWith("delete")) {
-//   if (msg.member.roles.has(moderator)) {
-//        var del = msgText.split(" ");
-//        del.splice(0, 1);
-//        msg.channel.bulkDelete(del);}
-//     else {
-//        msg.reply("Alleen moderators kunnen berichten verwijderen")}
-//        msg.delete()}
-// });
-//
-//

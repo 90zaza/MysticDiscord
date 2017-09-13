@@ -1,9 +1,8 @@
 const Discord = require('discord.js');
 const Sequelize = require('sequelize');
 const moment = require('moment');
-
-const Pokemon = require('./pokemon.js');
-const Gym = require('./gym.js');
+const pokemons = require('../data/pokemons.json');
+const gyms = require('../data/gyms.json');
 
 var connection;
 var raid;
@@ -74,11 +73,11 @@ exports.init = async () => {
   });
 
   await raid.sync({
-    // force: true
+    force: true
   });
 }
 
-exports.scan = function (msg) {
+exports.scan = async function (msg) {
 
   let text = msg.content.toLowerCase().substr(1).trim();
   let textArray = text.split(" ");
@@ -90,38 +89,42 @@ exports.scan = function (msg) {
 
   let command = textArray[1];
 
-  if (command == "help") {
+  if (command === "help") {
     printHelp(msg);
 
-  } else if(command == "del" && textArray.length > 2) {
+  } else if(command === "del" && textArray.length > 2) {
 
-    (textArray[2] == "all") ? deleteRaid(msg) : deleteRaid(msg, textArray[2]);
+    if (textArray[2] === "all") {
+      await deleteRaid(msg);
+      await raid.truncate();
+    } else {
+      deleteRaid(msg, textArray[2]);
+    }
     return true;
 
-  } else if(command == "join" && textArray.length > 2) {
+  } else if(command === "join" && textArray.length > 2) {
 
     joinRaid(msg, textArray[2]);
     return true;
 
-  } else if(command == "leave" && textArray.length > 2) {
+  } else if(command === "leave" && textArray.length > 2) {
 
     leaveRaid(msg, textArray[2]);
     return true;
 
-  } else if(command == "resetid") {
-
-    connection.query("ALTER SEQUENCE raids_idraids_seq RESTART 1");
+  } else if(command === "resetid") {
+    await deleteRaid(msg);
+    await raid.truncate();
     return true;
 
   } else {
 
-    let boss = Pokemon.checkForPokemon(textArray[1]);
+    let boss = pokemons.find((item) => {
+      return item.keys.includes(textArray[1]);
+    });
     if (boss) {
-
       addRaid(msg, boss);
-
     } else {
-
       updateRaid(msg);
     }
   }
@@ -150,7 +153,9 @@ function printHelp (msg) {
 
 function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, joinedPlayers, isMystic) {
 
-  let pokemon = Pokemon.checkForPokemon(bossName);
+  let pokemon = pokemons.find((item) => {
+    return item.keys.includes(bossName);
+  });
 
   let imageURL = `https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`;
 
@@ -159,7 +164,10 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
     joining = joinedPlayers.join("\n");
   }
 
-  let gym = Gym.checkForGym(gymName);
+  let gym = gyms.find((item) => {
+    return item.keys.includes(gymName);
+  });
+
   let embed = new Discord.RichEmbed()
     .setColor(isMystic ? 0x0677ee : 0xffffff)
     .setURL(gym ? gym.url : "")
@@ -347,7 +355,7 @@ async function deleteRaid (msg, id) {
       })
       msg.guild.channels.find("name", "raids_meldingen").messages.find("id",result.dataValues["messageid"]).delete()
 
-      raid.destroy({
+      await raid.destroy({
         where: {
           "idraids": id
         }
