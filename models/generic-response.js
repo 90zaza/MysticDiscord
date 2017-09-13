@@ -13,6 +13,6 @@ module.exports = class GenericResponse extends Message {
   }
 
   getReply() {
-    return this.startsWithKey(replies);
+    return this.totalMatchKey(replies);
   }
 }
