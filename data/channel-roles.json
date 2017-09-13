@@ -1,0 +1,87 @@
+[
+  {
+    "keys": ["+centrum"],
+    "name": "Centrum",
+    "reply": "Je hebt nu toegang tot het centrum gym kanaal!",
+    "action": "add"
+  },
+  {
+    "keys": ["+hoven"],
+    "name": "Hoven",
+    "reply": "Je hebt nu toegang tot het hoven gym kanaal!",
+    "action": "add"
+  },
+  {
+    "keys": ["+TU"],
+    "name": "Centrum",
+    "reply": "Je hebt nu toegang tot het tu-wijk gym kanaal!",
+    "action": "add"
+  },
+  {
+    "keys": ["+tanthof"],
+    "name": "Tanthof",
+    "reply": "Je hebt nu toegang tot het tanthof gym kanaal!",
+    "action": "add"
+  },
+  {
+    "keys": ["+noord"],
+    "name": "DelftNoord",
+    "reply": "Je hebt nu toegang tot het Noord-Delft gym kanaal!",
+    "action": "add"
+  },
+  {
+    "keys": ["+oost"],
+    "name": "DelftOost",
+    "reply": "Je hebt nu toegang tot het Oost-Delft gym kanaal!",
+    "action": "add"
+  },
+  {
+    "keys": ["+english"],
+    "name": "English",
+    "reply": "You now have access to the English channel!",
+    "action": "add"
+  },
+
+  {
+    "keys": ["-centrum"],
+    "name": "Centrum",
+    "reply": "Je hebt nu geen toegang meer tot het centrum gym kanaal!",
+    "action": "remove"
+  },
+  {
+    "keys": ["-hoven"],
+    "name": "Hoven",
+    "reply": "Je hebt nu geen toegang meer tot het hoven gym kanaal!",
+    "action": "remove"
+  },
+  {
+    "keys": ["-TU"],
+    "name": "Centrum",
+    "reply": "Je hebt nu geen toegang meer tot het tu-wijk gym kanaal!",
+    "action": "remove"
+  },
+  {
+    "keys": ["-tanthof"],
+    "name": "Tanthof",
+    "reply": "Je hebt nu geen toegang meer tot het tanthof gym kanaal!",
+    "action": "remove"
+  },
+  {
+    "keys": ["-noord"],
+    "name": "DelftNoord",
+    "reply": "Je hebt nu geen toegang meer tot het Noord-Delft gym kanaal!",
+    "action": "remove"
+  },
+  {
+    "keys": ["-oost"],
+    "name": "DelftOost",
+    "reply": "Je hebt nu geen toegang meer tot het Oost-Delft gym kanaal!",
+    "action": "remove"
+  },
+  {
+    "keys": ["-english"],
+    "name": "English",
+    "reply": "You now have lost access to the English channel!",
+    "action": "remove"
+  }
+]
