@@ -80,4 +80,12 @@ module.exports = class Message {
       this.message.delete();
     }
   }
+
+  replypm(reply, keepOriginalMessage) {
+    this.message.author.send(reply)
+
+    if(!keepOriginalMessage) {
+      this.message.delete();
+    }
+  }
 }

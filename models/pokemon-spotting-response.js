@@ -11,7 +11,7 @@ module.exports = class PokemonSpottingResponse extends Message {
 
     if (this.message.channel == this.spotting) {
       if (this.message.content.includes('shiny') || this.message.content.includes('shiney')) {
-        this.newMessage(`Shiny's zijn helaas individueel bepaald. Voor jou een shiny is voor een ander dus waarschijnlijk gewoon normaal.`, true);
+        this.replypm(`Shiny's zijn helaas individueel bepaald. Voor jou een shiny is voor een ander dus waarschijnlijk gewoon normaal.`, true);
         return;
       }
 

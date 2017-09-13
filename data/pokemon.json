@@ -9,7 +9,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["bulba", "bulbasaur"],
@@ -357,7 +357,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["nidorina"],
@@ -369,7 +369,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["nidoqueen"],
@@ -381,7 +381,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["nidoranm"],
@@ -393,7 +393,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["nidorino"],
@@ -405,7 +405,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["nidoking"],
@@ -417,7 +417,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["clefairy"],
@@ -981,7 +981,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["magneton"],
@@ -993,7 +993,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["farfetch", "farfetchd", "farfetch'd", "farfetcht"],
@@ -1209,7 +1209,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["electrode"],
@@ -1221,7 +1221,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["exeggcute", "exeggute", "eggecute", "exegute", "execute",
@@ -1283,7 +1283,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["hitmonchan"],
@@ -1295,7 +1295,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["lickytung", "lickitung"],
@@ -1367,7 +1367,7 @@
     "defence": ["Zen Headbutt", "Dazzling Gleam"],
     "recplayers": 0,
     "gender": false,
-     "rare":  true
+    "rare":  true
   },
   {
     "keys": ["tangela"],
@@ -1391,7 +1391,7 @@
     "defence": ["Mud-Slap", "Outrage"],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["horsea", "horsee"],
@@ -1451,7 +1451,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["starmie"],
@@ -1463,7 +1463,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["mr mime", "mr. mime", "mrmime", "mister mime"],
@@ -1499,7 +1499,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["electabuzz", "electabuz", "electabus"],
@@ -1547,7 +1547,7 @@
     "defence": ["Zen Headbutt", "Iron Head"],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["magikarp"],
@@ -1595,7 +1595,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["eevee"],
@@ -1655,7 +1655,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["omanyte", "omanite"],
@@ -1739,7 +1739,7 @@
     "defence": [],
     "recplayers": 5,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["zapdos"],
@@ -1751,7 +1751,7 @@
     "defence": [],
     "recplayers": 5,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["moltres"],
@@ -1763,7 +1763,7 @@
     "defence": [],
     "recplayers": 4,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["dratini"],
@@ -1811,7 +1811,7 @@
     "defence": [],
     "recplayers": 6,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["mew"],
@@ -1823,7 +1823,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["chikorita", "chicorita"],
@@ -2424,7 +2424,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  true
+    "rare":  true
   },
   {
     "keys": ["wobbuffet", "wobufet", "wobbufet", "wobuffet"],
@@ -2511,8 +2511,8 @@
     "rare":  false
   },
   {
-    "keys": ["snubbel", "snubbell", "snubbel"],
-    "name": "Snubbell",
+    "keys": ["snubbull", "snubbul", "snubbel", "snubbell", "snubbel"],
+    "name": "Snubbull",
     "number": 209,
     "type": ["fairy"],
     "stats": [137, 89, 120],
@@ -2808,7 +2808,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["stantler"],
@@ -2844,7 +2844,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["hitmontop"],
@@ -2856,7 +2856,7 @@
     "defence": ["Rock Smash", "Stone Edge"],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["smoochum"],
@@ -2868,7 +2868,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["elekid"],
@@ -2904,7 +2904,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["blissey", "blisey", "blissy", "blisy"],
@@ -2916,7 +2916,7 @@
     "defence": ["Zen Headbutt", "Dazzling Gleam"],
     "recplayers": 0,
     "gender": false,
-     "rare":  true
+    "rare":  true
   },
   {
     "keys": ["raikou"],
@@ -2928,7 +2928,7 @@
     "defence": [],
     "recplayers": 5,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["entei"],
@@ -2940,7 +2940,7 @@
     "defence": [],
     "recplayers": 5,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["suicune"],
@@ -2952,7 +2952,7 @@
     "defence": [],
     "recplayers": 6,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["larvitar"],
@@ -3000,7 +3000,7 @@
     "defence": [],
     "recplayers": 7,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["ho-oh", "hooh", "ho oh"],
@@ -3012,7 +3012,7 @@
     "defence": [],
     "recplayers": 5,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["celebi", "celeby"],
@@ -3024,7 +3024,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["treecko", "treeko"],
@@ -3516,7 +3516,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["whismur", "wishmur", "whishmur", "wismur"],
@@ -4056,7 +4056,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["solrock"],
@@ -4068,7 +4068,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["barboach"],
@@ -4500,7 +4500,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["metang"],
@@ -4512,7 +4512,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["metagross", "metagros"],
@@ -4524,7 +4524,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["regirock"],
@@ -4548,7 +4548,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["registeel"],
@@ -4560,7 +4560,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["latias"],
@@ -4572,7 +4572,7 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-     "rare":  false
+    "rare":  false
   },
   {
     "keys": ["latios"],
