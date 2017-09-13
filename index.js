@@ -41,6 +41,14 @@ client.on('message', async (msg) => {
     return;
   }
 
+
+  // DEPRECATED determine if the bot activates or not
+  var msgText = msg.content.toLowerCase().substr(1).trim();
+  let prefixs = settings.prefixs;
+  let moderator = settings.moderator;
+
+
+  // new stuff
   new GymResponse(msg);
   new PokemonResponse(msg, pokemons);
   new PokemonSpottingResponse(msg);
@@ -50,21 +58,30 @@ client.on('message', async (msg) => {
   new TeamResponse(msg);
   new ChannelRolesResponse(msg);
 
-  // delete amount of messages
-  if (msg.content.startsWith("delete")) {
+
+  if (msgText.startsWith("add")) {
     if (msg.member.roles.has(moderator)) {
-      var del = msg.content.split(" ");
+       let member = msg.mentions.members.first();
+       let role = msg.guild.roles.find("name",
+       "makingdelftblueagain");
+       member.addRole(role).catch(console.error);
+       msg.channel.send(`Welkom ` + member + `, je bent nu officieel toegevoegd! In het kanaal <#` + settings.welkom + `> is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Daarnaast sta ik natuurlijk ook tot je beschikking! Door '!help' te typen kun je zien wat ik allemaal voor je kan doen! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, met je level erachter (channel settings, change nickname), zodat we weten wie iedereen is;)`);
+    } else {
+       msg.reply("Leden verifieren kan alleen door een moderator worden gedaan")}
+       msg.delete()
+     }
+
+  // delete amount of messages
+  if (msgText.startsWith("delete")) {
+    if (msg.member.roles.has(moderator)) {
+      var del = msgText.split(" ");
       del.splice(0, 1);
-      msg.channel.bulkDelete(del);
+      msg.channel.bulkDelete(del + 1);
     } else {
       msg.reply("Alleen moderators kunnen berichten verwijderen");
     }
     msg.delete();
   }
-
-
-  let prefixs = settings.prefixs;
-  let moderator = settings.moderator;
 
   //determine if the bot activates or not
   let msgPrefix = msg.content[0];
