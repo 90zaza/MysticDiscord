@@ -163,7 +163,7 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
   }
 
   let gym = gyms.find((item) => {
-    return item.keys.includes(gymName);
+    return item.keys.startsWith(gymName);
   });
 
   let embed = new Discord.RichEmbed()
@@ -184,11 +184,11 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
     //text in #raids with mention of role
     setTimeout(() => {
       let channel = msg.guild.channels.find("name", "raids");
-      if (pokemon.name === "Snorlax" || pokemon.name === "Machamp" || pokemon.name === "Tyranitar" || pokemon.name === "Lapras") {
+      if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
         let role = msg.guild.roles.find("name", pokemon.name);
-        channel.send(`Raid${id}: ${role}`)
+        channel.send(`Raid${id}: ${role}`);
       } else {
-        channel.send(`Raid${id}: ${pokemon.name}`)
+        channel.send(`Raid${id}: ${pokemon.name}`);
       }
     }, 500);
   }
