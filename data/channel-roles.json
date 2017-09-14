@@ -41,6 +41,30 @@
     "reply": "You now have access to the English channel!",
     "action": "add"
   },
+  {
+    "keys": ["+snorlax"],
+    "name": "Snorlax",
+    "reply": "Je ontvangt nu notificaties voor Snorlax Raids!",
+    "action": "add"
+  },
+  {
+    "keys": ["+lapras"],
+    "name": "Lapras",
+    "reply": "Je ontvangt nu notificaties voor Lapras Raids!",
+    "action": "add"
+  },
+  {
+    "keys": ["+machamp"],
+    "name": "Machamp",
+    "reply": "Je ontvangt nu notificaties voor Machamp Raids!",
+    "action": "add"
+  },
+  {
+    "keys": ["+tyranitar", "+ttar", "+tiranitar"],
+    "name": "Tyranitar",
+    "reply": "Je ontvangt nu notificaties voor Tyranitar Raids!",
+    "action": "add"
+  },
 
   {
     "keys": ["-centrum"],
@@ -82,6 +106,30 @@
     "keys": ["-english"],
     "name": "English",
     "reply": "You now have lost access to the English channel!",
+    "action": "remove"
+  },
+  {
+    "keys": ["-snorlax"],
+    "name": "Snorlax",
+    "reply": "Je ontvangt nu geen notificaties meer voor Snorlax Raids!",
+    "action": "remove"
+  },
+  {
+    "keys": ["-lapras"],
+    "name": "Lapras",
+    "reply": "Je ontvangt nu geen notificaties meer voor Lapras Raids!",
+    "action": "remove"
+  },
+  {
+    "keys": ["-machamp"],
+    "name": "Machamp",
+    "reply": "Je ontvangt nu geen notificaties meer voor Machamp Raids!",
+    "action": "remove"
+  },
+  {
+    "keys": ["-tyranitar", "-ttar", "-tiranitar"],
+    "name": "Tyranitar",
+    "reply": "Je ontvangt nu geen notificaties meer voor Tyranitar Raids!",
     "action": "remove"
   }
 ]
