@@ -8,7 +8,7 @@ module.exports = class GenericResponse extends Message {
     this.replyObject = this.getReply();
 
     if(this.replyObject) {
-      this.reply(this.replyObject.reply);
+      this.newMessage(this.replyObject.reply);
     }
   }
 
