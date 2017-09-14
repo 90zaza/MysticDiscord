@@ -180,7 +180,7 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
   if (message) {
     return message.edit({embed});
   } else {
-    channel.send({embed});
+    return channel.send({embed});
     //text in #raids with mention of role
 //    setTimeout(() => {
 //      let channel = msg.guild.channels.find("name", "raids");
@@ -191,8 +191,7 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
 //        channel.send(`Raid ${id}: ${pokemon.name}`);
 //      }
 //    }, 500);
-    return
-  }
+    }
 }
 
 async function addRaid (msg, boss) {
