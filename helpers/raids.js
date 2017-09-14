@@ -181,6 +181,16 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
     return message.edit({embed});
   } else {
     return channel.send({embed});
+    //text in #raids with mention of role
+    setTimeout(() => {
+      let channel = msg.guild.channels.find("name", "raids");
+      if (pokemon.name === "Snorlax" || pokemon.name === "Machamp" || pokemon.name === "Tyranitar" || pokemon.name === "Lapras") {
+        let role = msg.guild.roles.find("name", pokemon.name);
+        channel.send(`Raid${id}: ${role}`)
+      } else {
+        channel.send(`Raid${id}: ${pokemon.name}`)
+      }
+    }, 500);
   }
 }
 
@@ -261,16 +271,6 @@ async function addRaid (msg, boss) {
   for (let raid in raidsNeedToBeDeleted) {
     msg.guild.channels.find("name", "raids_meldingen").messages.find("id", raid.dataValues.messageid).delete();
   }
-
-//text in #raids with mention of role
-//let role = msg.guild.roles.find("name", pokemon.name);
-//let channel = msg.guild.channels.find("name", "raids");
-//if (pokemon.name === "Snorlax" || pokemon.name === "Machamp" || pokemon.name === "Tyranitar" || pokemon.name === "Lapras") {
-//  channel.send(`Raid #${id}: ${role}`)
-//} else {
-//  channel.send(`Raid #${id}: ${boss}`)
-//}
-
 
 }
 
