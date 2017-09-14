@@ -76,7 +76,7 @@ client.on('message', async (msg) => {
     if (msg.member.roles.has(moderator)) {
       var del = msgText.split(" ");
       del.splice(0, 1);
-      msg.channel.bulkDelete(del + 1);
+      msg.channel.bulkDelete(del);
     } else {
       msg.reply("Alleen moderators kunnen berichten verwijderen");
     }
