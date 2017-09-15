@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const Sequelize = require('sequelize');
 const moment = require('moment');
+const Message = require('../models/message');
 const pokemons = require('../data/pokemons.json');
 const gyms = require('../data/gyms.json');
 
@@ -162,8 +163,10 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
     joining = joinedPlayers.join("\n");
   }
 
-  let gym = gyms.find((item) => {
-    return item.keys.includes(gymName);
+  const gym = gyms.find( (gym) => {
+    return gym.keys.find( (key) => {
+      return gymName.trim().toLowerCase().startsWith(key);
+    });
   });
 
   let embed = new Discord.RichEmbed()
