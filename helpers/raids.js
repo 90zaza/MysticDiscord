@@ -178,21 +178,18 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
   let channel = msg.guild.channels.find("name", "raids_meldingen");
   let message = channel.messages.find("id", msgId);
   if (message) {
-    message.edit({embed});
+    return message.edit({embed});
     return
   } else {
-    channel.send({embed});
-    //text in #raids with mention of role
-    setTimeout(() => {
-      let channel = msg.guild.channels.find("name", "raids");
-      if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
-        let role = msg.guild.roles.find("name", pokemon.name);
-        channel.send(`Raid ${id}: ${role}`);
-      } else {
-        channel.send(`Raid ${id}: ${pokemon.name}`);
-      }
-   }, 500);
-   return
+    return channel.send({embed});
+//text in #raids with mention of role
+//      let channel = msg.guild.channels.find("name", "raids");
+//      if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
+//        let role = msg.guild.roles.find("name", pokemon.name);
+//        channel.send(`Raid ${id}: ${role}`);
+//      } else {
+//        channel.send(`Raid ${id}: ${pokemon.name}`);
+//      }
     }
 }
 
