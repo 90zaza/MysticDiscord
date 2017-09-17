@@ -712,7 +712,7 @@
     "name": "Arcanine",
     "number": 59,
     "stats": [227, 166, 180],
-    "type": ["Fire"],
+    "type": ["fire"],
     "attacks": ["Fire Fang", "Fire Blast"],
     "defence": [],
     "recplayers": 3,
