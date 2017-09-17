@@ -28,7 +28,7 @@ module.exports = class GenericResponse extends Message {
       }
       this.reply(this.channelRole.reply)
     } catch (error) {
-      this.reply('oops, dit ging niet helemaal goed... Wat was ik ook alweer aan het doen?')
+      this.reply('Oepsie, misschien ergens een typ fout?')
       console.error(error);
     }
   }

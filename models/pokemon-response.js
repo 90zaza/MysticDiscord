@@ -78,6 +78,9 @@ module.exports = class PokemonResponse extends Message {
     if (this.pokemon.recplayers > 0) {
       embed.setDescription("Bring at least " + this.pokemon.recplayers + " trainers to a raid battle.");
     }
+    if (this.pokemon.description != 0) {
+      embed.setFooter(this.pokemon.description);
+    }
 
     // dynamically compute defense values for type combinations
     let def = JSON.parse(JSON.stringify(defense[this.pokemon.type[0]]));

@@ -9,7 +9,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["bulba", "bulbasaur"],
@@ -21,7 +22,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["ivysaur"],
@@ -33,7 +35,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["venusaur"],
@@ -45,7 +48,8 @@
     "defence": [],
     "recplayers": 5,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["charmander"],
@@ -57,7 +61,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["charmeleon"],
@@ -69,7 +74,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["charizard"],
@@ -81,7 +87,8 @@
     "defence": [],
     "recplayers": 4,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["squirtle"],
@@ -93,7 +100,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["wartortle"],
@@ -105,7 +113,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["blastoise"],
@@ -117,7 +126,8 @@
     "defence": [],
     "recplayers": 5,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["caterpie"],
@@ -129,7 +139,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["metapod"],
@@ -141,7 +152,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["buterfree"],
@@ -153,7 +165,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["weedle"],
@@ -165,7 +178,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["kakuna"],
@@ -177,7 +191,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["beedrill"],
@@ -189,7 +204,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["pidgey"],
@@ -201,7 +217,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["pidgeotto"],
@@ -213,7 +230,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["pidgeot"],
@@ -225,7 +243,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["rattata"],
@@ -237,7 +256,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["raticate"],
@@ -249,7 +269,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["spearow"],
@@ -261,7 +282,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["fearow"],
@@ -273,7 +295,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["ekans"],
@@ -285,7 +308,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["arbok"],
@@ -297,7 +321,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["pikachu"],
@@ -309,7 +334,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["raichu"],
@@ -321,7 +347,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["sandshrew"],
@@ -333,7 +360,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["sandslash"],
@@ -345,7 +373,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["nidoranf"],
@@ -357,7 +386,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["nidorina"],
@@ -369,7 +399,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["nidoqueen"],
@@ -381,7 +412,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["nidoranm"],
@@ -393,7 +425,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["nidorino"],
@@ -405,7 +438,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["nidoking"],
@@ -417,7 +451,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["clefairy"],
@@ -429,7 +464,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["clefable"],
@@ -441,7 +477,8 @@
     "defence": ["Zen Headbutt", "Dazzling Gleam"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["vulpix"],
@@ -453,7 +490,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["ninetales"],
@@ -465,7 +503,8 @@
     "defence": ["Fire Spin", "Overheat"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["jigglypuff"],
@@ -477,7 +516,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["wigglytuff"],
@@ -489,7 +529,8 @@
     "defence": ["Pound", "Play Rough"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["zubat"],
@@ -501,7 +542,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["golbat"],
@@ -513,7 +555,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["oddish"],
@@ -525,7 +568,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["gloom"],
@@ -537,7 +581,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["vileplume"],
@@ -549,7 +594,8 @@
     "defence": ["Razor Leaf", "Solar Beam"],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["paras"],
@@ -561,7 +607,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["parasect"],
@@ -573,7 +620,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["venonat"],
@@ -585,7 +633,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["venomoth"],
@@ -597,7 +646,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["diglett"],
@@ -609,7 +659,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["dugtrio"],
@@ -621,7 +672,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["meowth"],
@@ -633,7 +685,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["persian"],
@@ -645,7 +698,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["psyduck"],
@@ -657,7 +711,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["golduck"],
@@ -669,7 +724,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["mankey"],
@@ -681,7 +737,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["primeape"],
@@ -693,7 +750,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["growlithe"],
@@ -705,7 +763,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["arcanine"],
@@ -717,7 +776,8 @@
     "defence": [],
     "recplayers": 3,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["poliwag"],
@@ -729,7 +789,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["poliwhirl"],
@@ -741,7 +802,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["poliwrath"],
@@ -753,7 +815,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["abra"],
@@ -765,7 +828,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["kadabra"],
@@ -777,7 +841,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["alakazam"],
@@ -789,7 +854,8 @@
     "defence": [],
     "recplayers": 2,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["machop"],
@@ -801,7 +867,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["machoke"],
@@ -813,7 +880,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["machamp"],
@@ -825,7 +893,8 @@
     "defence": [],
     "recplayers": 2,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["bellsprout"],
@@ -837,7 +906,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["weepinbell"],
@@ -849,7 +919,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["victreebel"],
@@ -861,7 +932,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["tentacool"],
@@ -873,7 +945,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["tentacruel"],
@@ -885,7 +958,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["geodude"],
@@ -897,7 +971,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["graveler"],
@@ -909,7 +984,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["golem"],
@@ -921,7 +997,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["ponita"],
@@ -933,7 +1010,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["rapidash"],
@@ -945,7 +1023,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["slowpoke"],
@@ -957,7 +1036,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["slowbro", "slobro"],
@@ -969,7 +1049,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["magnemite"],
@@ -981,7 +1062,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["magneton"],
@@ -993,7 +1075,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["farfetch", "farfetchd", "farfetch'd", "farfetcht"],
@@ -1005,7 +1088,8 @@
     "defence": ["Fury Cutter", "Leaf Blade"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["doduo"],
@@ -1017,7 +1101,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["dodrio"],
@@ -1029,7 +1114,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["seel", "seal"],
@@ -1041,7 +1127,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["dewgong"],
@@ -1053,7 +1140,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["grimer"],
@@ -1065,7 +1153,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["muk"],
@@ -1077,7 +1166,8 @@
     "defence": [],
     "recplayers": 2,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["shellder", "shelder"],
@@ -1089,7 +1179,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["cloyster", "cloister"],
@@ -1101,7 +1192,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["gastly", "ghastly"],
@@ -1113,7 +1205,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["hounter", "haunter"],
@@ -1125,7 +1218,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["gengar"],
@@ -1137,7 +1231,8 @@
     "defence": [],
     "recplayers": 2,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["onix"],
@@ -1149,7 +1244,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["drowzee"],
@@ -1161,7 +1257,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["hypno"],
@@ -1173,7 +1270,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["krabby", "kraby"],
@@ -1185,7 +1283,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["kingler"],
@@ -1197,7 +1296,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["voltorb"],
@@ -1209,7 +1309,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["electrode"],
@@ -1221,7 +1322,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["exeggcute", "exeggute", "eggecute", "exegute", "execute",
@@ -1234,7 +1336,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
 
   {
@@ -1247,7 +1350,8 @@
     "defence": [],
     "recplayers": 2,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["cubone"],
@@ -1259,7 +1363,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["marowak", "marrowak"],
@@ -1271,7 +1376,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["hitmonlee"],
@@ -1283,7 +1389,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["hitmonchan"],
@@ -1295,7 +1402,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["lickytung", "lickitung"],
@@ -1307,7 +1415,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["koffing"],
@@ -1319,7 +1428,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["weezing"],
@@ -1331,7 +1441,8 @@
     "defence": [],
     "recplayers": 2,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["rhyhorn", "ryhorn"],
@@ -1343,7 +1454,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["rhydon"],
@@ -1355,7 +1467,8 @@
     "defence": [],
     "recplayers": 5,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["chansey", "chansy"],
@@ -1367,7 +1480,8 @@
     "defence": ["Zen Headbutt", "Dazzling Gleam"],
     "recplayers": 0,
     "gender": false,
-    "rare":  true
+    "rare":  true,
+    "description": 0
   },
   {
     "keys": ["tangela"],
@@ -1379,7 +1493,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["kangaskhan", "kanghaskan", "kangaskan", "khangaskan"],
@@ -1391,7 +1506,8 @@
     "defence": ["Mud-Slap", "Outrage"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["horsea", "horsee"],
@@ -1403,7 +1519,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["seadra", "seedra"],
@@ -1415,7 +1532,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["goldeen"],
@@ -1427,7 +1545,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["seaking", "seeking"],
@@ -1439,7 +1558,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["staryu"],
@@ -1451,7 +1571,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["starmie"],
@@ -1463,7 +1584,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["mr mime", "mr. mime", "mrmime", "mister mime"],
@@ -1475,7 +1597,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["scyther", "syther", "scyter"],
@@ -1487,7 +1610,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["jynx"],
@@ -1499,7 +1623,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["electabuzz", "electabuz", "electabus"],
@@ -1511,7 +1636,8 @@
     "defence": [],
     "recplayers": 2,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["magmar"],
@@ -1523,7 +1649,8 @@
     "defence": [],
     "recplayers": 2,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["pinsir"],
@@ -1535,7 +1662,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["tauros"],
@@ -1547,7 +1675,8 @@
     "defence": ["Zen Headbutt", "Iron Head"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["magikarp"],
@@ -1559,7 +1688,8 @@
     "defence": [],
     "recplayers": 1,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["gyarados", "garados", "gyrados", "gerados"],
@@ -1571,7 +1701,8 @@
     "defence": ["Dragon Tail", "Hydro Pump"],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["lapras"],
@@ -1583,7 +1714,8 @@
     "defence": ["Frost Breath", "Ice Beam"],
     "recplayers": 7,
     "gender": false,
-    "rare":  true
+    "rare":  true,
+    "description": 0
   },
   {
     "keys": ["ditto", "dito"],
@@ -1595,7 +1727,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["eevee"],
@@ -1607,7 +1740,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["vaporeon"],
@@ -1619,7 +1753,8 @@
     "defence": [],
     "recplayers": 3,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["jolteon"],
@@ -1631,7 +1766,8 @@
     "defence": [],
     "recplayers": 3,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["flareon"],
@@ -1643,7 +1779,8 @@
     "defence": [],
     "recplayers": 3,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["porygon"],
@@ -1655,7 +1792,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["omanyte", "omanite"],
@@ -1667,7 +1805,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["omastar"],
@@ -1679,7 +1818,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["kabuto"],
@@ -1691,7 +1831,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["kabutops"],
@@ -1703,7 +1844,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["aerodactyl", "arodactyl", "aerodactil"],
@@ -1715,7 +1857,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["snorlax"],
@@ -1727,7 +1870,8 @@
     "defence": ["Zen Headbutt", "Heavy Slam"],
     "recplayers": 7,
     "gender": false,
-    "rare":  true
+    "rare":  true,
+    "description": 0
   },
   {
     "keys": ["articuno", "arti"],
@@ -1739,7 +1883,8 @@
     "defence": [],
     "recplayers": 5,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["zapdos"],
@@ -1751,7 +1896,8 @@
     "defence": [],
     "recplayers": 5,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["moltres"],
@@ -1763,7 +1909,8 @@
     "defence": [],
     "recplayers": 4,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["dratini"],
@@ -1775,7 +1922,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["dragonair"],
@@ -1787,7 +1935,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["dragonite"],
@@ -1799,7 +1948,8 @@
     "defence": ["Dragon Tail", "Outrage"],
     "recplayers": 0,
     "gender": false,
-    "rare":  true
+    "rare":  true,
+    "description": 0
   },
   {
     "keys": ["mewtwo"],
@@ -1811,7 +1961,8 @@
     "defence": [],
     "recplayers": 6,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["mew"],
@@ -1823,7 +1974,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["chikorita", "chicorita"],
@@ -1835,7 +1987,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["bayleef"],
@@ -1847,7 +2000,8 @@
     "defence": [],
     "recplayers": 1,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["meganium"],
@@ -1859,7 +2013,8 @@
     "defence": ["Razor Leaf", "Solar Beam"],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["cindaquil", "cindaquill"],
@@ -1871,7 +2026,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["quilava"],
@@ -1883,7 +2039,8 @@
     "defence": [],
     "recplayers": 1,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["typhlosion", "typlosion"],
@@ -1895,7 +2052,8 @@
     "defence": ["Ember", "Overheat"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["totodyle", "totodyl", "totodile"],
@@ -1907,7 +2065,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["croconaw"],
@@ -1919,7 +2078,8 @@
     "defence": [],
     "recplayers": 1,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["feraligatr", "fraligatr", "feraligater", "fraligator",
@@ -1932,7 +2092,8 @@
     "defence": ["Water Gun", "Ice Beam"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["sentret"],
@@ -1944,7 +2105,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["furret"],
@@ -1956,7 +2118,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["hoothoot", "hoot hoot", "hoot-hoot"],
@@ -1968,7 +2131,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["noctowl", "noctol"],
@@ -1980,7 +2144,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["lediba", "ledyba"],
@@ -1992,7 +2157,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["ledian"],
@@ -2004,7 +2170,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["spinarak"],
@@ -2016,7 +2183,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["ariados"],
@@ -2028,7 +2196,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["crobat"],
@@ -2040,7 +2209,8 @@
     "defence": ["Air Slash", "Sludge Bomb"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["chinchou"],
@@ -2052,7 +2222,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["lanturn"],
@@ -2064,7 +2235,8 @@
     "defence": ["Charge Beam", "Thunderbolt"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["pichu"],
@@ -2076,7 +2248,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["cleffa"],
@@ -2088,7 +2261,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["igglybuff", "iglybuff", "iglybuf", "igglybuf"],
@@ -2100,7 +2274,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["togepi"],
@@ -2112,7 +2287,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["togetic"],
@@ -2124,7 +2300,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["natu"],
@@ -2136,7 +2313,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["xatu"],
@@ -2148,7 +2326,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["mareep"],
@@ -2160,7 +2339,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  true
+    "rare":  true,
+    "description": 0
   },
   {
     "keys": ["flaaffy", "flafy", "flaafy"],
@@ -2172,7 +2352,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  true
+    "rare":  true,
+    "description": 0
   },
   {
     "keys": ["ampharos", "amparos"],
@@ -2184,7 +2365,8 @@
     "defence": ["Volt Switch", "Zap Cannon"],
     "recplayers": 0,
     "gender": false,
-    "rare":  true
+    "rare":  true,
+    "description": 0
   },
   {
     "keys": ["bellossom", "belosom", "bellosom", "belossom"],
@@ -2196,7 +2378,8 @@
     "defence": ["Razor Lear", "Leaf Blade"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["marill", "maril"],
@@ -2208,7 +2391,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["azumarill", "azumaril"],
@@ -2220,7 +2404,8 @@
     "defence": ["Rock Smash", "Play Rough"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["sudowoodo", "sudowodo", "sodowodo", "sodowoodo"],
@@ -2232,7 +2417,8 @@
     "defence": ["Rock Throw", "Rock Slide"],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["politoed"],
@@ -2244,7 +2430,8 @@
     "defence": ["Bubble", "Hydro Pump"],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["hoppip"],
@@ -2256,7 +2443,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["skiploom"],
@@ -2268,7 +2456,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["jumpluff", "jumpluf"],
@@ -2280,7 +2469,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["aipom"],
@@ -2292,7 +2482,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["sunkern"],
@@ -2304,7 +2495,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["sunflora"],
@@ -2316,7 +2508,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["yanma"],
@@ -2328,7 +2521,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["wooper"],
@@ -2340,7 +2534,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["quagsire", "quacsire"],
@@ -2352,7 +2547,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["espeon"],
@@ -2364,7 +2560,8 @@
     "defence": ["Confusion", "Psybeam"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["umbreon"],
@@ -2376,7 +2573,8 @@
     "defence": ["Snarl", "Foul Play"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["murkrow"],
@@ -2388,7 +2586,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["slowking"],
@@ -2400,7 +2599,8 @@
     "defence": ["Confusion", "Psychic"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["misdreavus", "misdrevus", "misdravus"],
@@ -2412,7 +2612,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["unown", "unknown"],
@@ -2424,7 +2625,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  true
+    "rare":  true,
+    "description": 0
   },
   {
     "keys": ["wobbuffet", "wobufet", "wobbufet", "wobuffet"],
@@ -2436,7 +2638,8 @@
     "defence": ["Counter", "Mirror Coat"],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["girafarig"],
@@ -2448,7 +2651,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["pineco"],
@@ -2460,7 +2664,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["forretress", "forretres", "foretress", "foretres"],
@@ -2472,7 +2677,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["dunsparce", "dunspars"],
@@ -2484,7 +2690,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["gligar"],
@@ -2496,7 +2703,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["steelix"],
@@ -2508,7 +2716,8 @@
     "defence": ["Iron Tail", "Heavy Slam"],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["snubbull", "snubbul", "snubbel", "snubbell", "snubbel"],
@@ -2520,7 +2729,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["granbull", "granbul"],
@@ -2532,7 +2742,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["qwilfish", "quilfish"],
@@ -2544,7 +2755,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["scizor", "sizor"],
@@ -2556,7 +2768,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["shuckle", "shukle"],
@@ -2568,7 +2781,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": "Don't fuckle with Shuckle"
   },
   {
     "keys": ["heracross", "heracros"],
@@ -2580,7 +2794,8 @@
     "defence": ["Stuggle Bug", "Close Combat"],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["sneasel"],
@@ -2592,7 +2807,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["teddiursa", "tediursa"],
@@ -2604,7 +2820,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["ursaring"],
@@ -2616,7 +2833,8 @@
     "defence": ["Counter", "Play Rough"],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["slugma"],
@@ -2628,7 +2846,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["magcargo", "magarco"],
@@ -2640,7 +2859,8 @@
     "defence": ["Rock Throw", "Stone Edge"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["swinub"],
@@ -2652,7 +2872,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["piloswine", "pilowswine"],
@@ -2664,7 +2885,8 @@
     "defence": ["Ice Shard", "Avalanche"],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["corsola"],
@@ -2676,7 +2898,8 @@
     "defence": ["Buggle", "Power Gem"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["remoraid"],
@@ -2688,7 +2911,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["octillery", "octilery"],
@@ -2700,7 +2924,8 @@
     "defence": ["Water Gun", "Water Pulse"],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["delibird"],
@@ -2712,7 +2937,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["mantine"],
@@ -2724,7 +2950,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["skarmory"],
@@ -2736,7 +2963,8 @@
     "defence": ["Air Slash", "Sky Attack"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["houndour"],
@@ -2748,7 +2976,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["houndoom"],
@@ -2760,7 +2989,8 @@
     "defence": ["Snarl", "Foul Play"],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["kingdra"],
@@ -2772,7 +3002,8 @@
     "defence": ["Dragon Breath", "Outrage"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["phanpy", "phanphy"],
@@ -2784,7 +3015,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["donphan"],
@@ -2796,7 +3028,8 @@
     "defence": ["Counter", "Play Rough"],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["porygon2", "porygon 2", "porigon2", "porigon 2"],
@@ -2808,7 +3041,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["stantler"],
@@ -2820,7 +3054,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["smeargle"],
@@ -2832,7 +3067,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["tyrogue", "tyroge"],
@@ -2844,7 +3080,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["hitmontop"],
@@ -2856,7 +3093,8 @@
     "defence": ["Rock Smash", "Stone Edge"],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["smoochum"],
@@ -2868,7 +3106,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["elekid"],
@@ -2880,7 +3119,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["magby"],
@@ -2892,7 +3132,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["miltank"],
@@ -2904,7 +3145,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["blissey", "blisey", "blissy", "blisy"],
@@ -2916,7 +3158,8 @@
     "defence": ["Zen Headbutt", "Dazzling Gleam"],
     "recplayers": 0,
     "gender": false,
-    "rare":  true
+    "rare":  true,
+    "description": 0
   },
   {
     "keys": ["raikou"],
@@ -2928,7 +3171,8 @@
     "defence": [],
     "recplayers": 5,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["entei"],
@@ -2940,7 +3184,8 @@
     "defence": [],
     "recplayers": 5,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["suicune"],
@@ -2952,7 +3197,8 @@
     "defence": [],
     "recplayers": 6,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["larvitar"],
@@ -2964,7 +3210,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  true
+    "rare":  true,
+    "description": 0
   },
   {
     "keys": ["pupitar"],
@@ -2976,7 +3223,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  true
+    "rare":  true,
+    "description": 0
   },
   {
     "keys": ["tyranitar", "ttar", "tyra", "tyranitair"],
@@ -2988,7 +3236,8 @@
     "defence": [],
     "recplayers": 5,
     "gender": false,
-    "rare":  true
+    "rare":  true,
+    "description": 0
   },
   {
     "keys": ["lugia"],
@@ -3000,7 +3249,8 @@
     "defence": [],
     "recplayers": 7,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["ho-oh", "hooh", "ho oh"],
@@ -3012,7 +3262,8 @@
     "defence": [],
     "recplayers": 5,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["celebi", "celeby"],
@@ -3024,7 +3275,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["treecko", "treeko"],
@@ -3036,7 +3288,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["grovyle", "grovile"],
@@ -3048,7 +3301,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["sceptile", "sceptile", "septile", "septyle"],
@@ -3060,7 +3314,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["torchic", "torchik"],
@@ -3072,7 +3327,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["combusken"],
@@ -3084,7 +3340,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["blaziken"],
@@ -3096,7 +3353,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["mudkip"],
@@ -3108,7 +3366,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["marshtomp", "marstomp"],
@@ -3120,7 +3379,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["swampert"],
@@ -3132,7 +3392,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["poochyena"],
@@ -3144,7 +3405,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["mightyena", "mighthyena"],
@@ -3156,7 +3418,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["zigzagoon"],
@@ -3168,7 +3431,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["linoone", "linone"],
@@ -3180,7 +3444,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["wurmple", "wurmpel"],
@@ -3192,7 +3457,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["silcoon"],
@@ -3204,7 +3470,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["beautifly"],
@@ -3216,7 +3483,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["cascoon"],
@@ -3228,7 +3496,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["dustox"],
@@ -3240,7 +3509,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["lotad"],
@@ -3252,7 +3522,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["lombre"],
@@ -3264,7 +3535,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["ludicolo", "ludikolo"],
@@ -3276,7 +3548,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["seedot"],
@@ -3288,7 +3561,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["nuzleaf", "nuzleef"],
@@ -3300,7 +3574,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["shiftry", "shiftree"],
@@ -3312,7 +3587,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["taillow", "tailow"],
@@ -3324,7 +3600,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["swellow", "swelow"],
@@ -3336,7 +3613,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["wingull", "wingul"],
@@ -3348,7 +3626,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["pelipper", "pelipper", "pellipper", "pelliper"],
@@ -3360,7 +3639,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["ralts"],
@@ -3372,7 +3652,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["kirlia"],
@@ -3384,7 +3665,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["gardevoir"],
@@ -3396,7 +3678,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["surskit"],
@@ -3408,7 +3691,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["masquerain"],
@@ -3420,7 +3704,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["shroomish", "schroomish", "sroomish"],
@@ -3432,7 +3717,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["breloom"],
@@ -3444,7 +3730,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["slakoth", "slakot"],
@@ -3456,7 +3743,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["vigoroth", "vigorot"],
@@ -3468,7 +3756,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["slaking"],
@@ -3480,7 +3769,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["nincada"],
@@ -3492,7 +3782,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["ninjask"],
@@ -3504,7 +3795,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["shedinja"],
@@ -3516,7 +3808,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["whismur", "wishmur", "whishmur", "wismur"],
@@ -3528,7 +3821,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["loudred"],
@@ -3540,7 +3834,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["exploud"],
@@ -3552,7 +3847,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["makuhita"],
@@ -3564,7 +3860,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["hariyama"],
@@ -3576,7 +3873,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["azurill", "azuril"],
@@ -3588,7 +3886,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["nosepass", "nosepas", "nospass", "nospas"],
@@ -3600,7 +3899,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["skitty"],
@@ -3612,7 +3912,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["delcatty", "delcaty"],
@@ -3624,7 +3925,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["sableye"],
@@ -3636,7 +3938,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["mawile", "mawhile"],
@@ -3648,7 +3951,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["aron"],
@@ -3660,7 +3964,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["lairon"],
@@ -3672,7 +3977,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["aggron", "agron"],
@@ -3684,7 +3990,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["meditite"],
@@ -3696,7 +4003,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["medicham"],
@@ -3708,7 +4016,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["electrike"],
@@ -3720,7 +4029,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["manectric"],
@@ -3732,7 +4042,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["plusle"],
@@ -3744,7 +4055,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["minum"],
@@ -3756,7 +4068,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["volbeat"],
@@ -3768,7 +4081,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["illumise", "ilumise", "illumize", "ilumize"],
@@ -3780,7 +4094,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["roselia", "rosalia"],
@@ -3792,7 +4107,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["gulpin"],
@@ -3804,7 +4120,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["swalot"],
@@ -3816,7 +4133,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["carvanha", "carvana"],
@@ -3828,7 +4146,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["sharpedo"],
@@ -3840,7 +4159,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["wailmer"],
@@ -3852,7 +4172,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["wailord"],
@@ -3864,7 +4185,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["numel"],
@@ -3876,7 +4198,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["camerupt"],
@@ -3888,7 +4211,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["torkoal"],
@@ -3900,7 +4224,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["spoink"],
@@ -3912,7 +4237,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["grumpig"],
@@ -3924,7 +4250,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["spinda"],
@@ -3936,7 +4263,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["trapinch"],
@@ -3948,7 +4276,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["vibrava"],
@@ -3960,7 +4289,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["flygon"],
@@ -3972,7 +4302,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["cacnea"],
@@ -3984,7 +4315,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["cacturne"],
@@ -3996,7 +4328,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["swablu"],
@@ -4008,7 +4341,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["altaria"],
@@ -4020,7 +4354,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["zangoose"],
@@ -4032,7 +4367,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["seviper"],
@@ -4044,7 +4380,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["lunatone"],
@@ -4056,7 +4393,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["solrock"],
@@ -4068,7 +4406,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["barboach"],
@@ -4080,7 +4419,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["whiscash", "whishcash", "wiscash", "wishcash"],
@@ -4092,7 +4432,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["corphish", "corfish"],
@@ -4104,7 +4445,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["crawdaunt"],
@@ -4116,7 +4458,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["baltoy"],
@@ -4128,7 +4471,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["claydol", "claydoll"],
@@ -4140,7 +4484,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["lileep"],
@@ -4152,7 +4497,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["cradily", "cradilly"],
@@ -4164,7 +4510,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["anorith", "anorit"],
@@ -4176,7 +4523,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["armaldo"],
@@ -4188,7 +4536,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["feebas"],
@@ -4200,7 +4549,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["milotic"],
@@ -4212,7 +4562,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["castform"],
@@ -4224,7 +4575,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["keckleon", "kekleon", "kecleon"],
@@ -4236,7 +4588,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["shuppet", "shupet"],
@@ -4248,7 +4601,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["banette", "banete"],
@@ -4260,7 +4614,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["duskull", "duskul"],
@@ -4272,7 +4627,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["dusclops"],
@@ -4284,7 +4640,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["tropius"],
@@ -4296,7 +4653,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["chimecho"],
@@ -4308,7 +4666,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["absol"],
@@ -4320,7 +4679,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["wynaut"],
@@ -4332,7 +4692,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["snorunt"],
@@ -4344,7 +4705,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["glalie"],
@@ -4356,7 +4718,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["spheal"],
@@ -4368,7 +4731,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["sealeo", "seeleo", "seleo"],
@@ -4380,7 +4744,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["walrein"],
@@ -4392,7 +4757,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["clamperl"],
@@ -4404,7 +4770,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["huntail"],
@@ -4416,7 +4783,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["gorebyss", "gorebys"],
@@ -4428,7 +4796,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["relicanth", "relicant"],
@@ -4440,7 +4809,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": true,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["luvdisc"],
@@ -4452,7 +4822,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["bagon"],
@@ -4464,7 +4835,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["shelgon"],
@@ -4476,7 +4848,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["salamence"],
@@ -4488,7 +4861,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["beldum"],
@@ -4500,7 +4874,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["metang"],
@@ -4512,7 +4887,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["metagross", "metagros"],
@@ -4524,7 +4900,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["regirock"],
@@ -4536,7 +4913,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["regice", "regiice"],
@@ -4548,7 +4926,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["registeel"],
@@ -4560,7 +4939,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["latias"],
@@ -4572,7 +4952,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["latios"],
@@ -4584,7 +4965,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["kyogre", "kyorge"],
@@ -4596,7 +4978,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["groudon"],
@@ -4608,7 +4991,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["rayquaza"],
@@ -4620,7 +5004,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["jirachi"],
@@ -4632,7 +5017,8 @@
     "defence": [],
     "recplayers": 0,
     "gender": false,
-    "rare":  false
+    "rare":  false,
+    "description": 0
   },
   {
     "keys": ["deoxys"],
@@ -4643,7 +5029,8 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
-    "rare":  false
+    "gender": false,,
+        "description": 0"rare":  false
+
   }
 ]
