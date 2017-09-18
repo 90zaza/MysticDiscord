@@ -73,9 +73,9 @@ client.on('message', async (msg) => {
 
     if (msgText.startsWith("feliciteer")) {
         let member = msg.mentions.members.first();
-        msg.channel.send(`Gefeliciteerd met het behalen van deze uitzonderlijke prestatie, ` + member + `! Als je op dezelfde manier doorgaat met presteren zal je een fantastische toekomst tegemoed gaan, ik ben heel erg trots op je!`);
+        msg.channel.send(`Gefeliciteerd met het behalen van deze uitzonderlijke prestatie, ` + member + `! Als je op dezelfde fantastische manier doorgaat zal je een geweldige toekomst tegemoed gaan, ik ben heel erg trots op je!`);
         msg.delete()
-    }     
+    }
 
   // delete amount of messages
   if (msgText.startsWith("delete")) {

@@ -15,7 +15,7 @@ module.exports = class PokemonSpottingResponse extends Message {
         return;
       }
 
-      if (this.message.content.includes('100%') || this.message.content.includes('100 %') || this.message.content.includes('perfect') ) {
+      if (this.message.content.includes('100%') || this.message.content.includes('100 %') || this.message.content.includes('100 p') || this.message.content.includes('100p') || this.message.content.includes('perfect')) {
         this.newMessage('Er is een 100% IV pokémon gespot, @everyone! (alleen voor lvl 30+)', true);
         return;
       }
