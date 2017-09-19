@@ -11,13 +11,9 @@ var raid;
 //This needs to be added to the .env file
 //testdiscord
 const mysticemoji = `<:mystic:351003868362178561>`
-const instinctemoji = `<:valor:351003870367055883>`
-const valoremoji = `<:instinct:351003868542271489>`
 
 //production
 //const mysticemoji = `<:mystic:340033299521077248>`
-//const instinctemoji = `<:valor:340141649474617346>`
-//const valoremoji = `<:instinct:340033299508363265>`
 
 exports.init = async () => {
 
@@ -215,7 +211,7 @@ async function addRaid (msg, boss) {
   let isMystic = textArray.indexOf("mystic") + textArray.indexOf(mysticemoji);
   if (isMystic >= 0) { // if yes
     // remove the element from the array
-    textArray.splice(isMystic, 1);
+    textArray.splice(isMystic, 0);
   }
   // if gym is blue this is > 0 otherwise 0
   ++isMystic;
@@ -300,7 +296,7 @@ async function updateRaid(msg) {
   let isMystic = textArray.indexOf("mystic") + textArray.indexOf(mysticemoji);
   if (isMystic >= 0) { // if yes
     // remove the element from the array
-    textArray.splice(isMystic, 1);
+    textArray.splice(isMystic, 0);
     info.isMystic = true;
   }
 
