@@ -8,6 +8,17 @@ const gyms = require('../data/gyms.json');
 var connection;
 var raid;
 
+//This needs to be added to the .env file
+//testdiscord
+const mysticemoji = `<:mystic:351003868362178561>`
+const instinctemoji = `<:valor:351003870367055883>`
+const valoremoji = `<:instinct:351003868542271489>`
+
+//production
+//const mysticemoji = `<:mystic:340033299521077248>`
+//const instinctemoji = `<:valor:340141649474617346>`
+//const valoremoji = `<:instinct:340033299508363265>`
+
 exports.init = async () => {
 
   connection = new Sequelize(
@@ -143,7 +154,7 @@ function printHelp (msg) {
     .addField("Required/Optional", "required: boss; optional: e,g,b.")
     .addField("Change Raid Parameters", "**!raid [raid ID] [e/g/b] [value]**")
     .addField("Raid ID", "The raid ID is the number in Blanches raid announcement.")
-    .addField("Join/Leave a Raid", "**!join [id]** to join, **!leave [id]** to leave")
+    .addField("Join/Leave a Raid", "**!raid join [id]** to join, **!raid leave [id]** to leave")
     .addField("Delete a Raid / Delete All Raids", "**!raid del [id]** / **!raid del all**")
 
     msg.channel.send({embed});
@@ -172,7 +183,7 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
     .setColor(isMystic ? 0x0677ee : 0xffffff)
     .setURL(gym ? gym.url : "")
     .setAuthor("Raid #" + id + ": " + (pokemon ? pokemon.name : BossName))
-    .setTitle("📍 " + (gym ? gym.name : gymName) + (isMystic ? " (:mystic: Gym)" : "") )
+    .setTitle("📍 " + (gym ? gym.name : gymName))
     .setThumbnail(imageURL)
     .addField("Times", "Ends:\t" + endTime + "\nBattle:\t" + battleTime )
     .addField("Joining (bring at least " + pokemon.recplayers + " trainers)", joining);
@@ -201,11 +212,7 @@ async function addRaid (msg, boss) {
   let textArray = text.split(" ");
 
   // check if array contains the word mystic
-  let isMystic = textArray.indexOf("mystic");
-  if (isMystic < 0) {
-    // or the mystic icon
-    isMystic = textArray.indexOf(":mystic:");
-  }
+  let isMystic = textArray.indexOf("mystic") + textArray.indexOf(mysticemoji);
   if (isMystic >= 0) { // if yes
     // remove the element from the array
     textArray.splice(isMystic, 1);
@@ -290,11 +297,7 @@ async function updateRaid(msg) {
   var info = {};
 
   // check if array contains the word mystic
-  let isMystic = textArray.indexOf("mystic");
-  if (isMystic < 0) {
-    // or the mystic icon
-    isMystic = textArray.indexOf(":mystic:");
-  }
+  let isMystic = textArray.indexOf("mystic") + textArray.indexOf(mysticemoji);
   if (isMystic >= 0) { // if yes
     // remove the element from the array
     textArray.splice(isMystic, 1);
