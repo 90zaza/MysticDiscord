@@ -101,6 +101,14 @@ client.on('message', async (msg) => {
   if (msgText.split(' ')[0] == "raid") {
     raids.scan(msg);
   }
+  if (msgText.split(' ')[0] == "join") {
+    msg.content = `raid ${msgText}`;
+    raids.scan(msg);
+  }
+  if (msgText.split(' ')[0] == "leave") {
+    msg.content = `raid ${msgText}`;
+    raids.scan(msg);
+  }
 
 });
 
