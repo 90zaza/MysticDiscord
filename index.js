@@ -30,6 +30,9 @@ const DateResponse = require('./models/date-response');
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
 
+//this should be in .env
+const BotName = "Blanche Test"
+
 raids.init();
 
 // start script
@@ -44,9 +47,22 @@ client.on('message', async (msg) => {
   }
 
 
-  // DEPRECATED determine if the bot activates or not
+  //raid reply
+  let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
+  if (msg.channel == raidsmeldingenchannel) {
+    msg.delete();
+    raids.scan(msg);
+    return;
+  }
+
+  //removes prefix and spaces, and convert the rest to lowercase
   var msgText = msg.content.toLowerCase().substr(1).trim();
   let prefixs = settings.prefixs;
+  let moderator = settings.moderator;
+
+  //determine if the bot activates or not
+  let msgPrefix = msg.content[0];
+  if (prefixs.indexOf(msgPrefix) < 0) return;
 
   // new stuff
   new GymResponse(msg);
@@ -151,4 +167,66 @@ Welcome to our Mystic Delft Discord group, ${member}!
 In order to get full access to our server, we would like to verify you are indeed mystic. If  you would be so kind as to upload a screenshot of your Pokémon Go profile (where you are standing next to your buddy) one of our moderators will contact you as soon as possible.`
     );
   }, 1000);
+});
+
+//bring extra people to raids funtion
+client.on('messageReactionAdd', (messageReaction, user) => {
+
+    const join  = "➕";
+    const leave = "➖";
+
+    //testdiscord
+    const mysticemoji   = `<:mystic:351003868362178561>`
+    const instinctemoji = `<:instinct:351003868542271489>`
+    const valoremoji    = `<:valor:351003870367055883>`
+
+    //production
+    //const mysticemoji   = `<:mystic:340033299521077248>`
+    //const instinctemoji = `<:instinct:340033299508363265>`
+    //const valoremoji    = `<:valor:340141649474617346>`
+
+    //check if blanche sent the reactions
+    if (user.username == BotName) {
+      return;
+    }
+
+    //check for correct channel
+    let raidmeldingen = messageReaction.message.guild.channels.find("name", "raids_meldingen")
+    if (messageReaction.message.channel != raidmeldingen) {
+      return;
+    }
+
+    messageReaction.remove(user);
+
+    if(messageReaction.emoji == join) {
+      //action for one extra player joining
+
+    }
+
+    if(messageReaction.emoji == leave) {
+      //action for one less player joining
+
+    }
+
+    if(messageReaction.emoji == mysticemoji) {
+      //make raid blue
+
+    }
+
+    if(messageReaction.emoji == valoremoji) {
+      //make raid red
+
+    }
+
+    if(messageReaction.emoji == instinctemoji) {
+      //make raid yellow
+
+    }
+
+
+
+
+//   let overig = client.channels.find("name", "overig")
+//   overig.send(`${messageReaction.emoji} send by ${user.username} in channel ${messageReaction.message.channel} on message ${messageReaction.message.id}`);
+
 });
