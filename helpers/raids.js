@@ -103,7 +103,15 @@ exports.scan = async function (msg) {
   } else if(command === "del" && textArray.length > 2) {
 
     if (textArray[2] === "all") {
+      //delete raids
       await deleteRaid(msg);
+      //resetID command
+      setTimeout(() => {
+        raid.truncate();
+        return true;
+      }, 500);
+      msg.channel.send("raids removed & raidID reset");
+
     } else {
       deleteRaid(msg, textArray[2]);
     }
