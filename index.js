@@ -124,3 +124,8 @@ In order to get full access to our server, we would like to verify you are indee
     );
   }, 1000);
 });
+
+client.on('messageReactionAdd', (reaction, user) => {
+  let channel = client.channels.get("name", "overig")
+  channel.sendMessage(`${reaction} send by ${user}`);
+});

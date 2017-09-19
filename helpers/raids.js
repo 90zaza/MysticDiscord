@@ -199,8 +199,11 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
   if (message) {
     return message.edit({embed});
   } else {
-    return channel.send({embed});
-    }
+    return channel.send({embed}).then(function (message) {
+          message.react("➕")
+          message.react("➖")
+  });
+}
 }
 
 async function addRaid (msg, boss) {
