@@ -28,6 +28,9 @@ const ChannelRolesResponse = require('./models/channel-roles-response');
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
 
+//this should be in .env
+const BotName = "Blanche Test"
+
 raids.init();
 
 // start script
@@ -125,7 +128,31 @@ In order to get full access to our server, we would like to verify you are indee
   }, 1000);
 });
 
-client.on('messageReactionAdd', (reaction, user) => {
-  let channel = client.channels.get("name", "overig")
-  channel.sendMessage(`${reaction} send by ${user}`);
+client.on('messageReactionAdd', (messageReaction, user) => {
+
+    //check for raids meldingen channel
+    const join = "➕";
+    const leave = "➖";
+
+    //check if blanche sent the reactions
+    if (user.username==BotName) {
+      return;
+    }
+
+    //check for correct channel
+    let raidmeldingen = client.channels.find("name", "raids_meldingen")
+    if (messageReaction.message.channel != raidmeldingen) {
+      return;
+    }
+
+    //check for right emoji
+    if(messageReaction.emoji != join && messageReaction.emoji != leave) {
+      return;
+    }
+
+
+//    var raidID=messageReaction.message;
+   let overig = client.channels.find("name", "overig")
+   overig.send(`${messageReaction.emoji} send by ${user.username} in channel ${messageReaction.message.channel}`);
+   messageReaction.remove(user);
 });
