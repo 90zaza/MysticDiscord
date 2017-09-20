@@ -201,8 +201,13 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
   } else {
     return channel.send({embed}).then(function (message) {
           message.react("➕")
-          message.react("➖")
-  });
+          setTimeout(() => {
+            message.react("➖")
+          }, 500);
+          setTimeout(() => {
+            message.react('0\u20e3')
+          }, 1000);
+});
 }
 }
 

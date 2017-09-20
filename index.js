@@ -128,10 +128,10 @@ In order to get full access to our server, we would like to verify you are indee
   }, 1000);
 });
 
+//bring extra people to raids funtion
 client.on('messageReactionAdd', (messageReaction, user) => {
 
-    //check for raids meldingen channel
-    const join = "➕";
+    const join  = "➕";
     const leave = "➖";
 
     //check if blanche sent the reactions
@@ -145,14 +145,21 @@ client.on('messageReactionAdd', (messageReaction, user) => {
       return;
     }
 
-    //check for right emoji
-    if(messageReaction.emoji != join && messageReaction.emoji != leave) {
-      return;
+    messageReaction.remove(user);
+
+    if(messageReaction.emoji == join) {
+      //action for one extra player joining
+
     }
 
+    if(messageReaction.emoji == leave) {
+      //action for one less player joining
 
-//    var raidID=messageReaction.message;
-   let overig = client.channels.find("name", "overig")
-   overig.send(`${messageReaction.emoji} send by ${user.username} in channel ${messageReaction.message.channel}`);
-   messageReaction.remove(user);
+    }
+
+//   let overig = client.channels.find("name", "overig")
+//   overig.send(`${messageReaction.emoji} send by ${user.username} in channel ${messageReaction.message.channel} on message ${messageReaction.message.id}`);
+
+
+
 });
