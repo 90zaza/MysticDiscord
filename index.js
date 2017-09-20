@@ -133,9 +133,19 @@ client.on('messageReactionAdd', (messageReaction, user) => {
 
     const join  = "➕";
     const leave = "➖";
+    const zero  = "0\u20e3";
+    const one   = "1\u20e3";
+    const two   = "2\u20e3";
+    const three = "3\u20e3";
+    const four  = "4\u20e3";
+    const five  = "5\u20e3";
+    const six   = "6\u20e3";
+    const seven = "7\u20e3";
+    const eight = "8\u20e3";
+    const nine  = "9\u20e3";
 
     //check if blanche sent the reactions
-    if (user.username==BotName) {
+    if (user.username == BotName) {
       return;
     }
 
@@ -150,7 +160,13 @@ client.on('messageReactionAdd', (messageReaction, user) => {
     if(messageReaction.emoji == join) {
       //action for one extra player joining
 
+        //if there is a :zero: reaction {        <-- need to find out how
+          //remove zero reaction                 <-- need to find out how
+          messageReaction.message.react(one);    //<-- working
+        //}
+        //continue this one by one untill 9
     }
+
 
     if(messageReaction.emoji == leave) {
       //action for one less player joining
@@ -159,7 +175,5 @@ client.on('messageReactionAdd', (messageReaction, user) => {
 
 //   let overig = client.channels.find("name", "overig")
 //   overig.send(`${messageReaction.emoji} send by ${user.username} in channel ${messageReaction.message.channel} on message ${messageReaction.message.id}`);
-
-
 
 });
