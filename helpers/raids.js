@@ -10,10 +10,10 @@ var raid;
 
 //This needs to be added to the .env file
 //testdiscord
-const mysticemoji = `<:mystic:351003868362178561>`
+//const mysticemoji = `<:mystic:351003868362178561>`
 
 //production
-//const mysticemoji = `<:mystic:340033299521077248>`
+const mysticemoji = `<:mystic:340033299521077248>`
 
 exports.init = async () => {
 
