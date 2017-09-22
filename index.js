@@ -27,6 +27,7 @@ const ChannelRolesResponse = require('./models/channel-roles-response');
 
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
+const raidsmeldingenchannel = client.channels.get("name", "raids_meldingen");
 
 //this should be in .env
 const BotName = "Blanche Test"
@@ -101,15 +102,7 @@ client.on('message', async (msg) => {
   var msgText = msg.content.toLowerCase().substr(1).trim();
 
   //raid reply
-  if (msgText.split(' ')[0] == "raid") {
-    raids.scan(msg);
-  }
-  if (msgText.split(' ')[0] == "join") {
-    msg.content = `raid ${msgText}`;
-    raids.scan(msg);
-  }
-  if (msgText.split(' ')[0] == "leave") {
-    msg.content = `raid ${msgText}`;
+  if (msg.channel == raidsmeldingenchannel) {
     raids.scan(msg);
   }
 
@@ -133,16 +126,9 @@ client.on('messageReactionAdd', (messageReaction, user) => {
 
     const join  = "➕";
     const leave = "➖";
-    const zero  = "0\u20e3";
-    const one   = "1\u20e3";
-    const two   = "2\u20e3";
-    const three = "3\u20e3";
-    const four  = "4\u20e3";
-    const five  = "5\u20e3";
-    const six   = "6\u20e3";
-    const seven = "7\u20e3";
-    const eight = "8\u20e3";
-    const nine  = "9\u20e3";
+    const mystic = "<:mystic:351003868362178561>";
+    const valor = "<:valor:351003870367055883>";
+    const instinct = "<:instinct:351003868542271489>";
 
     //check if blanche sent the reactions
     if (user.username == BotName) {
@@ -160,11 +146,7 @@ client.on('messageReactionAdd', (messageReaction, user) => {
     if(messageReaction.emoji == join) {
       //action for one extra player joining
 
-        //if there is a :zero: reaction {        <-- need to find out how
-          //remove zero reaction                 <-- need to find out how
-          messageReaction.message.react(one);    //<-- working
-        //}
-        //continue this one by one untill 9
+
     }
 
 
@@ -172,6 +154,24 @@ client.on('messageReactionAdd', (messageReaction, user) => {
       //action for one less player joining
 
     }
+
+    if(messageReaction.emoji == mystic) {
+      //make raid blue
+
+    }
+
+    if(messageReaction.emoji == valor) {
+      //make raid red
+
+    }
+
+    if(messageReaction.emoji == instinct) {
+      //make raid yellow
+
+    }
+
+
+
 
 //   let overig = client.channels.find("name", "overig")
 //   overig.send(`${messageReaction.emoji} send by ${user.username} in channel ${messageReaction.message.channel} on message ${messageReaction.message.id}`);
