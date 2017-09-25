@@ -67,7 +67,7 @@ client.on('message', async (msg) => {
   new MusicResponse(msg);
   new GambleResponse(msg);
   new TeamResponse(msg);
-  new ChannelRolesResponse(msg, verifiedrole);
+  new ChannelRolesResponse(msg);
 
 
   if (msgText.startsWith("add")) {
