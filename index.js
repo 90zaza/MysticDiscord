@@ -48,16 +48,9 @@ client.on('message', async (msg) => {
   let welkomchannel = msg.guild.channels.find("name", "welkom");
   let spelerregistratiechannel = msg.guild.channels.find("name", "speler_registratie");
 
-  if (!msg.member.roles.has(verifiedrole.id)) {
-    msg.reply(`Ik ben helaas alleen beschikbaar voor geverifieerde mystic spelers. Stuur een screenshot van je Pokémon Go profiel door in ${spelerregistratiechannel}, en een van de moderators zal je zo snel mogelijk te woord staan.`);
-    return;
-  }
-
-
   // DEPRECATED determine if the bot activates or not
   var msgText = msg.content.toLowerCase().substr(1).trim();
   let prefixs = settings.prefixs;
-
 
   // new stuff
   new GymResponse(msg);
@@ -67,8 +60,9 @@ client.on('message', async (msg) => {
   new MusicResponse(msg);
   new GambleResponse(msg);
   new TeamResponse(msg);
-  new ChannelRolesResponse(msg);
-
+  if (msg.member.roles.has(verifiedrole.id)) {
+      new ChannelRolesResponse(msg);
+  }
 
   if (msgText.startsWith("add")) {
     if (msg.member.roles.has(moderatorrole.id)) {
