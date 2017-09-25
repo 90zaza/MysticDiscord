@@ -41,11 +41,22 @@ client.on('message', async (msg) => {
     return;
   }
 
+  let verifiedrole = msg.guild.roles.find("name","makingdelftblueagain");
+  let moderatorrole = msg.guild.roles.find("name", "moderators");
+  let raidschannel = msg.guild.channels.find("name", "raids");
+  let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
+  let welkomchannel = msg.guild.channels.find("name", "welkom");
+  let spelerregistratiechannel = msg.guild.channels.find("name", "speler_registratie");
+
+  if (!msg.member.roles.has(verifiedrole.id)) {
+    msg.reply(`Ik ben helaas alleen beschikbaar voor geverifieerde mystic spelers. Stuur een screenshot van je Pokémon Go profiel door in ${spelerregistratiechannel}, en een van de moderators zal je zo snel mogelijk te woord staan.`);
+    return;
+  }
+
 
   // DEPRECATED determine if the bot activates or not
   var msgText = msg.content.toLowerCase().substr(1).trim();
   let prefixs = settings.prefixs;
-  let moderator = settings.moderator;
 
 
   // new stuff
@@ -56,16 +67,14 @@ client.on('message', async (msg) => {
   new MusicResponse(msg);
   new GambleResponse(msg);
   new TeamResponse(msg);
-  new ChannelRolesResponse(msg);
+  new ChannelRolesResponse(msg, verifiedrole);
 
 
   if (msgText.startsWith("add")) {
-    if (msg.member.roles.has(moderator)) {
+    if (msg.member.roles.has(moderatorrole.id)) {
        let member = msg.mentions.members.first();
-       let role = msg.guild.roles.find("name",
-       "makingdelftblueagain");
-       member.addRole(role).catch(console.error);
-       msg.channel.send(`Welkom ` + member + `, je bent nu officieel toegevoegd! In het kanaal <#` + settings.welkom + `> is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Daarnaast sta ik natuurlijk ook tot je beschikking! Door '!help' te typen kun je zien wat ik allemaal voor je kan doen! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, met je level erachter (channel settings, change nickname), zodat we weten wie iedereen is;)`);
+       member.addRole(verifiedrole).catch(console.error);
+       msg.channel.send(`Welkom ` + member + `, je bent nu officieel toegevoegd! In het kanaal <#` + welkomchannel.id + `> is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Daarnaast sta ik natuurlijk ook tot je beschikking! Door '!help' te typen kun je zien wat ik allemaal voor je kan doen! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, met je level erachter (channel settings, change nickname), zodat we weten wie iedereen is;)`);
     } else {
        msg.reply("Leden verifieren kan alleen door een moderator worden gedaan")}
        msg.delete()
@@ -79,7 +88,7 @@ client.on('message', async (msg) => {
 
   // delete amount of messages
   if (msgText.startsWith("delete")) {
-    if (msg.member.roles.has(moderator)) {
+    if (msg.member.roles.has(moderatorrole)) {
       var del = msgText.split(" ");
       del.splice(0, 1);
       msg.channel.bulkDelete(del);
