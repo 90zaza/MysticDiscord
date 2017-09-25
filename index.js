@@ -27,7 +27,6 @@ const ChannelRolesResponse = require('./models/channel-roles-response');
 
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
-const raidsmeldingenchannel = client.channels.get("name", "raids_meldingen");
 
 //this should be in .env
 const BotName = "Blanche Test"
@@ -46,11 +45,22 @@ client.on('message', async (msg) => {
   }
 
 
-  // DEPRECATED determine if the bot activates or not
+  //raid reply
+  let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
+  if (msg.channel == raidsmeldingenchannel) {
+    msg.delete();
+    raids.scan(msg);
+    return;
+  }
+
+  //removes prefix and spaces, and convert the rest to lowercase
   var msgText = msg.content.toLowerCase().substr(1).trim();
   let prefixs = settings.prefixs;
   let moderator = settings.moderator;
 
+  //determine if the bot activates or not
+  let msgPrefix = msg.content[0];
+  if (prefixs.indexOf(msgPrefix) < 0) return;
 
   // new stuff
   new GymResponse(msg);
@@ -91,19 +101,6 @@ client.on('message', async (msg) => {
       msg.reply("Alleen moderators kunnen berichten verwijderen");
     }
     msg.delete();
-  }
-
-  //determine if the bot activates or not
-  let msgPrefix = msg.content[0];
-  var msgText = msg.content.toLowerCase().substr(1).trim();
-  if (prefixs.indexOf(msgPrefix) < 0) return;
-
-  //removes prefix and spaces, and convert the rest to lowercase
-  var msgText = msg.content.toLowerCase().substr(1).trim();
-
-  //raid reply
-  if (msg.channel == raidsmeldingenchannel) {
-    raids.scan(msg);
   }
 
 });

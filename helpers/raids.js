@@ -10,12 +10,10 @@ var raid;
 
 //This needs to be added to the .env file
 //testdiscord
-const mysticemoji = `<:mystic:351003868362178561>`
-const raidschannel = client.channels.get("name", "raids");
-const raidsmeldingenchannel = client.channels.get("name", "raids_meldingen");
+//const mysticemoji = `<:mystic:351003868362178561>`
 
 //production
-//const mysticemoji = `<:mystic:340033299521077248>`
+const mysticemoji = `<:mystic:340033299521077248>`
 
 exports.init = async () => {
 
@@ -88,24 +86,25 @@ exports.init = async () => {
 }
 
 exports.scan = async function (msg) {
-  msg.delete()
-  let text = msg.content.toLowerCase().substr(1).trim();
-  let textArray = text.split(" ");
 
-  if (textArray.length < 2) {
-    printHelp(msg);
-    return false;
-  }
+  let text = msg.content.toLowerCase().trim();
+  let textArray = text.split(" ");
 
   let command = textArray[0];
 
-//  if (command === "help") {
-//    printHelp(msg);
+    if(command === "del") {
 
-  } else if(command === "del" && textArray.length > 1) {
-
-    if (textArray[2] === "all") {
+    if (textArray[1] === "all") {
+      //delete raids
       await deleteRaid(msg);
+      //resetID command
+      setTimeout(() => {
+        raid.truncate();
+        return true;
+      }, 500);
+      let raidschannel = msg.guild.channels.find("name", "raids");
+      raidschannel.send("raids removed & raidID reset");
+
     } else {
       deleteRaid(msg, textArray[1]);
     }
@@ -120,6 +119,10 @@ exports.scan = async function (msg) {
 
 //    leaveRaid(msg, textArray[2]);
 //    return true;
+
+  } else if(command === "resetid") {
+    await raid.truncate();
+    return true;
 
   } else {
 
@@ -137,21 +140,6 @@ exports.scan = async function (msg) {
 
   let update = false;
   let info = {};
-}
-
-function printHelp (msg) {
-
-  let embed = new Discord.RichEmbed()
-    .setAuthor("How to use the Raid Bot")
-    .setColor(0xffffff)
-    .addField("Add a Raid", "**!raid [boss] e [end time] g [gym] b [battle time]**")
-    .addField("Required/Optional", "required: boss; optional: e,g,b.")
-    .addField("Change Raid Parameters", "**!raid [raid ID] [e/g/b] [value]**")
-    .addField("Raid ID", "The raid ID is the number in Blanches raid announcement.")
-    .addField("Join/Leave a Raid", "**!raid join [id]** to join, **!raid leave [id]** to leave")
-    .addField("Delete a Raid / Delete All Raids", "**!raid del [id]** / **!raid del all**")
-
-    msg.channel.send({embed});
 }
 
 function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, joinedPlayers, isMystic) {
@@ -182,10 +170,12 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
     .addField("Times", "Ends:\t" + endTime + "\nBattle:\t" + battleTime )
     .addField("Joining (bring at least " + pokemon.recplayers + " trainers)", joining);
 
+  let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
   let message = raidsmeldingenchannel.messages.find("id", msgId);
 
 //reply message of the raid ID and role
   if (message) {} else {
+    let raidschannel = msg.guild.channels.find("name", "raids");
     if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
       let role = msg.guild.roles.find("name", pokemon.name);
       raidschannel.send(`Raid ${id}: ${role}`);
@@ -196,26 +186,12 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
   if (message) {
     return message.edit({embed});
   } else {
-    return raidsmeldingenchannel.send({embed}).then(function (message) {
-          message.react("➕")
-          setTimeout(() => {
-            message.react("➖")
-          }, 500);
-          setTimeout(() => {
-            message.react("<:mystic:351003868362178561>")
-          }, 1000);
-          setTimeout(() => {
-            message.react("<:valor:351003870367055883>")
-          }, 1500);
-          setTimeout(() => {
-            message.react("<:instinct:351003868542271489>")
-          }, 2000);
-});
-}
+    return raidsmeldingenchannel.send({embed});
+    }
 }
 
 async function addRaid (msg, boss) {
-  let text = msg.content.toLowerCase().substr(1);
+  let text = msg.content.toLowerCase();
   let textArray = text.split(" ");
 
   // check if array contains the word mystic
@@ -285,6 +261,7 @@ async function addRaid (msg, boss) {
 
 
   for (let raid in raidsNeedToBeDeleted) {
+    let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
     raidsmeldingenchannel.messages.find("id", raid.dataValues.messageid).delete();
   }
 
@@ -292,10 +269,10 @@ async function addRaid (msg, boss) {
 
 async function updateRaid(msg) {
 
-  let text = msg.content.toLowerCase().substr(1);
+  let text = msg.content.toLowerCase();
   let textArray = text.split(" ");
 
-  let raidId = textArray[1];
+  let raidId = textArray[0];
 
   if (isNaN(parseFloat(raidId))) {
     return;
@@ -363,6 +340,7 @@ async function deleteRaid (msg, id) {
       result = await raid.findOne({
         where: {"idraids": id}
       })
+      let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
       raidsmeldingenchannel.messages.find("id",result.dataValues["messageid"]).delete()
 
       await raid.destroy({
@@ -378,6 +356,7 @@ async function deleteRaid (msg, id) {
 
     raid.findAll({where:{}}).then(function(x){
       for (i = 0; i < x.length; i++){
+        let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
         let message = raidsmeldingenchannel.messages.find("id",x[i]["messageid"]);
         if (message) {
           message.delete();
