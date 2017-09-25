@@ -123,9 +123,16 @@ client.on('messageReactionAdd', (messageReaction, user) => {
 
     const join  = "➕";
     const leave = "➖";
-    const mystic = "<:mystic:351003868362178561>";
-    const valor = "<:valor:351003870367055883>";
-    const instinct = "<:instinct:351003868542271489>";
+
+    //testdiscord
+    const mysticemoji   = `<:mystic:351003868362178561>`
+    const instinctemoji = `<:instinct:351003868542271489>`
+    const valoremoji    = `<:valor:351003870367055883>`
+
+    //production
+    //const mysticemoji   = `<:mystic:340033299521077248>`
+    //const instinctemoji = `<:instinct:340033299508363265>`
+    //const valoremoji    = `<:valor:340141649474617346>`
 
     //check if blanche sent the reactions
     if (user.username == BotName) {
@@ -133,7 +140,7 @@ client.on('messageReactionAdd', (messageReaction, user) => {
     }
 
     //check for correct channel
-    let raidmeldingen = client.channels.find("name", "raids_meldingen")
+    let raidmeldingen = messageReaction.message.guild.channels.find("name", "raids_meldingen")
     if (messageReaction.message.channel != raidmeldingen) {
       return;
     }
@@ -143,26 +150,24 @@ client.on('messageReactionAdd', (messageReaction, user) => {
     if(messageReaction.emoji == join) {
       //action for one extra player joining
 
-
     }
-
 
     if(messageReaction.emoji == leave) {
       //action for one less player joining
 
     }
 
-    if(messageReaction.emoji == mystic) {
+    if(messageReaction.emoji == mysticemoji) {
       //make raid blue
 
     }
 
-    if(messageReaction.emoji == valor) {
+    if(messageReaction.emoji == valoremoji) {
       //make raid red
 
     }
 
-    if(messageReaction.emoji == instinct) {
+    if(messageReaction.emoji == instinctemoji) {
       //make raid yellow
 
     }

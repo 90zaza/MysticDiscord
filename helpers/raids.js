@@ -8,16 +8,15 @@ const gyms = require('../data/gyms.json');
 var connection;
 var raid;
 
-//This needs to be added to the .env file
 //testdiscord
-const mysticemoji   = `<:mystic:351003868362178561>`
-const instinctemoji = `<:instinct:351003868542271489>`
-const valoremoji    = `<:valor:351003870367055883>`
+const mysticemoji   = `351003868362178561`
+const instinctemoji = `351003868542271489`
+const valoremoji    = `351003870367055883`
 
 //production
-//const mysticemoji   = `<:mystic:340033299521077248>`
-//const instinctemoji = `<:instinct:340033299508363265>`
-//const valoremoji    = `<:valor:340141649474617346>`
+//const mysticemoji   = `340033299521077248`
+//const instinctemoji = `340033299508363265`
+//const valoremoji    = `340141649474617346`
 
 exports.init = async () => {
 
