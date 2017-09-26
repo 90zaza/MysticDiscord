@@ -27,12 +27,14 @@ const ChannelRolesResponse = require('./models/channel-roles-response');
 const TopResponse = require('./models/top-response');
 const DateResponse = require('./models/date-response');
 
+
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
 
 //this should be in .env
-const BotName = "Blanche Test"
+const BotName = process.env.BOT_NAME;
 
+const raidAnnouncmentChannel = process.env.RAID_CHANNEL;
 raids.init();
 
 // start script
@@ -48,8 +50,7 @@ client.on('message', async (msg) => {
 
 
   //raid reply
-  let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
-  if (msg.channel == raidsmeldingenchannel) {
+  if (msg.channel.name == raidAnnouncmentChannel) {
     msg.delete();
     raids.scan(msg);
     return;
@@ -172,59 +173,15 @@ In order to get full access to our server, we would like to verify you are indee
 //bring extra people to raids funtion
 client.on('messageReactionAdd', (messageReaction, user) => {
 
-    const join  = "➕";
-    const leave = "➖";
-
-    //testdiscord
-    const mysticemoji   = `<:mystic:351003868362178561>`
-    const instinctemoji = `<:instinct:351003868542271489>`
-    const valoremoji    = `<:valor:351003870367055883>`
-
-    //production
-    //const mysticemoji   = `<:mystic:340033299521077248>`
-    //const instinctemoji = `<:instinct:340033299508363265>`
-    //const valoremoji    = `<:valor:340141649474617346>`
-
     //check if blanche sent the reactions
     if (user.username == BotName) {
       return;
     }
 
     //check for correct channel
-    let raidmeldingen = messageReaction.message.guild.channels.find("name", "raids_meldingen")
-    if (messageReaction.message.channel != raidmeldingen) {
-      return;
+    if (messageReaction.message.channel.name == raidAnnouncmentChannel) {
+      raids.scanReaction(messageReaction, user);
     }
-
-    messageReaction.remove(user);
-
-    if(messageReaction.emoji == join) {
-      //action for one extra player joining
-
-    }
-
-    if(messageReaction.emoji == leave) {
-      //action for one less player joining
-
-    }
-
-    if(messageReaction.emoji == mysticemoji) {
-      //make raid blue
-
-    }
-
-    if(messageReaction.emoji == valoremoji) {
-      //make raid red
-
-    }
-
-    if(messageReaction.emoji == instinctemoji) {
-      //make raid yellow
-
-    }
-
-
-
 
 //   let overig = client.channels.find("name", "overig")
 //   overig.send(`${messageReaction.emoji} send by ${user.username} in channel ${messageReaction.message.channel} on message ${messageReaction.message.id}`);
