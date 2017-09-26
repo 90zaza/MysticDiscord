@@ -9,9 +9,11 @@ var connection;
 var raid;
 
 //testdiscord
-const mysticemoji   = `351003868362178561`
-const instinctemoji = `351003868542271489`
-const valoremoji    = `351003870367055883`
+const joinemoji   = '➕';
+const leaveemoji   = '➖';
+const mysticemoji   = '361948063071338497';
+const instinctemoji = '361948063423791105';
+const valoremoji    = '361948063360745474';
 
 //production
 //const mysticemoji   = `340033299521077248`
@@ -67,8 +69,12 @@ exports.init = async () => {
       type: Sequelize.STRING,
       defaultValue: "to be added"
     },
+    // only postgres allows ARRAYS as types, so we have to use this ugly concat strings here
     joining: {
-      type: Sequelize.TEXT
+      type: Sequelize.STRING
+    },
+    joiningAdditions: {
+      type: Sequelize.STRING
     },
     messageid: {
       type: Sequelize.STRING,
@@ -78,8 +84,8 @@ exports.init = async () => {
       type: Sequelize.DATE
     },
     isMystic: {
-      type: Sequelize.BOOLEAN,
-      defaultValue: false
+      type: Sequelize.INTEGER,
+      defaultValue: 0
     }
   });
 
@@ -97,31 +103,21 @@ exports.scan = async function (msg) {
 
     if(command === "del") {
 
-    if (textArray[1] === "all") {
-      //delete raids
-      await deleteRaid(msg);
-      //resetID command
-      setTimeout(() => {
-        raid.truncate();
-        return true;
-      }, 500);
-      let raidschannel = msg.guild.channels.find("name", "raids");
-      raidschannel.send("raids removed & raidID reset");
+      if (textArray[1] === "all") {
+        //delete raids
+        await deleteRaid(msg);
+        //resetID command
+        setTimeout(() => {
+          raid.truncate();
+          return true;
+        }, 500);
+        let raidschannel = msg.guild.channels.find("name", "raids");
+        raidschannel.send("raids removed & raidID reset");
 
-    } else {
-      deleteRaid(msg, textArray[1]);
-    }
-    return true;
-
-//  } else if(command === "join" && textArray.length > 2) {
-
-//    joinRaid(msg, textArray[2]);
-//    return true;
-
-//  } else if(command === "leave" && textArray.length > 2) {
-
-//    leaveRaid(msg, textArray[2]);
-//    return true;
+      } else {
+        deleteRaid(msg, textArray[1]);
+      }
+      return true;
 
   } else if(command === "resetid") {
     await raid.truncate();
@@ -145,7 +141,50 @@ exports.scan = async function (msg) {
   let info = {};
 }
 
-function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, joinedPlayers, isMystic) {
+
+exports.scanReaction = async function (messageReaction, user) {
+
+  let title = messageReaction.message.embeds[0].author.name;
+  let id = title.split(" ")[1][1];
+
+  messageReaction.remove(user);
+
+  if(messageReaction.emoji == joinemoji) {
+  //action for one extra player joining
+
+    console.log("join " + id);
+    joinRaid(messageReaction.message, user, id);
+
+  }
+
+  if(messageReaction.emoji == leaveemoji) {
+  //action for one less player joining
+
+        console.log("leave")
+  }
+
+  if(messageReaction.emoji == mysticemoji) {
+  //make raid blue
+
+        console.log("blue")
+  }
+
+  if(messageReaction.emoji == valoremoji) {
+  //make raid red
+
+        console.log("red")
+  }
+
+  if(messageReaction.emoji == instinctemoji) {
+  //make raid yellow
+
+        console.log("yellow")
+  }
+}
+
+
+
+async function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, joinedPlayers, isMystic) {
 
   let pokemon = pokemons.find((item) => {
     return item.keys.includes(bossName);
@@ -189,7 +228,7 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
   if (message) {
     return message.edit({embed});
   } else {
-    return raidsmeldingenchannel.send({embed}).then(function (message) {
+    let newMessage = raidsmeldingenchannel.send({embed}).then(function (message) {
           message.react("➕")
           setTimeout(() => {
             message.react("➖")
@@ -204,10 +243,13 @@ function updateMessage (msg, msgId, id, bossName, gymName, endTime, battleTime, 
             message.react(valoremoji)
           }, 2000);})
 
-    }
+      return newMessage;
+
+  }
 }
 
 async function addRaid (msg, boss) {
+
   let text = msg.content.toLowerCase();
   let textArray = text.split(" ");
 
@@ -244,6 +286,7 @@ async function addRaid (msg, boss) {
 
   raid.create(info)
     .then(function(x) {
+              console.log("++++++++++++   1    +++++++++++");
 
       let raidId = x.idraids;
 
@@ -258,8 +301,12 @@ async function addRaid (msg, boss) {
         [],
         x.isMystic
       ).then( function(x) {
+                console.log(x);
+                setTimeout(() => {
+                  var messageinfo = {"messageid": x.id};
+                }, 2500);
 
-        var messageinfo = {"messageid": x.id}
+          console.log("++++++++++++   " + messageinfo + "    +++++++++++");
         raid.update(messageinfo, {where: {"idraids":raidId} } );
       });
     });
@@ -342,7 +389,7 @@ async function updateRaid(msg) {
       result.dataValues.raidgym,
       result.dataValues.raidendtime,
       result.dataValues.raidbattletime,
-      JSON.parse(result.dataValues.joining),
+      result.dataValues.joining,
       result.dataValues.isMystic
     );
   }
@@ -387,27 +434,52 @@ async function deleteRaid (msg, id) {
   }
 }
 
-function joinRaid (msg, id) {
+function joinRaid (msg, user, id) {
 
-  raid.findOne ( {where: {"idraids": id} } )
+  console.log(msg);
+  raid.findOne ( {where: {"messageid": msg.id} } )
     .then (function (dbRaid) {
 
-      let join = dbRaid.dataValues.joining
-      if (!join) {
-        join = [];
+      let joining = dbRaid.dataValues.joining
+      let joiningAdditions = dbRaid.dataValues.joiningAdditions
+      if (!joining) {
+        joining = [];
+        joiningAdditions = [];
       } else {
-        join = JSON.parse(join);
-      }
-      let author = msg.author.lastMessage.member.nickname;
-      if (author == null){
-        author = msg.author.username
-      }
-      if (join.indexOf(author) < 0) {
-        join.push(author)
+        joining = joining.split("; ");
+        joiningAdditions = joiningAdditions.split("; ");
       }
 
-      raid.update ( {"joining": JSON.stringify(join)}, {
-       where: {"idraids": id},
+            console.log(joining)
+                  console.log(joiningAdditions)
+
+      let author = user.lastMessage.member.nickname;
+      if (author == null){
+        author = user.username
+      }
+
+      let authorIndex = joining.indexOf(author);
+
+      if (authorIndex < 0) {
+        joining.push(author);
+        joiningAdditions.push(0);
+      } else {
+        joiningAdditions[authorIndex]++;
+      }
+
+      let combinedJoin = [];
+      combinedJoin.length = joining.length;
+      for( var i = 0; i < joining.length; i++ )
+      {
+        combinedJoin[i] = joining[i];
+        if(joiningAdditions[i] > 0)
+        {
+          combinedJoin[i] += " + " + joiningAdditions[i];
+        }
+      }
+
+      raid.update ( {"joining": joining.join("; "), "joiningAdditions": joiningAdditions.join("; ") },{
+       where: {"messageid": msg.id},
        returning: true
       })
       .then (async function (result) {
@@ -420,7 +492,7 @@ function joinRaid (msg, id) {
           dbRaid.dataValues.raidgym,
           dbRaid.dataValues.raidendtime,
           dbRaid.dataValues.raidbattletime,
-          join,
+          combinedJoin,
           dbRaid.dataValues.isMystic
         )
      })
