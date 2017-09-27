@@ -179,9 +179,9 @@ client.on('messageReactionAdd', (messageReaction, user) => {
     }
 
     //check for correct channel
-    if (messageReaction.message.channel.name == raidAnnouncmentChannel) {
-      raids.scanReaction(messageReaction, user);
-    }
+    // if (messageReaction.message.channel.name == raidAnnouncmentChannel) {
+      // raids.scanReaction(messageReaction, user);
+    // }
 
 //   let overig = client.channels.find("name", "overig")
 //   overig.send(`${messageReaction.emoji} send by ${user.username} in channel ${messageReaction.message.channel} on message ${messageReaction.message.id}`);
