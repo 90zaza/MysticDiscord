@@ -115,7 +115,9 @@ exports.scan = async function (msg) {
         raidschannel.send("raids removed & raidID reset");
 
       } else {
-        deleteRaid(msg, textArray[1]);
+        if (textArray.length > 1){
+          deleteRaid(msg, textArray[1]);
+        }
       }
       return true;
 
