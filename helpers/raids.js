@@ -11,9 +11,16 @@ var raid;
 //testdiscord
 const joinemoji = '➕';
 const leaveemoji = '➖';
-const mysticemoji = '361948063071338497';
-const instinctemoji = '361948063423791105';
-const valoremoji = '361948063360745474';
+// const mysticemoji = '361948063071338497';
+// const instinctemoji = '361948063423791105';
+// const valoremoji = '361948063360745474';
+
+// daan
+
+
+const mysticemoji = '351003868362178561';
+const instinctemoji = '351003868542271489';
+const valoremoji = '351003870367055883';
 
 //production
 //const mysticemoji   = `340033299521077248`
@@ -150,7 +157,7 @@ exports.scanReaction = async function (messageReaction, user) {
     //action for one extra player joining
 
     console.log("join " + id);
-    joinRaid(messageReaction.message, user, id);
+    // joinRaid(messageReaction.message, user, id);
 
   }
 
@@ -284,10 +291,9 @@ async function addRaid(msg, boss) {
 
   raid.create(info)
     .then(function (x) {
-      console.log("++++++++++++   1    +++++++++++");
-
+      // x is the result from the database
       let raidId = x.idraids;
-
+      // create raid message with the information
       updateMessage(
         msg,
         -1,
@@ -299,13 +305,17 @@ async function addRaid(msg, boss) {
         [],
         x.isMystic
       ).then(function (x) {
-        console.log(x);
-        setTimeout(() => {
-          var messageinfo = { "messageid": x.id };
-        }, 2500);
+        // x is undefined!
+        if (x !== undefined) {
+          setTimeout(() => {
+            var messageinfo = { "messageid": x.id };
+          }, 2500);
 
-        console.log("++++++++++++   " + messageinfo + "    +++++++++++");
-        raid.update(messageinfo, { where: { "idraids": raidId } });
+          console.log("++++++++++++   " + messageinfo + "    +++++++++++");
+          raid.update(messageinfo, { where: { "idraids": raidId } });
+        } else {
+          console.log('message is undefined, something went wrong when returning the raid message object');
+        }
       });
     });
 
