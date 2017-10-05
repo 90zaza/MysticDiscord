@@ -489,27 +489,3 @@ function leaveRaid(msg, id) {
         })
     });
 }
-
-async function del(textArray) {
-  console.log('new function delete called!');
-  if (textArray.length > 1) {
-    // delete all raids
-    if (textArray[1] === "all") {
-      //delete raids
-      await deleteRaid(msg);
-      //resetID command
-      setTimeout(() => {
-        raid.truncate();
-        return true;
-      }, 500);
-      let raidschannel = msg.guild.channels.find("name", "raids");
-      raidschannel.send("raids removed & raidID reset");
-
-    }
-    // delete raid with specified id
-    else {
-      deleteRaid(msg, textArray[1]);
-    }
-    return true;
-  }
-}
