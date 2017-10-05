@@ -106,30 +106,29 @@ exports.init = async () => {
 // scan incoming messages in the raid channel
 exports.scan = async function (msg) {
   // clean input
-  let text = msg.content.toLowerCase().trim();
-  let textArray = text.split(" ");
-  let command = textArray[0];
+  let textArray = msg.content.toLowerCase().trim().split(" ");
 
-  // switch for the command
-  // TODO; clean up to seperate function for readability
-  switch (command) {
-    case 'del':
-      del(textArray);
-      return;
-    case 'resetid':
-      await raid.truncate();
-      return;
-    default:
-      // find the pokemon in the message
-      let boss = pokemons.find((item) => {
-        return item.keys.includes(textArray[0]);
-      });
-      // add raid if a boss in present in the message (new raid), otherwise update raid
-      if (boss) {
-        addRaid(msg, boss);
-      } else {
-        updateRaid(msg);
-      }
+  // delete raid
+  if (/del/.test(msg.content)) {
+    deleteRaid(msg, msg.content.match(/del (\d*)/)[1]);
+  }
+  // reset
+  if (/reset/.test(msg.content)) {
+    await raid.truncate();
+  }
+  // update
+  if (/^\d*/.test(msg.content)) {
+    updateRaid(msg);
+  }
+  // new raid
+  // TODO: tidy up
+  // find the pokemon in the message
+  let boss = pokemons.find((item) => {
+    return item.keys.includes(textArray[0]);
+  });
+
+  if (boss) {
+    addRaid(msg, boss);
   }
 }
 
@@ -307,7 +306,7 @@ async function addRaid(msg, boss) {
       }).catch(console.error)
     }).catch(console.error)
 
-    // TODO update message id in database!
+  // TODO update message id in database!
 
 
   let raidsNeedToBeDeleted = await raid.findAll(
@@ -401,7 +400,6 @@ async function updateRaid(msg) {
 async function deleteRaid(msg, id) {
 
   if (!isNaN(id)) {
-
     try {
       result = await raid.findOne({
         where: { "idraids": id }
