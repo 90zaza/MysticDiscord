@@ -17,7 +17,7 @@ const leaveemoji = '➖';
 
 // daan
 
-
+// TODO: ask custom emojis from channel instead of hardcoding
 const mysticemoji = '351003868362178561';
 const instinctemoji = '351003868542271489';
 const valoremoji = '351003870367055883';
@@ -105,7 +105,6 @@ exports.init = async () => {
 
 // scan incoming messages in the raid channel
 exports.scan = async function (msg) {
-
   // clean input
   let text = msg.content.toLowerCase().trim();
   let textArray = text.split(" ");
@@ -217,7 +216,7 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
   } else {
     // If the message object is null, this function is called with msgID = -1,
     // which means a new raid is registered. Notify the new raid in the raid channel.
-    // TODO: clean up this hack of creating a new raid. (seperate creating of embed message, call from different fucntions)
+    // TODO: clean up this hack of creating a new raid. (seperate creating of embed message, call from different functions)
 
     // Send message to raid channel with new raid
     let raidschannel = msg.guild.channels.find("name", "raids");
@@ -228,24 +227,29 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
       raidschannel.send(`Raid ${id}: ${pokemon.name}`);
     }
 
-    // Send message and add emoji reactions
-    // TODO: error is thrown! newMessage is undefined
-    let newMessage = raidsmeldingenchannel.send({ embed }).then(function (message) {
-      message.react("➕")
-      setTimeout(() => {
-        message.react("➖")
-      }, 500);
-      setTimeout(() => {
-        message.react(mysticemoji)
-      }, 1000);
-      setTimeout(() => {
-        message.react(instinctemoji)
-      }, 1500);
-      setTimeout(() => {
-        message.react(valoremoji)
-      }, 2000);
-    });
-    return newMessage;
+    // TODO: Send message and add emoji reactions
+    raidsmeldingenchannel.send('test')
+      .then(message =>
+        console.log(`Sent message: ${message.content}`)
+      )
+      .catch(console.error);
+
+    // let newMessage = raidsmeldingenchannel.send({ embed }).then(function (message) {
+    //   message.react("➕")
+    //   setTimeout(() => {
+    //     message.react("➖")
+    //   }, 500);
+    //   setTimeout(() => {
+    //     message.react(mysticemoji)
+    //   }, 1000);
+    //   setTimeout(() => {
+    //     message.react(instinctemoji)
+    //   }, 1500);
+    //   setTimeout(() => {
+    //     message.react(valoremoji)
+    //   }, 2000);
+    // });
+    // return newMessage;
   }
 }
 
@@ -254,14 +258,8 @@ async function addRaid(msg, boss) {
   let text = msg.content.toLowerCase();
   let textArray = text.split(" ");
 
-  // check if array contains the word mystic
-  let isMystic = textArray.indexOf("mystic") + textArray.indexOf(mysticemoji);
-  if (isMystic >= 0) { // if yes
-    // remove the element from the array
-    textArray.splice(isMystic, 0);
-  }
-  // if gym is blue this is > 0 otherwise 0
-  ++isMystic;
+  // check if gym is mystic
+  let isMystic = /<:mystic:\d*>/.test(msg)
 
   // collect all the information from the message in the info object
   let info = { "raidboss": boss.keys[0] };
@@ -303,19 +301,13 @@ async function addRaid(msg, boss) {
         [],
         x.isMystic
       ).then(function (x) {
-        // x is undefined!
         if (x !== undefined) {
-          setTimeout(() => {
-            var messageinfo = { "messageid": x.id };
-          }, 2500);
-
-          console.log("++++++++++++   " + messageinfo + "    +++++++++++");
           raid.update(messageinfo, { where: { "idraids": raidId } });
-        } else {
-          console.log('message is undefined, something went wrong when returning the raid message object');
         }
-      });
-    });
+      }).catch(console.error)
+    }).catch(console.error)
+
+    // TODO update message id in database!
 
 
   let raidsNeedToBeDeleted = await raid.findAll(
@@ -330,10 +322,14 @@ async function addRaid(msg, boss) {
 
 
 
-  for (let raid in raidsNeedToBeDeleted) {
-    let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
-    raidsmeldingenchannel.messages.find("id", raid.dataValues.messageid).delete();
-  }
+  // for (let raid in raidsNeedToBeDeleted) {
+  //   let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
+  //   raidsmeldingenchannel.messages.find("id", raid.dataValues.messageid).delete();
+  // }
+
+}
+
+async function addRaid2(message, boss) {
 
 }
 
