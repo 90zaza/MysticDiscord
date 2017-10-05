@@ -143,33 +143,27 @@ exports.scanReaction = async function (messageReaction, user) {
 
   if (messageReaction.emoji == joinemoji) {
     //action for one extra player joining
-
     console.log("join " + id);
     // joinRaid(messageReaction.message, user, id);
-
   }
 
   if (messageReaction.emoji == leaveemoji) {
     //action for one less player joining
-
     console.log("leave")
   }
 
   if (messageReaction.emoji == mysticemoji) {
     //make raid blue
-
     console.log("blue")
   }
 
   if (messageReaction.emoji == valoremoji) {
     //make raid red
-
     console.log("red")
   }
 
   if (messageReaction.emoji == instinctemoji) {
     //make raid yellow
-
     console.log("yellow")
   }
 }
@@ -226,29 +220,24 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
       raidschannel.send(`Raid ${id}: ${pokemon.name}`);
     }
 
-    // TODO: Send message and add emoji reactions
-    raidsmeldingenchannel.send('test')
-      .then(message =>
-        console.log(`Sent message: ${message.content}`)
-      )
+    // TODO: Do not use timeouts when sending emojis
+    raidsmeldingenchannel.send({ embed }).
+      then(function (message) {
+        message.react("➕")
+        setTimeout(() => {
+          message.react("➖")
+        }, 500);
+        setTimeout(() => {
+          message.react(mysticemoji)
+        }, 1000);
+        setTimeout(() => {
+          message.react(instinctemoji)
+        }, 1500);
+        setTimeout(() => {
+          message.react(valoremoji)
+        }, 2000);
+      })
       .catch(console.error);
-
-    // let newMessage = raidsmeldingenchannel.send({ embed }).then(function (message) {
-    //   message.react("➕")
-    //   setTimeout(() => {
-    //     message.react("➖")
-    //   }, 500);
-    //   setTimeout(() => {
-    //     message.react(mysticemoji)
-    //   }, 1000);
-    //   setTimeout(() => {
-    //     message.react(instinctemoji)
-    //   }, 1500);
-    //   setTimeout(() => {
-    //     message.react(valoremoji)
-    //   }, 2000);
-    // });
-    // return newMessage;
   }
 }
 
@@ -299,37 +288,8 @@ async function addRaid(msg, boss) {
         x.raidbattletime,
         [],
         x.isMystic
-      ).then(function (x) {
-        if (x !== undefined) {
-          raid.update(messageinfo, { where: { "idraids": raidId } });
-        }
-      }).catch(console.error)
+      )
     }).catch(console.error)
-
-  // TODO update message id in database!
-
-
-  let raidsNeedToBeDeleted = await raid.findAll(
-    {
-      where: {
-        expireat: {
-          $lt: new Date()
-        }
-      }
-    }
-  );
-
-
-
-  // for (let raid in raidsNeedToBeDeleted) {
-  //   let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
-  //   raidsmeldingenchannel.messages.find("id", raid.dataValues.messageid).delete();
-  // }
-
-}
-
-async function addRaid2(message, boss) {
-
 }
 
 async function updateRaid(msg) {
