@@ -17,7 +17,7 @@ const leaveemoji = '➖';
 
 // daan
 
-
+// TODO: ask custom emojis from channel instead of hardcoding
 const mysticemoji = '351003868362178561';
 const instinctemoji = '351003868542271489';
 const valoremoji = '351003870367055883';
@@ -27,6 +27,8 @@ const valoremoji = '351003870367055883';
 //const instinctemoji = `340033299508363265`
 //const valoremoji    = `340141649474617346`
 
+// initialisation
+// connects to database and creates table for raids
 exports.init = async () => {
 
   connection = new Sequelize(
@@ -101,50 +103,36 @@ exports.init = async () => {
   });
 }
 
+// scan incoming messages in the raid channel
 exports.scan = async function (msg) {
+  // clean input
+  let textArray = msg.content.toLowerCase().trim().split(" ");
 
-  let text = msg.content.toLowerCase().trim();
-  let textArray = text.split(" ");
+  // delete raid
+  if (/del/.test(msg.content)) {
+    deleteRaid(msg, msg.content.match(/del (\d*)/)[1]);
+  }
+  // reset
+  if (/reset/.test(msg.content)) {
+    await raid.truncate();
+  }
+  // update
+  if (/^\d*/.test(msg.content)) {
+    updateRaid(msg);
+  }
+  // new raid
+  // TODO: tidy up
+  // find the pokemon in the message
+  let boss = pokemons.find((item) => {
+    return item.keys.includes(textArray[0]);
+  });
 
-  let command = textArray[0];
-
-  switch (command) {
-    case 'del':
-      if (textArray.length > 1) {
-        if (textArray[1] === "all") {
-          //delete raids
-          await deleteRaid(msg);
-          //resetID command
-          setTimeout(() => {
-            raid.truncate();
-            return true;
-          }, 500);
-          let raidschannel = msg.guild.channels.find("name", "raids");
-          raidschannel.send("raids removed & raidID reset");
-
-        } else {
-          if (textArray.length > 1) {
-            deleteRaid(msg, textArray[1]);
-          }
-        }
-        return true;
-      }
-      return;
-    case 'resetid':
-      await raid.truncate();
-      return;
-    default:
-      let boss = pokemons.find((item) => {
-        return item.keys.includes(textArray[0]);
-      });
-      if (boss) {
-        addRaid(msg, boss);
-      } else {
-        updateRaid(msg);
-      }
+  if (boss) {
+    addRaid(msg, boss);
   }
 }
 
+// scan the reaction of the raid message
 exports.scanReaction = async function (messageReaction, user) {
 
   let title = messageReaction.message.embeds[0].author.name;
@@ -154,33 +142,27 @@ exports.scanReaction = async function (messageReaction, user) {
 
   if (messageReaction.emoji == joinemoji) {
     //action for one extra player joining
-
     console.log("join " + id);
     // joinRaid(messageReaction.message, user, id);
-
   }
 
   if (messageReaction.emoji == leaveemoji) {
     //action for one less player joining
-
     console.log("leave")
   }
 
   if (messageReaction.emoji == mysticemoji) {
     //make raid blue
-
     console.log("blue")
   }
 
   if (messageReaction.emoji == valoremoji) {
     //make raid red
-
     console.log("red")
   }
 
   if (messageReaction.emoji == instinctemoji) {
     //make raid yellow
-
     console.log("yellow")
   }
 }
@@ -206,6 +188,7 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
     });
   });
 
+  // create message
   let embed = new Discord.RichEmbed()
     .setColor(isMystic ? 0x0677ee : 0xffffff)
     .setURL(gym ? gym.url : "")
@@ -215,11 +198,19 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
     .addField("Times", "Ends:\t" + endTime + "\nBattle:\t" + battleTime)
     .addField("Joining (bring at least " + pokemon.recplayers + " trainers)", joining);
 
+  // find message to update in the channel
   let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
   let message = raidsmeldingenchannel.messages.find("id", msgId);
 
-  //reply message of the raid ID and role
-  if (message) { } else {
+  if (message) {
+    // If the message exists, update it with the new embedded message that was created
+    return message.edit({ embed });
+  } else {
+    // If the message object is null, this function is called with msgID = -1,
+    // which means a new raid is registered. Notify the new raid in the raid channel.
+    // TODO: clean up this hack of creating a new raid. (seperate creating of embed message, call from different functions)
+
+    // Send message to raid channel with new raid
     let raidschannel = msg.guild.channels.find("name", "raids");
     if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
       let role = msg.guild.roles.find("name", pokemon.name);
@@ -227,28 +218,25 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
     } else {
       raidschannel.send(`Raid ${id}: ${pokemon.name}`);
     }
-  }
-  if (message) {
-    return message.edit({ embed });
-  } else {
-    let newMessage = raidsmeldingenchannel.send({ embed }).then(function (message) {
-      message.react("➕")
-      setTimeout(() => {
-        message.react("➖")
-      }, 500);
-      setTimeout(() => {
-        message.react(mysticemoji)
-      }, 1000);
-      setTimeout(() => {
-        message.react(instinctemoji)
-      }, 1500);
-      setTimeout(() => {
-        message.react(valoremoji)
-      }, 2000);
-    })
 
-    return newMessage;
-
+    // TODO: Do not use timeouts when sending emojis
+    raidsmeldingenchannel.send({ embed }).
+      then(function (message) {
+        message.react("➕")
+        setTimeout(() => {
+          message.react("➖")
+        }, 500);
+        setTimeout(() => {
+          message.react(mysticemoji)
+        }, 1000);
+        setTimeout(() => {
+          message.react(instinctemoji)
+        }, 1500);
+        setTimeout(() => {
+          message.react(valoremoji)
+        }, 2000);
+      })
+      .catch(console.error);
   }
 }
 
@@ -257,15 +245,10 @@ async function addRaid(msg, boss) {
   let text = msg.content.toLowerCase();
   let textArray = text.split(" ");
 
-  // check if array contains the word mystic
-  let isMystic = textArray.indexOf("mystic") + textArray.indexOf(mysticemoji);
-  if (isMystic >= 0) { // if yes
-    // remove the element from the array
-    textArray.splice(isMystic, 0);
-  }
-  // if gym is blue this is > 0 otherwise 0
-  ++isMystic;
+  // check if gym is mystic
+  let isMystic = /<:mystic:\d*>/.test(msg)
 
+  // collect all the information from the message in the info object
   let info = { "raidboss": boss.keys[0] };
 
   indexes = [textArray.indexOf("e"), textArray.indexOf("b"), textArray.indexOf("g"), textArray.length].sort();
@@ -288,6 +271,7 @@ async function addRaid(msg, boss) {
 
   info.isMystic = isMystic > 0;
 
+  // create raid with info from the message
   raid.create(info)
     .then(function (x) {
       // x is the result from the database
@@ -303,39 +287,8 @@ async function addRaid(msg, boss) {
         x.raidbattletime,
         [],
         x.isMystic
-      ).then(function (x) {
-        // x is undefined!
-        if (x !== undefined) {
-          setTimeout(() => {
-            var messageinfo = { "messageid": x.id };
-          }, 2500);
-
-          console.log("++++++++++++   " + messageinfo + "    +++++++++++");
-          raid.update(messageinfo, { where: { "idraids": raidId } });
-        } else {
-          console.log('message is undefined, something went wrong when returning the raid message object');
-        }
-      });
-    });
-
-
-  let raidsNeedToBeDeleted = await raid.findAll(
-    {
-      where: {
-        expireat: {
-          $lt: new Date()
-        }
-      }
-    }
-  );
-
-
-
-  for (let raid in raidsNeedToBeDeleted) {
-    let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
-    raidsmeldingenchannel.messages.find("id", raid.dataValues.messageid).delete();
-  }
-
+      )
+    }).catch(console.error)
 }
 
 async function updateRaid(msg) {
@@ -406,7 +359,6 @@ async function updateRaid(msg) {
 async function deleteRaid(msg, id) {
 
   if (!isNaN(id)) {
-
     try {
       result = await raid.findOne({
         where: { "idraids": id }
