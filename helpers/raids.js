@@ -27,6 +27,8 @@ const valoremoji = '351003870367055883';
 //const instinctemoji = `340033299508363265`
 //const valoremoji    = `340141649474617346`
 
+// initialisation
+// connects to database and creates table for raids
 exports.init = async () => {
 
   connection = new Sequelize(
@@ -101,42 +103,29 @@ exports.init = async () => {
   });
 }
 
+// scan incoming messages in the raid channel
 exports.scan = async function (msg) {
 
+  // clean input
   let text = msg.content.toLowerCase().trim();
   let textArray = text.split(" ");
-
   let command = textArray[0];
 
+  // switch for the command
+  // TODO; clean up to seperate function for readability
   switch (command) {
     case 'del':
-      if (textArray.length > 1) {
-        if (textArray[1] === "all") {
-          //delete raids
-          await deleteRaid(msg);
-          //resetID command
-          setTimeout(() => {
-            raid.truncate();
-            return true;
-          }, 500);
-          let raidschannel = msg.guild.channels.find("name", "raids");
-          raidschannel.send("raids removed & raidID reset");
-
-        } else {
-          if (textArray.length > 1) {
-            deleteRaid(msg, textArray[1]);
-          }
-        }
-        return true;
-      }
+      del(textArray);
       return;
     case 'resetid':
       await raid.truncate();
       return;
     default:
+      // find the pokemon in the message
       let boss = pokemons.find((item) => {
         return item.keys.includes(textArray[0]);
       });
+      // add raid if a boss in present in the message (new raid), otherwise update raid
       if (boss) {
         addRaid(msg, boss);
       } else {
@@ -146,6 +135,7 @@ exports.scan = async function (msg) {
 }
 
 
+// scan the reaction of the raid message
 exports.scanReaction = async function (messageReaction, user) {
 
   let title = messageReaction.message.embeds[0].author.name;
@@ -536,4 +526,28 @@ function leaveRaid(msg, id) {
           )
         })
     });
+}
+
+async function del(textArray) {
+  console.log('new function delete called!');
+  if (textArray.length > 1) {
+    // delete all raids
+    if (textArray[1] === "all") {
+      //delete raids
+      await deleteRaid(msg);
+      //resetID command
+      setTimeout(() => {
+        raid.truncate();
+        return true;
+      }, 500);
+      let raidschannel = msg.guild.channels.find("name", "raids");
+      raidschannel.send("raids removed & raidID reset");
+
+    }
+    // delete raid with specified id
+    else {
+      deleteRaid(msg, textArray[1]);
+    }
+    return true;
+  }
 }
