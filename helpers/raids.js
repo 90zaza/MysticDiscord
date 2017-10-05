@@ -197,6 +197,7 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
     });
   });
 
+  // create message
   let embed = new Discord.RichEmbed()
     .setColor(isMystic ? 0x0677ee : 0xffffff)
     .setURL(gym ? gym.url : "")
@@ -206,11 +207,19 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
     .addField("Times", "Ends:\t" + endTime + "\nBattle:\t" + battleTime)
     .addField("Joining (bring at least " + pokemon.recplayers + " trainers)", joining);
 
+  // find message to update in the channel
   let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
   let message = raidsmeldingenchannel.messages.find("id", msgId);
 
-  //reply message of the raid ID and role
-  if (message) { } else {
+  if (message) {
+    // If the message exists, update it with the new embedded message that was created
+    return message.edit({ embed });
+  } else {
+    // If the message object is null, this function is called with msgID = -1,
+    // which means a new raid is registered. Notify the new raid in the raid channel.
+    // TODO: clean up this hack of creating a new raid. (seperate creating of embed message, call from different fucntions)
+
+    // Send message to raid channel with new raid
     let raidschannel = msg.guild.channels.find("name", "raids");
     if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
       let role = msg.guild.roles.find("name", pokemon.name);
@@ -218,10 +227,9 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
     } else {
       raidschannel.send(`Raid ${id}: ${pokemon.name}`);
     }
-  }
-  if (message) {
-    return message.edit({ embed });
-  } else {
+
+    // Send message and add emoji reactions
+    // TODO: error is thrown! newMessage is undefined
     let newMessage = raidsmeldingenchannel.send({ embed }).then(function (message) {
       message.react("➕")
       setTimeout(() => {
@@ -236,10 +244,8 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
       setTimeout(() => {
         message.react(valoremoji)
       }, 2000);
-    })
-
+    });
     return newMessage;
-
   }
 }
 
@@ -257,6 +263,7 @@ async function addRaid(msg, boss) {
   // if gym is blue this is > 0 otherwise 0
   ++isMystic;
 
+  // collect all the information from the message in the info object
   let info = { "raidboss": boss.keys[0] };
 
   indexes = [textArray.indexOf("e"), textArray.indexOf("b"), textArray.indexOf("g"), textArray.length].sort();
@@ -279,6 +286,7 @@ async function addRaid(msg, boss) {
 
   info.isMystic = isMystic > 0;
 
+  // create raid with info from the message
   raid.create(info)
     .then(function (x) {
       // x is the result from the database
