@@ -247,7 +247,7 @@ async function addRaid(msg, boss) {
   let textArray = text.split(" ");
 
   // check if gym is mystic
-  let isMystic = /<:mystic:\d*>/.test(msg)
+  let isMystic = /mystic/.test(msg)
 
   // collect all the information from the message in the info object
   let info = { "raidboss": boss.keys[0] };
