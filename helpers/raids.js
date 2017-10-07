@@ -112,7 +112,14 @@ exports.scan = async function (msg) {
   if (/help/.test(msg.content)) {
     printHelp(msg);
   }
-
+  // join
+  if (/join/.test(msg.content)) {
+    // TODO
+  }
+  // leave
+  if (/leave/.test(msg.content)) {
+    // TODO
+  }
   // delete raid
   if (/del/.test(msg.content)) {
     deleteRaid(msg, msg.content.match(/del (\d*)/)[1]);
@@ -494,6 +501,7 @@ function leaveRaid(msg, id) {
     });
 }
 
+// TODO: update according to new raid system
 function printHelp(msg) {
   let embed = new Discord.RichEmbed()
     .setAuthor("How to use the Raid Bot")
