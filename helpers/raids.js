@@ -134,7 +134,7 @@ exports.scan = async function (msg) {
     updateRaid(msg);
   }
   // new raid
-  // TODO: tidy up
+  // TODO: relay finding pokemon down to creating a new raid object
   // find the pokemon in the message
   let boss = pokemons.find((item) => {
     return item.keys.includes(textArray[0]);
@@ -142,6 +142,7 @@ exports.scan = async function (msg) {
 
   if (boss) {
     addRaid(msg, boss);
+    addRaid2(msg, boss);
   }
 }
 
@@ -286,7 +287,9 @@ async function addRaid(msg, boss) {
 
   info.expireat = moment().add(2, 'hours');
 
-  info.isMystic = isMystic(msg.content);
+  info.isMystic = isMysticcc(msg.content);
+
+  console.log("info: " + JSON.stringify(info));
 
   // create raid with info from the message
   raid.create(info)
@@ -329,7 +332,7 @@ async function updateRaid(msg) {
   }
 
   var info = {};
-  info.isMystic = isMystic(msg.content);
+  info.isMystic = isMysticcc(msg.content);
 
   indexes = [textArray.indexOf("e"), textArray.indexOf("b"), textArray.indexOf("g"), textArray.length].sort();
   let endIdx = textArray.indexOf("e");
@@ -523,13 +526,19 @@ function printHelp(message) {
   message.channel.send({ embed });
 }
 
+async function addRaid2(message, pokemon) {
+  // create raid object
+  newRaiddd = new Raid(message, pokemon);
+  console.log(newRaiddd);
+}
+
 /**
  * Returns true if the message contains 'mystic'.
  * @param {Message} message The content of the message
  */
-function isMystic(message) {
+function isMysticcc(message) {
   var regex = /mystic/;
-  return regex.test(content);
+  return regex.test(message.content);
 }
 
 /**
@@ -566,4 +575,31 @@ function matchRegex(string, regex) {
     return string.match(regex)[1];
   }
   return null;
+}
+
+// old way of extracting the pokemon from the message
+// TODO: update to more efficient method
+// TODO: doens't work (yet)
+function extractPokemon(message) {
+  var regex = /(^\S*)/;
+  pokemons.find((item) => {
+    return item.keys.includes(matchRegex(message.content, regex));
+  });
+  return null;
+}
+
+/**
+ * Data class for raid object
+ */
+class Raid {
+  constructor(message, pokemon) {
+    // raidboss is this way due to synchronization with db
+    this.raidboss = pokemon.keys[0]
+    this.raidgym = extractGym(message);
+    this.raidbattletime = extractBattleTime(message);
+    this.raidendtime = extractEndTime(message);
+    this.isMystic = isMysticcc(message);
+    // no clue what this is for, but this is from the old raid system
+    this.expireat = moment().add(2, 'hours');
+  }
 }
