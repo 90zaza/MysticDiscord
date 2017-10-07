@@ -108,6 +108,11 @@ exports.scan = async function (msg) {
   // clean input
   let textArray = msg.content.toLowerCase().trim().split(" ");
 
+  // help
+  if (/help/.test(msg.content)) {
+    printHelp(msg);
+  }
+
   // delete raid
   if (/del/.test(msg.content)) {
     deleteRaid(msg, msg.content.match(/del (\d*)/)[1]);
@@ -487,4 +492,18 @@ function leaveRaid(msg, id) {
           )
         })
     });
+}
+
+function printHelp(msg) {
+  let embed = new Discord.RichEmbed()
+    .setAuthor("How to use the Raid Bot")
+    .setColor(0xffffff)
+    .addField("Add a Raid", "**!raid [boss] e [end time] g [gym] b [battle time]**")
+    .addField("Required/Optional", "required: boss; optional: e,g,b.")
+    .addField("Change Raid Parameters", "**!raid [raid ID] [e/g/b] [value]**")
+    .addField("Raid ID", "The raid ID is the number in Blanches raid announcement.")
+    .addField("Join/Leave a Raid", "**!raid join [id]** to join, **!raid leave [id]** to leave")
+    .addField("Delete a Raid / Delete All Raids", "**!raid del [id]** / **!raid del all**")
+
+  msg.channel.send({ embed });
 }
