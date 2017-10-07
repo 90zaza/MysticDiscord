@@ -105,19 +105,20 @@ exports.init = async () => {
 
 // scan incoming messages in the raid channel
 exports.scan = async function (msg) {
+  message = new Message(msg);
   // clean input
   let textArray = msg.content.toLowerCase().trim().split(" ");
 
   // help
-  if (/help/.test(msg.content)) {
-    printHelp(msg);
+  if (/help/.test(message.content)) {
+    printHelp(message);
   }
   // join
-  if (/join/.test(msg.content)) {
+  if (/join/.test(message.content)) {
     // TODO
   }
   // leave
-  if (/leave/.test(msg.content)) {
+  if (/leave/.test(message.content)) {
     // TODO
   }
   // delete raid
@@ -218,6 +219,7 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
     // If the message exists, update it with the new embedded message that was created
     return message.edit({ embed });
   } else {
+    var ret;
     // If the message object is null, this function is called with msgID = -1,
     // which means a new raid is registered. Notify the new raid in the raid channel.
     // TODO: clean up this hack of creating a new raid. (seperate creating of embed message, call from different functions)
@@ -232,23 +234,25 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
     }
 
     // TODO: Do not use timeouts when sending emojis
-    raidsmeldingenchannel.send({ embed }).
-      then(function (message) {
-        message.react("➕")
-        setTimeout(() => {
-          message.react("➖")
-        }, 500);
-        setTimeout(() => {
-          message.react(mysticemoji)
-        }, 1000);
-        setTimeout(() => {
-          message.react(instinctemoji)
-        }, 1500);
-        setTimeout(() => {
-          message.react(valoremoji)
-        }, 2000);
+    raidsmeldingenchannel.send({ embed })
+      .then(function (message) {
+        ret = message;
+        message.react("➕"),
+          setTimeout(() => {
+            message.react("➖")
+          }, 500),
+          setTimeout(() => {
+            message.react(mysticemoji)
+          }, 1000),
+          setTimeout(() => {
+            message.react(instinctemoji)
+          }, 1500),
+          setTimeout(() => {
+            message.react(valoremoji)
+          }, 2000)
       })
       .catch(console.error);
+    return ret;
   }
 }
 
@@ -281,7 +285,7 @@ async function addRaid(msg, boss) {
 
   info.expireat = moment().add(2, 'hours');
 
-  info.isMystic = isMystic > 0;
+  info.isMystic = isMystic(msg.content);
 
   // create raid with info from the message
   raid.create(info)
@@ -298,9 +302,18 @@ async function addRaid(msg, boss) {
         x.raidendtime,
         x.raidbattletime,
         [],
-        x.isMystic
-      )
-    }).catch(console.error)
+        x.isMystic)
+        .then(function (message) {
+          if (message != null) {
+            console.log('foo');
+            console.log(message);
+          } else {
+            console.log('bar');
+          }
+        })
+        .catch(console.error)
+    })
+    .catch(console.error)
 }
 
 async function updateRaid(msg) {
@@ -315,14 +328,7 @@ async function updateRaid(msg) {
   }
 
   var info = {};
-
-  // check if array contains the word mystic
-  let isMystic = textArray.indexOf("mystic") + textArray.indexOf(mysticemoji);
-  if (isMystic >= 0) { // if yes
-    // remove the element from the array
-    textArray.splice(isMystic, 0);
-    info.isMystic = true;
-  }
+  info.isMystic = isMystic(msg.content);
 
   indexes = [textArray.indexOf("e"), textArray.indexOf("b"), textArray.indexOf("g"), textArray.length].sort();
   let endIdx = textArray.indexOf("e");
@@ -502,7 +508,7 @@ function leaveRaid(msg, id) {
 }
 
 // TODO: update according to new raid system
-function printHelp(msg) {
+function printHelp(message) {
   let embed = new Discord.RichEmbed()
     .setAuthor("How to use the Raid Bot")
     .setColor(0xffffff)
@@ -513,5 +519,50 @@ function printHelp(msg) {
     .addField("Join/Leave a Raid", "**!raid join [id]** to join, **!raid leave [id]** to leave")
     .addField("Delete a Raid / Delete All Raids", "**!raid del [id]** / **!raid del all**")
 
-  msg.channel.send({ embed });
+  message.channel.send({ embed });
+}
+
+/**
+ * Returns true if the message contains 'mystic'.
+ * @param {Message} message The content of the message
+ */
+function isMystic(message) {
+  var regex = /mystic/;
+  return regex.test(content);
+}
+
+/**
+ * Extracts the end time from the message if present, returns null otherwise.
+ * @param {Message} message The message
+ */
+function extractEndTime(message) {
+  var regex = /e (\d\d:\d\d)/;
+  return matchRegex(message.content, regex);
+}
+
+/**
+ * Extracts the battle time from the message if present, returns null otherwise.
+ * @param {Message} message The message
+ */
+function extractBattleTime(message) {
+  var regex = /b (\d\d:\d\d)/;
+  return matchRegex(message.content, regex);
+}
+
+/**
+ * Extracts the gym from the message if present, returns null otherwise.
+ */
+function extractGym(message) {
+  var regex = /g\s([a-z| ]*)\s[b|e|\n]/;
+  return matchRegex(message.content, regex);
+}
+
+/**
+ * Tests the regex against the string and returns the first match.
+ */
+function matchRegex(string, regex) {
+  if (regex.test(string)) {
+    return string.match(regex)[1];
+  }
+  return null;
 }
