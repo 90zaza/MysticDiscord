@@ -260,65 +260,6 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
   }
 }
 
-async function addRaid(msg, boss) {
-
-  let text = msg.content.toLowerCase();
-  let textArray = text.split(" ");
-
-  // check if gym is mystic
-  let isMystic = /mystic/.test(msg)
-
-  // collect all the information from the message in the info object
-  let info = { "raidboss": boss.keys[0] };
-
-  indexes = [textArray.indexOf("e"), textArray.indexOf("b"), textArray.indexOf("g"), textArray.length].sort();
-  let endIdx = textArray.indexOf("e");
-  if (endIdx >= 0) {
-    info.raidendtime = textArray.slice(endIdx + 1, indexes[indexes.indexOf(endIdx) + 1]).join(' ');
-  }
-
-  let battleIdx = textArray.indexOf("b");
-  if (battleIdx >= 0) {
-    info.raidbattletime = textArray.slice(battleIdx + 1, indexes[indexes.indexOf(battleIdx) + 1]).join(' ');
-  }
-
-  let gymIdx = textArray.indexOf("g");
-  if (gymIdx >= 0) {
-    info.raidgym = textArray.slice(gymIdx + 1, indexes[indexes.indexOf(gymIdx) + 1]).join(' ');
-  }
-
-  info.expireat = moment().add(2, 'hours');
-
-  info.isMystic = isMysticcc(msg.content);
-
-  console.log("info: " + JSON.stringify(info));
-
-  // create raid with info from the message
-  raid.create(info)
-    .then(function (x) {
-      // x is the result from the database
-      let raidId = x.idraids;
-      // create raid message with the information
-      updateMessage(
-        msg,
-        -1,
-        raidId,
-        boss.keys[0],
-        x.raidgym,
-        x.raidendtime,
-        x.raidbattletime,
-        [],
-        x.isMystic)
-        .then(function (message) {
-          if (message != null) {
-            console.log(message);
-          }
-        })
-        .catch(console.error)
-    })
-    .catch(console.error)
-}
-
 async function updateRaid(msg) {
 
   let text = msg.content.toLowerCase();
@@ -535,9 +476,7 @@ async function addRaid2(message, pokemon) {
     .catch(console.error);
 }
 
-async function updateRaiddd(message) {
-  // extract id
-
+async function updateRaiddd(message, id) {
   // get raid from database
 
   // update message
