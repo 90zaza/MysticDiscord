@@ -7,6 +7,8 @@ const gyms = require('../data/gyms.json');
 
 var connection;
 var raid;
+var client;
+
 
 //testdiscord
 const joinemoji = '➕';
@@ -29,8 +31,8 @@ const valoremoji = '351003870367055883';
 
 // initialisation
 // connects to database and creates table for raids
-exports.init = async () => {
-
+exports.init = async (otherclient) => {
+  client = otherclient;
   connection = new Sequelize(
     process.env.DB_DATABASE,
     process.env.DB_USER,
@@ -132,6 +134,7 @@ exports.scan = async function (msg) {
   // update
   if (/^\d*/.test(msg.content)) {
     updateRaid(msg);
+    updateRaiddd(message, id);
   }
   // new raid
   // TODO: relay finding pokemon down to creating a new raid object
@@ -141,14 +144,13 @@ exports.scan = async function (msg) {
   });
 
   if (boss) {
-    addRaid(msg, boss);
+    // addRaid(msg, boss);
     addRaid2(msg, boss);
   }
 }
 
 // scan the reaction of the raid message
 exports.scanReaction = async function (messageReaction, user) {
-
   let title = messageReaction.message.embeds[0].author.name;
   let id = title.split(" ")[1][1];
 
@@ -308,10 +310,7 @@ async function addRaid(msg, boss) {
         x.isMystic)
         .then(function (message) {
           if (message != null) {
-            console.log('foo');
             console.log(message);
-          } else {
-            console.log('bar');
           }
         })
         .catch(console.error)
@@ -528,13 +527,82 @@ function printHelp(message) {
 async function addRaid2(message, pokemon) {
   // create raid object
   newRaiddd = new Raid(message, pokemon);
-  console.log(newRaiddd);
+  // add raid to db
+  raid.create(newRaiddd)
+    // send message of newly created raid with obtained id from the database
+    .then(response => createMessage(newRaiddd, response.dataValues.idraids))
+    .catch(console.error);
+}
+
+async function updateRaiddd(message) {
+  // extract id
+
+  // get raid from database
+
+  // update message
+}
+
+// TODO: update
+async function createMessage(raid, id) {
+  const gym = gyms.find((gym) => {
+    return gym.keys.find((key) => {
+      return raid.raidgym.trim().toLowerCase().startsWith(key);
+    });
+  });
+
+  const pokemon = pokemons.find((item) => {
+    return item.keys.includes(raid.raidboss);
+  });
+  const imageURL = `https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`;
+
+  // create message
+  let embed = new Discord.RichEmbed()
+    .setColor(raid.isMystic ? 0x0677ee : 0xffffff)
+    .setURL(gym ? gym.url : "")
+    .setAuthor("Raid #" + id + ": " + (pokemon ? pokemon.name : BossName))
+    .setTitle("📍 " + (gym ? gym.name : raid.raidgym))
+    .setThumbnail(imageURL)
+    .addField("Times", "Ends:\t" + (raid.raidendtime ? raid.raidendtime : "to be added") + "\nBattle:\t" + (raid.raidbattletime ? raidbattletime : "to be determined"))
+    .addField("Joining (bring at least " + pokemon.recplayers + " trainers)", "No people interested yet");
+
+  // Send message to raid channel with new raid
+  let raidsmeldingenchannel = client.channels.find("name", "raids_meldingen");
+
+  // TODO: Do not use timeouts when sending emojis
+  raidsmeldingenchannel.send({ embed })
+  .then(function (message) {
+    ret = message;
+    message.react("➕"),
+      setTimeout(() => {
+        message.react("➖")
+      }, 500),
+      setTimeout(() => {
+        message.react(mysticemoji)
+      }, 1000),
+      setTimeout(() => {
+        message.react(instinctemoji)
+      }, 1500),
+      setTimeout(() => {
+        message.react(valoremoji)
+      }, 2000)
+  })
+  .catch(console.error);
+
+  // Send message to raid channel with new raid
+  let raidschannel = raid.message.guild.channels.find("name", "raids");
+  if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
+    let role = raid.message.guild.roles.find("name", pokemon.name);
+    raidschannel.send(`Raid ${id}: ${role}`);
+  } else {
+    raidschannel.send(`Raid ${id}: ${pokemon.name}`);
+  }
 }
 
 /**
  * Returns true if the message contains 'mystic'.
  * @param {Message} message The content of the message
  */
+// TODO: extend to extract every colour
 function isMysticcc(message) {
   var regex = /mystic/;
   return regex.test(message.content);
@@ -561,9 +629,18 @@ function extractBattleTime(message) {
 /**
  * Extracts the gym from the message if present, returns null otherwise.
  */
+// TODO: Update to regex (is hard though)
 function extractGym(message) {
-  var regex = /g\s([a-z| ]*)\s[b|e|\n]/;
-  return matchRegex(message.content, regex);
+  let textArray = message.content.split(" ");
+  let gymIdx = textArray.indexOf("g");
+  if (gymIdx >= 0) {
+    return textArray.slice(gymIdx + 1, indexes[indexes.indexOf(gymIdx) + 1]).join(' ');
+  }
+  return "to be added";
+
+  // Stuff to regex the gym name
+  // var regex = /g\s([a-z| ]*)\s[b|e|\n]/;
+  // return matchRegex(message.content, regex);
 }
 
 /**
@@ -600,5 +677,6 @@ class Raid {
     this.isMystic = isMysticcc(message);
     // no clue what this is for, but this is from the old raid system
     this.expireat = moment().add(2, 'hours');
+    this.message = message;
   }
 }
