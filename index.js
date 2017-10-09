@@ -33,7 +33,7 @@ const pokemons = new Pokemons().get();
 const BotName = process.env.BOT_NAME;
 
 const raidAnnouncmentChannel = process.env.RAID_CHANNEL;
-raids.init();
+raids.init(client);
 
 // start script
 client.on('ready', () => {
