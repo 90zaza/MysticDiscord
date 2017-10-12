@@ -112,40 +112,33 @@ exports.scan = async function (msg) {
   let textArray = msg.content.toLowerCase().trim().split(" ");
 
   // help
-  if (/help/.test(message.content)) {
+  if (/help/.test(message.message.content)) {
     printHelp(message);
   }
   // join
-  if (/join/.test(message.content)) {
+  if (/join/.test(message.message.content)) {
     // TODO
   }
   // leave
-  if (/leave/.test(message.content)) {
+  if (/leave/.test(message.message.content)) {
     // TODO
   }
   // delete raid
-  if (/del/.test(msg.content)) {
+  if (/del/.test(message.message.content)) {
     deleteRaid(msg, msg.content.match(/del (\d*)/)[1]);
   }
   // reset
-  if (/reset/.test(msg.content)) {
+  if (/reset/.test(message.message.content)) {
     await raid.truncate();
   }
   // update
-  if (/^\d*/.test(msg.content)) {
+  if (/^\d+/.test(message.message.content)) {
     updateRaid(msg);
-    updateRaiddd(message, id);
+    updateRaiddd(message, matchRegexReturnFirst(message.message.content, /^\d+/));
   }
   // new raid
-  // TODO: relay finding pokemon down to creating a new raid object
-  // find the pokemon in the message
-  let boss = pokemons.find((item) => {
-    return item.keys.includes(textArray[0]);
-  });
-
-  if (boss) {
-    // addRaid(msg, boss);
-    addRaid2(msg, boss);
+  if (/^\S+/.test(message.message.content)) {
+    addRaid2(message);
   }
 }
 
@@ -466,32 +459,38 @@ function printHelp(message) {
   message.channel.send({ embed });
 }
 
-async function addRaid2(message, pokemon) {
-  // create raid object
-  newRaiddd = new Raid(message, pokemon);
-  // add raid to db
-  raid.create(newRaiddd)
-    // send message of newly created raid with obtained id from the database
-    .then(response => createMessage(newRaiddd, response.dataValues.idraids))
-    .catch(console.error);
+async function addRaid2(message) {
+  try {
+    // create raid object
+    newRaiddd = new Raid(message);
+    // add raid to db
+    raid.create(newRaiddd)
+      // send message of newly created raid with obtained id from the database
+      .then(response => createMessage(newRaiddd, response.dataValues.idraids))
+      .catch(console.error);
+  }
+  catch (error) {
+    console.log(error);
+  }
+
 }
 
 async function updateRaiddd(message, id) {
   // get raid from database
-
+  newRaiddd = new Raid(message);
   // update message
 }
 
 // TODO: update
-async function createMessage(raid, id) {
+async function createMessage(raiddd, id) {
   const gym = gyms.find((gym) => {
     return gym.keys.find((key) => {
-      return raid.raidgym.trim().toLowerCase().startsWith(key);
+      return raiddd.raidgym.trim().toLowerCase().startsWith(key);
     });
   });
 
   const pokemon = pokemons.find((item) => {
-    return item.keys.includes(raid.raidboss);
+    return item.keys.includes(raiddd.raidboss.toLowerCase());
   });
   const imageURL = `https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`;
 
@@ -500,9 +499,9 @@ async function createMessage(raid, id) {
     .setColor(raid.isMystic ? 0x0677ee : 0xffffff)
     .setURL(gym ? gym.url : "")
     .setAuthor("Raid #" + id + ": " + (pokemon ? pokemon.name : BossName))
-    .setTitle("📍 " + (gym ? gym.name : raid.raidgym))
+    .setTitle("📍 " + (gym ? gym.name : raiddd.raidgym))
     .setThumbnail(imageURL)
-    .addField("Times", "Ends:\t" + (raid.raidendtime ? raid.raidendtime : "to be added") + "\nBattle:\t" + (raid.raidbattletime ? raidbattletime : "to be determined"))
+    .addField("Times", "Ends:\t" + (raiddd.raidendtime ? raiddd.raidendtime : "to be added") + "\nBattle:\t" + (raiddd.raidbattletime ? raiddd.raidbattletime : "to be determined"))
     .addField("Joining (bring at least " + pokemon.recplayers + " trainers)", "No people interested yet");
 
   // Send message to raid channel with new raid
@@ -510,28 +509,28 @@ async function createMessage(raid, id) {
 
   // TODO: Do not use timeouts when sending emojis
   raidsmeldingenchannel.send({ embed })
-  .then(function (message) {
-    ret = message;
-    message.react("➕"),
-      setTimeout(() => {
-        message.react("➖")
-      }, 500),
-      setTimeout(() => {
-        message.react(mysticemoji)
-      }, 1000),
-      setTimeout(() => {
-        message.react(instinctemoji)
-      }, 1500),
-      setTimeout(() => {
-        message.react(valoremoji)
-      }, 2000)
-  })
-  .catch(console.error);
+    .then(function (message) {
+      ret = message;
+      message.react("➕"),
+        setTimeout(() => {
+          message.react("➖")
+        }, 500),
+        setTimeout(() => {
+          message.react(mysticemoji)
+        }, 1000),
+        setTimeout(() => {
+          message.react(instinctemoji)
+        }, 1500),
+        setTimeout(() => {
+          message.react(valoremoji)
+        }, 2000)
+    })
+    .catch(console.error);
 
   // Send message to raid channel with new raid
-  let raidschannel = raid.message.guild.channels.find("name", "raids");
+  let raidschannel = raiddd.message.message.guild.channels.find("name", "raids");
   if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
-    let role = raid.message.guild.roles.find("name", pokemon.name);
+    let role = raiddd.message.message.guild.roles.find("name", pokemon.name);
     raidschannel.send(`Raid ${id}: ${role}`);
   } else {
     raidschannel.send(`Raid ${id}: ${pokemon.name}`);
@@ -554,7 +553,7 @@ function isMysticcc(message) {
  */
 function extractEndTime(message) {
   var regex = /e (\d\d:\d\d)/;
-  return matchRegex(message.content, regex);
+  return matchRegexReturnFirst(message.content, regex);
 }
 
 /**
@@ -563,15 +562,16 @@ function extractEndTime(message) {
  */
 function extractBattleTime(message) {
   var regex = /b (\d\d:\d\d)/;
-  return matchRegex(message.content, regex);
+  return matchRegexReturnFirst(message.message.content, regex);
 }
 
 /**
  * Extracts the gym from the message if present, returns null otherwise.
+ * @param {*} message The message
  */
 // TODO: Update to regex (is hard though)
 function extractGym(message) {
-  let textArray = message.content.split(" ");
+  let textArray = message.message.content.split(" ");
   let gymIdx = textArray.indexOf("g");
   if (gymIdx >= 0) {
     return textArray.slice(gymIdx + 1, indexes[indexes.indexOf(gymIdx) + 1]).join(' ');
@@ -585,38 +585,63 @@ function extractGym(message) {
 
 /**
  * Tests the regex against the string and returns the first match.
+ * @param string The string to match the regex against
+ * @param regex The regex to match the string against
  */
-function matchRegex(string, regex) {
+function matchRegexReturnFirst(string, regex) {
   if (regex.test(string)) {
     return string.match(regex)[1];
   }
   return null;
 }
 
-// old way of extracting the pokemon from the message
-// TODO: update to more efficient method
-// TODO: doens't work (yet)
+/**
+ * Extracts the pokemon from the message if present, return null otherwise
+ * @param {*} message The message
+ */
 function extractPokemon(message) {
-  var regex = /(^\S*)/;
-  pokemons.find((item) => {
-    return item.keys.includes(matchRegex(message.content, regex));
+  // old way of extracting the pokemon from the message
+  // TODO: update to more efficient method
+  let textArray = message.message.content.split(" ");
+  return pokemons.find((item) => {
+    return item.keys.includes(textArray[0]);
   });
-  return null;
+}
+
+/**
+ * Extract just the name of the pokemon, required for db synchronisation
+ * @param {*} message
+ */
+function extractPokemonName(message) {
+  let pokemon = extractPokemon(message);
+  if (pokemon) {
+    return pokemon.name;
+  }
 }
 
 /**
  * Data class for raid object
  */
 class Raid {
-  constructor(message, pokemon) {
+  constructor(message) {
     // raidboss is this way due to synchronization with db
-    this.raidboss = pokemon.keys[0]
+    this.raidboss = extractPokemonName(message);
     this.raidgym = extractGym(message);
     this.raidbattletime = extractBattleTime(message);
     this.raidendtime = extractEndTime(message);
     this.isMystic = isMysticcc(message);
     // no clue what this is for, but this is from the old raid system
     this.expireat = moment().add(2, 'hours');
+    // TODO: this can't be included within this class due to database synchronization
+    this.messageid = message.message.id;
     this.message = message;
+  }
+
+  merge(raid) {
+    if (raid === Raid) {
+      for (property in raid) {
+        this.property = raid.property;
+      }
+    }
   }
 }
