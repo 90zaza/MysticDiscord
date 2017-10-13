@@ -1,6 +1,6 @@
 module.exports = class Pokemons {
   constructor() {
-    this.pokemonsData = require('../data/pokemons.json');
+    this.pokemonsData = require('../data/pokemon.json');
     this.calculateRanks();
   }
 

@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const Sequelize = require('sequelize');
 const moment = require('moment');
 const Message = require('../models/message');
-const pokemons = require('../data/pokemons.json');
+const pokemons = require('../data/pokemon.json');
 const gyms = require('../data/gyms.json');
 
 var connection;

@@ -41,12 +41,6 @@ client.on('message', async (msg) => {
     return;
   }
 
-  let verifiedrole = msg.guild.roles.find("name","makingdelftblueagain");
-  let moderatorrole = msg.guild.roles.find("name", "moderators");
-  let raidschannel = msg.guild.channels.find("name", "raids");
-  let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
-  let welkomchannel = msg.guild.channels.find("name", "welkom");
-  let spelerregistratiechannel = msg.guild.channels.find("name", "speler_registratie");
 
   // DEPRECATED determine if the bot activates or not
   var msgText = msg.content.toLowerCase().substr(1).trim();
@@ -55,11 +49,19 @@ client.on('message', async (msg) => {
   // new stuff
   new GymResponse(msg);
   new PokemonResponse(msg, pokemons);
-  new PokemonSpottingResponse(msg);
   new GenericResponse(msg);
   new MusicResponse(msg);
   new GambleResponse(msg);
+
+  let verifiedrole = msg.guild.roles.find("name","makingdelftblueagain");
+  let moderatorrole = msg.guild.roles.find("name", "moderators");
+  let raidschannel = msg.guild.channels.find("name", "raids");
+  let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
+  let welkomchannel = msg.guild.channels.find("name", "welkom");
+  let spelerregistratiechannel = msg.guild.channels.find("name", "speler_registratie");
+
   new TeamResponse(msg);
+  new PokemonSpottingResponse(msg);
   if (msg.member.roles.has(verifiedrole.id)) {
       new ChannelRolesResponse(msg);
   }
@@ -82,7 +84,7 @@ client.on('message', async (msg) => {
 
   // delete amount of messages
   if (msgText.startsWith("delete")) {
-    if (msg.member.roles.has(moderatorrole)) {
+    if (msg.member.roles.has(moderatorrole.id)) {
       var del = msgText.split(" ");
       del.splice(0, 1);
       msg.channel.bulkDelete(del);

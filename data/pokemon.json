@@ -156,7 +156,7 @@
     "description": 0
   },
   {
-    "keys": ["buterfree"],
+    "keys": ["butterfree", "buterfree"],
     "name": "Buterfree",
     "number": 12,
     "stats": [167, 151, 120],
@@ -5029,8 +5029,8 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,,
-        "description": 0"rare":  false
-
+    "gender": false,
+    "rare":  false,
+    "description": 0
   }
 ]

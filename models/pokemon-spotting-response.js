@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const Message = require('./message');
-const pokemons = require('../data/pokemons.json');
+const pokemons = require('../data/pokemon.json');
 
 module.exports = class PokemonSpottingResponse extends Message {
   constructor(message) {
