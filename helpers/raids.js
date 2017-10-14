@@ -133,11 +133,12 @@ exports.scan = async function (msg) {
   }
   // update
   if (/^\d+/.test(message.message.content)) {
-    updateRaid(msg);
-    updateRaiddd(message, matchRegexReturnFirst(message.message.content, /^\d+/));
+    // updateRaid(msg);
+    updateRaiddd(message, matchRegexReturnFirst(message.message.content, /(^\d+)/));
   }
   // new raid
-  if (/^\S+/.test(message.message.content)) {
+  if (/^[a-zA-Z]+/.test(message.message.content)) {
+    console.log('WHADDUPP')
     addRaid2(message);
   }
 }
@@ -475,9 +476,35 @@ async function addRaid2(message) {
 }
 
 async function updateRaiddd(message, id) {
-  // get raid from database
-  newRaiddd = new Raid(message);
-  // update message
+  try {
+    // extract information from the message
+    newRaiddd = new Raid(message);
+
+    // update updated parts in database
+    // aka remove properties that are null from object, update raid with that object
+    // but we don't want to update
+    Object.keys(newRaiddd).forEach((key) => (newRaiddd[key] == null) && delete newRaiddd[key]);
+    console.log(newRaiddd);
+
+
+    // 368144312300470272
+
+    // // get raid with given id from database
+    // raid.findAll({
+    //   where: {
+    //     idraids: id
+    //   }
+    // })
+    // .then(oldRaiddd => console.log(oldRaiddd));
+
+    // // update message
+    // console.log(newRaiddd);
+    // newRaiddd.clean()
+    // console.log("cleaned " + JSON.stringify(newRaiddd));
+  }
+  catch (error) {
+    console.log(error);
+  }
 }
 
 // TODO: update
@@ -494,6 +521,7 @@ async function createMessage(raiddd, id) {
   const imageURL = `https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`;
 
   // create message
+  // TODO: Move to Raid class
   let embed = new Discord.RichEmbed()
     .setColor(raid.isMystic ? 0x0677ee : 0xffffff)
     .setURL(gym ? gym.url : "")
@@ -543,7 +571,19 @@ async function createMessage(raiddd, id) {
 // TODO: extend to extract every colour
 function isMysticcc(message) {
   var regex = /mystic/;
-  return regex.test(message.content);
+  return regex.test(message.message.content);
+}
+function extractTeam(message) {
+  if (/mystic/.test(message.message.content)) {
+    return "mystic";
+  }
+  if (/instinct/.test(message.message.content)) {
+    return "instinct"
+  }
+  if (/valor/.test(message.message.content)) {
+    return "valor"
+  }
+  return null;
 }
 
 /**
@@ -552,7 +592,7 @@ function isMysticcc(message) {
  */
 function extractEndTime(message) {
   var regex = /e (\d\d:\d\d)/;
-  return matchRegexReturnFirst(message.content, regex);
+  return matchRegexReturnFirst(message.message.content, regex);
 }
 
 /**
@@ -575,7 +615,7 @@ function extractGym(message) {
   if (gymIdx >= 0) {
     return textArray.slice(gymIdx + 1, indexes[indexes.indexOf(gymIdx) + 1]).join(' ');
   }
-  return "to be added";
+  return null;
 
   // Stuff to regex the gym name
   // var regex = /g\s([a-z| ]*)\s[b|e|\n]/;
@@ -616,6 +656,7 @@ function extractPokemonName(message) {
   if (pokemon) {
     return pokemon.name;
   }
+  return null;
 }
 
 /**
@@ -629,18 +670,39 @@ class Raid {
     this.raidbattletime = extractBattleTime(message);
     this.raidendtime = extractEndTime(message);
     this.isMystic = isMysticcc(message);
+    this.team = extractTeam(message);
     // no clue what this is for, but this is from the old raid system
-    this.expireat = moment().add(2, 'hours');
+    // this.expireat = moment().add(2, 'hours');
     // TODO: this can't be included within this class due to database synchronization
     this.messageid = message.message.id;
     this.message = message;
   }
 
-  merge(raid) {
-    if (raid === Raid) {
-      for (property in raid) {
-        this.property = raid.property;
+  /**
+   * Merge all properties from other raid to this raid, besides teh messageid
+   * @param {*} raid
+   */
+  merge(otherraid) {
+    if (otherraid === Raid) {
+      for (property in otherraid) {
+        if (property != "messageid") {
+          this.property = otherraid.property;
+        }
       }
     }
+  }
+
+  clean() {
+    Object.keys(this).forEach((key) => (this[key] == null) && delete this[key]);
+  }
+}
+
+
+function embedColor(raiddd) {
+  switch (raiddd.team) {
+    case "mystic":
+      return 0x0677ee;
+    default:
+      return 0xffffff;
   }
 }
