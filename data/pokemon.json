@@ -157,7 +157,7 @@
   },
   {
     "keys": ["butterfree", "buterfree"],
-    "name": "Buterfree",
+    "name": "Butterfree",
     "number": 12,
     "stats": [167, 151, 120],
     "type": ["bug", "flying"],

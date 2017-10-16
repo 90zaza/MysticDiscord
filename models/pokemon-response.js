@@ -44,7 +44,7 @@ module.exports = class PokemonResponse extends Message {
   }
 
   getPokemon() {
-    return this.startsWithKey(this.pokemons);
+    return this.totalMatchKey(this.pokemons);
   }
 
   reply() {
