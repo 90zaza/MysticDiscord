@@ -3887,7 +3887,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Baby pokémon"
   },
   {
     "keys": ["nosepass", "nosepas", "nospass", "nospas"],
@@ -4683,8 +4683,8 @@
     "description": 0
   },
   {
-    "keys": ["wynaut"],
-    "name": "Wynout",
+    "keys": ["wynaut", "wynout"],
+    "name": "Wynaut",
     "number": 360,
     "type": ["psychic"],
     "stats": [41, 86, 190],
@@ -4693,7 +4693,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Baby pokémon"
   },
   {
     "keys": ["snorunt"],
