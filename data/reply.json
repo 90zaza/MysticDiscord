@@ -46,4 +46,10 @@
 }, {
   "keys": ["regional", "exclusive"],
   "reply": "Regional exclusive pokemon zijn alleen in specifieke delen van de wereld te vinden. Zie deze kaart <https://www.google.com/maps/d/u/0/viewer?mid=1gOn-ASh7kskCCiHK4A-IHZSwfsk>"
+ }, {
+  "keys": ["bloemen stop", "bloemen kunst", "flower art"],
+  "reply": "De Bloemen Kunst pokestop (bij de aldi), een van de beste pokéstops in delft. Locatie: <https://goo.gl/maps/xkRgUtLm8y42>"  }, {
+}, {
+  "keys": ["inholland", "hogeschool inholland"],
+  "reply": "De Hogeschool Inholland pokestop (op de campus), een van de beste pokéstops in delft. Locatie: <https://goo.gl/maps/3ZbYAjcb36z>"  }, {
 }]
