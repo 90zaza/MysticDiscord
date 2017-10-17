@@ -1080,7 +1080,7 @@
   },
   {
     "keys": ["farfetch", "farfetchd", "farfetch'd", "farfetcht"],
-    "name": "Farfetch'd",
+    "name": "Farfetchd",
     "number": 83,
     "type": ["normal", "flying"],
     "stats": [124, 118, 104],
@@ -1089,7 +1089,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": "Oost Azië Regional"
+    "description": "Japan Regional"
   },
   {
     "keys": ["doduo"],
@@ -1589,7 +1589,7 @@
   },
   {
     "keys": ["mr mime", "mr. mime", "mrmime", "mister mime"],
-    "name": "Mr. Mime",
+    "name": "Mr-Mime",
     "number": 122,
     "type": ["psychic", "fairy"],
     "stats": [192, 233, 80],
@@ -1884,7 +1884,7 @@
     "recplayers": 5,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Team Mystic FTW!"
   },
   {
     "keys": ["zapdos"],
@@ -2230,7 +2230,7 @@
     "name": "Lanturn",
     "number": 171,
     "type": ["water", "electric"],
-    "stats": [],
+    "stats": [146, 146, 250],
     "attacks": ["Water Gun", "Hydro Pump"],
     "defence": ["Charge Beam", "Thunderbolt"],
     "recplayers": 0,
@@ -3326,7 +3326,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": false,
     "rare":  false,
     "description": 0
   },
@@ -3581,7 +3581,7 @@
     "keys": ["shiftry", "shiftree"],
     "name": "Shiftry",
     "number": 275,
-    "type": ["275"],
+    "type": ["grass", "dark"],
     "stats": [200, 121, 180],
     "attacks": [],
     "defence": [],
@@ -4059,8 +4059,8 @@
     "description": 0
   },
   {
-    "keys": ["minum"],
-    "name": "Minum",
+    "keys": ["minun", "minum"],
+    "name": "Minun",
     "number": 312,
     "type": ["electric"],
     "stats": [147, 167, 120],
