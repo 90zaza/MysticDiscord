@@ -2717,7 +2717,7 @@
     "recplayers": 0,
     "gender": true,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert van Onix met behulp van een Metal Coat"
   },
   {
     "keys": ["snubbull", "snubbul", "snubbel", "snubbell", "snubbel"],
@@ -2769,7 +2769,7 @@
     "recplayers": 0,
     "gender": true,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert van Scyther met behulp van een Metal Coat"
   },
   {
     "keys": ["shuckle", "shukle"],
