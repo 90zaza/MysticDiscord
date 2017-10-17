@@ -10,7 +10,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "404 error"
   },
   {
     "keys": ["bulba", "bulbasaur"],
@@ -377,8 +377,8 @@
     "description": 0
   },
   {
-    "keys": ["nidoranf"],
-    "name": "NidoranF",
+    "keys": ["nidoranf", "nidoran f"],
+    "name": "Nidoran-f",
     "number": 29,
     "stats": [86, 94, 110],
     "type": ["poison"],
@@ -416,8 +416,8 @@
     "description": 0
   },
   {
-    "keys": ["nidoranm"],
-    "name": "NidoranM",
+    "keys": ["nidoranm", "nidoran m"],
+    "name": "Nidoran-m",
     "number": 32,
     "stats": [105, 76, 92],
     "type": ["poison"],
@@ -1089,7 +1089,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Oost Azië Regional"
   },
   {
     "keys": ["doduo"],
@@ -1390,7 +1390,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert van Tyrogue als Attack zijn hoogste IV stat is"
   },
   {
     "keys": ["hitmonchan"],
@@ -1403,7 +1403,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert van Tyrogue als Defence zijn hoogste IV stat is"
   },
   {
     "keys": ["lickytung", "lickitung"],
@@ -1507,7 +1507,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Australie Regional"
   },
   {
     "keys": ["horsea", "horsee"],
@@ -1598,7 +1598,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Europa Regional"
   },
   {
     "keys": ["scyther", "syther", "scyter"],
@@ -1676,7 +1676,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "USA Regional"
   },
   {
     "keys": ["magikarp"],
@@ -1754,7 +1754,7 @@
     "recplayers": 3,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Evolueer eevee met Rainer als nickname (werkt 1 keer)"
   },
   {
     "keys": ["jolteon"],
@@ -1767,7 +1767,7 @@
     "recplayers": 3,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Evolueer eevee met Sparky als nickname (werkt 1 keer)"
   },
   {
     "keys": ["flareon"],
@@ -1780,7 +1780,7 @@
     "recplayers": 3,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Evolueer eevee met Pyro als nickname (werkt 1 keer)"
   },
   {
     "keys": ["porygon"],
@@ -2249,7 +2249,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Baby pokémon"
   },
   {
     "keys": ["cleffa"],
@@ -2262,7 +2262,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Baby pokémon"
   },
   {
     "keys": ["igglybuff", "iglybuff", "iglybuf", "igglybuf"],
@@ -2275,7 +2275,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Baby pokémon"
   },
   {
     "keys": ["togepi"],
@@ -2288,7 +2288,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Baby pokémon"
   },
   {
     "keys": ["togetic"],
@@ -2379,7 +2379,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert van Gloom met behulp van een Sun Stone"
   },
   {
     "keys": ["marill", "maril"],
@@ -2431,7 +2431,7 @@
     "recplayers": 0,
     "gender": true,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert van Poliwhirl met behulp van een Kings Rock"
   },
   {
     "keys": ["hoppip"],
@@ -2509,7 +2509,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert van Sunkern met behulp van een Sun Stone"
   },
   {
     "keys": ["yanma"],
@@ -2561,7 +2561,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Evolueer eevee met Sakura als nickname of door overdag te evolueren nadat je er >10 km me hebt gelopen als buddy"
   },
   {
     "keys": ["umbreon"],
@@ -2574,7 +2574,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Evolueer eevee met Tamao als nickname of door 's nachts te evolueren nadat je er >10 km me hebt gelopen als buddy"
   },
   {
     "keys": ["murkrow"],
@@ -2600,7 +2600,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert van Slowpoke met behulp van een Kings Rock"
   },
   {
     "keys": ["misdreavus", "misdrevus", "misdravus"],
@@ -2899,7 +2899,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Lattidude Regional (tussen 31N en 26S max 50 km van de kust)"
   },
   {
     "keys": ["remoraid"],
@@ -3003,7 +3003,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert van Seadra met behulp van een Dragon Scale"
   },
   {
     "keys": ["phanpy", "phanphy"],
@@ -3042,7 +3042,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert van Porygon met behulp van een Up-Grade"
   },
   {
     "keys": ["stantler"],
@@ -3081,7 +3081,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Baby pokémon"
   },
   {
     "keys": ["hitmontop"],
@@ -3094,7 +3094,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert van Tyrogue als HP zijn hoogste IV stat is"
   },
   {
     "keys": ["smoochum"],
@@ -3107,7 +3107,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Baby pokémon"
   },
   {
     "keys": ["elekid"],
@@ -3120,7 +3120,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Baby pokémon"
   },
   {
     "keys": ["magby"],
@@ -3133,7 +3133,7 @@
     "recplayers": 0,
     "gender": false,
     "rare":  false,
-    "description": 0
+    "description": "Baby pokémon"
   },
   {
     "keys": ["miltank"],
@@ -3630,7 +3630,7 @@
     "description": 0
   },
   {
-    "keys": ["pelipper", "pelipper", "pellipper", "pelliper"],
+    "keys": ["pelipper", "peliper", "pellipper", "pelliper"],
     "name": "Pelipper",
     "number": 279,
     "type": ["water", "flying"],
@@ -4852,7 +4852,7 @@
     "description": 0
   },
   {
-    "keys": ["salamence"],
+    "keys": ["salamence", "salamance"],
     "name": "Salamence",
     "number": 373,
     "type": ["dragon", "flying"],

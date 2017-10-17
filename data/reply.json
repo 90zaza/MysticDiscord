@@ -43,4 +43,7 @@
 }, {
   "keys": ["pokeboot", "pokéboot"],
   "reply": "De pokéboot, (ook bekend als Stads-Koffyhuis) is een plek in Delft Centrum waar je lekker kunt eten onder het genot van 4 pokestops. Hij is hier te vinden: <https://goo.gl/maps/DmomVUJgdaA2>"
+}, {
+  "keys": ["regional", "exclusive"],
+  "reply": "Regional exclusive pokemon zijn alleen in specifieke delen van de wereld te vinden. Zie deze kaart <https://www.google.com/maps/d/u/0/viewer?mid=1gOn-ASh7kskCCiHK4A-IHZSwfsk>"
 }]
