@@ -3162,7 +3162,7 @@
     "description": 0
   },
   {
-    "keys": ["raikou"],
+    "keys": ["raikou", "dog jolteon", "jolteon dog"],
     "name": "Raikou",
     "number": 243,
     "type": ["electric"],
@@ -3175,7 +3175,7 @@
     "description": 0
   },
   {
-    "keys": ["entei"],
+    "keys": ["entei", "dog flareon", "flareon dog"],
     "name": "Entei",
     "number": 244,
     "type": ["fire"],
@@ -3188,7 +3188,7 @@
     "description": 0
   },
   {
-    "keys": ["suicune"],
+    "keys": ["suicune", "dog vaporeon", "vaporeon dog"],
     "name": "Suicune",
     "number": 245,
     "type": ["water"],

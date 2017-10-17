@@ -158,7 +158,7 @@ function printHelp (msg) {
     .addField("Required/Optional", "required: boss; optional: e,g,b.")
     .addField("Change Raid Parameters", "**!raid [raid ID] [e/g/b] [value]**")
     .addField("Raid ID", "The raid ID is the number in Blanches raid announcement.")
-    .addField("Join/Leave a Raid", "**!raid join [id]** to join, **!raid leave [id]** to leave")
+    .addField("Join/Leave a Raid", "**!join [id]** to join, **!leave [id]** to leave")
     .addField("Delete a Raid / Delete All Raids", "**!raid del [id]** / **!raid del all**")
 
     msg.channel.send({embed});
