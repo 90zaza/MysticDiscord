@@ -3257,7 +3257,7 @@
     "name": "Ho-Oh",
     "number": 250,
     "type": ["fire", "flying"],
-    "stats": [263, 301, 212],
+    "stats": [239, 274, 193],
     "attacks": [],
     "defence": [],
     "recplayers": 5,
