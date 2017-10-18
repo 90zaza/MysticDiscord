@@ -1957,7 +1957,7 @@
     "number": 150,
     "type": ["psychic"],
     "stats": [300, 182, 193],
-    "attacks": ["Confusion", "Psychic"],
+    "attacks": ["Confusion", "Focus Blast"],
     "defence": [],
     "recplayers": 6,
     "gender": false,

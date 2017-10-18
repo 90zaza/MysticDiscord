@@ -33,7 +33,7 @@
   "reply": "Een spoofer is iemand die het een goed idee vind om dit spel vanaf de bank te spelen. Dit soort treurige personen die hun pokemon niet waard zijn manipuleren hun GPS om het spel te spelen. Report dit soort faalhazen hier:\n\n<https://support.pokemongo.nianticlabs.com/hc/en-us/requests/new?ticket_form_id=319948>\nMoge Niantics banhamer genadeloos zijn"
 }, {
   "keys": ["help"],
-  "reply": "Hey! Mijn naam is Blanche, en ik ben de teamleider van het beste team, Mystic! Naast het appraisen van jouw pokemon in game, kan ik jullie ook op discord assistentie verlenen. Ik reageer onder andere op de volgende commando's zolang ze zonder hoofdletters geschreven zijn:\n![pokemon]      voor info over pokémon\n![gym naam]    voor de locatie van een gym\n!raid ...              het raid commando [!raid help voor meer info]\n!+[regio]           zie #speler_registratie"
+  "reply": "Hey! Mijn naam is Blanche, en ik ben de teamleider van het beste team, Mystic! Naast het appraisen van jouw pokemon in game, kan ik jullie ook op discord assistentie verlenen. Ik reageer onder andere op de volgende commando's zolang ze zonder hoofdletters geschreven zijn:\n!pokemon      voor info over pokémon\n!gym naam    voor de locatie van een gym\n!raid ...              het raid commando !raid help voor meer info\n!counter boss voor een lijst van counters\n!top type          voor een top 10 pokemon\n!+regio              zie #speler_registratie"
 }, {
   "keys": ["type"],
   "reply": "Zie hier een tabel met type effectiviteit:\nhttps://image.ibb.co/mxRthv/Untitled.png"
