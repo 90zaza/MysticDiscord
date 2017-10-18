@@ -1617,7 +1617,7 @@
     "keys": ["jynx"],
     "name": "Jynx",
     "number": 124,
-    "type": ["ice, psychic"],
+    "type": ["ice", "psychic"],
     "stats": [223, 182, 130],
     "attacks": ["Frost Breath", "Avalanche"],
     "defence": [],
