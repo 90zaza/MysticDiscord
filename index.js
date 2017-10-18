@@ -24,6 +24,7 @@ const MusicResponse = require('./models/music-response');
 const GambleResponse = require('./models/gamble-response');
 const TeamResponse = require('./models/team-response');
 const ChannelRolesResponse = require('./models/channel-roles-response');
+//const TopResponse = require('./models/top-response');
 
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
@@ -52,6 +53,10 @@ client.on('message', async (msg) => {
   new GenericResponse(msg);
   new MusicResponse(msg);
   new GambleResponse(msg);
+//  if (msgText.split(' ')[0] == "top") {
+//      msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
+//      new TopResponse(msg);
+//  }
 
   let verifiedrole = msg.guild.roles.find("name","makingdelftblueagain");
   let moderatorrole = msg.guild.roles.find("name", "moderators");

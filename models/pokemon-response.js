@@ -50,7 +50,7 @@ module.exports = class PokemonResponse extends Message {
   reply() {
     let sprite, gender;
 
-    if (Math.random()>0.02) {
+    if (Math.random()>0.01) {
       sprite = 'normal';
     } //2% chance on a shiny sprite
     else {
