@@ -4,7 +4,7 @@
     "name": "Missingno",
     "number": 0,
     "type": ["normal", "flying"],
-    "stats": [218, 10, 66],
+    "stats": [],
     "attacks": [],
     "defence": [],
     "recplayers": 0,
@@ -1046,7 +1046,7 @@
     "type": ["water", "psychic"],
     "stats": [177, 194, 190],
     "attacks": [],
-    "defence": [],
+    "defence": ["Confusion", "Ice Beam"],
     "recplayers": 0,
     "gender": 0,
     "rare":  false,
@@ -2204,7 +2204,7 @@
     "name": "Crobat",
     "number": 169,
     "type": ["poison", "flying"],
-    "stats": [],
+    "stats": [194, 178, 170],
     "attacks": ["Air Slash", "Sludge Bomb"],
     "defence": ["Air Slash", "Sludge Bomb"],
     "recplayers": 0,
@@ -2626,7 +2626,7 @@
     "recplayers": 0,
     "gender": 0,
     "rare":  true,
-    "description": "This pokémon is shaped like ancient writing. It is a mystery as to which came first, the ancient writings or the various UNOWN."
+    "description": "This pokémon is shaped like ancient writing. It is a mystery as to which came first, the ancient writings or the various unown."
   },
   {
     "keys": ["wobbuffet", "wobufet", "wobbufet", "wobuffet"],
@@ -4914,7 +4914,7 @@
     "recplayers": 0,
     "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "⠗⠊⠛⠓⠞ ⠗⠊⠛⠓⠞ ⠙⠕⠺⠝ ⠙⠕⠺⠝ ⠞⠓⠑⠝ ⠥⠎⠑ ⠽⠕⠥⠗ ⠎⠞⠗⠑⠝⠛⠞⠓"
   },
   {
     "keys": ["regice", "regiice"],
@@ -4927,7 +4927,7 @@
     "recplayers": 0,
     "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "⠎⠞⠕⠏ ⠁⠝⠙ ⠺⠁⠊⠞ ⠥⠝⠍⠕⠧⠊⠝⠛ ⠁⠎ ⠞⠊⠍⠑ ⠏⠁⠎⠎⠑⠎ ⠽⠕⠥ ⠃⠽ ⠞⠺⠊⠉⠑"
   },
   {
     "keys": ["registeel"],
@@ -4940,7 +4940,7 @@
     "recplayers": 0,
     "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "⠎⠞⠁⠝⠙ ⠉⠑⠝⠞⠑⠗ ⠁⠊⠍ ⠞⠕ ⠞⠓⠑ ⠎⠅⠽ ⠺⠊⠞⠓ ⠇⠕⠧⠑ ⠁⠝⠙ ⠓⠕⠏⠑ ⠁⠝⠙ ⠞⠊⠍⠑"
   },
   {
     "keys": ["latias"],

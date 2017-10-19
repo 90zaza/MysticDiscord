@@ -46,7 +46,10 @@
 }, {
   "keys": ["regional", "exclusive"],
   "reply": "Regional exclusive pokemon zijn alleen in specifieke delen van de wereld te vinden. Zie deze kaart <https://www.google.com/maps/d/u/0/viewer?mid=1gOn-ASh7kskCCiHK4A-IHZSwfsk>"
- }, {
+}, {
+  "keys": ["professor oak"],
+  "reply": "Hey! My name is Professor Oak, and i've known you from since you where born! Remind me again, are you a boy, or are you a girl?"
+}, {
   "keys": ["bloemen stop", "bloemen kunst", "flower art", "bloemenstop"],
   "reply": "De Bloemen Kunst pokestop (bij de aldi), een van de beste pokéstops in delft. Locatie: <https://goo.gl/maps/xkRgUtLm8y42>"  }, {
 }, {
