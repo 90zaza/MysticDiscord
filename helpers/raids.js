@@ -89,7 +89,6 @@ exports.init = async (otherclient) => {
     },
     messageid: {
       type: Sequelize.STRING,
-      defaultValue: "ID"
     },
     expireat: {
       type: Sequelize.DATE
@@ -138,7 +137,6 @@ exports.scan = async function (msg) {
   }
   // new raid
   if (/^[a-zA-Z]+/.test(message.message.content)) {
-    console.log('WHADDUPP')
     addRaid2(message);
   }
 }
@@ -200,7 +198,7 @@ async function updateMessage(msg, msgId, id, bossName, gymName, endTime, battleT
   });
 
   // create message
-  let embed = new Discord.RichEmbed()
+  let embed = new Discord.MessageEmbed()
     .setColor(isMystic ? 0x0677ee : 0xffffff)
     .setURL(gym ? gym.url : "")
     .setAuthor("Raid #" + id + ": " + (pokemon ? pokemon.name : BossName))
@@ -447,7 +445,7 @@ function leaveRaid(msg, id) {
 
 // TODO: update according to new raid system
 function printHelp(message) {
-  let embed = new Discord.RichEmbed()
+  let embed = new Discord.MessageEmbed()
     .setAuthor("How to use the Raid Bot")
     .setColor(0xffffff)
     .addField("Add a Raid", "**!raid [boss] e [end time] g [gym] b [battle time]**")
@@ -461,119 +459,116 @@ function printHelp(message) {
 }
 
 async function addRaid2(message) {
-  try {
-    // create raid object
-    newRaiddd = new Raid(message);
-    // add raid to db
-    raid.create(newRaiddd)
-      // send message of newly created raid with obtained id from the database
-      .then(response => createMessage(newRaiddd, response.dataValues.idraids))
-      .catch(console.error);
-  }
-  catch (error) {
-    console.log(error);
-  }
+  // create raid object
+  newRaiddd = new Raid(message);
 
+  // add raid to db
+  raid.create(newRaiddd.getDatabaseObject())
+    // send message of newly created raid with obtained id from the database
+    .then(async response => {
+      let foo = await
+        embed(defaultEmbed(), newRaiddd, response.dataValues.idraids)
+          .then(embed => {
+            let raidsmeldingenchannel = client.channels.find("name", "raids_meldingen");
+            raidsmeldingenchannel.send(embed)
+              .then(async (message) => {
+                // update database with message id
+                await raid.update(
+                  { messageid: message.id },
+                  { where: { idraids: response.dataValues.idraids } })
+
+                // send reaction emojis
+                await message.react("➕")
+                await message.react("➖")
+                await message.react(mysticemoji);
+                await message.react(instinctemoji);
+                await message.react(valoremoji);
+              })
+              .catch(console.error);
+          })
+          .catch(console.error);
+    })
+    .catch(console.error);
+}
+
+// TODO
+async function letPeopleKnowOfNewRaid() {
+  // Send message to raid channel with new raid
+  // let raidschannel = message.guild.channels.find("name", "raids");
+  // if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
+  //   let role = message.guild.roles.find("name", pokemon.name);
+  //   raidschannel.send(`Raid ${id}: ${role}`);
+  // } else {
+  //   raidschannel.send(`Raid ${id}: ${pokemon.name}`);
+  // }
 }
 
 async function updateRaiddd(message, id) {
-  try {
-    // extract information from the message
-    newRaiddd = new Raid(message);
+  // extract information from the message
+  newRaiddd = new Raid(message);
 
-    // update updated parts in database
-    // aka remove properties that are null from object, update raid with that object
-    // but we don't want to update
-    Object.keys(newRaiddd).forEach((key) => (newRaiddd[key] == null) && delete newRaiddd[key]);
-    console.log(newRaiddd);
+  // find object
+  raid.findById(id)
+    .then(result => {
+      // update database
+      result.update(newRaiddd.getDatabaseObject());
 
-
-    // 368144312300470272
-
-    // // get raid with given id from database
-    // raid.findAll({
-    //   where: {
-    //     idraids: id
-    //   }
-    // })
-    // .then(oldRaiddd => console.log(oldRaiddd));
-
-    // // update message
-    // console.log(newRaiddd);
-    // newRaiddd.clean()
-    // console.log("cleaned " + JSON.stringify(newRaiddd));
-  }
-  catch (error) {
-    console.log(error);
-  }
-}
-
-// TODO: update
-async function createMessage(raiddd, id) {
-  const gym = gyms.find((gym) => {
-    return gym.keys.find((key) => {
-      return raiddd.raidgym.trim().toLowerCase().startsWith(key);
-    });
-  });
-
-  const pokemon = pokemons.find((item) => {
-    return item.keys.includes(raiddd.raidboss.toLowerCase());
-  });
-  const imageURL = `https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`;
-
-  // create message
-  // TODO: Move to Raid class
-  let embed = new Discord.RichEmbed()
-    .setColor(raid.isMystic ? 0x0677ee : 0xffffff)
-    .setURL(gym ? gym.url : "")
-    .setAuthor("Raid #" + id + ": " + (pokemon ? pokemon.name : BossName))
-    .setTitle("📍 " + (gym ? gym.name : raiddd.raidgym))
-    .setThumbnail(imageURL)
-    .addField("Times", "Ends:\t" + (raiddd.raidendtime ? raiddd.raidendtime : "to be added") + "\nBattle:\t" + (raiddd.raidbattletime ? raiddd.raidbattletime : "to be determined"))
-    .addField("Joining (bring at least " + pokemon.recplayers + " trainers)", "No people interested yet");
-
-  // Send message to raid channel with new raid
-  let raidsmeldingenchannel = client.channels.find("name", "raids_meldingen");
-
-  // TODO: Do not use timeouts when sending emojis
-  raidsmeldingenchannel.send({ embed })
-    .then(function (message) {
-      ret = message;
-      message.react("➕"),
-        setTimeout(() => {
-          message.react("➖")
-        }, 500),
-        setTimeout(() => {
-          message.react(mysticemoji)
-        }, 1000),
-        setTimeout(() => {
-          message.react(instinctemoji)
-        }, 1500),
-        setTimeout(() => {
-          message.react(valoremoji)
-        }, 2000)
+      // update message
+      message.message.channel.messages.fetch(result.dataValues.messageid)
+        .then(m => {
+          // update embedded message with new information
+          embed(m.embeds[0], newRaiddd, id)
+            .then(embed => {
+              m.edit(embed)
+                .catch(console.error);
+            })
+            .catch(console.error);
+        })
+        .catch(console.error);
     })
     .catch(console.error);
+}
 
-  // Send message to raid channel with new raid
-  let raidschannel = raiddd.message.message.guild.channels.find("name", "raids");
-  if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
-    let role = raiddd.message.message.guild.roles.find("name", pokemon.name);
-    raidschannel.send(`Raid ${id}: ${role}`);
-  } else {
-    raidschannel.send(`Raid ${id}: ${pokemon.name}`);
-  }
+function defaultEmbed() {
+  return new Discord.MessageEmbed()
+    .setColor(0xffffff)
+    .setURL(undefined)
+    .setAuthor("Raid #-1: To be added")
+    .setTitle("📍 to be added")
+    .addField("End time", "to be added")
+    .addField("Battle time", "to be determined")
+    .addField("Joining (bring at least x trainers)", "No people interested yet");
+}
+
+async function embed(embed, raiddd, id) {
+  Object.keys(raiddd).forEach((key) => {
+    switch (key) {
+      case "gym":
+        embed.setURL(raiddd.gym.url);
+        embed.setTitle("📍 " + raiddd.gym.name);
+        break;
+      case "pokemon":
+        embed.setAuthor("Raid #" + id + ": " + raiddd.pokemon.name);
+        embed.setThumbnail(`https://img.pokemondb.net/sprites/x-y/normal/${raiddd.pokemon.name.toLowerCase()}.png`);
+        embed.fields.filter(field => /^Joining/.test(field.name))[0].name = "Joining (bring at least " + raiddd.pokemon.recplayers + " trainers)";
+        break;
+      case "endtime":
+        embed.fields.filter(field => field.name === "End time")[0].value = raiddd.endtime;
+        break;
+      case "battletime":
+        embed.fields.filter(field => field.name === "Battle time")[0].value = raiddd.battletime;
+        break;
+      case "team":
+        embed.setColor(embedColor(raiddd));
+    }
+  });
+  return embed;
 }
 
 /**
- * Returns true if the message contains 'mystic'.
+ * Returns the team of the gym, otherwise null.
  * @param {Message} message The content of the message
  */
-// TODO: extend to extract every colour
-function isMysticcc(message) {
-  var regex = /mystic/;
-  return regex.test(message.message.content);
-}
 function extractTeam(message) {
   if (/mystic/.test(message.message.content)) {
     return "mystic";
@@ -613,14 +608,17 @@ function extractBattleTime(message) {
 function extractGym(message) {
   let textArray = message.message.content.split(" ");
   let gymIdx = textArray.indexOf("g");
+  let indexes = [textArray.indexOf("e"), textArray.indexOf("b"), textArray.indexOf("g"), textArray.length]
   if (gymIdx >= 0) {
-    return textArray.slice(gymIdx + 1, indexes[indexes.indexOf(gymIdx) + 1]).join(' ');
+    const gymName = textArray.slice(gymIdx + 1, indexes[indexes.indexOf(gymIdx) + 1]).join(' ');
+    const gym = gyms.find((gym) => {
+      return gym.keys.find((key) => {
+        return gymName.trim().toLowerCase().startsWith(key);
+      });
+    });
+    return gym;
   }
   return null;
-
-  // Stuff to regex the gym name
-  // var regex = /g\s([a-z| ]*)\s[b|e|\n]/;
-  // return matchRegex(message.content, regex);
 }
 
 /**
@@ -649,56 +647,44 @@ function extractPokemon(message) {
 }
 
 /**
- * Extract just the name of the pokemon, required for db synchronisation
- * @param {*} message
- */
-function extractPokemonName(message) {
-  let pokemon = extractPokemon(message);
-  if (pokemon) {
-    return pokemon.name;
-  }
-  return null;
-}
-
-/**
  * Data class for raid object
  */
 class Raid {
   constructor(message) {
-    // raidboss is this way due to synchronization with db
-    this.raidboss = extractPokemonName(message);
-    this.raidgym = extractGym(message);
-    this.raidbattletime = extractBattleTime(message);
-    this.raidendtime = extractEndTime(message);
-    this.isMystic = isMysticcc(message);
+    this.pokemon = extractPokemon(message);
+    this.gym = extractGym(message);
+    this.battletime = extractBattleTime(message);
+    this.endtime = extractEndTime(message);
     this.team = extractTeam(message);
-    // no clue what this is for, but this is from the old raid system
-    // this.expireat = moment().add(2, 'hours');
-    // TODO: this can't be included within this class due to database synchronization
-    this.messageid = message.message.id;
-    this.message = message;
-  }
-
-  /**
-   * Merge all properties from other raid to this raid, besides teh messageid
-   * @param {*} raid
-   */
-  merge(otherraid) {
-    if (otherraid === Raid) {
-      for (property in otherraid) {
-        if (property != "messageid") {
-          this.property = otherraid.property;
-        }
-      }
-    }
-  }
-
-  clean() {
     Object.keys(this).forEach((key) => (this[key] == null) && delete this[key]);
+  }
+
+  getDatabaseObject() {
+    let result = {}
+    Object.keys(this).forEach((key) => {
+      switch (key) {
+        case "gym":
+          result.raidgym = this.gym.name;
+          break;
+        case "pokemon":
+          result.raidboss = this.pokemon.name;
+          break;
+        case "endtime":
+          result.raidendtime = this.endtime;
+          break;
+        case "battletime":
+          result.raidbattletime = this.battletime;
+          break;
+      }
+    });
+    return result;
   }
 }
 
-
+/**
+ * Determine the color of the embedded message.
+ * @param {*} raiddd
+ */
 function embedColor(raiddd) {
   switch (raiddd.team) {
     case "mystic":
