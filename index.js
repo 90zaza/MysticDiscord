@@ -39,7 +39,8 @@ raids.init(client);
 
 // start script
 client.on('ready', () => {
-  client.user.setGame('Pokémon Go');
+  // this is apperantly not a function anymore
+  // client.user.setGame('Pokémon Go');
   console.log('Blanche: I am ready!');
 });
 
