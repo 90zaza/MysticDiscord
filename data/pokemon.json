@@ -8,7 +8,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "404 error"
   },
@@ -21,7 +21,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -34,7 +34,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -47,7 +47,7 @@
     "attacks": ["Vine Whip", "Solar Beam"],
     "defence": [],
     "recplayers": 5,
-    "gender": true,
+    "gender": 0.125,
     "rare":  false,
     "description": 0
   },
@@ -60,7 +60,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -73,7 +73,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -86,7 +86,7 @@
     "attacks": ["Fire Spin", "Overheat"],
     "defence": [],
     "recplayers": 4,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -99,7 +99,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -112,7 +112,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -125,7 +125,7 @@
     "attacks": ["Water Gun", "Hydro Pump"],
     "defence": [],
     "recplayers": 5,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -138,7 +138,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -151,7 +151,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -164,7 +164,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -177,7 +177,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -190,7 +190,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -203,7 +203,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -216,7 +216,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -229,7 +229,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -242,7 +242,7 @@
     "attacks": ["Air Slash", "Hurricane"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -255,7 +255,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -268,7 +268,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -281,7 +281,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -294,7 +294,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -307,7 +307,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -320,7 +320,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -333,7 +333,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -346,7 +346,7 @@
     "attacks": ["Spark", "Wild Charge"],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -359,7 +359,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -372,7 +372,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -385,7 +385,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -398,7 +398,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -411,7 +411,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -424,7 +424,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -437,7 +437,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -450,7 +450,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -463,7 +463,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -476,7 +476,7 @@
     "attacks": [],
     "defence": ["Zen Headbutt", "Dazzling Gleam"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -489,7 +489,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -502,7 +502,7 @@
     "attacks": ["Fire Spin", "Overheat"],
     "defence": ["Fire Spin", "Overheat"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -515,7 +515,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -528,7 +528,7 @@
     "attacks": ["Pound", "Play Rough"],
     "defence": ["Pound", "Play Rough"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -541,7 +541,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -554,7 +554,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -567,7 +567,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -580,7 +580,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -593,7 +593,7 @@
     "attacks": ["Razor Leaf", "Solar Beam"],
     "defence": ["Razor Leaf", "Solar Beam"],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -606,7 +606,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -619,7 +619,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -632,7 +632,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -645,7 +645,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -658,7 +658,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -671,7 +671,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -684,7 +684,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -697,7 +697,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -710,7 +710,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -723,7 +723,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -736,7 +736,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -749,7 +749,7 @@
     "attacks": ["Counter", "Close Combat"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -762,7 +762,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -775,7 +775,7 @@
     "attacks": ["Fire Fang", "Fire Blast"],
     "defence": [],
     "recplayers": 3,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -788,7 +788,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -801,7 +801,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -814,7 +814,7 @@
     "attacks": ["Rock Smash", "Dynamic Punch"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -827,7 +827,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -840,7 +840,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.25,
     "rare":  false,
     "description": 0
   },
@@ -853,7 +853,7 @@
     "attacks": ["Psycho Cut", "Future Sight"],
     "defence": [],
     "recplayers": 2,
-    "gender": true,
+    "gender": 0.25,
     "rare":  false,
     "description": 0
   },
@@ -866,7 +866,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -879,7 +879,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -892,7 +892,7 @@
     "attacks": ["Counter", "Dynamic Punch"],
     "defence": [],
     "recplayers": 2,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -905,7 +905,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -918,7 +918,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -931,7 +931,7 @@
     "attacks": ["Razor Leaf", "Solar Beam"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -944,7 +944,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -957,7 +957,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -970,7 +970,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -983,7 +983,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -996,7 +996,7 @@
     "attacks": ["rock Throw", "Stone Edge"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1009,7 +1009,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1022,7 +1022,7 @@
     "attacks": ["Fire Spin", "Fire Blast"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1035,7 +1035,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1048,7 +1048,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1061,7 +1061,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1074,7 +1074,7 @@
     "attacks": ["Spark", "Zap Cannon"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1087,7 +1087,7 @@
     "attacks": ["Fury Cutter", "Leaf Blade"],
     "defence": ["Fury Cutter", "Leaf Blade"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Japan Regional"
   },
@@ -1100,7 +1100,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -1113,7 +1113,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -1126,7 +1126,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1139,7 +1139,7 @@
     "attacks": ["Frost Breath", "Blizzard"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1152,7 +1152,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1165,7 +1165,7 @@
     "attacks": ["Poison Jab", "Gunk Shot"],
     "defence": [],
     "recplayers": 2,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1178,7 +1178,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1191,7 +1191,7 @@
     "attacks": ["Frost Breath", "Avalanche"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1204,7 +1204,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1217,7 +1217,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1230,7 +1230,7 @@
     "attacks": ["Hex", "Shadow Ball"],
     "defence": [],
     "recplayers": 2,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1243,7 +1243,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1256,7 +1256,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1269,7 +1269,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -1282,7 +1282,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1295,7 +1295,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1308,7 +1308,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1321,7 +1321,7 @@
     "attacks": ["Spark", "Thunderbolt"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1335,7 +1335,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1349,7 +1349,7 @@
     "attacks": ["Bullet Seed", "Solar Beam"],
     "defence": [],
     "recplayers": 2,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1362,7 +1362,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1375,7 +1375,7 @@
     "attacks": ["Mud-Slap", "Earthquake"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1388,7 +1388,7 @@
     "attacks": ["Rock Smash", "Close Combat"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Evolueert van Tyrogue als Attack zijn hoogste IV stat is"
   },
@@ -1401,7 +1401,7 @@
     "attacks": ["Counter", "Close Combat"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Evolueert van Tyrogue als Defence zijn hoogste IV stat is"
   },
@@ -1414,7 +1414,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1427,7 +1427,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1440,7 +1440,7 @@
     "attacks": ["Infestation", "Sludge Bomb"],
     "defence": [],
     "recplayers": 2,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1453,7 +1453,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -1466,7 +1466,7 @@
     "attacks": ["Mud Slap", "Earthquake/Stone Edge"],
     "defence": [],
     "recplayers": 5,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -1479,7 +1479,7 @@
     "attacks": [],
     "defence": ["Zen Headbutt", "Dazzling Gleam"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  true,
     "description": 0
   },
@@ -1492,7 +1492,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1505,7 +1505,7 @@
     "attacks": [],
     "defence": ["Mud-Slap", "Outrage"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Australie Regional"
   },
@@ -1518,7 +1518,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1531,7 +1531,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1544,7 +1544,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -1557,7 +1557,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -1570,7 +1570,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1583,7 +1583,7 @@
     "attacks": ["Water Gun", "Hydro Pump"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1596,7 +1596,7 @@
     "attacks": ["Confusion", "Psychic"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Europa Regional"
   },
@@ -1609,7 +1609,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -1622,7 +1622,7 @@
     "attacks": ["Frost Breath", "Avalanche"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1635,7 +1635,7 @@
     "attacks": ["Thunder Shock", "Thunderbolt"],
     "defence": [],
     "recplayers": 2,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1648,7 +1648,7 @@
     "attacks": ["Ember", "Flamethrower"],
     "defence": [],
     "recplayers": 2,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1661,7 +1661,7 @@
     "attacks": ["Bug Bite", "X-Scissor"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1674,7 +1674,7 @@
     "attacks": ["Tackle", "Earthquake"],
     "defence": ["Zen Headbutt", "Iron Head"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "USA Regional"
   },
@@ -1687,7 +1687,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 1,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -1700,7 +1700,7 @@
     "attacks": ["Dragon Tail", "Outrage"],
     "defence": ["Dragon Tail", "Hydro Pump"],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -1713,7 +1713,7 @@
     "attacks": ["Frost Breath", "Blizzard"],
     "defence": ["Frost Breath", "Ice Beam"],
     "recplayers": 7,
-    "gender": false,
+    "gender": 0,
     "rare":  true,
     "description": 0
   },
@@ -1726,7 +1726,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1739,7 +1739,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1752,7 +1752,7 @@
     "attacks": ["Water Gun", "Hydro Pump"],
     "defence": [],
     "recplayers": 3,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Evolueer eevee met Rainer als nickname (werkt 1 keer)"
   },
@@ -1765,7 +1765,7 @@
     "attacks": ["Thunder Shock", "Thunderbolt"],
     "defence": [],
     "recplayers": 3,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Evolueer eevee met Sparky als nickname (werkt 1 keer)"
   },
@@ -1778,7 +1778,7 @@
     "attacks": ["Fire Spin", "Overheat"],
     "defence": [],
     "recplayers": 3,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Evolueer eevee met Pyro als nickname (werkt 1 keer)"
   },
@@ -1791,7 +1791,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1804,7 +1804,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1817,7 +1817,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1830,7 +1830,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1843,7 +1843,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1856,7 +1856,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1869,7 +1869,7 @@
     "attacks": [],
     "defence": ["Zen Headbutt", "Heavy Slam"],
     "recplayers": 7,
-    "gender": false,
+    "gender": 0,
     "rare":  true,
     "description": 0
   },
@@ -1882,7 +1882,7 @@
     "attacks": ["Frost Breath", "Blizzard"],
     "defence": [],
     "recplayers": 5,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Team Mystic FTW!"
   },
@@ -1895,7 +1895,7 @@
     "attacks": ["Charge Beam", "Thunderbolt"],
     "defence": [],
     "recplayers": 5,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1908,7 +1908,7 @@
     "attacks": ["Fire Spin ", "Overheat"],
     "defence": [],
     "recplayers": 4,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1921,7 +1921,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1934,7 +1934,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1947,7 +1947,7 @@
     "attacks": ["Dragon Tail", "Outrage"],
     "defence": ["Dragon Tail", "Outrage"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  true,
     "description": 0
   },
@@ -1960,9 +1960,9 @@
     "attacks": ["Confusion", "Focus Blast"],
     "defence": [],
     "recplayers": 6,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "Let's clone the most powerfull pokémon and make it even stronger! What can go wrong?"
   },
   {
     "keys": ["mew"],
@@ -1973,7 +1973,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1986,7 +1986,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -1999,7 +1999,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 1,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2012,7 +2012,7 @@
     "attacks": ["Razor Leaf", "Solar Beam"],
     "defence": ["Razor Leaf", "Solar Beam"],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.125,
     "rare":  false,
     "description": 0
   },
@@ -2025,7 +2025,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2038,7 +2038,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 1,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2051,7 +2051,7 @@
     "attacks": ["Ember", "Overheat"],
     "defence": ["Ember", "Overheat"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2064,7 +2064,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2077,7 +2077,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 1,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2091,7 +2091,7 @@
     "attacks": ["Water Gun", "Hydro Pump"],
     "defence": ["Water Gun", "Ice Beam"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2104,7 +2104,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2117,7 +2117,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2130,7 +2130,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2143,7 +2143,7 @@
     "attacks": ["Wing Attack", "Sky Attack"],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2156,7 +2156,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2169,7 +2169,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2182,7 +2182,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2195,7 +2195,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2208,7 +2208,7 @@
     "attacks": ["Air Slash", "Sludge Bomb"],
     "defence": ["Air Slash", "Sludge Bomb"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2221,7 +2221,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2234,7 +2234,7 @@
     "attacks": ["Water Gun", "Hydro Pump"],
     "defence": ["Charge Beam", "Thunderbolt"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2247,7 +2247,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
   },
@@ -2260,7 +2260,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
   },
@@ -2273,7 +2273,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
   },
@@ -2286,7 +2286,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
   },
@@ -2299,7 +2299,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2312,7 +2312,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2325,7 +2325,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2338,7 +2338,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  true,
     "description": 0
   },
@@ -2351,7 +2351,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  true,
     "description": 0
   },
@@ -2364,7 +2364,7 @@
     "attacks": ["Volt Switch", "Zap Cannon"],
     "defence": ["Volt Switch", "Zap Cannon"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  true,
     "description": 0
   },
@@ -2377,7 +2377,7 @@
     "attacks": ["Razor Lear", "Leaf Blade"],
     "defence": ["Razor Lear", "Leaf Blade"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Evolueert van Gloom met behulp van een Sun Stone"
   },
@@ -2390,7 +2390,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2403,7 +2403,7 @@
     "attacks": [],
     "defence": ["Rock Smash", "Play Rough"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2416,7 +2416,7 @@
     "attacks": ["Rock Throw", "Rock Slide"],
     "defence": ["Rock Throw", "Rock Slide"],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2429,7 +2429,7 @@
     "attacks": ["Bubble", "Hydro Pump"],
     "defence": ["Bubble", "Hydro Pump"],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": "Evolueert van Poliwhirl met behulp van een Kings Rock"
   },
@@ -2442,7 +2442,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2455,7 +2455,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2468,7 +2468,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2481,7 +2481,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2494,7 +2494,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2507,7 +2507,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Evolueert van Sunkern met behulp van een Sun Stone"
   },
@@ -2520,7 +2520,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2533,7 +2533,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2546,7 +2546,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2559,7 +2559,7 @@
     "attacks": ["Confusion", "Future Sight"],
     "defence": ["Confusion", "Psybeam"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Evolueer eevee met Sakura als nickname of door overdag te evolueren nadat je er >10 km me hebt gelopen als buddy"
   },
@@ -2572,7 +2572,7 @@
     "attacks": ["Snarl", "Foul Play"],
     "defence": ["Snarl", "Foul Play"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Evolueer eevee met Tamao als nickname of door 's nachts te evolueren nadat je er >10 km me hebt gelopen als buddy"
   },
@@ -2585,7 +2585,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2598,7 +2598,7 @@
     "attacks": ["Confusion", "Psychic"],
     "defence": ["Confusion", "Psychic"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Evolueert van Slowpoke met behulp van een Kings Rock"
   },
@@ -2611,7 +2611,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2624,9 +2624,9 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  true,
-    "description": 0
+    "description": "This pokémon is shaped like ancient writing. It is a mystery as to which came first, the ancient writings or the various UNOWN."
   },
   {
     "keys": ["wobbuffet", "wobufet", "wobbufet", "wobuffet"],
@@ -2637,7 +2637,7 @@
     "attacks": [],
     "defence": ["Counter", "Mirror Coat"],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2650,7 +2650,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2663,7 +2663,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2676,7 +2676,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2689,7 +2689,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2702,7 +2702,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2715,7 +2715,7 @@
     "attacks": ["Iron Tail", "Heavy Slam"],
     "defence": ["Iron Tail", "Heavy Slam"],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": "Evolueert van Onix met behulp van een Metal Coat"
   },
@@ -2728,7 +2728,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2741,7 +2741,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2754,7 +2754,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2767,7 +2767,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": "Evolueert van Scyther met behulp van een Metal Coat"
   },
@@ -2780,7 +2780,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Don't fuckle with Shuckle"
   },
@@ -2793,7 +2793,7 @@
     "attacks": ["Counter", "Close Combat"],
     "defence": ["Stuggle Bug", "Close Combat"],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": "Zuid Amerika Regional"
   },
@@ -2806,7 +2806,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2819,7 +2819,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2832,7 +2832,7 @@
     "attacks": ["Counter", "Hyper Beam"],
     "defence": ["Counter", "Play Rough"],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2845,7 +2845,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2858,7 +2858,7 @@
     "attacks": ["Rock Throw", "Stone Edge"],
     "defence": ["Rock Throw", "Stone Edge"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2871,7 +2871,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2884,7 +2884,7 @@
     "attacks": ["Ice Shard", "Avalanche"],
     "defence": ["Ice Shard", "Avalanche"],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2897,7 +2897,7 @@
     "attacks": ["Bubble", "Buggle Beam"],
     "defence": ["Buggle", "Power Gem"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Lattidude Regional (tussen 31N en 26S max 50 km van de kust)"
   },
@@ -2910,7 +2910,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2923,7 +2923,7 @@
     "attacks": ["Water Gun", "Water Pulse"],
     "defence": ["Water Gun", "Water Pulse"],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -2936,7 +2936,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2949,7 +2949,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2962,7 +2962,7 @@
     "attacks": ["Steel Wing", "Flash Cannon"],
     "defence": ["Air Slash", "Sky Attack"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2975,7 +2975,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -2988,7 +2988,7 @@
     "attacks": ["Snarl", "Foul Play"],
     "defence": ["Snarl", "Foul Play"],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -3001,7 +3001,7 @@
     "attacks": ["Water Gun", "Hydro Pump"],
     "defence": ["Dragon Breath", "Outrage"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Evolueert van Seadra met behulp van een Dragon Scale"
   },
@@ -3014,7 +3014,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3027,7 +3027,7 @@
     "attacks": [],
     "defence": ["Counter", "Play Rough"],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -3040,7 +3040,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Evolueert van Porygon met behulp van een Up-Grade"
   },
@@ -3053,7 +3053,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3066,7 +3066,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3079,7 +3079,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
   },
@@ -3092,7 +3092,7 @@
     "attacks": ["Counter", "Close Combat"],
     "defence": ["Rock Smash", "Stone Edge"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Evolueert van Tyrogue als HP zijn hoogste IV stat is"
   },
@@ -3105,7 +3105,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
   },
@@ -3118,7 +3118,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
   },
@@ -3131,7 +3131,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
   },
@@ -3144,7 +3144,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3157,7 +3157,7 @@
     "attacks": [],
     "defence": ["Zen Headbutt", "Dazzling Gleam"],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  true,
     "description": 0
   },
@@ -3170,7 +3170,7 @@
     "attacks": ["Volt Switch", "Wild Charge"],
     "defence": [],
     "recplayers": 5,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3183,7 +3183,7 @@
     "attacks": ["Fire Spin", "Overheat"],
     "defence": [],
     "recplayers": 5,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3196,7 +3196,7 @@
     "attacks": ["xxx", "Bubble Beam"],
     "defence": [],
     "recplayers": 6,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3209,7 +3209,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  true,
     "description": 0
   },
@@ -3222,7 +3222,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  true,
     "description": 0
   },
@@ -3235,7 +3235,7 @@
     "attacks": ["Bite", "Stone Edge"],
     "defence": [],
     "recplayers": 5,
-    "gender": false,
+    "gender": 0,
     "rare":  true,
     "description": 0
   },
@@ -3248,7 +3248,7 @@
     "attacks": ["Extrasensory", "Sky Attack/Future Sight"],
     "defence": [],
     "recplayers": 7,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3261,7 +3261,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 5,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3274,7 +3274,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3287,7 +3287,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3300,7 +3300,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3313,7 +3313,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3326,7 +3326,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3339,7 +3339,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.125,
     "rare":  false,
     "description": 0
   },
@@ -3352,7 +3352,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.125,
     "rare":  false,
     "description": 0
   },
@@ -3365,7 +3365,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3378,7 +3378,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3391,7 +3391,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3404,7 +3404,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3417,7 +3417,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3430,7 +3430,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3443,7 +3443,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3456,7 +3456,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3469,7 +3469,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3482,7 +3482,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -3495,7 +3495,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3508,7 +3508,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -3521,7 +3521,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3534,7 +3534,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3547,7 +3547,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -3560,7 +3560,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3573,7 +3573,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -3586,7 +3586,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -3599,7 +3599,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3612,7 +3612,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3625,7 +3625,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3638,7 +3638,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3651,7 +3651,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3664,7 +3664,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3677,7 +3677,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3690,7 +3690,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3703,7 +3703,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3716,7 +3716,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3729,7 +3729,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3742,7 +3742,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3755,7 +3755,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3768,7 +3768,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3781,7 +3781,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3794,7 +3794,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3807,7 +3807,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3820,7 +3820,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3833,7 +3833,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3846,7 +3846,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3859,7 +3859,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3872,7 +3872,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3885,7 +3885,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
   },
@@ -3898,7 +3898,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3911,7 +3911,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3924,7 +3924,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3937,7 +3937,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3950,7 +3950,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3963,7 +3963,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3976,7 +3976,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -3989,7 +3989,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4002,7 +4002,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -4015,7 +4015,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -4028,7 +4028,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4041,7 +4041,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4054,7 +4054,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4067,7 +4067,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4080,7 +4080,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4093,7 +4093,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4106,7 +4106,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -4119,7 +4119,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -4132,7 +4132,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -4145,7 +4145,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4158,7 +4158,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4171,7 +4171,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4184,7 +4184,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4197,7 +4197,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -4210,7 +4210,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -4223,7 +4223,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4236,7 +4236,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4249,7 +4249,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4262,7 +4262,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4275,7 +4275,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4288,7 +4288,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4301,7 +4301,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4314,7 +4314,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4327,7 +4327,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -4340,7 +4340,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4353,7 +4353,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4366,7 +4366,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4379,7 +4379,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4392,7 +4392,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4405,7 +4405,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4418,7 +4418,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4431,7 +4431,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4444,7 +4444,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4457,7 +4457,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4470,7 +4470,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4483,7 +4483,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4496,7 +4496,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4509,7 +4509,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4522,7 +4522,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4535,7 +4535,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4548,7 +4548,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4561,7 +4561,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.5,
     "rare":  false,
     "description": 0
   },
@@ -4574,9 +4574,9 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "Castform's appearance changes with the weather. It's molecules were found to be just like water"
   },
   {
     "keys": ["keckleon", "kekleon", "kecleon"],
@@ -4587,7 +4587,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4600,7 +4600,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4613,7 +4613,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4626,7 +4626,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4639,7 +4639,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4652,7 +4652,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4665,7 +4665,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4678,7 +4678,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4691,7 +4691,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
   },
@@ -4704,7 +4704,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4717,7 +4717,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4730,7 +4730,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4743,7 +4743,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4756,7 +4756,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4769,7 +4769,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4782,7 +4782,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4795,7 +4795,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4808,9 +4808,9 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": true,
+    "gender": 0.125,
     "rare":  false,
-    "description": 0
+    "description": "A pokémon that was once believed to have been extinct. The species has not changed its form for 100 million years. It walks on the seafloor using its pectoral fins."
   },
   {
     "keys": ["luvdisc"],
@@ -4821,7 +4821,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4834,7 +4834,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4847,7 +4847,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4860,7 +4860,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4873,7 +4873,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4886,7 +4886,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4899,7 +4899,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4912,7 +4912,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4925,7 +4925,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4938,7 +4938,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4951,7 +4951,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4964,7 +4964,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4977,7 +4977,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -4990,7 +4990,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -5003,7 +5003,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -5016,7 +5016,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   },
@@ -5029,7 +5029,7 @@
     "attacks": [],
     "defence": [],
     "recplayers": 0,
-    "gender": false,
+    "gender": 0,
     "rare":  false,
     "description": 0
   }

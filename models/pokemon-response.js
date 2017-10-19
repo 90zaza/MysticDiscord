@@ -48,25 +48,72 @@ module.exports = class PokemonResponse extends Message {
   }
 
   reply() {
-    let sprite, gender;
 
+    //determine shiny (1%)
+    let sprite = "shiny"
     if (Math.random()>0.01) {
-      sprite = 'normal';
-    } //2% chance on a shiny sprite
-    else {
-      sprite = 'shiny';
-    }
+      sprite = "normal";
+    };
 
-
-    gender=""; //50/50 gender
-
-    if (this.pokemon.gender == true) {
-      if (Math.random() > 0.5) {
-        gender = '-f';
-      };
-    } //gender
+    //determine gender
+    let gender="";
+    if (Math.random() < this.pokemon.gender) {
+      gender = "-f";
+    };
 
     let imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${this.pokemon.name.toLowerCase()}${gender}.png`;
+
+    //unown forms
+    if (this.pokemon.name.toLowerCase() == "unown") {
+      let random=Math.random();
+      let letter="";
+      if (random<1/28) {letter="unown-a"}
+      else if (random<2/28) {letter="unown-b"}
+      else if (random<3/28) {letter="unown-c"}
+      else if (random<4/28) {letter="unown-d"}
+      else if (random<5/28) {letter="unown-e"}
+      else if (random<6/28) {letter="unown-f"}
+      else if (random<7/28) {letter="unown-g"}
+      else if (random<8/28) {letter="unown-h"}
+      else if (random<9/28) {letter="unown-i"}
+      else if (random<10/28) {letter="unown-j"}
+      else if (random<11/28) {letter="unown-k"}
+      else if (random<12/28) {letter="unown-l"}
+      else if (random<13/28) {letter="unown-m"}
+      else if (random<14/28) {letter="unown-n"}
+      else if (random<15/28) {letter="unown-o"}
+      else if (random<16/28) {letter="unown-p"}
+      else if (random<17/28) {letter="unown-q"}
+      else if (random<18/28) {letter="unown-r"}
+      else if (random<19/28) {letter="unown-s"}
+      else if (random<20/28) {letter="unown-t"}
+      else if (random<21/28) {letter="unown-u"}
+      else if (random<22/28) {letter="unown-v"}
+      else if (random<23/28) {letter="unown-w"}
+      else if (random<24/28) {letter="unown-x"}
+      else if (random<25/28) {letter="unown-y"}
+      else if (random<26/28) {letter="unown-z"}
+      else if (random<27/28) {letter="unown-!"}
+      else if (random<28/28) {letter="unown-?"}
+
+      imageURL = `https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/${sprite}/${letter}.png`
+    }
+
+    //castform forms
+    if (this.pokemon.name.toLowerCase() == "castform") {
+      let random=Math.random();
+      let weather="castform";
+      if (random<1/4) {weather="castform-rainy"}
+      else if (random<2/4) {weather="castform-sunny"}
+      else if (random<3/4) {weather="castform-snowy"}
+
+      imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${weather}.png`
+    }
+
+    //missingno
+    if (this.pokemon.name.toLowerCase() == "missingno") {
+      imageURL = 'https://vignette.wikia.nocookie.net/nintendo/images/8/85/MissingNoNormal.png/revision/latest?cb=20131114211037&path-prefix=en'
+    }
 
     let embed = new Discord.RichEmbed()
       .setTitle("#" + this.pokemon.number + " - " + this.pokemon.name + " [" + this.pokemon.type.join(", ") + "]", imageURL)

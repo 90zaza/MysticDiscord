@@ -11,7 +11,7 @@
   "keys": ["tutorial"],
   "reply": "Pokémon go lijkt simpel, maar stiekem is het een best complex spel. Niet gevreesd, er is een hele tutorial voor geschreven! <https://delftmystic.wordpress.com/>"
 }, {
-  "keys": ["nest"],
+  "keys": ["nest", "nest atlas"],
   "reply": "Naast de spawns die biome afhankelijk zijn heb je ook plekken die steeds dezelfde pokemon spawnen. Als je zo'n nest gevonden hebt of zoekt kun je dat hier aangeven: <https://thesilphroad.com/atlas#13.18/52.0073/4.3599>"
 }, {
   "keys": ["ash"],
@@ -47,7 +47,7 @@
   "keys": ["regional", "exclusive"],
   "reply": "Regional exclusive pokemon zijn alleen in specifieke delen van de wereld te vinden. Zie deze kaart <https://www.google.com/maps/d/u/0/viewer?mid=1gOn-ASh7kskCCiHK4A-IHZSwfsk>"
  }, {
-  "keys": ["bloemen stop", "bloemen kunst", "flower art"],
+  "keys": ["bloemen stop", "bloemen kunst", "flower art", "bloemenstop"],
   "reply": "De Bloemen Kunst pokestop (bij de aldi), een van de beste pokéstops in delft. Locatie: <https://goo.gl/maps/xkRgUtLm8y42>"  }, {
 }, {
   "keys": ["inholland", "hogeschool inholland"],
