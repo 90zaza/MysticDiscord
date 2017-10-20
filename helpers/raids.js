@@ -84,18 +84,14 @@ exports.init = async (otherclient) => {
     joining: {
       type: Sequelize.STRING
     },
-    joiningAdditions: {
-      type: Sequelize.STRING
-    },
     messageid: {
       type: Sequelize.STRING,
     },
     expireat: {
       type: Sequelize.DATE
     },
-    isMystic: {
-      type: Sequelize.INTEGER,
-      defaultValue: 0
+    team: {
+      type: Sequelize.STRING
     }
   });
 
@@ -108,8 +104,6 @@ exports.init = async (otherclient) => {
 exports.scan = async function (msg) {
   try {
     message = new Message(msg);
-    // clean input
-    let textArray = msg.content.toLowerCase().trim().split(" ");
 
     // help
     if (/help/.test(message.message.content)) {
@@ -142,7 +136,6 @@ exports.scan = async function (msg) {
   } catch (error) {
     console.log(error);
   }
-
 }
 
 // scan the reaction of the raid message
@@ -159,15 +152,12 @@ exports.messageReactionAdd = async function (messageReaction, user) {
           joinRaid(new Message(messageReaction.message), id, user.username);
         } else if (messageReaction.emoji == leaveemoji) {
           leaveRaid(new Message(messageReaction.message), id, user.username);
-        } else if (messageReaction.emoji == mysticemoji) {
-          //make raid blue
-          console.log("blue")
-        } else if (messageReaction.emoji == valoremoji) {
-          //make raid red
-          console.log("red")
-        } else if (messageReaction.emoji == instinctemoji) {
-          //make raid yellow
-          console.log("yellow")
+        } else if (messageReaction.emoji.name == "mystic") {
+          messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("mystic")));
+        } else if (messageReaction.emoji.name == "valor") {
+          messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("valor")));
+        } else if (messageReaction.emoji.name == "instinct") {
+          messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("instinct")));
         }
       }
     })
@@ -176,7 +166,7 @@ exports.messageReactionAdd = async function (messageReaction, user) {
 
 async function addRaid(message) {
   // create raid object
-  newRaid = new Raid(message);
+  newRaid = new Raid(message.message.content);
 
   // add raid to db
   raids.create(newRaid.getDatabaseObject())
@@ -210,7 +200,7 @@ async function addRaid(message) {
 
 async function updateRaid(message, id) {
   // extract information from the message
-  newRaid = new Raid(message);
+  newRaid = new Raid(message.message.content);
 
   // find object
   raids.findById(id)
@@ -354,7 +344,7 @@ async function embed(embed, raid, id) {
         embed.fields.filter(field => field.name === "Battle time")[0].value = raid.battletime;
         break;
       case "team":
-        embed.setColor(embedColor(raid));
+        embed.setColor(embedColor(raid.team));
     }
   });
   return embed;
@@ -364,8 +354,8 @@ async function embed(embed, raid, id) {
  * Determine the color of the embedded message.
  * @param {*} raid
  */
-function embedColor(raid) {
-  switch (raid.team) {
+function embedColor(team) {
+  switch (team) {
     case "mystic":
       return 0x0677ee;
     case "valor":
@@ -381,12 +371,12 @@ function embedColor(raid) {
  * Data class for raid object
  */
 class Raid {
-  constructor(message) {
-    this.pokemon = extractPokemon(message);
-    this.gym = extractGym(message);
-    this.battletime = extractBattleTime(message);
-    this.endtime = extractEndTime(message);
-    this.team = extractTeam(message);
+  constructor(messageContent) {
+    this.pokemon = extractPokemon(messageContent);
+    this.gym = extractGym(messageContent);
+    this.battletime = extractBattleTime(messageContent);
+    this.endtime = extractEndTime(messageContent);
+    this.team = extractTeam(messageContent);
     Object.keys(this).forEach((key) => (this[key] == null) && delete this[key]);
   }
 
@@ -406,6 +396,9 @@ class Raid {
         case "battletime":
           result.raidbattletime = this.battletime;
           break;
+        case "team":
+          result.team = this.team;
+          break;
       }
     });
     return result;
@@ -416,14 +409,14 @@ class Raid {
  * Returns the team of the gym, otherwise null.
  * @param {Message} message The content of the message
  */
-function extractTeam(message) {
-  if (/mystic/.test(message.message.content)) {
+function extractTeam(messageContent) {
+  if (/mystic/.test(messageContent)) {
     return "mystic";
   }
-  if (/instinct/.test(message.message.content)) {
+  if (/instinct/.test(messageContent)) {
     return "instinct"
   }
-  if (/valor/.test(message.message.content)) {
+  if (/valor/.test(messageContent)) {
     return "valor"
   }
   return null;
@@ -433,18 +426,18 @@ function extractTeam(message) {
  * Extracts the end time from the message if present, returns null otherwise.
  * @param {Message} message The message
  */
-function extractEndTime(message) {
+function extractEndTime(messageContent) {
   var regex = /e (\d\d:\d\d)/;
-  return matchRegexReturnFirst(message.message.content, regex);
+  return matchRegexReturnFirst(messageContent, regex);
 }
 
 /**
  * Extracts the battle time from the message if present, returns null otherwise.
  * @param {Message} message The message
  */
-function extractBattleTime(message) {
+function extractBattleTime(messageContent) {
   var regex = /b (\d\d:\d\d)/;
-  return matchRegexReturnFirst(message.message.content, regex);
+  return matchRegexReturnFirst(messageContent, regex);
 }
 
 /**
@@ -452,8 +445,8 @@ function extractBattleTime(message) {
  * @param {*} message The message
  */
 // TODO: Update to regex (is hard though)
-function extractGym(message) {
-  let textArray = message.message.content.split(" ");
+function extractGym(messageContent) {
+  let textArray = messageContent.split(" ");
   let gymIdx = textArray.indexOf("g");
   let indexes = [textArray.indexOf("e"), textArray.indexOf("b"), textArray.indexOf("g"), textArray.length]
   if (gymIdx >= 0) {
@@ -472,10 +465,10 @@ function extractGym(message) {
  * Extracts the pokemon from the message if present, return null otherwise
  * @param {*} message The message
  */
-function extractPokemon(message) {
+function extractPokemon(messageContent) {
   // old way of extracting the pokemon from the message
   // TODO: update to more efficient method
-  let textArray = message.message.content.split(" ");
+  let textArray = messageContent.split(" ");
   return pokemons.find((item) => {
     return item.keys.includes(textArray[0]);
   });
