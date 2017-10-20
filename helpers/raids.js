@@ -359,9 +359,9 @@ function embedColor(team) {
     case "mystic":
       return 0x0677ee;
     case "valor":
-      return 'RED';
+      return 0xff0000;
     case "instinct":
-      return 'GREEN';
+      return 0xffff00;
     default:
       return 0xffffff;
   }
