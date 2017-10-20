@@ -134,7 +134,6 @@ exports.scan = async function (msg) {
 
 // scan the reaction of the raid message
 exports.messageReactionAdd = async function (messageReaction, user) {
-  console.log("REACTION");
   // remove reaction
   messageReaction.remove(user);
 
@@ -161,6 +160,7 @@ exports.messageReactionAdd = async function (messageReaction, user) {
 async function addRaid(message) {
   // create raid object
   newRaid = new Raid(message.message.content);
+
 
   // add raid to db
   raids.create(newRaid.getDatabaseObject())
