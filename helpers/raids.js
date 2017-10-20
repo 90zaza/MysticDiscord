@@ -6,7 +6,7 @@ const pokemons = require('../data/pokemons.json');
 const gyms = require('../data/gyms.json');
 
 var connection;
-var raid;
+var raids;
 var client;
 
 
@@ -58,7 +58,7 @@ exports.init = async (otherclient) => {
       console.error('Unable to connect to the database:', err);
     });
 
-  raid = connection.define('raid', {
+  raids = connection.define('raid', {
     idraids: {
       type: Sequelize.INTEGER,
       primaryKey: true,
@@ -99,7 +99,7 @@ exports.init = async (otherclient) => {
     }
   });
 
-  await raid.sync({
+  await raids.sync({
     // force: true
   });
 }
@@ -118,32 +118,32 @@ exports.scan = async function (msg) {
     // join
     else if (/join/.test(message.message.content)) {
       console.log("JOIN");
-      joinRaiddd(message, message.message.content.match(/join (\d+)/)[1], message.message.author.username);
+      joinRaid(message, message.message.content.match(/join (\d+)/)[1], message.message.author.username);
     }
     // leave
     else if (/leave/.test(message.message.content)) {
       console.log("LEAVE");
-      leaveRaiddd(message, message.message.content.match(/leave (\d+)/)[1], message.message.author.username);
+      leaveRaid(message, message.message.content.match(/leave (\d+)/)[1], message.message.author.username);
     }
     // delete raid
     else if (/del/.test(message.message.content)) {
       console.log("DELETE");
-      deleteRaiddd(message, message.message.content.match(/del (\d+)/)[1]);
+      deleteRaid(message, message.message.content.match(/del (\d+)/)[1]);
     }
     // reset
     else if (/reset/.test(message.message.content)) {
       console.log("RESET");
-      await raid.truncate();
+      await raids.truncate();
     }
     // update
     else if (/^\d+/.test(message.message.content)) {
       console.log("UPDATE");
-      updateRaiddd(message, message.message.content.match(/(^\d+)/)[1]);
+      updateRaid(message, message.message.content.match(/(^\d+)/)[1]);
     }
     // new raid
     else if (/^[a-zA-Z]+/.test(message.message.content)) {
       console.log("NEW RAIDDDD");
-      addRaiddd(message);
+      addRaid(message);
     }
   } catch (error) {
     console.log(error);
@@ -157,14 +157,14 @@ exports.messageReactionAdd = async function (messageReaction, user) {
   // remove reaction
   messageReaction.remove(user);
 
-  raid.findOne({ where: { "messageid": messageReaction.message.id } })
+  raids.findOne({ where: { "messageid": messageReaction.message.id } })
     .then(result => {
       if (result != null) {
         const id = result.dataValues.idraids;
         if (messageReaction.emoji == joinemoji) {
-          joinRaiddd(new Message(messageReaction.message), id, user.username);
+          joinRaid(new Message(messageReaction.message), id, user.username);
         } else if (messageReaction.emoji == leaveemoji) {
-          leaveRaiddd(new Message(messageReaction.message), id, user.username);
+          leaveRaid(new Message(messageReaction.message), id, user.username);
         } else if (messageReaction.emoji == mysticemoji) {
           //make raid blue
           console.log("blue")
@@ -180,12 +180,12 @@ exports.messageReactionAdd = async function (messageReaction, user) {
     .catch(console.error);
 }
 
-async function addRaiddd(message) {
+async function addRaid(message) {
   // create raid object
   newRaiddd = new Raid(message);
 
   // add raid to db
-  raid.create(newRaiddd.getDatabaseObject())
+  raids.create(newRaiddd.getDatabaseObject())
     // send message of newly created raid with obtained id from the database
     .then(async response => {
       let foo = await
@@ -195,7 +195,7 @@ async function addRaiddd(message) {
             raidsmeldingenchannel.send(embed)
               .then(async (message) => {
                 // update database with message id
-                raid.update(
+                raids.update(
                   { messageid: message.id },
                   { where: { idraids: response.dataValues.idraids } })
                   .catch(console.error);
@@ -214,12 +214,12 @@ async function addRaiddd(message) {
     .catch(console.error);
 }
 
-async function updateRaiddd(message, id) {
+async function updateRaid(message, id) {
   // extract information from the message
   newRaiddd = new Raid(message);
 
   // find object
-  raid.findById(id)
+  raids.findById(id)
     .then(result => {
       // update database
       result.update(newRaiddd.getDatabaseObject());
@@ -252,8 +252,8 @@ async function letPeopleKnowOfNewRaid() {
   // }
 }
 
-async function joinRaiddd(message, id, author) {
-  raid.findById(id)
+async function joinRaid(message, id, author) {
+  raids.findById(id)
     .then(result => {
       if (result != null) {
         message.message.channel.messages.fetch(result.dataValues.messageid)
@@ -265,7 +265,7 @@ async function joinRaiddd(message, id, author) {
             newembed.fields.filter(field => /^Joining/.test(field.name))[0].value = joining.join("\n");
             m.edit(newembed);
             // update database
-            raid.update(
+            raids.update(
               { joining: joining.join() },
               { where: { idraids: id } })
               .catch(console.error);
@@ -276,8 +276,8 @@ async function joinRaiddd(message, id, author) {
     .catch(console.error);
 }
 
-async function leaveRaiddd(message, id, author) {
-  raid.findById(id)
+async function leaveRaid(message, id, author) {
+  raids.findById(id)
     .then(result => {
       if (result != null) {
         message.message.channel.messages.fetch(result.dataValues.messageid)
@@ -295,7 +295,7 @@ async function leaveRaiddd(message, id, author) {
               }
               m.edit(newembed);
               // update database
-              raid.update(
+              raids.update(
                 { joining: joining.join() },
                 { where: { idraids: id } })
                 .catch(console.error);
@@ -312,7 +312,7 @@ async function leaveRaiddd(message, id, author) {
  * @param {*Message} message The message
  * @param {*Integer} id The id of the raid
  */
-async function deleteRaiddd(message, id) {
+async function deleteRaid(message, id) {
   raid.findById(id)
     .then(result => {
       // delete message in discord
