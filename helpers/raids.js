@@ -9,20 +9,14 @@ var connection;
 var raids;
 var client;
 
-
 //testdiscord
 const joinemoji = '➕';
 const leaveemoji = '➖';
-// const mysticemoji = '361948063071338497';
-// const instinctemoji = '361948063423791105';
-// const valoremoji = '361948063360745474';
-
-// daan
-
 // TODO: ask custom emojis from channel instead of hardcoding
 const mysticemoji = '351003868362178561';
 const instinctemoji = '351003868542271489';
 const valoremoji = '351003870367055883';
+// const emoji = client.emojis.find("name", "mystic");
 
 //production
 //const mysticemoji   = `340033299521077248`
@@ -267,22 +261,24 @@ async function leaveRaid(message, id, author) {
         message.message.channel.messages.fetch(result.dataValues.messageid)
           .then(m => {
             // remove from list
-            let joining = result.dataValues.joining.split(",");
-            const index = joining.indexOf(author);
-            if (index > -1) {
-              joining.splice(index, 1);
-              newembed = m.embeds[0];
-              if (joining.length == 0) {
-                newembed.fields.filter(field => /^Joining/.test(field.name))[0].value = "No trainers interested yet";
-              } else {
-                newembed.fields.filter(field => /^Joining/.test(field.name))[0].value = joining.join("\n");
+            if (result.dataValues.joining) {
+              let joining = result.dataValues.joining.split(",");
+              const index = joining.indexOf(author);
+              if (index > -1) {
+                joining.splice(index, 1);
+                newembed = m.embeds[0];
+                if (joining.length == 0) {
+                  newembed.fields.filter(field => /^Joining/.test(field.name))[0].value = "No trainers interested yet";
+                } else {
+                  newembed.fields.filter(field => /^Joining/.test(field.name))[0].value = joining.join("\n");
+                }
+                m.edit(newembed);
+                // update database
+                raids.update(
+                  { joining: joining.join() },
+                  { where: { idraids: id } })
+                  .catch(console.error);
               }
-              m.edit(newembed);
-              // update database
-              raids.update(
-                { joining: joining.join() },
-                { where: { idraids: id } })
-                .catch(console.error);
             }
           })
           .catch(console.error);
