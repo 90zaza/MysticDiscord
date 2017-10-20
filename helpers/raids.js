@@ -117,32 +117,26 @@ exports.scan = async function (msg) {
     }
     // join
     else if (/join/.test(message.message.content)) {
-      console.log("JOIN");
       joinRaid(message, message.message.content.match(/join (\d+)/)[1], message.message.author.username);
     }
     // leave
     else if (/leave/.test(message.message.content)) {
-      console.log("LEAVE");
       leaveRaid(message, message.message.content.match(/leave (\d+)/)[1], message.message.author.username);
     }
     // delete raid
     else if (/del/.test(message.message.content)) {
-      console.log("DELETE");
       deleteRaid(message, message.message.content.match(/del (\d+)/)[1]);
     }
     // reset
     else if (/reset/.test(message.message.content)) {
-      console.log("RESET");
       await raids.truncate();
     }
     // update
     else if (/^\d+/.test(message.message.content)) {
-      console.log("UPDATE");
       updateRaid(message, message.message.content.match(/(^\d+)/)[1]);
     }
     // new raid
     else if (/^[a-zA-Z]+/.test(message.message.content)) {
-      console.log("NEW RAIDDDD");
       addRaid(message);
     }
   } catch (error) {
@@ -182,14 +176,14 @@ exports.messageReactionAdd = async function (messageReaction, user) {
 
 async function addRaid(message) {
   // create raid object
-  newRaiddd = new Raid(message);
+  newRaid = new Raid(message);
 
   // add raid to db
-  raids.create(newRaiddd.getDatabaseObject())
+  raids.create(newRaid.getDatabaseObject())
     // send message of newly created raid with obtained id from the database
     .then(async response => {
       let foo = await
-        embed(defaultEmbed(), newRaiddd, response.dataValues.idraids)
+        embed(defaultEmbed(), newRaid, response.dataValues.idraids)
           .then(embed => {
             let raidsmeldingenchannel = client.channels.find("name", "raids_meldingen");
             raidsmeldingenchannel.send(embed)
@@ -216,19 +210,19 @@ async function addRaid(message) {
 
 async function updateRaid(message, id) {
   // extract information from the message
-  newRaiddd = new Raid(message);
+  newRaid = new Raid(message);
 
   // find object
   raids.findById(id)
     .then(result => {
       // update database
-      result.update(newRaiddd.getDatabaseObject());
+      result.update(newRaid.getDatabaseObject());
 
       // update message
       message.message.channel.messages.fetch(result.dataValues.messageid)
         .then(m => {
           // update embedded message with new information
-          embed(m.embeds[0], newRaiddd, id)
+          embed(m.embeds[0], newRaid, id)
             .then(embed => {
               m.edit(embed)
                 .catch(console.error);
@@ -341,26 +335,26 @@ function defaultEmbed() {
     .addField("Joining (bring at least x trainers)", "No trainers interested yet");
 }
 
-async function embed(embed, raiddd, id) {
-  Object.keys(raiddd).forEach((key) => {
+async function embed(embed, raid, id) {
+  Object.keys(raid).forEach((key) => {
     switch (key) {
       case "gym":
-        embed.setURL(raiddd.gym.url);
-        embed.setTitle("📍 " + raiddd.gym.name);
+        embed.setURL(raid.gym.url);
+        embed.setTitle("📍 " + raid.gym.name);
         break;
       case "pokemon":
-        embed.setAuthor("Raid #" + id + ": " + raiddd.pokemon.name);
-        embed.setThumbnail(`https://img.pokemondb.net/sprites/x-y/normal/${raiddd.pokemon.name.toLowerCase()}.png`);
-        embed.fields.filter(field => /^Joining/.test(field.name))[0].name = "Joining (bring at least " + raiddd.pokemon.recplayers + " trainers)";
+        embed.setAuthor("Raid #" + id + ": " + raid.pokemon.name);
+        embed.setThumbnail(`https://img.pokemondb.net/sprites/x-y/normal/${raid.pokemon.name.toLowerCase()}.png`);
+        embed.fields.filter(field => /^Joining/.test(field.name))[0].name = "Joining (bring at least " + raid.pokemon.recplayers + " trainers)";
         break;
       case "endtime":
-        embed.fields.filter(field => field.name === "End time")[0].value = raiddd.endtime;
+        embed.fields.filter(field => field.name === "End time")[0].value = raid.endtime;
         break;
       case "battletime":
-        embed.fields.filter(field => field.name === "Battle time")[0].value = raiddd.battletime;
+        embed.fields.filter(field => field.name === "Battle time")[0].value = raid.battletime;
         break;
       case "team":
-        embed.setColor(embedColor(raiddd));
+        embed.setColor(embedColor(raid));
     }
   });
   return embed;
@@ -368,10 +362,10 @@ async function embed(embed, raiddd, id) {
 
 /**
  * Determine the color of the embedded message.
- * @param {*} raiddd
+ * @param {*} raid
  */
-function embedColor(raiddd) {
-  switch (raiddd.team) {
+function embedColor(raid) {
+  switch (raid.team) {
     case "mystic":
       return 0x0677ee;
     case "valor":
