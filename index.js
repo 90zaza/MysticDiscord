@@ -100,15 +100,16 @@ client.on('message', async (msg) => {
        member.addRole(verifiedrole).catch(console.error);
        msg.channel.send(`Welkom ` + member + `, je bent nu officieel toegevoegd! In het kanaal <#` + welkomchannel.id + `> is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Daarnaast sta ik natuurlijk ook tot je beschikking! Door '!help' te typen kun je zien wat ik allemaal voor je kan doen! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, met je level erachter (channel settings, change nickname), zodat we weten wie iedereen is;)`);
     } else {
-       msg.reply("Leden verifieren kan alleen door een moderator worden gedaan")}
-       msg.delete()
+      msg.reply("Leden verifieren kan alleen door een moderator worden gedaan")
     }
+    msg.delete()
+  }
 
-    if (msgText.startsWith("feliciteer")) {
-        let member = msg.mentions.members.first();
-        msg.channel.send(`Gefeliciteerd met het behalen van deze uitzonderlijke prestatie, ` + member + `! Als je op dezelfde fantastische manier doorgaat zal je een geweldige toekomst tegemoed gaan, ik ben heel erg trots op je!`);
-        msg.delete()
-    }
+  if (msgText.startsWith("feliciteer")) {
+    let member = msg.mentions.members.first();
+    msg.channel.send(`Gefeliciteerd met het behalen van deze uitzonderlijke prestatie, ` + member + `! Als je op dezelfde fantastische manier doorgaat zal je een geweldige toekomst tegemoed gaan, ik ben heel erg trots op je!`);
+    msg.delete()
+  }
 
   // delete amount of messages
   if (msgText.startsWith("delete")) {
@@ -173,18 +174,14 @@ In order to get full access to our server, we would like to verify you are indee
 
 //bring extra people to raids funtion
 client.on('messageReactionAdd', (messageReaction, user) => {
-
-    //check if blanche sent the reactions
-    if (user.username == BotName) {
-      return;
-    }
-
+  if (!user.bot) {
     //check for correct channel
-    // if (messageReaction.message.channel.name == raidAnnouncmentChannel) {
-      // raids.scanReaction(messageReaction, user);
-    // }
+    if (messageReaction.message.channel.name == raidAnnouncmentChannel) {
+      raids.messageReactionAdd(messageReaction, user);
+    }
+  }
 
-//   let overig = client.channels.find("name", "overig")
-//   overig.send(`${messageReaction.emoji} send by ${user.username} in channel ${messageReaction.message.channel} on message ${messageReaction.message.id}`);
+  //   let overig = client.channels.find("name", "overig")
+  //   overig.send(`${messageReaction.emoji} send by ${user.username} in channel ${messageReaction.message.channel} on message ${messageReaction.message.id}`);
 
 });
