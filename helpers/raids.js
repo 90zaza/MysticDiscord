@@ -106,209 +106,81 @@ exports.init = async (otherclient) => {
 
 // scan incoming messages in the raid channel
 exports.scan = async function (msg) {
-  message = new Message(msg);
-  // clean input
-  let textArray = msg.content.toLowerCase().trim().split(" ");
+  try {
+    message = new Message(msg);
+    // clean input
+    let textArray = msg.content.toLowerCase().trim().split(" ");
 
-  // help
-  if (/help/.test(message.message.content)) {
-    printHelp(message);
+    // help
+    if (/help/.test(message.message.content)) {
+      printHelp(message);
+    }
+    // join
+    else if (/join/.test(message.message.content)) {
+      console.log("JOIN");
+      joinRaiddd(message, message.message.content.match(/join (\d+)/)[1], message.message.author.username);
+    }
+    // leave
+    else if (/leave/.test(message.message.content)) {
+      console.log("LEAVE");
+      leaveRaiddd(message, message.message.content.match(/leave (\d+)/)[1], message.message.author.username);
+    }
+    // delete raid
+    else if (/del/.test(message.message.content)) {
+      console.log("DELETE");
+      deleteRaiddd(message, message.message.content.match(/del (\d+)/)[1]);
+    }
+    // reset
+    else if (/reset/.test(message.message.content)) {
+      console.log("RESET");
+      await raid.truncate();
+    }
+    // update
+    else if (/^\d+/.test(message.message.content)) {
+      console.log("UPDATE");
+      updateRaiddd(message, message.message.content.match(/(^\d+)/)[1]);
+    }
+    // new raid
+    else if (/^[a-zA-Z]+/.test(message.message.content)) {
+      console.log("NEW RAIDDDD");
+      addRaiddd(message);
+    }
+  } catch (error) {
+    console.log(error);
   }
-  // join
-  if (/join/.test(message.message.content)) {
-    // TODO
-  }
-  // leave
-  if (/leave/.test(message.message.content)) {
-    // TODO
-  }
-  // delete raid
-  if (/del/.test(message.message.content)) {
-    deleteRaid(msg, msg.content.match(/del (\d*)/)[1]);
-  }
-  // reset
-  if (/reset/.test(message.message.content)) {
-    await raid.truncate();
-  }
-  // update
-  if (/^\d+/.test(message.message.content)) {
-    // updateRaid(msg);
-    updateRaiddd(message, matchRegexReturnFirst(message.message.content, /(^\d+)/));
-  }
-  // new raid
-  if (/^[a-zA-Z]+/.test(message.message.content)) {
-    addRaid2(message);
-  }
+
 }
 
 // scan the reaction of the raid message
-exports.scanReaction = async function (messageReaction, user) {
-  let title = messageReaction.message.embeds[0].author.name;
-  let id = title.split(" ")[1][1];
-
+exports.messageReactionAdd = async function (messageReaction, user) {
+  console.log("REACTION");
+  // remove reaction
   messageReaction.remove(user);
 
-  if (messageReaction.emoji == joinemoji) {
-    //action for one extra player joining
-    console.log("join " + id);
-    // joinRaid(messageReaction.message, user, id);
-  }
-
-  if (messageReaction.emoji == leaveemoji) {
-    //action for one less player joining
-    console.log("leave")
-  }
-
-  if (messageReaction.emoji == mysticemoji) {
-    //make raid blue
-    console.log("blue")
-  }
-
-  if (messageReaction.emoji == valoremoji) {
-    //make raid red
-    console.log("red")
-  }
-
-  if (messageReaction.emoji == instinctemoji) {
-    //make raid yellow
-    console.log("yellow")
-  }
-}
-
-async function deleteRaid(msg, id) {
-
-  if (!isNaN(id)) {
-    try {
-      result = await raid.findOne({
-        where: { "idraids": id }
-      })
-      let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
-      raidsmeldingenchannel.messages.find("id", result.dataValues["messageid"]).delete()
-
-      await raid.destroy({
-        where: {
-          "idraids": id
-        }
-      })
-    } catch (error) {
-      // do nothing
-    }
-
-  } else {
-
-    raid.findAll({ where: {} }).then(function (x) {
-      for (i = 0; i < x.length; i++) {
-        let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
-        let message = raidsmeldingenchannel.messages.find("id", x[i]["messageid"]);
-        if (message) {
-          message.delete();
+  raid.findOne({ where: { "messageid": messageReaction.message.id } })
+    .then(result => {
+      if (result != null) {
+        const id = result.dataValues.idraids;
+        if (messageReaction.emoji == joinemoji) {
+          joinRaiddd(new Message(messageReaction.message), id, user.username);
+        } else if (messageReaction.emoji == leaveemoji) {
+          leaveRaiddd(new Message(messageReaction.message), id, user.username);
+        } else if (messageReaction.emoji == mysticemoji) {
+          //make raid blue
+          console.log("blue")
+        } else if (messageReaction.emoji == valoremoji) {
+          //make raid red
+          console.log("red")
+        } else if (messageReaction.emoji == instinctemoji) {
+          //make raid yellow
+          console.log("yellow")
         }
       }
-    }).then(function () {
-      raid.destroy({
-        where: {}
-      });
-    });
-  }
+    })
+    .catch(console.error);
 }
 
-function joinRaid(msg, user, id) {
-
-  console.log(msg);
-  raid.findOne({ where: { "messageid": msg.id } })
-    .then(function (dbRaid) {
-
-      let joining = dbRaid.dataValues.joining
-      let joiningAdditions = dbRaid.dataValues.joiningAdditions
-      if (!joining) {
-        joining = [];
-        joiningAdditions = [];
-      } else {
-        joining = joining.split("; ");
-        joiningAdditions = joiningAdditions.split("; ");
-      }
-
-      console.log(joining)
-      console.log(joiningAdditions)
-
-      let author = user.lastMessage.member.nickname;
-      if (author == null) {
-        author = user.username
-      }
-
-      let authorIndex = joining.indexOf(author);
-
-      if (authorIndex < 0) {
-        joining.push(author);
-        joiningAdditions.push(0);
-      } else {
-        joiningAdditions[authorIndex]++;
-      }
-
-      let combinedJoin = [];
-      combinedJoin.length = joining.length;
-      for (var i = 0; i < joining.length; i++) {
-        combinedJoin[i] = joining[i];
-        if (joiningAdditions[i] > 0) {
-          combinedJoin[i] += " + " + joiningAdditions[i];
-        }
-      }
-
-      raid.update({ "joining": joining.join("; "), "joiningAdditions": joiningAdditions.join("; ") }, {
-        where: { "messageid": msg.id },
-        returning: true
-      })
-        .then(async function (result) {
-
-          updateMessage(
-            msg,
-            dbRaid.dataValues.messageid,
-            dbRaid.dataValues.idraids,
-            dbRaid.dataValues.raidboss,
-            dbRaid.dataValues.raidgym,
-            dbRaid.dataValues.raidendtime,
-            dbRaid.dataValues.raidbattletime,
-            combinedJoin,
-            dbRaid.dataValues.isMystic
-          )
-        })
-    });
-}
-
-function leaveRaid(msg, id) {
-
-  raid.findOne({ where: { "idraids": id } })
-    .then(function (dbRaid) {
-      let author = msg.author.lastMessage.member.nickname;
-      let join = JSON.parse(dbRaid.dataValues.joining);
-      if (author == null) {
-        author = msg.author.username
-      }
-      if (join.indexOf(author) >= 0) {
-        join.splice(join.indexOf(author), 1);
-      }
-
-      raid.update({ "joining": JSON.stringify(join) }, {
-        where: { "idraids": id }
-      })
-        .then(async function (result) {
-
-          updateMessage(
-            msg,
-            dbRaid.dataValues.messageid,
-            dbRaid.dataValues.idraids,
-            dbRaid.dataValues.raidboss,
-            dbRaid.dataValues.raidgym,
-            dbRaid.dataValues.raidendtime,
-            dbRaid.dataValues.raidbattletime,
-            join,
-            dbRaid.dataValues.isMystic
-          )
-        })
-    });
-}
-
-async function addRaid2(message) {
+async function addRaiddd(message) {
   // create raid object
   newRaiddd = new Raid(message);
 
@@ -323,9 +195,10 @@ async function addRaid2(message) {
             raidsmeldingenchannel.send(embed)
               .then(async (message) => {
                 // update database with message id
-                await raid.update(
+                raid.update(
                   { messageid: message.id },
                   { where: { idraids: response.dataValues.idraids } })
+                  .catch(console.error);
 
                 // send reaction emojis
                 await message.react("➕")
@@ -379,6 +252,84 @@ async function letPeopleKnowOfNewRaid() {
   // }
 }
 
+async function joinRaiddd(message, id, author) {
+  raid.findById(id)
+    .then(result => {
+      if (result != null) {
+        message.message.channel.messages.fetch(result.dataValues.messageid)
+          .then(m => {
+            // add to previously joined trainers
+            joining = result.dataValues.joining ? result.dataValues.joining.split(",").concat(author) : [author];
+            // update message
+            newembed = m.embeds[0];
+            newembed.fields.filter(field => /^Joining/.test(field.name))[0].value = joining.join("\n");
+            m.edit(newembed);
+            // update database
+            raid.update(
+              { joining: joining.join() },
+              { where: { idraids: id } })
+              .catch(console.error);
+          })
+          .catch(console.error);
+      }
+    })
+    .catch(console.error);
+}
+
+async function leaveRaiddd(message, id, author) {
+  raid.findById(id)
+    .then(result => {
+      if (result != null) {
+        message.message.channel.messages.fetch(result.dataValues.messageid)
+          .then(m => {
+            // remove from list
+            let joining = result.dataValues.joining.split(",");
+            const index = joining.indexOf(author);
+            if (index > -1) {
+              joining.splice(index, 1);
+              newembed = m.embeds[0];
+              if (joining.length == 0) {
+                newembed.fields.filter(field => /^Joining/.test(field.name))[0].value = "No trainers interested yet";
+              } else {
+                newembed.fields.filter(field => /^Joining/.test(field.name))[0].value = joining.join("\n");
+              }
+              m.edit(newembed);
+              // update database
+              raid.update(
+                { joining: joining.join() },
+                { where: { idraids: id } })
+                .catch(console.error);
+            }
+          })
+          .catch(console.error);
+      }
+    })
+    .catch(console.error);
+}
+
+/**
+ * Delete a raid.
+ * @param {*Message} message The message
+ * @param {*Integer} id The id of the raid
+ */
+async function deleteRaiddd(message, id) {
+  raid.findById(id)
+    .then(result => {
+      // delete message in discord
+      message.message.channel.messages.fetch(result.dataValues.messageid)
+        .then(m => m.delete())
+        .catch(console.error);
+
+      // delete message in database
+      raid.destroy({
+        where: {
+          "idraids": id
+        }
+      })
+        .catch(console.error);
+    })
+}
+
 function defaultEmbed() {
   return new Discord.MessageEmbed()
     .setColor(0xffffff)
@@ -387,7 +338,7 @@ function defaultEmbed() {
     .setTitle("📍 to be added")
     .addField("End time", "to be added")
     .addField("Battle time", "to be determined")
-    .addField("Joining (bring at least x trainers)", "No people interested yet");
+    .addField("Joining (bring at least x trainers)", "No trainers interested yet");
 }
 
 async function embed(embed, raiddd, id) {
@@ -423,6 +374,10 @@ function embedColor(raiddd) {
   switch (raiddd.team) {
     case "mystic":
       return 0x0677ee;
+    case "valor":
+      return 'RED';
+    case "instinct":
+      return 'GREEN';
     default:
       return 0xffffff;
   }
