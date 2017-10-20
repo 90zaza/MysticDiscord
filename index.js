@@ -120,6 +120,19 @@ client.on('message', async (msg) => {
     raids.scan(msg);
   }
 
+  //list of commands
+  if(msgText == 'help') {
+    let embed = new Discord.RichEmbed()
+      .addField("Hey! Mijn naam is Blanche", "Naast het appraisen van jouw pokemon in game, kan ik jullie ook op deze discord assistentie verlenen. Ik reageer onder andere op de volgende commando's:")
+      .addField("!pokémon", "Hierbij krijg je informatie over de pokémon die je opvraagt")
+      .addField("!gymnaam", "Ik geef je de locatie van de gym")
+      .addField("!raid", `Hiermee geef je een nieuwe raid aan, zie <#` + raidsmeldingenchannel.id + `> of gebruik !raid help voor meer info`)
+      .addField("!top type [dps/tdo/tank]", "Hiermee geef ik een top 10 voor het type dat je aanvraagt. All geeft de algemene top 10")
+      .addField("!counter pokemon", "Dit genereert een top 10 counters tegen raid bosses")
+      .addField("!+[regio/pokémon]", `Hiermee schrijf je jezelf in voor een regio of een pokémon die je interessant vind. Zie <#` + spelerregistratiechannel.id + `>`)
+      msg.channel.send({embed});
+  }
+
 });
 
 //welcome new users
