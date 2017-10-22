@@ -161,34 +161,37 @@ async function addRaid(message) {
   // create raid object
   newRaid = new Raid(message.message.content);
 
-  // add raid to db
-  raids.create(newRaid.getDatabaseObject())
-    // send message of newly created raid with obtained id from the database
-    .then(async response => {
-      let foo = await
-        embed(defaultEmbed(), newRaid, response.dataValues.idraids)
-          .then(embed => {
-            let raidsmeldingenchannel = client.channels.find("name", "raids_meldingen");
-            raidsmeldingenchannel.send(embed)
-              .then(async (message) => {
-                // update database with message id
-                raids.update(
-                  { messageid: message.id },
-                  { where: { idraids: response.dataValues.idraids } })
-                  .catch(console.error);
+  // check if pokemon is recognised, otherwise just ignore message
+  if (newRaid.pokemon) {
+    // add raid to db
+    raids.create(newRaid.getDatabaseObject())
+      // send message of newly created raid with obtained id from the database
+      .then(async response => {
+        let foo = await
+          embed(defaultEmbed(), newRaid, response.dataValues.idraids)
+            .then(embed => {
+              let raidsmeldingenchannel = client.channels.find("name", "raids_meldingen");
+              raidsmeldingenchannel.send(embed)
+                .then(async (message) => {
+                  // update database with message id
+                  raids.update(
+                    { messageid: message.id },
+                    { where: { idraids: response.dataValues.idraids } })
+                    .catch(console.error);
 
-                // send reaction emojis
-                await message.react("➕")
-                await message.react("➖")
-                await message.react(mysticemoji);
-                await message.react(instinctemoji);
-                await message.react(valoremoji);
-              })
-              .catch(console.error);
-          })
-          .catch(console.error);
-    })
-    .catch(console.error);
+                  // send reaction emojis
+                  await message.react("➕")
+                  await message.react("➖")
+                  await message.react(mysticemoji);
+                  await message.react(instinctemoji);
+                  await message.react(valoremoji);
+                })
+                .catch(console.error);
+            })
+            .catch(console.error);
+      })
+      .catch(console.error);
+  }
 }
 
 async function updateRaid(message, id) {
