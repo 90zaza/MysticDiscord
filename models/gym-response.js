@@ -22,7 +22,9 @@ module.exports = class GymResponse extends Message {
         .setColor(0xffffff)
         .setURL(this.gym.url)
         .setTitle("📍 " + this.gym.name);
-
+        if (this.gym.description != 0) {
+          embed.setDescription(this.gym.description);
+        }
     super.reply({embed});
   }
 }

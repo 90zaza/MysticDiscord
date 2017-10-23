@@ -1,0 +1,49 @@
+[{
+  "keys": ["start", "beginning", "launch"],
+  "name": "Launch Pokemon Go",
+  "url": "http://pokemongolive.com/en/post/pokemon-ft-us-start",
+  "Date": "5 Juli 2016",
+  "description": "Pokemon Go is vanaf nu (via apk) te downloaden, de officiele release in nederland is pas op 15 oktober 2016."
+}, {
+  "keys": ["buddy", "buddy pokemon", "buddy pokémon"],
+  "name": "Buddy Pokémon",
+  "url": "http://pokemongolive.com/en/post/ver-update-091016",
+  "date": "10 september 2016",
+  "description": "Vanaf nu kun je lopen met je buddy pokémon voor extra candy!"
+}, {
+  "keys": ["goplus", "go plus", "go+", "go +"],
+  "name": "Go Plus",
+  "url": "http://pokemongolive.com/en/post/launch-pokemon-go-plus",
+  "date": "16 september",
+  "description": "Vanaf nu is de Pokémon Go Plus beschikbaar in gelimiteerde hoeveelheid."
+}, {
+  "keys": ["halloween 2016", "2016 halloween"],
+  "name": "Halloween event 2016",
+  "url": "http://pokemongolive.com/en/post/halloween2016",
+  "date": "26 okt - 1 november",
+  "description": "Het eerste Event van Pokémon Go was het Halloween Event. De voordelen waren:\n-Dubbel candy\n-4x zo snel buddy candies\n-Meer spooky pokmeon (ghastly, cubone en meowth familie)"
+}, {
+  "keys": ["daily bonus", "daily reward", "daily rewards", "daily bonusses"],
+  "name": "Daily Bonus",
+  "url": "http://pokemongolive.com/en/post/daily-bonus",
+  "date": "7 november 2016",
+  "description": "Vanaf nu geeft elke eerste gedraaide stop en gevangen pokemon een bonus, met de 7e achtereenvolgende dag een extra bonus."
+}, {
+  "keys": ["thanksgiving 2016", "2016 thanksgiving"],
+  "name": "Thanksgiving event 2016",
+  "url": "http://pokemongolive.com/en/post/celebration-nov2016",
+  "date": "23 november - 30 november",
+  "description": "Het Thanksgiving Event was bedoeld als een bedankje naar ons, de spelers, voor onze bijdrage in het spel. De voordelen waren:\n-Dubbel xp\n-Dubbel stardust"
+}, {
+  "keys": ["thanksgiving 2016", "2016 thanksgiving"],
+  "name": "Thanksgiving event 2016",
+  "url": "http://pokemongolive.com/en/post/celebration-nov2016",
+ "date": "23 november - 30 november",
+  "description": "Het Thanksgiving Event was bedoeld als een bedankje naar ons, de spelers, voor onze bijdrage in het spel. De voordelen waren:\n-Dubbel xp\n-Dubbel stardust"
+}, {
+  "keys": ["ditto"],
+  "name": "Ditto gevonden",
+  "url": "http://pokemongolive.com/en/post/ditto",
+  "date": "22 november",
+  "description": "Ditto is gevonden en transformeerd vanuit Pidgey, Rattata, Magikarp en Zubat (nu anders)"
+}]
