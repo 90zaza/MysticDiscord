@@ -22,6 +22,12 @@ module.exports = class TopResponse extends Message {
     .setURL(this.date.url)
     .setTitle(this.date.name)
     .addField(this.date.date, this.date.description)
+    if(this.date.sort == overview) {
+      embed.setColor(0x0000ff)
+    }
+    if(this.date.sort == event) {
+      embed.setColor(0x00ff00)
+    }
 
     super.newMessage({embed});
   }
