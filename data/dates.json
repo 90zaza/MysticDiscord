@@ -76,75 +76,82 @@
   "date": "2017",
   "description": ""
 }, {
-  "keys": [""],
-  "name": "",
+  "keys": ["valentijn 2017"],
+  "name": "Valentijn event 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/valentines2017",
+  "date": "8 februari - 15 februari",
+  "description": "Het valentijn event wad het event van de roze pokémon, de voordelen waren dan ook:\n- Meer roze pokemon in het wild:\n   -Chansey\n   -Porygon\n   -Lickytung\n   -Exeggcute\n- Cleffa, Igglybuff en Smoochum komen vaker uit eitjes\n- Dubbel Candy\n- Buddy vind 2x zo snel candy\n- Lure's duren 6 uur"
+}, {
+  "keys": ["gen 2"],
+  "name": "Gen 2 launch",
+  "sort": "",
+  "url": "http://pokemongolive.com/en/post/johto-pokemon",
+  "date": "16 februari 2017",
+  "description": "De babies waren er al (12 december 2016) maar de rest van gen 2 (afgezien van smeargle, delibird en legendaries) is vanaf deze dag beschikbaar."
+}, {
+  "keys": ["pokemon day 2017", "pokémon day 2017", "festive pikachu", "partychu"],
+  "name": "Pokémon day 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/pokemonday2017",
+  "date": "26 februari - 6 maart",
+  "description": "Om Pokémon dag te vieren dragen alle pikachu's een feestmuts"
+}, {
+  "keys": ["water festival event 2017", "water event 2017", "magikarp hat", "magikarp hoed", "shiny magikarp", "shiny karp"],
+  "name": "Water Festival event 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/waterfestival2017",
+  "date": "22 maart - 29 maart",
+  "description": "Ter ere van het wereldwijde water festival is er een water event in Pokémon Go. De voordelen zijn:\n- Verhoogde water spawns (de eerste paar uur ook veel meer dratini's)\n- Vanaf nu is de Magikarp hoed te dragen\n- Shiny magikarp is vanaf nu te vangen"
+}, {
+  "keys": ["eggstravaganza 2017", "eggstravagenza 2017"],
+  "name": "Eggstravaganza 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/eggstravaganza2017",
+  "date": "13 april - 20 april",
+  "description": "Als je langs de gigantische hoeveelheid woordgrappen heenleest, zie je de volgende voordelen:\n- Speciale pokemon uit 2km eitjes (lapras/ aero/ etc)\n- Dubbel xp\n- Lucky eggs 2x zo goedkoop in de shop"
+}, {
+  "keys": ["gras event 2017", "grass event 2017"],
+  "name": "Worldwide Bloom event 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/grassweekend2017",
+  "date": "5 mei - 8 mei",
+  "description": "Voor een korte periode heeft Professor Willow 'ontdekt' dat gras pokémon meer dan normaal spawnen."
+}, {
+  "keys": ["adventure event 2017", "rock event 2017", "expedition hoed", "expedition hoed", "adventure hat", "adventure hoed"],
+  "name": "Adventure (rock) event 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/adventureweek2017",
+  "date": "18 mei - 25 mei",
+  "description": "Een van de betere events, met de volgende voordelen:\n- Meer rock pokemon spawns, waaronder larvitar/ aerodactyl\n- Meer items uit pokestops\n- Pokéballs met 50% korting in de shop\n- Vanaf nu kun je de expedition hoed dragen"
+}, {
+  "keys": ["solstices event 2017", "fire and ice event 2017"],
+  "name": "Solstices (fire & ice) event 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/solstice2017",
+  "date": "13 juni - 20 juni",
+  "description": "Als onderdeel van de verjaardag van Pokémon Go vond het Solstice Event plaats. Dit betekende:\n- Meer vuur en ijs pokemon in het wild\n- x3 xp bonus voor vangbonussen\n- Lucky eggs zijn 50% goedkoper in de shop"
+}, {
+  "keys": ["gym rework"],
+  "name": "Gym Rework",
   "sort": "",
   "url": "",
   "date": "",
   "description": ""
 }, {
-  "keys": [""],
-  "name": "",
+  "keys": ["raids", "raid battles", "raid boss"],
+  "name": "Raid battles",
   "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
+  "url": "http://pokemongolive.com/en/post/raidsrollout",
+  "date": "29 juni",
+  "description": "Vanaf nu zijn raid bossen te verslaan in raid battles. Interessante raid bossen zijn onder andere Tyranitar, Lapras en Snorlax."
 }, {
-  "keys": [""],
-  "name": "",
-  "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
-}, {
-  "keys": [""],
-  "name": "",
-  "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
-}, {
-  "keys": [""],
-  "name": "",
-  "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
-}, {
-  "keys": [""],
-  "name": "",
-  "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
-}, {
-  "keys": [""],
-  "name": "",
-  "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
-}, {
-  "keys": [""],
-  "name": "",
-  "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
-}, {
-  "keys": [""],
-  "name": "",
-  "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
-}, {
-  "keys": [""],
-  "name": "",
-  "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
+  "keys": ["go fest", "chicago go fest"],
+  "name": "Chicago Go Fest",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/solstice2017",
+  "date": "22 juli",
+  "description": "Voor de verjaardag van Pokémon Go organiseerde Niantic het eerste real life event in Chicago. Voor dit event moest je een Ticket kopen en waren er meerdere voordelen. Naast absurd goede spawns waaronder unowns (C H I A G O)"
 }, {
   "keys": [""],
   "name": "",
