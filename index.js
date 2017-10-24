@@ -120,7 +120,6 @@ client.on('message', async (msg) => {
   }
 
   //determine if the bot activates or not
-  let msgPrefix = msg.content[0];
   var msgText = msg.content.toLowerCase().substr(1).trim();
   if (prefixs.indexOf(msgPrefix) < 0) return;
 
