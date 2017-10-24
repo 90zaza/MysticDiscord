@@ -17,7 +17,7 @@
     "sequelize": "sequelize"
   },
   "dependencies": {
-    "discord.js": "git+https://git@github.com/hydrabolt/discord.js.git",
+    "discord.js": "hydrabolt/discord.js",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "moment": "^2.19.1",
