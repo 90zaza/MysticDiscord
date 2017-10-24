@@ -141,7 +141,7 @@ client.on('message', async (msg) => {
 
   //list of commands
   if(msgText == 'help') {
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
       .addField("Hey! Mijn naam is Blanche", "Naast het appraisen van jouw pokemon in game, kan ik jullie ook op deze discord assistentie verlenen. Ik reageer onder andere op de volgende commando's:")
       .addField("!pokémon", "Hierbij krijg je informatie over de pokémon die je opvraagt")
       .addField("!gymnaam", "Ik geef je de locatie van de gym")
