@@ -13,15 +13,12 @@ var client;
 const joinemoji = '➕';
 const leaveemoji = '➖';
 // TODO: ask custom emojis from channel instead of hardcoding
-const mysticemoji = '351003868362178561';
-const instinctemoji = '351003868542271489';
-const valoremoji = '351003870367055883';
+const mysticemoji = process.env.MYSTIC_EMOJI;
+const instinctemoji = process.env.INSTINCT_EMOJI;
+const valoremoji = process.env.VALOR_EMOJI;
 // const emoji = client.emojis.find("name", "mystic");
 
-//production
-//const mysticemoji   = `340033299521077248`
-//const instinctemoji = `340033299508363265`
-//const valoremoji    = `340141649474617346`
+
 
 // initialisation
 // connects to database and creates table for raids
@@ -223,13 +220,13 @@ async function updateRaid(message, id) {
 // TODO
 async function letPeopleKnowOfNewRaid() {
   // Send message to raid channel with new raid
-  // let raidschannel = message.guild.channels.find("name", "raids");
-  // if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
-  //   let role = message.guild.roles.find("name", pokemon.name);
-  //   raidschannel.send(`Raid ${id}: ${role}`);
-  // } else {
-  //   raidschannel.send(`Raid ${id}: ${pokemon.name}`);
-  // }
+   let raidschannel = message.guild.channels.find("name", "raids");
+   if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
+     let role = message.guild.roles.find("name", pokemon.name);
+     raidschannel.send(`Raid ${id}: ${role}`);
+   } else {
+     raidschannel.send(`Raid ${id}: ${pokemon.name}`);
+   }
 }
 
 async function joinRaid(message, id, author) {
