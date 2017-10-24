@@ -27,13 +27,9 @@ const ChannelRolesResponse = require('./models/channel-roles-response');
 const TopResponse = require('./models/top-response');
 const DateResponse = require('./models/date-response');
 
-
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
-
-//this should be in .env
 const BotName = process.env.BOT_NAME;
-
 const raidAnnouncmentChannel = process.env.RAID_CHANNEL;
 raids.init(client);
 
@@ -180,8 +176,4 @@ client.on('messageReactionAdd', (messageReaction, user) => {
       raids.messageReactionAdd(messageReaction, user);
     }
   }
-
-  //   let overig = client.channels.find("name", "overig")
-  //   overig.send(`${messageReaction.emoji} send by ${user.username} in channel ${messageReaction.message.channel} on message ${messageReaction.message.id}`);
-
 });

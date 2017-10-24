@@ -16,9 +16,6 @@ const leaveemoji = '➖';
 const mysticemoji = process.env.MYSTIC_EMOJI;
 const instinctemoji = process.env.INSTINCT_EMOJI;
 const valoremoji = process.env.VALOR_EMOJI;
-// const emoji = client.emojis.find("name", "mystic");
-
-
 
 // initialisation
 // connects to database and creates table for raids
