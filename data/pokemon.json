@@ -2082,8 +2082,7 @@
     "description": 0
   },
   {
-    "keys": ["feraligatr", "fraligatr", "feraligater", "fraligator",
-      "feraligator"],
+    "keys": ["feraligatr", "fraligatr", "feraligater", "fraligator", "feraligator"],
     "name": "Feraligatr",
     "number": 160,
     "type": ["water"],
