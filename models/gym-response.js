@@ -18,7 +18,7 @@ module.exports = class GymResponse extends Message {
 
   reply() {
     const embed =
-      new Discord.RichEmbed()
+      new Discord.MessageEmbed()
         .setColor(0xffffff)
         .setURL(this.gym.url)
         .setTitle("📍 " + this.gym.name);

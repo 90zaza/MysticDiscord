@@ -29,12 +29,14 @@ const DateResponse = require('./models/date-response');
 
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
-
+const BotName = process.env.BOT_NAME;
+const raidAnnouncmentChannel = process.env.RAID_CHANNEL;
 raids.init();
 
 // start script
 client.on('ready', () => {
-  client.user.setGame('Pokémon Go');
+  // this is apperantly not a function anymore
+  // client.user.setGame('Pokémon Go');
   console.log('Blanche: I am ready!');
 });
 
@@ -44,26 +46,39 @@ client.on('message', async (msg) => {
   }
 
 
-  // DEPRECATED determine if the bot activates or not
+  //raid reply
+  if (msg.channel.name == raidAnnouncmentChannel) {
+    msg.delete();
+    raids.scan(msg);
+    return;
+  }
+
+  //removes prefix and spaces, and convert the rest to lowercase
   var msgText = msg.content.toLowerCase().substr(1).trim();
   let prefixs = settings.prefixs;
+  let moderator = settings.moderator;
+
+  //determine if the bot activates or not
+  let msgPrefix = msg.content[0];
+  if (prefixs.indexOf(msgPrefix) < 0) return;
 
   // new stuff
   new GymResponse(msg);
   new PokemonResponse(msg, pokemons);
-  new GenericResponse(msg);
+  // new GenericResponse(msg);
   new MusicResponse(msg);
   new GambleResponse(msg);
-  if (msgText.split(' ')[0] == "date" || msgText.split(' ')[0] == "datum" || msgText.split(' ')[0] == "data") {
-      msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
-      new DateResponse(msg);
+
+  if (msgText.split(' ')[0] == "date" || msgText.split(' ')[0] == "datum") {
+    msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
+    new DateResponse(msg);
   }
   if (msgText.split(' ')[0] == "top" || msgText.split(' ')[0] == "counter") {
-      msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
-      new TopResponse(msg);
+    msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
+    new TopResponse(msg);
   }
 
-  let verifiedrole = msg.guild.roles.find("name","makingdelftblueagain");
+  let verifiedrole = msg.guild.roles.find("name", "makingdelftblueagain");
   let moderatorrole = msg.guild.roles.find("name", "moderators");
   let raidschannel = msg.guild.channels.find("name", "raids");
   let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
@@ -73,24 +88,25 @@ client.on('message', async (msg) => {
   new TeamResponse(msg);
   new PokemonSpottingResponse(msg);
   if (msg.member.roles.has(verifiedrole.id)) {
-      new ChannelRolesResponse(msg);
+    new ChannelRolesResponse(msg);
   }
 
   if (msgText.startsWith("add")) {
     if (msg.member.roles.has(moderatorrole.id)) {
-       let member = msg.mentions.members.first();
-       member.addRole(verifiedrole).catch(console.error);
-       msg.channel.send(`Welkom ` + member + `, je bent nu officieel toegevoegd! In het kanaal <#` + welkomchannel.id + `> is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Daarnaast sta ik natuurlijk ook tot je beschikking! Door '!help' te typen kun je zien wat ik allemaal voor je kan doen! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, met je level erachter (channel settings, change nickname), zodat we weten wie iedereen is;)`);
+      let member = msg.mentions.members.first();
+      member.addRole(verifiedrole).catch(console.error);
+      msg.channel.send(`Welkom ` + member + `, je bent nu officieel toegevoegd! In het kanaal <#` + welkomchannel.id + `> is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Daarnaast sta ik natuurlijk ook tot je beschikking! Door '!help' te typen kun je zien wat ik allemaal voor je kan doen! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, met je level erachter (channel settings, change nickname), zodat we weten wie iedereen is;)`);
     } else {
-       msg.reply("Leden verifieren kan alleen door een moderator worden gedaan")}
-       msg.delete()
+      msg.reply("Leden verifieren kan alleen door een moderator worden gedaan")
     }
+    msg.delete()
+  }
 
-    if (msgText.startsWith("feliciteer")) {
-        let member = msg.mentions.members.first();
-        msg.channel.send(`Gefeliciteerd met het behalen van deze uitzonderlijke prestatie, ` + member + `! Als je op dezelfde fantastische manier doorgaat zal je een geweldige toekomst tegemoed gaan, ik ben heel erg trots op je!`);
-        msg.delete()
-    }
+  if (msgText.startsWith("feliciteer")) {
+    let member = msg.mentions.members.first();
+    msg.channel.send(`Gefeliciteerd met het behalen van deze uitzonderlijke prestatie, ` + member + `! Als je op dezelfde fantastische manier doorgaat zal je een geweldige toekomst tegemoed gaan, ik ben heel erg trots op je!`);
+    msg.delete()
+  }
 
   // delete amount of messages
   if (msgText.startsWith("delete")) {
@@ -105,7 +121,6 @@ client.on('message', async (msg) => {
   }
 
   //determine if the bot activates or not
-  let msgPrefix = msg.content[0];
   var msgText = msg.content.toLowerCase().substr(1).trim();
   if (prefixs.indexOf(msgPrefix) < 0) return;
 
@@ -114,6 +129,7 @@ client.on('message', async (msg) => {
 
   //raid reply
   if (msgText.split(' ')[0] == "raid") {
+    msg.content = msg.content.substr(5);
     raids.scan(msg);
   }
   if (msgText.split(' ')[0] == "join") {
@@ -126,8 +142,8 @@ client.on('message', async (msg) => {
   }
 
   //list of commands
-  if(msgText == 'help') {
-    let embed = new Discord.RichEmbed()
+  if (msgText == 'help') {
+    let embed = new Discord.MessageEmbed()
       .addField("Hey! Mijn naam is Blanche", "Naast het appraisen van jouw pokemon in game, kan ik jullie ook op deze discord assistentie verlenen. Ik reageer onder andere op de volgende commando's:")
       .addField("!pokémon", "Hierbij krijg je informatie over de pokémon die je opvraagt")
       .addField("!gymnaam", "Ik geef je de locatie van de gym")
@@ -136,7 +152,7 @@ client.on('message', async (msg) => {
       .addField("!counter pokemon", "Dit genereert een top 10 counters tegen raid bosses")
       .addField("!datum gebeurtenis", "Hiermee vraag je de datum op van een bepaalde gebeurtenis. Je kunt ook een jaaroverzicht vragen met !datum jaar")
       .addField("!+[regio/pokémon]", `Hiermee schrijf je jezelf in voor een regio of een pokémon die je interessant vind. Zie <#` + spelerregistratiechannel.id + `>`)
-      msg.channel.send({embed});
+    msg.channel.send({ embed });
   }
 
 });
@@ -152,4 +168,14 @@ Welcome to our Mystic Delft Discord group, ${member}!
 In order to get full access to our server, we would like to verify you are indeed mystic. If  you would be so kind as to upload a screenshot of your Pokémon Go profile (where you are standing next to your buddy) one of our moderators will contact you as soon as possible.`
     );
   }, 1000);
+});
+
+//bring extra people to raids funtion
+client.on('messageReactionAdd', (messageReaction, user) => {
+  if (!user.bot) {
+    //check for correct channel
+    if (messageReaction.message.channel.name == raidAnnouncmentChannel) {
+      raids.messageReactionAdd(messageReaction, user);
+    }
+  }
 });

@@ -115,7 +115,7 @@ module.exports = class PokemonResponse extends Message {
       imageURL = 'https://vignette.wikia.nocookie.net/nintendo/images/8/85/MissingNoNormal.png/revision/latest?cb=20131114211037&path-prefix=en'
     }
 
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
       .setTitle("#" + this.pokemon.number + " - " + this.pokemon.name + " [" + this.pokemon.type.join(", ") + "]", imageURL)
       .setThumbnail(imageURL)
       .setURL("https://pokemongo.gamepress.gg/pokemon/" + this.pokemon.number)
