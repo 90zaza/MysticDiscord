@@ -1,16 +1,16 @@
 [{
-  "keys": ["3 variaties op een vierkant 1"],
+  "keys": ["3 variaties op een vierkant 1", "3v1", "3 v 1"],
   "name": "3 Variaties op een vierkant 1",
   "url": "https://goo.gl/maps/kVTjneBJ4rG2",
   "description": 0
 },
 {
-  "keys": ["3 variaties op een vierkant 2"],
+  "keys": ["3 variaties op een vierkant 2", "3v2", "3 v 2"],
   "name": "3 Variaties op een vierkant 2",
   "url": "https://goo.gl/maps/WBmE2s8ypYU2",
   "description": 0
 }, {
-  "keys": ["3 variaties op een vierkant 3"],
+  "keys": ["3 variaties op een vierkant 3", "3v3", "3 v 3"],
   "name": "3 Variaties op een vierkant 3",
   "url": "https://goo.gl/maps/yYa2qy8XJ9p",
   "description": 0
@@ -113,7 +113,7 @@
   "keys": ["delftshout", "levenslust"],
   "name": "Delftshout Levenslust",
 	"url": "https://goo.gl/maps/uwD9bsXTb5U2",
-  "description": "Beperkt open:\nma - za: 10:00 - 18:00\nzo:\n<http://atv-levenslust.nl/tuincomplexen/delftse-hout/>"
+  "description": "Open tot 18:00"
 }, {
   "keys": ["delta rescue"],
   "name": "Delta Rescue",
@@ -395,7 +395,7 @@
 	"url": "https://goo.gl/maps/DjkYPsFRez82",
   "description": 0
 }, {
-  "keys": ["???"],
+  "keys": ["playground d"],
   "name": "Playground",
 	"url": "https://goo.gl/maps/daZ3xX1g87Q2",
   "description": 0

@@ -1686,7 +1686,7 @@
     "stats": [29, 102, 40],
     "attacks": [],
     "defence": [],
-    "recplayers": 1,
+    "recplayers": 0.5,
     "gender": 0.5,
     "rare":  false,
     "description": 0
@@ -2082,8 +2082,7 @@
     "description": 0
   },
   {
-    "keys": ["feraligatr", "fraligatr", "feraligater", "fraligator",
-      "feraligator"],
+    "keys": ["feraligatr", "fraligatr", "feraligater", "fraligator", "feraligator"],
     "name": "Feraligatr",
     "number": 160,
     "type": ["water"],

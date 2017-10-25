@@ -68,6 +68,7 @@ client.on('message', async (msg) => {
   // new GenericResponse(msg);
   new MusicResponse(msg);
   new GambleResponse(msg);
+
   if (msgText.split(' ')[0] == "date" || msgText.split(' ')[0] == "datum") {
     msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
     new DateResponse(msg);
@@ -149,6 +150,7 @@ client.on('message', async (msg) => {
       .addField("!raid", `Hiermee geef je een nieuwe raid aan, zie <#` + raidsmeldingenchannel.id + `> of gebruik !raid help voor meer info`)
       .addField("!top type [dps/tdo/tank]", "Hiermee geef ik een top 10 voor het type dat je aanvraagt. All geeft de algemene top 10")
       .addField("!counter pokemon", "Dit genereert een top 10 counters tegen raid bosses")
+      .addField("!datum gebeurtenis", "Hiermee vraag je de datum op van een bepaalde gebeurtenis. Je kunt ook een jaaroverzicht vragen met !datum jaar")
       .addField("!+[regio/pokémon]", `Hiermee schrijf je jezelf in voor een regio of een pokémon die je interessant vind. Zie <#` + spelerregistratiechannel.id + `>`)
     msg.channel.send({ embed });
   }
