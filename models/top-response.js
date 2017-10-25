@@ -17,7 +17,7 @@ module.exports = class TopResponse extends Message {
   }
 
   newMessage() {
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
       .setTitle(this.top.title)
       .setColor(this.top.color)
       .setDescription(this.top.one +

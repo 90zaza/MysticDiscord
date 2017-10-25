@@ -17,7 +17,7 @@ module.exports = class TopResponse extends Message {
   }
 
   newMessage() {
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
 
     .setURL(this.date.url)
     .setTitle(this.date.name)
