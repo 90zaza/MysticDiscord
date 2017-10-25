@@ -164,7 +164,7 @@ async function addRaid(message) {
         let foo = await
           embed(defaultEmbed(), newRaid, response.dataValues.idraids)
             .then(embed => {
-              let raidsmeldingenchannel = client.channels.find("name", "raids_meldingen");
+              const raidsmeldingenchannel = message.message.client.channels.find("name", "raids_meldingen");
               raidsmeldingenchannel.send(embed)
                 .then(async (message) => {
                   // update database with message id
@@ -230,7 +230,8 @@ async function joinRaid(message, id, author) {
   raids.findById(id)
     .then(result => {
       if (result != null) {
-        message.message.channel.messages.fetch(result.dataValues.messageid)
+        const raidsmeldingenchannel = message.message.client.channels.find("name", "raids_meldingen");
+        raidsmeldingenchannel.messages.fetch(result.dataValues.messageid)
           .then(m => {
             // add to previously joined trainers
             joining = result.dataValues.joining ? result.dataValues.joining.split(",").concat(author) : [author];
@@ -254,7 +255,8 @@ async function leaveRaid(message, id, author) {
   raids.findById(id)
     .then(result => {
       if (result != null) {
-        message.message.channel.messages.fetch(result.dataValues.messageid)
+        const raidsmeldingenchannel = message.message.client.channels.find("name", "raids_meldingen");
+        raidsmeldingenchannel.messages.fetch(result.dataValues.messageid)
           .then(m => {
             // remove from list
             if (result.dataValues.joining) {
