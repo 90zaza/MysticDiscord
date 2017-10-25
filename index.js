@@ -31,7 +31,7 @@ const DateResponse = require('./models/date-response');
 const pokemons = new Pokemons().get();
 const BotName = process.env.BOT_NAME;
 const raidAnnouncmentChannel = process.env.RAID_CHANNEL;
-raids.init(client);
+raids.init();
 
 // start script
 client.on('ready', () => {

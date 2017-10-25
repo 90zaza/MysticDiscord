@@ -7,7 +7,6 @@ const gyms = require('../data/gyms.json');
 
 var connection;
 var raids;
-var client;
 
 //testdiscord
 const joinemoji = '➕';
@@ -19,8 +18,7 @@ const valoremoji = process.env.VALOR_EMOJI;
 
 // initialisation
 // connects to database and creates table for raids
-exports.init = async (otherclient) => {
-  client = otherclient;
+exports.init = async () => {
   connection = new Sequelize(
     process.env.DB_DATABASE,
     process.env.DB_USER,
