@@ -65,19 +65,19 @@ client.on('message', async (msg) => {
   // new stuff
   new GymResponse(msg);
   new PokemonResponse(msg, pokemons);
-  new GenericResponse(msg);
+  // new GenericResponse(msg);
   new MusicResponse(msg);
   new GambleResponse(msg);
   if (msgText.split(' ')[0] == "date" || msgText.split(' ')[0] == "datum") {
-      msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
-      new DateResponse(msg);
+    msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
+    new DateResponse(msg);
   }
   if (msgText.split(' ')[0] == "top" || msgText.split(' ')[0] == "counter") {
-      msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
-      new TopResponse(msg);
+    msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
+    new TopResponse(msg);
   }
 
-  let verifiedrole = msg.guild.roles.find("name","makingdelftblueagain");
+  let verifiedrole = msg.guild.roles.find("name", "makingdelftblueagain");
   let moderatorrole = msg.guild.roles.find("name", "moderators");
   let raidschannel = msg.guild.channels.find("name", "raids");
   let raidsmeldingenchannel = msg.guild.channels.find("name", "raids_meldingen");
@@ -87,14 +87,14 @@ client.on('message', async (msg) => {
   new TeamResponse(msg);
   new PokemonSpottingResponse(msg);
   if (msg.member.roles.has(verifiedrole.id)) {
-      new ChannelRolesResponse(msg);
+    new ChannelRolesResponse(msg);
   }
 
   if (msgText.startsWith("add")) {
     if (msg.member.roles.has(moderatorrole.id)) {
-       let member = msg.mentions.members.first();
-       member.addRole(verifiedrole).catch(console.error);
-       msg.channel.send(`Welkom ` + member + `, je bent nu officieel toegevoegd! In het kanaal <#` + welkomchannel.id + `> is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Daarnaast sta ik natuurlijk ook tot je beschikking! Door '!help' te typen kun je zien wat ik allemaal voor je kan doen! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, met je level erachter (channel settings, change nickname), zodat we weten wie iedereen is;)`);
+      let member = msg.mentions.members.first();
+      member.addRole(verifiedrole).catch(console.error);
+      msg.channel.send(`Welkom ` + member + `, je bent nu officieel toegevoegd! In het kanaal <#` + welkomchannel.id + `> is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Daarnaast sta ik natuurlijk ook tot je beschikking! Door '!help' te typen kun je zien wat ik allemaal voor je kan doen! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, met je level erachter (channel settings, change nickname), zodat we weten wie iedereen is;)`);
     } else {
       msg.reply("Leden verifieren kan alleen door een moderator worden gedaan")
     }
@@ -128,6 +128,7 @@ client.on('message', async (msg) => {
 
   //raid reply
   if (msgText.split(' ')[0] == "raid") {
+    msg.content = msg.content.substr(5);
     raids.scan(msg);
   }
   if (msgText.split(' ')[0] == "join") {
@@ -140,7 +141,7 @@ client.on('message', async (msg) => {
   }
 
   //list of commands
-  if(msgText == 'help') {
+  if (msgText == 'help') {
     let embed = new Discord.MessageEmbed()
       .addField("Hey! Mijn naam is Blanche", "Naast het appraisen van jouw pokemon in game, kan ik jullie ook op deze discord assistentie verlenen. Ik reageer onder andere op de volgende commando's:")
       .addField("!pokémon", "Hierbij krijg je informatie over de pokémon die je opvraagt")
@@ -149,7 +150,7 @@ client.on('message', async (msg) => {
       .addField("!top type [dps/tdo/tank]", "Hiermee geef ik een top 10 voor het type dat je aanvraagt. All geeft de algemene top 10")
       .addField("!counter pokemon", "Dit genereert een top 10 counters tegen raid bosses")
       .addField("!+[regio/pokémon]", `Hiermee schrijf je jezelf in voor een regio of een pokémon die je interessant vind. Zie <#` + spelerregistratiechannel.id + `>`)
-      msg.channel.send({embed});
+    msg.channel.send({ embed });
   }
 
 });
