@@ -27,7 +27,7 @@
   "date": "16 september 2016",
   "description": "Vanaf nu is de Pokémon Go Plus beschikbaar in gelimiteerde hoeveelheid."
 }, {
-  "keys": ["halloween 2016", "2016 halloween"],
+  "keys": ["halloween 2016", "halloween event 2016"],
   "name": "Halloween event 2016",
   "sort": "event",
   "url": "http://pokemongolive.com/en/post/halloween2016",
@@ -74,9 +74,9 @@
   "sort": "overview",
   "url": "http://pokemongolive.com/en/post/",
   "date": "2017",
-  "description": ""
+  "description": "8 feb - 15 feb: Valentijn event\n16 feb: gen 2 launch\n26 feb - 6 maart: Pokemon Day event\n22 maart - 29 maart: Water Festival event\n13 april - 20 april: Eggstravaganza event\n5 mei - 8 mei: Gras Event\n18 mei - 25 mei: Adventure event\n6 juni: Eerste verjaardag(ash hat pikachu)\n13 juni - 20 juni: Solstices event\n22 juni: Gym rework\n29 juni: Raid battles\n22 juli: Go Fest\n22 juli - 24 juli: Go Fest event\n22 juli: Legendary raids\n5 aug - 21 aug: Safari Events in Europa:\n   - 16 sept: Oberhausen, Parijs & Barcelona\n   - 7 okt: Copenhagen & Praag\n   - 14 okt: Stokholm & Amstelveen\n- 16 aug: Shiny Pikachu release\n- 22 sept - 2 okt: Equinox event\n- 20 okt - 2 nov: Halloween event"
 }, {
-  "keys": ["valentijn 2017"],
+  "keys": ["valentijn 2017", "valentijn event 2017"],
   "name": "Valentijn event 2017",
   "sort": "event",
   "url": "http://pokemongolive.com/en/post/valentines2017",
@@ -125,6 +125,13 @@
   "date": "18 mei - 25 mei",
   "description": "Een van de betere events, met de volgende voordelen:\n- Meer rock pokemon spawns, waaronder larvitar/ aerodactyl\n- Meer items uit pokestops\n- Pokéballs met 50% korting in de shop\n- Vanaf nu kun je de expedition hoed dragen"
 }, {
+  "keys": ["first anniversary", "eerste verjaardag", "ash hat pikachu", "ash pikachu"],
+  "name": "Eerste verjaardag van Pokemon Go",
+  "sort": "",
+  "url": "http://pokemongolive.com/en/post/birthday2017",
+  "date": "6 juli 2017",
+  "description": "Om de eerste verjaardag van Pokémon Go te vieren is flink uit de kast gehaald. Denk aan de Gym Rework en Raid battles. Daarnaast waren er tussen 6 juli en 24 juli kortingsboxen te kopen én de ash hat pikachu te vangen."
+}, {
   "keys": ["solstices event 2017", "fire and ice event 2017"],
   "name": "Solstices (fire & ice) event 2017",
   "sort": "event",
@@ -135,9 +142,9 @@
   "keys": ["gym rework"],
   "name": "Gym Rework",
   "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
+  "url": "http://pokemongolive.com/en/post/ver-update-062017",
+  "date": "22 juni",
+  "description": "Op deze dag gingen de gyms, die al een paar dagen leeg stonden, weer geopend. Iedereen ging als een gek door delft en uiteraard was vrijwel alles mooi blauw binnen een halfuurtje;)"
 }, {
   "keys": ["raids", "raid battles", "raid boss"],
   "name": "Raid battles",
@@ -146,12 +153,54 @@
   "date": "29 juni",
   "description": "Vanaf nu zijn raid bossen te verslaan in raid battles. Interessante raid bossen zijn onder andere Tyranitar, Lapras en Snorlax."
 }, {
-  "keys": ["go fest", "chicago go fest"],
-  "name": "Chicago Go Fest",
-  "sort": "event",
+  "keys": ["go fest", "chicago go fest", "gofest"],
+  "name": "Chicago Go Fest 2017",
+  "sort": "",
   "url": "http://pokemongolive.com/en/post/solstice2017",
   "date": "22 juli",
-  "description": "Voor de verjaardag van Pokémon Go organiseerde Niantic het eerste real life event in Chicago. Voor dit event moest je een Ticket kopen en waren er meerdere voordelen. Naast absurd goede spawns waaronder unowns (C H I A G O)"
+  "description": "Voor de verjaardag van Pokémon Go organiseerde Niantic het eerste (betaalde) real life event. Mensen in en buiten het event moesten samenspelen tijdens 3 timeslots van een halfuur om bonussen te verdienen waar de hele wereld van kon genieten. Op het event ging het om de types pokemon die je ving, het vangen van bijvoorbeeld vuur types gaf een candy bonus bij het event. Buiten het event gold dat hoe meer pokemon er gevangen werden, hoe langer het event duurde. Als er genoeg gevangen zou zijn kregen de mensen op het event de kans op de eerste legendary raid: het verslaan van een Lugia\n\nHelaas liep alles minder goed dan verwacht. Al vrij snel waren er verbindingsproblemen door de grote hoeveelheid mensen op een plek, waar Niantic op reageerde door het event gebied te vergroten, deelnemers een Lugia te geven, Lugia en articuno raids te starten (met 100% vangkans voor tickethouders), de ticket kosten terug te geven en voor het event alle bonussen voor een maximale tijd uit te keren (!date go fest event)."
+}, {
+  "keys": ["go fest event"],
+  "name": "Het event na Chicago Go Fest 2017",
+  "sort": "event",
+  "url": "http://pokemongo.nianticlabs.com/en/post/legendaryrewards",
+  "date": "22 juli - 24 juli",
+  "description": "Tijdens Go Fest werd een event ‘verdient’ van 2 dagen met eigenlijk elke bonus die je kan bedenken, namelijk:\n- Dubbel stardust\n- Dubbel candy\n- Dubbel XP\n- Meer pokemon in het wild\n -Gehalveerde ei en buddy afstand."
+}, {
+  "keys": ["legendaries", "legendary raid", "legendary raids", "mewtwo", "articuno", "moltres", "zapdos", "lugia", "ho oh", "ho-oh", "entei", "raikou", "suicune"],
+  "name": "Legendary raids",
+  "sort": "",
+  "url": "http://pokemongo.nianticlabs.com/en/post/exclusiveraids",
+  "date": "Vanaf 22 juli 2017",
+  "description": "Na het Go Fest werden Lugia en Articuno vrijgegeven, waarna andere legendaries volgde. De lijst is:\n23 juli – 31: aug Lugia\n23 juli – 30: juli Articuno\n31 juli – 7: aug Moltres\n8 aug – 14: aug Zapdos\n15 aug - ??: Mewtwo (test EX Raids)\n15 aug – 31 aug: Articuno, Zapdos, Moltres\nSeptember: Entei (Europa)\nOktober: Suicune (Europa)\nNovember: Raikou (Europa)"
+}, {
+  "keys": ["safari", "safari 2017", "safari praag", "safari amstelveen", "safari copenhagen"],
+  "name": "Safari event in Europa 2017",
+  "sort": "event",
+  "url": "http://pokemongo.nianticlabs.com/en/post/europesightings",
+  "date": "5 aug - 21 aug",
+  "description": "De serie van de safari events was waarschijnlijk het beste event voor europese spelers. Kangaskhan en Unown (E U R O P) spawnden in de unibail-rodamco winkelcentra van Amstelveen, Leidschendam en Zoetermeer. Daarnaast stonden in de weekenden van 12 en 19 augustus de lures permanent aan. Daar bleef het echter niet bij, er kwamen ook nog safari events waar je met een (gratis) ticket aan deel kon nemen. Hiervoor kreeg je een in game medaille, en absurde spawns van Chansey, Larvitar, Mareep en Pikachu en Magikarp met een verhoogde Shiny kans. Daarnaast waren er weer unowns te vinden (S A F R I) Ook kreeg je speciale 2km eitjes waar goede pokemon in konden zitten. Als je geen ticket had kon je ook mee genieten dooor simpelweg door de stad te lopen. De spawns buiten de winkelcentra waren minder, maar zeker de moeite waard. De locaties en tijden waren als volgt\n16 september - Oberhausen, Parijs, Barcelona\n7 oktober - Copenhagen, Praag\n14 oktober - Stokholm, Amstelveen"
+}, {
+  "keys": ["pikachu outbreak", "shiny pikachu"],
+  "name": "Shiny Pikachu release",
+  "sort": "",
+  "url": "http://pokemongo.nianticlabs.com/en/post/yokohamapark",
+  "date": "16 augustus 2017",
+  "description": "Na het Pikachu Outbreak event in japan (9 - 15 aug), waar shiny pikachu te vangen was, kon dit juweeltje wereldwijd gevangen worden."
+}, {
+  "keys": ["equinox 2017", "equinox 2017 event", "super incubator"],
+  "name": "Equinox event 2017",
+  "sort": "event",
+  "url": "http://pokemongo.nianticlabs.com/en/post/equinox2017",
+  "date": "22 sept - 2 okt",
+  "description": "Een van de betere events (wie wil er nou niet meer stardust) was het Equinox event. De voordelen waren:\n- Dubbel stardust\n- Speciale 2km eitjes (chansey/ larvitar/ mareep/ etc)\n- Speciale kortingsboxen in de shop met Lucky eggs, Lures en de nieuwe Super Incubators\n- Nieuwe pokedex entries geven 1500 xp"
+}, {
+  "keys": ["halloween 2017", "halloween event 2017", "shiny sableye", "mimikyu hoed", "mimikyu hat"],
+  "name": "Halloween event 2017",
+  "sort": "event",
+  "url": "http://pokemongo.nianticlabs.com/en/post/halloween2017",
+  "date": "20 okt - 2 nov",
+  "description": "Het eerste tweede event: Halloween! Voor dit event is een nieuwe soundtrack toegevoegd die in de avonden speelt (lavender town). Tijdens deze avonden zijn er flink meer 'spooky' spawns, waaronder 5 gen 3 pokemon. De voordelen waren:\n- Meer spooky pokemon (waaronder de gen 3 spookjes)\n- Shiny Sableye in het wild of uit 10 km eitjes\n- Pikachu en Pichu met een nieuwe hoed\n- Speciale kortingsboxen met raid passes en super incubators\n- Een nieuwe Mimikyu hoed voor je avatar"
 }, {
   "keys": [""],
   "name": "",
@@ -250,33 +299,4 @@
   "url": "",
   "date": "",
   "description": ""
-}, {
-  "keys": [""],
-  "name": "",
-  "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
-}, {
-  "keys": [""],
-  "name": "",
-  "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
-}, {
-  "keys": [""],
-  "name": "",
-  "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
-}, {
-  "keys": [""],
-  "name": "",
-  "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
-
 }]

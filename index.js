@@ -54,7 +54,7 @@ client.on('message', async (msg) => {
   new GenericResponse(msg);
   new MusicResponse(msg);
   new GambleResponse(msg);
-  if (msgText.split(' ')[0] == "date" || msgText.split(' ')[0] == "datum") {
+  if (msgText.split(' ')[0] == "date" || msgText.split(' ')[0] == "datum" || msgText.split(' ')[0] == "data") {
       msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
       new DateResponse(msg);
   }

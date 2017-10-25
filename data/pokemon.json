@@ -1686,7 +1686,7 @@
     "stats": [29, 102, 40],
     "attacks": [],
     "defence": [],
-    "recplayers": 1,
+    "recplayers": 0.5,
     "gender": 0.5,
     "rare":  false,
     "description": 0
