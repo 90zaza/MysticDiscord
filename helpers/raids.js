@@ -361,11 +361,43 @@ async function deleteAll(message) {
 }
 
 async function subscribe(message) {
-  message.message.reply("subscribing: " + message.message.content.substring(1));
+  // remove + command
+  message.message.content = message.message.content.substring(1);
+  // get pokemon
+  const pokemon = extractPokemon(message.message.content);
+  if (pokemon) {
+    message.message.reply("found pokemon: " + pokemon.name);
+    // get the role of the pokemon, if not exist create one
+    let role = message.message.member.guild.roles.find("name", pokemon.name);
+    if (!role) {
+      await message.message.member.guild.createRole({
+        data: {
+          name: pokemon.name,
+          mentionable: true
+        }
+      })
+        .then(newrole => role = newrole);
+    }
+    // add user to role
+    message.message.member.addRole(role);
+  }
+  else {
+    message.message.reply("de tekst " + message.message.content + " is niet herkend als een pokemon.");
+  }
 }
 
 async function unsubscribe(message) {
-  message.message.reply("unsubscribing: " + message.message.content.substring(1));
+  // remove - command
+  message.message.content = message.message.content.substring(1);
+  const pokemon = extractPokemon(message.message.content);
+  if (pokemon) {
+    // get the role of the pokemon
+    let role = message.message.member.guild.roles.find("name", pokemon.name);
+    if (role) {
+      // remove user from role
+      message.message.member.removeRole(role);
+    }
+  }
 }
 
 function defaultEmbed() {
