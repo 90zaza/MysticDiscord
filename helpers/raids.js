@@ -377,7 +377,6 @@ async function subscribe(message) {
   // get pokemon
   const pokemon = extractPokemon(message.message.content);
   if (pokemon) {
-    message.message.reply("found pokemon: " + pokemon.name);
     // get the role of the pokemon, if not exist create one
     let role = message.message.member.guild.roles.find("name", pokemon.name);
     if (!role) {
