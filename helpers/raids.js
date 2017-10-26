@@ -308,7 +308,6 @@ async function deleteRaid(message, id) {
       message.message.channel.messages.fetch(result.dataValues.messageid)
         .then(m => m.delete())
         .catch(console.error);
-
       // delete message in database
       raid.destroy({
         where: {
@@ -316,6 +315,11 @@ async function deleteRaid(message, id) {
         }
       })
         .catch(console.error);
+      // delete role of raid
+      let role = message.message.member.guild.roles.find("name", result.dataValues.idraids.toString());
+      if (role) {
+        role.delete()
+      }
     })
 }
 
