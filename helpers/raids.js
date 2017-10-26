@@ -423,14 +423,14 @@ function defaultEmbed() {
 
 async function embed(embed, raid, id) {
   embed.setAuthor("Raid #" + id);
-  embed.setTitle(":round_pushpin:" + raid.pokemon.name + ": Gym to be added");
   Object.keys(raid).forEach((key) => {
     switch (key) {
       case "gym":
         embed.setURL(raid.gym.url);
-        embed.setTitle(":round_pushpin:" + raid.pokemon.name + ": " + raid.gym.name);
+        embed.setTitle(embed.title.substring(0, embed.title.length - 17) + ": " + raid.gym.name);
         break;
       case "pokemon":
+        embed.setTitle(":round_pushpin:" + raid.pokemon.name + ": Gym to be added");
         embed.setThumbnail(`https://img.pokemondb.net/sprites/x-y/normal/${raid.pokemon.name.toLowerCase()}.png`);
         embed.fields.filter(field => /^Joining/.test(field.name))[0].name = "Joining (bring at least " + raid.pokemon.recplayers + " trainers)";
         break;
