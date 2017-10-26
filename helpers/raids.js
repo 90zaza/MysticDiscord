@@ -364,7 +364,6 @@ async function deleteAll(message) {
     .catch(console.error);
 
   await raids.truncate();
-  message.message.reply("Deleted all the raids");
 }
 
 /**
