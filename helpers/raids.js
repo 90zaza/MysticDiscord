@@ -501,6 +501,12 @@ class Raid {
     });
     return result;
   }
+
+  merge(other) {
+    Object.keys(other).forEach((key) => {
+      this.key = other.key;
+    });
+  }
 }
 
 /**
