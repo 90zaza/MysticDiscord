@@ -171,6 +171,15 @@ async function addRaid(message) {
                     { where: { idraids: response.dataValues.idraids } })
                     .catch(console.error);
 
+                  // create role for raid
+                  message.guild.createRole({
+                    data: {
+                      name: response.dataValues.idraids.toString(),
+                      mentionable: true
+                    }
+                  })
+                    .catch(console.error)
+
                   // send reaction emojis
                   await message.react("➕")
                   await message.react("➖")
@@ -215,13 +224,13 @@ async function updateRaid(message, id) {
 // TODO
 async function letPeopleKnowOfNewRaid() {
   // Send message to raid channel with new raid
-   let raidschannel = message.guild.channels.find("name", "raids");
-   if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
-     let role = message.guild.roles.find("name", pokemon.name);
-     raidschannel.send(`Raid ${id}: ${role}`);
-   } else {
-     raidschannel.send(`Raid ${id}: ${pokemon.name}`);
-   }
+  let raidschannel = message.guild.channels.find("name", "raids");
+  if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
+    let role = message.guild.roles.find("name", pokemon.name);
+    raidschannel.send(`Raid ${id}: ${role}`);
+  } else {
+    raidschannel.send(`Raid ${id}: ${pokemon.name}`);
+  }
 }
 
 async function joinRaid(message, id, author) {
