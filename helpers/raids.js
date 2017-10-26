@@ -302,14 +302,14 @@ async function leaveRaid(message, id, author) {
  * @param {*Integer} id The id of the raid
  */
 async function deleteRaid(message, id) {
-  raid.findById(id)
+  raids.findById(id)
     .then(result => {
       // delete message in discord
       message.message.channel.messages.fetch(result.dataValues.messageid)
         .then(m => m.delete())
         .catch(console.error);
       // delete message in database
-      raid.destroy({
+      raids.destroy({
         where: {
           "idraids": id
         }
