@@ -65,7 +65,7 @@ client.on('message', async (msg) => {
   // new stuff
   new GymResponse(msg);
   new PokemonResponse(msg, pokemons);
-  // new GenericResponse(msg);
+  new GenericResponse(msg);
   new MusicResponse(msg);
   new GambleResponse(msg);
 

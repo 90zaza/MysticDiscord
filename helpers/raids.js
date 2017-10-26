@@ -119,6 +119,14 @@ exports.scan = async function (msg) {
     else if (/^[a-zA-Z]+/.test(message.message.content)) {
       addRaid(message);
     }
+    // subscribe to raid
+    else if (/^\+/.test(message.message.content)) {
+      subscribe(message);
+    }
+    // unsubscribe to raid
+    else if (/^\-/.test(message.message.content)) {
+      unsubscribe(message);
+    }
   } catch (error) {
     console.log(error);
   }
@@ -350,6 +358,14 @@ async function deleteAll(message) {
 
   await raids.truncate();
   message.message.reply("Deleted all the raids");
+}
+
+async function subscribe(message) {
+  message.message.reply("subscribing: " + message.message.content.substring(1));
+}
+
+async function unsubscribe(message) {
+  message.message.reply("unsubscribing: " + message.message.content.substring(1));
 }
 
 function defaultEmbed() {
