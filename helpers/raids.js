@@ -284,6 +284,9 @@ async function leaveRaid(message, id, author) {
                   { joining: joining.join() },
                   { where: { idraids: id } })
                   .catch(console.error);
+                // remove user from raid role
+                const role = message.message.member.guild.roles.find("name", id.toString());
+                message.message.member.removeRole(role);
               }
             }
           })
