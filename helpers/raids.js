@@ -109,7 +109,7 @@ exports.scan = async function (msg) {
     }
     // reset
     else if (/reset/.test(message.message.content)) {
-      await raids.truncate();
+      deleteAll(message);
     }
     // update
     else if (/^\d+/.test(message.message.content)) {
@@ -321,6 +321,36 @@ async function deleteRaid(message, id) {
         role.delete()
       }
     })
+}
+
+async function deleteAll(message) {
+  const guild = message.message.guild;
+  const channel = message.message.client.channels.find("name", "raids_meldingen");
+  // get all raids from the database
+  await raids.all()
+    .then(results => {
+      if (results != undefined) {
+        console.log("number of entries: " + results.length);
+        results.forEach(result => {
+          // delete message in discord
+          let m = channel.messages.get(result.dataValues.messageid);
+          if (m) {
+            m.delete()
+              .catch(console.error);
+          }
+
+          // delete role
+          let role = guild.roles.find("name", result.dataValues.idraids.toString());
+          if (role) {
+            role.delete()
+          }
+        })
+      }
+    })
+    .catch(console.error);
+
+  await raids.truncate();
+  message.message.reply("Deleted all the raids");
 }
 
 function defaultEmbed() {
