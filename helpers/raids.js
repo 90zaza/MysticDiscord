@@ -330,7 +330,6 @@ async function deleteAll(message) {
   await raids.all()
     .then(results => {
       if (results != undefined) {
-        console.log("number of entries: " + results.length);
         results.forEach(result => {
           // delete message in discord
           let m = channel.messages.get(result.dataValues.messageid);
