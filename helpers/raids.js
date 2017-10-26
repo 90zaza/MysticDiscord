@@ -52,19 +52,15 @@ exports.init = async () => {
     },
     raidboss: {
       type: Sequelize.STRING,
-      defaultValue: "to be added"
     },
     raidendtime: {
       type: Sequelize.STRING,
-      defaultValue: "to be added"
     },
     raidbattletime: {
       type: Sequelize.STRING,
-      defaultValue: "to be determined"
     },
     raidgym: {
       type: Sequelize.STRING,
-      defaultValue: "to be added"
     },
     // only postgres allows ARRAYS as types, so we have to use this ugly concat strings here
     joining: {
@@ -167,42 +163,38 @@ async function addRaid(message) {
     raids.create(newRaid.getDatabaseObject())
       // send message of newly created raid with obtained id from the database
       .then(async response => {
-        let foo = await
-          embed(defaultEmbed(), newRaid, response.dataValues.idraids)
-            .then(embed => {
-              const raidsmeldingenchannel = message.message.client.channels.find("name", "raids_meldingen");
-              raidsmeldingenchannel.send(embed)
-                .then(async (m) => {
-                  // update database with message id
-                  raids.update(
-                    { messageid: m.id },
-                    { where: { idraids: response.dataValues.idraids } })
-                    .catch(console.error);
-                  // create role for raid
-                  m.guild.createRole({
-                    data: {
-                      name: response.dataValues.idraids.toString(),
-                      mentionable: true
-                    }
-                  })
-                  // notifiy role of raid
-                  const role = message.message.member.guild.roles.find("name", newRaid.pokemon.name);
-                  const raidschannel = message.message.guild.channels.find("name", "raids");
-                  if (role) {
-                    raidschannel.send(`Raid ${response.dataValues.idraids}: ${role}`);
-                  } else {
-                    raidschannel.send(`Raid ${response.dataValues.idraids}: ${newRaid.pokemon.name}`);
-                  }
-                  // send reaction emojis
-                  await m.react("➕")
-                  await m.react("➖")
-                  await m.react(mysticemoji);
-                  await m.react(instinctemoji);
-                  await m.react(valoremoji);
-                })
-                .catch(console.error);
+        const embed = messageEmbed(null, newRaid, response.dataValues.idraids);
+        const raidsmeldingenchannel = message.message.client.channels.find("name", "raids_meldingen");
+        raidsmeldingenchannel.send(embed)
+          .then(async (m) => {
+            // update database with message id
+            raids.update(
+              { messageid: m.id },
+              { where: { idraids: response.dataValues.idraids } })
+              .catch(console.error);
+            // create role for raid
+            m.guild.createRole({
+              data: {
+                name: response.dataValues.idraids.toString(),
+                mentionable: true
+              }
             })
-            .catch(console.error);
+            // notifiy role of raid
+            const role = message.message.member.guild.roles.find("name", newRaid.pokemon.name);
+            const raidschannel = message.message.guild.channels.find("name", "raids");
+            if (role) {
+              raidschannel.send(`Raid ${response.dataValues.idraids}: ${role}`);
+            } else {
+              raidschannel.send(`Raid ${response.dataValues.idraids}: ${newRaid.pokemon.name}`);
+            }
+            // send reaction emojis
+            await m.react("➕")
+            await m.react("➖")
+            await m.react(mysticemoji);
+            await m.react(instinctemoji);
+            await m.react(valoremoji);
+          })
+          .catch(console.error);
       })
       .catch(console.error);
   }
@@ -222,12 +214,7 @@ async function updateRaid(message, id) {
       message.message.channel.messages.fetch(result.dataValues.messageid)
         .then(m => {
           // update embedded message with new information
-          embed(m.embeds[0], newRaid, id)
-            .then(embed => {
-              m.edit(embed)
-                .catch(console.error);
-            })
-            .catch(console.error);
+          m.edit(messageEmbed(result, newRaid, id));
         })
         .catch(console.error);
     })
@@ -413,39 +400,21 @@ async function unsubscribe(message) {
   }
 }
 
-function defaultEmbed() {
-  return new Discord.MessageEmbed()
-    .setColor(0xffffff)
-    .addField("End time", "to be added", true)
-    .addField("Battle time", "to be determined", true)
-    .addField("Joining (bring at least x trainers)", "No trainers interested yet");
-}
+function messageEmbed(result, raid, id) {
+  const pokemon = raid.pokemon ? raid.pokemon : (result ? pokemons.find(pokemon => pokemon.name == result.dataValues.raidboss) : null);
+  const gym = raid.gym ? raid.gym : (result ? gyms.find(gym => gym.name == result.dataValues.raidgym) : null);
+  const endtime = raid.endtime ? raid.endtime : (result ? (result.dataValues.raidendtime ? result.dataValues.raidendtime : null) : null);
+  const battletime = raid.battletime ? raid.battletime : (result ? (result.dataValues.raidbattletime ? result.dataValues.raidbattletime : null) : null);
 
-async function embed(embed, raid, id) {
-  embed.setAuthor("Raid #" + id);
-  Object.keys(raid).forEach((key) => {
-    switch (key) {
-      case "gym":
-        embed.setURL(raid.gym.url);
-        embed.setTitle(embed.title.substring(0, embed.title.length - 17) + ": " + raid.gym.name);
-        break;
-      case "pokemon":
-        embed.setTitle(":round_pushpin:" + raid.pokemon.name + ": Gym to be added");
-        embed.setThumbnail(`https://img.pokemondb.net/sprites/x-y/normal/${raid.pokemon.name.toLowerCase()}.png`);
-        embed.fields.filter(field => /^Joining/.test(field.name))[0].name = "Joining (bring at least " + raid.pokemon.recplayers + " trainers)";
-        break;
-      case "endtime":
-        embed.fields.filter(field => field.name === "End time")[0].value = raid.endtime;
-        break;
-      case "battletime":
-        embed.fields.filter(field => field.name === "Battle time")[0].value = raid.battletime;
-        break;
-      case "team":
-        embed.setColor(embedColor(raid.team));
-        break;
-    }
-  });
-  return embed;
+  return new Discord.MessageEmbed()
+    .setAuthor("Raid #" + id)
+    .setColor(embedColor(raid.team))
+    .setTitle(`:round_pushpin:${pokemon.name}: ${gym ? gym.name : "Gym to be added"}`)
+    .setThumbnail(`https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`)
+    .addField("End time", `${endtime ? endtime : "to be added"}`, true)
+    .addField("Battle time", `${battletime ? battletime : "to be added"}`, true)
+    .addField(`Joining (bring at least ${pokemon.recplayers} trainers)`, "No trainers interested yet")
+    .setURL(gym ? gym.url : '');
 }
 
 /**
@@ -500,6 +469,12 @@ class Raid {
       }
     });
     return result;
+  }
+
+  merge(other) {
+    Object.keys(other).forEach((key) => {
+      this.key = other.key;
+    });
   }
 }
 
