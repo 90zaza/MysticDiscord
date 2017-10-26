@@ -194,11 +194,11 @@ async function addRaid(message) {
                     raidschannel.send(`Raid ${response.dataValues.idraids}: ${newRaid.pokemon.name}`);
                   }
                   // send reaction emojis
-                  await message.react("➕")
-                  await message.react("➖")
-                  await message.react(mysticemoji);
-                  await message.react(instinctemoji);
-                  await message.react(valoremoji);
+                  await m.react("➕")
+                  await m.react("➖")
+                  await m.react(mysticemoji);
+                  await m.react(instinctemoji);
+                  await m.react(valoremoji);
                 })
                 .catch(console.error);
             })
