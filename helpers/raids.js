@@ -172,20 +172,27 @@ async function addRaid(message) {
             .then(embed => {
               const raidsmeldingenchannel = message.message.client.channels.find("name", "raids_meldingen");
               raidsmeldingenchannel.send(embed)
-                .then(async (message) => {
+                .then(async (m) => {
                   // update database with message id
                   raids.update(
-                    { messageid: message.id },
+                    { messageid: m.id },
                     { where: { idraids: response.dataValues.idraids } })
                     .catch(console.error);
                   // create role for raid
-                  message.guild.createRole({
+                  m.guild.createRole({
                     data: {
                       name: response.dataValues.idraids.toString(),
                       mentionable: true
                     }
                   })
-                    .catch(console.error)
+                  // notifiy role of raid
+                  const role = message.message.member.guild.roles.find("name", newRaid.pokemon.name);
+                  const raidschannel = message.message.guild.channels.find("name", "raids");
+                  if (role) {
+                    raidschannel.send(`Raid ${response.dataValues.idraids}: ${role}`);
+                  } else {
+                    raidschannel.send(`Raid ${response.dataValues.idraids}: ${newRaid.pokemon.name}`);
+                  }
                   // send reaction emojis
                   await message.react("➕")
                   await message.react("➖")
