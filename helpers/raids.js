@@ -309,23 +309,21 @@ async function deleteRaid(message, id) {
 function defaultEmbed() {
   return new Discord.MessageEmbed()
     .setColor(0xffffff)
-    .setURL(undefined)
-    .setAuthor("Raid #-1: To be added")
-    .setTitle("📍 to be added")
-    .addField("End time", "to be added")
-    .addField("Battle time", "to be determined")
+    .addField("End time", "to be added", true)
+    .addField("Battle time", "to be determined", true)
     .addField("Joining (bring at least x trainers)", "No trainers interested yet");
 }
 
 async function embed(embed, raid, id) {
+  embed.setAuthor("Raid #" + id);
+  embed.setTitle(":round_pushpin:" + raid.pokemon.name + ": Gym to be added");
   Object.keys(raid).forEach((key) => {
     switch (key) {
       case "gym":
         embed.setURL(raid.gym.url);
-        embed.setTitle("📍 " + raid.gym.name);
+        embed.setTitle(":round_pushpin:" + raid.pokemon.name + ": " + raid.gym.name);
         break;
       case "pokemon":
-        embed.setAuthor("Raid #" + id + ": " + raid.pokemon.name);
         embed.setThumbnail(`https://img.pokemondb.net/sprites/x-y/normal/${raid.pokemon.name.toLowerCase()}.png`);
         embed.fields.filter(field => /^Joining/.test(field.name))[0].name = "Joining (bring at least " + raid.pokemon.recplayers + " trainers)";
         break;
@@ -337,6 +335,7 @@ async function embed(embed, raid, id) {
         break;
       case "team":
         embed.setColor(embedColor(raid.team));
+        break;
     }
   });
   return embed;
@@ -478,17 +477,20 @@ function matchRegexReturnFirst(string, regex) {
   return null;
 }
 
-// TODO: update according to new raid system
+/**
+ * Explanation of the raid commands.
+ * @param {*Message} message
+ */
 function printHelp(message) {
   let embed = new Discord.MessageEmbed()
-    .setAuthor("How to use the Raid Bot")
+    .setTitle("**How to use the Raid Bot**")
     .setColor(0xffffff)
-    .addField("Add a Raid", "**!raid [boss] e [end time] g [gym] b [battle time]**")
-    .addField("Required/Optional", "required: boss; optional: e,g,b.")
-    .addField("Change Raid Parameters", "**!raid [raid ID] [e/g/b] [value]**")
-    .addField("Raid ID", "The raid ID is the number in Blanches raid announcement.")
-    .addField("Join/Leave a Raid", "**!raid join [id]** to join, **!raid leave [id]** to leave")
-    .addField("Delete a Raid / Delete All Raids", "**!raid del [id]** / **!raid del all**")
+    .addField("Add a Raid", "*raid [pokemon] g [gym] e [end time]  b [battle time]* \nPokemon required, g/e/b optional.")
+    .addField("Join a raid", "*join [id]*")
+    .addField("Leave a raid", "*leave [id]*")
+    .addField("Delete a raid", "*del [id]*")
+    .addField("Change Raid Parameters", "*[id] [e/g/b] [value]*")
+    .addField("Reset the raids", "*reset*");
 
-  message.channel.send({ embed });
+  message.message.channel.send({ embed });
 }
