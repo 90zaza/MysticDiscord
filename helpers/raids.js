@@ -170,7 +170,6 @@ async function addRaid(message) {
                     { messageid: message.id },
                     { where: { idraids: response.dataValues.idraids } })
                     .catch(console.error);
-
                   // create role for raid
                   message.guild.createRole({
                     data: {
@@ -179,7 +178,6 @@ async function addRaid(message) {
                     }
                   })
                     .catch(console.error)
-
                   // send reaction emojis
                   await message.react("➕")
                   await message.react("➖")
@@ -251,6 +249,9 @@ async function joinRaid(message, id, author) {
               { joining: joining.join() },
               { where: { idraids: id } })
               .catch(console.error);
+            // add user to raid role
+            const role = message.message.member.guild.roles.find("name", id.toString());
+            message.message.member.addRole(role);
           })
           .catch(console.error);
       }
