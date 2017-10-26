@@ -360,6 +360,10 @@ async function deleteAll(message) {
   message.message.reply("Deleted all the raids");
 }
 
+/**
+ * Subscribe to the raids of the specified pokemon.
+ * @param {*Message} message
+ */
 async function subscribe(message) {
   // remove + command
   message.message.content = message.message.content.substring(1);
@@ -386,6 +390,10 @@ async function subscribe(message) {
   }
 }
 
+/**
+ * Unsubscribe from the raids of the specified pokemon.
+ * @param {*Message} message
+ */
 async function unsubscribe(message) {
   // remove - command
   message.message.content = message.message.content.substring(1);
