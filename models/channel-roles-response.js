@@ -6,12 +6,11 @@ module.exports = class GenericResponse extends Message {
   constructor(message) {
     super(message);
     var action
-    if (msg.content.startsWith("+")) {action = "add"}
-    if (msg.content.startsWith("-")) {action = "remove"}
-    message = message.substr(1);
-    console.log(message);
+    if (this.startsWith("+")) {action = "add"}
+    if (this.startsWith("-")) {action = "remove"}
+    this.message.content = this.message.content.substr(2);
+    console.log(`${action} ${this.message.content}`);
     this.channelRole = this.getChannelRole();
-    console.log('test');
     if(this.channelRole) {
       this.executeRoleChange();
     }
