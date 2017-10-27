@@ -115,14 +115,7 @@ exports.scan = async function (msg) {
     else if (/^[a-zA-Z]+/.test(message.message.content)) {
       addRaid(message);
     }
-    // subscribe to raid
-    else if (/^\+/.test(message.message.content)) {
-      subscribe(message);
-    }
-    // unsubscribe to raid
-    else if (/^\-/.test(message.message.content)) {
-      unsubscribe(message);
-    }
+
   } catch (error) {
     console.log(error);
   }
@@ -136,16 +129,22 @@ exports.messageReactionAdd = async function (messageReaction, user) {
   raids.findOne({ where: { "messageid": messageReaction.message.id } })
     .then(result => {
       if (result != null) {
+        const raidschannel = messageReaction.message.client.channels.find("name", "raids");
         const id = result.dataValues.idraids;
         if (messageReaction.emoji == joinemoji) {
           joinRaid(new Message(messageReaction.message), id, user.username);
+          raidschannel.send(`Raid ${id}: ${user.username} joined`);
         } else if (messageReaction.emoji == leaveemoji) {
+          raidschannel.send(`Raid ${id}: ${user.username} left`);
           leaveRaid(new Message(messageReaction.message), id, user.username);
         } else if (messageReaction.emoji.name == "mystic") {
+          raidschannel.send(`Raid ${id}: set to mystic`);
           messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("mystic")));
         } else if (messageReaction.emoji.name == "valor") {
+          raidschannel.send(`Raid ${id}: set to valor`);
           messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("valor")));
         } else if (messageReaction.emoji.name == "instinct") {
+          raidschannel.send(`Raid ${id}: set to instinct`);
           messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("instinct")));
         }
       }
@@ -221,22 +220,12 @@ async function updateRaid(message, id) {
     .catch(console.error);
 }
 
-// TODO
-async function letPeopleKnowOfNewRaid() {
-  // Send message to raid channel with new raid
-  let raidschannel = message.guild.channels.find("name", "raids");
-  if (pokemon.name == "Snorlax" || pokemon.name == "Machamp" || pokemon.name == "Tyranitar" || pokemon.name == "Lapras") {
-    let role = message.guild.roles.find("name", pokemon.name);
-    raidschannel.send(`Raid ${id}: ${role}`);
-  } else {
-    raidschannel.send(`Raid ${id}: ${pokemon.name}`);
-  }
-}
-
 async function joinRaid(message, id, author) {
   raids.findById(id)
     .then(result => {
       if (result != null) {
+
+
         const raidsmeldingenchannel = message.message.client.channels.find("name", "raids_meldingen");
         raidsmeldingenchannel.messages.fetch(result.dataValues.messageid)
           .then(m => {
@@ -351,53 +340,6 @@ async function deleteAll(message) {
     .catch(console.error);
 
   await raids.truncate();
-}
-
-/**
- * Subscribe to the raids of the specified pokemon.
- * @param {*Message} message
- */
-async function subscribe(message) {
-  // remove + command
-  message.message.content = message.message.content.substring(1);
-  // get pokemon
-  const pokemon = extractPokemon(message.message.content);
-  if (pokemon) {
-    // get the role of the pokemon, if not exist create one
-    let role = message.message.member.guild.roles.find("name", pokemon.name);
-    if (!role) {
-      await message.message.member.guild.createRole({
-        data: {
-          name: pokemon.name,
-          mentionable: true
-        }
-      })
-        .then(newrole => role = newrole);
-    }
-    // add user to role
-    message.message.member.addRole(role);
-  }
-  else {
-    message.message.reply("de tekst " + message.message.content + " is niet herkend als een pokemon.");
-  }
-}
-
-/**
- * Unsubscribe from the raids of the specified pokemon.
- * @param {*Message} message
- */
-async function unsubscribe(message) {
-  // remove - command
-  message.message.content = message.message.content.substring(1);
-  const pokemon = extractPokemon(message.message.content);
-  if (pokemon) {
-    // get the role of the pokemon
-    let role = message.message.member.guild.roles.find("name", pokemon.name);
-    if (role) {
-      // remove user from role
-      message.message.member.removeRole(role);
-    }
-  }
 }
 
 function messageEmbed(result, raid, id) {
