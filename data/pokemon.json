@@ -3166,7 +3166,7 @@
     "number": 243,
     "type": ["electric"],
     "stats": [241, 210, 180],
-    "attacks": ["Volt Switch", "Wild Charge"],
+    "attacks": ["Thunder Shock", "Wild Charge"],
     "defence": [],
     "recplayers": 5,
     "gender": 0,
