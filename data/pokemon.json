@@ -23,7 +23,7 @@
     "recplayers": 0,
     "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "Hey het is een shiny?"
   },
   {
     "keys": ["ivysaur"],
@@ -1897,7 +1897,7 @@
     "recplayers": 5,
     "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "Hey het is een shiny?"
   },
   {
     "keys": ["moltres"],
