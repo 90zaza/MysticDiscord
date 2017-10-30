@@ -160,6 +160,11 @@
 	"url": "https://goo.gl/maps/DYDKU8bcxCU2",
   "description": 0
 }, {
+  "keys": ["fietsknooppunt", "fietsknoopunt"],
+  "name": "Fietsknooppunt 5",
+  "url": "https://goo.gl/maps/CsenbXR8MHM2",
+  "description": 0
+}, {
   "keys": ["giant grill"],
   "name": "Giant Grill",
 	"url": "https://goo.gl/maps/q2gpVLkihu12",
@@ -188,6 +193,11 @@
   "keys": ["guardian"],
   "name": "Guardian Angels",
 	"url": "https://goo.gl/maps/JmRrwx7rCQS2",
+  "description": 0
+}, {
+  "keys": ["haan van"],
+  "name": "Haan van Ruyven",
+	"url": "https://goo.gl/maps/kDbgLvBC75z",
   "description": 0
 }, {
   "keys": ["hamenpoort", "hammenpoort"],
