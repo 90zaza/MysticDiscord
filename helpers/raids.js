@@ -134,8 +134,12 @@ exports.messageReactionAdd = async function (messageReaction, user) {
         if (messageReaction.emoji == joinemoji) {
           joinRaid(new Message(messageReaction.message), id, user.username);
           raidschannel.send(`Raid ${id}: ${user.username} joined`);
+          const role = messageReaction.message.member.guild.roles.find("name", id.toString());
+          user.addRole(role);
         } else if (messageReaction.emoji == leaveemoji) {
           raidschannel.send(`Raid ${id}: ${user.username} left`);
+          const role = messageReaction.message.member.guild.roles.find("name", id.toString());
+          user.removeRole(role);
           leaveRaid(new Message(messageReaction.message), id, user.username);
         } else if (messageReaction.emoji.name == "mystic") {
           raidschannel.send(`Raid ${id}: set to mystic`);
