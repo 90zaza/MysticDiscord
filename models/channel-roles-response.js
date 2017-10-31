@@ -5,9 +5,8 @@ const channelRoles = require('../data/channel-roles.json');
 module.exports = class ChannelRoleResponse extends Message {
   constructor(message) {
     super(message);
-    var action
-    if (this.startsWith("+")) {action = "add"}
-    if (this.startsWith("-")) {action = "remove"}
+    if (this.startsWith("+")) {this.action = "add"}
+    if (this.startsWith("-")) {this.action = "remove"}
     this.message.content = `!${this.message.content.substr(2)}`
     this.channelRole = this.getChannelRole();
 
