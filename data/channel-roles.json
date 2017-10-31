@@ -13,7 +13,7 @@
   },
   {
     "keys": ["+tu"],
-    "name": "Centrum",
+    "name": "TU",
     "reply": "Je hebt nu toegang tot het tu-wijk gym kanaal!",
     "action": "add"
   },
@@ -80,7 +80,7 @@
   },
   {
     "keys": ["-TU"],
-    "name": "Centrum",
+    "name": "TU",
     "reply": "Je hebt nu geen toegang meer tot het tu-wijk gym kanaal!",
     "action": "remove"
   },
