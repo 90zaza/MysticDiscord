@@ -93,11 +93,11 @@ exports.scan = async function (msg) {
     }
     // join
     else if (/join/.test(message.message.content)) {
-      joinRaid(message, message.message.content.match(/join (\d+)/)[1], message.message.author.username);
+      joinRaid(message, message.message.content.match(/join (\d+)/)[1], message.message.author);
     }
     // leave
     else if (/leave/.test(message.message.content)) {
-      leaveRaid(message, message.message.content.match(/leave (\d+)/)[1], message.message.author.username);
+      leaveRaid(message, message.message.content.match(/leave (\d+)/)[1], message.message.author);
     }
     // delete raid
     else if (/del/.test(message.message.content)) {
@@ -136,12 +136,12 @@ exports.messageReactionAdd = async function (messageReaction, user) {
         const raidschannel = messageReaction.message.client.channels.find("name", "raids");
         const id = result.dataValues.idraids;
         if (messageReaction.emoji == joinemoji) {
-          joinRaid(new Message(messageReaction.message), id, user.username);
+          joinRaid(new Message(messageReaction.message), id, user);
           raidschannel.send(`Raid ${id}: ${user.username} joined`);
           const role = messageReaction.message.member.guild.roles.find("name", id.toString());
           messageReaction.message.member.guild.member(user).addRole(role);
         } else if (messageReaction.emoji == leaveemoji) {
-          leaveRaid(new Message(messageReaction.message), id, user.username);
+          leaveRaid(new Message(messageReaction.message), id, user);
           raidschannel.send(`Raid ${id}: ${user.username} left`);
           const role = messageReaction.message.member.guild.roles.find("name", id.toString());
           messageReaction.message.member.guild.member(user).removeRole(role);
@@ -236,13 +236,13 @@ async function joinRaid(message, id, author) {
   raids.findById(id)
     .then(result => {
       if (result != null) {
-
-
         const raidsmeldingenchannel = message.message.client.channels.find("name", "raids_meldingen");
         raidsmeldingenchannel.messages.fetch(result.dataValues.messageid)
           .then(m => {
+            const member = message.message.guild.member(author);
+            const nickname = member.nickname ? member.nickname : member.user.username;
             // add to previously joined trainers
-            joining = result.dataValues.joining ? result.dataValues.joining.split(",").concat(author) : [author];
+            joining = result.dataValues.joining ? result.dataValues.joining.split(",").concat(nickname) : [nickname];
             // update message
             newembed = m.embeds[0];
             newembed.fields.filter(field => /^Joining/.test(field.name))[0].value = joining.join("\n");
@@ -272,7 +272,9 @@ async function leaveRaid(message, id, author) {
             // remove from list
             if (result.dataValues.joining) {
               let joining = result.dataValues.joining.split(",");
-              const index = joining.indexOf(author);
+              const member = message.message.guild.member(author);
+              const nickname = member.nickname ? member.nickname : member.user.username;
+              const index = joining.indexOf(nickname);
               if (index > -1) {
                 joining.splice(index, 1);
                 newembed = m.embeds[0];
