@@ -12,9 +12,9 @@ var raids;
 const joinemoji = '➕';
 const leaveemoji = '➖';
 // TODO: ask custom emojis from channel instead of hardcoding
-const mysticemoji = process.env.MYSTIC_EMOJI;
-const instinctemoji = process.env.INSTINCT_EMOJI;
-const valoremoji = process.env.VALOR_EMOJI;
+// const mysticemoji = process.env.MYSTIC_EMOJI;
+// const instinctemoji = process.env.INSTINCT_EMOJI;
+// const valoremoji = process.env.VALOR_EMOJI;
 
 // initialisation
 // connects to database and creates table for raids
@@ -123,6 +123,10 @@ exports.scan = async function (msg) {
 
 // scan the reaction of the raid message
 exports.messageReactionAdd = async function (messageReaction, user) {
+  const mysticemoji = messageReaction.message.guild.emojis.find("name", "mystic");
+  const instinctemoji = messageReaction.message.guild.emojis.find("name", "instinct");
+  const valoremoji = messageReaction.message.guild.emojis.find("name", "valor");
+
   // remove reaction
   messageReaction.remove(user);
 
@@ -142,13 +146,13 @@ exports.messageReactionAdd = async function (messageReaction, user) {
           const role = messageReaction.message.member.guild.roles.find("name", id.toString());
           messageReaction.message.member.guild.member(user).removeRole(role);
         } else if (messageReaction.emoji.name == "mystic") {
-          raidschannel.send(`Raid ${id}: <:mystic:${mysticemoji}>`);
+          raidschannel.send(`Raid ${id}: ${mysticemoji}`);
           messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("mystic")));
         } else if (messageReaction.emoji.name == "valor") {
-          raidschannel.send(`Raid ${id}: <:valor:${valoremoji}>`);
+          raidschannel.send(`Raid ${id}: ${valoremoji}`);
           messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("valor")));
         } else if (messageReaction.emoji.name == "instinct") {
-          raidschannel.send(`Raid ${id}: <:instinct:${instinctemoji}>`);
+          raidschannel.send(`Raid ${id}: ${instinctemoji}`);
           messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("instinct")));
         }
       }
@@ -157,6 +161,10 @@ exports.messageReactionAdd = async function (messageReaction, user) {
 }
 
 async function addRaid(message) {
+  const mysticemoji = message.message.guild.emojis.find("name", "mystic");
+  const instinctemoji = message.message.guild.emojis.find("name", "instinct");
+  const valoremoji = message.message.guild.emojis.find("name", "valor");
+
   // create raid object
   newRaid = new Raid(message.message.content);
 
