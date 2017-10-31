@@ -519,14 +519,11 @@ function matchRegexReturnFirst(string, regex) {
  */
 function printHelp(message) {
   let embed = new Discord.MessageEmbed()
-    .setTitle("**How to use the Raid Bot**")
+    .setTitle("**Hoe maak ik een raid aan?**")
     .setColor(0xffffff)
-    .addField("Add a Raid", "*raid [pokemon] g [gym] e [end time]  b [battle time]* \nPokemon required, g/e/b optional.")
-    .addField("Join a raid", "*join [id]*")
-    .addField("Leave a raid", "*leave [id]*")
-    .addField("Delete a raid", "*del [id]*")
-    .addField("Change Raid Parameters", "*[id] [e/g/b] [value]*")
-    .addField("Reset the raids", "*reset*");
+    .addField("Nieuwe Raid", "Typ hetvolgende in het raids_meldingen kanaal:\n[pokemon] g [gymnaam] e [eindtijd] b [vechttijd]\nVoorbeeld: **snorlax g seats e 13:00**")
+    .addField("Bewerk een raid", "Hetzelfde als een nieuwe raid, maar dan begin je met het RaidID:\n[raidID] g [gymnaam] e [eindtijd] b [vechttijd]\nVoorbeeld: **1 g evenwicht ijzer b 12:00**")
+    .addField("Meedoen", "Druk simpelweg op de + onder de raid");
 
   message.message.channel.send({ embed });
 }
