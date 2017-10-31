@@ -30,13 +30,28 @@ module.exports = class ChannelRoleResponse extends Message {
         await this.message.member.removeRole(role)
       }
       if (this.channelRole.sort === 'region') {
-        this.reply(`Je hebt nu toegang tot het ${this.channelRole.name} kanaal`)
+        if(this.action === 'add') {
+          this.reply(`Je hebt nu toegang tot het ${this.channelRole.name} kanaal`)
+        }
+        if(this.action === 'remove') {
+          this.reply(`Je hebt geen nu toegang meer tot het ${this.channelRole.name} kanaal`)
+        }
       }
       if (this.channelRole.sort == 'english') {
-        this.reply(`You now have access to the English channel`)
+        if(this.action === 'add') {
+          this.reply(`You now have access to the English channel`)
+        }
+        if(this.action === 'remove') {
+          this.reply(`You now don't have access to the English channel anymore`)
+        }
       }
       if (this.channelRole.sort === 'pokemon') {
-        this.reply(`Je ontvangt nu extra notificaties voor ${this.channelRole.name} raids`)
+        if(this.action === 'add') {
+          this.reply(`Je ontvangt nu extra notificaties voor ${this.channelRole.name} raids`)
+        }
+        if(this.action === 'remove') {
+          this.reply(`Je ontvangt nu geen notificaties meer voor ${this.channelRole.name} raids`)
+        }
       }
     } catch (error) {
       this.reply('Rol niet gevonden, typfoutje?')
