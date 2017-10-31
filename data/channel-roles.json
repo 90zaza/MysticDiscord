@@ -1,135 +1,47 @@
 [
   {
-    "keys": ["+centrum"],
+    "keys": ["centrum"],
     "name": "Centrum",
-    "reply": "Je hebt nu toegang tot het centrum gym kanaal!",
-    "action": "add"
-  },
-  {
-    "keys": ["+hoven"],
+    "sort": "region"
+  },  {
+    "keys": ["hoven"],
     "name": "Hoven",
-    "reply": "Je hebt nu toegang tot het hoven gym kanaal!",
-    "action": "add"
-  },
-  {
-    "keys": ["+tu"],
+    "sort": "region"
+  },  {
+    "keys": ["tu"],
     "name": "TU",
-    "reply": "Je hebt nu toegang tot het tu-wijk gym kanaal!",
-    "action": "add"
-  },
-  {
-    "keys": ["+tanthof"],
+    "sort": "region"
+  },  {
+    "keys": ["tanthof"],
     "name": "Tanthof",
-    "reply": "Je hebt nu toegang tot het tanthof gym kanaal!",
-    "action": "add"
-  },
-  {
-    "keys": ["+noord"],
+    "sort": "region"
+  },  {
+    "keys": ["noord"],
     "name": "DelftNoord",
-    "reply": "Je hebt nu toegang tot het Noord-Delft gym kanaal!",
-    "action": "add"
-  },
-  {
-    "keys": ["+oost"],
+    "sort": "region"
+  },  {
+    "keys": ["oost"],
     "name": "DelftOost",
-    "reply": "Je hebt nu toegang tot het Oost-Delft gym kanaal!",
-    "action": "add"
-  },
-  {
-    "keys": ["+english"],
+    "sort": "region"
+  },  {
+    "keys": ["english"],
     "name": "English",
-    "reply": "You now have access to the English channel!",
-    "action": "add"
-  },
-  {
-    "keys": ["+snorlax"],
+    "sort": "english"
+  },  {
+    "keys": ["snorlax"],
     "name": "Snorlax",
-    "reply": "Je ontvangt nu notificaties voor Snorlax Raids!",
-    "action": "add"
-  },
-  {
-    "keys": ["+lapras"],
+    "sort": "pokemon"
+  },  {
+    "keys": ["lapras"],
     "name": "Lapras",
-    "reply": "Je ontvangt nu notificaties voor Lapras Raids!",
-    "action": "add"
-  },
-  {
-    "keys": ["+machamp"],
+    "sort": "pokemon"
+  },  {
+    "keys": ["machamp"],
     "name": "Machamp",
-    "reply": "Je ontvangt nu notificaties voor Machamp Raids!",
-    "action": "add"
-  },
-  {
-    "keys": ["+tyranitar", "+ttar", "+tiranitar"],
+    "sort": "pokemon"
+  },  {
+    "keys": ["tyranitar", "ttar", "tiranitar"],
     "name": "Tyranitar",
-    "reply": "Je ontvangt nu notificaties voor Tyranitar Raids!",
-    "action": "add"
-  },
-
-  {
-    "keys": ["-centrum"],
-    "name": "Centrum",
-    "reply": "Je hebt nu geen toegang meer tot het centrum gym kanaal!",
-    "action": "remove"
-  },
-  {
-    "keys": ["-hoven"],
-    "name": "Hoven",
-    "reply": "Je hebt nu geen toegang meer tot het hoven gym kanaal!",
-    "action": "remove"
-  },
-  {
-    "keys": ["-TU"],
-    "name": "TU",
-    "reply": "Je hebt nu geen toegang meer tot het tu-wijk gym kanaal!",
-    "action": "remove"
-  },
-  {
-    "keys": ["-tanthof"],
-    "name": "Tanthof",
-    "reply": "Je hebt nu geen toegang meer tot het tanthof gym kanaal!",
-    "action": "remove"
-  },
-  {
-    "keys": ["-noord"],
-    "name": "DelftNoord",
-    "reply": "Je hebt nu geen toegang meer tot het Noord-Delft gym kanaal!",
-    "action": "remove"
-  },
-  {
-    "keys": ["-oost"],
-    "name": "DelftOost",
-    "reply": "Je hebt nu geen toegang meer tot het Oost-Delft gym kanaal!",
-    "action": "remove"
-  },
-  {
-    "keys": ["-english"],
-    "name": "English",
-    "reply": "You now have lost access to the English channel!",
-    "action": "remove"
-  },
-  {
-    "keys": ["-snorlax"],
-    "name": "Snorlax",
-    "reply": "Je ontvangt nu geen notificaties meer voor Snorlax Raids!",
-    "action": "remove"
-  },
-  {
-    "keys": ["-lapras"],
-    "name": "Lapras",
-    "reply": "Je ontvangt nu geen notificaties meer voor Lapras Raids!",
-    "action": "remove"
-  },
-  {
-    "keys": ["-machamp"],
-    "name": "Machamp",
-    "reply": "Je ontvangt nu geen notificaties meer voor Machamp Raids!",
-    "action": "remove"
-  },
-  {
-    "keys": ["-tyranitar", "-ttar", "-tiranitar"],
-    "name": "Tyranitar",
-    "reply": "Je ontvangt nu geen notificaties meer voor Tyranitar Raids!",
-    "action": "remove"
+    "sort": "pokemon"
   }
 ]

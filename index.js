@@ -87,7 +87,7 @@ client.on('message', async (msg) => {
 
   new TeamResponse(msg);
   new PokemonSpottingResponse(msg);
-  if (msg.member.roles.has(verifiedrole.id)) {
+  if (msg.member.roles.has(verifiedrole.id) && (msg.content.startsWith("!+") || msg.content.startsWith("!-"))) {
     new ChannelRolesResponse(msg);
   }
 
