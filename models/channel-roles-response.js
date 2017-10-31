@@ -8,8 +8,8 @@ module.exports = class GenericResponse extends Message {
     var action
     if (this.startsWith("+")) {action = "add"}
     if (this.startsWith("-")) {action = "remove"}
-    this.message.content = this.message.content.substr(2);
-    console.log(`${action} ${this.message.content}`);
+    this.message.content = `!${this.message.content.substr(2)}`
+
     this.channelRole = this.getChannelRole();
     if(this.channelRole) {
       this.executeRoleChange();
