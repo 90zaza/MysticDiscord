@@ -23,9 +23,10 @@ module.exports = class ChannelRoleResponse extends Message {
     try {
       const role = this.message.guild.roles.find("name", this.channelRole.name);
       if(this.action === 'add') {
+        console.log(`giving role ${role} to ${this.message.member}`);
         await this.message.member.addRole(role)
       } else if(this.action === 'remove') {
-        console.log('removing role');
+        console.log(`removing role ${role} to ${this.message.member}`);
         await this.message.member.removeRole(role)
       }
       if (this.channelRole.sort === 'region') {
