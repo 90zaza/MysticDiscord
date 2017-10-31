@@ -365,7 +365,7 @@ function messageEmbed(result, raid, id) {
   return new Discord.MessageEmbed()
     .setAuthor("Raid #" + id)
     .setColor(embedColor(raid.team))
-    .setTitle(`:round_pushpin:${pokemon.name}: ${gym ? gym.name : "Gym to be added"}`)
+    .setTitle(`${pokemon.name}: ${gym ? gym.name : "Gym to be added"}`)
     .setThumbnail(`https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`)
     .addField("End time", `${endtime ? endtime : "to be added"}`, true)
     .addField("Battle time", `${battletime ? battletime : "to be added"}`, true)
