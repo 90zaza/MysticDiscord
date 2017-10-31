@@ -142,13 +142,13 @@ exports.messageReactionAdd = async function (messageReaction, user) {
           const role = messageReaction.message.member.guild.roles.find("name", id.toString());
           messageReaction.message.member.guild.member(user).removeRole(role);
         } else if (messageReaction.emoji.name == "mystic") {
-          raidschannel.send(`Raid ${id}: set to mystic`);
+          raidschannel.send(`Raid ${id}: <:mystic:${mysticemoji}>`);
           messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("mystic")));
         } else if (messageReaction.emoji.name == "valor") {
-          raidschannel.send(`Raid ${id}: set to valor`);
+          raidschannel.send(`Raid ${id}: <:valor:${valoremoji}>`);
           messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("valor")));
         } else if (messageReaction.emoji.name == "instinct") {
-          raidschannel.send(`Raid ${id}: set to instinct`);
+          raidschannel.send(`Raid ${id}: <:instinct:${instinctemoji}>`);
           messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("instinct")));
         }
       }
