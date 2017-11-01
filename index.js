@@ -45,6 +45,7 @@ client.on('message', async (msg) => {
     return;
   }
 
+  new PokemonSpottingResponse(msg);
 
   //raid reply
   if (msg.channel.name == raidAnnouncmentChannel) {
@@ -86,7 +87,7 @@ client.on('message', async (msg) => {
   new MusicResponse(msg);
   new GambleResponse(msg);
   new TeamResponse(msg);
-  new PokemonSpottingResponse(msg);
+
 
   if (msgText.split(' ')[0] == "date" || msgText.split(' ')[0] == "datum") {
     msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;

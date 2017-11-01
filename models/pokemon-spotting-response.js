@@ -8,7 +8,7 @@ module.exports = class PokemonSpottingResponse extends Message {
 
     // TODO maybe we could also place this in the normal index. Because the channel doesnt change over time right?
     this.spotting = this.message.guild.channels.find('name', 'pokemon_spotting');
-
+    console.log("test");
     if (this.message.channel == this.spotting) {
       if (this.message.content.includes('shiny') || this.message.content.includes('shiney')) {
         this.replypm(`Shiny's zijn helaas individueel bepaald. Voor jou een shiny is voor een ander dus waarschijnlijk gewoon normaal.`, true);
