@@ -48,8 +48,11 @@ client.on('message', async (msg) => {
 
   //raid reply
   if (msg.channel.name == raidAnnouncmentChannel) {
-    msg.delete();
     raids.scan(msg);
+    setTimeout(() => {
+      msg.delete();
+    }, 500);
+
     return;
   }
 
@@ -82,6 +85,8 @@ client.on('message', async (msg) => {
   new GenericResponse(msg);
   new MusicResponse(msg);
   new GambleResponse(msg);
+  new TeamResponse(msg);
+  new PokemonSpottingResponse(msg);
 
   if (msgText.split(' ')[0] == "date" || msgText.split(' ')[0] == "datum") {
     msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
@@ -99,8 +104,6 @@ client.on('message', async (msg) => {
   let welkomchannel = msg.guild.channels.find("name", "welkom");
   let spelerregistratiechannel = msg.guild.channels.find("name", "speler_registratie");
 
-  new TeamResponse(msg);
-  new PokemonSpottingResponse(msg);
   if (msg.member.roles.has(verifiedrole.id) && (msg.content.startsWith("!+") || msg.content.startsWith("!-"))) {
     new ChannelRolesResponse(msg);
   }
