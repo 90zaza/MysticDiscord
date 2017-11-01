@@ -17,7 +17,7 @@ module.exports = class TeamResponse extends Message {
   }
 
   newMessage() {
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
       .setColor(this.team.color)
       .setThumbnail(this.team.thumbnail)
       .addField(this.team.field.key, this.team.field.value)
