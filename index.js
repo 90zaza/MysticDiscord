@@ -128,14 +128,12 @@ client.on('message', async (msg) => {
 
   // delete amount of messages
   if (msgText.startsWith("delete")) {
+    msg.delete();
     if (msg.member.roles.has(moderatorrole.id)) {
-      var del = msgText.split(" ");
-      del.splice(0, 1);
-      msg.channel.bulkDelete(del);
+      msg.channel.bulkDelete(msgText.substr(msgText.indexOf(" ") + 1));
     } else {
       msg.reply("Alleen moderators kunnen berichten verwijderen");
     }
-    msg.delete();
   }
 
   //determine if the bot activates or not
