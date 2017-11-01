@@ -110,6 +110,13 @@ exports.scan = async function (msg) {
     // update
     else if (/^\d+/.test(message.message.content)) {
       updateRaid(message, message.message.content.match(/(^\d+)/)[1]);
+      setTimeout(() => {
+        joinRaid(message, message.message.content.match(/(^\d+)/)[1], message.message.author);
+      }, 500);
+      setTimeout(() => {
+        leaveRaid(message, message.message.content.match(/(^\d+)/)[1], message.message.author);
+      }, 1000);
+
     }
     // new raid
     else if (/^[a-zA-Z]+/.test(message.message.content)) {
