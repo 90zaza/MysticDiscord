@@ -137,12 +137,12 @@ exports.messageReactionAdd = async function (messageReaction, user) {
         const id = result.dataValues.idraids;
         if (messageReaction.emoji == joinemoji) {
           joinRaid(new Message(messageReaction.message), id, user);
-          raidschannel.send(`Raid ${id}: ${user.username} joined`);
+          raidschannel.send(`Raid ${id}: ${messageReaction.message.member.guild.member(user).displayName} joined`);
           const role = messageReaction.message.member.guild.roles.find("name", id.toString());
           messageReaction.message.member.guild.member(user).addRole(role);
         } else if (messageReaction.emoji == leaveemoji) {
           leaveRaid(new Message(messageReaction.message), id, user);
-          raidschannel.send(`Raid ${id}: ${user.username} left`);
+          raidschannel.send(`Raid ${id}: ${messageReaction.message.member.guild.member(user).displayName} left`);
           const role = messageReaction.message.member.guild.roles.find("name", id.toString());
           messageReaction.message.member.guild.member(user).removeRole(role);
         } else if (messageReaction.emoji.name == "mystic") {
@@ -380,7 +380,7 @@ function messageEmbed(result, raid, id) {
 function embedColor(team) {
   switch (team) {
     case "mystic":
-      return 0x0677ee;
+      return 0x0000ff;
     case "valor":
       return 0xff0000;
     case "instinct":
