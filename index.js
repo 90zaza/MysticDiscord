@@ -45,7 +45,10 @@ client.on('message', async (msg) => {
     return;
   }
 
-  new PokemonSpottingResponse(msg);
+
+  if (msg.channel.name == `pokemon_spotting`) {
+    new PokemonSpottingResponse(msg);
+  }
 
   //raid reply
   if (msg.channel.name == raidAnnouncmentChannel) {
@@ -156,6 +159,7 @@ client.on('message', async (msg) => {
     msg.content = `raid ${msgText}`;
     raids.scan(msg);
   }
+
 
 });
 

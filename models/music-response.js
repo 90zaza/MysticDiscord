@@ -28,7 +28,7 @@ module.exports = class GenericResponse extends Message {
   }
 
   reply() {
-    const embed = new Discord.RichEmbed()
+    const embed = new Discord.MessageEmbed()
       .setTitle(":musical_note:" + this.music.name + ":musical_note:")
       .setURL(this.music.url)
       .setDescription(this.music.text);
