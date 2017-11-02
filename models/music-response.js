@@ -19,7 +19,8 @@ module.exports = class GenericResponse extends Message {
     // TODO: we should refactor this because 29 is now harcoded. if we add one more this isnt updated automatically
 
     // dont copy this as example code, this is different then most other implementations.
-    const key = Math.floor(Math.random() * 30);
+    const key = Math.floor(Math.random() * 31)+1;
+    console.log(key);
     return music.find( (musicItem) => {
       return musicItem.keys.find((musicItemKey) => {
         return musicItemKey == key;

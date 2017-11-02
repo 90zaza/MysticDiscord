@@ -74,7 +74,7 @@
   "sort": "overview",
   "url": "http://pokemongolive.com/en/post/",
   "date": "2017",
-  "description": "8 feb - 15 feb: Valentijn event\n16 feb: gen 2 launch\n26 feb - 6 maart: Pokemon Day event\n22 maart - 29 maart: Water Festival event\n13 april - 20 april: Eggstravaganza event\n5 mei - 8 mei: Gras Event\n18 mei - 25 mei: Adventure event\n6 juni: Eerste verjaardag(ash hat pikachu)\n13 juni - 20 juni: Solstices event\n22 juni: Gym rework\n29 juni: Raid battles\n22 juli: Go Fest\n22 juli - 24 juli: Go Fest event\n22 juli: Legendary raids\n5 aug - 21 aug: Safari Events in Europa:\n   - 16 sept: Oberhausen, Parijs & Barcelona\n   - 7 okt: Copenhagen & Praag\n   - 14 okt: Stokholm & Amstelveen\n- 16 aug: Shiny Pikachu release\n- 22 sept - 2 okt: Equinox event\n- 20 okt - 2 nov: Halloween event"
+  "description": "8 feb - 15 feb: Valentijn event\n16 feb: gen 2 launch\n26 feb - 6 maart: Pokemon Day event\n22 maart - 29 maart: Water Festival event\n   - 22 maart: Shiny Magikarp\n13 april - 20 april: Eggstravaganza event\n5 mei - 8 mei: Gras Event\n18 mei - 25 mei: Adventure event\n6 juni: Eerste verjaardag(ash hat pikachu)\n13 juni - 20 juni: Solstices event\n22 juni: Gym rework\n29 juni: Raid battles\n22 juli: Go Fest\n22 juli - 24 juli: Go Fest event\n22 juli: Legendary raids\n5 aug - 21 aug: Safari Events in Europa:\n   - 16 sept: Oberhausen, Parijs & Barcelona\n   - 7 okt: Copenhagen & Praag\n   - 14 okt: Stokholm & Amstelveen\n- 16 aug: Shiny Pikachu release\n- 22 sept - 2 okt: Equinox event\n- 20 okt - 2 nov: Halloween event\n   - 20 okt: Shiny Sableye\n   - 26 okt: Shiny Duskull\n   - 31 okt: Shiny Shuppet"
 }, {
   "keys": ["valentijn 2017", "valentijn event 2017", "pink event 2017", "roze event 2017"],
   "name": "Valentijn event 2017",
@@ -195,12 +195,12 @@
   "date": "22 sept - 2 okt",
   "description": "Een van de betere events (wie wil er nou niet meer stardust) was het Equinox event. De voordelen waren:\n- Dubbel stardust\n- Speciale 2km eitjes (chansey/ larvitar/ mareep/ etc)\n- Speciale kortingsboxen in de shop met Lucky eggs, Lures en de nieuwe Super Incubators\n- Nieuwe pokedex entries geven 1500 xp"
 }, {
-  "keys": ["halloween 2017", "halloween event 2017", "shiny sableye", "shiny duskull", "mimikyu hoed", "mimikyu hat"],
+  "keys": ["halloween 2017", "halloween event 2017", "shiny sableye", "shiny duskull", "mimikyu hoed", "mimikyu hat", "shiny shuppet"],
   "name": "Halloween event 2017",
   "sort": "event",
   "url": "http://pokemongo.nianticlabs.com/en/post/halloween2017",
   "date": "20 okt - 2 nov",
-  "description": "Het eerste tweede event: Halloween! Voor dit event is een nieuwe soundtrack toegevoegd die in de avonden speelt (lavender town). Tijdens deze avonden zijn er flink meer 'spooky' spawns, waaronder 5 gen 3 pokemon. De voordelen waren:\n- Meer spooky pokemon (waaronder de gen 3 spookjes)\n- Shiny Sableye in het wild of uit 10 km eitjes\n- Pikachu en Pichu met een nieuwe hoed\n- Speciale kortingsboxen met raid passes en super incubators\n- Een nieuwe Mimikyu hoed voor je avatar\n- Op 26 okt werd shiny Duskull geintroduceerd"
+  "description": "Het eerste tweede event: Halloween! Voor dit event is een nieuwe soundtrack toegevoegd die in de avonden speelt (lavender town). Tijdens deze avonden zijn er flink meer 'spooky' spawns, waaronder 5 gen 3 (met kans op shiny) pokemon. De voordelen waren:\n- Meer spooky pokemon (waaronder de gen 3 spookjes)\n- Shiny Sableye in het wild of uit 10 km eitjes\n- Pikachu en Pichu met een nieuwe hoed\n- Speciale kortingsboxen met raid passes en super incubators\n- Een nieuwe Mimikyu hoed voor je avatar\n- Op 26 okt werd shiny Duskull geintroduceerd\nOp 31 okt werd shiny Shuppet geintroduceerd"
 }, {
   "keys": [""],
   "name": "",
