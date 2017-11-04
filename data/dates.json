@@ -41,7 +41,7 @@
   "date": "7 november 2016",
   "description": "Vanaf nu geeft elke eerste gedraaide stop en gevangen pokemon een bonus, met de 7e achtereenvolgende dag een extra bonus."
 }, {
-  "keys": ["thanksgiving 2016", "2016 thanksgiving"],
+  "keys": ["thanksgiving 2016", "thanksgiving event 2016"],
   "name": "Thanksgiving event 2016",
   "sort": "",
   "url": "http://pokemongolive.com/en/post/celebration-nov2016",
@@ -104,7 +104,7 @@
   "date": "22 maart - 29 maart",
   "description": "Ter ere van het wereldwijde water festival is er een water event in Pokémon Go. De voordelen zijn:\n- Verhoogde water spawns (de eerste paar uur ook veel meer dratini's)\n- Vanaf nu is de Magikarp hoed te dragen\n- Shiny magikarp is vanaf nu te vangen"
 }, {
-  "keys": ["eggstravaganza 2017", "eggstravagenza 2017"],
+  "keys": ["eggstravaganza 2017", "eggstravagenza 2017", "eggstravaganza event 2017"],
   "name": "Eggstravaganza 2017",
   "sort": "event",
   "url": "http://pokemongolive.com/en/post/eggstravaganza2017",
@@ -160,7 +160,7 @@
   "date": "22 juli",
   "description": "Voor de verjaardag van Pokémon Go organiseerde Niantic het eerste (betaalde) real life event. Mensen in en buiten het event moesten samenspelen tijdens 3 timeslots van een halfuur om bonussen te verdienen waar de hele wereld van kon genieten. Op het event ging het om de types pokemon die je ving, het vangen van bijvoorbeeld vuur types gaf een candy bonus bij het event. Buiten het event gold dat hoe meer pokemon er gevangen werden, hoe langer het event duurde. Als er genoeg gevangen zou zijn kregen de mensen op het event de kans op de eerste legendary raid: het verslaan van een Lugia\n\nHelaas liep alles minder goed dan verwacht. Al vrij snel waren er verbindingsproblemen door de grote hoeveelheid mensen op een plek, waar Niantic op reageerde door het event gebied te vergroten, deelnemers een Lugia te geven, Lugia en articuno raids te starten (met 100% vangkans voor tickethouders), de ticket kosten terug te geven en voor het event alle bonussen voor een maximale tijd uit te keren (!date go fest event)."
 }, {
-  "keys": ["go fest event"],
+  "keys": ["go fest event", "go fest"],
   "name": "Het event na Chicago Go Fest 2017",
   "sort": "event",
   "url": "http://pokemongo.nianticlabs.com/en/post/legendaryrewards",

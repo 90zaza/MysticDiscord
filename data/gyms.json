@@ -175,7 +175,7 @@
 	"url": "https://goo.gl/maps/qopEWA7HRMS2",
   "description": 0
 }, {
-    "keys": ["glasbak"],
+  "keys": ["glasbak"],
   "name": "Glasbak Art",
 	"url": "https://goo.gl/maps/JUddhCkME9s",
   "description": 0
@@ -655,7 +655,7 @@
 	"url": "https://goo.gl/maps/Qm9bmcStv322",
   "description": 0
 }, {
-  "keys": ["zoas"],
+  "keys": ["zoes", "zoës", "zoas", "zoäs"],
   "name": "Zoäs Birdhouse",
 	"url": "https://goo.gl/maps/gejprGbGVcL2",
   "description": 0
