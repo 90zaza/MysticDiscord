@@ -223,10 +223,10 @@ async function updateRaid(message, id) {
   newRaid = new Raid(message.message.content);
 
   // find object
-  raids.findById(id)
-    .then(result => {
+  raids.findById(parseInt(id))
+    .then(async result => {
       // update database
-      result.update(newRaid.getDatabaseObject());
+      await result.update(newRaid.getDatabaseObject());
 
       // update message
       message.message.channel.messages.fetch(result.dataValues.messageid)
