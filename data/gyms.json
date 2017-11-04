@@ -170,7 +170,7 @@
 	"url": "https://goo.gl/maps/q2gpVLkihu12",
   "description": 0
 }, {
-    "keys": ["giant tripod"],
+  "keys": ["giant tripod"],
   "name": "Giant Tripod at Rijkswaterstaat",
 	"url": "https://goo.gl/maps/qopEWA7HRMS2",
   "description": 0
@@ -235,7 +235,7 @@
 	"url": "https://goo.gl/maps/Yjwxm9Ysmuz",
   "description": 0
 }, {
-  "keys": ["high"],
+  "keys": ["high w"],
   "name": "High Water Bridge",
 	"url": "https://goo.gl/maps/e4BLwM2FAUm",
   "description": 0
@@ -295,7 +295,7 @@
 	"url": "https://goo.gl/maps/dWKCFHijMbu",
   "description": 0
 }, {
-  "keys": ["koninkrijkszaal", "jehova"],
+  "keys": ["koninkrijk", "jehova"],
   "name": "Koninkrijkszaal Van Jehovah\"s Getuigen",
 	"url": "https://goo.gl/maps/pbTxo6DKFXy",
   "description": 0
@@ -320,7 +320,7 @@
 	"url": "https://goo.gl/maps/4csETP8VSq62",
   "description": ""
 }, {
-    "keys": ["mental"],
+    "keys": ["mental", "birdhouse"],
     "name": "Mental Birdhouse",
 	"url": "https://goo.gl/maps/8UWqFMJKq3r",
   "description": 0
@@ -385,7 +385,7 @@
 	"url": "https://goo.gl/maps/U6PmwMxX5382",
   "description": 0
 }, {
-  "keys": ["paint jobs"],
+  "keys": ["paint j"],
   "name": "Paint Jobs",
 	"url": "https://goo.gl/maps/3LW1TyqmFUT2",
   "description": 0
@@ -395,7 +395,7 @@
 	"url": "https://goo.gl/maps/kBB6EDmab6t",
   "description": 0
 }, {
-  "keys": ["papegaaien"],
+  "keys": ["papegaai", "papagaai"],
   "name": "Papegaaien",
 	"url": "https://goo.gl/maps/8wwDTDqxxet",
   "description": 0
@@ -425,7 +425,7 @@
 	"url": "https://goo.gl/maps/Sx4CwasGcju",
   "description": 0
 }, {
-  "keys": ["prinses", "princes"],
+  "keys": ["prinses", "princes", "irene"],
   "name": "Prinses Irene Tunnel",
 	"url": "https://goo.gl/maps/y9tMD3yrRc72",
   "description": 0
@@ -440,7 +440,7 @@
 	"url": "https://goo.gl/maps/TGuxkCTzPBT2",
   "description": 0
 }, {
-  "keys": ["relief", "reliëf"],
+  "keys": ["relief", "reliëf", "driemaster"],
   "name": "Reliëf Driemaster Den Hoorn",
 	"url": "https://goo.gl/maps/4ThC211kxEm",
   "description": 0
@@ -455,7 +455,7 @@
 	"url": "https://goo.gl/maps/zuN5qL6r8xn",
   "description": 0
 }, {
-  "keys": ["roze"],
+  "keys": ["roze", "vlinder op boom"],
   "name": "Roze Vlinder Op Boom",
 	"url": "https://goo.gl/maps/ae37wANjU8S2",
   "description": 0
@@ -470,12 +470,12 @@
 	"url": "https://goo.gl/maps/1HcF9hMXNrL2",
   "description": 0
 }, {
-  "keys": ["space engineering"],
+  "keys": ["space e"],
   "name": "Space Engineering Faculty",
 	"url": "https://goo.gl/maps/kb4EmbwywYS2",
   "description": 0
 }, {
-  "keys": ["space rocket", "spacerocket"],
+  "keys": ["space r", "spacer"],
   "name": "Space Rocket",
 	"url": "https://goo.gl/maps/T2so1vhEBGF2",
   "description": 0
@@ -565,7 +565,7 @@
 	"url": "https://goo.gl/maps/HuvMJPUacU92",
   "description": 0
 }, {
-  "keys": ["2 haasje", "twee"],
+  "keys": ["2 haasje", "twee", "spelende kindern"],
   "name": "Twee haasje over spelende kinderen",
 	"url": "https://goo.gl/maps/JM76fQWjjC92",
   "description": 0
@@ -656,7 +656,7 @@
   "description": 0
 }, {
   "keys": ["zoes", "zoës", "zoas", "zoäs"],
-  "name": "Zoäs Birdhouse",
+  "name": "Zoës Birdhouse",
 	"url": "https://goo.gl/maps/gejprGbGVcL2",
   "description": 0
 }, {
