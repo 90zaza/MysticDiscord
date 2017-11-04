@@ -48,11 +48,14 @@
   "reply": "Hey! My name is Professor Oak, and i've known you from since you where born! Remind me again, are you a boy, or are you a girl?"
 }, {
   "keys": ["counter magikarp"],
-  "reply": "Top counter pokémon tegen magikarp:\n- Letterlijk alles"  }, {
+  "reply": "Top counter pokémon tegen magikarp:\n- Letterlijk alles"
 }, {
   "keys": ["bloemen stop", "bloemen kunst", "flower art", "bloemenstop"],
-  "reply": "De Bloemen Kunst pokestop (bij de aldi), een van de beste pokéstops in delft. Locatie: <https://goo.gl/maps/xkRgUtLm8y42>"  }, {
+  "reply": "De Bloemen Kunst pokestop (bij de aldi), een van de beste pokéstops in delft. Locatie: <https://goo.gl/maps/xkRgUtLm8y42>"
 }, {
   "keys": ["inholland", "hogeschool inholland"],
-  "reply": "De Hogeschool Inholland pokestop (op de campus), een van de beste pokéstops in delft. Locatie: <https://goo.gl/maps/3ZbYAjcb36z>"  }, {
+  "reply": "De Hogeschool Inholland pokestop (op de campus), een van de beste pokéstops in delft. Locatie: <https://goo.gl/maps/3ZbYAjcb36z>"
+}, {
+  "keys": ["colorful balcony poetry", "colorful balcony", "colourful balcony", "colourful balcony poetry"],
+  "reply": "Een van de betere stops in delft, te vinden op <https://goo.gl/maps/tFcavkm37Dm>"
 }]
