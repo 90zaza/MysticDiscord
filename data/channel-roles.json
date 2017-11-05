@@ -43,5 +43,9 @@
     "keys": ["tyranitar", "ttar", "tiranitar"],
     "name": "Tyranitar",
     "sort": "pokemon"
+  },  {
+    "keys": ["golem", "golum"],
+    "name": "Golem",
+    "sort": "pokemon"
   }
 ]
