@@ -181,11 +181,8 @@ module.exports = class PokemonResponse extends Message {
 
     embed.addField("Basestats", "atk: " + this.pokemon.stats[0] + " (" + this.pokemon.ranks[0] + "), def: " + this.pokemon.stats[1] + " (" + this.pokemon.ranks[1] + "), sta: " + this.pokemon.stats[2] + " (" + this.pokemon.ranks[2] + ")");
 
-    if (this.pokemon.recplayers > 0) {
-
-      let cpRange = this.cpRangeWonder(this.pokemon, 20);
-      embed.addField("CP range for guaranteed level 20 wonder", cpRange[0] + " - " + cpRange[1]);
-    }
+    let cpRange = this.cpRangeWonder(this.pokemon, 20);
+    embed.addField("CP range for guaranteed level 20 wonder", cpRange[0] + " - " + cpRange[1]);
 
     if (this.pokemon.attacks.length ) {
 
