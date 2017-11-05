@@ -47,5 +47,9 @@
     "keys": ["golem", "golum"],
     "name": "Golem",
     "sort": "pokemon"
+  },  {
+    "keys": ["raikou", "dog jolteon", "jolteon dog", "raiku", "raiko"],
+    "name": "Raikou",
+    "sort": "pokemon"
   }
 ]
