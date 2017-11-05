@@ -33,7 +33,7 @@
     "type": ["grass", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 1,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -72,7 +72,7 @@
     "type": ["fire"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 1,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -111,7 +111,7 @@
     "type": ["water"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 1,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -150,7 +150,7 @@
     "type": ["bug"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 0.5,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -371,7 +371,7 @@
     "type": ["ground"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 1,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -410,7 +410,7 @@
     "type": ["ground", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 5,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -449,7 +449,7 @@
     "type": ["ground", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 5,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -501,7 +501,7 @@
     "type": ["fire"],
     "attacks": ["Fire Spin", "Overheat"],
     "defence": ["Fire Spin", "Overheat"],
-    "recplayers": 0,
+    "recplayers": 3,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -813,7 +813,7 @@
     "type": ["fighting", "water"],
     "attacks": ["Rock Smash", "Dynamic Punch"],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 5,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -930,7 +930,7 @@
     "stats": [207, 138, 160],
     "attacks": ["Razor Leaf", "Solar Beam"],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 5,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -956,7 +956,7 @@
     "stats": [166, 237, 160],
     "attacks": [],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 1,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -995,7 +995,7 @@
     "stats": [211, 229, 160],
     "attacks": ["rock Throw", "Stone Edge"],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 4,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -1073,7 +1073,7 @@
     "stats": [223, 182, 100],
     "attacks": ["Spark", "Zap Cannon"],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 1,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -1190,7 +1190,7 @@
     "stats": [186, 323, 100],
     "attacks": ["Frost Breath", "Avalanche"],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 1,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -1374,7 +1374,7 @@
     "stats": [144, 200, 120],
     "attacks": ["Mud-Slap", "Earthquake"],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 1,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -1608,7 +1608,7 @@
     "stats": [218, 170, 140],
     "attacks": [],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 2,
     "gender": 0.5,
     "rare":  false,
     "description": 0
@@ -1790,7 +1790,7 @@
     "stats": [153, 139, 130],
     "attacks": [],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 2,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -1816,7 +1816,7 @@
     "stats": [207, 227, 140],
     "attacks": [],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 2,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -3038,7 +3038,7 @@
     "stats": [198, 183, 170],
     "attacks": [],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 2,
     "gender": 0,
     "rare":  false,
     "description": "Evolueert van Porygon met behulp van een Up-Grade"
@@ -3935,7 +3935,7 @@
     "stats": [141, 141, 100],
     "attacks": [],
     "defence": [],
-    "recplayers": 0,
+    "recplayers": 1,
     "gender": 0,
     "rare":  false,
     "description": 0
