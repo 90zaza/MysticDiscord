@@ -410,7 +410,7 @@
     "type": ["ground", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 5,
+    "recplayers": 4,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -449,7 +449,7 @@
     "type": ["ground", "poison"],
     "attacks": [],
     "defence": [],
-    "recplayers": 5,
+    "recplayers": 4,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -501,7 +501,7 @@
     "type": ["fire"],
     "attacks": ["Fire Spin", "Overheat"],
     "defence": ["Fire Spin", "Overheat"],
-    "recplayers": 3,
+    "recplayers": 2,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -813,7 +813,7 @@
     "type": ["fighting", "water"],
     "attacks": ["Rock Smash", "Dynamic Punch"],
     "defence": [],
-    "recplayers": 5,
+    "recplayers": 4,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -930,7 +930,7 @@
     "stats": [207, 138, 160],
     "attacks": ["Razor Leaf", "Solar Beam"],
     "defence": [],
-    "recplayers": 5,
+    "recplayers": 3,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -995,7 +995,7 @@
     "stats": [211, 229, 160],
     "attacks": ["rock Throw", "Stone Edge"],
     "defence": [],
-    "recplayers": 4,
+    "recplayers": 5,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -1712,7 +1712,7 @@
     "stats": [165, 180, 260],
     "attacks": ["Frost Breath", "Blizzard"],
     "defence": ["Frost Breath", "Ice Beam"],
-    "recplayers": 7,
+    "recplayers": 5,
     "gender": 0,
     "rare":  true,
     "description": 0
@@ -1868,7 +1868,7 @@
     "stats": [190, 190, 320],
     "attacks": [],
     "defence": ["Zen Headbutt", "Heavy Slam"],
-    "recplayers": 7,
+    "recplayers": 5,
     "gender": 0,
     "rare":  true,
     "description": 0
@@ -1881,7 +1881,7 @@
     "stats": [192, 249, 180],
     "attacks": ["Frost Breath", "Blizzard"],
     "defence": [],
-    "recplayers": 5,
+    "recplayers": 6,
     "gender": 0,
     "rare":  false,
     "description": "Team Mystic FTW!"
@@ -1894,7 +1894,7 @@
     "stats": [253, 188, 180],
     "attacks": ["Charge Beam", "Thunderbolt"],
     "defence": [],
-    "recplayers": 5,
+    "recplayers": 6,
     "gender": 0,
     "rare":  false,
     "description": "Hey het is een shiny?"
@@ -1959,7 +1959,7 @@
     "stats": [300, 182, 193],
     "attacks": ["Confusion", "Focus Blast"],
     "defence": [],
-    "recplayers": 6,
+    "recplayers": 5,
     "gender": 0,
     "rare":  false,
     "description": "Let's clone the most powerfull pokémon and make it even stronger! What can go wrong?"
@@ -3168,7 +3168,7 @@
     "stats": [241, 210, 180],
     "attacks": ["Thunder Shock", "Wild Charge"],
     "defence": [],
-    "recplayers": 5,
+    "recplayers": 6,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -3181,7 +3181,7 @@
     "stats": [235, 176, 230],
     "attacks": ["Fire Spin", "Overheat"],
     "defence": [],
-    "recplayers": 5,
+    "recplayers": 6,
     "gender": 0,
     "rare":  false,
     "description": 0
@@ -3233,7 +3233,7 @@
     "stats": [251, 212, 200],
     "attacks": ["Bite", "Stone Edge"],
     "defence": [],
-    "recplayers": 5,
+    "recplayers": 4,
     "gender": 0,
     "rare":  true,
     "description": 0
@@ -3259,7 +3259,7 @@
     "stats": [239, 274, 193],
     "attacks": [],
     "defence": [],
-    "recplayers": 5,
+    "recplayers": 6,
     "gender": 0,
     "rare":  false,
     "description": 0

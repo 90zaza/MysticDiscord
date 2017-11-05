@@ -39,7 +39,7 @@ module.exports = class PokemonResponse extends Message {
     this.pokemon = this.getPokemon();
 
     if(this.pokemon) {
-      this.reply();
+      this.newMessage();
     }
   }
 
@@ -47,7 +47,7 @@ module.exports = class PokemonResponse extends Message {
     return this.totalMatchKey(this.pokemons);
   }
 
-  reply() {
+  newMessage() {
 
     //determine shiny (1%)
     let sprite = "shiny"
@@ -194,7 +194,7 @@ module.exports = class PokemonResponse extends Message {
       embed.addField("Best Defense Moveset", this.pokemon.defence[0] + ' & ' + this.pokemon.defence[1], true);
     }
 
-    super.reply({embed});
+    super.newMessage({embed});
   }
 
   cpRangeWonder(pokemon, level) {

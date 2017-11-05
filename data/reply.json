@@ -47,8 +47,8 @@
   "keys": ["professor oak"],
   "reply": "Hey! My name is Professor Oak, and i've known you from since you where born! Remind me again, are you a boy, or are you a girl?"
 }, {
-  "keys": ["counter magikarp"],
-  "reply": "Top counter pokémon tegen magikarp:\n- Letterlijk alles"
+  "keys": ["counter magikarp", "counter metapod"],
+  "reply": "Letterlijk alles"
 }, {
   "keys": ["bloemen stop", "bloemen kunst", "flower art", "bloemenstop"],
   "reply": "De Bloemen Kunst pokestop (bij de aldi), een van de beste pokéstops in delft. Locatie: <https://goo.gl/maps/xkRgUtLm8y42>"

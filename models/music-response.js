@@ -10,7 +10,7 @@ module.exports = class GenericResponse extends Message {
     if(this.startsWith('music') || this.startsWith('muziek')) {
       this.music = this.getMusic();
       if(this.music) {
-        this.reply();
+        this.newMessage();
       }
     }
   }
@@ -20,7 +20,6 @@ module.exports = class GenericResponse extends Message {
 
     // dont copy this as example code, this is different then most other implementations.
     const key = Math.floor(Math.random() * 31)+1;
-    console.log(key);
     return music.find( (musicItem) => {
       return musicItem.keys.find((musicItemKey) => {
         return musicItemKey == key;
@@ -28,11 +27,11 @@ module.exports = class GenericResponse extends Message {
     })
   }
 
-  reply() {
+  newMessage() {
     const embed = new Discord.MessageEmbed()
       .setTitle(":musical_note:" + this.music.name + ":musical_note:")
       .setURL(this.music.url)
       .setDescription(this.music.text);
-    super.reply({embed});
+    super.newMessage({embed});
   }
 }

@@ -8,7 +8,7 @@ module.exports = class GymResponse extends Message {
     this.gym = this.getGym();
 
     if(this.gym) {
-      this.reply();
+      this.newMessage();
     }
   }
 
@@ -16,7 +16,7 @@ module.exports = class GymResponse extends Message {
     return this.startsWithKey(gyms);
   }
 
-  reply() {
+  newMessage() {
     const embed =
       new Discord.MessageEmbed()
         .setColor(0xffffff)
