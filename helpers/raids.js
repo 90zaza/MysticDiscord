@@ -376,7 +376,7 @@ function messageEmbed(result, raid, id) {
     .setThumbnail(`https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`)
     .addField("End time", `${endtime ? endtime : "to be added"}`, true)
     .addField("Battle time", `${battletime ? battletime : "to be added"}`, true)
-    .addField(`Joining (bring at least ${pokemon.recplayers} trainers)`, "No trainers interested yet")
+    .addField(`Joining (lvl 30 players needed: ~${pokemon.recplayers})`, "No trainers interested yet")
     .setURL(gym ? gym.url : '');
 }
 
