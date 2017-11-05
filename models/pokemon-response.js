@@ -123,7 +123,7 @@ module.exports = class PokemonResponse extends Message {
 
     // pokemon.recplayers can be used to identify whether the pokemon is also a raid boss
     if (this.pokemon.recplayers > 0) {
-      embed.setDescription("Bring at least " + this.pokemon.recplayers + " trainers to a raid battle.");
+      embed.setDescription(`lvl 30 players needed for a raid: ~${this.pokemon.recplayers}`);
     }
     if (this.pokemon.description != 0) {
       embed.setFooter(this.pokemon.description);
