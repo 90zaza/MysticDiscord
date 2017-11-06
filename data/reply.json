@@ -287,7 +287,12 @@
   "url": "https://www.reddit.com/r/TheSilphRoad/comments/6iizr1/search_functions/",
   "description": "Soms wil je snel een pokemon vinden, en gelukkig heeft Pokémon Go hier een mooie zoekfunctie voor ingebouwt. Zie deze link voor een lijst met opties."
 }, {
-
+  "keys": ["legacy", "legacy moveset", "legacy movesets"],
+  "title": "Pokémon Go zoekfunctie",
+  "img": "https://bible2blog.files.wordpress.com/2015/06/treasurechest.png",
+  "url": "https://pokemongo.gamepress.gg/legacy-pokemon-list",
+  "description": "Als movesets veranderen kan het gebeuren dat pokémon zogenaamde Legacy movesets krijgen. Dit betekend dat ze niet meer te verkrijgen zijn met behulp van TM's. Soms zijn legacy movesets erg goed, kijk dus goed uit als je deze veranderd. Een lijst met alle legacy moves is te vinden via bovenstaande link."
+}, {
 
 
 
@@ -334,10 +339,22 @@
   "description": "Deze premium items kan je gebruiken om een Pokéstop aantrekkelijk te maken voor Pokémon. Je zal op die manier een van de lokale pokémon elke 3 minuten bij de pokéstop zien verschijnen voor 30 minuten lang."
 }, {
   "keys": ["lucky egg"],
-  "title": "Lure Module",
+  "title": "Lucky Egg",
   "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Lucky-Eggs.png",
   "url": "https://delftmystic.wordpress.com/items/",
   "description": "In het spel omschreven als 'een ei gevuld met vrolijkheid', en dat is ook zo! Met een van deze actief ontvang je 30 minuten lang dubbel xp op elke actie die je uitvoert!"
+}, {
+  "keys": ["raid pass"],
+  "title": "Raid Pass",
+  "img": "https://pokemongohub.net/wp-content/uploads/2017/06/normal-raid-pass-150x150.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Met een Raid Pass kan je meedoen met het verslaan van een Raid Boss voor items en de kans hem te vangen. Elke dag kan je er een uit een gymstop krijgen, zolang je er geen in je inventory hebt. Je kan ook premium passen kopen, daarvan mag je er meerdere hebben."
+}, {
+  "keys": ["tm", "fast tm", "charge tm"],
+  "title": "TM",
+  "img": "https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Charged_TM.png/revision/latest?cb=20170620212509",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Soms heeft je Pokémon niet de beste moveset. Deze kun je dan afleren met een TM. Voor het leren van een andere charge move heb je een Charge TM nodig, en voor een nieuwe fast move een Fast TM. Beide zijn alleen verkrijgbaar uit raids."
 }, {
   "keys": ["master ball"],
   "title": "Master Ball",
