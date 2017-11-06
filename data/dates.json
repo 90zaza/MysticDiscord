@@ -74,7 +74,7 @@
   "sort": "overview",
   "url": "http://pokemongolive.com/en/post/",
   "date": "2017",
-  "description": "8 feb - 15 feb: Valentijn event\n16 feb: gen 2 launch\n26 feb - 6 maart: Pokemon Day event\n22 maart - 29 maart: Water Festival event\n   - 22 maart: Shiny Magikarp\n13 april - 20 april: Eggstravaganza event\n5 mei - 8 mei: Gras Event\n18 mei - 25 mei: Adventure event\n6 juni: Eerste verjaardag(ash hat pikachu)\n13 juni - 20 juni: Solstices event\n22 juni: Gym rework\n29 juni: Raid battles\n22 juli: Go Fest\n22 juli - 24 juli: Go Fest event\n22 juli: Legendary raids\n5 aug - 21 aug: Safari Events in Europa:\n   - 16 sept: Oberhausen, Parijs & Barcelona\n   - 7 okt: Copenhagen & Praag\n   - 14 okt: Stokholm & Amstelveen\n- 16 aug: Shiny Pikachu release\n- 22 sept - 2 okt: Equinox event\n- 20 okt - 2 nov: Halloween event\n   - 20 okt: Shiny Sableye\n   - 26 okt: Shiny Duskull\n   - 31 okt: Shiny Shuppet\n5 nov - Raid Boss rotatie"
+  "description": "8 feb - 15 feb: Valentijn event\n16 feb: gen 2 launch\n26 feb - 6 maart: Pokemon Day event\n22 maart - 29 maart: Water Festival event\n   - 22 maart: Shiny Magikarp\n13 april - 20 april: Eggstravaganza event\n5 mei - 8 mei: Gras Event\n18 mei - 25 mei: Adventure event\n6 juni: Eerste verjaardag(ash hat pikachu)\n13 juni - 20 juni: Solstices event\n22 juni: Gym rework\n29 juni: Raid battles\n22 juli: Go Fest\n22 juli - 24 juli: Go Fest event\n22 juli: Legendary raids\n5 aug - 21 aug: Safari Events in Europa:\n   - 16 sept: Oberhausen, Parijs & Barcelona\n   - 7 okt: Copenhagen & Praag\n   - 14 okt: Stokholm & Amstelveen\n16 aug: Shiny Pikachu release\n22 sept - 2 okt: Equinox event\n20 okt - 2 nov: Halloween event\n   - 20 okt: Shiny Sableye\n   - 26 okt: Shiny Duskull\n   - 31 okt: Shiny Shuppet\n5 nov - Raid Boss rotatie"
 }, {
   "keys": ["valentijn 2017", "valentijn event 2017", "pink event 2017", "roze event 2017"],
   "name": "Valentijn event 2017",
@@ -202,12 +202,12 @@
   "date": "20 okt - 2 nov",
   "description": "Het eerste tweede event: Halloween! Voor dit event is een nieuwe soundtrack toegevoegd die in de avonden speelt (lavender town). Tijdens deze avonden zijn er flink meer 'spooky' spawns, waaronder 5 gen 3 (met kans op shiny) pokemon. De voordelen waren:\n- Meer spooky pokemon (waaronder de gen 3 spookjes)\n- Shiny Sableye in het wild of uit 10 km eitjes\n- Pikachu en Pichu met een nieuwe hoed\n- Speciale kortingsboxen met raid passes en super incubators (t/m 6 nov)\n- Een nieuwe Mimikyu hoed voor je avatar\n- Op 26 okt werd shiny Duskull geintroduceerd\nOp 31 okt werd shiny Shuppet geintroduceerd"
 }, {
-  "keys": ["raid boss rotatie", "raid boss rotation"],
+  "keys": ["raid boss rotatie", "raid boss rotation", "raid rotation", "raid rotatie"],
   "name": "Raid Boss rotatie",
   "sort": "",
   "url": "https://www.reddit.com/r/TheSilphRoad/comments/7audxw/full_list_of_raid_bosses_as_of_115_utc_new_and_old/",
   "date": "5 nov 2017",
-  "description": "29 juni - Raid battles start\n5 nov - Eerste rotatie"
+  "description": "29 juni 2017- Raid battles start\n5 nov 2017 - Eerste rotatie"
 }, {
   "keys": [""],
   "name": "",
@@ -223,12 +223,12 @@
   "date": "",
   "description": ""
 }, {
-  "keys": [""],
-  "name": "",
+  "keys": ["gen 3"],
+  "name": "Gen 3 Launch",
   "sort": "",
   "url": "",
-  "date": "",
-  "description": ""
+  "date": "xx dec 2017",
+  "description": "De 5 spookjes waren er al sinds halloween (20 okt 2017), maar de rest van gen 3 (behalve ??) is vanaf nu ook te verkrijgen"
 }, {
   "keys": [""],
   "name": "",

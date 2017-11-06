@@ -25,6 +25,6 @@ module.exports = class GymResponse extends Message {
         if (this.gym.description != 0) {
           embed.setDescription(this.gym.description);
         }
-    super.reply({embed});
+    super.newMessage({embed});
   }
 }
