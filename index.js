@@ -22,10 +22,10 @@ const PokemonSpottingResponse = require('./models/pokemon-spotting-response');
 const GenericResponse = require('./models/generic-response');
 const MusicResponse = require('./models/music-response');
 const GambleResponse = require('./models/gamble-response');
-const TeamResponse = require('./models/team-response');
 const ChannelRolesResponse = require('./models/channel-roles-response');
 const TopResponse = require('./models/top-response');
 const DateResponse = require('./models/date-response');
+const ThemeResponse = require('./models/thema-response');
 
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
@@ -89,8 +89,7 @@ client.on('message', async (msg) => {
   new GenericResponse(msg);
   new MusicResponse(msg);
   new GambleResponse(msg);
-  new TeamResponse(msg);
-
+  new ThemeResponse(msg);
 
   if (msgText.split(' ')[0] == "date" || msgText.split(' ')[0] == "datum") {
     msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;

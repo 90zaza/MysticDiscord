@@ -2,7 +2,7 @@
   {
     "keys": ["missingno"],
     "name": "Missingno",
-    "number": 0,
+    "number": "???",
     "type": ["normal", "flying"],
     "stats": [],
     "attacks": [],
@@ -11,8 +11,7 @@
     "gender": 0,
     "rare":  false,
     "description": "404 error"
-  },
-  {
+  }, {
     "keys": ["bulba", "bulbasaur"],
     "name": "Bulbasaur",
     "number": 1,
@@ -24,8 +23,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Hey het is een shiny?"
-  },
-  {
+  }, {
     "keys": ["ivysaur"],
     "name": "Ivysaur",
     "number": 2,
@@ -37,8 +35,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["venusaur"],
     "name": "Venusaur",
     "number": 3,
@@ -50,8 +47,7 @@
     "gender": 0.125,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["charmander"],
     "name": "Charmander",
     "number": 4,
@@ -63,8 +59,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["charmeleon"],
     "name": "Charmeleon",
     "number": 5,
@@ -76,8 +71,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["charizard"],
     "name": "Charizard",
     "number": 6,
@@ -89,8 +83,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["squirtle"],
     "name": "Squirtle",
     "number": 7,
@@ -102,8 +95,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["wartortle"],
     "name": "Wartortle",
     "number": 8,
@@ -115,8 +107,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["blastoise"],
     "name": "Blastoise",
     "number": 9,
@@ -128,8 +119,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["caterpie"],
     "name": "Caterpie",
     "number": 10,
@@ -141,8 +131,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["metapod"],
     "name": "Metapod",
     "number": 11,
@@ -154,8 +143,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["butterfree", "buterfree"],
     "name": "Butterfree",
     "number": 12,
@@ -167,8 +155,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["weedle"],
     "name": "Weedle",
     "number": 13,
@@ -180,8 +167,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["kakuna"],
     "name": "Kakuna",
     "number": 14,
@@ -193,8 +179,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["beedrill"],
     "name": "Beedrill",
     "number": 15,
@@ -206,8 +191,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["pidgey"],
     "name": "Pidgey",
     "number": 16,
@@ -219,8 +203,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["pidgeotto"],
     "name": "Pidgeotto",
     "number": 17,
@@ -232,8 +215,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["pidgeot"],
     "name": "Pidgeot",
     "number": 18,
@@ -245,8 +227,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["rattata"],
     "name": "Rattata",
     "number": 20,
@@ -258,8 +239,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["raticate"],
     "name": "Raticate",
     "number": 20,
@@ -271,8 +251,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["spearow"],
     "name": "Spearow",
     "number": 21,
@@ -284,8 +263,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["fearow"],
     "name": "Fearow",
     "number": 22,
@@ -297,8 +275,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["ekans"],
     "name": "Ekans",
     "number": 23,
@@ -310,8 +287,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["arbok"],
     "name": "Arbok",
     "number": 24,
@@ -323,8 +299,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["pikachu"],
     "name": "Pikachu",
     "number": 25,
@@ -336,8 +311,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["raichu"],
     "name": "Raichu",
     "number": 26,
@@ -349,8 +323,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["sandshrew"],
     "name": "Sandshrew",
     "number": 27,
@@ -362,8 +335,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["sandslash"],
     "name": "Sandslash",
     "number": 28,
@@ -375,10 +347,9 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
-    "keys": ["nidoranf", "nidoran f"],
-    "name": "Nidoran-f",
+  }, {
+    "keys": ["nidoranf", "nidoran f", "nidoran♀", "nidoran ♀"],
+    "name": "Nidoran♀",
     "number": 29,
     "stats": [86, 94, 110],
     "type": ["poison"],
@@ -388,8 +359,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["nidorina"],
     "name": "Nidorina",
     "number": 30,
@@ -401,8 +371,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["nidoqueen"],
     "name": "Nidoqueen",
     "number": 31,
@@ -414,10 +383,9 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
-    "keys": ["nidoranm", "nidoran m"],
-    "name": "Nidoran-m",
+  }, {
+    "keys": ["nidoranm", "nidoran m", "nidoran♂", "nidoran ♂"],
+    "name": "Nidoran♂",
     "number": 32,
     "stats": [105, 76, 92],
     "type": ["poison"],
@@ -427,8 +395,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["nidorino"],
     "name": "Nidorino",
     "number": 33,
@@ -440,8 +407,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["nidoking"],
     "name": "Nidoking",
     "number": 34,
@@ -453,8 +419,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["clefairy"],
     "name": "Clefairy",
     "number": 35,
@@ -466,8 +431,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["clefable"],
     "name": "Clefable",
     "number": 36,
@@ -479,8 +443,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["vulpix"],
     "name": "Vulpix",
     "number": 37,
@@ -492,8 +455,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["ninetales"],
     "name": "Ninetales",
     "number": 38,
@@ -505,8 +467,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["jigglypuff"],
     "name": "Jigglypuff",
     "number": 39,
@@ -518,8 +479,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["wigglytuff"],
     "name": "Wigglytuff",
     "number": 40,
@@ -531,8 +491,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["zubat"],
     "name": "Zubat",
     "number": 41,
@@ -544,8 +503,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["golbat"],
     "name": "Golbat",
     "number": 42,
@@ -557,8 +515,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["oddish"],
     "name": "Oddish",
     "number": 43,
@@ -570,8 +527,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["gloom"],
     "name": "Gloom",
     "number": 44,
@@ -583,8 +539,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["vileplume"],
     "name": "Vileplume",
     "number": 45,
@@ -596,8 +551,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["paras"],
     "name": "Paras",
     "number": 46,
@@ -609,8 +563,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["parasect"],
     "name": "Parasect",
     "number": 47,
@@ -622,8 +575,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["venonat"],
     "name": "Venonat",
     "number": 48,
@@ -635,8 +587,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["venomoth"],
     "name": "Venomoth",
     "number": 49,
@@ -648,8 +599,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["diglett"],
     "name": "Diglett",
     "number": 50,
@@ -661,8 +611,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["dugtrio"],
     "name": "Dugtrio",
     "number": 51,
@@ -674,8 +623,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["meowth"],
     "name": "Meowth",
     "number": 52,
@@ -687,8 +635,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["persian"],
     "name": "Persian",
     "number": 53,
@@ -700,8 +647,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["psyduck"],
     "name": "Psyduck",
     "number": 54,
@@ -713,8 +659,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["golduck"],
     "name": "Golduck",
     "number": 55,
@@ -726,8 +671,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["mankey"],
     "name": "Mankey",
     "number": 56,
@@ -739,8 +683,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["primeape"],
     "name": "Primeape",
     "number": 57,
@@ -752,8 +695,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["growlithe"],
     "name": "Growlithe",
     "number": 58,
@@ -765,8 +707,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["arcanine"],
     "name": "Arcanine",
     "number": 59,
@@ -778,8 +719,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["poliwag"],
     "name": "Poliwag",
     "number": 60,
@@ -791,8 +731,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["poliwhirl"],
     "name": "Poliwhirl",
     "number": 61,
@@ -804,8 +743,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["poliwrath"],
     "name": "Poliwrath",
     "number": 62,
@@ -817,8 +755,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["abra"],
     "name": "Abra",
     "number": 63,
@@ -830,8 +767,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["kadabra"],
     "name": "Kadabra",
     "number": 64,
@@ -843,8 +779,7 @@
     "gender": 0.25,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["alakazam"],
     "name": "Alakazam",
     "number": 65,
@@ -856,8 +791,7 @@
     "gender": 0.25,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["machop"],
     "name": "Machop",
     "number": 66,
@@ -869,8 +803,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["machoke"],
     "name": "Machoke",
     "number": 67,
@@ -882,8 +815,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["machamp"],
     "name": "Machamp",
     "number": 68,
@@ -895,8 +827,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["bellsprout"],
     "name": "Bellsprout",
     "number": 69,
@@ -908,8 +839,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["weepinbell"],
     "name": "Weepinbell",
     "number": 70,
@@ -921,8 +851,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["victreebel"],
     "name": "Victreebel",
     "number": 71,
@@ -934,8 +863,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["tentacool"],
     "name": "Tentacool",
     "number": 72,
@@ -947,8 +875,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["tentacruel"],
     "name": "Tentacruel",
     "number": 73,
@@ -960,8 +887,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["geodude"],
     "name": "Geodude",
     "number": 74,
@@ -973,8 +899,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["graveler"],
     "name": "Graveler",
     "number": 75,
@@ -986,8 +911,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["golem"],
     "name": "Golem",
     "number": 76,
@@ -999,8 +923,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["ponita"],
     "name": "Ponita",
     "number": 77,
@@ -1012,8 +935,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["rapidash"],
     "name": "Rapidash",
     "number": 78,
@@ -1025,8 +947,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["slowpoke"],
     "name": "Slowpoke",
     "number": 79,
@@ -1038,8 +959,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["slowbro", "slobro"],
     "name": "Slowbro",
     "number": 80,
@@ -1051,8 +971,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["magnemite"],
     "name": "Magnemite",
     "number": 81,
@@ -1064,8 +983,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["magneton"],
     "name": "Magneton",
     "number": 82,
@@ -1077,8 +995,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["farfetch", "farfetchd", "farfetch'd", "farfetcht"],
     "name": "Farfetchd",
     "number": 83,
@@ -1090,8 +1007,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Japan Regional"
-  },
-  {
+  }, {
     "keys": ["doduo"],
     "name": "Doduo",
     "number": 84,
@@ -1103,8 +1019,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["dodrio"],
     "name": "Dodrio",
     "number": 85,
@@ -1116,8 +1031,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["seel", "seal"],
     "name": "Seel",
     "number": 86,
@@ -1129,8 +1043,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["dewgong"],
     "name": "Dewgong",
     "number": 87,
@@ -1142,8 +1055,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["grimer"],
     "name": "Grimer",
     "number": 88,
@@ -1155,8 +1067,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["muk"],
     "name": "Muk",
     "number": 89,
@@ -1168,8 +1079,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["shellder", "shelder"],
     "name": "Shellder",
     "number": 90,
@@ -1181,8 +1091,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["cloyster", "cloister"],
     "name": "Cloyster",
     "number": 91,
@@ -1194,8 +1103,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["gastly", "ghastly"],
     "name": "Gastly",
     "number": 92,
@@ -1207,8 +1115,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["hounter", "haunter"],
     "name": "Haunter",
     "number": 93,
@@ -1220,8 +1127,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["gengar"],
     "name": "Gengar",
     "number": 94,
@@ -1233,8 +1139,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["onix"],
     "name": "Onix",
     "number": 95,
@@ -1246,8 +1151,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["drowzee"],
     "name": "Drowzee",
     "number": 96,
@@ -1259,8 +1163,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["hypno"],
     "name": "Hypno",
     "number": 97,
@@ -1272,8 +1175,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["krabby", "kraby"],
     "name": "Krabby",
     "number": 98,
@@ -1285,8 +1187,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["kingler"],
     "name": "Kingler",
     "number": 99,
@@ -1298,8 +1199,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["voltorb"],
     "name": "Voltorb",
     "number": 100,
@@ -1311,8 +1211,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["electrode"],
     "name": "Electrode",
     "number": 101,
@@ -1324,8 +1223,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["exeggcute", "exeggute", "eggecute", "exegute", "execute",
       "eggsecute"],
     "name": "Exeggute",
@@ -1338,9 +1236,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-
-  {
+  }, {
     "keys": ["exeggutor", "exegutor", "eggecutor", "Eggsecutor", "exeggcutor"],
     "name": "Exeggutor",
     "number": 103,
@@ -1352,8 +1248,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["cubone"],
     "name": "Cubone",
     "number": 104,
@@ -1365,8 +1260,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["marowak", "marrowak"],
     "name": "Marowak",
     "number": 105,
@@ -1378,8 +1272,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["hitmonlee"],
     "name": "Hitmonlee",
     "number": 106,
@@ -1391,8 +1284,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Evolueert van Tyrogue als Attack zijn hoogste IV stat is"
-  },
-  {
+  }, {
     "keys": ["hitmonchan"],
     "name": "Hitmonchan",
     "number": 107,
@@ -1404,8 +1296,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Evolueert van Tyrogue als Defence zijn hoogste IV stat is"
-  },
-  {
+  }, {
     "keys": ["lickytung", "lickitung"],
     "name": "Lickytung",
     "number": 108,
@@ -1417,8 +1308,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["koffing"],
     "name": "Koffing",
     "number": 109,
@@ -1430,8 +1320,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["weezing"],
     "name": "Weezing",
     "number": 110,
@@ -1443,8 +1332,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["rhyhorn", "ryhorn"],
     "name": "Rhyhorn",
     "number": 111,
@@ -1456,8 +1344,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["rhydon"],
     "name": "Rhydon",
     "number": 112,
@@ -1469,8 +1356,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["chansey", "chansy"],
     "name": "Chansey",
     "number": 113,
@@ -1482,8 +1368,7 @@
     "gender": 0,
     "rare":  true,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["tangela"],
     "name": "Tangela",
     "number": 114,
@@ -1495,8 +1380,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["kangaskhan", "kanghaskan", "kangaskan", "khangaskan"],
     "name": "Kangaskhan",
     "number": 115,
@@ -1508,8 +1392,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Australie Regional"
-  },
-  {
+  }, {
     "keys": ["horsea", "horsee"],
     "name": "Horsea",
     "number": 116,
@@ -1521,8 +1404,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["seadra", "seedra"],
     "name": "Seadra",
     "number": 117,
@@ -1534,8 +1416,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["goldeen"],
     "name": "Goldeen",
     "number": 118,
@@ -1547,8 +1428,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["seaking", "seeking"],
     "name": "Seaking",
     "number": 119,
@@ -1560,8 +1440,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["staryu"],
     "name": "Staryu",
     "number": 120,
@@ -1573,8 +1452,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["starmie"],
     "name": "Starmie",
     "number": 121,
@@ -1586,8 +1464,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["mr mime", "mr. mime", "mrmime", "mister mime"],
     "name": "Mr-Mime",
     "number": 122,
@@ -1599,8 +1476,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Europa Regional"
-  },
-  {
+  }, {
     "keys": ["scyther", "syther", "scyter"],
     "name": "Scyther",
     "number": 123,
@@ -1612,8 +1488,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["jynx"],
     "name": "Jynx",
     "number": 124,
@@ -1625,8 +1500,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["electabuzz", "electabuz", "electabus"],
     "name": "Electabuzz",
     "number": 125,
@@ -1638,8 +1512,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["magmar"],
     "name": "Magmar",
     "number": 126,
@@ -1651,8 +1524,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["pinsir"],
     "name": "Pinsir",
     "number": 127,
@@ -1664,8 +1536,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["tauros"],
     "name": "Tauros",
     "number": 128,
@@ -1677,8 +1548,7 @@
     "gender": 0,
     "rare":  false,
     "description": "USA Regional"
-  },
-  {
+  }, {
     "keys": ["magikarp"],
     "name": "Magikarp",
     "number": 129,
@@ -1690,8 +1560,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["gyarados", "garados", "gyrados", "gerados"],
     "name": "Gyarados",
     "number": 130,
@@ -1703,8 +1572,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["lapras"],
     "name": "Lapras",
     "number": 131,
@@ -1716,8 +1584,7 @@
     "gender": 0,
     "rare":  true,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["ditto", "dito"],
     "name": "Ditto",
     "number": 132,
@@ -1729,8 +1596,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Transformeerd vanuit Pidgey, Rattata, Zubat, Sentret en Yanma"
-  },
-  {
+  }, {
     "keys": ["eevee"],
     "name": "Eevee",
     "number": 133,
@@ -1742,8 +1608,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["vaporeon"],
     "name": "Vaporeon",
     "number": 134,
@@ -1755,8 +1620,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Evolueer eevee met Rainer als nickname (werkt 1 keer)"
-  },
-  {
+  }, {
     "keys": ["jolteon"],
     "name": "Jolteon",
     "number": 135,
@@ -1768,8 +1632,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Evolueer eevee met Sparky als nickname (werkt 1 keer)"
-  },
-  {
+  }, {
     "keys": ["flareon"],
     "name": "Flareon",
     "number": 136,
@@ -1781,8 +1644,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Evolueer eevee met Pyro als nickname (werkt 1 keer)"
-  },
-  {
+  }, {
     "keys": ["porygon"],
     "name": "Porygon",
     "number": 137,
@@ -1794,8 +1656,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["omanyte", "omanite"],
     "name": "Omanyte",
     "number": 138,
@@ -1807,8 +1668,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["omastar"],
     "name": "Omastar",
     "number": 139,
@@ -1820,8 +1680,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["kabuto"],
     "name": "Kabuto",
     "number": 140,
@@ -1833,8 +1692,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["kabutops"],
     "name": "Kabutops",
     "number": 141,
@@ -1846,8 +1704,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["aerodactyl", "arodactyl", "aerodactil"],
     "name": "Aerodactyl",
     "number": 142,
@@ -1859,8 +1716,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["snorlax"],
     "name": "Snorlax",
     "number": 143,
@@ -1872,8 +1728,7 @@
     "gender": 0,
     "rare":  true,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["articuno", "arti"],
     "name": "Articuno",
     "number": 144,
@@ -1885,8 +1740,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Team Mystic FTW!"
-  },
-  {
+  }, {
     "keys": ["zapdos"],
     "name": "Zapdos",
     "number": 145,
@@ -1898,8 +1752,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Hey het is een shiny?"
-  },
-  {
+  }, {
     "keys": ["moltres"],
     "name": "Moltres",
     "number": 146,
@@ -1911,8 +1764,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["dratini"],
     "name": "Dratini",
     "number": 147,
@@ -1924,8 +1776,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["dragonair"],
     "name": "Dragonair",
     "number": 148,
@@ -1937,8 +1788,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["dragonite"],
     "name": "Dragonite",
     "number": 149,
@@ -1950,8 +1800,7 @@
     "gender": 0,
     "rare":  true,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["mewtwo"],
     "name": "Mewtwo",
     "number": 150,
@@ -1963,8 +1812,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Let's clone the most powerfull pokémon and make it even stronger! What can go wrong?"
-  },
-  {
+  }, {
     "keys": ["mew"],
     "name": "Mew",
     "number": 151,
@@ -1976,8 +1824,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["chikorita", "chicorita"],
     "name": "Chicorita",
     "number": 152,
@@ -1989,8 +1836,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["bayleef"],
     "name": "Bayleef",
     "number": 153,
@@ -2002,8 +1848,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["meganium"],
     "name": "Meganium",
     "number": 154,
@@ -2015,8 +1860,7 @@
     "gender": 0.125,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["cindaquil", "cindaquill"],
     "name": "Cindaquil",
     "number": 155,
@@ -2028,8 +1872,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["quilava"],
     "name": "Quilava",
     "number": 156,
@@ -2041,8 +1884,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["typhlosion", "typlosion"],
     "name": "typhlosion",
     "number": 157,
@@ -2054,8 +1896,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["totodyle", "totodyl", "totodile"],
     "name": "Totodile",
     "number": 158,
@@ -2067,8 +1908,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["croconaw"],
     "name": "Croconaw",
     "number": 159,
@@ -2080,8 +1920,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["feraligatr", "fraligatr", "feraligater", "fraligator", "feraligator"],
     "name": "Feraligatr",
     "number": 160,
@@ -2093,8 +1932,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["sentret"],
     "name": "Sentret",
     "number": 161,
@@ -2106,8 +1944,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["furret"],
     "name": "Furret",
     "number": 162,
@@ -2119,8 +1956,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["hoothoot", "hoot hoot", "hoot-hoot"],
     "name": "Hoothoot",
     "number": 163,
@@ -2132,8 +1968,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["noctowl", "noctol"],
     "name": "Noctowl",
     "number": 164,
@@ -2145,8 +1980,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["lediba", "ledyba"],
     "name": "Ledyba",
     "number": 165,
@@ -2158,8 +1992,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["ledian"],
     "name": "Ledian",
     "number": 166,
@@ -2171,8 +2004,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["spinarak"],
     "name": "Spinarak",
     "number": 167,
@@ -2184,8 +2016,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["ariados"],
     "name": "Ariados",
     "number": 168,
@@ -2197,8 +2028,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["crobat"],
     "name": "Crobat",
     "number": 169,
@@ -2210,8 +2040,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["chinchou"],
     "name": "Chinchou",
     "number": 170,
@@ -2223,8 +2052,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["lanturn"],
     "name": "Lanturn",
     "number": 171,
@@ -2236,8 +2064,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["pichu"],
     "name": "Pichu",
     "number": 172,
@@ -2249,8 +2076,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
-  },
-  {
+  }, {
     "keys": ["cleffa"],
     "name": "Cleffa",
     "number": 173,
@@ -2262,8 +2088,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
-  },
-  {
+  }, {
     "keys": ["igglybuff", "iglybuff", "iglybuf", "igglybuf"],
     "name": "Igglybuff",
     "number": 174,
@@ -2275,8 +2100,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
-  },
-  {
+  }, {
     "keys": ["togepi"],
     "name": "Togepi",
     "number": 175,
@@ -2288,8 +2112,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
-  },
-  {
+  }, {
     "keys": ["togetic"],
     "name": "Togetic",
     "number": 176,
@@ -2301,8 +2124,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["natu"],
     "name": "Natu",
     "number": 177,
@@ -2314,8 +2136,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["xatu"],
     "name": "Xatu",
     "number": 178,
@@ -2327,8 +2148,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["mareep"],
     "name": "Mareep",
     "number": 179,
@@ -2340,8 +2160,7 @@
     "gender": 0,
     "rare":  true,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["flaaffy", "flafy", "flaafy"],
     "name": "Flaaffy",
     "number": 180,
@@ -2353,8 +2172,7 @@
     "gender": 0,
     "rare":  true,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["ampharos", "amparos"],
     "name": "Ampharos",
     "number": 181,
@@ -2366,8 +2184,7 @@
     "gender": 0,
     "rare":  true,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["bellossom", "belosom", "bellosom", "belossom"],
     "name": "Bellossom",
     "number": 182,
@@ -2379,8 +2196,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Evolueert van Gloom met behulp van een Sun Stone"
-  },
-  {
+  }, {
     "keys": ["marill", "maril"],
     "name": "Marill",
     "number": 183,
@@ -2392,8 +2208,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["azumarill", "azumaril"],
     "name": "Azumarill",
     "number": 184,
@@ -2405,8 +2220,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["sudowoodo", "sudowodo", "sodowodo", "sodowoodo"],
     "name": "Sudowoodo",
     "number": 185,
@@ -2418,8 +2232,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["politoed"],
     "name": "Politoed",
     "number": 186,
@@ -2431,8 +2244,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": "Evolueert van Poliwhirl met behulp van een Kings Rock"
-  },
-  {
+  }, {
     "keys": ["hoppip"],
     "name": "Hoppip",
     "number": 187,
@@ -2444,8 +2256,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["skiploom"],
     "name": "Skiploom",
     "number": 188,
@@ -2457,8 +2268,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["jumpluff", "jumpluf"],
     "name": "Jumpluff",
     "number": 189,
@@ -2470,8 +2280,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["aipom"],
     "name": "Aipom",
     "number": 190,
@@ -2483,8 +2292,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["sunkern"],
     "name": "Sunkern",
     "number": 191,
@@ -2496,8 +2304,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["sunflora"],
     "name": "Sunflora",
     "number": 192,
@@ -2509,8 +2316,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Evolueert van Sunkern met behulp van een Sun Stone"
-  },
-  {
+  }, {
     "keys": ["yanma"],
     "name": "Yanma",
     "number": 193,
@@ -2522,8 +2328,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["wooper"],
     "name": "Wooper",
     "number": 194,
@@ -2535,8 +2340,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["quagsire", "quacsire"],
     "name": "Quagsire",
     "number": 195,
@@ -2548,8 +2352,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["espeon"],
     "name": "Espeon",
     "number": 196,
@@ -2561,8 +2364,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Evolueer eevee met Sakura als nickname of door overdag te evolueren nadat je er >10 km me hebt gelopen als buddy"
-  },
-  {
+  }, {
     "keys": ["umbreon"],
     "name": "Umbreon",
     "number": 197,
@@ -2574,8 +2376,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Evolueer eevee met Tamao als nickname of door 's nachts te evolueren nadat je er >10 km me hebt gelopen als buddy"
-  },
-  {
+  }, {
     "keys": ["murkrow"],
     "name": "Murkrow",
     "number": 198,
@@ -2587,8 +2388,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["slowking"],
     "name": "Slowking",
     "number": 199,
@@ -2600,8 +2400,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Evolueert van Slowpoke met behulp van een Kings Rock"
-  },
-  {
+  }, {
     "keys": ["misdreavus", "misdrevus", "misdravus"],
     "name": "Misdreavus",
     "number": 200,
@@ -2613,8 +2412,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["unown", "unknown"],
     "name": "Unown",
     "number": 201,
@@ -2626,8 +2424,7 @@
     "gender": 0,
     "rare":  true,
     "description": "This pokémon is shaped like ancient writing. It is a mystery as to which came first, the ancient writings or the various unown."
-  },
-  {
+  }, {
     "keys": ["wobbuffet", "wobufet", "wobbufet", "wobuffet"],
     "name": "Wobbuffet",
     "number": 202,
@@ -2639,8 +2436,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["girafarig"],
     "name": "Girafarig",
     "number": 203,
@@ -2652,8 +2448,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["pineco"],
     "name": "Pineco",
     "number": 204,
@@ -2665,8 +2460,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["forretress", "forretres", "foretress", "foretres"],
     "name": "Forretress",
     "number": 205,
@@ -2678,8 +2472,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["dunsparce", "dunspars"],
     "name": "Dunsparce",
     "number": 206,
@@ -2691,8 +2484,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["gligar"],
     "name": "Gligar",
     "number": 207,
@@ -2704,8 +2496,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["steelix"],
     "name": "Steelix",
     "number": 208,
@@ -2717,8 +2508,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": "Evolueert van Onix met behulp van een Metal Coat"
-  },
-  {
+  }, {
     "keys": ["snubbull", "snubbul", "snubbel", "snubbell", "snubbel"],
     "name": "Snubbull",
     "number": 209,
@@ -2730,8 +2520,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["granbull", "granbul"],
     "name": "Granbull",
     "number": 210,
@@ -2743,8 +2532,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["qwilfish", "quilfish"],
     "name": "Qwilfish",
     "number": 211,
@@ -2756,8 +2544,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["scizor", "sizor"],
     "name": "Scizor",
     "number": 212,
@@ -2769,8 +2556,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": "Evolueert van Scyther met behulp van een Metal Coat"
-  },
-  {
+  }, {
     "keys": ["shuckle", "shukle"],
     "name": "Shuckle",
     "number": 213,
@@ -2782,8 +2568,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Don't fuckle with Shuckle"
-  },
-  {
+  }, {
     "keys": ["heracross", "heracros"],
     "name": "Heracross",
     "number": 214,
@@ -2795,8 +2580,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": "Zuid Amerika Regional"
-  },
-  {
+  }, {
     "keys": ["sneasel"],
     "name": "Sneasel",
     "number": 215,
@@ -2808,8 +2592,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["teddiursa", "tediursa"],
     "name": "Teddiursa",
     "number": 216,
@@ -2821,8 +2604,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["ursaring"],
     "name": "Ursaring",
     "number": 217,
@@ -2834,8 +2616,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["slugma"],
     "name": "Slugma",
     "number": 218,
@@ -2847,8 +2628,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["magcargo", "magarco"],
     "name": "Magcargo",
     "number": 219,
@@ -2860,8 +2640,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["swinub"],
     "name": "Swinub",
     "number": 220,
@@ -2873,8 +2652,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["piloswine", "pilowswine"],
     "name": "Piloswine",
     "number": 221,
@@ -2886,8 +2664,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["corsola"],
     "name": "Corsola",
     "number": 222,
@@ -2899,8 +2676,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Lattidude Regional (tussen 31N en 26S max 50 km van de kust)"
-  },
-  {
+  }, {
     "keys": ["remoraid"],
     "name": "Remoraid",
     "number": 223,
@@ -2912,8 +2688,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["octillery", "octilery"],
     "name": "Octillery",
     "number": 224,
@@ -2925,8 +2700,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["delibird"],
     "name": "Delibird",
     "number": 225,
@@ -2938,8 +2712,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["mantine"],
     "name": "Mantine",
     "number": 226,
@@ -2951,8 +2724,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["skarmory"],
     "name": "Skarmory",
     "number": 227,
@@ -2964,8 +2736,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["houndour"],
     "name": "Houndour",
     "number": 228,
@@ -2977,8 +2748,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["houndoom"],
     "name": "Houndoom",
     "number": 229,
@@ -2990,8 +2760,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["kingdra"],
     "name": "Kingdra",
     "number": 230,
@@ -3003,8 +2772,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Evolueert van Seadra met behulp van een Dragon Scale"
-  },
-  {
+  }, {
     "keys": ["phanpy", "phanphy"],
     "name": "Phanpy",
     "number": 231,
@@ -3016,8 +2784,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["donphan"],
     "name": "Donphan",
     "number": 232,
@@ -3029,8 +2796,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["porygon2", "porygon 2", "porigon2", "porigon 2"],
     "name": "Porygon2",
     "number": 233,
@@ -3042,8 +2808,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Evolueert van Porygon met behulp van een Up-Grade"
-  },
-  {
+  }, {
     "keys": ["stantler"],
     "name": "Stantler",
     "number": 234,
@@ -3055,8 +2820,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["smeargle"],
     "name": "Smeargle",
     "number": 235,
@@ -3068,8 +2832,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["tyrogue", "tyroge"],
     "name": "Tyrogue",
     "number": 236,
@@ -3081,8 +2844,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
-  },
-  {
+  }, {
     "keys": ["hitmontop"],
     "name": "Hitmontop",
     "number": 237,
@@ -3094,8 +2856,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Evolueert van Tyrogue als HP zijn hoogste IV stat is"
-  },
-  {
+  }, {
     "keys": ["smoochum"],
     "name": "Smoochum",
     "number": 238,
@@ -3107,8 +2868,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
-  },
-  {
+  }, {
     "keys": ["elekid"],
     "name": "Elekid",
     "number": 239,
@@ -3120,8 +2880,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
-  },
-  {
+  }, {
     "keys": ["magby"],
     "name": "Magby",
     "number": 240,
@@ -3133,8 +2892,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
-  },
-  {
+  }, {
     "keys": ["miltank"],
     "name": "Miltank",
     "number": 241,
@@ -3146,8 +2904,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["blissey", "blisey", "blissy", "blisy"],
     "name": "Blissey",
     "number": 242,
@@ -3159,8 +2916,7 @@
     "gender": 0,
     "rare":  true,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["raikou", "dog jolteon", "jolteon dog"],
     "name": "Raikou",
     "number": 243,
@@ -3172,8 +2928,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["entei", "dog flareon", "flareon dog"],
     "name": "Entei",
     "number": 244,
@@ -3185,8 +2940,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["suicune", "dog vaporeon", "vaporeon dog"],
     "name": "Suicune",
     "number": 245,
@@ -3198,8 +2952,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["larvitar"],
     "name": "Larvitar",
     "number": 246,
@@ -3211,8 +2964,7 @@
     "gender": 0,
     "rare":  true,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["pupitar"],
     "name": "Pupitar",
     "number": 247,
@@ -3224,8 +2976,7 @@
     "gender": 0,
     "rare":  true,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["tyranitar", "ttar", "tyra", "tyranitair"],
     "name": "Tyranitar",
     "number": 248,
@@ -3237,8 +2988,7 @@
     "gender": 0,
     "rare":  true,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["lugia"],
     "name": "Lugia",
     "number": 249,
@@ -3250,8 +3000,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["ho-oh", "hooh", "ho oh"],
     "name": "Ho-Oh",
     "number": 250,
@@ -3263,8 +3012,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["celebi", "celeby"],
     "name": "Celebi",
     "number": 251,
@@ -3276,8 +3024,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["treecko", "treeko"],
     "name": "Treecko",
     "number": 252,
@@ -3289,8 +3036,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["grovyle", "grovile"],
     "name": "Grovyle",
     "number": 253,
@@ -3302,8 +3048,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["sceptile", "sceptile", "septile", "septyle"],
     "name": "223, 180, 140",
     "number": 254,
@@ -3315,8 +3060,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["torchic", "torchik"],
     "name": "Torchic",
     "number": 255,
@@ -3328,8 +3072,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["combusken"],
     "name": "Combusken",
     "number": 256,
@@ -3341,8 +3084,7 @@
     "gender": 0.125,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["blaziken"],
     "name": "Blaziken",
     "number": 257,
@@ -3354,8 +3096,7 @@
     "gender": 0.125,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["mudkip"],
     "name": "mudkip",
     "number": 258,
@@ -3367,8 +3108,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["marshtomp", "marstomp"],
     "name": "Marshtomp",
     "number": 259,
@@ -3380,8 +3120,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["swampert"],
     "name": "Swampert",
     "number": 260,
@@ -3393,8 +3132,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["poochyena"],
     "name": "Poochyena",
     "number": 261,
@@ -3406,8 +3144,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["mightyena", "mighthyena"],
     "name": "Mightyena",
     "number": 262,
@@ -3419,8 +3156,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["zigzagoon"],
     "name": "Zigzagoon",
     "number": 263,
@@ -3432,8 +3168,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["linoone", "linone"],
     "name": "Linoone",
     "number": 264,
@@ -3445,8 +3180,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["wurmple", "wurmpel"],
     "name": "Wurmple",
     "number": 265,
@@ -3458,8 +3192,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["silcoon"],
     "name": "Silcoon",
     "number": 266,
@@ -3471,8 +3204,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["beautifly"],
     "name": "Beautifly",
     "number": 267,
@@ -3484,8 +3216,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["cascoon"],
     "name": "Cascoon",
     "number": 268,
@@ -3497,8 +3228,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["dustox"],
     "name": "Dustox",
     "number": 269,
@@ -3510,8 +3240,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["lotad"],
     "name": "Lotad",
     "number": 270,
@@ -3523,8 +3252,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["lombre"],
     "name": "Lombre",
     "number": 271,
@@ -3536,8 +3264,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["ludicolo", "ludikolo"],
     "name": "Ludicolo",
     "number": 272,
@@ -3549,8 +3276,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["seedot"],
     "name": "Seedot",
     "number": 273,
@@ -3562,8 +3288,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["nuzleaf", "nuzleef"],
     "name": "Nuzleaf",
     "number": 274,
@@ -3575,8 +3300,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["shiftry", "shiftree"],
     "name": "Shiftry",
     "number": 275,
@@ -3588,8 +3312,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["taillow", "tailow"],
     "name": "Taillow",
     "number": 276,
@@ -3601,8 +3324,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["swellow", "swelow"],
     "name": "Swellow",
     "number": 277,
@@ -3614,8 +3336,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["wingull", "wingul"],
     "name": "Wingull",
     "number": 278,
@@ -3627,8 +3348,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["pelipper", "peliper", "pellipper", "pelliper"],
     "name": "Pelipper",
     "number": 279,
@@ -3640,8 +3360,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["ralts"],
     "name": "Ralts",
     "number": 280,
@@ -3653,8 +3372,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["kirlia"],
     "name": "Kirlia",
     "number": 281,
@@ -3666,8 +3384,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["gardevoir"],
     "name": "Gardevoir",
     "number": 282,
@@ -3679,8 +3396,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["surskit"],
     "name": "Surskit",
     "number": 283,
@@ -3692,8 +3408,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["masquerain"],
     "name": "Masquerain",
     "number": 284,
@@ -3705,8 +3420,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["shroomish", "schroomish", "sroomish"],
     "name": "Shroomish",
     "number": 285,
@@ -3718,8 +3432,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["breloom"],
     "name": "Breloom",
     "number": 286,
@@ -3731,8 +3444,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["slakoth", "slakot"],
     "name": "Slakoth",
     "number": 287,
@@ -3744,8 +3456,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["vigoroth", "vigorot"],
     "name": "Vigoroth",
     "number": 288,
@@ -3757,8 +3468,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["slaking"],
     "name": "Slaking",
     "number": 289,
@@ -3770,8 +3480,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["nincada"],
     "name": "Nincada",
     "number": 290,
@@ -3783,8 +3492,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["ninjask"],
     "name": "Ninjask",
     "number": 291,
@@ -3796,8 +3504,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["shedinja"],
     "name": "Shedinja",
     "number": 292,
@@ -3809,8 +3516,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["whismur", "wishmur", "whishmur", "wismur"],
     "name": "Whismur",
     "number": 293,
@@ -3822,8 +3528,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["loudred"],
     "name": "Loudred",
     "number": 294,
@@ -3835,8 +3540,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["exploud"],
     "name": "Exploud",
     "number": 295,
@@ -3848,8 +3552,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["makuhita"],
     "name": "Makuhita",
     "number": 296,
@@ -3861,8 +3564,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["hariyama"],
     "name": "Hariyama",
     "number": 297,
@@ -3874,8 +3576,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["azurill", "azuril"],
     "name": "Azurill",
     "number": 298,
@@ -3887,8 +3588,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
-  },
-  {
+  }, {
     "keys": ["nosepass", "nosepas", "nospass", "nospas"],
     "name": "Nosepass",
     "number": 299,
@@ -3900,8 +3600,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["skitty"],
     "name": "Skitty",
     "number": 300,
@@ -3913,8 +3612,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["delcatty", "delcaty"],
     "name": "Delcatty",
     "number": 301,
@@ -3926,8 +3624,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["sableye"],
     "name": "Sableye",
     "number": 302,
@@ -3939,8 +3636,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["mawile", "mawhile"],
     "name": "Mawile",
     "number": 303,
@@ -3952,8 +3648,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["aron"],
     "name": "Aron",
     "number": 304,
@@ -3965,8 +3660,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["lairon"],
     "name": "Lairon",
     "number": 305,
@@ -3978,8 +3672,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["aggron", "agron"],
     "name": "Aggron",
     "number": 306,
@@ -3991,8 +3684,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["meditite"],
     "name": "Meditite",
     "number": 307,
@@ -4004,8 +3696,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["medicham"],
     "name": "Medicham",
     "number": 308,
@@ -4017,8 +3708,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["electrike"],
     "name": "Electrike",
     "number": 309,
@@ -4030,8 +3720,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["manectric"],
     "name": "Manectric",
     "number": 310,
@@ -4043,8 +3732,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["plusle"],
     "name": "Plusle",
     "number": 311,
@@ -4056,8 +3744,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["minun", "minum"],
     "name": "Minun",
     "number": 312,
@@ -4069,8 +3756,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["volbeat"],
     "name": "Volbeat",
     "number": 313,
@@ -4082,8 +3768,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["illumise", "ilumise", "illumize", "ilumize"],
     "name": "Illumise",
     "number": 314,
@@ -4095,8 +3780,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["roselia", "rosalia"],
     "name": "Roselia",
     "number": 315,
@@ -4108,8 +3792,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["gulpin"],
     "name": "Gulpin",
     "number": 316,
@@ -4121,8 +3804,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["swalot"],
     "name": "Swalot",
     "number": 317,
@@ -4134,8 +3816,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["carvanha", "carvana"],
     "name": "Carvanha",
     "number": 318,
@@ -4147,8 +3828,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["sharpedo"],
     "name": "Sharpedo",
     "number": 319,
@@ -4160,8 +3840,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["wailmer"],
     "name": "Wailmer",
     "number": 320,
@@ -4173,8 +3852,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["wailord"],
     "name": "Wailord",
     "number": 321,
@@ -4186,8 +3864,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["numel"],
     "name": "Numel",
     "number": 322,
@@ -4199,8 +3876,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["camerupt"],
     "name": "Camerupt",
     "number": 323,
@@ -4212,8 +3888,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["torkoal"],
     "name": "Torkoal",
     "number": 324,
@@ -4225,8 +3900,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["spoink"],
     "name": "Spoink",
     "number": 325,
@@ -4238,8 +3912,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["grumpig"],
     "name": "Grumpig",
     "number": 326,
@@ -4251,8 +3924,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["spinda"],
     "name": "Spinda",
     "number": 327,
@@ -4264,8 +3936,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["trapinch"],
     "name": "Trapinch",
     "number": 328,
@@ -4277,8 +3948,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["vibrava"],
     "name": "Vibrava",
     "number": 329,
@@ -4290,8 +3960,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["flygon"],
     "name": "Flygon",
     "number": 330,
@@ -4303,8 +3972,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["cacnea"],
     "name": "Cacnea",
     "number": 331,
@@ -4316,8 +3984,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["cacturne"],
     "name": "Cacturne",
     "number": 332,
@@ -4329,8 +3996,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["swablu"],
     "name": "Swablu",
     "number": 333,
@@ -4342,8 +4008,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["altaria"],
     "name": "Altaria",
     "number": 334,
@@ -4355,8 +4020,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["zangoose"],
     "name": "Zangoose",
     "number": 335,
@@ -4368,8 +4032,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["seviper"],
     "name": "Seviper",
     "number": 336,
@@ -4381,8 +4044,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["lunatone"],
     "name": "Lunatone",
     "number": 337,
@@ -4394,8 +4056,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["solrock"],
     "name": "Solrock",
     "number": 338,
@@ -4407,8 +4068,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["barboach"],
     "name": "Barboach",
     "number": 339,
@@ -4420,8 +4080,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["whiscash", "whishcash", "wiscash", "wishcash"],
     "name": "Whiscash",
     "number": 340,
@@ -4433,8 +4092,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["corphish", "corfish"],
     "name": "Corphish",
     "number": 341,
@@ -4446,8 +4104,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["crawdaunt"],
     "name": "Crawdaunt",
     "number": 342,
@@ -4459,8 +4116,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["baltoy"],
     "name": "Baltoy",
     "number": 343,
@@ -4472,8 +4128,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["claydol", "claydoll"],
     "name": "Claydol",
     "number": 344,
@@ -4485,8 +4140,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["lileep"],
     "name": "Lileep",
     "number": 345,
@@ -4498,8 +4152,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["cradily", "cradilly"],
     "name": "Cradily",
     "number": 346,
@@ -4511,8 +4164,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["anorith", "anorit"],
     "name": "Anorith",
     "number": 347,
@@ -4524,8 +4176,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["armaldo"],
     "name": "Armaldo",
     "number": 348,
@@ -4537,8 +4188,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["feebas"],
     "name": "Feebas",
     "number": 349,
@@ -4550,8 +4200,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["milotic"],
     "name": "Milotic",
     "number": 350,
@@ -4563,8 +4212,7 @@
     "gender": 0.5,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["castform"],
     "name": "Castform",
     "number": 351,
@@ -4576,8 +4224,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Castform's appearance changes with the weather. It's molecules were found to be just like water"
-  },
-  {
+  }, {
     "keys": ["keckleon", "kekleon", "kecleon"],
     "name": "Keckleon",
     "number": 352,
@@ -4589,8 +4236,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["shuppet", "shupet"],
     "name": "Shuppet",
     "number": 353,
@@ -4602,8 +4248,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["banette", "banete"],
     "name": "Banette",
     "number": 354,
@@ -4615,8 +4260,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["duskull", "duskul"],
     "name": "Duskull",
     "number": 355,
@@ -4628,8 +4272,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["dusclops"],
     "name": "Dusclops",
     "number": 356,
@@ -4641,8 +4284,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["tropius"],
     "name": "Tropius",
     "number": 357,
@@ -4654,8 +4296,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["chimecho"],
     "name": "Chimecho",
     "number": 358,
@@ -4667,8 +4308,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["absol"],
     "name": "Absol",
     "number": 359,
@@ -4680,8 +4320,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["wynaut", "wynout"],
     "name": "Wynaut",
     "number": 360,
@@ -4693,8 +4332,7 @@
     "gender": 0,
     "rare":  false,
     "description": "Baby pokémon"
-  },
-  {
+  }, {
     "keys": ["snorunt"],
     "name": "Snorunt",
     "number": 361,
@@ -4706,8 +4344,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["glalie"],
     "name": "Glalie",
     "number": 362,
@@ -4719,8 +4356,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["spheal"],
     "name": "Spheal",
     "number": 363,
@@ -4732,8 +4368,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["sealeo", "seeleo", "seleo"],
     "name": "Sealeo",
     "number": 364,
@@ -4745,8 +4380,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["walrein"],
     "name": "Walrein",
     "number": 365,
@@ -4758,8 +4392,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["clamperl"],
     "name": "Clamperl",
     "number": 366,
@@ -4771,8 +4404,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["huntail"],
     "name": "Huntail",
     "number": 367,
@@ -4784,8 +4416,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["gorebyss", "gorebys"],
     "name": "Gorebyss",
     "number": 368,
@@ -4797,8 +4428,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["relicanth", "relicant"],
     "name": "Relicanth",
     "number": 369,
@@ -4810,8 +4440,7 @@
     "gender": 0.125,
     "rare":  false,
     "description": "A pokémon that was once believed to have been extinct. The species has not changed its form for 100 million years. It walks on the seafloor using its pectoral fins."
-  },
-  {
+  }, {
     "keys": ["luvdisc"],
     "name": "Luvdisc",
     "number": 370,
@@ -4823,8 +4452,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["bagon"],
     "name": "Bagon",
     "number": 371,
@@ -4836,8 +4464,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["shelgon"],
     "name": "Shelgon",
     "number": 372,
@@ -4849,8 +4476,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["salamence", "salamance"],
     "name": "Salamence",
     "number": 373,
@@ -4862,8 +4488,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["beldum"],
     "name": "Beldum",
     "number": 374,
@@ -4875,8 +4500,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["metang"],
     "name": "Metang",
     "number": 375,
@@ -4888,8 +4512,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["metagross", "metagros"],
     "name": "Metagross",
     "number": 376,
@@ -4901,8 +4524,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["regirock"],
     "name": "Regirock",
     "number": 377,
@@ -4914,8 +4536,7 @@
     "gender": 0,
     "rare":  false,
     "description": "⠗⠊⠛⠓⠞ ⠗⠊⠛⠓⠞ ⠙⠕⠺⠝ ⠙⠕⠺⠝ ⠞⠓⠑⠝ ⠥⠎⠑ ⠽⠕⠥⠗ ⠎⠞⠗⠑⠝⠛⠞⠓"
-  },
-  {
+  }, {
     "keys": ["regice", "regiice"],
     "name": "Regice",
     "number": 378,
@@ -4927,8 +4548,7 @@
     "gender": 0,
     "rare":  false,
     "description": "⠎⠞⠕⠏ ⠁⠝⠙ ⠺⠁⠊⠞ ⠥⠝⠍⠕⠧⠊⠝⠛ ⠁⠎ ⠞⠊⠍⠑ ⠏⠁⠎⠎⠑⠎ ⠽⠕⠥ ⠃⠽ ⠞⠺⠊⠉⠑"
-  },
-  {
+  }, {
     "keys": ["registeel"],
     "name": "Registeel",
     "number": 379,
@@ -4940,8 +4560,7 @@
     "gender": 0,
     "rare":  false,
     "description": "⠎⠞⠁⠝⠙ ⠉⠑⠝⠞⠑⠗ ⠁⠊⠍ ⠞⠕ ⠞⠓⠑ ⠎⠅⠽ ⠺⠊⠞⠓ ⠇⠕⠧⠑ ⠁⠝⠙ ⠓⠕⠏⠑ ⠁⠝⠙ ⠞⠊⠍⠑"
-  },
-  {
+  }, {
     "keys": ["latias"],
     "name": "Latias",
     "number": 380,
@@ -4953,8 +4572,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["latios"],
     "name": "Latios",
     "number": 381,
@@ -4966,8 +4584,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["kyogre", "kyorge"],
     "name": "Kyogre",
     "number": 382,
@@ -4979,8 +4596,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["groudon"],
     "name": "Groudon",
     "number": 383,
@@ -4992,8 +4608,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["rayquaza"],
     "name": "Rayquaza",
     "number": 384,
@@ -5005,8 +4620,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["jirachi"],
     "name": "Jirachi",
     "number": 385,
@@ -5018,8 +4632,7 @@
     "gender": 0,
     "rare":  false,
     "description": 0
-  },
-  {
+  }, {
     "keys": ["deoxys"],
     "name": "Deoxys",
     "number": 386,

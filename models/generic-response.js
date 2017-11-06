@@ -8,11 +8,21 @@ module.exports = class GenericResponse extends Message {
     this.replyObject = this.getReply();
 
     if(this.replyObject) {
-      this.newMessage(this.replyObject.reply);
+      this.newMessage();
     }
   }
 
   getReply() {
     return this.totalMatchKey(replies);
+  }
+
+  newMessage() {
+    const embed =
+      new Discord.MessageEmbed()
+        .setTitle(this.replyObject.title)
+        .setURL(this.replyObject.url)
+        .setThumbnail(this.replyObject.img)
+        .setDescription(this.replyObject.description);
+      super.newMessage({embed});
   }
 }

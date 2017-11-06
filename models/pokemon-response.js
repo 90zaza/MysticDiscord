@@ -48,7 +48,6 @@ module.exports = class PokemonResponse extends Message {
   }
 
   newMessage() {
-
     //determine shiny (1%)
     let sprite = "shiny"
     if (Math.random()>0.01) {
@@ -99,15 +98,25 @@ module.exports = class PokemonResponse extends Message {
       imageURL = `https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/${sprite}/${letter}.png`
     }
 
+    //nidoran m/f forms
+    if (this.pokemon.name.toLowerCase() == "nidoran♀") {
+      imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/nidoran-f.png`;
+    }
+    if (this.pokemon.name.toLowerCase() == "nidoran♂") {
+      imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/nidoran-m.png`;
+    }
+
+
     //castform forms
     if (this.pokemon.name.toLowerCase() == "castform") {
       let random=Math.random();
       let weather="castform";
-      if (random<1/4) {weather="castform-rainy"}
-      else if (random<2/4) {weather="castform-sunny"}
-      else if (random<3/4) {weather="castform-snowy"}
+      this.pokemon.type=["normal"];
+      if (random<1/4) {weather="castform-rainy"; this.pokemon.type=["water"];}
+      else if (random<2/4) {weather="castform-sunny"; this.pokemon.type=["fire"];}
+      else if (random<3/4) {weather="castform-snowy"; this.pokemon.type=["ice"];}
 
-      imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${weather}.png`
+      imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${weather}.png`;
     }
 
     //missingno
@@ -116,7 +125,7 @@ module.exports = class PokemonResponse extends Message {
     }
 
     let embed = new Discord.MessageEmbed()
-      .setTitle("#" + this.pokemon.number + " - " + this.pokemon.name + " [" + this.pokemon.type.join(", ") + "]", imageURL)
+      .setTitle("#" + this.pokemon.number + " - " + this.pokemon.name + " [" + this.pokemon.type.join(", ") + "]")
       .setThumbnail(imageURL)
       .setURL("https://pokemongo.gamepress.gg/pokemon/" + this.pokemon.number)
       .setColor(colors[this.pokemon.type[0]]);
