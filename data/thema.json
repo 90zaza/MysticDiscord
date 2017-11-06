@@ -205,4 +205,19 @@
 }, {
   "keys": ["65"],
   "suggestion": "Maak een giovanni gym!\n(persian, dugtrio, nidoqueen, nidoking, rhydon, kangaskhan)"
+}, {
+  "keys": ["66"],
+  "suggestion": "Maak een giovanni gym!\n(persian, dugtrio, nidoqueen, nidoking, rhydon, kangaskhan)"
+}, {
+  "keys": ["67"],
+  "suggestion": "Maak een ditto transform gym!\n(rattata, yanma, hoothoot, zubat, sentret, magikarp)"
+}, {
+  "keys": ["68"],
+  "suggestion": "Maak een floor is lava gym!"
+}, {
+  "keys": ["69"],
+  "suggestion": "Maak een type ketting gym!\n(dual types, en dan opvolgend in type. Bvb: sableye (ghost/ dark), sneasel (dark/ ice), lapras (ice/ water), etc)"
+}, {
+  "keys": ["70"],
+  "suggestion": "Maak een 'zelfde beginletter' gym!"
 }]

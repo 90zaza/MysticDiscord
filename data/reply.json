@@ -275,6 +275,18 @@
   "url": "https://www.google.com/search?q=noob",
   "description": "Cop counter lijst voor Metapod:\nLetterlijk alles\n\nBij nader inzien is Pokémon Go toch niet echt voor jou"
 }, {
+  "keys": ["locatielink", "locatie link"],
+  "title": "Locatie link delen",
+  "img": "http://apk.co/images/my-location-maps-gps-location-tracker-places-2601.png",
+  "url": "https://delftmystic.wordpress.com/2017/07/05/locatie-delen/",
+  "description": "Het kunnen delen van een exacte locatie over discord is een must have kwaliteit voor bijvoorbeeld het delen van een mooie pokémon spawn. Zie de link om uit te vogelen hoe je dat kan doen!"
+}, {
+  "keys": ["search functie", "search function", "pokemon search", "pokémon search", "search help"],
+  "title": "Pokémon Go zoekfunctie",
+  "img": "https://www.oswego.edu/oswego-search/img/search.png",
+  "url": "https://www.reddit.com/r/TheSilphRoad/comments/6iizr1/search_functions/",
+  "description": "Soms wil je snel een pokemon vinden, en gelukkig heeft Pokémon Go hier een mooie zoekfunctie voor ingebouwt. Zie deze link voor een lijst met opties."
+}, {
 
 
 
@@ -283,7 +295,7 @@
   "title": "Poké Ball",
   "img": "https://cdn.bulbagarden.net/upload/thumb/a/a6/SugimoriPokeBall.png/600px-SugimoriPokeBall.png",
   "url": "https://delftmystic.wordpress.com/items/",
-  "description": "Pokéballs zijn de tools die je gebruikt om pokémon te vangen. Ze komen in verschillende vormen en maten, elk met een eigen vangkans. Op dit moment zijn bekend:\n\n**Poké Ball** (x1)\n**Great Ball** (x1.5)\n**Ultra Ball** (x2)\n**Premier Ball** (x1)"
+  "description": "Poké balls zijn de tools die je gebruikt om pokémon te vangen. Ze komen in verschillende vormen en maten, elk met een eigen vangkans (zoals hieronder tussen haakjes aangegeven). Op dit moment zijn bekend:\n\n**Poké Ball** (x1)\n**Great Ball** (x1.5)\n**Ultra Ball** (x2)\n**Premier Ball** (x1)"
 }, {
   "keys": ["potion", "super potion", "max potion", "hyper potion", "revive", "max revive", "healing", "healing items", "heal items"],
   "title": "Healing Items",
@@ -303,6 +315,37 @@
   "url": "https://delftmystic.wordpress.com/items/",
   "description": "Naast het gebruiken van de goede Poké Ball, is het kiezen van een goede berry ook essentieel voor het vangen van een pokémon. Daarnaast kun je berries ook geven aan pokemon in gyms om hun motivatie weer wat op te krikken. Er zijn verschillende berries:\n\n**Nanab berry**: De pokémon beweegt minder\n**Pinap Berry**: Bij vangen krijg je 2x zoveel candy\n**Razz Berry**: vergroot de vangkans met factor 1.5\n**Golden Razz Berry**: vergroot de vangkans met factor 2.5, en geeft ook de volledige motivatie terug aan een gym pokemon"
 }, {
+  "keys": ["insense", "insence", "incence", "incense"],
+  "title": "Incense",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/4/43/GO_Incense.png/100px-GO_Incense.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Deze 'privé lure' is een soort parfum waar lokale pokémon op afkomen. Een insence spawnt elke 5 minuten, of elke 200 meter (max 1 per minuut) een pokémon. Dit betekend dat de optimale snelheid 12 km/h is."
+}, {
+  "keys": ["incubator"],
+  "title": "Incubators",
+  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Pokemon-Go-Egg1.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Met deze apparaten kan je je eitjes uit laten komen. Je hebt standaard een incubator met een oneindig aantal uses, maar als premium items kan je ook incubators kopen met 3 uses. Tijdens events zijn soms ook de super incubators beschikbaar, welke ook 3 uses hebben maar eieren 1.5x zo snel uitlopen."
+}, {
+  "keys": ["lure", "lure module"],
+  "title": "Lure Module",
+  "img": "https://fevgames.net/wp-content/uploads/2017/06/Item_0706.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Deze premium items kan je gebruiken om een Pokéstop aantrekkelijk te maken voor Pokémon. Je zal op die manier een van de lokale pokémon elke 3 minuten bij de pokéstop zien verschijnen voor 30 minuten lang."
+}, {
+  "keys": ["lucky egg"],
+  "title": "Lure Module",
+  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Lucky-Eggs.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "In het spel omschreven als 'een ei gevuld met vrolijkheid', en dat is ook zo! Met een van deze actief ontvang je 30 minuten lang dubbel xp op elke actie die je uitvoert!"
+}, {
+  "keys": ["master ball"],
+  "title": "Master Ball",
+  "img": "https://bulbapedia.bulbagarden.net/wiki/Master_Ball",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "De beste bal die er is, hij mist nooit! Helaas is dit juweeltje nog niet beschikbaar in Pokémon go, en zullen we dus op dit moment nog ons best moeten doen om pokémon te vangen."
+}, {
+
 
 
 
