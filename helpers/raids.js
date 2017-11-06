@@ -110,13 +110,6 @@ exports.scan = async function (msg) {
     // update
     else if (/^\d+/.test(message.message.content)) {
       updateRaid(message, message.message.content.match(/(^\d+)/)[1]);
-      setTimeout(() => {
-        joinRaid(message, message.message.content.match(/(^\d+)/)[1], message.message.author);
-      }, 500);
-      setTimeout(() => {
-        leaveRaid(message, message.message.content.match(/(^\d+)/)[1], message.message.author);
-      }, 1000);
-
     }
     // new raid
     else if (/^[a-zA-Z]+/.test(message.message.content)) {
@@ -242,7 +235,7 @@ async function updateRaidTeam(message, raidschannel, color) {
   // update color of raid in database
   raids.update(
     { team: color },
-    { where: { idraids: message.id } })
+    { where: { messageid: message.id } })
     .catch(console.error);
 }
 
@@ -375,15 +368,17 @@ function messageEmbed(result, raid, id) {
   const gym = raid.gym ? raid.gym : (result ? gyms.find(gym => gym.name == result.dataValues.raidgym) : null);
   const endtime = raid.endtime ? raid.endtime : (result ? (result.dataValues.raidendtime ? result.dataValues.raidendtime : null) : null);
   const battletime = raid.battletime ? raid.battletime : (result ? (result.dataValues.raidbattletime ? result.dataValues.raidbattletime : null) : null);
+  const team = raid.team ? raid.team : (result ? result.dataValues.team : null);
+  const joining = result ? (result.dataValues.joining ? result.dataValues.joining.split(", ") : null) : null;
 
   return new Discord.MessageEmbed()
     .setAuthor("Raid #" + id)
-    .setColor(embedColor(raid.team))
+    .setColor(embedColor(team))
     .setTitle(`${pokemon.name}: ${gym ? gym.name : "Gym to be added"}`)
     .setThumbnail(`https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`)
     .addField("End time", `${endtime ? endtime : "to be added"}`, true)
     .addField("Battle time", `${battletime ? battletime : "to be added"}`, true)
-    .addField(`Joining (lvl 30 players needed: ~${pokemon.recplayers})`, "No trainers interested yet")
+    .addField(`Joining (lvl 30 players needed: ~${pokemon.recplayers})`, joining ? joining.join("\n") : "No trainers interested yet")
     .setURL(gym ? gym.url : '');
 }
 
