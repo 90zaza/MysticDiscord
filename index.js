@@ -92,15 +92,8 @@ client.on('message', async (msg) => {
   new GambleResponse(msg);
   new ThemeResponse(msg);
   new JokeOfTheDayResponse(msg);
-
-  if (msgText.split(' ')[0] == "date" || msgText.split(' ')[0] == "datum") {
-    msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
-    new DateResponse(msg);
-  }
-  if (msgText.split(' ')[0] == "top" || msgText.split(' ')[0] == "counter") {
-    msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
-    new TopResponse(msg);
-  }
+  new DateResponse(msg);
+  new TopResponse(msg);
 
   let verifiedrole = msg.guild.roles.find("name", "makingdelftblueagain");
   let moderatorrole = msg.guild.roles.find("name", "moderators");

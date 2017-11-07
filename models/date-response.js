@@ -5,10 +5,15 @@ const dates = require('../data/dates.json');
 module.exports = class TopResponse extends Message {
   constructor(message) {
     super(message);
-    this.date = this.getDate();
 
-    if(this.date) {
-      this.newMessage();
+    if(this.startsWith('date') || this.startsWith('datum')) {
+      this.message.content = `!${this.message.content.substr(this.message.content.indexOf(" ") + 1)}`;
+
+      this.date = this.getDate();
+
+      if(this.date) {
+        this.newMessage();
+      }
     }
   }
 
