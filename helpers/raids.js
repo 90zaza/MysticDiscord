@@ -11,10 +11,6 @@ var raids;
 //testdiscord
 const joinemoji = '➕';
 const leaveemoji = '➖';
-// TODO: ask custom emojis from channel instead of hardcoding
-// const mysticemoji = process.env.MYSTIC_EMOJI;
-// const instinctemoji = process.env.INSTINCT_EMOJI;
-// const valoremoji = process.env.VALOR_EMOJI;
 
 // initialisation
 // connects to database and creates table for raids
@@ -143,10 +139,13 @@ exports.messageReactionAdd = async function (messageReaction, user) {
           messageReaction.message.member.guild.member(user).removeRole(role);
         } else if (messageReaction.emoji.name == "mystic") {
           await updateRaidTeam(messageReaction.message, raidschannel, "mystic");
+          raidschannel.send(`Raid ${messageReaction.message.member.guild.roles.find("name", id.toString())}: ${messageReaction.emoji}`);
         } else if (messageReaction.emoji.name == "valor") {
           await updateRaidTeam(messageReaction.message, raidschannel, "valor");
+          raidschannel.send(`Raid ${messageReaction.message.member.guild.roles.find("name", id.toString())}: ${messageReaction.emoji}`);
         } else if (messageReaction.emoji.name == "instinct") {
           await updateRaidTeam(messageReaction.message, raidschannel, "instinct");
+          raidschannel.send(`Raid ${messageReaction.message.member.guild.roles.find("name", id.toString())}: ${messageReaction.emoji}`);
         }
       }
     })
@@ -228,8 +227,6 @@ async function updateRaid(message, id) {
 
 async function updateRaidTeam(message, raidschannel, color) {
   const emoji = message.guild.emojis.find("name", color);
-  // notify team change
-  raidschannel.send(`Raid ${message.id}: ${emoji}`);
   // edit color of message
   message.edit(message.embeds[0].setColor(embedColor(color)));
   // update color of raid in database
