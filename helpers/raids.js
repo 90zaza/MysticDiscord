@@ -96,7 +96,7 @@ exports.scan = async function (msg) {
       leaveRaid(message, message.message.content.match(/leave (\d+)/)[1], message.message.author);
     }
     // delete raid
-    else if (/del/.test(message.message.content)) {
+    else if (/del (\d+)/.test(message.message.content)) {
       deleteRaid(message, message.message.content.match(/del (\d+)/)[1]);
     }
     // reset
