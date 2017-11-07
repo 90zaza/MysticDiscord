@@ -23,67 +23,67 @@
   "url": "https://bulbapedia.bulbagarden.net/wiki/Brock",
   "description": "Gym Leader van Pewter City, een rock pokémon gym. Na de gymbattle met Ash werd hij door hem geinspireert en koos ervoor om met hem mee op reis te gaan. Hij heeft ook een hele tijd bij Professor Ivy verbleven, niemand weet precies waarom...\n\n*I'll use my frying pan, as a drying pan!*"
 }, {
-  "keys": ["professor oak", "oak"],
+  "keys": ["professor oak", "oak", "prof oak"],
   "title": "Professor Oak",
   "img": "https://cdn.bulbagarden.net/upload/8/84/Professor_Oak_XY.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Oak",
   "description": "De Pokémon Professor uit de Kanto Region, en ook de eerste professor waar Ash in zijn geboortestad Pallet Town ooit mee te maken krijgt. Hij specialiseerd zich in relaties tussen Pokémon en mensen.\n\n*Hey! My name is Professor Oak, and i've known you from since you where born! Remind me again, are you a boy, or are you a girl?*"
 }, {
-  "keys": ["professor elm", "elm"],
+  "keys": ["professor elm", "elm", "prof elm"],
   "title": "Professor Elm",
   "img": "https://cdn.bulbagarden.net/upload/e/ec/HeartGold_SoulSilver_Professor_Elm.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Elm",
   "description": "De Pokémon Professor uit de Johto Region, wonend in New Bark town. Hij specialiseerd zich in het broeden van Pokémon en hun eieren, welke door hem zijn ontdekt. Daarnaast is het nogal een kluns, het zou daarom zomaar Spark zijn broer kunnen zijn."
 }, {
-  "keys": ["professor birch", "birch"],
+  "keys": ["professor birch", "birch", "prof birch"],
   "title": "Professor Birch",
   "img": "https://cdn.bulbagarden.net/upload/thumb/d/d0/Omega_Ruby_Alpha_Sapphire_Professor_Birch.png/633px-Omega_Ruby_Alpha_Sapphire_Professor_Birch.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Birch",
   "description": "De Pokémon Professor uit de Hoenn Region, wonend in Littleroot Town. Hij specialiseerd zich in Pokémon habitats en heeft meerdere boeken geschreven. Het zou Professor Willow's broer kunnen zijn."
 }, {
-  "keys": ["professor bill", "bill"],
+  "keys": ["professor bill", "bill", "prof bill"],
   "title": "Professor Bill",
   "img": "https://vignette.wikia.nocookie.net/helixpedia/images/4/41/Bill.gif/revision/latest?cb=20140516192603",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Bill",
   "description": "Een pokémon professor in vele velden. Hij is meestal te vinden ten noorden van Cerulean city (einde van route 25) en is de bedenker van het Pokémon storage systeem. Zonder hem hadden we waarschijnlijk nooit zoveel Pokémon kunnen bewaren als we nu doen."
 }, {
-  "keys": ["professor kurt", "kurt"],
+  "keys": ["professor kurt", "kurt", "prof kurt"],
   "title": "Professor Kurt",
   "img": "https://cdn.bulbagarden.net/upload/thumb/1/12/HeartGold_SoulSilver_Kurt.png/180px-HeartGold_SoulSilver_Kurt.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Kurt",
   "description": "De expert op het gebied van Poké balls. Hij maakt zijn eigen ballen met behulp van Apricorns, elke bal met een eigen specialiteit (type/ level/ vriendelijkheid etc)"
 }, {
-  "keys": ["professor willow", "willow"],
+  "keys": ["professor willow", "willow", "prof willow"],
   "title": "Professor Willow",
   "img": "https://cdn.bulbagarden.net/upload/thumb/e/e6/GO_Professor_Willow.png/221px-GO_Professor_Willow.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Willow",
   "description": "Hij specialiseert zich op het gebied van Pokémon habitats en helpt ons opweg in Pokémon Go. Ook kan je bij hem overtollige Pokémon tegen candy ruilen. Omdat dit spel voor 6 jaar en ouder is zal ik hier niet uitleggen hoe hij dat doet.\n\n*Congratulations! You've caught your first Pokémon! You are such a talented Pokémon Trainer! What should I call you?*"
 }, {
-  "keys": ["professor rowan", "rowan"],
+  "keys": ["professor rowan", "rowan", "prof rowan"],
   "title": "Professor Rowan",
   "img": "https://cdn.bulbagarden.net/upload/thumb/a/a4/Diamond_Pearl_Rowan.png/140px-Diamond_Pearl_Rowan.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Rowan",
   "description": "De Pokémon Professor uit de Sinnow Region, wonend in Sandgem Town. Hij specialiseerd zich in Pokémon evolutie en hij gedraagt zich als een van de wijzere professoren. Het had mijn broer kunnen zijn!"
 }, {
-  "keys": ["professor juniper", "juniper"],
+  "keys": ["professor juniper", "juniper", "prof juniper"],
   "title": "Professor Juniper",
   "img": "https://cdn.bulbagarden.net/upload/thumb/c/c7/Black_White_Juniper.png/140px-Black_White_Juniper.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Juniper",
   "description": "De Pokémon Professor uit de Unova Region, wonend in Nuvema Town. Ze specialiseerd zich in het ontstaan van Pokémon en is een oude vriend van Professor Oak."
 }, {
-  "keys": ["professor sycamore", "sycamore"],
+  "keys": ["professor sycamore", "sycamore", "prof sycamore"],
   "title": "Professor Sycamore",
   "img": "https://cdn.bulbagarden.net/upload/thumb/8/81/XY_Professor_Sycamore.png/200px-XY_Professor_Sycamore.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Sycamore",
   "description": "De Pokémon Professor uit de Kalos Region, wonend in Lumiose City. Hij specialiseerd zich in Mega evolutie en de relatie die de Pokémon en de trainer daarbij hebben."
 }, {
-  "keys": ["professor kukui", "kukui"],
+  "keys": ["professor kukui", "kukui", "prof kukui"],
   "title": "Professor Kukui",
   "img": "https://cdn.bulbagarden.net/upload/thumb/e/ed/Sun_Moon_Professor_Kukui.png/253px-Sun_Moon_Professor_Kukui.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Kukui",
   "description": "De Pokémon Professor uit de Alola Region, wonend in de Hau'oli Outskirts. Hij specialiseerd zich de aanvallen van Pokémon en is oprichter van de Alola Pokémon League. Door zijn offensieve focus zou het zomaar Candela's broer kunnen zijn."
 }, {
-  "keys": ["professor ivy", "ivy"],
+  "keys": ["professor ivy", "ivy", "prof ivy"],
   "title": "Professor Kukui",
   "img": "https://cdn.bulbagarden.net/upload/thumb/d/d6/Professor_Ivy.png/295px-Professor_Ivy.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Ivy",
@@ -100,6 +100,24 @@
   "img": "https://cdn.bulbagarden.net/upload/thumb/0/03/USUM_Giovanni.png/258px-USUM_Giovanni.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Giovanni",
   "description": "Giovanni is de oprichter en baas van Team Rocket. Met zijn Persian aan zijn zijde voert hij allemaal snode plannen uit. Toch hebben we hem iets te danken, want zonder hem zou Mewtwo niet te vangen zijn!\n\n*I want rare Pokémon, not your pathetic excuses!*"
+}, {
+  "keys": ["lance", "champion lance"],
+  "title": "Champion Lance",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/f/f5/HeartGold_SoulSilver_Lance.png/220px-HeartGold_SoulSilver_Lance.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Lance",
+  "description": "Deze uitzonderlijke trainer is een van de Elite 4 in generatie 1 en 3, en de Champion in generatie 2 en 4. Met zijn draak type pokemon heeft hij zelfs gewonnen van Professor Kukui. Je herkent hem aan zijn cape, of de massa's fans die achter hem aanlopen."
+}, {
+  "keys": ["team magma"],
+  "title": "Giovanni",
+  "img": "http://vignette3.wikia.nocookie.net/pokemon/images/d/d9/Pokemon_ORAS_Team_Magma_Boss_Maxie.png/revision/latest?cb=20160114154016",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Team_Magma",
+  "description": "Dit zijn de bad guys van de hoenn region die onder leiding van Maxie proberen de landmassa van Hoenn te vergroten. Hiervoor proberen ze met de red orb controle te krijgen over Groudon. Als ze dit proberen blijkt echter dat Groudon een eigen wil heeft (goh) en dat ook zij de pineut zijn van de grote hitte en droogte die volgt."
+}, {
+  "keys": ["team aqua"],
+  "title": "Team Aqua",
+  "img": "http://vignette2.wikia.nocookie.net/pokemon/images/3/37/Pokemon_ORAS_Team_Aqua_Boss_Archie.png/revision/latest?cb=20160114153943",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Giovanni",
+  "description": "Dit zijn de bad guys van de hoenn region die onder leiding van Arcie proberen de wereld in water te vernietigen. Hiervoor proberen ze met de blue orb controle te krijgen over Kyogre. Als ze dit proberen blijkt echter dat Kyogre een eigen wil heeft (goh) en dat ook zij de pineut zijn van een wereld onder water."
 }, {
   "keys": ["mystic", "blanche", "team blauw", "team mystic"],
   "title": "Team Mystic",
@@ -293,7 +311,12 @@
   "url": "https://pokemongo.gamepress.gg/legacy-pokemon-list",
   "description": "Als movesets veranderen kan het gebeuren dat pokémon zogenaamde Legacy movesets krijgen. Dit betekend dat ze niet meer te verkrijgen zijn met behulp van TM's. Soms zijn legacy movesets erg goed, kijk dus goed uit als je deze veranderd. Een lijst met alle legacy moves is te vinden via bovenstaande link."
 }, {
-
+  "keys": ["migratie", "nest migratie", "migration", "nest migration"],
+  "title": "Nest Migratie",
+  "img": "http://www.friendstonga.com/images/clock.png",
+  "url": "https://poketimer.com/",
+  "description": "De nesten migreren elke twee weken in de nacht van donderdag op vrijdag om 02:00. Zie de link voor een timer voor deze migratie (en eventuele events)."
+}, {
 
 
   "keys": ["pokeball", "poke ball", "pokéball", "poké ball", "pokebal", "poke bal", "pokébal", "poké bal", "great ball", "great bal", "ultra ball", "ultra bal"],
@@ -334,7 +357,7 @@
 }, {
   "keys": ["lure", "lure module"],
   "title": "Lure Module",
-  "img": "https://fevgames.net/wp-content/uploads/2017/06/Item_0706.png",
+  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Lure-Modules.png",
   "url": "https://delftmystic.wordpress.com/items/",
   "description": "Deze premium items kan je gebruiken om een Pokéstop aantrekkelijk te maken voor Pokémon. Je zal op die manier een van de lokale pokémon elke 3 minuten bij de pokéstop zien verschijnen voor 30 minuten lang."
 }, {
@@ -358,7 +381,7 @@
 }, {
   "keys": ["master ball"],
   "title": "Master Ball",
-  "img": "https://bulbapedia.bulbagarden.net/wiki/Master_Ball",
+  "img": "https://cdn.bulbagarden.net/upload/2/21/SugimoriMasterBall.png",
   "url": "https://delftmystic.wordpress.com/items/",
   "description": "De beste bal die er is, hij mist nooit! Helaas is dit juweeltje nog niet beschikbaar in Pokémon go, en zullen we dus op dit moment nog ons best moeten doen om pokémon te vangen."
 }, {
