@@ -366,7 +366,7 @@ function messageEmbed(result, raid, id) {
   const endtime = raid.endtime ? raid.endtime : (result ? (result.dataValues.raidendtime ? result.dataValues.raidendtime : null) : null);
   const battletime = raid.battletime ? raid.battletime : (result ? (result.dataValues.raidbattletime ? result.dataValues.raidbattletime : null) : null);
   const team = raid.team ? raid.team : (result ? result.dataValues.team : null);
-  const joining = result ? (result.dataValues.joining ? result.dataValues.joining.split(", ") : null) : null;
+  const joining = result ? (result.dataValues.joining ? result.dataValues.joining.split(",") : null) : null;
 
   return new Discord.MessageEmbed()
     .setAuthor("Raid #" + id)
