@@ -62,8 +62,6 @@
 
 
 
-
-
   "keys": ["bloemen stop", "bloemen kunst", "flower art", "bloemenstop"],
   "title": "Pokestop: Flower Art",
   "img": "https://www.models-resource.com/resources/big_icons/18/17601.png",
@@ -82,8 +80,6 @@
   "url": "https://goo.gl/maps/tFcavkm37Dm",
   "description": "Een van de betere stops in delft, en ook waar onze vriend TM woont"
 }, {
-
-
 
 
 
@@ -112,7 +108,7 @@
   "description": "Gym Leader van Pewter City, een rock pokémon gym. Na de gymbattle met Ash werd hij door hem geinspireert en koos ervoor om met hem mee op reis te gaan. Hij heeft ook een hele tijd bij Professor Ivy verbleven, niemand weet precies waarom...\n\n*I'll use my frying pan, as a drying pan!*"
 }, {
   "keys": ["professor oak", "oak", "prof oak"],
-  "title": "Professor Oak",
+  "title": "Professor Samuel Oak",
   "img": "https://cdn.bulbagarden.net/upload/8/84/Professor_Oak_XY.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Oak",
   "description": "De Pokémon Professor uit de Kanto Region, en ook de eerste professor waar Ash in zijn geboortestad Pallet Town ooit mee te maken krijgt. Hij specialiseerd zich in relaties tussen Pokémon en mensen.\n\n*Hey! My name is Professor Oak, and i've known you from since you where born! Remind me again, are you a boy, or are you a girl?*"
@@ -229,7 +225,7 @@
   "title": "Blaine",
   "img": "https://cdn.bulbagarden.net/upload/thumb/2/22/HeartGold_SoulSilver_Blaine.png/150px-HeartGold_SoulSilver_Blaine.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Blaine",
-  "description": "Gym leader van de vuur pokémon gym van Cinnabar Island. Zijn gym is in de vulkaan die ervoor zorgde dan Cinnabar Island nu geen stad meer is. Hij is een groot fan van Quizzen, dus om hem te kunnen bereiken moet je eerst een aantal raadsels oplossen. Hij werd geinspireert om vuur Pokémon te gaan trainen omdat hij ooit uit een bergketen gered is door Moltres."
+  "description": "Gym leader van de vuur pokémon gym van Cinnabar Island. Zijn gym is in de vulkaan die ervoor zorgde dan Cinnabar Island nu geen stad meer is. Hij is een groot fan van Quizzen, dus om hem te kunnen bereiken moet je eerst een aantal raadsels oplossen. Hij werd geinspireert om vuur Pokémon te gaan trainen omdat hij ooit uit een bergketen gered is door Moltres.\n\n*HA! You better have burn heal!*"
 }, {
   "keys": ["lt. surge", "lt surge", "lieutenant surge"],
   "title": "Lt. Surge",
@@ -241,7 +237,7 @@
   "title": "Sabrina",
   "img": "https://cdn.bulbagarden.net/upload/thumb/6/65/HeartGold_SoulSilver_Sabrina.png/185px-HeartGold_SoulSilver_Sabrina.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Sabrina",
-  "description": "Met flinke voorsprong de engste gymleader die er te vinden is. Ze leidt een psychic gym in Saffron City, waar ze lastig te verslaan is omdat ze telephatisch met haar Pokémon kan communiceren. Ooit was er een concurerende, fighting gym in Saffron City, maar door haar kwaliteiten kon ze deze vrij makkelijk van hun gym status ontzeggen. Zorg dat je niet van haar verliest in een gym battle...."
+  "description": "Met flinke voorsprong de engste gymleader die er te vinden is. Ze leidt een psychic gym in Saffron City, waar ze lastig te verslaan is omdat ze telephatisch met haar Pokémon kan communiceren. Ooit was er een concurerende fighting gym in Saffron City, maar door haar kwaliteiten kon ze deze vrij makkelijk van hun gym status ontzeggen. Zorg dat je niet van haar verliest in een gym battle...."
 }, {
   "keys": ["blue", "blue oak"],
   "title": "Blue Oak",
@@ -255,7 +251,18 @@
   "url": "https://bulbapedia.bulbagarden.net/wiki/Red_(game)",
   "description": "In generatie 2 is dit de Champion uit Pallet Town en degene die Team Rocket verslagen heeft. Omdat hij ook nog eens nooit iets zegt is het vermoeden dat dit de speler van generatie 1 is. Hij is de laatste uitdaging voor generatie 2 spelers, die hem bovenop Mt. Silver kunnen uitdagen. Later doet hij mee aan de Champions Tournament in Unova, en leidt hij samen met Blue Alola's Battle Tree."
 }, {
-
+  "keys": ["joy", "nurse joy"],
+  "title": "Nurse Joy",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/8/8e/Nurse_Joy_OS.png/125px-Nurse_Joy_OS.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Nurse_Joy",
+  "description": "Geen potions meer maar wel gewonde pokémon? Geen probleem, een van de duizenden Nurse Joy staat voor je klaar om jouw partners te genezen. Helaas heeft ze haar weg naar Pokémon Go nog niet gevonden, we zouden haar goed kunnen gebruiken.\n\n*We hope to see you again soon*"
+}, {
+  "keys": ["jenny", "officer jenny"],
+  "title": "Officer Jenny",
+  "img": "https://orig00.deviantart.net/4801/f/2015/259/8/1/officer_jenny_png_by_kaijuboy455-d99udid.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Officer_Jenny",
+  "description": "Gaat er ergens iets fout? Op Jenny kan je rekenen! Net als Joy zijn er duizenden Jenny die alleen door Brock uit elkaar gehaald kunnen worden. Ze gebruikt Growlithe, Arcanine en Trump ehhh ik bedoel Gumshoos als partner."
+}, {
 
 
 
@@ -309,6 +316,19 @@
 }, {
 
 
+
+  "keys": ["silph", "silph co", "silph co."],
+  "title": "Pokémon TV",
+  "img": "http://images.uncyc.org/commons/thumb/8/8c/Saffron.png/600px-Saffron.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Silph_Co.",
+  "description": "Kanto is de regio van technologische vooruitgan, met the Silph Company in Saffron City als middenpunt. Meerdere inovatieve producten komen hier vandaan, zoals de Silph Scope, Pokéballs (waaronder de Master Ball), Medicijnen en TM's. Het is dan ook niet gek dat het hoofdkwartier meerdere keren het target van Team Rocket is geweest."
+}, {
+  "keys": ["pokemon tv", "pokemon kijken", "watch pokemon", "kijk pokemon", "pokémon tv", "pokémon kijken", "watch pokémon", "kijk pokémon", "beste serie", "beste tv serie", "best show", "best tv show"],
+  "title": "Pokémon TV",
+  "img": "https://lh3.googleusercontent.com/Yz6MtHKNPF6SxlQ8sJ4e5tcd1v1II4A1ZT_dD_UUpeeDxVCxaqwPkx4SCHZrheWnFw=w300",
+  "url": "https://www.pokemon.com/us/pokemon-episodes/pokemon-tv-seasons/",
+  "description": "Heb je wat vrije tijd en wil je genieten van een kwaliteit show? Waarom niet een paar Pokémon afleveringen? Er zijn er inmiddels zoveel dat ik met vrij grote zekerheid durf te zeggen dat jij ze nog niet allemaal gezien hebt. Pak een snack erbij, en kies een leuke uit!"
+}, {
   "keys": ["magnet train"],
   "title": "Magnet Train",
   "img": "http://pokedream.com/games/goldsilver/walkthrough/mtrain.gif",
@@ -459,7 +479,7 @@
   "url": "https://www.pokemon.com/us/pokedex/",
   "description": "Op de Pokédex staan alle Pokémon opgeslagen, inclusief een verhaaltje en wat stats. Kijk hier vooral eens rond als je je kennis wat wil uitbreiden of opfrissen."
 }, {
-  "keys": ["master ball"],
+  "keys": ["master ball", "masterball"],
   "title": "Master Ball",
   "img": "https://cdn.bulbagarden.net/upload/2/21/SugimoriMasterBall.png",
   "url": "https://delftmystic.wordpress.com/items/",

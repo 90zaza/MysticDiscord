@@ -26,6 +26,7 @@ const ChannelRolesResponse = require('./models/channel-roles-response');
 const TopResponse = require('./models/top-response');
 const DateResponse = require('./models/date-response');
 const ThemeResponse = require('./models/thema-response');
+const JokeOfTheDayResponse = require('./models/jokeoftheday-response')
 
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
@@ -90,6 +91,7 @@ client.on('message', async (msg) => {
   new MusicResponse(msg);
   new GambleResponse(msg);
   new ThemeResponse(msg);
+  new JokeOfTheDayResponse(msg);
 
   if (msgText.split(' ')[0] == "date" || msgText.split(' ')[0] == "datum") {
     msg.content = `!${msg.content.substr(msg.content.indexOf(" ") + 1)}`;
