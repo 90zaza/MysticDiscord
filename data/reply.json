@@ -315,8 +315,18 @@
   "description": "De alola regio bestaat uit 4 natuurlijke, en een door mensen gemaakt eiland, en is een populair resort voor touristen. Door het klimaat hebben sommige Pokémon zich anders ontwikkeld dan dezelfde soorten op het vasteland. Dit is ook de plek waar de Guardian Deities vochten tegen Solgaleo en Lunala."
 }, {
 
-
-
+  "keys": ["lake of rage"],
+  "title": "Lake of Rage",
+  "img": "http://pwo-wiki.info/images/thumb/c/c4/Lake_Of_Rage.png/350px-Lake_Of_Rage.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Lake_of_Rage",
+  "description": "Ook wel bekend als het Gyarados meer, gelegen in Johto ten noorden van Mahogany Town. Door geheime expirementen van Team Rocket waarbij ze radio golven gebruikte om Pokémon sterker te maken evolueerde een Magikarp in een rode (shiny) Gyarados. Voor veel spelers is dit de enige shiny die ze vangen."
+}, {
+  "keys": ["pokecenter", "pokécenter", "poke center", "poké center", "pokemon center", "pokémon center"],
+  "title": "Pokémon Center",
+  "img": "http://orig00.deviantart.net/3410/f/2015/135/c/9/c90336fa14688ac4940e66b88299ccad-d8tffwo.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_Center",
+  "description": "Pokémon gewond? Geen paniek! Nurse Joy fixt ze hier in no time op. Hoe hier precies voor betaald wordt is niet helemaal duidelijk, maar ze laten zich door niets tegenhouden om jouw pokemon weer op te lappen. Zelfs bij een stroom uitval staan de backup Pikachu standby! Daarnaast weten ze ook nog eens wanneer je jarig bent!"
+}, {
   "keys": ["silph", "silph co", "silph co."],
   "title": "Pokémon TV",
   "img": "http://images.uncyc.org/commons/thumb/8/8c/Saffron.png/600px-Saffron.png",
