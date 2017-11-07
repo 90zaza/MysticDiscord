@@ -1,4 +1,92 @@
 [{
+  "keys": ["pokeball", "poke ball", "pokéball", "poké ball", "pokebal", "poke bal", "pokébal", "poké bal", "great ball", "great bal", "ultra ball", "ultra bal"],
+  "title": "Poké Ball",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/a/a6/SugimoriPokeBall.png/600px-SugimoriPokeBall.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Poké balls zijn de tools die je gebruikt om pokémon te vangen. Ze komen in verschillende vormen en maten, elk met een eigen vangkans (zoals hieronder tussen haakjes aangegeven). Op dit moment zijn bekend:\n\n**Poké Ball** (x1)\n**Great Ball** (x1.5)\n**Ultra Ball** (x2)\n**Premier Ball** (x1)"
+}, {
+  "keys": ["potion", "super potion", "max potion", "hyper potion", "revive", "max revive", "healing", "healing items", "heal items"],
+  "title": "Healing Items",
+  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/08/Potion-Pokemon-Go.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "In Pokemon go zijn verschillende healing items te vinden. De potions zijn voor het herstellen van Pokémon die niet gefaint zijn, waar de revives bedoeld zijn om gefainte Pokémon weer terug te brengen. De effecten zijn:\n\n**Potion**: +20HP\n**Super Potion**: +50 HP\n**Hyper Potion**: +200HP\n**Max Potion**: +∞HP\n**Revive**: Herstelt tot de helft\n**Max Revive**: Herstelt volledig"
+}, {
+  "keys": ["evolution items", "evolutie items", "sun stone", "up grade", "up-grade", "metal coat", "kings rock", "dragon scale"],
+  "title": "Evolution Items",
+  "img": "http://pokemongo.gr/wp-content/uploads/2017/02/Bag_Sun_Stone_Sprite-300x296.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Sommige Pokémon hebben naast snoepjes ook speciale items nodig om te evolueren. Hier is een lijst:\n\n**Sun Stone**:\n  - Gloom -> Bellosom\n  - Sunkern -> Sunflora\n**Metal Coat**:\n  - Onix -> Steelix\n  - Scyther -> Scizor\n**Kings Rock**:\n  - Slowpoke -> Slowking\n  - Poliwhirl -> Politoed\n**Up-Grade**:\n  - Porygon -> Porygon 2\n**Dragon Scale**:\n  - Seadra -> Kingdra"
+}, {
+  "keys": ["berries", "razz berry", "pinap berry", "golden razz berry", "nanab berry"],
+  "title": "Berries",
+  "img": "https://fevgames.net/wp-content/uploads/2017/06/Item_0706.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Naast het gebruiken van de goede Poké Ball, is het kiezen van een goede berry ook essentieel voor het vangen van een pokémon. Daarnaast kun je berries ook geven aan pokemon in gyms om hun motivatie weer wat op te krikken. Er zijn verschillende berries:\n\n**Nanab berry**: De pokémon beweegt minder\n**Pinap Berry**: Bij vangen krijg je 2x zoveel candy\n**Razz Berry**: vergroot de vangkans met factor 1.5\n**Golden Razz Berry**: vergroot de vangkans met factor 2.5, en geeft ook de volledige motivatie terug aan een gym pokemon"
+}, {
+  "keys": ["insense", "insence", "incence", "incense"],
+  "title": "Incense",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/4/43/GO_Incense.png/100px-GO_Incense.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Deze 'privé lure' is een soort parfum waar lokale pokémon op afkomen. Een insence spawnt elke 5 minuten, of elke 200 meter (max 1 per minuut) een pokémon. Dit betekend dat de optimale snelheid 12 km/h is."
+}, {
+  "keys": ["incubator"],
+  "title": "Incubators",
+  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Pokemon-Go-Egg1.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Met deze apparaten kan je je eitjes uit laten komen. Je hebt standaard een incubator met een oneindig aantal uses, maar als premium items kan je ook incubators kopen met 3 uses. Tijdens events zijn soms ook de super incubators beschikbaar, welke ook 3 uses hebben maar eieren 1.5x zo snel uitlopen."
+}, {
+  "keys": ["lure", "lure module"],
+  "title": "Lure Module",
+  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Lure-Modules.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Deze premium items kan je gebruiken om een Pokéstop aantrekkelijk te maken voor Pokémon. Je zal op die manier een van de lokale pokémon elke 3 minuten bij de pokéstop zien verschijnen voor 30 minuten lang."
+}, {
+  "keys": ["lucky egg"],
+  "title": "Lucky Egg",
+  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Lucky-Eggs.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "In het spel omschreven als 'een ei gevuld met vrolijkheid', en dat is ook zo! Met een van deze actief ontvang je 30 minuten lang dubbel xp op elke actie die je uitvoert!"
+}, {
+  "keys": ["raid pass"],
+  "title": "Raid Pass",
+  "img": "https://pokemongohub.net/wp-content/uploads/2017/06/normal-raid-pass-150x150.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Met een Raid Pass kan je meedoen met het verslaan van een Raid Boss voor items en de kans hem te vangen. Elke dag kan je er een uit een gymstop krijgen, zolang je er geen in je inventory hebt. Je kan ook premium passen kopen, daarvan mag je er meerdere hebben."
+}, {
+  "keys": ["tm", "fast tm", "charge tm"],
+  "title": "TM",
+  "img": "https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Charged_TM.png/revision/latest?cb=20170620212509",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Soms heeft je Pokémon niet de beste moveset. Deze kun je dan afleren met een TM. Voor het leren van een andere charge move heb je een Charge TM nodig, en voor een nieuwe fast move een Fast TM. Beide zijn alleen verkrijgbaar uit raids."
+}, {
+
+
+
+
+
+  "keys": ["bloemen stop", "bloemen kunst", "flower art", "bloemenstop"],
+  "title": "Pokestop: Flower Art",
+  "img": "https://www.models-resource.com/resources/big_icons/18/17601.png",
+  "url": "https://goo.gl/maps/xkRgUtLm8y42",
+  "description": "De Bloemen Kunst pokestop (bij de aldi), een van de beste pokéstops in delft."
+}, {
+  "keys": ["inholland", "hogeschool inholland"],
+  "title": "Pokestop: Inholland",
+  "img": "https://www.models-resource.com/resources/big_icons/18/17601.png",
+  "url": "https://goo.gl/maps/3ZbYAjcb36z",
+  "description": "De Hogeschool Inholland pokestop (op de campus), een van de beste pokéstops in delft."
+}, {
+  "keys": ["colorful balcony poetry", "colorful balcony", "colourful balcony", "colourful balcony poetry"],
+  "title": "Pokestop: Colorful Balcony Poetry",
+  "img": "https://www.models-resource.com/resources/big_icons/18/17601.png",
+  "url": "https://goo.gl/maps/tFcavkm37Dm",
+  "description": "Een van de betere stops in delft, en ook waar onze vriend TM woont"
+}, {
+
+
+
+
+
   "keys": ["ash", "ash ketchum "],
   "title": "Ash Ketchum",
   "img": "https://vignette.wikia.nocookie.net/uncyclopedia/images/0/0f/Ash_Ketchum.png/revision/latest?cb=20150218235142",
@@ -137,6 +225,37 @@
   "url": "http://www.directindustry.com/industrial-manufacturer/mobile-waste-container-155766.html",
   "description": "*Hey! The name's Spark- the leader of Team Instinct. Pokémon are creatures with excellent intuition. I bet the secret to their intuition is related to how they're hatched. Come on and join my team! You never lose when you trust your instincts!*\n\nVertrouwen op je intuitie? We leven toch zeker niet meer in de steentijd? En wat hebben die eieren daar nu weer mee te maken? Met dit soort uitspraken lijkt het soms alsof je zelf uit een ei bent gekomen..."
 }, {
+  "keys": ["blaine", "blayne"],
+  "title": "Blaine",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/2/22/HeartGold_SoulSilver_Blaine.png/150px-HeartGold_SoulSilver_Blaine.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Blaine",
+  "description": "Gym leader van de vuur pokémon gym van Cinnabar Island. Zijn gym is in de vulkaan die ervoor zorgde dan Cinnabar Island nu geen stad meer is. Hij is een groot fan van Quizzen, dus om hem te kunnen bereiken moet je eerst een aantal raadsels oplossen. Hij werd geinspireert om vuur Pokémon te gaan trainen omdat hij ooit uit een bergketen gered is door Moltres."
+}, {
+  "keys": ["lt. surge", "lt surge", "lieutenant surge"],
+  "title": "Lt. Surge",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/8/8f/HeartGold_SoulSilver_Lt_Surge.png/185px-HeartGold_SoulSilver_Lt_Surge.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Lt._Surge",
+  "description": "Gym leader van de electrische pokémon gym van Vermilion City. Deze trainer is een oud amerikaanse soldaad (en piloot) die vocht tijdens de oorlog. Tijdens deze oorlog meerdere keren gered door Electrische Pokémon. Omdat hij nog steeds een beetje paranoide is, heeft hij vallen aangelegd in zijn gym."
+}, {
+  "keys": ["sabrina"],
+  "title": "Sabrina",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/6/65/HeartGold_SoulSilver_Sabrina.png/185px-HeartGold_SoulSilver_Sabrina.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Sabrina",
+  "description": "Met flinke voorsprong de engste gymleader die er te vinden is. Ze leidt een psychic gym in Saffron City, waar ze lastig te verslaan is omdat ze telephatisch met haar Pokémon kan communiceren. Ooit was er een concurerende, fighting gym in Saffron City, maar door haar kwaliteiten kon ze deze vrij makkelijk van hun gym status ontzeggen. Zorg dat je niet van haar verliest in een gym battle...."
+}, {
+  "keys": ["blue", "blue oak"],
+  "title": "Blue Oak",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/b/be/Sun_Moon_Blue.png/165px-Sun_Moon_Blue.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Blue_(game)",
+  "description": "Deze rivaal van de Kanto Regio is de kleinzoon van Professor Oak (duidelijke verwijzing naar Gary), en net iets eerder Champion dan jij. Nadat je hem echter van zijn troon hebt verstoten neemt hij Giovanni's plek als gym leader van Viridian City over. Nog later is hij, samen met Red, een van de leiders van Alola's Battle Tree. Hij specialiseerd zich niet in een type Pokémon, maar gebruikt zijn favoriete."
+}, {
+  "keys": ["red"],
+  "title": "Red",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/f/fd/Sun_Moon_Red.png/155px-Sun_Moon_Red.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Red_(game)",
+  "description": "In generatie 2 is dit de Champion uit Pallet Town en degene die Team Rocket verslagen heeft. Omdat hij ook nog eens nooit iets zegt is het vermoeden dat dit de speler van generatie 1 is. Hij is de laatste uitdaging voor generatie 2 spelers, die hem bovenop Mt. Silver kunnen uitdagen. Later doet hij mee aan de Champions Tournament in Unova, en leidt hij samen met Blue Alola's Battle Tree."
+}, {
+
 
 
 
@@ -190,7 +309,12 @@
 }, {
 
 
-
+  "keys": ["magnet train"],
+  "title": "Magnet Train",
+  "img": "http://pokedream.com/games/goldsilver/walkthrough/mtrain.gif",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Magnet_Train",
+  "description": "De generatie 2 spellen vonden plaats in zowel de Kanto, als Johto regio. Omdat heen en weer vliegen geen optie was is er tussen Goldenrod en Saffron City een magnet rail aangelegd waar een magneet trein overheen kan sjezen. Op die manier kan je toch snel (ruim 550 km/h) heen en weer."
+}, {
   "keys": ["gs ball"],
   "title": "GS ball",
   "img": "https://vignette.wikia.nocookie.net/es.pokemon/images/0/08/GS_Ball_%28Ilustraci%C3%B3n%29.png/revision/latest?cb=20120531192727",
@@ -335,93 +459,9 @@
   "url": "https://www.pokemon.com/us/pokedex/",
   "description": "Op de Pokédex staan alle Pokémon opgeslagen, inclusief een verhaaltje en wat stats. Kijk hier vooral eens rond als je je kennis wat wil uitbreiden of opfrissen."
 }, {
-
-
-  "keys": ["pokeball", "poke ball", "pokéball", "poké ball", "pokebal", "poke bal", "pokébal", "poké bal", "great ball", "great bal", "ultra ball", "ultra bal"],
-  "title": "Poké Ball",
-  "img": "https://cdn.bulbagarden.net/upload/thumb/a/a6/SugimoriPokeBall.png/600px-SugimoriPokeBall.png",
-  "url": "https://delftmystic.wordpress.com/items/",
-  "description": "Poké balls zijn de tools die je gebruikt om pokémon te vangen. Ze komen in verschillende vormen en maten, elk met een eigen vangkans (zoals hieronder tussen haakjes aangegeven). Op dit moment zijn bekend:\n\n**Poké Ball** (x1)\n**Great Ball** (x1.5)\n**Ultra Ball** (x2)\n**Premier Ball** (x1)"
-}, {
-  "keys": ["potion", "super potion", "max potion", "hyper potion", "revive", "max revive", "healing", "healing items", "heal items"],
-  "title": "Healing Items",
-  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/08/Potion-Pokemon-Go.png",
-  "url": "https://delftmystic.wordpress.com/items/",
-  "description": "In Pokemon go zijn verschillende healing items te vinden. De potions zijn voor het herstellen van Pokémon die niet gefaint zijn, waar de revives bedoeld zijn om gefainte Pokémon weer terug te brengen. De effecten zijn:\n\n**Potion**: +20HP\n**Super Potion**: +50 HP\n**Hyper Potion**: +200HP\n**Max Potion**: +∞HP\n**Revive**: Herstelt tot de helft\n**Max Revive**: Herstelt volledig"
-}, {
-  "keys": ["evolution items", "evolutie items", "sun stone", "up grade", "up-grade", "metal coat", "kings rock", "dragon scale"],
-  "title": "Evolution Items",
-  "img": "http://pokemongo.gr/wp-content/uploads/2017/02/Bag_Sun_Stone_Sprite-300x296.png",
-  "url": "https://delftmystic.wordpress.com/items/",
-  "description": "Sommige Pokémon hebben naast snoepjes ook speciale items nodig om te evolueren. Hier is een lijst:\n\n**Sun Stone**:\n  - Gloom -> Bellosom\n  - Sunkern -> Sunflora\n**Metal Coat**:\n  - Onix -> Steelix\n  - Scyther -> Scizor\n**Kings Rock**:\n  - Slowpoke -> Slowking\n  - Poliwhirl -> Politoed\n**Up-Grade**:\n  - Porygon -> Porygon 2\n**Dragon Scale**:\n  - Seadra -> Kingdra"
-}, {
-  "keys": ["berries", "razz berry", "pinap berry", "golden razz berry", "nanab berry"],
-  "title": "Berries",
-  "img": "https://fevgames.net/wp-content/uploads/2017/06/Item_0706.png",
-  "url": "https://delftmystic.wordpress.com/items/",
-  "description": "Naast het gebruiken van de goede Poké Ball, is het kiezen van een goede berry ook essentieel voor het vangen van een pokémon. Daarnaast kun je berries ook geven aan pokemon in gyms om hun motivatie weer wat op te krikken. Er zijn verschillende berries:\n\n**Nanab berry**: De pokémon beweegt minder\n**Pinap Berry**: Bij vangen krijg je 2x zoveel candy\n**Razz Berry**: vergroot de vangkans met factor 1.5\n**Golden Razz Berry**: vergroot de vangkans met factor 2.5, en geeft ook de volledige motivatie terug aan een gym pokemon"
-}, {
-  "keys": ["insense", "insence", "incence", "incense"],
-  "title": "Incense",
-  "img": "https://cdn.bulbagarden.net/upload/thumb/4/43/GO_Incense.png/100px-GO_Incense.png",
-  "url": "https://delftmystic.wordpress.com/items/",
-  "description": "Deze 'privé lure' is een soort parfum waar lokale pokémon op afkomen. Een insence spawnt elke 5 minuten, of elke 200 meter (max 1 per minuut) een pokémon. Dit betekend dat de optimale snelheid 12 km/h is."
-}, {
-  "keys": ["incubator"],
-  "title": "Incubators",
-  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Pokemon-Go-Egg1.png",
-  "url": "https://delftmystic.wordpress.com/items/",
-  "description": "Met deze apparaten kan je je eitjes uit laten komen. Je hebt standaard een incubator met een oneindig aantal uses, maar als premium items kan je ook incubators kopen met 3 uses. Tijdens events zijn soms ook de super incubators beschikbaar, welke ook 3 uses hebben maar eieren 1.5x zo snel uitlopen."
-}, {
-  "keys": ["lure", "lure module"],
-  "title": "Lure Module",
-  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Lure-Modules.png",
-  "url": "https://delftmystic.wordpress.com/items/",
-  "description": "Deze premium items kan je gebruiken om een Pokéstop aantrekkelijk te maken voor Pokémon. Je zal op die manier een van de lokale pokémon elke 3 minuten bij de pokéstop zien verschijnen voor 30 minuten lang."
-}, {
-  "keys": ["lucky egg"],
-  "title": "Lucky Egg",
-  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Lucky-Eggs.png",
-  "url": "https://delftmystic.wordpress.com/items/",
-  "description": "In het spel omschreven als 'een ei gevuld met vrolijkheid', en dat is ook zo! Met een van deze actief ontvang je 30 minuten lang dubbel xp op elke actie die je uitvoert!"
-}, {
-  "keys": ["raid pass"],
-  "title": "Raid Pass",
-  "img": "https://pokemongohub.net/wp-content/uploads/2017/06/normal-raid-pass-150x150.png",
-  "url": "https://delftmystic.wordpress.com/items/",
-  "description": "Met een Raid Pass kan je meedoen met het verslaan van een Raid Boss voor items en de kans hem te vangen. Elke dag kan je er een uit een gymstop krijgen, zolang je er geen in je inventory hebt. Je kan ook premium passen kopen, daarvan mag je er meerdere hebben."
-}, {
-  "keys": ["tm", "fast tm", "charge tm"],
-  "title": "TM",
-  "img": "https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Charged_TM.png/revision/latest?cb=20170620212509",
-  "url": "https://delftmystic.wordpress.com/items/",
-  "description": "Soms heeft je Pokémon niet de beste moveset. Deze kun je dan afleren met een TM. Voor het leren van een andere charge move heb je een Charge TM nodig, en voor een nieuwe fast move een Fast TM. Beide zijn alleen verkrijgbaar uit raids."
-}, {
   "keys": ["master ball"],
   "title": "Master Ball",
   "img": "https://cdn.bulbagarden.net/upload/2/21/SugimoriMasterBall.png",
   "url": "https://delftmystic.wordpress.com/items/",
   "description": "De beste bal die er is, hij mist nooit! Helaas is dit juweeltje nog niet beschikbaar in Pokémon go, en zullen we dus op dit moment nog ons best moeten doen om pokémon te vangen."
-}, {
-
-
-
-
-  "keys": ["bloemen stop", "bloemen kunst", "flower art", "bloemenstop"],
-  "title": "Pokestop: Flower Art",
-  "img": "https://www.models-resource.com/resources/big_icons/18/17601.png",
-  "url": "https://goo.gl/maps/xkRgUtLm8y42",
-  "description": "De Bloemen Kunst pokestop (bij de aldi), een van de beste pokéstops in delft."
-}, {
-  "keys": ["inholland", "hogeschool inholland"],
-  "title": "Pokestop: Inholland",
-  "img": "https://www.models-resource.com/resources/big_icons/18/17601.png",
-  "url": "https://goo.gl/maps/3ZbYAjcb36z",
-  "description": "De Hogeschool Inholland pokestop (op de campus), een van de beste pokéstops in delft."
-}, {
-  "keys": ["colorful balcony poetry", "colorful balcony", "colourful balcony", "colourful balcony poetry"],
-  "title": "Pokestop: Colorful Balcony Poetry",
-  "img": "https://www.models-resource.com/resources/big_icons/18/17601.png",
-  "url": "https://goo.gl/maps/tFcavkm37Dm",
-  "description": "Een van de betere stops in delft, en ook waar onze vriend TM woont"
 }]
