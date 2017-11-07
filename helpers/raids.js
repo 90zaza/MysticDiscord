@@ -110,13 +110,6 @@ exports.scan = async function (msg) {
     // update
     else if (/^\d+/.test(message.message.content)) {
       updateRaid(message, message.message.content.match(/(^\d+)/)[1]);
-      setTimeout(() => {
-        joinRaid(message, message.message.content.match(/(^\d+)/)[1], message.message.author);
-      }, 500);
-      setTimeout(() => {
-        leaveRaid(message, message.message.content.match(/(^\d+)/)[1], message.message.author);
-      }, 1000);
-
     }
     // new raid
     else if (/^[a-zA-Z]+/.test(message.message.content)) {
@@ -130,15 +123,11 @@ exports.scan = async function (msg) {
 
 // scan the reaction of the raid message
 exports.messageReactionAdd = async function (messageReaction, user) {
-  const mysticemoji = messageReaction.message.guild.emojis.find("name", "mystic");
-  const instinctemoji = messageReaction.message.guild.emojis.find("name", "instinct");
-  const valoremoji = messageReaction.message.guild.emojis.find("name", "valor");
-
   // remove reaction
   messageReaction.remove(user);
 
   raids.findOne({ where: { "messageid": messageReaction.message.id } })
-    .then(result => {
+    .then(async result => {
       if (result != null) {
         const raidschannel = messageReaction.message.client.channels.find("name", "raids");
         const id = result.dataValues.idraids;
@@ -153,14 +142,11 @@ exports.messageReactionAdd = async function (messageReaction, user) {
           const role = messageReaction.message.member.guild.roles.find("name", id.toString());
           messageReaction.message.member.guild.member(user).removeRole(role);
         } else if (messageReaction.emoji.name == "mystic") {
-          raidschannel.send(`Raid ${id}: ${mysticemoji}`);
-          messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("mystic")));
+          await updateRaidTeam(messageReaction.message, raidschannel, "mystic");
         } else if (messageReaction.emoji.name == "valor") {
-          raidschannel.send(`Raid ${id}: ${valoremoji}`);
-          messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("valor")));
+          await updateRaidTeam(messageReaction.message, raidschannel, "valor");
         } else if (messageReaction.emoji.name == "instinct") {
-          raidschannel.send(`Raid ${id}: ${instinctemoji}`);
-          messageReaction.message.edit(messageReaction.message.embeds[0].setColor(embedColor("instinct")));
+          await updateRaidTeam(messageReaction.message, raidschannel, "instinct");
         }
       }
     })
@@ -237,6 +223,19 @@ async function updateRaid(message, id) {
         })
         .catch(console.error);
     })
+    .catch(console.error);
+}
+
+async function updateRaidTeam(message, raidschannel, color) {
+  const emoji = message.guild.emojis.find("name", color);
+  // notify team change
+  raidschannel.send(`Raid ${message.id}: ${emoji}`);
+  // edit color of message
+  message.edit(message.embeds[0].setColor(embedColor(color)));
+  // update color of raid in database
+  raids.update(
+    { team: color },
+    { where: { messageid: message.id } })
     .catch(console.error);
 }
 
@@ -369,15 +368,17 @@ function messageEmbed(result, raid, id) {
   const gym = raid.gym ? raid.gym : (result ? gyms.find(gym => gym.name == result.dataValues.raidgym) : null);
   const endtime = raid.endtime ? raid.endtime : (result ? (result.dataValues.raidendtime ? result.dataValues.raidendtime : null) : null);
   const battletime = raid.battletime ? raid.battletime : (result ? (result.dataValues.raidbattletime ? result.dataValues.raidbattletime : null) : null);
+  const team = raid.team ? raid.team : (result ? result.dataValues.team : null);
+  const joining = result ? (result.dataValues.joining ? result.dataValues.joining.split(", ") : null) : null;
 
   return new Discord.MessageEmbed()
     .setAuthor("Raid #" + id)
-    .setColor(embedColor(raid.team))
+    .setColor(embedColor(team))
     .setTitle(`${pokemon.name}: ${gym ? gym.name : "Gym to be added"}`)
     .setThumbnail(`https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`)
     .addField("End time", `${endtime ? endtime : "to be added"}`, true)
     .addField("Battle time", `${battletime ? battletime : "to be added"}`, true)
-    .addField(`Joining (lvl 30 players needed: ~${pokemon.recplayers})`, "No trainers interested yet")
+    .addField(`Joining (lvl 30 players needed: ~${pokemon.recplayers})`, joining ? joining.join("\n") : "No trainers interested yet")
     .setURL(gym ? gym.url : '');
 }
 
