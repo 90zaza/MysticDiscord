@@ -59,6 +59,12 @@
   "url": "https://delftmystic.wordpress.com/items/",
   "description": "Soms heeft je Pokémon niet de beste moveset. Deze kun je dan afleren met een TM. Voor het leren van een andere charge move heb je een Charge TM nodig, en voor een nieuwe fast move een Fast TM. Beide zijn alleen verkrijgbaar uit raids."
 }, {
+  "keys": ["rare candy", "rare candie"],
+  "title": "Rare Candy",
+  "img": "https://fevgames.net/wp-content/uploads/2017/06/Item_1301.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Wil je een pokémon level uppen, maar heb je candie er niet voor? Geen paniek! Met dit uit raids te verkrijgen item kun je candies krijgen van welke pokémon je maar wil. 1 rare candy is om te zetten in een candy naar keuze, maar het zijn zeldzame items. Gebruik ze dus voorzichtig!"
+}, {
 
 
 
@@ -323,6 +329,42 @@
 
 
 
+  "keys": ["is pokemon go online", "online", "offline", "pokemon online", "pokemon go online"],
+  "title": "Is Pokémon Go online?",
+  "img": "http://www.blackenterprise.com/wp-content/blogs.dir/1/files/2016/03/wireless-signal.png",
+  "url": "http://poketimer.com/",
+  "description": "De downtime van Pokémon Go is duidelijk minder dan het vroeger was, maar af en toe komt het nog wel eens voor (vooral voor PTC gebruikers). Kijk via deze site of er dingen aan de hand zijn of dat het probleem bij jou ligt."
+}, {
+  "keys": ["blog", "niantic blog"],
+  "title": "Niantic's Pokémon Go Blog",
+  "img": "http://pokemongolive.com/img/global/pgo_logo.png",
+  "url": "http://pokemongolive.com/en/post/",
+  "description": "Niantic communiceert niet al te veel, maar als ze iets aankondigen staat het vaak hier. Hou eventueel ook hun twitter (of instagram) in de gaten."
+}, {
+  "keys": ["twitter", "niantic twitter"],
+  "title": "Niantic's Twitter",
+  "img": "https://abs.twimg.com/icons/apple-touch-icon-192x192.png",
+  "url": "https://twitter.com/pokemongoapp",
+  "description": "Naast Niantic's blog, gebruiken ze soms ook twitter om te communiceren. Volg ze via deze om op de hoogte te blijven van de nieuwste Pokémon Go updates!"
+}, {
+  "keys": ["instagram", "niantic instagram"],
+  "title": "Niantic Instagram",
+  "img": "https://lh3.googleusercontent.com/aYbdIM1abwyVSUZLDKoE0CDZGRhlkpsaPOg9tNnBktUQYsXflwknnOn2Ge1Yr7rImGk=w300",
+  "url": "https://www.instagram.com/pokemongoapp/",
+  "description": "Eerlijk is eerlijk, heel veel gebeurt hier niet, maar misschien vind je het leuk om alles van Niantic te volgen. Kijk in elk geval eens rond wat ze te bieden hebben!"
+}, {
+  "keys": ["apk"],
+  "title": "Pokemon Go APK's",
+  "img": "http://bloomswedding.com/wp-content/uploads/2017/08/androidapk_32.png",
+  "url": "http://www.apkmirror.com/uploads/?q=pokemon-go",
+  "description": "Als Pokémon Go update kan het soms een tijdje duren voordat de update in de officiele store verschijnt. Gelukkig is er voor Android gebruikers een optie om de .APK van alternatieve plekken te downloaden. Deze site is in principe te vertrouwen, omdat alle uploads door de beheerder persoonlijk gecontroleerd worden. Wacht echter bij twijfel toch maar tot de update in de play store verschijnt."
+}, {
+  "keys": ["buddy", "buddy pokemon", "buddy pokémon"],
+  "title": "Buddy Pokémon",
+  "img": "https://img00.deviantart.net/758d/i/2009/296/b/2/pikachu_and_ash_by_larvoncl.jpg",
+  "url": "https://rankedboost.com/pokemon-go/buddy/#list",
+  "description": "Pokémon Go is een teamspel, maar af en toe komt het toch voor dat je in je eentje speelt. Gelukkig ben je nooit echt alleen en loop je samen met je buddy. Naast gezelligheid krijg je hier ook nog extra candies van. Hoever je moet lopen voor een candy hangt af van de pokémon, zie de link voor een mooie lijst."
+}, {
   "keys": ["shiny", "shiny pokémon", "shiny pokemon"],
   "title": "Shiny Pokémon",
   "img": "http://i.imgur.com/bShcGSm.jpg",
