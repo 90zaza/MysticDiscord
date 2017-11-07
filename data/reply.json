@@ -84,7 +84,7 @@
   "description": "De Pokémon Professor uit de Alola Region, wonend in de Hau'oli Outskirts. Hij specialiseerd zich de aanvallen van Pokémon en is oprichter van de Alola Pokémon League. Door zijn offensieve focus zou het zomaar Candela's broer kunnen zijn."
 }, {
   "keys": ["professor ivy", "ivy", "prof ivy"],
-  "title": "Professor Kukui",
+  "title": "Professor Ivy",
   "img": "https://cdn.bulbagarden.net/upload/thumb/d/d6/Professor_Ivy.png/295px-Professor_Ivy.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Ivy",
   "description": "Voornamelijk bekend voor het vinden van de GS ball, die ze probeerde open te maken met onder andere een zaag. Toen Ash de bal bij haar ophaalde besloot Brock bij haar en haar 3 assistentes achter te blijven om te helpen. Als hij later getraumatiseerd terugkomt weet niemand eigenlijk echt wat er gebeurt is."
@@ -326,8 +326,14 @@
   "keys": ["pokerus", "pokérus"],
   "title": "Pokérus",
   "img": "https://pm1.narvii.com/6310/351be48a23c44453dcc97fd75aded3beb4a20faa_hq.jpg",
-  "url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9rus",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pokérus",
   "description": "Het Pokérus wordt veroorzaakt door een besmettelijk microscopische levensvorm. Besmette Pokémon krijgen sneller hogere stats bij het levelen, waardoor een Pokémon voor zijn max level al zijn max potentie kan behalen. Helaas is deze aandoening in Pokémon Go nog niet gevonden."
+}, {
+  "keys": ["pokedex", "pokédex"],
+  "title": "Pokédex",
+  "img": "https://vignette3.wikia.nocookie.net/whatever-you-want/images/6/66/Pokedex_Kanto.png/revision/latest?cb=20140106170154",
+  "url": "https://www.pokemon.com/us/pokedex/",
+  "description": "Op de Pokédex staan alle Pokémon opgeslagen, inclusief een verhaaltje en wat stats. Kijk hier vooral eens rond als je je kennis wat wil uitbreiden of opfrissen."
 }, {
 
 
