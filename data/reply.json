@@ -263,7 +263,12 @@
   "url": "https://bulbapedia.bulbagarden.net/wiki/Officer_Jenny",
   "description": "Gaat er ergens iets fout? Op Jenny kan je rekenen! Net als Joy zijn er duizenden Jenny die alleen door Brock uit elkaar gehaald kunnen worden. Ze gebruikt Growlithe, Arcanine en Trump ehhh ik bedoel Gumshoos als partner."
 }, {
-
+  "keys": ["az"],
+  "title": "AZ",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/1/12/XY_AZ.png/437px-XY_AZ.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/AZ",
+  "description": "Een van de triestere verhalen, tijdens de oorlog van Kalos verloor AZ zijn pokémon. Hij maakte een machine om de pokémon weer tot leven te brengen, maar hij was te kwaad op de wereld die zijn pokémon pijn had gedaan dat hij zijn machine ombouwde tot het sterkste wapen ooit gemaakt. Toen hij dit wapen gebruikte om de oorlog te beeindigen verliet de Pokémon hem omdat AZ door haat bevangen was. Toen hij 3000 jaar later tijdens een Pokémon gevecht vrij werd van zijn boosheid keerde zijn Floette weer terug. Pfew, toch nog een happy ending! (afgezien van al die mensen en pokémon die zijn wapen dood heeft gemaakt dan natuurlijk)"
+}, {
 
 
   "keys": ["kanto"],
@@ -316,6 +321,20 @@
 }, {
 
 
+
+
+  "keys": ["shiny", "shiny pokémon", "shiny pokemon"],
+  "title": "Shiny Pokémon",
+  "img": "http://i.imgur.com/bShcGSm.jpg",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Shiny_Pokémon",
+  "description": "Sommige pokémon kunnen een andere kleur hebben dan normaal. Zo'n variant met een ander kleurtje wordt ook wel een shiny Pokémon genoemd. Als je ze in het wild tegenkomt (of uit een ei) is dat te zien aan de kleur, en aan de sterretjes die er vanaf komen. Shiny's zijn indivudueel bepaald, dus een shiny voor jou is waarschijnlijk niet shiny voor mij. Ook heeft het verder nergens anders invloed op (iv's/ stats/ aanvallen/ etc). De zeldzaamheid wordt geschat op 1/512. Op dit moment zijn de volgende pokémon in shiny variant te vangen of uit ei te verkrijgen:\nPichu & Pikachu\nMagikarp\nShuppet\nSableye\nDuskull"
+}, {
+  "keys": ["elite 4", "elite four", "champion"],
+  "title": "Elite Four",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/2/2a/Hoenn_Elite_Four_Adventures.png/200px-Hoenn_Elite_Four_Adventures.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Elite_Four",
+  "description": "De vier sterkste Pokémon Trainers en de Champion van een regio moeten achter elkaar verslagen worden voordat een trainer zichzelf de Champion mag noemen. In het geval van een uitgedager vinden deze gevechten plaats in de Pokémon League. Je mag dit pas proberen als je 8 badges hebt verdient in de daarbij behorende regio."
+}, {
   "keys": ["burned tower"],
   "title": "Burned Tower",
   "img": "https://cdn.bulbagarden.net/upload/thumb/1/15/Burned_Tower_EP181.png/220px-Burned_Tower_EP181.png",
@@ -335,8 +354,8 @@
   "description": "Pokémon gewond? Geen paniek! Nurse Joy fixt ze hier in no time op. Hoe hier precies voor betaald wordt is niet helemaal duidelijk, maar ze laten zich door niets tegenhouden om jouw pokemon weer op te lappen. Zelfs bij een stroom uitval staan de backup Pikachu standby! Daarnaast weten ze ook nog eens wanneer je jarig bent!"
 }, {
   "keys": ["silph", "silph co", "silph co."],
-  "title": "Pokémon TV",
-  "img": "http://images.uncyc.org/commons/thumb/8/8c/Saffron.png/600px-Saffron.png",
+  "title": "Silph Co.",
+  "img": "https://vignette1.wikia.nocookie.net/fictionalcompanies/images/5/50/Silph_Company_Building.png/revision/latest?cb=20140531213537",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Silph_Co.",
   "description": "Kanto is de regio van technologische vooruitgan, met the Silph Company in Saffron City als middenpunt. Meerdere inovatieve producten komen hier vandaan, zoals de Silph Scope, Pokéballs (waaronder de Master Ball), Medicijnen en TM's. Het is dan ook niet gek dat het hoofdkwartier meerdere keren het target van Team Rocket is geweest."
 }, {

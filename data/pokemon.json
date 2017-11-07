@@ -1717,7 +1717,7 @@
     "rare":  false,
     "description": 0
   }, {
-    "keys": ["snorlax"],
+    "keys": ["snorlax", "perijn", "perijnaybara"],
     "name": "Snorlax",
     "number": 143,
     "type": ["normal"],
@@ -2545,7 +2545,7 @@
     "rare":  false,
     "description": 0
   }, {
-    "keys": ["scizor", "sizor"],
+    "keys": ["scizor", "sizor", "knepski"],
     "name": "Scizor",
     "number": 212,
     "type": ["bug", "steel"],
