@@ -462,12 +462,12 @@ function extractTeam(messageContent) {
  * @param {Message} message The message
  */
 function extractEndTime(messageContent) {
-  var regex = /e (\d{1,2}):*(\d{2})/;
+  var regex = /e (\d{1,2})(:|.)*(\d{2})/;
   if (!regex.test(messageContent)) {
     return null;
   }
   const matches = messageContent.match(regex)
-  return result = matches[1] + ":" + matches[2];
+  return result = matches[1] + ":" + matches[3];
 }
 
 /**
@@ -475,12 +475,12 @@ function extractEndTime(messageContent) {
  * @param {Message} message The message
  */
 function extractBattleTime(messageContent) {
-  var regex = /b (\d{1,2}):*(\d{2})/;
+  var regex = /b (\d{1,2})(:|.)*(\d{2})/;
   if (!regex.test(messageContent)) {
     return null;
   }
   const matches = messageContent.match(regex)
-  return result = matches[1] + ":" + matches[2];
+  return result = matches[1] + ":" + matches[3];
 }
 
 /**
