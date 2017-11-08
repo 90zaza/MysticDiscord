@@ -538,7 +538,7 @@
     "recplayers": 0,
     "gender": 0.5,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert in Belossom met een Sun Stone (en in Vileplume zonder)"
   }, {
     "keys": ["vileplume"],
     "name": "Vileplume",
@@ -742,7 +742,7 @@
     "recplayers": 0,
     "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert in Politoed met een Kings Rock (en in Poliwrath zonder)"
   }, {
     "keys": ["poliwrath"],
     "name": "Poliwrath",
@@ -958,7 +958,7 @@
     "recplayers": 0,
     "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert in Slowking met een Kingsrock (en in Slowbro zonder)"
   }, {
     "keys": ["slowbro", "slobro"],
     "name": "Slowbro",
@@ -1150,7 +1150,7 @@
     "recplayers": 0,
     "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert in Steelix met een Metal Coat"
   }, {
     "keys": ["drowzee"],
     "name": "Drowzee",
@@ -1309,7 +1309,7 @@
     "rare":  false,
     "description": 0
   }, {
-    "keys": ["koffing"],
+    "keys": ["koffing", "vastahblastah"],
     "name": "Koffing",
     "number": 109,
     "type": ["poison"],
@@ -1415,7 +1415,7 @@
     "recplayers": 0,
     "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert in Kingdra met een Dragon Scale"
   }, {
     "keys": ["goldeen"],
     "name": "Goldeen",
@@ -1487,7 +1487,7 @@
     "recplayers": 2,
     "gender": 0.5,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert in Scizor met een Metal Coat"
   }, {
     "keys": ["jynx"],
     "name": "Jynx",
@@ -1559,7 +1559,7 @@
     "recplayers": 0.5,
     "gender": 0.5,
     "rare":  false,
-    "description": 0
+    "description": "*flop flop flop*"
   }, {
     "keys": ["gyarados", "garados", "gyrados", "gerados"],
     "name": "Gyarados",
@@ -1571,7 +1571,7 @@
     "recplayers": 0,
     "gender": 0.5,
     "rare":  false,
-    "description": 0
+    "description": "*Not so helpless now, am i?*"
   }, {
     "keys": ["lapras"],
     "name": "Lapras",
@@ -1607,7 +1607,7 @@
     "recplayers": 0,
     "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "Kan in 5 verschillende Pokémon evolueren. Zoek naar de Pokémon die je wilt om te vinden hoe."
   }, {
     "keys": ["vaporeon"],
     "name": "Vaporeon",
@@ -1655,7 +1655,7 @@
     "recplayers": 1,
     "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert in Porygon 2 met een Up-Grade"
   }, {
     "keys": ["omanyte", "omanite"],
     "name": "Omanyte",
@@ -2303,7 +2303,7 @@
     "recplayers": 0,
     "gender": 0,
     "rare":  false,
-    "description": 0
+    "description": "Evolueert in Sunflora met een Sun Stone"
   }, {
     "keys": ["sunflora"],
     "name": "Sunflora",

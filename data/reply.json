@@ -11,7 +11,7 @@
   "url": "https://delftmystic.wordpress.com/items/",
   "description": "In Pokemon go zijn verschillende healing items te vinden. De potions zijn voor het herstellen van Pokémon die niet gefaint zijn, waar de revives bedoeld zijn om gefainte Pokémon weer terug te brengen. De effecten zijn:\n\n**Potion**: +20HP\n**Super Potion**: +50 HP\n**Hyper Potion**: +200HP\n**Max Potion**: +∞HP\n**Revive**: Herstelt tot de helft\n**Max Revive**: Herstelt volledig"
 }, {
-  "keys": ["evolution items", "evolutie items", "sun stone", "up grade", "up-grade", "metal coat", "kings rock", "dragon scale"],
+  "keys": ["evolution items", "evolutie items", "sun stone", "up grade", "up-grade", "metal coat", "kings rock", "dragon scale", "evolutie item", "evolution item"],
   "title": "Evolution Items",
   "img": "http://pokemongo.gr/wp-content/uploads/2017/02/Bag_Sun_Stone_Sprite-300x296.png",
   "url": "https://delftmystic.wordpress.com/items/",
@@ -64,6 +64,24 @@
   "img": "https://fevgames.net/wp-content/uploads/2017/06/Item_1301.png",
   "url": "https://delftmystic.wordpress.com/items/",
   "description": "Wil je een pokémon level uppen, maar heb je candie er niet voor? Geen paniek! Met dit uit raids te verkrijgen item kun je candies krijgen van welke pokémon je maar wil. 1 rare candy is om te zetten in een candy naar keuze, maar het zijn zeldzame items. Gebruik ze dus voorzichtig!"
+}, {
+  "keys": ["stardust"],
+  "title": "Stardust",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/7/71/GO_Stardust.png/200px-GO_Stardust.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Stardust_(GO)",
+  "description": "Veel mensen proberen zoveel mogelijk XP bij elkaar te verzamelen, maar Stardust is de echte eenheid waar het om gaat. Je kunt met raids wel XP verdienen en snel lvl 40 worden, maar als je je pokémon niet kunt uppen ben je even zwak als de casual spelers! Vang dus alles wat je kan, en investeer het wijs!"
+}, {
+  "keys": ["xp"],
+  "title": "XP",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/5/56/Pokémon_GO_level_up.png/200px-Pok%C3%A9mon_GO_level_up.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Trainer_level",
+  "description": "Om je Pokémon een hoog level te geven moet je zelf ook een hoog level zijn, en om dat te behalen heb je XP nodig. Vooral tot level 30 is het echt de moeite waard om XP te verzamelen, want daarna maakt het allemaal eigenlijk niet meer uit. Zeker de laatste 2 levels (lvl 39 en 40) zijn er eigenlijk alleen voor de opscheppers. Je kunt dan beter op stardust gaan focussen."
+}, {
+  "keys": ["hidden power"],
+  "title": "Hidden Power (fast move)",
+  "img": "https://img00.deviantart.net/0280/i/2017/070/6/b/unown_used_hidden_power_by_louivi-db1y34z.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Hidden_Power_(move)",
+  "description": "Deze move is uitzonderlijk omdat hij elk type (behalve normal en fairy) kan zijn. Als een Pokémon een van de 16 opties beheerst, is deze helaas via TM's niet meer af te leren. Het kan onder andere door Unown, Porygon (2), starmie en suicune geleerd worden."
 }, {
 
 
@@ -327,6 +345,25 @@
 }, {
 
 
+
+  "keys": ["repel", "super repel", "max repel"],
+  "title": "Repel",
+  "img": "https://cdn.bulbagarden.net/upload/7/77/Dream_Repel_Sprite.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Repel",
+  "description": "We kunnen het ons als Pokémon Go spelers moeilijk voorstellen, maar er komt een tijd dat je in een grot na de zoveelste Zubat klaar bent met het zien van Pokémon. Door een Repel te spuiten kom je geen Pokémon meer tegen met een lager level dan de Pokémon voorin je party, wat een hoop rust kan opleveren. Je kunt dit ook gebruiken door alleen de levels tegen te komen die je wilt."
+}, {
+  "keys": ["safari zone", "great marsh"],
+  "title": "Safari Zone",
+  "img": "https://cdn.bulbagarden.net/upload/8/88/Johto_Safari_Zone_HGSS.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Kanto_Safari_Zone",
+  "description": "Op zoek naar een paar Pokémon die je nog niet hebt? Grote kans dat ze in de Safari zone wel te vinden zijn! Beetje jammer dat je alleen niet met je eigen pokémon / ballen naar binnen mag om het jezelf makkelijk te maken. In plaats daarvan moet je het doen met wat snoepjes en stenen. Veel succes als je een Chansey tegenkomt!"
+}, {
+  "keys": ["ss aqua", "s.s. aqua"],
+  "title": "S.S. Aqua",
+  "img": "https://cdn.bulbagarden.net/upload/c/c8/SS_Aqua_HGSS.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/S.S._Aqua",
+  "description": "Vliegen van Kanto naar Johto (en terug) is helaas geen optie, en soms heb je ook geen zin om weer met de magnet train te haasten. Als je de tijd hebt en een luxe rit wel kan waarderen is de S.S. Aqua voor jou! Vanaf Olivine City ben je in ongeveer 12 uur in Vermilion City (of andersom). Prima tijd om wat te slapen, of natuurlijk wat trainers uit te dagen!"
+}, {
   "keys": ["pallet town"],
   "title": "Pallet Town",
   "img": "https://cdn.bulbagarden.net/upload/7/7b/Pallet_Town_HGSS.png",
@@ -357,7 +394,7 @@
   "url": "https://bulbapedia.bulbagarden.net/wiki/Silph_Scope",
   "description": "Spook Pokémon zijn redelijk zeldzaam, en dat ze soms onzichtbaar zijn helpt dan natuurlijk ook niet mee. Gelukkig ontwikkelde de Silph Co. de Silph Scope, waarmee je Spook Pokémon kan identificeren. Mocht je dus ooit een spook Marowak tegen komen weet je nu wat je moet doen ;)"
 }, {
-  "keys": ["lavender town"],
+  "keys": ["lavender town", "pokemon tower", "pokémon tower"],
   "title": "Lavender Town",
   "img": "https://cdn.bulbagarden.net/upload/thumb/5/5e/Lavender_Town_HGSS.png/300px-Lavender_Town_HGSS.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Lavender_Town",
@@ -375,7 +412,7 @@
   "url": "https://bulbapedia.bulbagarden.net/wiki/S.S._Anne",
   "description": "Dit luxueuse schip dat de hele wereld bevaart stopt af en toe in Vermilion City (Kanto regio). Om erop te mogen varen heb je het S.S. Ticket nodig wat je ontvangt na het helpen van Bill. Het schip wordt over het algemeen goed gebruikt door andere trainers, dus een paar mooie gevechten zullen er wel inzitten hier ;)"
 }, {
-  "keys": ["tos", "scanner", "scanners", "multi accounter", "multi account", "multi accounters", "botter", "botters"],
+  "keys": ["tos", "scanner", "scanners", "multi accounter", "multi account", "multi accounters", "botter", "botters", "pokehunt", "pokéhunt", "gymhunter", "gymhuntr"],
   "title": "Niantic's ToS",
   "img": "https://nianticlabs.com/img/global/niantic_logo.png",
   "url": "https://www.nianticlabs.com/terms/pokemongo/en/",
