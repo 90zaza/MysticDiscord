@@ -404,9 +404,9 @@ class Raid {
   constructor(messageContent) {
     this.pokemon = extractPokemon(messageContent);
     this.gym = extractGym(messageContent);
-    this.battletime = extractBattleTime(messageContent);
-    this.endtime = extractEndTime(messageContent);
     this.team = extractTeam(messageContent);
+    Object.assign(this, extractTimes(messageContent));
+    // remove all null properties
     Object.keys(this).forEach((key) => (this[key] == null) && delete this[key]);
   }
 
@@ -458,30 +458,32 @@ function extractTeam(messageContent) {
   return null;
 }
 
+const RAID_DURATION_MINUTES = 45;
 /**
- * Extracts the end time from the message if present, returns null otherwise.
- * @param {Message} message The message
+ * Extracts the optional arguments endtime, battletime and hatchtime from the addNewRaid command.
+ * @param {*String} str The content of message
  */
-function extractEndTime(messageContent) {
-  var regex = /e (\d{1,2}):*(\d{2})/;
-  if (!regex.test(messageContent)) {
-    return null;
+function extractTimes(str) {
+  var regex = /([ebh]) (\d{1,2})[ :.]?(\d{2})/g;
+  let m;
+  let times = {};
+  while ((m = regex.exec(str)) !== null) {
+    switch (m[1]) {
+      case "e":
+        times.endtime = m[2] + ":" + m[3];
+        break;
+      case "b":
+        times.battletime = m[2] + ":" + m[3];
+        break;
+      case "h":
+        let date = new Date();
+        date.setHours(m[2], m[3]);
+        date.setMinutes(date.getMinutes() + RAID_DURATION_MINUTES);
+        times.endtime = date.getHours() + ":" + date.getMinutes();
+        break;
+    }
   }
-  const matches = messageContent.match(regex)
-  return result = matches[1] + ":" + matches[2];
-}
-
-/**
- * Extracts the battle time from the message if present, returns null otherwise.
- * @param {Message} message The message
- */
-function extractBattleTime(messageContent) {
-  var regex = /b (\d{1,2}):*(\d{2})/;
-  if (!regex.test(messageContent)) {
-    return null;
-  }
-  const matches = messageContent.match(regex)
-  return result = matches[1] + ":" + matches[2];
+  return times;
 }
 
 /**
@@ -538,8 +540,8 @@ function printHelp(message) {
   let embed = new Discord.MessageEmbed()
     .setTitle("**Hoe maak ik een raid aan?**")
     .setColor(0xffffff)
-    .addField("Nieuwe Raid", "Typ hetvolgende in het raids_meldingen kanaal:\n[pokemon] g [gymnaam] e [eindtijd] b [vechttijd]\nVoorbeeld: **snorlax g seats e 13:00**")
-    .addField("Bewerk een raid", "Hetzelfde als een nieuwe raid, maar dan begin je met het RaidID:\n[raidID] g [gymnaam] e [eindtijd] b [vechttijd]\nVoorbeeld: **1 g evenwicht ijzer b 12:00**")
+    .addField("Nieuwe Raid", "Typ hetvolgende in het raids_meldingen kanaal:\n[pokemon] g [gymnaam] e [eindtijd] b [vechttijd] h [hatchtijd]\nVoorbeeld: **snorlax g seats e 13:00**")
+    .addField("Bewerk een raid", "Hetzelfde als een nieuwe raid, maar dan begin je met het RaidID:\n[raidID] g [gymnaam] e [eindtijd] b [vechttijd] h [hatchtijd]\nVoorbeeld: **1 g evenwicht ijzer b 12:00**")
     .addField("Meedoen", "Druk simpelweg op de + onder de raid");
 
   message.message.channel.send({ embed });
