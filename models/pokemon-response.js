@@ -92,8 +92,8 @@ module.exports = class PokemonResponse extends Message {
       else if (random<24/28) {letter="unown-x"}
       else if (random<25/28) {letter="unown-y"}
       else if (random<26/28) {letter="unown-z"}
-      else if (random<27/28) {letter="unown-!"}
-      else if (random<28/28) {letter="unown-?"}
+      else if (random<27/28) {letter="unown-em"}
+      else if (random<28/28) {letter="unown-qm"}
 
       imageURL = `https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/${sprite}/${letter}.png`
     }
@@ -119,11 +119,40 @@ module.exports = class PokemonResponse extends Message {
       imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${weather}.png`;
     }
 
+    //ditto forms
+    if (this.pokemon.name.toLowerCase() == "ditto") {
+      let random=Math.random();
+      let transform="ditto";
+      if (random<1/8) {transform="pidgey";}
+      else if (random<2/8) {transform="zubat";}
+      else if (random<3/8) {transform="yanma";}
+      else if (random<4/8) {transform="rattata";}
+      else if (random<5/8) {transform="sentret";}
+
+      imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${transform}.png`;
+    }
+
+    //pikachu forms
+    if (this.pokemon.name.toLowerCase() == "pikachu") {
+      console.log(`\n\n1: ${imageURL}`);
+      let random=Math.random();
+      if (random<1/10) {
+        imageURL=`https://cdn.bulbagarden.net/upload/thumb/1/17/025Pikachu-Original.png/600px-025Pikachu-Original.png`;
+      }
+      else if (random<2/10) {
+        imageURL=`https://cdn.bulbagarden.net/upload/a/a0/Flying_Pikachu_Yellow.png`;
+        this.pokemon.type=["flying", "electric"];
+      }
+      else if (random<3/10) {
+        imageURL=`http://pixelartmaker.com/art/5191f3dfbdbd026.png`;
+        this.pokemon.type=["water", "electric"];
+      }
+    }
+
     //missingno
     if (this.pokemon.name.toLowerCase() == "missingno") {
       imageURL = 'https://vignette.wikia.nocookie.net/nintendo/images/8/85/MissingNoNormal.png/revision/latest?cb=20131114211037&path-prefix=en'
     }
-
     let embed = new Discord.MessageEmbed()
       .setTitle("#" + this.pokemon.number + " - " + this.pokemon.name + " [" + this.pokemon.type.join(", ") + "]")
       .setThumbnail(imageURL)
