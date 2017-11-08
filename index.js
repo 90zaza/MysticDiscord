@@ -27,6 +27,7 @@ const TopResponse = require('./models/top-response');
 const DateResponse = require('./models/date-response');
 const ThemeResponse = require('./models/thema-response');
 const JokeOfTheDayResponse = require('./models/jokeoftheday-response')
+const EggResponse = require('./models/egg-response')
 
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
@@ -94,6 +95,7 @@ client.on('message', async (msg) => {
   new JokeOfTheDayResponse(msg);
   new DateResponse(msg);
   new TopResponse(msg);
+  new EggResponse(msg);
 
   let verifiedrole = msg.guild.roles.find("name", "makingdelftblueagain");
   let moderatorrole = msg.guild.roles.find("name", "moderators");

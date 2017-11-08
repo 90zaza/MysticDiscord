@@ -1861,8 +1861,8 @@
     "rare":  false,
     "description": 0
   }, {
-    "keys": ["cindaquil", "cindaquill"],
-    "name": "Cindaquil",
+    "keys": ["cindaquil", "cindaquill", "cyndaquil", "cyndaquill"],
+    "name": "Cyndaquil",
     "number": 155,
     "type": ["fire"],
     "stats": [116, 96, 78],
