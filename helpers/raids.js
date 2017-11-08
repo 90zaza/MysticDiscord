@@ -179,6 +179,7 @@ async function addRaid(message) {
             m.guild.createRole({
               data: {
                 name: response.dataValues.idraids.toString(),
+                color: 'RANDOM',
                 mentionable: true
               }
             })
