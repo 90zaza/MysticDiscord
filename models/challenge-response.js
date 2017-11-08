@@ -22,6 +22,12 @@ module.exports = class GenericResponse extends Message {
       ];
       rand = Math.floor(Math.random() * easyChallenge.length);
       challenge = easyChallenge[rand]
+
+      const embed = new Discord.MessageEmbed()
+        .setTitle(title)
+        .setColor(color)
+        .setDescription(challenge);
+      super.reply({embed});
     }
 
     //medium challenge
@@ -36,6 +42,12 @@ module.exports = class GenericResponse extends Message {
       ];
       rand = Math.floor(Math.random() * mediumChallenge.length);
       challenge = mediumChallenge[rand]
+
+      const embed = new Discord.MessageEmbed()
+        .setTitle(title)
+        .setColor(color)
+        .setDescription(challenge);
+      super.reply({embed});
     }
 
     //hard challenge
@@ -50,14 +62,14 @@ module.exports = class GenericResponse extends Message {
       ];
       rand = Math.floor(Math.random() * hardChallenge.length);
       challenge = hardChallenge[rand]
+
+      const embed = new Discord.MessageEmbed()
+        .setTitle(title)
+        .setColor(color)
+        .setDescription(challenge);
+      super.reply({embed});
     }
 
-
-    const embed = new Discord.MessageEmbed()
-      .setTitle(title)
-      .setColor(color)
-      .setDescription(challenge);
-    super.reply({embed});
 
 
   }
