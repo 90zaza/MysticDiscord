@@ -339,47 +339,47 @@
   "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_breeding",
   "description": "In de Nintendo spellen was het mogelijk om in de Day Care twee Pokémon met elkaar te laten breeden, zodat je een Pokémon ei kon krijgen waaruit een lvl 1 Pokémon komt met eigenschappen die vergelijkbaar zijn aan die van de twee ouders. Een hele goede Pokémon hiervoor is Ditto, omdat deze kan breeden met elke Pokémon. Mocht dit ooit uitkomen in Pokémon Go is het erg handig om alvast een ditto met goede IV's klaar te hebben staan!"
 }, {
-  "keys": [""],
-  "title": "",
-  "img": "",
-  "url": "",
-  "description": ""
+  "keys": ["apricorn", "aprikorn"],
+  "title": "Apricorns",
+  "img": "https://cdn.bulbagarden.net/upload/c/c2/Apricorn.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Apricorn",
+  "description": "Apricorns zijn vruchten gevonden in de Johto regio, die gerelateerd lijken te zijn aan berries. Omdat de schil te dik is kunnen ze niet gegeten worden door Pokémon, waardoor ze geblendeerd moeten worden tot een drankje voor consumptie. Daarnaast kunnen ze door een expert zoals Kurt omgezet worden in speciale pokéballs."
 }, {
-  "keys": [""],
-  "title": "",
-  "img": "",
-  "url": "",
-  "description": ""
+  "keys": ["game corner"],
+  "title": "Game Corner",
+  "img": "https://cdn.bulbagarden.net/upload/a/ac/Celadon_Game_Corner_HGSS.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Celadon_Game_Corner",
+  "description": "Soms is zelfs de meest gemotiveerde trainer even klaar met Pokémon, en wat is dan een meer verantwoorde manier om de tijd door te brengen dan lekker te gaan gokken? Vrijwel elke regio heeft dan ook flink te bieden op dit gebied, want in Celadon City, Goldenrod City, Mauville City en veel meer plekken is de Game Corner te vinden. Dus kruip lekker achter een Slot Machine, en wie weet win je wel een Porygon ofzo!"
 }, {
-  "keys": [""],
-  "title": "",
-  "img": "",
-  "url": "",
-  "description": ""
+  "keys": ["silph scope"],
+  "title": "Silph Scope",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/6/65/RG_Silph_Scope.png/767px-RG_Silph_Scope.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Silph_Scope",
+  "description": "Spook Pokémon zijn redelijk zeldzaam, en dat ze soms onzichtbaar zijn helpt dan natuurlijk ook niet mee. Gelukkig ontwikkelde de Silph Co. de Silph Scope, waarmee je Spook Pokémon kan identificeren. Mocht je dus ooit een spook Marowak tegen komen weet je nu wat je moet doen ;)"
 }, {
-  "keys": [""],
-  "title": "",
-  "img": "",
-  "url": "",
-  "description": ""
+  "keys": ["lavender town"],
+  "title": "Lavender Town",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/5/5e/Lavender_Town_HGSS.png/300px-Lavender_Town_HGSS.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Lavender_Town",
+  "description": "Een van de kleinere stadjes, maar daardoor niet minder bekend. Deze stad is bekend vanwege de vele spookverhalen, en dat het grootste gebouw (de Pokémon Tower) een gigantisch Pokémon graf is zal daar ook wel niet mee helpen. Alleen het muziekje van de stad al doet menig pokémon fan rillen, en er is een heel syndroom naar dit stadje vernoemd. Probeer je hier zo ver mogelijk van weg te houden!"
 }, {
-  "keys": [""],
-  "title": "",
-  "img": "",
-  "url": "",
-  "description": ""
+  "keys": ["fishing", "rod", "super rod", "old rod", "good rod", "vissen"],
+  "title": "Fishing",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/3/3f/SuperRodNeoGenesis103.jpg/200px-SuperRodNeoGenesis103.jpg",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Fishing",
+  "description": "In Pokémon Go zie je alle vissen gewoon op de weg rondfloppen, maar niet in elk spel gaat dat zo makkelijk. De Old, Good en Super Rod zijn ervoor gemaakt om water Pokémon uit rivieren te halen zodat je ze kunt vangen om je dex compleet te krijgen."
 }, {
-  "keys": [""],
-  "title": "",
-  "img": "",
-  "url": "",
-  "description": ""
+  "keys": ["ss anne", "s.s. anne"],
+  "title": "S.S. Anne",
+  "img": "https://cdn.bulbagarden.net/upload/8/82/SS_Anne_FRLG.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/S.S._Anne",
+  "description": "Dit luxueuse schip dat de hele wereld bevaart stopt af en toe in Vermilion City (Kanto regio). Om erop te mogen varen heb je het S.S. Ticket nodig wat je ontvangt na het helpen van Bill. Het schip wordt over het algemeen goed gebruikt door andere trainers, dus een paar mooie gevechten zullen er wel inzitten hier ;)"
 }, {
-  "keys": [""],
-  "title": "",
-  "img": "",
-  "url": "",
-  "description": ""
+  "keys": ["tos", "scanner", "scanners", "multi accounter", "multi account", "multi accounters", "botter", "botters"],
+  "title": "Niantic's ToS",
+  "img": "https://nianticlabs.com/img/global/niantic_logo.png",
+  "url": "https://www.nianticlabs.com/terms/pokemongo/en/",
+  "description": "Niantic's Terms of Service zijn de regels die iedereen (ja, ook jij) heeft geaccepteerd zodat ze Pokémon Go kunnen spelen. Onder andere is hier te lezen dat je niet mag spoofen, maar ook multi accounten, of bot accounts gebruiken (daar vallen scanners onder) zijn niet toegestaan. Laten we proberen om het spel voor iedereen leuk te houden door gewoon te spelen hoe het hoort!"
 }, {
   "keys": ["is pokemon go online", "online", "offline", "pokemon online", "pokemon go online"],
   "title": "Is Pokémon Go online?",
@@ -594,7 +594,7 @@
   "keys": ["lvl 40", "level 40"],
   "title": "Level 40 spelers",
   "img": "http://2.bp.blogspot.com/_MWz5rMNRrCo/TFcLQ65VoDI/AAAAAAAAAM4/aduAc0NTgI0/s1600/Number_40_600x400_pixels.gif",
-  "url": "https://poketimer.com/",
+  "url": "https://www.imore.com/how-to-win-pokemon-go",
   "description": "Op dit moment is lvl 40 het hoogst haalbare level in dit spel. Je hebt een schrikbarende 20.000.000 xp nodig om dit te behalen. Spelers die zich op dit moment met recht max level mogen noemen zijn:\n\nIkgawinne\nBlijebakkus13\nRilakumma\n\n:balloon:Van harte gefeliciteerd met deze uitmuntende prestatie!:balloon:"
 }, {
   "keys": ["pokerus", "pokérus"],
