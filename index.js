@@ -183,3 +183,7 @@ client.on('messageReactionAdd', (messageReaction, user) => {
     }
   }
 });
+
+process.on('exit', () => {
+  client.destroy();
+});
