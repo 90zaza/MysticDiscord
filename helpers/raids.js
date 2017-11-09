@@ -374,7 +374,7 @@ function messageEmbed(result, raid, id) {
     .setColor(embedColor(team))
     .setTitle(`${pokemon.name}: ${gym ? gym.name : "Gym to be added"}`)
     .setThumbnail(`https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`)
-    .addField("End time", `${endtime ? endtime : "to be added"}`, true)
+    .addField("Raid active", `${endtime ? endtime : "to be added"}`, true)
     .addField("Battle time", `${battletime ? battletime : "to be added"}`, true)
     .addField(`Joining (lvl 30 players needed: ~${pokemon.recplayers})`, joining ? joining.join("\n") : "No trainers interested yet")
     .setURL(gym ? gym.url : '');
@@ -467,6 +467,8 @@ function extractTimes(str) {
   var regex = /([ebh]) (\d{1,2})[ :.]?(\d{2})/g;
   let m;
   let times = {};
+  const raidschannel = this.message.message.guild.channels.find("name", "raids");
+  const role = this.message.message.member.guild.roles.find("name", `${str.match('[a-zA-Z0-9]+')}`);
   let date = new Date();
   while ((m = regex.exec(str)) !== null) {
     switch (m[1]) {
@@ -481,11 +483,17 @@ function extractTimes(str) {
         else {
           times.endtime = date.getHours() + ":" + date.getMinutes() + " - " + m[2] + ":" + m[3];
         }
+        if (role != null) {
+          raidschannel.send(`Raid ${role}: Raidtijd veranderd naar ${times.endtime}`);
+        }
         break;
 
 
       case "b":
         times.battletime = m[2] + ":" + m[3];
+        if (role != null) {
+          raidschannel.send(`Raid ${role}: battle tijd gezet op ${times.battletime}`);
+        }
         break;
 
 
@@ -498,6 +506,9 @@ function extractTimes(str) {
         }
         else {
           times.endtime = m[2] + ":" + m[3] + " - " + date.getHours() + ":" + date.getMinutes();
+        }
+        if (role != null) {
+          raidschannel.send(`Raid ${role}: Raidtijd veranderd naar ${times.endtime}`);
         }
         break;
     }
