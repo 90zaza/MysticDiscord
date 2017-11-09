@@ -43,7 +43,7 @@
 }, {
   "keys": ["thanksgiving 2016", "thanksgiving event 2016"],
   "name": "Thanksgiving event 2016",
-  "sort": "",
+  "sort": "event",
   "url": "http://pokemongolive.com/en/post/celebration-nov2016",
   "date": "23 november - 30 november",
   "description": "Het Thanksgiving Event was bedoeld als een bedankje naar ons, de spelers, voor onze bijdrage in het spel. De voordelen waren:\n- Dubbel xp\n- Dubbel stardust"
@@ -62,7 +62,7 @@
   "date": "12 december 2016",
   "description": "Vanaf vandaag hatchen de baby pokemon van Gen 2 (pichu, togepi, cleffa, igglybuff, magby, smoochem en tyrogue) uit eitjes. Om dit te vieren zal tot 29 december de speciale Holiday Pikachu (pikachu met kerstmuts) te vinden zijn "
 }, {
-  "keys": ["holiday event 2016", "starter event 2016"],
+  "keys": ["holiday event 2016", "starter event 2016", "holiday 2016", "kerst 2016", "kerst event 2016"],
   "name": "Holiday event 2016",
   "sort": "event",
   "url": "http://pokemongolive.com/en/post/holiday2016",

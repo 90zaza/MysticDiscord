@@ -346,6 +346,18 @@
 
 
 
+  "keys": ["evolve", "evolutie"],
+  "title": "Evolutie",
+  "img": "https://cdn.bulbagarden.net/upload/f/fb/Evotag.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Evolution",
+  "description": "Blijkt dat Darwin het flink bij het verkeerde eind heeft gehad, evolutie is als een Pokémon een sterkere vorm aanneemt waardoor zijn stats verbeteren. Afhankelijk van wat je precies wil is in de meeste gevallen de geëvolueerde pokemon beter op alle gebieden. Er is wel een candy investering voor nodig (en soms een evolutie item). Daarnaast levert het ook nog eens 500 xp op!"
+}, {
+  "keys": ["guct", "grand unified catch theory", "catch bonus", "catch chance", "vang kans", "vangkans"],
+  "title": "Grand Unified Catch Theory",
+  "img": "https://gamepress.gg/sites/default/files/gp-logo.png",
+  "url": "https://pokemongo.gamepress.gg/guct-medals",
+  "description": "Hoe groot is de kans dat ik een Pokémon vang? Dat hangt af van de Pokémon (Base Capture Rate) en zijn level (CP Multiplier). Verder geven de volgende factoren een volgende (multiplicatieve) bonus:\nWelke bal: (1, 1.5, 2)\nMedaille: (1, 1.1, 1.2, 1.3)\nBerry: (1, 1.5, 2.5)\nCurve: (1, 1.7)\nWorp bonus: (2-r)"
+}, {
   "keys": ["repel", "super repel", "max repel"],
   "title": "Repel",
   "img": "https://cdn.bulbagarden.net/upload/7/77/Dream_Repel_Sprite.png",
