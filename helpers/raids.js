@@ -467,19 +467,38 @@ function extractTimes(str) {
   var regex = /([ebh]) (\d{1,2})[ :.]?(\d{2})/g;
   let m;
   let times = {};
+  let date = new Date();
   while ((m = regex.exec(str)) !== null) {
     switch (m[1]) {
+
+
       case "e":
-        times.endtime = m[2] + ":" + m[3];
+        date.setHours(m[2], m[3]);
+        date.setMinutes(date.getMinutes() - RAID_DURATION_MINUTES);
+        if (date.getMinutes()<10) {
+          times.endtime = date.getHours() + ":0" + date.getMinutes() + " - " + m[2] + ":" + m[3];
+        }
+        else {
+          times.endtime = date.getHours() + ":" + date.getMinutes() + " - " + m[2] + ":" + m[3];
+        }
         break;
+
+
       case "b":
         times.battletime = m[2] + ":" + m[3];
         break;
+
+
       case "h":
-        let date = new Date();
         date.setHours(m[2], m[3]);
         date.setMinutes(date.getMinutes() + RAID_DURATION_MINUTES);
-        times.endtime = date.getHours() + ":" + date.getMinutes();
+
+        if (date.getMinutes()<10) {
+          times.endtime = m[2] + ":" + m[3] + " - " + date.getHours() + ":0" + date.getMinutes();
+        }
+        else {
+          times.endtime = m[2] + ":" + m[3] + " - " + date.getHours() + ":" + date.getMinutes();
+        }
         break;
     }
   }
