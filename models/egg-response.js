@@ -23,7 +23,7 @@ module.exports = class GenericResponse extends Message {
     const uncommonNumber = [];
     const uncommonOdds = 1.6*uncommonPokemon.length;
 
-    const rarePokemon = ["Remoraid", "Seel", "Onix", "Tangela", "Scyther", "Pinsir", "Chikorita", "Cyndaquil", "Totodile", "Snubbell", "Teddiursa", "Houndour", "Stantler", "Chansey", "Skarmory", "Sudowoodo"];
+    const rarePokemon = ["Remoraid", "Seel", "Onix", "Tangela", "Scyther", "Pinsir", "Chikorita", "Cyndaquil", "Totodile", "Snubbull", "Teddiursa", "Houndour", "Stantler", "Chansey", "Skarmory", "Sudowoodo"];
     const rareDistance = [2,5,5,5,5,5,5,5,5,5,5,5,5,10,10,10];
     const rareNumber = [];
     const rareOdds = 0.8*rarePokemon.length;
