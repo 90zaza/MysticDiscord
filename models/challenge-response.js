@@ -12,7 +12,6 @@ module.exports = class GenericResponse extends Message {
 
    //easy challenge
     if(this.startsWith('easy challenge') || this.startsWith('makkelijke uitdaging')) {
-      console.log("easy challenge");
       color = 0x00ff00,
       title = "Easy Challenge"
       const easyChallenge = [
@@ -32,7 +31,6 @@ module.exports = class GenericResponse extends Message {
 
     //medium challenge
     if(this.startsWith('medium challenge') || this.startsWith('middelmatige uitdaging')) {
-      console.log("medium challenge");
       color = 0x0000ff,
       title = "Medium Challenge"
       const mediumChallenge = [
@@ -52,7 +50,6 @@ module.exports = class GenericResponse extends Message {
 
     //hard challenge
     if(this.startsWith('hard challenge') || this.startsWith('moeilijke uitdaging')) {
-      console.log("hard challenge");
       color = 0xff0000,
       title = "Hard Challenge"
       const hardChallenge = [
