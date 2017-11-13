@@ -7,9 +7,9 @@ module.exports = class GenericResponse extends Message {
   constructor(message) {
     super(message);
 
-    let pokemonNumber = 802;
-
     if(this.startsWith('whosthatpokemon') || this.startsWith('wieisdezepokemon')) {
+      let pokemonNumber = 802;
+
       const gen = this.findGen();
       pokemonNumber = Math.floor(Math.random() * gen.value);
 
@@ -19,9 +19,9 @@ module.exports = class GenericResponse extends Message {
       else if (pokemonNumber < 100){
         pokemonNumber = `0${pokemonNumber}`;
       }
-    }
 
-    this.newMessage(pokemonNumber);
+      this.newMessage(pokemonNumber);
+    }
   }
 
   findGen() {
