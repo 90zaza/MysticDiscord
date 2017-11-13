@@ -77,12 +77,6 @@
   "url": "https://bulbapedia.bulbagarden.net/wiki/Trainer_level",
   "description": "Om je Pokémon een hoog level te geven moet je zelf ook een hoog level zijn, en om dat te behalen heb je XP nodig. Vooral tot level 30 is het echt de moeite waard om XP te verzamelen, want daarna maakt het allemaal eigenlijk niet meer uit. Zeker de laatste 2 levels (lvl 39 en 40) zijn er eigenlijk alleen voor de opscheppers. Je kunt dan beter op stardust gaan focussen."
 }, {
-  "keys": ["hidden power"],
-  "title": "Hidden Power (fast move)",
-  "img": "https://img00.deviantart.net/0280/i/2017/070/6/b/unown_used_hidden_power_by_louivi-db1y34z.png",
-  "url": "https://bulbapedia.bulbagarden.net/wiki/Hidden_Power_(move)",
-  "description": "Deze move is uitzonderlijk omdat hij elk type (behalve normal en fairy) kan zijn. Als een Pokémon een van de 16 opties beheerst, is deze helaas via TM's niet meer af te leren. Het kan onder andere door Unown, Porygon (2), starmie en suicune geleerd worden."
-}, {
 
 
 
@@ -582,11 +576,11 @@
   "url": "https://www.google.com/maps/d/u/0/edit?mid=11DnpOBi-AsstZGT07NGO9txzxsU&ll=52.00888580917186%2C4.361529349999955&z=13",
   "description": "Hier is een kaart van alle gyms en regios in Delft, maak ze allemaal van ons!"
 }, {
-  "keys": ["spoofer", "spoofers"],
-  "title": "Spoofers",
+  "keys": ["spoofer", "spoofers", "cheater", "report cheater", "report spoofer", "valsspeler", "multi accounter", "multi-accounter", "multiaccounter", "papaincloud", "pokewied", "pokewied2000", "rickdelft", "rickdelft68", "yesitsdone", "yesitsover", "realbiatch", "yesimlazy"],
+  "title": "Cheaters",
   "img": "https://openclipart.org/image/2400px/svg_to_png/48337/Abort-01.png",
   "url": "https://support.pokemongo.nianticlabs.com/hc/en-us/requests/new?ticket_form_id=319948",
-  "description": "Een spoofer is iemand die het een goed idee vind om dit spel vanaf de bank te spelen. Dit soort treurige personen die hun pokemon niet waard zijn manipuleren hun GPS om het spel te spelen. Report dit soort faalhazen hier. Moge Niantics banhamer genadeloos zijn"
+  "description": "Een cheater is iemand die het een goed idee vind om dit spel met zelfbedachte regels. Dit soort treurige personen die hun pokemon niet waard zijn manipuleren hun GPS (spoofers), en/ of gebruiken meerdere accounts (multi accounters). Report dit soort faalhazen hier via bovenstaande link. Moge Niantics banhamer genadeloos zijn"
 }, {
   "keys": ["type"],
   "title": "Type",
@@ -671,4 +665,10 @@
   "img": "https://cdn.bulbagarden.net/upload/2/21/SugimoriMasterBall.png",
   "url": "https://delftmystic.wordpress.com/items/",
   "description": "De beste bal die er is, hij mist nooit! Helaas is dit juweeltje nog niet beschikbaar in Pokémon go, en zullen we dus op dit moment nog ons best moeten doen om pokémon te vangen."
+}, {
+  "keys": ["dominatie", "gym takeover", "delft takeover", "delft gym takeover", "winter is comming", "makedelftblueagain", "make delft blue again"],
+  "title": "Make Delft Blue again!",
+  "img": "https://vignette.wikia.nocookie.net/pokemongo/images/f/f4/Team_Mystic.png/revision/latest/scale-to-width-down/180?cb=20160717150716",
+  "url": "https://img00.deviantart.net/ca8e/i/2016/223/6/b/stag_16001_hd_mystic_unova_by_ld_barthel-dadingw.jpg",
+  "description": "Met als groepsmotto *Make Delft Blue again* kunnen we natuurlijk niet anders dan af en toe grootschalig in actie komen. Elke zoveel tijd organiseren we als groep daarom een volledige take over van Delft, met als doel het volledig domineren van elke gym die ook maar een beetje in de buurt is. Ik weet niet zeker wat ik leuker vind, een volledig blauw Delft, of de beteuterde gezichtjes van de Elmo's en Kuikens. De gym avonden vonden plaats op:\n10 november 2017\n..."
 }]

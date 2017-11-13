@@ -50,9 +50,8 @@ module.exports = class GenericResponse extends Message {
    const embed = new Discord.MessageEmbed()
     .setTitle(`Who's That Pokémon?`)
     .setThumbnail(img)
+    .setDescription("Raad als eerste welke Pokémon dit is!")
    super.newMessage({embed});
     }
-
-
   }
 }

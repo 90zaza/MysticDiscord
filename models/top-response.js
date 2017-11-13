@@ -6,7 +6,7 @@ module.exports = class TopResponse extends Message {
   constructor(message) {
     super(message);
 
-    if(this.startsWith('top') || this.startsWith('counter')) {
+    if(this.startsWith('top ') || this.startsWith('counter ')) {
       this.message.content = `!${this.message.content.substr(this.message.content.indexOf(" ") + 1)}`;
 
       this.top = this.getTop();

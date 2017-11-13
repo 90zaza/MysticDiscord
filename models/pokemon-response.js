@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const Message = require('./message');
-const gyms = require('../data/gyms.json');
 const defense = require('../data/defense.json');
 const cpMultiplier = [0.094,      0.16639787, 0.21573247, 0.25572005, 0.29024988,
                       0.3210876 , 0.34921268, 0.37523559, 0.39956728, 0.42250001,
@@ -134,7 +133,6 @@ module.exports = class PokemonResponse extends Message {
 
     //pikachu forms
     if (this.pokemon.name.toLowerCase() == "pikachu") {
-      console.log(`\n\n1: ${imageURL}`);
       let random=Math.random();
       if (random<1/10) {
         imageURL=`https://cdn.bulbagarden.net/upload/thumb/1/17/025Pikachu-Original.png/600px-025Pikachu-Original.png`;
