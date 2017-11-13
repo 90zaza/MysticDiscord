@@ -1,69 +1,7 @@
 const Discord = require('discord.js');
 const Message = require('./message');
 
-const whosThatPokemon = [
-  {
-    keys: [
-      'whosthatpokemon gen 1',
-      'wieisdezepokemon gen 1',
-      'whosthatpokemon gen1',
-      'wieisdezepokemon gen1'
-    ],
-    value: 151
-  },
-  {
-    keys: [
-      'whosthatpokemon gen 2',
-      'wieisdezepokemon gen 2',
-      'whosthatpokemon gen2',
-      'wieisdezepokemon gen2'
-    ],
-    value: 251
-  },
-  {
-    keys: [
-      'whosthatpokemon gen 3',
-      'wieisdezepokemon gen 3',
-      'whosthatpokemon gen3',
-      'wieisdezepokemon gen3'
-    ],
-    value: 386
-  },
-  {
-    keys: [
-      'whosthatpokemon gen 4',
-      'wieisdezepokemon gen 4',
-      'whosthatpokemon gen4',
-      'wieisdezepokemon gen4'
-    ],
-    value: 493
-  },
-  {
-    keys: [
-      'whosthatpokemon gen 5',
-      'wieisdezepokemon gen 5',
-      'whosthatpokemon gen5',
-      'wieisdezepokemon gen5'
-    ],
-    value: 649
-  },
-  {
-    keys: [
-      'whosthatpokemon gen 6',
-      'wieisdezepokemon gen 6',
-      'whosthatpokemon gen6',
-      'wieisdezepokemon gen6'
-    ],
-    value: 721
-  },
-  {
-    keys: [
-      'whosthatpokemon',
-      'wieisdezepokemon'
-    ],
-    value: 802
-  }
-]
+const whosThatPokemon = require('../data/whos-that-pokemon.json')
 
 module.exports = class GenericResponse extends Message {
   constructor(message) {
