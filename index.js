@@ -119,6 +119,7 @@ client.on('message', async (msg) => {
       let member = msg.mentions.members.first();
       member.addRole(verifiedrole).catch(console.error);
       msg.channel.send(`Welkom ` + member + `, je bent nu officieel toegevoegd! In het kanaal <#` + welkomchannel.id + `> is te lezen hoe deze discord werkt, lees dat dus vooral eens door! Daarnaast sta ik natuurlijk ook tot je beschikking! Door '!help' te typen kun je zien wat ik allemaal voor je kan doen! Verder zou het fijn zijn als je in deze discord dezelfde naam gebruikt als je pogo naam, met je level erachter (channel settings, change nickname), zodat we weten wie iedereen is;)`);
+      member.client.channels.find("name", "log").send(`${member} has been verified by ${msg.member}.`);
     } else {
       msg.reply("Leden verifieren kan alleen door een moderator worden gedaan")
     }
@@ -167,8 +168,9 @@ client.on('message', async (msg) => {
 
 //welcome new users
 client.on("guildMemberAdd", member => {
+  member.client.channels.find("name", "log").send(`${member} has joined the server.`)
   setTimeout(() => {
-    member.guild.defaultChannel.send(
+    member.client.channels.find("name", "speler_registratie").send(
       `Welkom op de Mystic Delft Discord en leuk dat je onze groep wilt versterken, ${member}!
 Om toegang te krijgen tot de volledige groep vragen wij een screenshot van je pokemon go profiel (dat is waar je naast je buddy staat). Als je deze kan uploaden zal een van de moderators je zo snel mogelijk te woord staan.
 
@@ -177,6 +179,12 @@ In order to get full access to our server, we would like to verify you are indee
     );
   }, 1000);
 });
+
+//log leaving users
+client.on("guildMemberRemove", member => {
+  member.client.channels.find("name", "log").send(`${member} has left the server.`);
+});
+
 
 //bring extra people to raids funtion
 client.on('messageReactionAdd', (messageReaction, user) => {
