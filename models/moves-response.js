@@ -23,11 +23,14 @@ const colors = {
   "fairy": 0xfdb9e9
 }
 
-
-
 module.exports = class GenericResponse extends Message {
   constructor(message) {
     super(message);
+
+    if(this.startsWith('metronome')){
+      const key = "move" + (Math.floor(Math.random() * 172)+1);
+      this.message.content = `!${key}`
+    }
 
       this.moves = this.getMoves();
       if(this.moves) {

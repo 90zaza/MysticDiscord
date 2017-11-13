@@ -1969,7 +1969,7 @@
     "rare":  false,
     "description": 0
   }, {
-    "keys": ["noctowl", "noctol"],
+    "keys": ["noctowl", "noctol", "blijebakkus", "blijebakkus13"],
     "name": "Noctowl",
     "number": 164,
     "type": ["normal", "flying"],
@@ -2365,7 +2365,7 @@
     "rare":  false,
     "description": "Evolueer eevee met Sakura als nickname of door overdag te evolueren nadat je er >10 km me hebt gelopen als buddy"
   }, {
-    "keys": ["umbreon"],
+    "keys": ["umbreon", "ikgawinne"],
     "name": "Umbreon",
     "number": 197,
     "type": ["dark"],
