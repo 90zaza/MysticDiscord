@@ -1,57 +1,103 @@
 const Discord = require('discord.js');
 const Message = require('./message');
 
+const whosThatPokemon = [
+  {
+    keys: [
+      'whosthatpokemon gen 1',
+      'wieisdezepokemon gen 1',
+      'whosthatpokemon gen1',
+      'wieisdezepokemon gen1'
+    ],
+    value: 151
+  },
+  {
+    keys: [
+      'whosthatpokemon gen 2',
+      'wieisdezepokemon gen 2',
+      'whosthatpokemon gen2',
+      'wieisdezepokemon gen2'
+    ],
+    value: 251
+  },
+  {
+    keys: [
+      'whosthatpokemon gen 3',
+      'wieisdezepokemon gen 3',
+      'whosthatpokemon gen3',
+      'wieisdezepokemon gen3'
+    ],
+    value: 386
+  },
+  {
+    keys: [
+      'whosthatpokemon gen 4',
+      'wieisdezepokemon gen 4',
+      'whosthatpokemon gen4',
+      'wieisdezepokemon gen4'
+    ],
+    value: 493
+  },
+  {
+    keys: [
+      'whosthatpokemon gen 5',
+      'wieisdezepokemon gen 5',
+      'whosthatpokemon gen5',
+      'wieisdezepokemon gen5'
+    ],
+    value: 649
+  },
+  {
+    keys: [
+      'whosthatpokemon gen 6',
+      'wieisdezepokemon gen 6',
+      'whosthatpokemon gen6',
+      'wieisdezepokemon gen6'
+    ],
+    value: 721
+  },
+  {
+    keys: [
+      'whosthatpokemon',
+      'wieisdezepokemon'
+    ],
+    value: 802
+  }
+]
+
 module.exports = class GenericResponse extends Message {
   constructor(message) {
     super(message);
 
+    let pokemonNumber = 802;
 
     if(this.startsWith('whosthatpokemon') || this.startsWith('wieisdezepokemon')) {
+      const gen = this.findGen();
+      pokemonNumber = Math.floor(Math.random() * gen.value);
 
-    let rand;
-
-    //gen 1
-    if(this.startsWith('whosthatpokemon gen 1') || this.startsWith('wieisdezepokemon gen 1') || this.startsWith('whosthatpokemon gen1') || this.startsWith('wieisdezepokemon gen1')) {
-      rand = Math.floor(Math.random() * 151);
+      debugger
+      if (pokemonNumber < 10){
+        pokemonNumber = `00${pokemonNumber}`;
+      }
+      else if (pokemonNumber < 100){
+        pokemonNumber = `0${pokemonNumber}`;
+      }
     }
-   //gen 2
-    else if(this.startsWith('whosthatpokemon gen 2') || this.startsWith('wieisdezepokemon gen 2') || this.startsWith('whosthatpokemon gen2') || this.startsWith('wieisdezepokemon gen2')) {
-     rand = Math.floor(Math.random() * 251);
-   }
-   //gen 3
-    else if(this.startsWith('whosthatpokemon gen 3') || this.startsWith('wieisdezepokemon gen 3') || this.startsWith('whosthatpokemon gen3') || this.startsWith('wieisdezepokemon gen3')) {
-     rand = Math.floor(Math.random() * 386);
-   }
-   //gen 4
-    else if(this.startsWith('whosthatpokemon gen 4') || this.startsWith('wieisdezepokemon gen 4') || this.startsWith('whosthatpokemon gen4') || this.startsWith('wieisdezepokemon gen4')) {
-     rand = Math.floor(Math.random() * 493);
-   }
-   //gen 5
-    else if(this.startsWith('whosthatpokemon gen 5') || this.startsWith('wieisdezepokemon gen 5') || this.startsWith('whosthatpokemon gen5') || this.startsWith('wieisdezepokemon gen5')) {
-     rand = Math.floor(Math.random() * 649);
-   }
-   //gen 6
-    else if(this.startsWith('whosthatpokemon gen 6') || this.startsWith('wieisdezepokemon gen 6') || this.startsWith('whosthatpokemon gen6') || this.startsWith('wieisdezepokemon gen6')) {
-     rand = Math.floor(Math.random() * 721);
-   }
-   //gen 7
-   else{
-     rand = Math.floor(Math.random() * 802);
-   }
 
-   if (rand<10){
-     rand = "00"+rand;
-   }
-   else if (rand<100){
-     rand = "0"+rand;
-   }
+    this.newMessage(pokemonNumber);
+  }
 
-   const img = `https://i0.wp.com/delftmystic.files.wordpress.com/2017/11/silhouette-${rand}1.png`
-   const embed = new Discord.MessageEmbed()
-    .setTitle(`Who's That Pokémon?`)
-    .setThumbnail(img)
-    .setDescription("Raad als eerste welke Pokémon dit is!")
-   super.newMessage({embed});
-    }
+  findGen() {
+    return this.startsWithKey(whosThatPokemon);
+  }
+
+  newMessage(pokemonNumber) {
+    const img = `https://i0.wp.com/delftmystic.files.wordpress.com/2017/11/silhouette-${pokemonNumber}1.png`
+    const embed = new Discord.MessageEmbed()
+     .setTitle(`Who's That Pokémon?`)
+     .setThumbnail(img)
+     .setDescription("Raad als eerste welke Pokémon dit is!")
+
+    super.newMessage({embed});
   }
 }
