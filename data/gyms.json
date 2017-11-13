@@ -359,6 +359,11 @@
 	"url": "https://goo.gl/maps/cAy8ifVBgit",
   "description": 0
 }, {
+  "keys": ["nederland", "gruttoland"],
+  "name": "Nederland Gruttoland",
+  "url": "https://goo.gl/maps/abPQ8t92Hzk",
+  "description": 0
+}, {
   "keys": ["nep"],
   "name": "Nep Ruïne",
 	"url": "https://goo.gl/maps/FqJQKw1jnBw",
@@ -409,17 +414,17 @@
 	"url": "https://goo.gl/maps/daZ3xX1g87Q2",
   "description": 0
 }, {
-  "keys": ["playground b"],
+  "keys": ["playground b", "brahmslaan"],
   "name": "Playground Brahmslaan",
 	"url": "https://goo.gl/maps/EQTAJqWWshL2",
   "description": 0
 }, {
-  "keys": ["playground s"],
+  "keys": ["playground s", "ormoes", "straat van ormoes"],
   "name": "Playground Straat van Ormoes",
 	"url": "https://goo.gl/maps/LUroxsba6eP2",
   "description": 0
 }, {
-  "keys": ["playground v"],
+  "keys": ["playground v", "vivaldilaan"],
   "name": "Playground Vivaldilaan",
 	"url": "https://goo.gl/maps/Sx4CwasGcju",
   "description": 0
