@@ -405,7 +405,7 @@
   "url": "https://bulbapedia.bulbagarden.net/wiki/Pallet_town",
   "description": "Van alle steden in Pokémon, is deze misschien wel de belangrijkste. In dit dorpje is onze held geboren, dus zowel in de anime als in de nintendo spellen begint hier het avontuur. In dit schattige dorpje met slechts drie huizen wonen Ash en zijn moeder, Blue en Red, en Professor Oak in zijn Lab. Hier krijg je dus ook je starter Pokémon waarmee je vanalles mee gaat maken (of je transfert hem meteen voor een candy natuurlijk)."
 }, {
-  "keys": ["breeding", "broeden"],
+  "keys": ["breeding", "broeden", "day care", "daycare"],
   "title": "Pokémon Breeding",
   "img": "https://pokemongo.gamepress.gg/sites/default/files/2017-09/Screenshot_20170911-220020_0.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_breeding",

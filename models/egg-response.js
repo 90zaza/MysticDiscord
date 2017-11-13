@@ -102,8 +102,8 @@ module.exports = class GenericResponse extends Message {
     const embed = new Discord.MessageEmbed()
       .setTitle("OH?")
       .setThumbnail(eggImage)
-      .setDescription(`${this.message.author.username}'s egg is hatching!'`);
-    super.newMessage({embed});
+      .setDescription(`Your egg is hatching!'`);
+    super.reply({embed});
 
 setTimeout(() => {super.newMessage(".");}, 2000);
 setTimeout(() => {super.newMessage(".");}, 4000);

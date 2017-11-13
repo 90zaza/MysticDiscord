@@ -223,4 +223,10 @@
 }, {
   "keys": ["71"],
   "suggestion": "Maak een 'Brock's ogen' gym!\n(alle pokemon met hun ogen dicht)"
+}, {
+  "keys": ["72"],
+  "suggestion": "Maak een gym waar de beginletters van de Pokémon met A, B, C, D, E en F beginnen"
+}, {
+  "keys": ["73"],
+  "suggestion": "Maak een gym met alleen Pokémon met *king* in hun naam"
 }]
