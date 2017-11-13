@@ -75,7 +75,6 @@ module.exports = class GenericResponse extends Message {
       const gen = this.findGen();
       pokemonNumber = Math.floor(Math.random() * gen.value);
 
-      debugger
       if (pokemonNumber < 10){
         pokemonNumber = `00${pokemonNumber}`;
       }
