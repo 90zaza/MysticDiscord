@@ -44,40 +44,36 @@ module.exports = class GenericResponse extends Message {
     const dps = Number(this.moves.power)/Number(this.moves.time);
     const url = `https://pokemongo.gamepress.gg/pokemon-move/${this.moves.name.replace(" ","-")}`;
     let moveDescription;
+    let sort = "fast";
+
     if(this.moves.description!=0){
       //charge move with description
       if(this.moves.eps == 0) {
-        moveDescription = `Bars: ${this.moves.bars}\nPower: ${this.moves.power}\nTimeout: ${this.moves.time}\n\n${this.moves.description}`;
+        sort = "charge";
+        moveDescription = `Bars:        ${this.moves.bars}\nPower:     ${this.moves.power}\nTimeout: ${this.moves.time}\n\n${this.moves.description}`;
 
       //fast move with description
       } else {
-        moveDescription = `dps: ${dps}\neps: ${this.moves.power}\nTimeout: ${this.moves.time}\n\n${this.moves.description}`;
+        moveDescription = `dps:          ${dps}\neps:          ${this.moves.power}\nTimeout: ${this.moves.time}\n\n${this.moves.description}`;
       }
     }  else {
       //charge move without description
       if(this.moves.eps == 0) {
-        moveDescription = `Bars: ${this.moves.bars}\nPower: ${this.moves.power}\nTimeout: ${this.moves.time}`;
+        sort = "charge";
+        moveDescription = `Bars:        ${this.moves.bars}\nPower:     ${this.moves.power}\nTimeout: ${this.moves.time}`;
 
       //fast move without description
       } else {
-        moveDescription = `dps: ${dps}\neps: ${this.moves.power}\nTimeout: ${this.moves.time}`;
+        moveDescription = `dps:          ${dps}\neps:          ${this.moves.power}\nTimeout: ${this.moves.time}`;
       }
     }
 
-
-
     const embed = new Discord.MessageEmbed()
-      .setTitle(this.moves.name)
+      .setTitle(`${this.moves.name} (${sort} attack)`)
       .setThumbnail(img)
       .setURL(url)
       .setColor(colors[this.moves.type])
       .setDescription(moveDescription);
     super.newMessage({embed});
-
-
-
-
-
-
   }
 }

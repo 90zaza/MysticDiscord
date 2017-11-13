@@ -339,9 +339,30 @@
 }, {
 
 
-
-
-
+  "keys": ["cerulean cave", "unknown dungeon"],
+  "title": "Cerulean Cave",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/6/69/Cerulean_Cave_entrance_PO.png/220px-Cerulean_Cave_entrance_PO.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Cerulean_Cave",
+  "description": "Een grot waar zeer sterke wilde Pokémon te vinden zijn. De grot is zo berucht dat hij zelfs bewaakt wordt tegen casual Pokémon Trainers. Het rumour gaat dat Mewtwo in de grot te vinden is."
+}, {
+  "keys": ["mt moon", "mt. moon"],
+  "title": "Mt. Moon",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/0/04/Mt_Moon_anime.png/250px-Mt_Moon_anime.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Mt._Moon",
+  "description": "Een practisch onbeklimbare berg gelegen in het noorden van Kanto, en een van de weinige plekken waar wilde Clefairy gevonden kunnen worden. Deze verzamelen hier om te dansen tijdens sterrenregens, waarbij af en toe Moon Stones ontstaan waardoor de Clefairy's evolueren."
+}, {
+  "keys": ["delfts blauw", "delftsblauw"],
+  "title": "Delfts Blauw",
+  "img": "https://images-ext-2.discordapp.net/external/Z53WsT5wu1acUF0AajZJWvpx_d50e61Xioikcahoo6o/https/media.discordapp.net/attachments/319430336394035201/378658876041461761/IMG_20171110_223504.png",
+  "url": "https://img00.deviantart.net/ca8e/i/2016/223/6/b/stag_16001_hd_mystic_unova_by_ld_barthel-dadingw.jpg",
+  "description": "Touristen van over de hele wereld komen naar Delft om te genieten van een van de wereldwonderen: Delfts Blauw. Dit wordt natuurlijk mogelijk gemaakt door Team Mystic Delft, we zouden eigenlijk een percentage van de inkomsten van de touristen van de gemeente moeten vragen."
+}, {
+  "keys": ["stab", "same type attack bonus"],
+  "title": "Same Type Attack Bonus (STAB)",
+  "img": "https://preview.ibb.co/dsy6xb/stab.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Same-type_attack_bonus",
+  "description": "Als het type van een aanval gelijk is aan een van de types van de Pokémon die de aanval gebruikt doet de aanval 20% meer schade. Op die manier kan dus een aanval met minder power toch meer schade doen omdat hij het goede type heeft."
+}, {
   "keys": ["go+", "go +", "goplus", "go plus"],
   "title": "Pokémon Go Plus",
   "img": "https://cdn.bulbagarden.net/upload/thumb/7/7f/Pokemon_GO_Plus_wstrap_2.png/600px-Pokemon_GO_Plus_wstrap_2.png",

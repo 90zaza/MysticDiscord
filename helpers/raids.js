@@ -138,14 +138,20 @@ exports.messageReactionAdd = async function (messageReaction, user) {
           const role = messageReaction.message.member.guild.roles.find("name", id.toString());
           messageReaction.message.member.guild.member(user).removeRole(role);
         } else if (messageReaction.emoji.name == "mystic") {
-          await updateRaidTeam(messageReaction.message, raidschannel, "mystic");
-          raidschannel.send(`Raid ${messageReaction.message.member.guild.roles.find("name", id.toString())}: ${messageReaction.emoji}`);
+          if(result.dataValues.team!='mystic'){
+            await updateRaidTeam(messageReaction.message, raidschannel, "mystic");
+            raidschannel.send(`Raid ${messageReaction.message.member.guild.roles.find("name", id.toString())}: ${messageReaction.emoji}`);
+          }
         } else if (messageReaction.emoji.name == "valor") {
-          await updateRaidTeam(messageReaction.message, raidschannel, "valor");
-          raidschannel.send(`Raid ${messageReaction.message.member.guild.roles.find("name", id.toString())}: ${messageReaction.emoji}`);
+          if(result.dataValues.team!='valor'){
+            await updateRaidTeam(messageReaction.message, raidschannel, "valor");
+            raidschannel.send(`Raid ${messageReaction.message.member.guild.roles.find("name", id.toString())}: ${messageReaction.emoji}`);
+          }
         } else if (messageReaction.emoji.name == "instinct") {
-          await updateRaidTeam(messageReaction.message, raidschannel, "instinct");
-          raidschannel.send(`Raid ${messageReaction.message.member.guild.roles.find("name", id.toString())}: ${messageReaction.emoji}`);
+          if(result.dataValues.team!='instinct'){
+            await updateRaidTeam(messageReaction.message, raidschannel, "instinct");
+            raidschannel.send(`Raid ${messageReaction.message.member.guild.roles.find("name", id.toString())}: ${messageReaction.emoji}`);
+          }
         }
       }
     })
