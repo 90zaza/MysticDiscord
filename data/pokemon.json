@@ -1,5 +1,55 @@
 [
   {
+    "keys": ["t1", "tier1", "level1"],
+    "name": "Tier 1",
+    "number": -1,
+    "stats": [],
+    "type": ["egg"],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["t2", "tier2", "level2"],
+    "name": "Tier 2",
+    "number": -2,
+    "stats": [],
+    "type": ["egg"],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["t3", "tier3", "level3"],
+    "name": "Tier 3",
+    "number": -3,
+    "stats": [],
+    "type": ["egg"],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["t4", "tier4", "level4"],
+    "name": "Tier 4",
+    "number": -4,
+    "stats": [],
+    "type": ["egg"],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
+    "keys": ["t5", "tier5", "level5"],
+    "name": "Tier 5",
+    "number": -5,
+    "stats": [],
+    "type": ["egg"],
+    "attacks": [],
+    "defence": [],
+    "recplayers": 0
+  },
+  {
     "keys": ["missingno"],
     "name": "Missingno",
     "number": "???",
