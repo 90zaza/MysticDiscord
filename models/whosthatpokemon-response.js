@@ -32,8 +32,7 @@ module.exports = class GenericResponse extends Message {
 
   newMessage(pokemonNumber) {
     const silhouette = `https://i0.wp.com/delftmystic.files.wordpress.com/2017/11/silhouette-${pokemonNumber}1.png`
-
-    let colored = `https://img.pokemondb.net/sprites/x-y/normal/${pokemons[Number(pokemonNumber)].name.toLowerCase()}.png`
+    let colored = `https://img.pokemondb.net/sprites/x-y/normal/${pokemons[Number(pokemonNumber)+5].name.toLowerCase()}.png`
     if(pokemonNumber == 29) { //nidoranf
       colored = `https://img.pokemondb.net/sprites/x-y/normal/nidoran-f.png`
     }
@@ -44,16 +43,15 @@ module.exports = class GenericResponse extends Message {
     const embed = new Discord.MessageEmbed()
      .setTitle(`Who's That Pokémon?`)
      .setThumbnail(silhouette)
-     .setDescription("Raad als eerste welke Pokémon dit is!")
-
+     .setDescription("Raad binnen 20 seconden welke Pokémon dit is!")
     super.newMessage({embed});
 
     setTimeout(() => {
       const embed = new Discord.MessageEmbed()
-      .setTitle(`Het is.... ${pokemons[Number(pokemonNumber)].name}`)
-      .setThumbnail(colored)
-      .setDescription(` \n:balloon: :tada: :balloon: :tada: :balloon:`);
-      super.reply({embed})
+        .setTitle(`Het is.... ${pokemons[Number(pokemonNumber)+5].name}`)
+        .setThumbnail(colored)
+        .setDescription(`:balloon: :tada: :balloon: :tada: :balloon:`);
+      super.newMessage({embed})
     }, 20000)
   }
 }

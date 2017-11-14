@@ -496,7 +496,7 @@ function extractTimes(str) {
   let m;
   let times = {};
   const raidschannel = this.message.message.guild.channels.find("name", "raids");
-  const role = this.message.message.member.guild.roles.find("name", `${str.match('[a-zA-Z0-9]+')}`);
+  const role = this.message.message.member.guild.roles.find("name", `${message.message.content.match('[a-zA-Z0-9]+')}`);
   let date = new Date();
   while ((m = regex.exec(str)) !== null) {
     switch (m[1]) {

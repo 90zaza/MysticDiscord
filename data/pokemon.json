@@ -7,7 +7,7 @@
     "type": ["egg"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": "1?"
   },
   {
     "keys": ["t2", "tier2", "level2"],
@@ -17,7 +17,7 @@
     "type": ["egg"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": "1?"
   },
   {
     "keys": ["t3", "tier3", "level3"],
@@ -27,7 +27,7 @@
     "type": ["egg"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": "2?"
   },
   {
     "keys": ["t4", "tier4", "level4"],
@@ -37,7 +37,7 @@
     "type": ["egg"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers":"4?"
   },
   {
     "keys": ["t5", "tier5", "level5"],
@@ -47,7 +47,7 @@
     "type": ["egg"],
     "attacks": [],
     "defence": [],
-    "recplayers": 0
+    "recplayers": "6?"
   },
   {
     "keys": ["missingno"],

@@ -36,8 +36,7 @@ module.exports = class PokemonResponse extends Message {
     super(message);
     this.pokemons = pokemons;
     this.pokemon = this.getPokemon();
-
-    if(this.pokemon && this.pokemon.number > 0) {
+    if(this.pokemon && !(this.pokemon.number < 0)) {
       this.newMessage();
     }
   }
