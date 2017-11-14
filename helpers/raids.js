@@ -212,8 +212,8 @@ async function addRaid(message) {
 }
 
 async function updateRaid(message, id) {
-  // extract information from the message
-  newRaid = new Raid(message.message.content);
+  // extract information from the message, remove raid id first
+  newRaid = new Raid(message.message.content.split(" ").slice(1).join(" "));
 
   // find object
   raids.findById(parseInt(id))
@@ -375,11 +375,33 @@ function messageEmbed(result, raid, id) {
   const team = raid.team ? raid.team : (result ? result.dataValues.team : null);
   const joining = result ? (result.dataValues.joining ? result.dataValues.joining.split(",") : null) : null;
 
+  let thumbnail = `https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`;
+  if (pokemon.number < 0)
+  {
+    switch (pokemon.number) {
+      case -1:
+        thumbnail = "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2017/06/Pokemon-GO-Normal-Egg-Pink.png";
+        break;
+      case -2:
+        thumbnail = "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2017/06/Pokemon-GO-Normal-Egg-Pink.png";
+        break;
+      case -3:
+        thumbnail = "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2017/06/Pokemon-GO-Rare-Egg-Yellow.png";
+        break;
+      case -4:
+        thumbnail = "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2017/06/Pokemon-GO-Rare-Egg-Yellow.png";
+        break;
+      case -5:
+        thumbnail = "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2017/06/Legendary-Egg-Raid-Boss.png";
+        break;
+      }
+  }
+
   return new Discord.MessageEmbed()
     .setAuthor("Raid #" + id)
     .setColor(embedColor(team))
     .setTitle(`${pokemon.name}: ${gym ? gym.name : "Gym to be added"}`)
-    .setThumbnail(`https://img.pokemondb.net/sprites/x-y/normal/${pokemon.name.toLowerCase()}.png`)
+    .setThumbnail(thumbnail)
     .addField("Raid active", `${endtime ? endtime : "to be added"}`, true)
     .addField("Battle time", `${battletime ? battletime : "to be added"}`, true)
     .addField(`Joining (lvl 30 players needed: ~${pokemon.recplayers})`, joining ? joining.join("\n") : "No trainers interested yet")
@@ -551,6 +573,7 @@ function extractPokemon(messageContent) {
   // old way of extracting the pokemon from the message
   // TODO: update to more efficient method
   let textArray = messageContent.split(" ");
+
   return pokemons.find((item) => {
     return item.keys.includes(textArray[0]);
   });
