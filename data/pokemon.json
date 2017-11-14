@@ -456,7 +456,7 @@
     "rare":  false,
     "description": 0
   }, {
-    "keys": ["ninetales"],
+    "keys": ["ninetales", "ninetails"],
     "name": "Ninetales",
     "number": 38,
     "stats": [169, 204, 146],
@@ -1298,7 +1298,7 @@
     "description": "Evolueert van Tyrogue als Defence zijn hoogste IV stat is"
   }, {
     "keys": ["lickytung", "lickitung"],
-    "name": "Lickytung",
+    "name": "Lickitung",
     "number": 108,
     "type": ["normal"],
     "stats": [108, 137, 180],
