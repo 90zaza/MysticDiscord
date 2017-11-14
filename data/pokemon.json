@@ -1826,7 +1826,7 @@
     "description": 0
   }, {
     "keys": ["chikorita", "chicorita"],
-    "name": "Chicorita",
+    "name": "Chikorita",
     "number": 152,
     "type": ["grass"],
     "stats": [92, 122, 90],
