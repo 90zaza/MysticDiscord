@@ -131,22 +131,64 @@ module.exports = class PokemonResponse extends Message {
       imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${transform}.png`;
     }
 
+    //pichu forms
+    if (this.pokemon.name.toLowerCase() == "pichu") {
+      let random=Math.random();
+      if (random<1/20) {
+        imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Pichu_ash_m.png/revision/latest?cb=20170816165509`;
+      }
+      else if (random<2/20) {
+        imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/7/7a/Pichu_festive_m.png/revision/latest?cb=20170816165250`;
+      }
+      else if (random<3/20) {
+        imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/1/11/Pichu_witch_m.png/revision/latest?cb=20171020155931`;
+      }
+    }
+
+
     //pikachu forms
     if (this.pokemon.name.toLowerCase() == "pikachu") {
       let random=Math.random();
       this.pokemon.type=["electric"];
-      if (random<1/10) {
-        imageURL=`https://cdn.bulbagarden.net/upload/thumb/1/17/025Pikachu-Original.png/600px-025Pikachu-Original.png`;
+      if (random<1/20) {
+        imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Pikachu_festive_m.png/revision/latest?cb=20170816164048`;
       }
-      else if (random<2/10) {
+      else if (random<2/20) {
+        imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/1/1e/Pikachu_party_m.png/revision/latest?cb=20170816164051`;
+      }
+      else if (random<3/20) {
+        imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/4/49/Pikachu_witch_m.png/revision/latest?cb=20171020155234`;
+      }
+      else if (random<4/20) {
+        imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/1/17/Pikachu_ash_m.png/revision/latest?cb=20170816164045`;
+      }
+      else if (random<5/20) {
         imageURL=`https://cdn.bulbagarden.net/upload/a/a0/Flying_Pikachu_Yellow.png`;
         this.pokemon.type=["flying", "electric"];
       }
-      else if (random<3/10) {
+      else if (random<6/20) {
         imageURL=`http://pixelartmaker.com/art/5191f3dfbdbd026.png`;
         this.pokemon.type=["water", "electric"];
       }
     }
+
+    //raichu forms
+    if (this.pokemon.name.toLowerCase() == "raichu") {
+      let random=Math.random();
+      if (random<1/20) {
+        imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/f/fe/Raichu_witch_m.png/revision/latest?cb=20171020155334`;
+      }
+      else if (random<2/20) {
+        imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/c/c1/Raichu_festive_m.png/revision/latest?cb=20170816161314`;
+      }
+      else if (random<3/20) {
+        imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/c/c8/Raichu_ash_m.png/revision/latest?cb=20170816161234`;
+      }
+      else if (random<4/20) {
+        imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Raichu_party_m.png/revision/latest?cb=20170816161351`;
+      }
+    }
+
 
     //missingno
     if (this.pokemon.name.toLowerCase() == "missingno") {
