@@ -126,6 +126,7 @@ module.exports = class PokemonResponse extends Message {
       else if (random<3/8) {transform="yanma";}
       else if (random<4/8) {transform="rattata";}
       else if (random<5/8) {transform="sentret";}
+      else if (random<6/8) {transform="hoothoot";}
 
       imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${transform}.png`;
     }
@@ -133,6 +134,7 @@ module.exports = class PokemonResponse extends Message {
     //pikachu forms
     if (this.pokemon.name.toLowerCase() == "pikachu") {
       let random=Math.random();
+      this.pokemon.type=["electric"];
       if (random<1/10) {
         imageURL=`https://cdn.bulbagarden.net/upload/thumb/1/17/025Pikachu-Original.png/600px-025Pikachu-Original.png`;
       }
