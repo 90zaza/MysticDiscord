@@ -339,6 +339,42 @@
 }, {
 
 
+  "keys": ["tcg", "trading card game"],
+  "title": "Trading Card Game",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/0/0c/AshPikachuSMPromo108.jpg/429px-AshPikachuSMPromo108.jpg",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_Trading_Card_Game",
+  "description": "Een van de vele spellen van Pokémon is de Trading Card Game. Met kaarten spelen 2 trainers tegen elkaar waarbij ze om de beurt trainers, energies en Pokémon kunnen gebruiken om de tegenstander schade te geven. Degene die als eerste alle prijzen gepakt heeft wint."
+}, {
+  "keys": ["fiets", "bicycle", "bike"],
+  "title": "Bicycle",
+  "img": "https://cdn.bulbagarden.net/upload/8/86/Mach_Bike.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Bicycle",
+  "description": "Zowel in de nintendo spellen, de anime, de TCG en in Pokémon Go wordt de fiets gebruikt om je sneller door het spel heen te gaan. Zo ben je sneller bij een gym, raid of zeldzame pokémon!\n\n*Oak's words echoed... There's a time and place for everything, but not now.*"
+}, {
+  "keys": ["mr. fuji", "mr fuji"],
+  "title": "Mr. Fuji",
+  "img": "http://img1.wikia.nocookie.net/__cb20110101165742/pokemon/images/thumb/8/89/Mr._Fuji.png/130px-0%2C65%2C0%2C64-Mr._Fuji.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Mr._Fuji",
+  "description": "Deze oudere man die in Lavender Town woont houdt zich voornamelijk bezig met het zorgen van achtergelaten Pokémon. Hij woonde op Cinnabar Island, waar hij als professor het Pokémon Lab oprichtte en bevriend was met Blaine."
+}, {
+  "keys": ["pokemon mansion", "pokémon mansion"],
+  "title": "Pokémon Mansion",
+  "img": "https://cdn.bulbagarden.net/upload/6/63/FL_Pokemon_Mansion.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_Mansion_(Kanto)",
+  "description": "Dit gebouw gelegen op Cinnabar Island is, net als de rest van het eiland, verwoest door de uitbarsting van de vulkaan. Het was het huis van de wetenschapper de Mew cloonde om Mewtwo te verkrijgen. Tussen de rommel zijn stukken van een journal te vinden waar Mr. Fuji aantekeningen heeft gemaakt van de zoektocht naar Mew en het Cloning-process."
+}, {
+  "keys": ["the island of giant pokemon", "island of giant pokemon", "giant pokemon island"],
+  "title": "The island of Giant Pokémon",
+  "img": "https://cdn.bulbagarden.net/upload/3/34/EP017.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/EP017",
+  "description": "Dit eiland is een atractie opgebouwd door Giovanni om geld te verdienen voor Team Rocket. Dit eiland is een touristenatractie, die te zien is vanaf boten die eromheen varen. De reuzen blijken echter geen Pokémon te zijn, maar robots."
+}, {
+  "keys": ["pinkan island", "pinken island", "pinkin island"],
+  "title": "Pinkan Island",
+  "img": "https://cdn.bulbagarden.net/upload/b/bf/Pink_Pokemon.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pinkan_Island",
+  "description": "Dit natuur reservaat is een van de orange islands. Het eiland is bekend vanwege de roze vruchten die hier groeien die opgegeten worden door wilde Pokémon, met als gevolg dat deze roze kleuren. Deze Pokémon met onnatuurlijke kleuren trekken stropers aan, waardoor alleen Officer Jenny op het eiland aanwezig mag zijn."
+}, {
   "keys": ["cerulean cave", "unknown dungeon"],
   "title": "Cerulean Cave",
   "img": "https://cdn.bulbagarden.net/upload/thumb/6/69/Cerulean_Cave_entrance_PO.png/220px-Cerulean_Cave_entrance_PO.png",
@@ -525,7 +561,7 @@
   "url": "https://bulbapedia.bulbagarden.net/wiki/Silph_Co.",
   "description": "Kanto is de regio van technologische vooruitgan, met the Silph Company in Saffron City als middenpunt. Meerdere inovatieve producten komen hier vandaan, zoals de Silph Scope, Pokéballs (waaronder de Master Ball), Medicijnen en TM's. Het is dan ook niet gek dat het hoofdkwartier meerdere keren het target van Team Rocket is geweest."
 }, {
-  "keys": ["pokemon tv", "pokemon kijken", "watch pokemon", "kijk pokemon", "pokémon tv", "pokémon kijken", "watch pokémon", "kijk pokémon", "beste serie", "beste tv serie", "best show", "best tv show"],
+  "keys": ["pokemon tv", "pokemon kijken", "watch pokemon", "kijk pokemon", "pokémon tv", "pokémon kijken", "watch pokémon", "kijk pokémon", "beste serie", "beste tv serie", "best show", "best tv show", "anime"],
   "title": "Pokémon TV",
   "img": "https://lh3.googleusercontent.com/Yz6MtHKNPF6SxlQ8sJ4e5tcd1v1II4A1ZT_dD_UUpeeDxVCxaqwPkx4SCHZrheWnFw=w300",
   "url": "https://www.pokemon.com/us/pokemon-episodes/pokemon-tv-seasons/",

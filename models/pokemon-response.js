@@ -58,67 +58,88 @@ module.exports = class PokemonResponse extends Message {
       gender = "-f";
     };
 
-    let imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${this.pokemon.name.toLowerCase()}${gender}.png`;
+    let name = this.pokemon.name;
+    let imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${name.toLowerCase()}${gender}.png`;
+
 
     //unown forms
-    if (this.pokemon.name.toLowerCase() == "unown") {
+    if (name.toLowerCase() == "unown") {
       let random=Math.random();
       let letter="";
-      if (random<1/28) {letter="unown-a"}
-      else if (random<2/28) {letter="unown-b"}
-      else if (random<3/28) {letter="unown-c"}
-      else if (random<4/28) {letter="unown-d"}
-      else if (random<5/28) {letter="unown-e"}
-      else if (random<6/28) {letter="unown-f"}
-      else if (random<7/28) {letter="unown-g"}
-      else if (random<8/28) {letter="unown-h"}
-      else if (random<9/28) {letter="unown-i"}
-      else if (random<10/28) {letter="unown-j"}
-      else if (random<11/28) {letter="unown-k"}
-      else if (random<12/28) {letter="unown-l"}
-      else if (random<13/28) {letter="unown-m"}
-      else if (random<14/28) {letter="unown-n"}
-      else if (random<15/28) {letter="unown-o"}
-      else if (random<16/28) {letter="unown-p"}
-      else if (random<17/28) {letter="unown-q"}
-      else if (random<18/28) {letter="unown-r"}
-      else if (random<19/28) {letter="unown-s"}
-      else if (random<20/28) {letter="unown-t"}
-      else if (random<21/28) {letter="unown-u"}
-      else if (random<22/28) {letter="unown-v"}
-      else if (random<23/28) {letter="unown-w"}
-      else if (random<24/28) {letter="unown-x"}
-      else if (random<25/28) {letter="unown-y"}
-      else if (random<26/28) {letter="unown-z"}
-      else if (random<27/28) {letter="unown-em"}
-      else if (random<28/28) {letter="unown-qm"}
+      if (random<1/28) {letter="unown-a"; name = 'unown a';}
+      else if (random<2/28) {letter="unown-b"; name = 'unown b';}
+      else if (random<3/28) {letter="unown-c"; name = 'unown c';}
+      else if (random<4/28) {letter="unown-d"; name = 'unown d';}
+      else if (random<5/28) {letter="unown-e"; name = 'unown e';}
+      else if (random<6/28) {letter="unown-f"; name = 'unown f';}
+      else if (random<7/28) {letter="unown-g"; name = 'unown g';}
+      else if (random<8/28) {letter="unown-h"; name = 'unown h';}
+      else if (random<9/28) {letter="unown-i"; name = 'unown i';}
+      else if (random<10/28) {letter="unown-j"; name = 'unown j';}
+      else if (random<11/28) {letter="unown-k"; name = 'unown k';}
+      else if (random<12/28) {letter="unown-l"; name = 'unown l';}
+      else if (random<13/28) {letter="unown-m"; name = 'unown m';}
+      else if (random<14/28) {letter="unown-n"; name = 'unown n';}
+      else if (random<15/28) {letter="unown-o"; name = 'unown o';}
+      else if (random<16/28) {letter="unown-p"; name = 'unown p';}
+      else if (random<17/28) {letter="unown-q"; name = 'unown q';}
+      else if (random<18/28) {letter="unown-r"; name = 'unown r';}
+      else if (random<19/28) {letter="unown-s"; name = 'unown s';}
+      else if (random<20/28) {letter="unown-t"; name = 'unown t';}
+      else if (random<21/28) {letter="unown-u"; name = 'unown u';}
+      else if (random<22/28) {letter="unown-v"; name = 'unown v';}
+      else if (random<23/28) {letter="unown-w"; name = 'unown w';}
+      else if (random<24/28) {letter="unown-x"; name = 'unown x';}
+      else if (random<25/28) {letter="unown-y"; name = 'unown y';}
+      else if (random<26/28) {letter="unown-z"; name = 'unown z';}
+      else if (random<27/28) {letter="unown-em"; name = 'unown !';}
+      else if (random<28/28) {letter="unown-qm"; name = 'unown ?';}
 
       imageURL = `https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/${sprite}/${letter}.png`
     }
 
+    //squirtle forms
+    if (name.toLowerCase() == "squirtle") {
+      let random=Math.random();
+      if (random<1/4) {
+        name = 'Squirtle Squad';
+        imageURL = `https://orig00.deviantart.net/aa74/f/2012/201/9/e/chibi_squirtle_by_o_melet-d580ex7.png`;}
+    }
+
     //nidoran m/f forms
-    if (this.pokemon.name.toLowerCase() == "nidoran♀") {
+    if (name.toLowerCase() == "nidoran♀") {
       imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/nidoran-f.png`;
     }
-    if (this.pokemon.name.toLowerCase() == "nidoran♂") {
+    if (name.toLowerCase() == "nidoran♂") {
       imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/nidoran-m.png`;
     }
 
 
     //castform forms
-    if (this.pokemon.name.toLowerCase() == "castform") {
+    if (name.toLowerCase() == "castform") {
       let random=Math.random();
       let weather="castform";
       this.pokemon.type=["normal"];
-      if (random<1/4) {weather="castform-rainy"; this.pokemon.type=["water"];}
-      else if (random<2/4) {weather="castform-sunny"; this.pokemon.type=["fire"];}
-      else if (random<3/4) {weather="castform-snowy"; this.pokemon.type=["ice"];}
-
+      if (random<1/4) {
+        weather="castform-rainy";
+        this.pokemon.type=["water"];
+        name = `Rainy Castform`;
+      }
+      else if (random<2/4) {
+        weather="castform-sunny";
+        this.pokemon.type=["fire"];
+        name = `Sunny Castform`;
+      }
+      else if (random<3/4) {
+        weather="castform-snowy";
+        this.pokemon.type=["ice"];
+        name = `Snowy Castform`;
+      }
       imageURL = `https://img.pokemondb.net/sprites/x-y/${sprite}/${weather}.png`;
     }
 
     //ditto forms
-    if (this.pokemon.name.toLowerCase() == "ditto") {
+    if (name.toLowerCase() == "ditto") {
       let random=Math.random();
       let transform="ditto";
       if (random<1/8) {transform="pidgey";}
@@ -132,70 +153,83 @@ module.exports = class PokemonResponse extends Message {
     }
 
     //pichu forms
-    if (this.pokemon.name.toLowerCase() == "pichu") {
+    if (name.toLowerCase() == "pichu") {
       let random=Math.random();
       if (random<1/20) {
+        name = `Ash Hat Pichu`;
         imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Pichu_ash_m.png/revision/latest?cb=20170816165509`;
       }
       else if (random<2/20) {
+        name = `Festive Hat Pichu`;
         imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/7/7a/Pichu_festive_m.png/revision/latest?cb=20170816165250`;
       }
       else if (random<3/20) {
+        name = `Witch Hat Pichu`;
         imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/1/11/Pichu_witch_m.png/revision/latest?cb=20171020155931`;
       }
     }
 
 
     //pikachu forms
-    if (this.pokemon.name.toLowerCase() == "pikachu") {
+    if (name.toLowerCase() == "pikachu") {
       let random=Math.random();
       this.pokemon.type=["electric"];
       if (random<1/20) {
+        name = `Festive Hat Pikachu`;
         imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Pikachu_festive_m.png/revision/latest?cb=20170816164048`;
       }
       else if (random<2/20) {
+        name = `Party Hat Pikachu`;
         imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/1/1e/Pikachu_party_m.png/revision/latest?cb=20170816164051`;
       }
       else if (random<3/20) {
+        name = `Witch Hat Pikachu`;
         imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/4/49/Pikachu_witch_m.png/revision/latest?cb=20171020155234`;
       }
       else if (random<4/20) {
+        name = `Ash Hat Pikachu`;
         imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/1/17/Pikachu_ash_m.png/revision/latest?cb=20170816164045`;
       }
       else if (random<5/20) {
+        name = `Flying Pikachu`;
         imageURL=`https://cdn.bulbagarden.net/upload/a/a0/Flying_Pikachu_Yellow.png`;
         this.pokemon.type=["flying", "electric"];
       }
       else if (random<6/20) {
+        name = `Surfing Pikachu`;
         imageURL=`http://pixelartmaker.com/art/5191f3dfbdbd026.png`;
         this.pokemon.type=["water", "electric"];
       }
     }
 
     //raichu forms
-    if (this.pokemon.name.toLowerCase() == "raichu") {
+    if (name.toLowerCase() == "raichu") {
       let random=Math.random();
       if (random<1/20) {
+        name = `Witch Hat Raichu`;
         imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/f/fe/Raichu_witch_m.png/revision/latest?cb=20171020155334`;
       }
       else if (random<2/20) {
+        name = `Festive Hat Raichu`;
         imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/c/c1/Raichu_festive_m.png/revision/latest?cb=20170816161314`;
       }
       else if (random<3/20) {
+        name = `Ash Hat Raichu`;
         imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/c/c8/Raichu_ash_m.png/revision/latest?cb=20170816161234`;
       }
       else if (random<4/20) {
+        name = `Party Hat Raichu`;
         imageURL=`https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Raichu_party_m.png/revision/latest?cb=20170816161351`;
       }
     }
 
-
     //missingno
-    if (this.pokemon.name.toLowerCase() == "missingno") {
+    if (name.toLowerCase() == "missingno") {
       imageURL = 'https://vignette.wikia.nocookie.net/nintendo/images/8/85/MissingNoNormal.png/revision/latest?cb=20131114211037&path-prefix=en'
     }
+
     let embed = new Discord.MessageEmbed()
-      .setTitle("#" + this.pokemon.number + " - " + this.pokemon.name + " [" + this.pokemon.type.join(", ") + "]")
+      .setTitle("#" + this.pokemon.number + " - " + name + " [" + this.pokemon.type.join(", ") + "]")
       .setThumbnail(imageURL)
       .setURL("https://pokemongo.gamepress.gg/pokemon/" + this.pokemon.number)
       .setColor(colors[this.pokemon.type[0]]);
