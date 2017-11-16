@@ -1867,7 +1867,7 @@
     "name": "Mew",
     "number": 151,
     "type": ["psychic"],
-    "stats": [210, 209, 200],
+    "stats": [210, 210, 200],
     "attacks": [],
     "defence": [],
     "recplayers": 0,
