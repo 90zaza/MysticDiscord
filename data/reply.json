@@ -287,6 +287,24 @@
   "url": "https://bulbapedia.bulbagarden.net/wiki/AZ",
   "description": "Een van de triestere verhalen, tijdens de oorlog van Kalos verloor AZ zijn pokémon. Hij maakte een machine om de pokémon weer tot leven te brengen, maar hij was te kwaad op de wereld die zijn pokémon pijn had gedaan dat hij zijn machine ombouwde tot het sterkste wapen ooit gemaakt. Toen hij dit wapen gebruikte om de oorlog te beeindigen verliet de Pokémon hem omdat AZ door haat bevangen was. Toen hij 3000 jaar later tijdens een Pokémon gevecht vrij werd van zijn boosheid keerde zijn Floette weer terug. Pfew, toch nog een happy ending! (afgezien van al die mensen en pokémon die zijn wapen dood heeft gemaakt dan natuurlijk)"
 }, {
+  "keys": ["tracey", "tracey sketchit"],
+  "title": "Tracey Sketchit",
+  "img": "https://cdn.bulbagarden.net/upload/e/e1/TraceyEP.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Tracey_Sketchit",
+  "description": "Een van de metgezellen van Ash tijdens zijn reis door de Orange Islands. Een van zijn hobbies is het tekenen (sketchen) van Pokémon. Tijdens zijn debut had hij een Marill in zijn team, wat een hint was naar de opkomst van generatie 2. Als hij later zijn held Professor Oak ontmoet besluit hij achter te blijven in Pallet Town om zijn assistent te worden."
+}, {
+  "keys": ["imakuni", "imakuni?", "tomoaki imakuni"],
+  "title": "Tomoaki Imakuni",
+  "img": "https://cdn.bulbagarden.net/upload/e/e1/TraceyEP.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Tomoaki_Imakuni",
+  "description": "Deze muzicus heeft meegewerkt aan sommige muziek van de Anime, en heeft ook een grote bijdrage geleverd aan de promotie van de TCG. Hij speelt een nogal bijzondere rol in de TCG van nintendo, waarhij zijn 'weird deck' gebruikt om tegen de speler te vechten. Als je hem genoeg verslagen hebt krijg je de speciale 'imakuni?' kaart."
+}, {
+  "keys": ["bedenker pokemon", "satoshi", "tajiri", "satoshi tajiri"],
+  "title": "Satoshi Tajiri",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/5/5e/Satoshi_Tajiri_2016.jpg/399px-Satoshi_Tajiri_2016.jpg",
+  "url": "https://nl.wikipedia.org/wiki/Satoshi_Tajiri",
+  "description": "Aan deze op 28 augustus 1965 geboren man hebben we eigenlijk heel Pokémon te danken. Al vanaf zijn jeugd was hij gefascineerd door beestjes die hij verzamelden tijdens uitstapjes naar bossen. In 1982 besloot hij met vrienden een game magazine op te richten: Game Freak. Toen in 1982 de GameBoy uitkwam werd hij door de Link Kabel technologie op het idee van Pokémon gebracht. Beestjes die je kon verzamelen door te ruilen met elkaar."
+}, {
 
 
   "keys": ["kanto"],
@@ -300,6 +318,12 @@
   "img": "https://cdn.bulbagarden.net/upload/3/3f/Sevii_Islands_map.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Sevii_Islands",
   "description": "Deze eilanden die technisch gezien onderdeel zijn van Kanto, liggen ten zuiden van het vasteland. Doordat ze zo afgelegen liggen vinden onder andere Ho-Oh, Lugia, Moltres en Deoxys hier hun onderkomen. De afstand met het vaste land is zo groot dat je er surfend niet kunt komen, en de Seagallop Ferry nodig hebt vanuit Vermilion City."
+}, {
+  "keys": ["orange islands", "orange archipelago"],
+  "title": "Orange Archipelago",
+  "img": "https://cdn.bulbagarden.net/upload/1/1a/Orange_Islands_map.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Orange_Archipelago",
+  "description": "Beter bekend als de Orange Islands, een groep van meerdere eilanden, en een populaire trekpleister voor toeristen vanwege het klimaat en de diversiteit. Een van de bekendste eilanden is Pinkin, waar roze Pokémon leven Island en Pummelo Island, waar de Orange League gehouden wordt."
 }, {
   "keys": ["johto"],
   "title": "Johto Region",
@@ -335,10 +359,29 @@
   "title": "Alola Region",
   "img": "https://cdn.bulbagarden.net/upload/6/6c/Alola.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Alola",
-  "description": "De alola regio bestaat uit 4 natuurlijke, en een door mensen gemaakt eiland, en is een populair resort voor touristen. Door het klimaat hebben sommige Pokémon zich anders ontwikkeld dan dezelfde soorten op het vasteland. Dit is ook de plek waar de Guardian Deities vochten tegen Solgaleo en Lunala."
+  "description": "De alola regio bestaat uit 4 natuurlijke, en een door mensen gemaakt eiland, en is een populair resort voor touristen. Door het klimaat hebben sommige Pokémon zich anders ontwikkeld dan dezelfde soorten op het vasteland (alolan forms). Dit is ook de plek waar de Guardian Deities vochten tegen Solgaleo en Lunala."
 }, {
 
 
+
+  "keys": ["bulbapedia"],
+  "title": "bulbapedia.bulbagarden.net",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/d/d4/Bulbapedia_bulb.png/60px-Bulbapedia_bulb.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Main_Page",
+  "description": "Zoek je iets wat met Pokémon te maken heeft? Dan zit je hier op het goede adres! Vind hier alles over de Nintendo spellen, tcg, anime of zelfs Pokémon Go!"
+}, {
+  "keys": ["gamepress", "game press"],
+  "title": "gamepress.gg",
+  "img": "https://gamepress.gg/sites/default/files/gp-logo.png",
+  "url": "https://pokemongo.gamepress.gg/",
+  "description": "Zoek je informatie over Pokémon GO? Dan ben je hier op het goede adres. Hier vind je alles over IV's, stats, Movesets en percentages."
+}, {
+  "keys": ["alolan", "alolan forms"],
+  "title": "Alolan forms",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/2/2c/Normal_and_Alolan_Vulpix_anime.png/800px-Normal_and_Alolan_Vulpix_anime.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Regional_variant",
+  "description": "Een van de Regional variants waarbij sommige pokemon in een bepaalde regio zich anders ontwikkelen dan dezelfde soort in de rest van de wereld. De Alolan forms zijn ontstaan door het tropische klimaat, waardoor de pokemon een ander type en uiterlijk hebben gekregen."
+}, {
   "keys": ["tcg", "trading card game"],
   "title": "Trading Card Game",
   "img": "https://cdn.bulbagarden.net/upload/thumb/0/0c/AshPikachuSMPromo108.jpg/429px-AshPikachuSMPromo108.jpg",
@@ -361,7 +404,7 @@
   "title": "Pokémon Mansion",
   "img": "https://cdn.bulbagarden.net/upload/6/63/FL_Pokemon_Mansion.png",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_Mansion_(Kanto)",
-  "description": "Dit gebouw gelegen op Cinnabar Island is, net als de rest van het eiland, verwoest door de uitbarsting van de vulkaan. Het was het huis van de wetenschapper de Mew cloonde om Mewtwo te verkrijgen. Tussen de rommel zijn stukken van een journal te vinden waar Mr. Fuji aantekeningen heeft gemaakt van de zoektocht naar Mew en het Cloning-process."
+  "description": "Dit gebouw gelegen op Cinnabar Island is, net als de rest van het eiland, verwoest door de uitbarsting van de vulkaan. Het was het huis van de wetenschapper de Mew cloonde om Mewtwo te verkrijgen. Tussen de rommel zijn stukken van een journal te vinden waar Mr. Fuji aantekeningen heeft gemaakt van de zoektocht naar Mew en het Cloning-process.\n\n*Mew gave birth. We named the newborn Mewtwo.*"
 }, {
   "keys": ["the island of giant pokemon", "island of giant pokemon", "giant pokemon island"],
   "title": "The island of Giant Pokémon",
@@ -489,7 +532,7 @@
   "url": "https://www.nianticlabs.com/terms/pokemongo/en/",
   "description": "Niantic's Terms of Service zijn de regels die iedereen (ja, ook jij) heeft geaccepteerd zodat ze Pokémon Go kunnen spelen. Onder andere is hier te lezen dat je niet mag spoofen, maar ook multi accounten, of bot accounts gebruiken (daar vallen scanners onder) zijn niet toegestaan. Laten we proberen om het spel voor iedereen leuk te houden door gewoon te spelen hoe het hoort!"
 }, {
-  "keys": ["is pokemon go online", "online", "offline", "pokemon online", "pokemon go online"],
+  "keys": ["is pokemon go down", "ispokemongodown", "is pokemon go online", "online", "offline", "pokemon online", "pokemon go online"],
   "title": "Is Pokémon Go online?",
   "img": "http://www.blackenterprise.com/wp-content/blogs.dir/1/files/2016/03/wireless-signal.png",
   "url": "http://poketimer.com/",
