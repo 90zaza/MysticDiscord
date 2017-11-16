@@ -66,6 +66,6 @@ module.exports = class GenericResponse extends Message {
         .setThumbnail(colored)
         .setDescription(`:balloon: :tada: :balloon: :tada: :balloon:`);
       super.newMessage({embed})
-    }, 2000)
+    }, 20000)
   }
 }
