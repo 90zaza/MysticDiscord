@@ -375,7 +375,7 @@
   "url": "https://bulbapedia.bulbagarden.net/wiki/Evolution",
   "description": "Blijkt dat Darwin het flink bij het verkeerde eind heeft gehad, evolutie is als een Pokémon een sterkere vorm aanneemt waardoor zijn stats verbeteren. Afhankelijk van wat je precies wil is in de meeste gevallen de geëvolueerde pokemon beter op alle gebieden. Er is wel een candy investering voor nodig (en soms een evolutie item). Daarnaast levert het ook nog eens 500 xp op!"
 }, {
-  "keys": ["guct", "grand unified catch theory", "catch bonus", "catch chance", "vang kans", "vangkans"],
+  "keys": ["guct", "grand unified catch theory", "catch bonus", "catch chance", "vang kans", "vangkans", "catch rate", "catchrate"],
   "title": "Grand Unified Catch Theory",
   "img": "https://gamepress.gg/sites/default/files/gp-logo.png",
   "url": "https://pokemongo.gamepress.gg/guct-medals",
@@ -661,7 +661,7 @@
   "title": "Nest Migratie",
   "img": "http://www.friendstonga.com/images/clock.png",
   "url": "https://poketimer.com/",
-  "description": "De nesten migreren elke twee weken in de nacht van woensdag op donderdag om 02:00. Zie de link voor een timer voor deze migratie (en eventuele events)."
+  "description": "De nesten migreren elke twee weken in de nacht van woensdag op donderdag om 01:00. Zie de link voor een timer voor deze migratie (en eventuele events)."
 }, {
   "keys": ["lvl 40", "level 40"],
   "title": "Level 40 spelers",

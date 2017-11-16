@@ -13,7 +13,7 @@ module.exports = class GenericResponse extends Message {
     if(gen) {
       let pokemonNumber = 802;
 
-      pokemonNumber = Math.floor(Math.random() * gen.value);
+      pokemonNumber = Math.floor(Math.random() * (gen.value2-gen.value1)+gen.value1);
 
       if (pokemonNumber < 10){
         pokemonNumber = `00${pokemonNumber}`;
@@ -31,8 +31,22 @@ module.exports = class GenericResponse extends Message {
   }
 
   newMessage(pokemonNumber) {
-    const silhouette = `https://i0.wp.com/delftmystic.files.wordpress.com/2017/11/silhouette-${pokemonNumber}1.png`
-    let colored = `https://img.pokemondb.net/sprites/x-y/normal/${pokemons[Number(pokemonNumber)+5].name.toLowerCase()}.png`
+    let silhouette
+    silhouette = `https://i0.wp.com/delftmystic.files.wordpress.com/2017/11/silhouette-${pokemonNumber}1.png`
+    if(pokemonNumber==784){
+      silhouette = `https://i2.wp.com/delftmystic.files.wordpress.com/2017/11/silhouette-7842.png`
+    }
+    if(pokemonNumber==785){
+      silhouette = `https://i0.wp.com/delftmystic.files.wordpress.com/2017/11/silhouette-785.png`
+    }
+
+
+    let colored;
+    if(pokemonNumber>721){
+      colored = `https://img.pokemondb.net/sprites/sun-moon/dex/normal/${pokemons[Number(pokemonNumber)+5].name.toLowerCase()}.png`
+    } else {
+      colored = `https://img.pokemondb.net/sprites/x-y/normal/${pokemons[Number(pokemonNumber)+5].name.toLowerCase()}.png`
+    }
     if(pokemonNumber == 29) { //nidoranf
       colored = `https://img.pokemondb.net/sprites/x-y/normal/nidoran-f.png`
     }
@@ -52,6 +66,6 @@ module.exports = class GenericResponse extends Message {
         .setThumbnail(colored)
         .setDescription(`:balloon: :tada: :balloon: :tada: :balloon:`);
       super.newMessage({embed})
-    }, 20000)
+    }, 2000)
   }
 }

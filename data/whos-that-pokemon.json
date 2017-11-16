@@ -10,7 +10,8 @@
       "wieisdezepokemon gen1",
       "wie is deze pokemon gen1"
     ],
-    "value": 151
+    "value1": 1,
+    "value2": 151
   },
   {
     "keys": [
@@ -23,7 +24,78 @@
       "wieisdezepokemon gen2",
       "wie is deze pokemon gen2"
     ],
-    "value": 251
+    "value1": 152,
+    "value2": 251
+  },
+  {
+    "keys": [
+      "whosthatpokemon gen 3",
+      "whos that pokemon gen 3",
+      "wieisdezepokemon gen 3",
+      "wie is deze pokemon gen 3",
+      "whosthatpokemon gen3",
+      "whos that pokemon gen3",
+      "wieisdezepokemon gen3",
+      "wie is deze pokemon gen3"
+    ],
+    "value1": 252,
+    "value2": 386
+  },
+  {
+    "keys": [
+      "whosthatpokemon gen 4",
+      "whos that pokemon gen 4",
+      "wieisdezepokemon gen 4",
+      "wie is deze pokemon gen 4",
+      "whosthatpokemon gen4",
+      "whos that pokemon gen4",
+      "wieisdezepokemon gen4",
+      "wie is deze pokemon gen4"
+    ],
+    "value1": 387,
+    "value2": 493
+  },
+  {
+    "keys": [
+      "whosthatpokemon gen 5",
+      "whos that pokemon gen 5",
+      "wieisdezepokemon gen 5",
+      "wie is deze pokemon gen 5",
+      "whosthatpokemon gen5",
+      "whos that pokemon gen5",
+      "wieisdezepokemon gen5",
+      "wie is deze pokemon gen5"
+    ],
+    "value1": 494,
+    "value2": 649
+  },
+  {
+    "keys": [
+      "whosthatpokemon gen 6",
+      "whos that pokemon gen 6",
+      "wieisdezepokemon gen 6",
+      "wie is deze pokemon gen 6",
+      "whosthatpokemon gen6",
+      "whos that pokemon gen6",
+      "wieisdezepokemon gen6",
+      "wie is deze pokemon gen6"
+    ],
+    "value1": 650,
+    "value2": 721
+  },
+  {
+    "keys": [
+      "whosthatpokemon gen 7",
+      "whos that pokemon gen 7",
+      "wieisdezepokemon gen 7",
+      "wie is deze pokemon gen 7",
+      "whosthatpokemon gen7",
+      "whos that pokemon gen7",
+      "wieisdezepokemon gen7",
+      "wie is deze pokemon gen7"
+    ],
+    "value1": 722,
+    "value2": 802
   },
   {
     "keys": [
@@ -32,6 +104,7 @@
       "wieisdezepokemon",
       "wie is deze pokemon"
     ],
-    "value": 386
+    "value1": 1,
+    "value2": 802
   }
 ]
