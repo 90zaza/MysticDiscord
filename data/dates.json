@@ -4,7 +4,7 @@
   "sort": "overview",
   "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_GO",
   "date": "2016",
-  "description": "5 juli - launch\n10 sept - buddy pokemon\n16 sept - go plus\n26 okt - Halloween\n7 nov - daily bonusses\n23 nov - Thanksgiving event\n22 nov - ditto\n12 dec - gen 2 babies & holiday pikachu\n25 december - holiday event"
+  "description": "5 juli - launch\n10 sept - buddy pokemon\n16 sept - go plus\n26 okt - Halloween\n7 nov - daily bonusses\n21 nov - CP Rebalance\n23 nov - Thanksgiving event\n22 nov - ditto\n12 dec - gen 2 babies & holiday pikachu\n25 december - holiday event"
 }, {
   "keys": ["start", "beginning", "launch"],
   "name": "Launch Pokemon Go",
@@ -40,6 +40,13 @@
   "url": "http://pokemongolive.com/en/post/daily-bonus",
   "date": "7 november 2016",
   "description": "Vanaf nu geeft elke eerste gedraaide stop en gevangen pokemon een bonus, met de 7e achtereenvolgende dag een extra bonus."
+}, {
+  "keys": ["cp rebalance 2016", "stat rebalance 2016", "stats rebalance 2016", "cp change 2016", "stat change 2016", "cp adjustments 2016", "cp adjustment 2016"],
+  "name": "CP rebalance",
+  "sort": "",
+  "url": "https://pokemongolive.com/en/post/cp_update",
+  "date": "21 november 2016",
+  "description": "Eigenlijk zou Stat Rebalance een betere naam zijn, want vanaf dit moment werden de stats (att en defence base stats) van Pokémon in Pokémon go anders berekend."
 }, {
   "keys": ["thanksgiving 2016", "thanksgiving event 2016"],
   "name": "Thanksgiving event 2016",
