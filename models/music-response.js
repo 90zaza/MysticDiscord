@@ -6,32 +6,14 @@ module.exports = class GenericResponse extends Message {
   constructor(message) {
     super(message);
 
-    // startsWith is only necessary because its different then the normal messages
     if(this.startsWith('music') || this.startsWith('muziek')) {
-      this.music = this.getMusic();
-      if(this.music) {
-        this.newMessage();
-      }
+      const rand = Math.floor(Math.random() * music.length);
+
+      const embed = new Discord.MessageEmbed()
+        .setTitle(":musical_note:" + music[rand].name + ":musical_note:")
+        .setURL(music[rand].url)
+        .setDescription(music[rand].text);
+        super.newMessage({embed});
     }
-  }
-
-  getMusic() {
-    // TODO: we should refactor this because 29 is now harcoded. if we add one more this isnt updated automatically
-
-    // dont copy this as example code, this is different then most other implementations.
-    const key = Math.floor(Math.random() * 31)+1;
-    return music.find( (musicItem) => {
-      return musicItem.keys.find((musicItemKey) => {
-        return musicItemKey == key;
-      });
-    })
-  }
-
-  newMessage() {
-    const embed = new Discord.MessageEmbed()
-      .setTitle(":musical_note:" + this.music.name + ":musical_note:")
-      .setURL(this.music.url)
-      .setDescription(this.music.text);
-    super.newMessage({embed});
   }
 }

@@ -350,7 +350,7 @@
     "rare":  false,
     "description": 0
   }, {
-    "keys": ["pikachu"],
+    "keys": ["pikachu", "i choose you", "ik kies jou"],
     "name": "Pikachu",
     "number": 25,
     "stats": [112, 110, 70],

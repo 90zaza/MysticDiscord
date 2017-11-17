@@ -27,13 +27,14 @@ module.exports = class GenericResponse extends Message {
   constructor(message) {
     super(message);
 
-    if(this.startsWith('metronome')){
-      const key = "move" + (Math.floor(Math.random() * 172)+1);
-      this.message.content = `!${key}`
-    }
-
       this.moves = this.getMoves();
       if(this.moves) {
+        this.newMessage();
+      }
+
+      if(this.startsWith('metronome')){
+        const rand = Math.floor(Math.random() * moves.length);
+        this.moves = moves[rand];
         this.newMessage();
       }
   }
