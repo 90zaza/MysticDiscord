@@ -363,7 +363,12 @@
 }, {
 
 
-
+  "keys": ["cap", "buddy cap", "pokestop cap", "poke stop cap", "pokemon cap", "capture cap"],
+  "title": "Buddy/ Pokestop/ Pokemon Cap",
+  "img": "https://cdn.shopify.com/s/files/1/0767/9761/products/team-mystic-hat-1_grande.png?v=1493109245",
+  "url": "https://www.google.com/search?q=pokemon+go+caps",
+  "description": "Om bot accounts een beetje in bedwang te houden zijn er cap's in Pokémon Go ingebouwd. Dit zijn limieten die ervoor zorgen dat als je ze behaald, je een softban krijgt en dus niet verder kan. De 3 limieten staan los van elkaar, dus als je het Pokéstop limiet hebt gehaald kan je nog steeds Pokémon vangen. De limieten zijn:\n\n**Buddy afstand**: 42 km/dag\n**Pokémon**: 3500 vangsten/dag\n**Pokéstops**: 500 spins/dag"
+}, {
   "keys": ["bulbapedia"],
   "title": "bulbapedia.bulbagarden.net",
   "img": "https://cdn.bulbagarden.net/upload/thumb/d/d4/Bulbapedia_bulb.png/60px-Bulbapedia_bulb.png",
@@ -742,7 +747,7 @@
   "url": "https://poketimer.com/",
   "description": "De nesten migreren elke twee weken in de nacht van woensdag op donderdag om 01:00. Zie de link voor een timer voor deze migratie (en eventuele events)."
 }, {
-  "keys": ["lvl 40", "level 40"],
+  "keys": ["lvl 40", "level 40", "lvl cap", "level cap"],
   "title": "Level 40 spelers",
   "img": "http://2.bp.blogspot.com/_MWz5rMNRrCo/TFcLQ65VoDI/AAAAAAAAAM4/aduAc0NTgI0/s1600/Number_40_600x400_pixels.gif",
   "url": "https://www.imore.com/how-to-win-pokemon-go",
@@ -772,7 +777,7 @@
   "url": "https://img00.deviantart.net/ca8e/i/2016/223/6/b/stag_16001_hd_mystic_unova_by_ld_barthel-dadingw.jpg",
   "description": "Met als groepsmotto *Make Delft Blue again* kunnen we natuurlijk niet anders dan af en toe grootschalig in actie komen. Elke zoveel tijd organiseren we als groep daarom een volledige take over van Delft, met als doel het volledig domineren van elke gym die ook maar een beetje in de buurt is. Ik weet niet zeker wat ik leuker vind, een volledig blauw Delft, of de beteuterde gezichtjes van de Elmo's en Kuikens. De gym avonden vonden plaats op:\n10 november 2017\n..."
 }, {
-  "keys": ["faal", "fail", "instinct delft takeover"],
+  "keys": ["faal", "fail", "instinct delft takeover", "weconsidderitawin", "we considder it a win"],
   "title": "Instinct Delft takeover",
   "img": "https://elearningindustry.com/wp-content/uploads/2014/07/Top-10-Reasons-Why-LMS-Implementation-Fail.png",
   "url": "https://www.youtube.com/user/failarmy",

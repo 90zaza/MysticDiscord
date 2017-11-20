@@ -1413,7 +1413,7 @@
     "type": ["normal"],
     "stats": [60, 176, 500],
     "attacks": [],
-    "defence": ["Zen Headbutt", "Dazzling Gleam"],
+    "defence": ["Pound", "Hyper Beam"],
     "recplayers": 0,
     "gender": 0,
     "rare":  true,
