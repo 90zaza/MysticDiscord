@@ -1,6 +1,6 @@
 [
   {
-    "keys": ["t1", "tier1", "level1"],
+    "keys": ["t1", "tier1", "level1", "tier 1", "level 1", "lvl1", "lvl 1"],
     "name": "Tier 1",
     "number": -1,
     "stats": [],
@@ -10,7 +10,7 @@
     "recplayers": "1?"
   },
   {
-    "keys": ["t2", "tier2", "level2"],
+    "keys": ["t2", "tier2", "level2", "tier 2", "level 2", "lvl2", "lvl 2"],
     "name": "Tier 2",
     "number": -2,
     "stats": [],
@@ -20,7 +20,7 @@
     "recplayers": "1?"
   },
   {
-    "keys": ["t3", "tier3", "level3"],
+    "keys": ["t3", "tier3", "level3", "tier 3", "level 3", "lvl3", "lvl 3"],
     "name": "Tier 3",
     "number": -3,
     "stats": [],
@@ -30,7 +30,7 @@
     "recplayers": "2?"
   },
   {
-    "keys": ["t4", "tier4", "level4"],
+    "keys": ["t4", "tier4", "level4", "tier 4", "level 4", "lvl4", "lvl 4"],
     "name": "Tier 4",
     "number": -4,
     "stats": [],
@@ -40,7 +40,7 @@
     "recplayers":"4?"
   },
   {
-    "keys": ["t5", "tier5", "level5"],
+    "keys": ["t5", "tier5", "level5", "tier 5", "level 5", "lvl5", "lvl 5"],
     "name": "Tier 5",
     "number": -5,
     "stats": [],
