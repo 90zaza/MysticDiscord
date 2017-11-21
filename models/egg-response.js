@@ -6,7 +6,7 @@ module.exports = class GenericResponse extends Message {
     super(message);
 
     // startsWith is only necessary because its different then the normal messages
-    if(this.startsWith('egg') || this.startsWith('ei')) {
+    if(this.startsWith('egg') || this.startsWith('ei') || this.startsWith('hatch')) {
 
     let name;
     let distance;
