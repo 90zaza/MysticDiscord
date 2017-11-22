@@ -27,6 +27,7 @@ const TopResponse = require('./models/top-response');
 const DateResponse = require('./models/date-response');
 const ThemeResponse = require('./models/thema-response');
 const JokeOfTheDayResponse = require('./models/jokeoftheday-response');
+const TriviaOfTheDayResponse = require('./models/triviaoftheday-response');
 const EggResponse = require('./models/egg-response');
 const ChallengeResponse = require('./models/challenge-response');
 const WhosThatPokemonResponse = require('./models/whosthatpokemon-response');
@@ -96,6 +97,7 @@ client.on('message', async (msg) => {
   new GambleResponse(msg);
   new ThemeResponse(msg);
   new JokeOfTheDayResponse(msg);
+  new TriviaOfTheDayResponse(msg);
   new DateResponse(msg);
   new TopResponse(msg);
   new EggResponse(msg);

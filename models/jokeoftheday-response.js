@@ -6,7 +6,6 @@ module.exports = class GenericResponse extends Message {
   constructor(message) {
     super(message);
 
-    // startsWith is only necessary because its different then the normal messages
     if(this.startsWith('joke') || this.startsWith('mop') || this.startsWith('grap')) {
 
       var date = new Date();

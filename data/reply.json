@@ -363,6 +363,24 @@
 }, {
 
 
+  "keys": ["big magikarp", "big magicarp", "fishterman", "fisherman medal"],
+  "title": "Big Magikarp",
+  "img": "http://i.imgur.com/7YXnKaG.jpg",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Fisherman_(Trainer_class)",
+  "description": "Voor de gouden Fisherman medaille moet je *300 big Magikarp* vangen. Bij Magikarp wordt alleen naar het gewicht gekeken, en een XL is niet goed genoeg. Bij 13,13 kg of meer telt de Magikarp mee voor de medaille. De kans hierop is ongeveer 15%"
+}, {
+  "keys": ["tiny rattata", "small rattata", "tiny ratata", "youngster", "youngster medal"],
+  "title": "Tiny Rattata",
+  "img": "http://i.imgur.com/5npPirS.jpg",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Youngster_(Trainer_class)",
+  "description": "Voor de gouden Younster medaille moet je *300 tiny Rattata* vangen. Bij Rattata wordt alleen naar het gewicht gekeken, en een XS is niet goed genoeg. Bij 2,41 kg of minder telt de Rattata mee voor de medaille. De kans hierop is ongeveer 12%"
+}, {
+  "keys": ["pokestop", "pokéstop"],
+  "title": "Pokéstop",
+  "img": "https://cdn.bulbagarden.net/upload/e/e9/GO_PokéStop.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/PokéStop",
+  "description": "Om Pokémon te kunnen vangen, en gyms te kunnen slopen heb je items nodig, welke te krijgen zijn door Pokéstops te draaien. Op dit moment zijn te verkrijgen potions, revives, ballen en evolutie items. Het draaien van een stop geeft 50 xp (100 voor de 10e stop) of 5x zoveel voor een stop die je nog nooit gedraaid hebt. Deze herken je aan de wit-blauwe ring om de stop heen."
+}, {
   "keys": ["cap", "buddy cap", "pokestop cap", "poke stop cap", "pokemon cap", "capture cap"],
   "title": "Buddy/ Pokestop/ Pokemon Cap",
   "img": "https://cdn.shopify.com/s/files/1/0767/9761/products/team-mystic-hat-1_grande.png?v=1493109245",
@@ -609,7 +627,7 @@
   "url": "https://bulbapedia.bulbagarden.net/wiki/Silph_Co.",
   "description": "Kanto is de regio van technologische vooruitgan, met the Silph Company in Saffron City als middenpunt. Meerdere inovatieve producten komen hier vandaan, zoals de Silph Scope, Pokéballs (waaronder de Master Ball), Medicijnen en TM's. Het is dan ook niet gek dat het hoofdkwartier meerdere keren het target van Team Rocket is geweest."
 }, {
-  "keys": ["pokemon tv", "pokemon kijken", "watch pokemon", "kijk pokemon", "pokémon tv", "pokémon kijken", "watch pokémon", "kijk pokémon", "beste serie", "beste tv serie", "best show", "best tv show", "anime"],
+  "keys": ["pokemon tv", "pokemon kijken", "watch pokemon", "kijk pokemon", "pokémon tv", "pokémon kijken", "watch pokémon", "kijk pokémon", "beste serie", "beste tv serie", "best show", "best series", "best tv show", "anime"],
   "title": "Pokémon TV",
   "img": "https://lh3.googleusercontent.com/Yz6MtHKNPF6SxlQ8sJ4e5tcd1v1II4A1ZT_dD_UUpeeDxVCxaqwPkx4SCHZrheWnFw=w300",
   "url": "https://www.pokemon.com/us/pokemon-episodes/pokemon-tv-seasons/",
