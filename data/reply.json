@@ -363,6 +363,18 @@
 }, {
 
 
+  "keys": ["verander naam", "change name", "how to change my name", "hoe verander ik mijn naam", "change nickname", "change server name"],
+  "title": "Hoe verander ik mijn naam?",
+  "img": "http://lh3.googleusercontent.com/_4zBNFjA8S9yjNB_ONwqBvxTvyXYdC7Nh1jYZ2x6YEcldBr2fyijdjM2J5EoVdTpnkA=w300",
+  "url": "https://support.discordapp.com/hc/en-us/articles/219070107-Server-Nicknames",
+  "description": "Op discord heb je een Username (de naam die je hebt in prive gesprekken), en een Nickname (de naam die je ziet in een server). Die laatste kan voor elke server anders zijn, en het is handig om te weten hoe je die kan veranderen.\n\n**PC**: Rechtermuis op je naam, *Change Nickname*\n**Mobiel**: Open het scherm met alle channels, tik op *Mystic Delft* bovenaan en kies *Change Nickname*."
+}, {
+  "keys": ["osm", "openstreetmap", "open street map"],
+  "title": "Open Street Map",
+  "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/1200px-Openstreetmap_logo.svg.png",
+  "url": "https://www.openstreetmap.org/#map=14/52.0069/4.3523",
+  "description": "Open Street Map is een open source map van de wereld, met als idee dat iedereen er een bijdrage aan kan leveren. Het mag gratis gebruikt worden door wie dan ook, en het vermoeden is dat Niantic het dan ook gebruikt voor Pokémon Go bij het bepalen van bijvoorbeeld nesten of EX raid gyms, aan de hand van locaties van parken."
+}, {
   "keys": ["big magikarp", "big magicarp", "fishterman", "fisherman medal"],
   "title": "Big Magikarp",
   "img": "http://i.imgur.com/7YXnKaG.jpg",
