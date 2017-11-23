@@ -19,9 +19,9 @@ module.exports = class GymResponse extends Message {
   newMessage() {
     const embed =
       new Discord.MessageEmbed()
-        .setColor(0xffffff)
+        .setColor(this.gym.park ? 0x00ff00 : 0xffffff)
         .setURL(this.gym.url)
-        .setTitle("📍 " + this.gym.name);
+        .setTitle(this.gym.park ? "📍 " + this.gym.name + "🌲" : "📍 " + this.gym.name);
         if (this.gym.description != 0) {
           embed.setDescription(this.gym.description);
         }

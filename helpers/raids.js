@@ -192,7 +192,11 @@ async function addRaid(message) {
             // notifiy role of raid
             const role = message.message.member.guild.roles.find("name", newRaid.pokemon.name);
             const raidschannel = message.message.guild.channels.find("name", "raids");
-            const gymExtension = (newRaid.gym ? " @ " + newRaid.gym.name : "");
+            var gymExtension = (newRaid.gym ? " @ " + newRaid.gym.name : "");
+            if (newRaid.gym.park == 1) {
+              const parkrole = message.message.member.guild.roles.find("name", "park");
+              gymExtension = gymExtension + ` (${parkrole}🌲)`
+            }
             if (role) {
               raidschannel.send(`Raid ${response.dataValues.idraids}: ${role}` + gymExtension);
             } else {
@@ -369,6 +373,8 @@ async function deleteAll(message) {
 
 function messageEmbed(result, raid, id) {
   const pokemon = raid.pokemon ? raid.pokemon : (result ? pokemons.find(pokemon => pokemon.name == result.dataValues.raidboss) : null);
+
+
   const gym = raid.gym ? raid.gym : (result ? gyms.find(gym => gym.name == result.dataValues.raidgym) : null);
   const endtime = raid.endtime ? raid.endtime : (result ? (result.dataValues.raidendtime ? result.dataValues.raidendtime : null) : null);
   const battletime = raid.battletime ? raid.battletime : (result ? (result.dataValues.raidbattletime ? result.dataValues.raidbattletime : null) : null);
@@ -400,7 +406,7 @@ function messageEmbed(result, raid, id) {
   return new Discord.MessageEmbed()
     .setAuthor("Raid #" + id)
     .setColor(embedColor(team))
-    .setTitle(`${pokemon.name}: ${gym ? gym.name : "Gym to be added"}`)
+    .setTitle(`${pokemon.name}: ${gym ? (gym.park ? gym.name + "🌲" : gym.name) : "Gym to be added"}`)
     .setThumbnail(thumbnail)
     .addField("Raid active", `${endtime ? endtime : "to be added"}`, true)
     .addField("Battle time", `${battletime ? battletime : "to be added"}`, true)

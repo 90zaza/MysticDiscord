@@ -591,7 +591,7 @@
   "url": "https://www.instagram.com/pokemongoapp/",
   "description": "Eerlijk is eerlijk, heel veel gebeurt hier niet, maar misschien vind je het leuk om alles van Niantic te volgen. Kijk in elk geval eens rond wat ze te bieden hebben!"
 }, {
-  "keys": ["apk"],
+  "keys": ["apk", "apkmirror"],
   "title": "Pokemon Go APK's",
   "img": "http://bloomswedding.com/wp-content/uploads/2017/08/androidapk_32.png",
   "url": "http://www.apkmirror.com/uploads/?q=pokemon-go",
