@@ -27,7 +27,7 @@
   "name": "Bicycle Love",
   "url": "https://goo.gl/maps/e5CBn5ixBDy",
   "description": 0,
-  "park": 1
+  "park": 0
 }, {
   "keys": ["blue b"],
   "name": "Blue Birds Honkbal",
@@ -507,7 +507,7 @@
   "name": "Playground Straat van Ormoes",
 	"url": "https://goo.gl/maps/LUroxsba6eP2",
   "description": 0,
-  "park": 0
+  "park": 1
 }, {
   "keys": ["playground v", "vivaldilaan"],
   "name": "Playground Vivaldilaan",
