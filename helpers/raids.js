@@ -193,8 +193,8 @@ async function addRaid(message) {
             const role = message.message.member.guild.roles.find("name", newRaid.pokemon.name);
             const raidschannel = message.message.guild.channels.find("name", "raids");
             var gymExtension = (newRaid.gym ? " @ " + newRaid.gym.name : "");
-            if (newRaid.gym.park == 1) {
-              const parkrole = message.message.member.guild.roles.find("name", "park");
+            if (newRaid.gym.park) {
+              const parkrole = message.message.member.guild.roles.find("name", "Park");
               gymExtension = gymExtension + ` (${parkrole}🌲)`
             }
             if (role) {

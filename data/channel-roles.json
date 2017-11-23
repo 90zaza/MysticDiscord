@@ -24,9 +24,17 @@
     "name": "DelftOost",
     "sort": "region"
   },  {
+
+
     "keys": ["english"],
     "name": "English",
     "sort": "english"
+  },  {
+
+
+    "keys": ["park"],
+    "name": "Park",
+    "sort": "pokemon"
   },  {
     "keys": ["snorlax"],
     "name": "Snorlax",
