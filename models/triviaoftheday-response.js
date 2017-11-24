@@ -10,7 +10,7 @@ module.exports = class GenericResponse extends Message {
 
       var date = new Date();
       const embed = new Discord.MessageEmbed()
-        .setTitle(`:thinking:Trivia of the day: ${date.getUTCDate()}:thinking:`)
+        .setTitle(`🤔Trivia of the day: ${date.getUTCDate()}🤔`)
         .setThumbnail(trivia[date.getUTCDate()-1].img)
         .setDescription(trivia[date.getUTCDate()-1].trivia);
       super.newMessage({embed});

@@ -10,7 +10,7 @@ module.exports = class GenericResponse extends Message {
 
       var date = new Date();
       const embed = new Discord.MessageEmbed()
-        .setTitle(`:joy:Joke of the day: ${date.getUTCDate()}:joy:`)
+        .setTitle(`😂Joke of the day: ${date.getUTCDate()}😂`)
         .setThumbnail(joke[date.getUTCDate()-1].img)
         .setDescription(joke[date.getUTCDate()-1].joke);
       super.newMessage({embed});
