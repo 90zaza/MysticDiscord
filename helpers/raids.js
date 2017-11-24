@@ -403,10 +403,19 @@ function messageEmbed(result, raid, id) {
       }
   }
 
+  let gymName = 'Gym to be added';
+
+  if(gym) {
+    gymName = gym.name;
+    if (gym.park) {
+      gymName += '🌲';
+    }
+  }
+
   return new Discord.MessageEmbed()
     .setAuthor("Raid #" + id)
     .setColor(embedColor(team))
-    .setTitle(`${pokemon.name}: ${gym ? (gym.park ? gym.name + "🌲" : gym.name) : "Gym to be added"}`)
+    .setTitle(`${pokemon.name}: ${gymName}`)
     .setThumbnail(thumbnail)
     .addField("Raid active", `${endtime ? endtime : "to be added"}`, true)
     .addField("Battle time", `${battletime ? battletime : "to be added"}`, true)

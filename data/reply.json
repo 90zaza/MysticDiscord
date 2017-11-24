@@ -753,7 +753,7 @@
   "url": "https://www.google.com/search?q=noob",
   "description": "Cop counter lijst voor Metapod:\nLetterlijk alles\n\nBij nader inzien is Pokémon Go toch niet echt voor jou"
 }, {
-  "keys": ["locatielink", "locatie link"],
+  "keys": ["locatielink", "locatie link", "share location", "locatie delen"],
   "title": "Locatie link delen",
   "img": "http://apk.co/images/my-location-maps-gps-location-tracker-places-2601.png",
   "url": "https://delftmystic.wordpress.com/2017/07/05/locatie-delen/",
