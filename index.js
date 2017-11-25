@@ -81,11 +81,11 @@ client.on('message', async (msg) => {
       .addField("Hey! Mijn naam is Blanche", "Naast het appraisen van jouw pokemon in game, kan ik jullie ook op deze discord assistentie verlenen. Ik reageer onder andere op de volgende commando's:")
       .addField("!pokémon", "Hierbij krijg je informatie over de pokémon die je opvraagt")
       .addField("!gymnaam", "Ik geef je de locatie van de gym")
-      .addField("!raid", `Hiermee geef je een nieuwe raid aan, zie het raids_meldingen kanaal of gebruik !raid help voor meer info`)
       .addField("!top type [dps/tdo/tank]", "Hiermee geef ik een top 10 voor het type dat je aanvraagt. All geeft de algemene top 10")
       .addField("!counter pokemon", "Dit genereert een top 10 counters tegen raid bosses")
       .addField("!datum gebeurtenis", "Hiermee vraag je de datum op van een bepaalde gebeurtenis. Je kunt ook een jaaroverzicht vragen met !datum jaar")
-      .addField("!+[regio/pokémon]", `Hiermee schrijf je jezelf in voor een regio of een pokémon die je interessant vind. Zie het speler_registratie kanaal`)
+      .addField("!+[regio/pokémon]", "Hiermee schrijf je jezelf in voor een regio of een pokémon die je interessant vind. Zie het speler_registratie kanaal")
+      .addField("raids", "zie het raids meldingen kanaal, of gebruik !raid help om op te zoeken hoe je een raid aanmaakt of bewerkt")
     msg.channel.send({ embed });
   }
 
