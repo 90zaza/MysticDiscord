@@ -1051,7 +1051,7 @@
     "number": 83,
     "type": ["normal", "flying"],
     "stats": [124, 118, 104],
-    "attacks": ["Air Slash", "Aerial Ace"],
+    "attacks": ["Air Slash", "Leaf Blade"],
     "defence": [],
     "recplayers": 0,
     "gender": 0,
