@@ -11,8 +11,8 @@
   "keys": ["ik ga gyms"],
   "reply": "Kijk dat hoor ik graag! Blauw is de beste kleur!"
 }, {
-  "keys": [""],
-  "reply": ""
+  "keys": ["ben je oke", "gaat het goed", "alles oke", "hoe gaat het"],
+  "reply": "Alles gaat goed met mij! Hoe is het met jou?"
 }, {
   "keys": [""],
   "reply": ""

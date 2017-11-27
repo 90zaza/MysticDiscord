@@ -5,7 +5,6 @@ const replies = require('../data/bigreply.json');
 module.exports = class GenericResponse extends Message {
   constructor(message) {
     super(message);
-    console.log(message)
     this.replyObject = this.getReply();
 
     if(this.replyObject) {
