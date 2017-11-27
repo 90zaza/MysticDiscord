@@ -174,12 +174,12 @@
   "date": "22 juli - 24 juli",
   "description": "Tijdens Go Fest werd een event ‘verdient’ van 2 dagen met eigenlijk elke bonus die je kan bedenken, namelijk:\n- Dubbel stardust\n- Dubbel candy\n- Dubbel XP\n- Meer pokemon in het wild\n -Gehalveerde ei en buddy afstand."
 }, {
-  "keys": ["legendaries", "legendary raid", "legendary raids", "mewtwo", "articuno", "moltres", "zapdos", "lugia", "ho oh", "ho-oh", "entei", "raikou", "suicune"],
+  "keys": ["legendaries", "legendary raid", "legendary raids", "articuno", "moltres", "zapdos", "lugia", "ho oh", "ho-oh", "entei", "raikou", "suicune"],
   "name": "Legendary raids",
   "sort": "",
   "url": "http://pokemongo.nianticlabs.com/en/post/exclusiveraids",
   "date": "Vanaf 22 juli 2017",
-  "description": "Na het Go Fest werden Lugia en Articuno vrijgegeven, waarna andere legendaries volgde. De lijst is:\n23 juli – 31: aug Lugia\n23 juli – 30: juli Articuno\n31 juli – 7: aug Moltres\n8 aug – 14: aug Zapdos\n15 aug - ??: Mewtwo (test EX Raids)\n15 aug – 31 aug: Articuno, Zapdos, Moltres\nSeptember: Entei (Europa)\nOktober: Suicune (Europa)\nNovember: Raikou (Europa)"
+  "description": "Na het Go Fest werden Lugia en Articuno vrijgegeven, waarna andere legendaries volgde. De lijst is:\n23 juli – 31: aug Lugia\n23 juli – 30: juli Articuno\n31 juli – 7: aug Moltres\n8 aug – 14: aug Zapdos\n15 aug – 31 aug: Articuno, Zapdos, Moltres\nSeptember: Entei (Europa)\nOktober: Suicune (Europa)\nNovember: Raikou (Europa)"
 }, {
   "keys": ["safari", "safari 2017", "safari praag", "safari amstelveen", "safari copenhagen"],
   "name": "Safari event in Europa 2017",
@@ -216,19 +216,19 @@
   "date": "5 nov 2017",
   "description": "29 juni 2017- Raid battles start\n5 nov 2017 - Eerste rotatie"
 }, {
-  "keys": ["make delft blue again winter 2017", "makedelftblueagain winter 2017"],
-  "name": "Make Delft Blue again (winter 2017)",
-  "sort": "takeover",
-  "url": "https://images-ext-2.discordapp.net/external/Z53WsT5wu1acUF0AajZJWvpx_d50e61Xioikcahoo6o/https/media.discordapp.net/attachments/319430336394035201/378658876041461761/IMG_20171110_223504.png?width=720&height=625",
-  "date": "10 november",
-  "description": "De eerste Dominatie tour, waaraan rond de 25 man een bijdrage hebben geleverd. Omdat we weinig tegenstand ontvingen van zowel Instinct als Valor hadden we rond 23:00 alle (128) gyms van Delft in ons bezit! De beukers waren:\n\n**Coordinatie**: Perijn\n**Voorwerk**: Noks, Rover, RTK, Rufus\n**Slopers**: Arankatje, Arun, Boerkees, Deau.io, Deezlolis, Donderstraal, Freeway, Godokie, Hadsikidee, Iankatchum, Ikgawinne, Knepski, Kuona, MishaSilvan, NottePiere, Oggerar, Quivittoq, Ramses, SuperBigMax, Verslavend, Wiebeboss"
+  "keys": ["thanksgiving 2017", "thanksgiving event 2017", "pokemon go travel 2017", "pokémon go travel 2017", "global catch challenge 2017"],
+  "name": "Global Catch Challenge (thanksgiving event)",
+  "sort": "event",
+  "url": "https://pokemongolive.com/en/post/pokemongotravel",
+  "date": "19 nov - 1 dec",
+  "description": "Tijdens dit event konden trainers wereldwijd hun eigen bonussen verdienen door tussen 19 en 26 november Pokémon te vangen. Bij 500, 1500 en 3000 miljoen Pokémon werden er bonnusen vrijgespeeld die direct ingingen en duurde tot 1 december, deze waren:\n21 nov: dubbel xp en 6 uur lures\n23 nov: dubbel stardust\n26 nov - 27 nov: Farfetch't"
 }, {
-  "keys": [""],
-  "name": "",
+  "keys": ["ex raids", "ex-raids", "exraids", "exraid", "mewtwo"],
+  "name": "EX Raids",
   "sort": "",
-  "url": "",
-  "date": "",
-  "description": ""
+  "url": "https://pokemongolive.com/en/post/novdevupdate-raids",
+  "date": "15 aug - 21 nov - ",
+  "description": "Op 14 augustus werd in het Pokémon Go stadium event in Yokohama voor de eerste keer Mewtwo gevangen, die sinds dien in EX test raids beschikbaar was. De testfase eindigde op 21 november, waarna Mewtwo wereldwijd beschikbaar werd via EX raids."
 }, {
   "keys": ["gen 3"],
   "name": "Gen 3 Launch",
