@@ -1,0 +1,63 @@
+[
+  {
+    "keys": ["centrum"],
+    "name": "Centrum",
+    "sort": "region"
+  },  {
+    "keys": ["hoven"],
+    "name": "Hoven",
+    "sort": "region"
+  },  {
+    "keys": ["tu"],
+    "name": "TU",
+    "sort": "region"
+  },  {
+    "keys": ["tanthof"],
+    "name": "Tanthof",
+    "sort": "region"
+  },  {
+    "keys": ["noord"],
+    "name": "DelftNoord",
+    "sort": "region"
+  },  {
+    "keys": ["oost"],
+    "name": "DelftOost",
+    "sort": "region"
+  },  {
+
+
+    "keys": ["english"],
+    "name": "English",
+    "sort": "english"
+  },  {
+
+
+    "keys": ["park"],
+    "name": "Park",
+    "sort": "pokemon"
+  },  {
+    "keys": ["snorlax"],
+    "name": "Snorlax",
+    "sort": "pokemon"
+  },  {
+    "keys": ["lapras"],
+    "name": "Lapras",
+    "sort": "pokemon"
+  },  {
+    "keys": ["machamp"],
+    "name": "Machamp",
+    "sort": "pokemon"
+  },  {
+    "keys": ["tyranitar", "ttar", "tiranitar"],
+    "name": "Tyranitar",
+    "sort": "pokemon"
+  },  {
+    "keys": ["golem", "golum"],
+    "name": "Golem",
+    "sort": "pokemon"
+  },  {
+    "keys": ["raikou", "dog jolteon", "jolteon dog", "raiku", "raiko"],
+    "name": "Raikou",
+    "sort": "pokemon"
+  }
+]

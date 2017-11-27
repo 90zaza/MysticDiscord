@@ -1,0 +1,815 @@
+[{
+  "keys": ["pokeball", "poke ball", "pokéball", "poké ball", "pokebal", "poke bal", "pokébal", "poké bal", "great ball", "great bal", "ultra ball", "ultra bal"],
+  "title": "Poké Ball",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/a/a6/SugimoriPokeBall.png/600px-SugimoriPokeBall.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Poké balls zijn de tools die je gebruikt om pokémon te vangen. Ze komen in verschillende vormen en maten, elk met een eigen vangkans (zoals hieronder tussen haakjes aangegeven). Op dit moment zijn bekend:\n\n**Poké Ball** (x1)\n**Great Ball** (x1.5)\n**Ultra Ball** (x2)\n**Premier Ball** (x1)"
+}, {
+  "keys": ["potion", "super potion", "max potion", "hyper potion", "revive", "max revive", "healing", "healing items", "heal items"],
+  "title": "Healing Items",
+  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/08/Potion-Pokemon-Go.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "In Pokemon go zijn verschillende healing items te vinden. De potions zijn voor het herstellen van Pokémon die niet gefaint zijn, waar de revives bedoeld zijn om gefainte Pokémon weer terug te brengen. De effecten zijn:\n\n**Potion**: +20HP\n**Super Potion**: +50 HP\n**Hyper Potion**: +200HP\n**Max Potion**: +∞HP\n**Revive**: Herstelt tot de helft\n**Max Revive**: Herstelt volledig"
+}, {
+  "keys": ["evolution items", "evolutie items", "sun stone", "up grade", "up-grade", "metal coat", "kings rock", "dragon scale", "evolutie item", "evolution item"],
+  "title": "Evolution Items",
+  "img": "http://pokemongo.gr/wp-content/uploads/2017/02/Bag_Sun_Stone_Sprite-300x296.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Sommige Pokémon hebben naast snoepjes ook speciale items nodig om te evolueren. Hier is een lijst:\n\n**Sun Stone**:\n  - Gloom -> Bellosom\n  - Sunkern -> Sunflora\n**Metal Coat**:\n  - Onix -> Steelix\n  - Scyther -> Scizor\n**Kings Rock**:\n  - Slowpoke -> Slowking\n  - Poliwhirl -> Politoed\n**Up-Grade**:\n  - Porygon -> Porygon 2\n**Dragon Scale**:\n  - Seadra -> Kingdra"
+}, {
+  "keys": ["berries", "razz berry", "pinap berry", "golden razz berry", "nanab berry"],
+  "title": "Berries",
+  "img": "https://fevgames.net/wp-content/uploads/2017/06/Item_0706.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Naast het gebruiken van de goede Poké Ball, is het kiezen van een goede berry ook essentieel voor het vangen van een pokémon. Daarnaast kun je berries ook geven aan pokemon in gyms om hun motivatie weer wat op te krikken. Er zijn verschillende berries:\n\n**Nanab berry**: De pokémon beweegt minder\n**Pinap Berry**: Bij vangen krijg je 2x zoveel candy\n**Razz Berry**: vergroot de vangkans met factor 1.5\n**Golden Razz Berry**: vergroot de vangkans met factor 2.5, en geeft ook de volledige motivatie terug aan een gym pokemon"
+}, {
+  "keys": ["insense", "insence", "incence", "incense"],
+  "title": "Incense",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/4/43/GO_Incense.png/100px-GO_Incense.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Deze 'privé lure' is een soort parfum waar lokale pokémon op afkomen. Een insence spawnt elke 5 minuten, of elke 200 meter (max 1 per minuut) een pokémon. Dit betekend dat de optimale snelheid 12 km/h is."
+}, {
+  "keys": ["incubator"],
+  "title": "Incubators",
+  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Pokemon-Go-Egg1.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Met deze apparaten kan je je eitjes uit laten komen. Je hebt standaard een incubator met een oneindig aantal uses, maar als premium items kan je ook incubators kopen met 3 uses. Tijdens events zijn soms ook de super incubators beschikbaar, welke ook 3 uses hebben maar eieren 1.5x zo snel uitlopen."
+}, {
+  "keys": ["lure", "lure module"],
+  "title": "Lure Module",
+  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Lure-Modules.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Deze premium items kan je gebruiken om een Pokéstop aantrekkelijk te maken voor Pokémon. Je zal op die manier een van de lokale pokémon elke 3 minuten bij de pokéstop zien verschijnen voor 30 minuten lang."
+}, {
+  "keys": ["lucky egg"],
+  "title": "Lucky Egg",
+  "img": "https://pro-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Lucky-Eggs.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "In het spel omschreven als 'een ei gevuld met vrolijkheid', en dat is ook zo! Met een van deze actief ontvang je 30 minuten lang dubbel xp op elke actie die je uitvoert!"
+}, {
+  "keys": ["raid pass"],
+  "title": "Raid Pass",
+  "img": "https://pokemongohub.net/wp-content/uploads/2017/06/normal-raid-pass-150x150.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Met een Raid Pass kan je meedoen met het verslaan van een Raid Boss voor items en de kans hem te vangen. Elke dag kan je er een uit een gymstop krijgen, zolang je er geen in je inventory hebt. Je kan ook premium passen kopen, daarvan mag je er meerdere hebben."
+}, {
+  "keys": ["tm", "fast tm", "charge tm"],
+  "title": "TM",
+  "img": "https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Charged_TM.png/revision/latest?cb=20170620212509",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Soms heeft je Pokémon niet de beste moveset. Deze kun je dan afleren met een TM. Voor het leren van een andere charge move heb je een Charge TM nodig, en voor een nieuwe fast move een Fast TM. Beide zijn alleen verkrijgbaar uit raids."
+}, {
+  "keys": ["rare candy", "rare candie"],
+  "title": "Rare Candy",
+  "img": "https://fevgames.net/wp-content/uploads/2017/06/Item_1301.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "Wil je een pokémon level uppen, maar heb je candie er niet voor? Geen paniek! Met dit uit raids te verkrijgen item kun je candies krijgen van welke pokémon je maar wil. 1 rare candy is om te zetten in een candy naar keuze, maar het zijn zeldzame items. Gebruik ze dus voorzichtig!"
+}, {
+  "keys": ["stardust"],
+  "title": "Stardust",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/7/71/GO_Stardust.png/200px-GO_Stardust.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Stardust_(GO)",
+  "description": "Veel mensen proberen zoveel mogelijk XP bij elkaar te verzamelen, maar Stardust is de echte eenheid waar het om gaat. Je kunt met raids wel XP verdienen en snel lvl 40 worden, maar als je je pokémon niet kunt uppen ben je even zwak als de casual spelers! Vang dus alles wat je kan, en investeer het wijs!"
+}, {
+  "keys": ["xp"],
+  "title": "XP",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/5/56/Pokémon_GO_level_up.png/200px-Pokémon_GO_level_up.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Trainer_level",
+  "description": "Om je Pokémon een hoog level te geven moet je zelf ook een hoog level zijn, en om dat te behalen heb je XP nodig. Vooral tot level 30 is het echt de moeite waard om XP te verzamelen, want daarna maakt het allemaal eigenlijk niet meer uit. Zeker de laatste 2 levels (lvl 39 en 40) zijn er eigenlijk alleen voor de opscheppers. Je kunt dan beter op stardust gaan focussen."
+}, {
+
+
+
+  "keys": ["bloemen stop", "bloemen kunst", "flower art", "bloemenstop"],
+  "title": "Pokestop: Flower Art",
+  "img": "https://www.models-resource.com/resources/big_icons/18/17601.png",
+  "url": "https://goo.gl/maps/xkRgUtLm8y42",
+  "description": "De Bloemen Kunst pokestop (bij de aldi), een van de beste pokéstops in delft."
+}, {
+  "keys": ["inholland", "hogeschool inholland"],
+  "title": "Pokestop: Inholland",
+  "img": "https://www.models-resource.com/resources/big_icons/18/17601.png",
+  "url": "https://goo.gl/maps/3ZbYAjcb36z",
+  "description": "De Hogeschool Inholland pokestop (op de campus), een van de beste pokéstops in delft."
+}, {
+  "keys": ["colorful balcony poetry", "colorful balcony", "colourful balcony", "colourful balcony poetry"],
+  "title": "Pokestop: Colorful Balcony Poetry",
+  "img": "https://www.models-resource.com/resources/big_icons/18/17601.png",
+  "url": "https://goo.gl/maps/tFcavkm37Dm",
+  "description": "Een van de betere stops in delft, en ook waar onze vriend TM woont"
+}, {
+
+
+
+  "keys": ["ash", "ash ketchum "],
+  "title": "Ash Ketchum",
+  "img": "https://vignette.wikia.nocookie.net/uncyclopedia/images/0/0f/Ash_Ketchum.png/revision/latest?cb=20150218235142",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Ash_Ketchum",
+  "description": "Een trainer uit Palet Town waardoor alle Pokémon hype is begonnen. Als hij trouw was gebleven aan zijn goede pokemon had hij het waarschijnlijk ver geschopt, maar hij vond het blijkbaar leuker om steeds opnieuw te beginnen.\n\n*I have my own method of bending spoons .... Ha! Muscle over mind!*"
+}, {
+  "keys": ["gary", "gary oak"],
+  "title": "Gary Oak",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/4/42/Gary_Oak_OS.png/200px-Gary_Oak_OS.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Gary_Oak",
+  "description": "De eerste rivaal van Ash, en de kleinzoon van Professor Oak. Hij lijkt eigenlijk in elk opzicht beter te zijn dan Ash: meer badges, betere pokémon, meer verschillende pokemon en meer fans. Toch verliest hij in de League van hem (oeps spoiler alert)\n\n*I earned so many badges already I'm takin' a break to work on my tan!*"
+}, {
+  "keys": ["misty"],
+  "title": "Misty",
+  "img": "https://vignette3.wikia.nocookie.net/legomessageboards/images/f/f0/Misty.png/revision/latest?cb=20131115162840",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Misty",
+  "description": "Geam Leader van Cerulean City, een water pokémon gym. In de eerste aflevering loopt Ash haar tegen het lijf waarna hij haar een fiets afhandig maakt om Pikachu te kunnen redden. Gelukkig brengt onze held de fiets keurig netjes terug, nouja, soort van...\n\n*Love is all about who lands the first punch!*"
+}, {
+  "keys": ["brock"],
+  "title": "Brock",
+  "img": "https://lh3.googleusercontent.com/-SSvq3GQhTVk/VTrxwH_wumI/AAAAAAAAAQ8/xshJB0sXjvY/s400/Brock_OS_anime.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Brock",
+  "description": "Gym Leader van Pewter City, een rock pokémon gym. Na de gymbattle met Ash werd hij door hem geinspireert en koos ervoor om met hem mee op reis te gaan. Hij heeft ook een hele tijd bij Professor Ivy verbleven, niemand weet precies waarom...\n\n*I'll use my frying pan, as a drying pan!*"
+}, {
+  "keys": ["professor oak", "oak", "prof oak"],
+  "title": "Professor Samuel Oak",
+  "img": "https://cdn.bulbagarden.net/upload/8/84/Professor_Oak_XY.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Oak",
+  "description": "De Pokémon Professor uit de Kanto Region, en ook de eerste professor waar Ash in zijn geboortestad Pallet Town ooit mee te maken krijgt. Hij specialiseerd zich in relaties tussen Pokémon en mensen.\n\n*Hey! My name is Professor Oak, and i've known you from since you where born! Remind me again, are you a boy, or are you a girl?*"
+}, {
+  "keys": ["professor elm", "elm", "prof elm"],
+  "title": "Professor Elm",
+  "img": "https://cdn.bulbagarden.net/upload/e/ec/HeartGold_SoulSilver_Professor_Elm.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Elm",
+  "description": "De Pokémon Professor uit de Johto Region, wonend in New Bark town. Hij specialiseerd zich in het broeden van Pokémon en hun eieren, welke door hem zijn ontdekt. Daarnaast is het nogal een kluns, het zou daarom zomaar Spark zijn broer kunnen zijn."
+}, {
+  "keys": ["professor birch", "birch", "prof birch"],
+  "title": "Professor Birch",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/d/d0/Omega_Ruby_Alpha_Sapphire_Professor_Birch.png/633px-Omega_Ruby_Alpha_Sapphire_Professor_Birch.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Birch",
+  "description": "De Pokémon Professor uit de Hoenn Region, wonend in Littleroot Town. Hij specialiseerd zich in Pokémon habitats en heeft meerdere boeken geschreven. Het zou Professor Willow's broer kunnen zijn."
+}, {
+  "keys": ["professor bill", "bill", "prof bill"],
+  "title": "Professor Bill",
+  "img": "https://vignette.wikia.nocookie.net/helixpedia/images/4/41/Bill.gif/revision/latest?cb=20140516192603",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Bill",
+  "description": "Een pokémon professor in vele velden. Hij is meestal te vinden ten noorden van Cerulean city (einde van route 25) en is de bedenker van het Pokémon storage systeem. Zonder hem hadden we waarschijnlijk nooit zoveel Pokémon kunnen bewaren als we nu doen."
+}, {
+  "keys": ["professor kurt", "kurt", "prof kurt"],
+  "title": "Professor Kurt",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/1/12/HeartGold_SoulSilver_Kurt.png/180px-HeartGold_SoulSilver_Kurt.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Kurt",
+  "description": "De expert op het gebied van Poké balls. Hij maakt zijn eigen ballen met behulp van Apricorns, elke bal met een eigen specialiteit (type/ level/ vriendelijkheid etc)"
+}, {
+  "keys": ["professor willow", "willow", "prof willow"],
+  "title": "Professor Willow",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/e/e6/GO_Professor_Willow.png/221px-GO_Professor_Willow.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Willow",
+  "description": "Hij specialiseert zich op het gebied van Pokémon habitats en helpt ons opweg in Pokémon Go. Ook kan je bij hem overtollige Pokémon tegen candy ruilen. Omdat dit spel voor 6 jaar en ouder is zal ik hier niet uitleggen hoe hij dat doet.\n\n*Congratulations! You've caught your first Pokémon! You are such a talented Pokémon Trainer! What should I call you?*"
+}, {
+  "keys": ["professor rowan", "rowan", "prof rowan"],
+  "title": "Professor Rowan",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/a/a4/Diamond_Pearl_Rowan.png/140px-Diamond_Pearl_Rowan.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Rowan",
+  "description": "De Pokémon Professor uit de Sinnow Region, wonend in Sandgem Town. Hij specialiseerd zich in Pokémon evolutie en hij gedraagt zich als een van de wijzere professoren. Het had mijn broer kunnen zijn!"
+}, {
+  "keys": ["professor juniper", "juniper", "prof juniper"],
+  "title": "Professor Juniper",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/c/c7/Black_White_Juniper.png/140px-Black_White_Juniper.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Juniper",
+  "description": "De Pokémon Professor uit de Unova Region, wonend in Nuvema Town. Ze specialiseerd zich in het ontstaan van Pokémon en is een oude vriend van Professor Oak."
+}, {
+  "keys": ["professor sycamore", "sycamore", "prof sycamore"],
+  "title": "Professor Sycamore",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/8/81/XY_Professor_Sycamore.png/200px-XY_Professor_Sycamore.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Sycamore",
+  "description": "De Pokémon Professor uit de Kalos Region, wonend in Lumiose City. Hij specialiseerd zich in Mega evolutie en de relatie die de Pokémon en de trainer daarbij hebben."
+}, {
+  "keys": ["professor kukui", "kukui", "prof kukui"],
+  "title": "Professor Kukui",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/e/ed/Sun_Moon_Professor_Kukui.png/253px-Sun_Moon_Professor_Kukui.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Kukui",
+  "description": "De Pokémon Professor uit de Alola Region, wonend in de Hau'oli Outskirts. Hij specialiseerd zich de aanvallen van Pokémon en is oprichter van de Alola Pokémon League. Door zijn offensieve focus zou het zomaar Candela's broer kunnen zijn."
+}, {
+  "keys": ["professor ivy", "ivy", "prof ivy"],
+  "title": "Professor Ivy",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/d/d6/Professor_Ivy.png/295px-Professor_Ivy.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Professor_Ivy",
+  "description": "Voornamelijk bekend voor het vinden van de GS ball, die ze probeerde open te maken met onder andere een zaag. Toen Ash de bal bij haar ophaalde besloot Brock bij haar en haar 3 assistentes achter te blijven om te helpen. Als hij later getraumatiseerd terugkomt weet niemand eigenlijk echt wat er gebeurt is."
+}, {
+  "keys": ["team rocket"],
+  "title": "Team Rocket",
+  "img": "https://cdn.bulbagarden.net/upload/9/99/Team_Rocket_trio_SM.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Team_Rocket",
+  "description": "Team Rocket is de organisatie die probeert zoveel mogelijk sterke pokémon te bemachtigen. Het hoe en wat is daarbij niet echt relevant. Ze worden geleid door Giovanny en vallen geregeld Ash lastig door te proberen zijn Pikachu te stelen\n\n*Team Rocket blasts of at the speed of light*"
+}, {
+  "keys": ["giovanni", "giovani"],
+  "title": "Giovanni",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/0/03/USUM_Giovanni.png/258px-USUM_Giovanni.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Giovanni",
+  "description": "Giovanni is de oprichter en baas van Team Rocket. Met zijn Persian aan zijn zijde voert hij allemaal snode plannen uit. Toch hebben we hem iets te danken, want zonder hem zou Mewtwo niet te vangen zijn!\n\n*I want rare Pokémon, not your pathetic excuses!*"
+}, {
+  "keys": ["lance", "champion lance"],
+  "title": "Champion Lance",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/f/f5/HeartGold_SoulSilver_Lance.png/220px-HeartGold_SoulSilver_Lance.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Lance",
+  "description": "Deze uitzonderlijke trainer is een van de Elite 4 in generatie 1 en 3, en de Champion in generatie 2 en 4. Met zijn draak type pokemon heeft hij zelfs gewonnen van Professor Kukui. Je herkent hem aan zijn cape, of de massa's fans die achter hem aanlopen."
+}, {
+  "keys": ["team magma"],
+  "title": "Giovanni",
+  "img": "http://vignette3.wikia.nocookie.net/pokemon/images/d/d9/Pokemon_ORAS_Team_Magma_Boss_Maxie.png/revision/latest?cb=20160114154016",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Team_Magma",
+  "description": "Dit zijn de bad guys van de hoenn region die onder leiding van Maxie proberen de landmassa van Hoenn te vergroten. Hiervoor proberen ze met de red orb controle te krijgen over Groudon. Als ze dit proberen blijkt echter dat Groudon een eigen wil heeft (goh) en dat ook zij de pineut zijn van de grote hitte en droogte die volgt."
+}, {
+  "keys": ["team aqua"],
+  "title": "Team Aqua",
+  "img": "http://vignette2.wikia.nocookie.net/pokemon/images/3/37/Pokemon_ORAS_Team_Aqua_Boss_Archie.png/revision/latest?cb=20160114153943",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Giovanni",
+  "description": "Dit zijn de bad guys van de hoenn region die onder leiding van Arcie proberen de wereld in water te vernietigen. Hiervoor proberen ze met de blue orb controle te krijgen over Kyogre. Als ze dit proberen blijkt echter dat Kyogre een eigen wil heeft (goh) en dat ook zij de pineut zijn van een wereld onder water."
+}, {
+  "keys": ["mystic", "blanche", "team blauw", "team mystic"],
+  "title": "Team Mystic",
+  "img": "https://vignette2.wikia.nocookie.net/pokemon/images/3/35/Blanche-GO.png/revision/latest?cb=20160726200247.png",
+  "url": "http://pokemongo.wikia.com/wiki/Team_Mystic",
+  "description": "*I am Blanche, leader of Team Mystic. The wisdom of Pokémon is immeasurably deep. I am researching why it is that they evolve.\nMy team? With our calm analysis of overy situation, we can't lose!*\n\nWat een prachtige woorden vind je niet? Met onze wijsheid kunnen we samen met onze Pokémon elke uitdaging aan!"
+}, {
+  "keys": ["valor", "candela", "team rood", "team valor"],
+  "title": "Team Valor",
+  "img": "https://vignette4.wikia.nocookie.net/pokemon/images/c/ce/Candela-GO.png/revision/latest?cb=20160726200643.png",
+  "url": "http://www.directindustry.com/industrial-manufacturer/mobile-waste-container-155766.html",
+  "description": "*I am Candela, Team Valor Leader! Pokemon are stronger than humans, and they are warmhearted, too! I am researching ways to enhance Pokémon natural power in the pursuit of true strength. There is no doubt that the Pokémon in our team have trained are the strongest in battle! Are you ready?*\n\nPokemon sterker dan mensen? Bij jullie team twijfel ik daar soms over.... Dat onderzoek van jullie om pokemon sterker te maken is in elk geval hard nodig bij team faler!"
+}, {
+  "keys": ["instinct", "spark", "team geel", "team instinct"],
+  "title": "Team Instinct",
+  "img": "https://vignette2.wikia.nocookie.net/pokemon/images/8/86/Spark-GO.png/revision/latest?cb=20160726200039.png",
+  "url": "http://www.directindustry.com/industrial-manufacturer/mobile-waste-container-155766.html",
+  "description": "*Hey! The name's Spark- the leader of Team Instinct. Pokémon are creatures with excellent intuition. I bet the secret to their intuition is related to how they're hatched. Come on and join my team! You never lose when you trust your instincts!*\n\nVertrouwen op je intuitie? We leven toch zeker niet meer in de steentijd? En wat hebben die eieren daar nu weer mee te maken? Met dit soort uitspraken lijkt het soms alsof je zelf uit een ei bent gekomen..."
+}, {
+  "keys": ["blaine", "blayne"],
+  "title": "Blaine",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/2/22/HeartGold_SoulSilver_Blaine.png/150px-HeartGold_SoulSilver_Blaine.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Blaine",
+  "description": "Gym leader van de vuur pokémon gym van Cinnabar Island. Zijn gym is in de vulkaan die ervoor zorgde dan Cinnabar Island nu geen stad meer is. Hij is een groot fan van Quizzen, dus om hem te kunnen bereiken moet je eerst een aantal raadsels oplossen. Hij werd geinspireert om vuur Pokémon te gaan trainen omdat hij ooit uit een bergketen gered is door Moltres.\n\n*HA! You better have burn heal!*"
+}, {
+  "keys": ["lt. surge", "lt surge", "lieutenant surge"],
+  "title": "Lt. Surge",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/8/8f/HeartGold_SoulSilver_Lt_Surge.png/185px-HeartGold_SoulSilver_Lt_Surge.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Lt._Surge",
+  "description": "Gym leader van de electrische pokémon gym van Vermilion City. Deze trainer is een oud amerikaanse soldaad (en piloot) die vocht tijdens de oorlog. Tijdens deze oorlog meerdere keren gered door Electrische Pokémon. Omdat hij nog steeds een beetje paranoide is, heeft hij vallen aangelegd in zijn gym."
+}, {
+  "keys": ["sabrina"],
+  "title": "Sabrina",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/6/65/HeartGold_SoulSilver_Sabrina.png/185px-HeartGold_SoulSilver_Sabrina.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Sabrina",
+  "description": "Met flinke voorsprong de engste gymleader die er te vinden is. Ze leidt een psychic gym in Saffron City, waar ze lastig te verslaan is omdat ze telephatisch met haar Pokémon kan communiceren. Ooit was er een concurerende fighting gym in Saffron City, maar door haar kwaliteiten kon ze deze vrij makkelijk van hun gym status ontzeggen. Zorg dat je niet van haar verliest in een gym battle...."
+}, {
+  "keys": ["blue", "blue oak"],
+  "title": "Blue Oak",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/b/be/Sun_Moon_Blue.png/165px-Sun_Moon_Blue.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Blue_(game)",
+  "description": "Deze rivaal van de Kanto Regio is de kleinzoon van Professor Oak (duidelijke verwijzing naar Gary), en net iets eerder Champion dan jij. Nadat je hem echter van zijn troon hebt verstoten neemt hij Giovanni's plek als gym leader van Viridian City over. Nog later is hij, samen met Red, een van de leiders van Alola's Battle Tree. Hij specialiseerd zich niet in een type Pokémon, maar gebruikt zijn favoriete."
+}, {
+  "keys": ["red"],
+  "title": "Red",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/f/fd/Sun_Moon_Red.png/155px-Sun_Moon_Red.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Red_(game)",
+  "description": "In generatie 2 is dit de Champion uit Pallet Town en degene die Team Rocket verslagen heeft. Omdat hij ook nog eens nooit iets zegt is het vermoeden dat dit de speler van generatie 1 is. Hij is de laatste uitdaging voor generatie 2 spelers, die hem bovenop Mt. Silver kunnen uitdagen. Later doet hij mee aan de Champions Tournament in Unova, en leidt hij samen met Blue Alola's Battle Tree."
+}, {
+  "keys": ["joy", "nurse joy"],
+  "title": "Nurse Joy",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/8/8e/Nurse_Joy_OS.png/125px-Nurse_Joy_OS.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Nurse_Joy",
+  "description": "Geen potions meer maar wel gewonde pokémon? Geen probleem, een van de duizenden Nurse Joy staat voor je klaar om jouw partners te genezen. Helaas heeft ze haar weg naar Pokémon Go nog niet gevonden, we zouden haar goed kunnen gebruiken.\n\n*We hope to see you again soon*"
+}, {
+  "keys": ["jenny", "officer jenny"],
+  "title": "Officer Jenny",
+  "img": "https://orig00.deviantart.net/4801/f/2015/259/8/1/officer_jenny_png_by_kaijuboy455-d99udid.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Officer_Jenny",
+  "description": "Gaat er ergens iets fout? Op Jenny kan je rekenen! Net als Joy zijn er duizenden Jenny die alleen door Brock uit elkaar gehaald kunnen worden. Ze gebruikt Growlithe, Arcanine en Trump ehhh ik bedoel Gumshoos als partner."
+}, {
+  "keys": ["az"],
+  "title": "AZ",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/1/12/XY_AZ.png/437px-XY_AZ.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/AZ",
+  "description": "Een van de triestere verhalen, tijdens de oorlog van Kalos verloor AZ zijn pokémon. Hij maakte een machine om de pokémon weer tot leven te brengen, maar hij was te kwaad op de wereld die zijn pokémon pijn had gedaan dat hij zijn machine ombouwde tot het sterkste wapen ooit gemaakt. Toen hij dit wapen gebruikte om de oorlog te beeindigen verliet de Pokémon hem omdat AZ door haat bevangen was. Toen hij 3000 jaar later tijdens een Pokémon gevecht vrij werd van zijn boosheid keerde zijn Floette weer terug. Pfew, toch nog een happy ending! (afgezien van al die mensen en pokémon die zijn wapen dood heeft gemaakt dan natuurlijk)"
+}, {
+  "keys": ["tracey", "tracey sketchit"],
+  "title": "Tracey Sketchit",
+  "img": "https://cdn.bulbagarden.net/upload/e/e1/TraceyEP.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Tracey_Sketchit",
+  "description": "Een van de metgezellen van Ash tijdens zijn reis door de Orange Islands. Een van zijn hobbies is het tekenen (sketchen) van Pokémon. Tijdens zijn debut had hij een Marill in zijn team, wat een hint was naar de opkomst van generatie 2. Als hij later zijn held Professor Oak ontmoet besluit hij achter te blijven in Pallet Town om zijn assistent te worden."
+}, {
+  "keys": ["imakuni", "imakuni?", "tomoaki imakuni"],
+  "title": "Tomoaki Imakuni",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/7/7a/ImakuniGenerations63.jpg/423px-ImakuniGenerations63.jpg",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Tomoaki_Imakuni",
+  "description": "Deze muzicus heeft meegewerkt aan sommige muziek van de Anime, en heeft ook een grote bijdrage geleverd aan de promotie van de TCG. Hij speelt een nogal bijzondere rol in de TCG van nintendo, waarhij zijn 'weird deck' gebruikt om tegen de speler te vechten. Als je hem genoeg verslagen hebt krijg je de speciale 'imakuni?' kaart."
+}, {
+  "keys": ["bedenker pokemon", "satoshi", "tajiri", "satoshi tajiri"],
+  "title": "Satoshi Tajiri",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/5/5e/Satoshi_Tajiri_2016.jpg/399px-Satoshi_Tajiri_2016.jpg",
+  "url": "https://nl.wikipedia.org/wiki/Satoshi_Tajiri",
+  "description": "Aan deze op 28 augustus 1965 geboren man hebben we eigenlijk heel Pokémon te danken. Al vanaf zijn jeugd was hij gefascineerd door beestjes die hij verzamelden tijdens uitstapjes naar bossen. In 1982 besloot hij met vrienden een game magazine op te richten: Game Freak. Toen in 1982 de GameBoy uitkwam werd hij door de Link Kabel technologie op het idee van Pokémon gebracht. Beestjes die je kon verzamelen door te ruilen met elkaar."
+}, {
+
+
+  "keys": ["kanto"],
+  "title": "Kanto Region",
+  "img": "https://cdn.bulbagarden.net/upload/7/78/Kanto.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Kanto",
+  "description": "De regio ten oosten van Johto waar Ash geboren wordt en de eerste 151 pokemon (gen 1) te vinden zijn. Deze regio staat bekend vanwege haar technologische ontwikkeling op het gebied van het maken Pokémon en Pokeballs. Hier vind je onder andere Pallet Town, Lavender Town en Saffron City"
+}, {
+  "keys": ["sevii", "sevii islands"],
+  "title": "sevii islands",
+  "img": "https://cdn.bulbagarden.net/upload/3/3f/Sevii_Islands_map.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Sevii_Islands",
+  "description": "Deze eilanden die technisch gezien onderdeel zijn van Kanto, liggen ten zuiden van het vasteland. Doordat ze zo afgelegen liggen vinden onder andere Ho-Oh, Lugia, Moltres en Deoxys hier hun onderkomen. De afstand met het vaste land is zo groot dat je er surfend niet kunt komen, en de Seagallop Ferry nodig hebt vanuit Vermilion City."
+}, {
+  "keys": ["orange islands", "orange archipelago"],
+  "title": "Orange Archipelago",
+  "img": "https://cdn.bulbagarden.net/upload/1/1a/Orange_Islands_map.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Orange_Archipelago",
+  "description": "Beter bekend als de Orange Islands, een groep van meerdere eilanden, en een populaire trekpleister voor toeristen vanwege het klimaat en de diversiteit. Een van de bekendste eilanden is Pinkan Island, waar roze Pokémon leven en Pummelo Island, waar de Orange League gehouden wordt."
+}, {
+  "keys": ["johto"],
+  "title": "Johto Region",
+  "img": "https://cdn.bulbagarden.net/upload/0/04/Johto.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Johto",
+  "description": "De regio west van Kanto waar 100 nieuwe pokemon (gen 2) te vinden zijn. De oudste tekenen van het schrift zijn hier te vinden in de Ruins of Alph, al is het niet bekend wie deze 1500 jaar voor de moderne tijd heeft gebouwt. Hier vind je onder andere New bark Town, Goldenrod City en Ecruteak City"
+}, {
+  "keys": ["hoenn"],
+  "title": "Hoenn Region",
+  "img": "https://cdn.bulbagarden.net/upload/8/80/Hoenn_ORAS_Map.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Hoenn",
+  "description": "De regio ten zuiden van Sinnoh waar 134 nieuwe pokemon (gen 3) te vinden zijn. Hoenn is ontstaan nadat Primal Groudon en Primal Kyogre werden gecreeerd. Groudon maakte het land en Kyogre de zee. Hier vind je onder andere Littleroot Town, Slateport City en Sootpolis City"
+}, {
+  "keys": ["sinnoh"],
+  "title": "Sinnoh Region",
+  "img": "https://cdn.bulbagarden.net/upload/a/ac/Sinnoh.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Sinnoh",
+  "description": "De regio ten noorden van zowel Kanto, Johto en Hoenn. Volgens vele legendes is dit de eerste regio die gemaakt is door Arcues zelf. Het is daarom niet voor niets dat Palkia, Dialga, Giratina en de drie Lake Guardian (alledzes door Arceus geschapen) sterke connecties met dit eiland hebben."
+}, {
+  "keys": ["unova"],
+  "title": "Unova Region",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/a/a0/Unova_2.png/250px-Unova_2.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Unova",
+  "description": "Deze regio is dusdanig ver verwijderd van de andere regio's dat de Pokémon die hier worden aangetroffen flink verschillen van de rest. Er zijn veel legendes, waaronder die van de draak die gesplit werd in Reshiram en Zekrom, de race tussen Thundurus en Tornadus en de entertainer Meloetta."
+}, {
+  "keys": ["kalos"],
+  "title": "Kalos Region",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/b/b1/Kalos_Pokédex_map.png/250px-Kalos_Pokédex_map.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Kalos",
+  "description": "De grootste oorlog in de geschiedenis vond hier plaats, genaamd de Kalos oorlog. Het ultime wapen werd door AZ gebouwd onder Geosenge Town om de oorlog te beeindigen. Het is de thuisplaats van Xerneas en Yveltal."
+}, {
+  "keys": ["alola"],
+  "title": "Alola Region",
+  "img": "https://cdn.bulbagarden.net/upload/6/6c/Alola.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Alola",
+  "description": "De alola regio bestaat uit 4 natuurlijke, en een door mensen gemaakt eiland, en is een populair resort voor touristen. Door het klimaat hebben sommige Pokémon zich anders ontwikkeld dan dezelfde soorten op het vasteland (alolan forms). Dit is ook de plek waar de Guardian Deities vochten tegen Solgaleo en Lunala."
+}, {
+
+
+  "keys": ["verander naam", "change name", "how to change my name", "hoe verander ik mijn naam", "change nickname", "change server name"],
+  "title": "Hoe verander ik mijn naam?",
+  "img": "http://lh3.googleusercontent.com/_4zBNFjA8S9yjNB_ONwqBvxTvyXYdC7Nh1jYZ2x6YEcldBr2fyijdjM2J5EoVdTpnkA=w300",
+  "url": "https://support.discordapp.com/hc/en-us/articles/219070107-Server-Nicknames",
+  "description": "Op discord heb je een Username (de naam die je hebt in prive gesprekken), en een Nickname (de naam die je ziet in een server). Die laatste kan voor elke server anders zijn, en het is handig om te weten hoe je die kan veranderen.\n\n**PC**: Rechtermuis op je naam, *Change Nickname*\n**Mobiel**: Open het scherm met alle channels, tik op *Mystic Delft* bovenaan en kies *Change Nickname*."
+}, {
+  "keys": ["osm", "openstreetmap", "open street map"],
+  "title": "Open Street Map",
+  "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/1200px-Openstreetmap_logo.svg.png",
+  "url": "https://www.openstreetmap.org/#map=14/52.0069/4.3523",
+  "description": "Open Street Map is een open source map van de wereld, met als idee dat iedereen er een bijdrage aan kan leveren. Het mag gratis gebruikt worden door wie dan ook, en het vermoeden is dat Niantic het dan ook gebruikt voor Pokémon Go bij het bepalen van bijvoorbeeld nesten of EX raid gyms, aan de hand van locaties van parken."
+}, {
+  "keys": ["big magikarp", "big magicarp", "fishterman", "fisherman medal"],
+  "title": "Big Magikarp",
+  "img": "http://i.imgur.com/7YXnKaG.jpg",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Fisherman_(Trainer_class)",
+  "description": "Voor de gouden Fisherman medaille moet je *300 big Magikarp* vangen. Bij Magikarp wordt alleen naar het gewicht gekeken, en een XL is niet goed genoeg. Bij 13,13 kg of meer telt de Magikarp mee voor de medaille. De kans hierop is ongeveer 15%"
+}, {
+  "keys": ["tiny rattata", "small rattata", "tiny ratata", "youngster", "youngster medal"],
+  "title": "Tiny Rattata",
+  "img": "http://i.imgur.com/5npPirS.jpg",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Youngster_(Trainer_class)",
+  "description": "Voor de gouden Younster medaille moet je *300 tiny Rattata* vangen. Bij Rattata wordt alleen naar het gewicht gekeken, en een XS is niet goed genoeg. Bij 2,41 kg of minder telt de Rattata mee voor de medaille. De kans hierop is ongeveer 12%"
+}, {
+  "keys": ["pokestop", "pokéstop"],
+  "title": "Pokéstop",
+  "img": "https://cdn.bulbagarden.net/upload/e/e9/GO_PokéStop.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/PokéStop",
+  "description": "Om Pokémon te kunnen vangen, en gyms te kunnen slopen heb je items nodig, welke te krijgen zijn door Pokéstops te draaien. Op dit moment zijn te verkrijgen potions, revives, ballen en evolutie items. Het draaien van een stop geeft 50 xp (100 voor de 10e stop) of 5x zoveel voor een stop die je nog nooit gedraaid hebt. Deze herken je aan de wit-blauwe ring om de stop heen."
+}, {
+  "keys": ["cap", "buddy cap", "pokestop cap", "poke stop cap", "pokemon cap", "capture cap"],
+  "title": "Buddy/ Pokestop/ Pokemon Cap",
+  "img": "https://cdn.shopify.com/s/files/1/0767/9761/products/team-mystic-hat-1_grande.png?v=1493109245",
+  "url": "https://www.google.com/search?q=pokemon+go+caps",
+  "description": "Om bot accounts een beetje in bedwang te houden zijn er cap's in Pokémon Go ingebouwd. Dit zijn limieten die ervoor zorgen dat als je ze behaald, je een softban krijgt en dus niet verder kan. De 3 limieten staan los van elkaar, dus als je het Pokéstop limiet hebt gehaald kan je nog steeds Pokémon vangen. De limieten zijn:\n\n**Buddy afstand**: 42 km/dag\n**Pokémon**: 3500 vangsten/week\n**Pokéstops**: 500 spins/dag"
+}, {
+  "keys": ["bulbapedia"],
+  "title": "bulbapedia.bulbagarden.net",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/d/d4/Bulbapedia_bulb.png/60px-Bulbapedia_bulb.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Main_Page",
+  "description": "Zoek je iets wat met Pokémon te maken heeft? Dan zit je hier op het goede adres! Vind hier alles over de Nintendo spellen, tcg, anime of zelfs Pokémon Go!"
+}, {
+  "keys": ["gamepress", "game press"],
+  "title": "gamepress.gg",
+  "img": "https://gamepress.gg/sites/default/files/gp-logo.png",
+  "url": "https://pokemongo.gamepress.gg/",
+  "description": "Zoek je informatie over Pokémon GO? Dan ben je hier op het goede adres. Hier vind je alles over IV's, stats, Movesets en percentages."
+}, {
+  "keys": ["alolan", "alolan forms"],
+  "title": "Alolan forms",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/2/2c/Normal_and_Alolan_Vulpix_anime.png/800px-Normal_and_Alolan_Vulpix_anime.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Regional_variant",
+  "description": "Een van de Regional variants waarbij sommige pokemon in een bepaalde regio zich anders ontwikkelen dan dezelfde soort in de rest van de wereld. De Alolan forms zijn ontstaan door het tropische klimaat, waardoor de pokemon een ander type en uiterlijk hebben gekregen."
+}, {
+  "keys": ["tcg", "trading card game"],
+  "title": "Trading Card Game",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/0/0c/AshPikachuSMPromo108.jpg/429px-AshPikachuSMPromo108.jpg",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_Trading_Card_Game",
+  "description": "Een van de vele spellen van Pokémon is de Trading Card Game. Met kaarten spelen 2 trainers tegen elkaar waarbij ze om de beurt trainers, energies en Pokémon kunnen gebruiken om de tegenstander schade te geven. Degene die als eerste alle prijzen gepakt heeft wint."
+}, {
+  "keys": ["fiets", "bicycle", "bike"],
+  "title": "Bicycle",
+  "img": "https://cdn.bulbagarden.net/upload/8/86/Mach_Bike.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Bicycle",
+  "description": "Zowel in de nintendo spellen, de anime, de TCG en in Pokémon Go wordt de fiets gebruikt om je sneller door het spel heen te gaan. Zo ben je sneller bij een gym, raid of zeldzame pokémon!\n\n*Oak's words echoed... There's a time and place for everything, but not now.*"
+}, {
+  "keys": ["mr. fuji", "mr fuji"],
+  "title": "Mr. Fuji",
+  "img": "http://img1.wikia.nocookie.net/__cb20110101165742/pokemon/images/thumb/8/89/Mr._Fuji.png/130px-0%2C65%2C0%2C64-Mr._Fuji.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Mr._Fuji",
+  "description": "Deze oudere man die in Lavender Town woont houdt zich voornamelijk bezig met het zorgen van achtergelaten Pokémon. Hij woonde op Cinnabar Island, waar hij als professor het Pokémon Lab oprichtte en bevriend was met Blaine."
+}, {
+  "keys": ["pokemon mansion", "pokémon mansion"],
+  "title": "Pokémon Mansion",
+  "img": "https://cdn.bulbagarden.net/upload/6/63/FL_Pokemon_Mansion.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_Mansion_(Kanto)",
+  "description": "Dit gebouw gelegen op Cinnabar Island is, net als de rest van het eiland, verwoest door de uitbarsting van de vulkaan. Het was het huis van de wetenschapper de Mew cloonde om Mewtwo te verkrijgen. Tussen de rommel zijn stukken van een journal te vinden waar Mr. Fuji aantekeningen heeft gemaakt van de zoektocht naar Mew en het Cloning-process.\n\n*Mew gave birth. We named the newborn Mewtwo.*"
+}, {
+  "keys": ["the island of giant pokemon", "island of giant pokemon", "giant pokemon island"],
+  "title": "The island of Giant Pokémon",
+  "img": "https://cdn.bulbagarden.net/upload/3/34/EP017.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/EP017",
+  "description": "Dit eiland is een atractie opgebouwd door Giovanni om geld te verdienen voor Team Rocket. Dit eiland is een touristenatractie, die te zien is vanaf boten die eromheen varen. De reuzen blijken echter geen Pokémon te zijn, maar robots."
+}, {
+  "keys": ["pinkan island", "pinken island", "pinkin island"],
+  "title": "Pinkan Island",
+  "img": "https://cdn.bulbagarden.net/upload/b/bf/Pink_Pokemon.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pinkan_Island",
+  "description": "Dit natuur reservaat is een van de orange islands. Het eiland is bekend vanwege de roze vruchten die hier groeien die opgegeten worden door wilde Pokémon, met als gevolg dat deze roze kleuren. Deze Pokémon met onnatuurlijke kleuren trekken stropers aan, waardoor alleen Officer Jenny op het eiland aanwezig mag zijn."
+}, {
+  "keys": ["cerulean cave", "unknown dungeon"],
+  "title": "Cerulean Cave",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/6/69/Cerulean_Cave_entrance_PO.png/220px-Cerulean_Cave_entrance_PO.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Cerulean_Cave",
+  "description": "Een grot waar zeer sterke wilde Pokémon te vinden zijn. De grot is zo berucht dat hij zelfs bewaakt wordt tegen casual Pokémon Trainers. Het rumour gaat dat Mewtwo in de grot te vinden is."
+}, {
+  "keys": ["mt moon", "mt. moon"],
+  "title": "Mt. Moon",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/0/04/Mt_Moon_anime.png/250px-Mt_Moon_anime.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Mt._Moon",
+  "description": "Een practisch onbeklimbare berg gelegen in het noorden van Kanto, en een van de weinige plekken waar wilde Clefairy gevonden kunnen worden. Deze verzamelen hier om te dansen tijdens sterrenregens, waarbij af en toe Moon Stones ontstaan waardoor de Clefairy's evolueren."
+}, {
+  "keys": ["delfts blauw", "delftsblauw"],
+  "title": "Delfts Blauw",
+  "img": "https://images-ext-2.discordapp.net/external/Z53WsT5wu1acUF0AajZJWvpx_d50e61Xioikcahoo6o/https/media.discordapp.net/attachments/319430336394035201/378658876041461761/IMG_20171110_223504.png",
+  "url": "https://img00.deviantart.net/ca8e/i/2016/223/6/b/stag_16001_hd_mystic_unova_by_ld_barthel-dadingw.jpg",
+  "description": "Touristen van over de hele wereld komen naar Delft om te genieten van een van de wereldwonderen: Delfts Blauw. Dit wordt natuurlijk mogelijk gemaakt door Team Mystic Delft, we zouden eigenlijk een percentage van de inkomsten van de touristen van de gemeente moeten vragen."
+}, {
+  "keys": ["stab", "same type attack bonus"],
+  "title": "Same Type Attack Bonus (STAB)",
+  "img": "https://preview.ibb.co/dsy6xb/stab.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Same-type_attack_bonus",
+  "description": "Als het type van een aanval gelijk is aan een van de types van de Pokémon die de aanval gebruikt doet de aanval 20% meer schade. Op die manier kan dus een aanval met minder power toch meer schade doen omdat hij het goede type heeft."
+}, {
+  "keys": ["go+", "go +", "goplus", "go plus"],
+  "title": "Pokémon Go Plus",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/7/7f/Pokemon_GO_Plus_wstrap_2.png/600px-Pokemon_GO_Plus_wstrap_2.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_GO_Plus",
+  "description": "Het vangen van Pokémon en draaien van Pokéstops kan soms wat saai worden, en dan is de GoPlus precies wat je nodig hebt. Met een druk op de knop draai je een stop in de buurt, of gooi je een Pokéball naar een Pokémon. De kans dat je de pokémon vangt met slechts 1 pokeball is niet zo groot, dus kijk wel uit wanneer je op de knop drukt!"
+}, {
+  "keys": ["evolve", "evolutie"],
+  "title": "Evolutie",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/0/03/Pokémon_GO_evolution.png/360px-Pokémon_GO_evolution.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Evolution",
+  "description": "Blijkt dat Darwin het flink bij het verkeerde eind heeft gehad, evolutie is als een Pokémon een sterkere vorm aanneemt waardoor zijn stats verbeteren. Afhankelijk van wat je precies wil is in de meeste gevallen de geëvolueerde pokemon beter op alle gebieden. Er is wel een candy investering voor nodig (en soms een evolutie item). Daarnaast levert het ook nog eens 500 xp op!"
+}, {
+  "keys": ["guct", "grand unified catch theory", "catch bonus", "catch chance", "vang kans", "vangkans", "catch rate", "catchrate"],
+  "title": "Grand Unified Catch Theory",
+  "img": "https://gamepress.gg/sites/default/files/gp-logo.png",
+  "url": "https://pokemongo.gamepress.gg/guct-medals",
+  "description": "Hoe groot is de kans dat ik een Pokémon vang? Dat hangt af van de Pokémon (Base Capture Rate) en zijn level (CP Multiplier). Verder geven de volgende factoren een volgende (multiplicatieve) bonus:\nWelke bal: (1, 1.5, 2)\nMedaille: (1, 1.1, 1.2, 1.3)\nBerry: (1, 1.5, 2.5)\nCurve: (1, 1.7)\nWorp bonus: (1, 2-r)"
+}, {
+  "keys": ["repel", "super repel", "max repel"],
+  "title": "Repel",
+  "img": "https://cdn.bulbagarden.net/upload/7/77/Dream_Repel_Sprite.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Repel",
+  "description": "We kunnen het ons als Pokémon Go spelers moeilijk voorstellen, maar er komt een tijd dat je in een grot na de zoveelste Zubat klaar bent met het zien van Pokémon. Door een Repel te spuiten kom je geen Pokémon meer tegen met een lager level dan de Pokémon voorin je party, wat een hoop rust kan opleveren. Je kunt dit ook gebruiken door alleen de levels tegen te komen die je wilt."
+}, {
+  "keys": ["safari zone", "great marsh"],
+  "title": "Safari Zone",
+  "img": "https://cdn.bulbagarden.net/upload/8/88/Johto_Safari_Zone_HGSS.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Kanto_Safari_Zone",
+  "description": "Op zoek naar een paar Pokémon die je nog niet hebt? Grote kans dat ze in de Safari zone wel te vinden zijn! Beetje jammer dat je alleen niet met je eigen pokémon / ballen naar binnen mag om het jezelf makkelijk te maken. In plaats daarvan moet je het doen met wat snoepjes en stenen. Veel succes als je een Chansey tegenkomt!"
+}, {
+  "keys": ["ss aqua", "s.s. aqua"],
+  "title": "S.S. Aqua",
+  "img": "https://cdn.bulbagarden.net/upload/c/c8/SS_Aqua_HGSS.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/S.S._Aqua",
+  "description": "Vliegen van Kanto naar Johto (en terug) is helaas geen optie, en soms heb je ook geen zin om weer met de magnet train te haasten. Als je de tijd hebt en een luxe rit wel kan waarderen is de S.S. Aqua voor jou! Vanaf Olivine City ben je in ongeveer 12 uur in Vermilion City (of andersom). Prima tijd om wat te slapen, of natuurlijk wat trainers uit te dagen!"
+}, {
+  "keys": ["pallet town"],
+  "title": "Pallet Town",
+  "img": "https://cdn.bulbagarden.net/upload/7/7b/Pallet_Town_HGSS.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pallet_town",
+  "description": "Van alle steden in Pokémon, is deze misschien wel de belangrijkste. In dit dorpje is onze held geboren, dus zowel in de anime als in de nintendo spellen begint hier het avontuur. In dit schattige dorpje met slechts drie huizen wonen Ash en zijn moeder, Blue en Red, en Professor Oak in zijn Lab. Hier krijg je dus ook je starter Pokémon waarmee je vanalles mee gaat maken (of je transfert hem meteen voor een candy natuurlijk)."
+}, {
+  "keys": ["breeding", "broeden", "day care", "daycare"],
+  "title": "Pokémon Breeding",
+  "img": "https://pokemongo.gamepress.gg/sites/default/files/2017-09/Screenshot_20170911-220020_0.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_breeding",
+  "description": "In de Nintendo spellen was het mogelijk om in de Day Care twee Pokémon met elkaar te laten breeden, zodat je een Pokémon ei kon krijgen waaruit een lvl 1 Pokémon komt met eigenschappen die vergelijkbaar zijn aan die van de twee ouders. Een hele goede Pokémon hiervoor is Ditto, omdat deze kan breeden met elke Pokémon. Mocht dit ooit uitkomen in Pokémon Go is het erg handig om alvast een ditto met goede IV's klaar te hebben staan!"
+}, {
+  "keys": ["apricorn", "aprikorn"],
+  "title": "Apricorns",
+  "img": "https://cdn.bulbagarden.net/upload/c/c2/Apricorn.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Apricorn",
+  "description": "Apricorns zijn vruchten gevonden in de Johto regio, die gerelateerd lijken te zijn aan berries. Omdat de schil te dik is kunnen ze niet gegeten worden door Pokémon, waardoor ze geblendeerd moeten worden tot een drankje voor consumptie. Daarnaast kunnen ze door een expert zoals Kurt omgezet worden in speciale pokéballs."
+}, {
+  "keys": ["game corner"],
+  "title": "Game Corner",
+  "img": "https://cdn.bulbagarden.net/upload/a/ac/Celadon_Game_Corner_HGSS.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Celadon_Game_Corner",
+  "description": "Soms is zelfs de meest gemotiveerde trainer even klaar met Pokémon, en wat is dan een meer verantwoorde manier om de tijd door te brengen dan lekker te gaan gokken? Vrijwel elke regio heeft dan ook flink te bieden op dit gebied, want in Celadon City, Goldenrod City, Mauville City en veel meer plekken is de Game Corner te vinden. Dus kruip lekker achter een Slot Machine, en wie weet win je wel een Porygon ofzo!"
+}, {
+  "keys": ["silph scope"],
+  "title": "Silph Scope",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/6/65/RG_Silph_Scope.png/767px-RG_Silph_Scope.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Silph_Scope",
+  "description": "Spook Pokémon zijn redelijk zeldzaam, en dat ze soms onzichtbaar zijn helpt dan natuurlijk ook niet mee. Gelukkig ontwikkelde de Silph Co. de Silph Scope, waarmee je Spook Pokémon kan identificeren. Mocht je dus ooit een spook Marowak tegen komen weet je nu wat je moet doen ;)"
+}, {
+  "keys": ["lavender town", "pokemon tower", "pokémon tower"],
+  "title": "Lavender Town",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/5/5e/Lavender_Town_HGSS.png/300px-Lavender_Town_HGSS.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Lavender_Town",
+  "description": "Een van de kleinere stadjes, maar daardoor niet minder bekend. Deze stad is bekend vanwege de vele spookverhalen, en dat het grootste gebouw (de Pokémon Tower) een gigantisch Pokémon graf is zal daar ook wel niet mee helpen. Alleen het muziekje van de stad al doet menig pokémon fan rillen, en er is een heel syndroom naar dit stadje vernoemd. Probeer je hier zo ver mogelijk van weg te houden!"
+}, {
+  "keys": ["fishing", "rod", "super rod", "old rod", "good rod", "vissen"],
+  "title": "Fishing",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/3/3f/SuperRodNeoGenesis103.jpg/200px-SuperRodNeoGenesis103.jpg",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Fishing",
+  "description": "In Pokémon Go zie je alle vissen gewoon op de weg rondfloppen, maar niet in elk spel gaat dat zo makkelijk. De Old, Good en Super Rod zijn ervoor gemaakt om water Pokémon uit rivieren te halen zodat je ze kunt vangen om je dex compleet te krijgen."
+}, {
+  "keys": ["ss anne", "s.s. anne"],
+  "title": "S.S. Anne",
+  "img": "https://cdn.bulbagarden.net/upload/8/82/SS_Anne_FRLG.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/S.S._Anne",
+  "description": "Dit luxueuse schip dat de hele wereld bevaart stopt af en toe in Vermilion City (Kanto regio). Om erop te mogen varen heb je het S.S. Ticket nodig wat je ontvangt na het helpen van Bill. Het schip wordt over het algemeen goed gebruikt door andere trainers, dus een paar mooie gevechten zullen er wel inzitten hier ;)"
+}, {
+  "keys": ["tos", "scanner", "scanners", "multi accounter", "multi account", "multi accounters", "botter", "botters", "pokehunt", "pokéhunt", "gymhunter", "gymhuntr"],
+  "title": "Niantic's ToS",
+  "img": "https://nianticlabs.com/img/global/niantic_logo.png",
+  "url": "https://www.nianticlabs.com/terms/pokemongo/en/",
+  "description": "Niantic's Terms of Service zijn de regels die iedereen (ja, ook jij) heeft geaccepteerd zodat ze Pokémon Go kunnen spelen. Onder andere is hier te lezen dat je niet mag spoofen, maar ook multi accounten, of bot accounts gebruiken (daar vallen scanners onder) zijn niet toegestaan. Laten we proberen om het spel voor iedereen leuk te houden door gewoon te spelen hoe het hoort!"
+}, {
+  "keys": ["is pokemon go down", "ispokemongodown", "is pokemon go online", "online", "offline", "pokemon online", "pokemon go online"],
+  "title": "Is Pokémon Go online?",
+  "img": "http://www.blackenterprise.com/wp-content/blogs.dir/1/files/2016/03/wireless-signal.png",
+  "url": "http://poketimer.com/",
+  "description": "De downtime van Pokémon Go is duidelijk minder dan het vroeger was, maar af en toe komt het nog wel eens voor (vooral voor PTC gebruikers). Kijk via deze site of er dingen aan de hand zijn of dat het probleem bij jou ligt."
+}, {
+  "keys": ["blog", "niantic blog"],
+  "title": "Niantic's Pokémon Go Blog",
+  "img": "http://pokemongolive.com/img/global/pgo_logo.png",
+  "url": "http://pokemongolive.com/en/post/",
+  "description": "Niantic communiceert niet al te veel, maar als ze iets aankondigen staat het vaak hier. Hou eventueel ook hun twitter (of instagram) in de gaten."
+}, {
+  "keys": ["twitter", "niantic twitter"],
+  "title": "Niantic's Twitter",
+  "img": "https://abs.twimg.com/icons/apple-touch-icon-192x192.png",
+  "url": "https://twitter.com/pokemongoapp",
+  "description": "Naast Niantic's blog, gebruiken ze soms ook twitter om te communiceren. Volg ze via deze om op de hoogte te blijven van de nieuwste Pokémon Go updates!"
+}, {
+  "keys": ["instagram", "niantic instagram"],
+  "title": "Niantic Instagram",
+  "img": "https://lh3.googleusercontent.com/aYbdIM1abwyVSUZLDKoE0CDZGRhlkpsaPOg9tNnBktUQYsXflwknnOn2Ge1Yr7rImGk=w300",
+  "url": "https://www.instagram.com/pokemongoapp/",
+  "description": "Eerlijk is eerlijk, heel veel gebeurt hier niet, maar misschien vind je het leuk om alles van Niantic te volgen. Kijk in elk geval eens rond wat ze te bieden hebben!"
+}, {
+  "keys": ["apk", "apkmirror"],
+  "title": "Pokemon Go APK's",
+  "img": "http://bloomswedding.com/wp-content/uploads/2017/08/androidapk_32.png",
+  "url": "http://www.apkmirror.com/uploads/?q=pokemon-go",
+  "description": "Als Pokémon Go update kan het soms een tijdje duren voordat de update in de officiele store verschijnt. Gelukkig is er voor Android gebruikers een optie om de .APK van alternatieve plekken te downloaden. Het is ook ideaal als je een nieuwere versie gedownload hebt die eigenlijk tegenvalt."
+}, {
+  "keys": ["buddy", "buddy pokemon", "buddy pokémon"],
+  "title": "Buddy Pokémon",
+  "img": "https://img00.deviantart.net/758d/i/2009/296/b/2/pikachu_and_ash_by_larvoncl.jpg",
+  "url": "https://rankedboost.com/pokemon-go/buddy/#list",
+  "description": "Pokémon Go is een teamspel, maar af en toe komt het toch voor dat je in je eentje speelt. Gelukkig ben je nooit echt alleen en loop je samen met je buddy. Naast gezelligheid krijg je hier ook nog extra candies van. Hoever je moet lopen voor een candy hangt af van de pokémon, zie de link voor een mooie lijst."
+}, {
+  "keys": ["shiny", "shiny pokémon", "shiny pokemon"],
+  "title": "Shiny Pokémon",
+  "img": "http://i.imgur.com/bShcGSm.jpg",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Shiny_Pokémon",
+  "description": "Sommige pokémon kunnen een andere kleur hebben dan normaal. Zo'n variant met een ander kleurtje wordt ook wel een shiny Pokémon genoemd. Als je ze in het wild tegenkomt (of uit een ei) is dat te zien aan de kleur, en aan de sterretjes die er vanaf komen. Shiny's zijn indivudueel bepaald, dus een shiny voor jou is waarschijnlijk niet shiny voor mij. Ook heeft het verder nergens anders invloed op (iv's/ stats/ aanvallen/ etc). De zeldzaamheid wordt geschat op 1/512. Op dit moment zijn de volgende pokémon in shiny variant te vangen of uit ei te verkrijgen:\nPichu & Pikachu\nMagikarp\nShuppet\nSableye\nDuskull"
+}, {
+  "keys": ["elite 4", "elite four", "champion"],
+  "title": "Elite Four",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/2/2a/Hoenn_Elite_Four_Adventures.png/200px-Hoenn_Elite_Four_Adventures.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Elite_Four",
+  "description": "De vier sterkste Pokémon Trainers en de Champion van een regio moeten achter elkaar verslagen worden voordat een trainer zichzelf de Champion mag noemen. In het geval van een uitgedager vinden deze gevechten plaats in de Pokémon League. Je mag dit pas proberen als je 8 badges hebt verdient in de daarbij behorende regio."
+}, {
+  "keys": ["burned tower"],
+  "title": "Burned Tower",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/1/15/Burned_Tower_EP181.png/220px-Burned_Tower_EP181.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Burned_Tower",
+  "description": "Deze toren in Ecruteak City die voormalig even hoog was als de Bell Tower, brande honderde jaren geleden af, waarbij 3 pokémon omkwamen. Toen het vuur gedoofd was kwam Ho-Oh die de drie Pokémon weer tot leven wekte (later Suicune, Entei en Raikou genaamd). Mensen waren bang voor deze Pokémon en joegen ze weg. Sinds dien zijn deze pokémon alleen maar gezien door mensen die ze volledig vertrouwen."
+}, {
+  "keys": ["lake of rage"],
+  "title": "Lake of Rage",
+  "img": "http://pwo-wiki.info/images/thumb/c/c4/Lake_Of_Rage.png/350px-Lake_Of_Rage.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Lake_of_Rage",
+  "description": "Ook wel bekend als het Gyarados meer, gelegen in Johto ten noorden van Mahogany Town. Door geheime expirementen van Team Rocket waarbij ze radio golven gebruikte om Pokémon sterker te maken evolueerde een Magikarp in een rode (shiny) Gyarados. Voor veel spelers is dit de enige shiny die ze vangen."
+}, {
+  "keys": ["pokecenter", "pokécenter", "poke center", "poké center", "pokemon center", "pokémon center"],
+  "title": "Pokémon Center",
+  "img": "http://orig00.deviantart.net/3410/f/2015/135/c/9/c90336fa14688ac4940e66b88299ccad-d8tffwo.png",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_Center",
+  "description": "Pokémon gewond? Geen paniek! Nurse Joy fixt ze hier in no time op. Hoe hier precies voor betaald wordt is niet helemaal duidelijk, maar ze laten zich door niets tegenhouden om jouw pokemon weer op te lappen. Zelfs bij een stroom uitval staan de backup Pikachu standby! Daarnaast weten ze ook nog eens wanneer je jarig bent!"
+}, {
+  "keys": ["silph", "silph co", "silph co."],
+  "title": "Silph Co.",
+  "img": "https://vignette1.wikia.nocookie.net/fictionalcompanies/images/5/50/Silph_Company_Building.png/revision/latest?cb=20140531213537",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Silph_Co.",
+  "description": "Kanto is de regio van technologische vooruitgan, met the Silph Company in Saffron City als middenpunt. Meerdere inovatieve producten komen hier vandaan, zoals de Silph Scope, Pokéballs (waaronder de Master Ball), Medicijnen en TM's. Het is dan ook niet gek dat het hoofdkwartier meerdere keren het target van Team Rocket is geweest."
+}, {
+  "keys": ["pokemon tv", "pokemon kijken", "watch pokemon", "kijk pokemon", "pokémon tv", "pokémon kijken", "watch pokémon", "kijk pokémon", "beste serie", "beste tv serie", "best show", "best series", "best tv show", "anime"],
+  "title": "Pokémon TV",
+  "img": "https://lh3.googleusercontent.com/Yz6MtHKNPF6SxlQ8sJ4e5tcd1v1II4A1ZT_dD_UUpeeDxVCxaqwPkx4SCHZrheWnFw=w300",
+  "url": "https://www.pokemon.com/us/pokemon-episodes/pokemon-tv-seasons/",
+  "description": "Heb je wat vrije tijd en wil je genieten van een kwaliteit show? Waarom niet een paar Pokémon afleveringen? Er zijn er inmiddels zoveel dat ik met vrij grote zekerheid durf te zeggen dat jij ze nog niet allemaal gezien hebt. Pak een snack erbij, en kies een leuke uit!"
+}, {
+  "keys": ["magnet train"],
+  "title": "Magnet Train",
+  "img": "http://pokedream.com/games/goldsilver/walkthrough/mtrain.gif",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Magnet_Train",
+  "description": "De generatie 2 spellen vonden plaats in zowel de Kanto, als Johto regio. Omdat heen en weer vliegen geen optie was is er tussen Goldenrod en Saffron City een magnet rail aangelegd waar een magneet trein overheen kan sjezen. Op die manier kan je toch snel (ruim 550 km/h) heen en weer."
+}, {
+  "keys": ["gs ball"],
+  "title": "GS ball",
+  "img": "https://vignette.wikia.nocookie.net/es.pokemon/images/0/08/GS_Ball_%28Ilustraci%C3%B3n%29.png/revision/latest?cb=20120531192727",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/GS_Ball",
+  "description": "Deze mysterieuze bal werd door Professor Ivy aan Ash gegeven om hem naar Professor Oak te brengen voor verder onderzoek. Nadat Oak ook moest toegeven er niets mee te kunnen bracht Ash de bal naar de Pokéball expert Professor Kurt. Hierna horen we er eigenlijk niets meer over, maar de geruchten gaan dat Celebi hierin zou zitten."
+}, {
+  "keys": ["niantic"],
+  "title": "Niantic",
+  "img": "https://nianticlabs.com/img/global/niantic_logo.png",
+  "url": "https://www.nianticlabs.com/",
+  "description": "Niantic is het bedrijf dat Ingress 2 ontwikkelde en het Pokémon Go noemde. Door de gigantische populariteit van Pokémon is dit spel echter veel groter geworden, waardoor ze flink aan het groeien zijn."
+}, {
+  "keys": ["stats"],
+  "title": "Pokémon stats",
+  "img": "https://gamepress.gg/sites/default/files/gp-logo.png",
+  "url": "https://pokemongo.gamepress.gg/pokemon-list",
+  "description": "Zoek je een lijst met stats van alle pokemon? Kijk hier eens rond!"
+}, {
+  "keys": ["weerbericht"],
+  "title": "Weerbericht Delft",
+  "img": "https://img.pokemondb.net/sprites/black-white/normal/solrock.png",
+  "url": "https://www.weeronline.nl/Europa/Nederland/Delft/4057853",
+  "description": "Weer of geen weer, Valor en Instinct moeten uit hun gyms geschopt! Dus pak je revives, en ga ervoor! Articuno is niet voor niets de stormvogel!"
+}, {
+  "keys": ["tutorial"],
+  "title": "Pokémon Go Tutorial",
+  "img": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/unown-qm.png",
+  "url": "https://delftmystic.wordpress.com/",
+  "description": "Pokémon go lijkt simpel, maar stiekem is het een best complex spel. Niet gevreesd, er is een hele tutorial voor geschreven!"
+}, {
+  "keys": ["nest", "nest atlas"],
+  "title": "TSR's nest atlas",
+  "img": "https://assets.thesilphroad.com/img/snoo_sr_icon.png",
+  "url": "https://thesilphroad.com/atlas#13.18/52.0073/4.3599",
+  "description": "Naast de spawns die biome afhankelijk zijn heb je ook plekken die steeds dezelfde pokemon spawnen. Als je zo'n nest gevonden hebt of zoekt kun je dat hier aangeven."
+}, {
+  "keys": ["minortextfixes", "minor text fixes"],
+  "title": "Minor Text Fixes",
+  "img": "https://nianticlabs.com/img/global/niantic_logo.png",
+  "url": "http://knowyourmeme.com/memes/pokemon-go-updates-controversy",
+  "description": "Minor text fixes verwijst gekmakend naar het regelmatig incapabele niantic. Het is een referentie naar een van de eerste updates waar het spel bijzonder slecht functioneerde en iedereen aan het wachten was op optimalisaties. Na de lange tijd van wachten verscheen eindelijk de update, en de change log was: *minor text fixes*"
+}, {
+  "keys": ["iv", "ivs", "iv's"],
+  "title": "IV's",
+  "img": "https://steamuserimages-a.akamaihd.net/ugc/610602736055165741/24ECA2E6772D78ED72C437000ECC09AC4B9E7035/",
+  "url": "https://delftmystic.wordpress.com/basestats-ivs/",
+  "description": "Zoek je nauwkeurigere IV informatie dan ik je kan geven? Gebruik deze apps:\nVoor android: <https://play.google.com/store/apps/details?id=tesmath.calcy>\nVoor android optie 2: <https://github.com/farkam135/GoIV/releases>\nVoor apple: <https://itunes.apple.com/us/app/poke-genie-for-pokemon-go-auto-iv-calculator/id1143920524>"
+}, {
+  "keys": ["pokemon", "pokémon"],
+  "title": "Pokémon",
+  "img": "https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/logo-pokemon-79x45.png",
+  "url": "https://www.pokemon.com/us/",
+  "description": "Pokémon zijn de loslopende beestjes die je kunt vangen om ze voor de glorie van team Mystic tegen Valor en Instinct te laten strijden."
+}, {
+  "keys": ["gyms", "gym"],
+  "title": "Gyms",
+  "img": "https://p5.zdassets.com/hc/theme_assets/1051539/200290428/battle_intro.png",
+  "url": "https://www.google.com/maps/d/u/0/edit?mid=11DnpOBi-AsstZGT07NGO9txzxsU&ll=52.00888580917186%2C4.361529349999955&z=13",
+  "description": "Hier is een kaart van alle gyms en regios in Delft, maak ze allemaal van ons!"
+}, {
+  "keys": ["spoofer", "spoofers", "cheater", "report cheater", "report spoofer", "valsspeler", "multi accounter", "multi-accounter", "multiaccounter", "papaincloud", "pokewied", "pokewied2000", "rickdelft", "rickdelft68", "yesitsdone", "yesitsover", "realbiatch", "yesimlazy"],
+  "title": "Cheaters",
+  "img": "https://openclipart.org/image/2400px/svg_to_png/48337/Abort-01.png",
+  "url": "https://support.pokemongo.nianticlabs.com/hc/en-us/requests/new?ticket_form_id=319948",
+  "description": "Een cheater is iemand die het een goed idee vindt om dit spel met zelfbedachte regels te spelen. Dit soort treurige personen die hun pokemon niet waard zijn manipuleren hun GPS (spoofers), en/ of gebruiken meerdere accounts (multi accounters). Report dit soort faalhazen hier via bovenstaande link. Moge Niantics banhamer genadeloos zijn"
+}, {
+  "keys": ["type"],
+  "title": "Type",
+  "img": "https://image.ibb.co/mxRthv/Untitled.png",
+  "url": "https://image.ibb.co/mxRthv/Untitled.png",
+  "description": "Gebruik type voordelen door pokemon sneller neer te halen en minder schade te ontvangen!"
+}, {
+  "keys": ["test"],
+  "title": "Test",
+  "img": "http://test-ipv6.com/images/hires_ok.png",
+  "url": "https://www.youtube.com/watch?v=CxKm_ZJfofA",
+  "description":  "1, 2, 3, 4.....\nJa! alles lijkt in orde! ;)"
+}, {
+  "keys": ["pokeboot", "pokéboot"],
+  "title": "Pokéboot",
+  "img": "https://cdn.bulbagarden.net/upload/thumb/9/92/Speedboat_DP112.png/250px-Speedboat_DP112.png",
+  "url": "https://goo.gl/maps/DmomVUJgdaA2",
+  "description": "De pokéboot, (ook bekend als Stads-Koffyhuis) is een plek in Delft Centrum waar je lekker kunt eten onder het genot van 4 pokestops."
+}, {
+  "keys": ["regional", "exclusive", "regional exclusive"],
+  "title": "Regional exclusive Pokémon",
+  "img": "https://image.ibb.co/c5iWNb/regional_gym.jpg",
+  "url": "https://www.google.com/maps/d/u/0/viewer?mid=1gOn-ASh7kskCCiHK4A-IHZSwfsk",
+  "description": "Regional exclusive pokemon zijn alleen in specifieke delen van de wereld te vinden, zie deze kaart om uit te vinden waar."
+}, {
+  "keys": ["counter magikarp"],
+  "title": "Counter Magikarp",
+  "img": "https://img.pokemondb.net/sprites/x-y/normal/magikarp.png",
+  "url": "https://www.google.com/search?q=noob",
+  "description": "Cop counter lijst voor Magikarp:\nLetterlijk alles\n\nBij nader inzien is Pokémon Go toch niet echt voor jou"
+}, {
+  "keys": ["counter metapod"],
+  "title": "Counter Metapod",
+  "img": "https://img.pokemondb.net/sprites/x-y/normal/metapod.png",
+  "url": "https://www.google.com/search?q=noob",
+  "description": "Cop counter lijst voor Metapod:\nLetterlijk alles\n\nBij nader inzien is Pokémon Go toch niet echt voor jou"
+}, {
+  "keys": ["locatielink", "locatie link", "share location", "locatie delen"],
+  "title": "Locatie link delen",
+  "img": "http://apk.co/images/my-location-maps-gps-location-tracker-places-2601.png",
+  "url": "https://delftmystic.wordpress.com/2017/07/05/locatie-delen/",
+  "description": "Het kunnen delen van een exacte locatie over discord is een must have kwaliteit voor bijvoorbeeld het delen van een mooie pokémon spawn. Zie de link om uit te vogelen hoe je dat kan doen!"
+}, {
+  "keys": ["search functie", "search function", "pokemon search", "pokémon search", "search help"],
+  "title": "Pokémon Go zoekfunctie",
+  "img": "https://www.oswego.edu/oswego-search/img/search.png",
+  "url": "https://www.reddit.com/r/TheSilphRoad/comments/6iizr1/search_functions/",
+  "description": "Soms wil je snel een pokemon vinden, en gelukkig heeft Pokémon Go hier een mooie zoekfunctie voor ingebouwt. Zie deze link voor een lijst met opties."
+}, {
+  "keys": ["legacy", "legacy moveset", "legacy movesets"],
+  "title": "Legacy Movesets",
+  "img": "https://bible2blog.files.wordpress.com/2015/06/treasurechest.png",
+  "url": "https://pokemongo.gamepress.gg/legacy-pokemon-list",
+  "description": "Als movesets veranderen kan het gebeuren dat pokémon zogenaamde Legacy movesets krijgen. Dit betekend dat ze niet meer te verkrijgen zijn met behulp van TM's. Soms zijn legacy movesets erg goed, kijk dus goed uit als je deze veranderd. Een lijst met alle legacy moves is te vinden via bovenstaande link."
+}, {
+  "keys": ["migratie", "nest migratie", "migration", "nest migration"],
+  "title": "Nest Migratie",
+  "img": "http://www.friendstonga.com/images/clock.png",
+  "url": "https://poketimer.com/",
+  "description": "De nesten migreren elke twee weken in de nacht van woensdag op donderdag om 01:00. Zie de link voor een timer voor deze migratie (en eventuele events)."
+}, {
+  "keys": ["lvl 40", "level 40", "lvl cap", "level cap"],
+  "title": "Level 40 spelers",
+  "img": "http://2.bp.blogspot.com/_MWz5rMNRrCo/TFcLQ65VoDI/AAAAAAAAAM4/aduAc0NTgI0/s1600/Number_40_600x400_pixels.gif",
+  "url": "https://www.imore.com/how-to-win-pokemon-go",
+  "description": "Op dit moment is lvl 40 het hoogst haalbare level in dit spel. Je hebt een schrikbarende 20.000.000 xp nodig om dit te behalen. Spelers die zich op dit moment met recht max level mogen noemen zijn:\n\nIkgawinne\nBlijebakkus13\nRilakumma\n\n:balloon:Van harte gefeliciteerd met deze uitmuntende prestatie!:balloon:"
+}, {
+  "keys": ["pokerus", "pokérus"],
+  "title": "Pokérus",
+  "img": "https://pm1.narvii.com/6310/351be48a23c44453dcc97fd75aded3beb4a20faa_hq.jpg",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pokérus",
+  "description": "Het Pokérus wordt veroorzaakt door een besmettelijk microscopische levensvorm. Besmette Pokémon krijgen sneller hogere stats bij het levelen, waardoor een Pokémon voor zijn max level al zijn max potentie kan behalen. Helaas is deze aandoening in Pokémon Go nog niet gevonden."
+}, {
+  "keys": ["pokedex", "pokédex"],
+  "title": "Pokédex",
+  "img": "https://vignette3.wikia.nocookie.net/whatever-you-want/images/6/66/Pokedex_Kanto.png/revision/latest?cb=20140106170154",
+  "url": "https://www.pokemon.com/us/pokedex/",
+  "description": "Op de Pokédex staan alle Pokémon opgeslagen, inclusief een verhaaltje en wat stats. Kijk hier vooral eens rond als je je kennis wat wil uitbreiden of opfrissen."
+}, {
+  "keys": ["master ball", "masterball"],
+  "title": "Master Ball",
+  "img": "https://cdn.bulbagarden.net/upload/2/21/SugimoriMasterBall.png",
+  "url": "https://delftmystic.wordpress.com/items/",
+  "description": "De beste bal die er is, hij mist nooit! Helaas is dit juweeltje nog niet beschikbaar in Pokémon go, en zullen we dus op dit moment nog ons best moeten doen om pokémon te vangen."
+}, {
+  "keys": ["dominatie", "gym takeover", "delft takeover", "delft gym takeover", "winter is comming", "makedelftblueagain", "make delft blue again"],
+  "title": "Make Delft Blue again!",
+  "img": "https://vignette.wikia.nocookie.net/pokemongo/images/f/f4/Team_Mystic.png/revision/latest/scale-to-width-down/180?cb=20160717150716",
+  "url": "https://img00.deviantart.net/ca8e/i/2016/223/6/b/stag_16001_hd_mystic_unova_by_ld_barthel-dadingw.jpg",
+  "description": "Met als groepsmotto *Make Delft Blue again* kunnen we natuurlijk niet anders dan af en toe grootschalig in actie komen. Elke zoveel tijd organiseren we als groep daarom een volledige take over van Delft, met als doel het volledig domineren van elke gym die ook maar een beetje in de buurt is. Ik weet niet zeker wat ik leuker vind, een volledig blauw Delft, of de beteuterde gezichtjes van de Elmo's en Kuikens. De gym avonden vonden plaats op:\n10 november 2017\n..."
+}, {
+  "keys": ["faal", "fail", "instinct delft takeover", "weconsideritawin", "we consider it a win", "we consider it a victory", "instincttakeover", "weconsideroursavictory", "we consider ours a victory"],
+  "title": "Instinct Delft takeover",
+  "img": "https://elearningindustry.com/wp-content/uploads/2014/07/Top-10-Reasons-Why-LMS-Implementation-Fail.png",
+  "url": "https://www.youtube.com/user/failarmy",
+  "description": "Na de zeer geslaagde Delft Takeover van ons op 10 november, waar we delft rond een uur of 11 's avonds volledig blauw hadden, probeerde Instinct het 8 dagen later ook een keertje. Ze begonnen rond 12 met minstens 6 groepen in verschillende gebieden. Tussen die tijd en half 2 werd het vermoeden van een overname poging steeds groter, waardoor Knepski, Blijebakkus, Arankatje en Ikgawinne terug gingen beuken. Nadat de volledige instinct macht het na 4.5 uur niet voor elkaar kreeg om van deze vier Mystic spelers te winnen dropen ze af, waarna de vier helden allemaal met meer dan 15 gyms naar bed gingen. Volgende keer misschien gaan voor een kleiner doel, Instinct?"
+}]

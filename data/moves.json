@@ -1,0 +1,1549 @@
+[{
+  "keys": ["acid"],
+  "name": "Acid",
+  "type": "poison",
+  "power": 9,
+  "eps": 10,
+  "time": 0.8,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["aerial ace"],
+  "name": "Aerial Ace",
+  "type": "flying",
+  "power": 55,
+  "eps": 0,
+  "time": 2.4,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["air cutter"],
+  "name": "Air Cutter",
+  "type": "flying",
+  "power": 60,
+  "eps": 0,
+  "time": 2.7,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["air slash"],
+  "name": "Air Slash",
+  "type": "flying",
+  "power": 14,
+  "eps": 8.33,
+  "time": 1.2,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["ancient power"],
+  "name": "Ancient Power",
+  "type": "rock",
+  "power": 70,
+  "eps": 0,
+  "time": 3.5,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["aqua jet"],
+  "name": "Aqua Jet",
+  "type": "water",
+  "power": 45,
+  "eps": 0,
+  "time": 2.6,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["aqua tail"],
+  "name": "Aqua Tail",
+  "type": "water",
+  "power": 50,
+  "eps": 0,
+  "time": 1.9,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["astonish"],
+  "name": "Astonish",
+  "type": "ghost",
+  "power": 8,
+  "eps": 12.73,
+  "time": 1.1,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["aurora beam"],
+  "name": "Aurora Beam",
+  "type": "ice",
+  "power": 80,
+  "eps": 0,
+  "time": 3.55,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["avalanche"],
+  "name": "Avalanche",
+  "type": "ice",
+  "power": 90,
+  "eps": 0,
+  "time": 2.7,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["bite"],
+  "name": "Bite",
+  "type": "dark",
+  "power": 6,
+  "eps": 8,
+  "time": 0.5,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["blizzard"],
+  "name": "Blizzard",
+  "type": "ice",
+  "power": 130,
+  "eps": 0,
+  "time": 3.1,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["body slam"],
+  "name": "Body Slam",
+  "type": "normal",
+  "power": 50,
+  "eps": 0,
+  "time": 1.9,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["bone club"],
+  "name": "Bone Club",
+  "type": "ground",
+  "power": 40,
+  "eps": 0,
+  "time": 1.6,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["brave bird"],
+  "name": "Brave Bird",
+  "type": "flying",
+  "power": 90,
+  "eps": 0,
+  "time": 2,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["brick break"],
+  "name": "Brick Break",
+  "type": "fight",
+  "power": 40,
+  "eps": 0,
+  "time": 1.6,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["brine"],
+  "name": "Brine",
+  "type": "water",
+  "power": 60,
+  "eps": 0,
+  "time": 2.3,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["bubble"],
+  "name": "Bubble",
+  "type": "water",
+  "power": 12,
+  "eps": 11.67,
+  "time": 1.2,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["bubble beam"],
+  "name": "Bubble Beam",
+  "type": "water",
+  "power": 45,
+  "eps": 0,
+  "time": 1.9,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["bug bite"],
+  "name": "Bug Bite",
+  "type": "bug",
+  "power": 5,
+  "eps": 12,
+  "time": 0.5,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["bug buzz"],
+  "name": "Bug Buzz",
+  "type": "bug",
+  "power": 90,
+  "eps": 0,
+  "time": 3.7,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["bulldoze"],
+  "name": "Bulldoze",
+  "type": "ground",
+  "power": 80,
+  "eps": 0,
+  "time": 3.5,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["bullet punch"],
+  "name": "Bullet Punch",
+  "type": "steel",
+  "power": 9,
+  "eps": 11.11,
+  "time": 0.9,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["bullet seed"],
+  "name": "Bullet Seed",
+  "type": "grass",
+  "power": 8,
+  "eps": 12.73,
+  "time": 1.1,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["charge beam"],
+  "name": "Charge Beam",
+  "type": "electric",
+  "power": 8,
+  "eps": 13.64,
+  "time": 1.1,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["close combat"],
+  "name": "Close Combat",
+  "type": "fighting",
+  "power": 100,
+  "eps": 0,
+  "time": 2.3,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["confusion"],
+  "name": "Confusion",
+  "type": "psychic",
+  "power": 20,
+  "eps": 9.38,
+  "time": 1.6,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["counter"],
+  "name": "Counter",
+  "type": "fighting",
+  "power": 12,
+  "eps": 8.89,
+  "time": 0.9,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["cross chop"],
+  "name": "Cross Chop",
+  "type": "fighting",
+  "power": 50,
+  "eps": 0,
+  "time": 1.5,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["cross poison"],
+  "name": "Cross Poison",
+  "type": "poison",
+  "power": 40,
+  "eps": 0,
+  "time": 1.5,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["crunch"],
+  "name": "Crunch",
+  "type": "dark",
+  "power": 70,
+  "eps": 0,
+  "time": 3.2,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["cut"],
+  "name": "Cut",
+  "type": "normal",
+  "power": 5,
+  "eps": 10,
+  "time": 0.5,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["dark pulse"],
+  "name": "Dark Pulse",
+  "type": "dark",
+  "power": 80,
+  "eps": 0,
+  "time": 3,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["dazzling gleam"],
+  "name": "Dazzling Gleam",
+  "type": "fairy",
+  "power": 100,
+  "eps": 0,
+  "time": 3.5,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["dig"],
+  "name": "Dig",
+  "type": "ground",
+  "power": 100,
+  "eps": 0,
+  "time": 4.7,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["disarming voice"],
+  "name": "Disarming Voice",
+  "type": "fairy",
+  "power": 70,
+  "eps": 0,
+  "time": 3.9,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["discharge"],
+  "name": "Discharge",
+  "type": "electric",
+  "power": 65,
+  "eps": 0,
+  "time": 2.5,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["dragon breath"],
+  "name": "Dragon Breath",
+  "type": "dragon",
+  "power": 6,
+  "eps": 8,
+  "time": 0.5,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["dragon claw"],
+  "name": "Dragon Claw",
+  "type": "dragon",
+  "power": 50,
+  "eps": 0,
+  "time": 1.7,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["dragon pulse"],
+  "name": "Dragon Pulse",
+  "type": "dragon",
+  "power": 90,
+  "eps": 0,
+  "time": 3.6,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["dragon tail"],
+  "name": "Dragon Tail",
+  "type": "dragon",
+  "power": 15,
+  "eps": 8.18,
+  "time": 1.1,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["draining kiss"],
+  "name": "Draining Kiss",
+  "type": "fairy",
+  "power": 60,
+  "eps": 0,
+  "time": 2.6,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["drill peck"],
+  "name": "Drill Peck",
+  "type": "flying",
+  "power": 60,
+  "eps": 0,
+  "time": 2.3,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["drill run"],
+  "name": "Drill Run",
+  "type": "ground",
+  "power": 80,
+  "eps": 0,
+  "time": 2.8,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["dynamic punch"],
+  "name": "Dynamic Punch",
+  "type": "fighting",
+  "power": 90,
+  "eps": 0,
+  "time": 2.7,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["earthquake"],
+  "name": "Earthquake",
+  "type": "ground",
+  "power": 120,
+  "eps": 0,
+  "time": 3.6,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["ember"],
+  "name": "Ember",
+  "type": "fire",
+  "power": 10,
+  "eps": 10,
+  "time": 1,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["energy ball"],
+  "name": "Energy Ball",
+  "type": "grass",
+  "power": 90,
+  "eps": 0,
+  "time": 3.9,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["extrasensory"],
+  "name": "Extrasensory",
+  "type": "psychic",
+  "power": 12,
+  "eps": 10.91,
+  "time": 1.1,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["feint attack"],
+  "name": "Feint Attack",
+  "type": "dark",
+  "power": 10,
+  "eps": 10,
+  "time": 0.9,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["fire blast"],
+  "name": "Fire Blast",
+  "type": "fire",
+  "power": 140,
+  "eps": 0,
+  "time": 4.2,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["fire fang"],
+  "name": "Fire Fang",
+  "type": "fire",
+  "power": 11,
+  "eps": 8.89,
+  "time": 0.9,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["fire punch"],
+  "name": "Fire Punch",
+  "type": "fire",
+  "power": 55,
+  "eps": 0,
+  "time": 2.2,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["fire spin"],
+  "name": "Fire Spin",
+  "type": "fire",
+  "power": 14,
+  "eps": 9.09,
+  "time": 1.1,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["flame burst"],
+  "name": "Flame Burst",
+  "type": "fire",
+  "power": 70,
+  "eps": 0,
+  "time": 2.6,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["flame charge"],
+  "name": "Flame Charge",
+  "type": "fire",
+  "power": 70,
+  "eps": 0,
+  "time": 3.8,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["flame wheel"],
+  "name": "Flame Wheel",
+  "type": "fire",
+  "power": 60,
+  "eps": 0,
+  "time": 2.7,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["flamethrower"],
+  "name": "Flamethrower",
+  "type": "fire",
+  "power": 70,
+  "eps": 0,
+  "time": 2.2,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["flash cannon"],
+  "name": "Flash Cannon",
+  "type": "steel",
+  "power": 100,
+  "eps": 0,
+  "time": 2.7,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["focus blast"],
+  "name": "Focus Blast",
+  "type": "fighting",
+  "power": 140,
+  "eps": 0,
+  "time": 3.5,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["foul play"],
+  "name": "Foul Play",
+  "type": "dark",
+  "power": 70,
+  "eps": 0,
+  "time": 2,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["frost breath"],
+  "name": "Frost Breath",
+  "type": "ice",
+  "power": 10,
+  "eps": 8.89,
+  "time": 0.9,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["fury cutter"],
+  "name": "Fury Cutter",
+  "type": "bug",
+  "power": 3,
+  "eps": 15,
+  "time": 0.4,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["future sight"],
+  "name": "Future Sight",
+  "type": "psychic",
+  "power": 120,
+  "eps": 0,
+  "time": 2.7,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["giga drain"],
+  "name": "Giga Drain",
+  "type": "grass",
+  "power": 50,
+  "eps": 0,
+  "time": 3.9,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["grass knot"],
+  "name": "Grass Knot",
+  "type": "grass",
+  "power": 90,
+  "eps": 0,
+  "time": 2.6,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["gunk shot"],
+  "name": "Gunk Shot",
+  "type": "poison",
+  "power": 130,
+  "eps": 0,
+  "time": 3.1,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["gyro ball"],
+  "name": "Gyro Ball",
+  "type": "steel",
+  "power": 80,
+  "eps": 0,
+  "time": 3.3,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["heart stamp"],
+  "name": "Heart Stamp",
+  "type": "psychic",
+  "power": 40,
+  "eps": 0,
+  "time": 1.9,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["heat wave"],
+  "name": "Heat Wave",
+  "type": "fire",
+  "power": 95,
+  "eps": 0,
+  "time": 3,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["heavy slam"],
+  "name": "Heavy Slam",
+  "type": "steel",
+  "power": 70,
+  "eps": 0,
+  "time": 2.1,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["hex"],
+  "name": "Hex",
+  "type": "ghost",
+  "power": 10,
+  "eps": 12.5,
+  "time": 1.2,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["hidden power"],
+  "name": "Hidden Power",
+  "type": "normal",
+  "power": 15,
+  "eps": 10,
+  "time": 1.5,
+  "bars": 0,
+  "description": "Kan alle types behalve Normal en Fairy hebben. Het is niet mogelijk om mbv fast TM's een nieuw Hidden Power type te krijgen."
+}, {
+  "keys": ["horn attack"],
+  "name": "Horn Attack",
+  "type": "normal",
+  "power": 40,
+  "eps": 0,
+  "time": 1.85,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["hurricane"],
+  "name": "Hurricane",
+  "type": "flying",
+  "power": 110,
+  "eps": 0,
+  "time": 2.7,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["hydro pump"],
+  "name": "Hydro Pump",
+  "type": "water",
+  "power": 130,
+  "eps": 0,
+  "time": 3.3,
+  "bars": 1,
+  "description": "Sterker bij Blastoise"
+}, {
+  "keys": ["hyper beam"],
+  "name": "Hyper Beam",
+  "type": "normal",
+  "power": 150,
+  "eps": 0,
+  "time": 3.8,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["hyper fang"],
+  "name": "Hyper Fang",
+  "type": "normal",
+  "power": 80,
+  "eps": 0,
+  "time": 2.5,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["ice beam"],
+  "name": "Ice Beam",
+  "type": "ice",
+  "power": 90,
+  "eps": 0,
+  "time": 3.3,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["ice punch"],
+  "name": "Ice Punch",
+  "type": "ice",
+  "power": 50,
+  "eps": 0,
+  "time": 1.9,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["ice shard"],
+  "name": "Ice Shard",
+  "type": "ice",
+  "power": 12,
+  "eps": 10,
+  "time": 1.2,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["icy wind"],
+  "name": "Icy Wind",
+  "type": "ice",
+  "power": 60,
+  "eps": 0,
+  "time": 3.3,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["infestation"],
+  "name": "Infestation",
+  "type": "bug",
+  "power": 10,
+  "eps": 12.73,
+  "time": 1.1,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["iron head"],
+  "name": "Iron Head",
+  "type": "steel",
+  "power": 60,
+  "eps": 0,
+  "time": 1.9,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["iron tail"],
+  "name": "Iron Tail",
+  "type": "steel",
+  "power": 15,
+  "eps": 6.36,
+  "time": 1.1,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["karate chop"],
+  "name": "Karate Chop",
+  "type": "fighting",
+  "power": 8,
+  "eps": 12.5,
+  "time": 0.8,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["leaf blade"],
+  "name": "Leaf Blade",
+  "type": "grass",
+  "power": 70,
+  "eps": 0,
+  "time": 2.4,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["lick"],
+  "name": "Lick",
+  "type": "ghost",
+  "power": 5,
+  "eps": 12,
+  "time": 0.5,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["low kick"],
+  "name": "Low Kick",
+  "type": "fighting",
+  "power": 6,
+  "eps": 10,
+  "time": 0.6,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["low sweep"],
+  "name": "Low Sweep",
+  "type": "fighting",
+  "power": 40,
+  "eps": 0,
+  "time": 1.9,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["magnet bomb"],
+  "name": "Magnet Bomb",
+  "type": "steel",
+  "power": 70,
+  "eps": 0,
+  "time": 2.8,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["mega drain"],
+  "name": "Mega Drain",
+  "type": "grass",
+  "power": 25,
+  "eps": 0,
+  "time": 2.6,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["megahorn"],
+  "name": "Megahorn",
+  "type": "bug",
+  "power": 90,
+  "eps": 0,
+  "time": 2.2,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["metal claw"],
+  "name": "Metal Claw",
+  "type": "steel",
+  "power": 8,
+  "eps": 10,
+  "time": 0.7,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["mirror coat"],
+  "name": "Mirror Coat",
+  "type": "psychic",
+  "power": 60,
+  "eps": 0,
+  "time": 2.6,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": ["moonblast"],
+  "name": "Moonblast",
+  "type": "fairy",
+  "power": 130,
+  "eps": 0,
+  "time": 3.9,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": ["mud bomb"],
+  "name": "Mud Bomb",
+  "type": "ground",
+  "power": 55,
+  "eps": 0,
+  "time": 2.3,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": ["mud shot"],
+  "name": "Mud Shot",
+  "type": "ground",
+  "power": 5,
+  "eps": 11.67,
+  "time": 0.6,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": ["mud slap"],
+  "name": "Mud Slap",
+  "type": "ground",
+  "power": 15,
+  "eps": 8.57,
+  "time": 1.4,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "night shade"],
+  "name": "Night Shade",
+  "type": "ghost",
+  "power": 60,
+  "eps": 0,
+  "time": 2.6,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "night slash"],
+  "name": "Night Slash",
+  "type": "dark",
+  "power": 50,
+  "eps": 0,
+  "time": 2.2,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "ominous wind"],
+  "name": "Ominous Wind",
+  "type": "ghost",
+  "power": 50,
+  "eps": 0,
+  "time": 2.3,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "outrage"],
+  "name": "Outrage",
+  "type": "dragon",
+  "power": 110,
+  "eps": 0,
+  "time": 3.9,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "overheat"],
+  "name": "Overheat",
+  "type": "fire",
+  "power": 160,
+  "eps": 0,
+  "time": 4,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": [ "parabolic charge"],
+  "name": "Parabolic Charge",
+  "type": "electric",
+  "power": 25,
+  "eps": 0,
+  "time": 2.8,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "peck"],
+  "name": "Peck",
+  "type": "flying",
+  "power": 10,
+  "eps": 10,
+  "time": 1,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "petal blizzard"],
+  "name": "Petal Blizzard",
+  "type": "grass",
+  "power": 110,
+  "eps": 0,
+  "time": 2.6,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": [ "play rough"],
+  "name": "Play Rough",
+  "type": "fairy",
+  "power": 90,
+  "eps": 0,
+  "time": 2.9,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "poison fang"],
+  "name": "Poison Fang",
+  "type": "poison",
+  "power": 35,
+  "eps": 0,
+  "time": 1.7,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "poison jab"],
+  "name": "Poison Jab",
+  "type": "poison",
+  "power": 10,
+  "eps": 8.75,
+  "time": 0.8,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "poison sting"],
+  "name": "Poison Sting",
+  "type": "poison",
+  "power": 5,
+  "eps": 11.67,
+  "time": 0.6,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "pound"],
+  "name": "Pound",
+  "type": "normal",
+  "power": 7,
+  "eps": 10,
+  "time": 0.6,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "powder snow"],
+  "name": "Powder Snow",
+  "type": "ice",
+  "power": 6,
+  "eps": 15,
+  "time": 1,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "power gem"],
+  "name": "Power Gem",
+  "type": "rock",
+  "power": 80,
+  "eps": 0,
+  "time": 2.9,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "power whip"],
+  "name": "Power Whip",
+  "type": "grass",
+  "power": 90,
+  "eps": 0,
+  "time": 2.6,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "psybeam"],
+  "name": "Psybeam",
+  "type": "psychic",
+  "power": 70,
+  "eps": 0,
+  "time": 3.2,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "psychic"],
+  "name": "Psychic",
+  "type": "psychic",
+  "power": 100,
+  "eps": 0,
+  "time": 2.8,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": [ "psycho cut"],
+  "name": "Psycho Cut",
+  "type": "psychic",
+  "power": 5,
+  "eps": 13.33,
+  "time": 0.6,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "psyshock"],
+  "name": "Psyshock",
+  "type": "psychic",
+  "power": 65,
+  "eps": 0,
+  "time": 2.7,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "psystrike"],
+  "name": "Psystrike",
+  "type": "psychic",
+  "power": 100,
+  "eps": 0,
+  "time": 4.4,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "quick attack"],
+  "name": "Quick Attack",
+  "type": "normal",
+  "power": 8,
+  "eps": 12.5,
+  "time": 0.8,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "razor leaf"],
+  "name": "Razor Leaf",
+  "type": "grass",
+  "power": 13,
+  "eps": 7,
+  "time": 1,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "rest"],
+  "name": "Rest",
+  "type": "normal",
+  "power": 50,
+  "eps": 0,
+  "time": 1.9,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "rock blast"],
+  "name": "Rock Blast",
+  "type": "rock",
+  "power": 50,
+  "eps": 0,
+  "time": 2.1,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "rock slide"],
+  "name": "Rock Slide",
+  "type": "rock",
+  "power": 80,
+  "eps": 0,
+  "time": 2.7,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "rock smash"],
+  "name": "Rock Smash",
+  "type": "fighting",
+  "power": 15,
+  "eps": 7.69,
+  "time": 1.3,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "rock throw"],
+  "name": "Rock Throw",
+  "type": "rock",
+  "power": 12,
+  "eps": 7.78,
+  "time": 0.9,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "rock tomb"],
+  "name": "Rock Tomb",
+  "type": "rock",
+  "power": 70,
+  "eps": 0,
+  "time": 3.2,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "sand tomb"],
+  "name": "Sand Tomb",
+  "type": "ground",
+  "power": 80,
+  "eps": 0,
+  "time": 4,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "scald"],
+  "name": "Scald",
+  "type": "water",
+  "power": 80,
+  "eps": 0,
+  "time": 3.7,
+  "bars": 2,
+  "description": "Slechter bij Blastoise"
+}, {
+  "keys": [ "scratch"],
+  "name": "Scratch",
+  "type": "normal",
+  "power": 6,
+  "eps": 8,
+  "time": 0.5,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "seed bomb"],
+  "name": "Seed Bomb",
+  "type": "grass",
+  "power": 55,
+  "eps": 0,
+  "time": 2.1,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "shadow ball"],
+  "name": "Shadow Ball",
+  "type": "ghost",
+  "power": 100,
+  "eps": 0,
+  "time": 3,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "shadow claw"],
+  "name": "Shadow Claw",
+  "type": "ghost",
+  "power": 9,
+  "eps": 8.57,
+  "time": 0.7,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "shadow punch"],
+  "name": "Shadow Punch",
+  "type": "ghost",
+  "power": 40,
+  "eps": 0,
+  "time": 1.7,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "shadow sneak"],
+  "name": "Shadow Sneak",
+  "type": "ghost",
+  "power": 50,
+  "eps": 0,
+  "time": 2.9,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "signal beam"],
+  "name": "Signal Beam",
+  "type": "bug",
+  "power": 75,
+  "eps": 0,
+  "time": 2.9,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "silver wind"],
+  "name": "Silver Wind",
+  "type": "bug",
+  "power": 70,
+  "eps": 0,
+  "time": 3.7,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "sky attack"],
+  "name": "Sky Attack",
+  "type": "flying",
+  "power": 70,
+  "eps": 0,
+  "time": 2,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "sludge"],
+  "name": "Sludge",
+  "type": "poison",
+  "power": 50,
+  "eps": 0,
+  "time": 2.1,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "sludge bomb"],
+  "name": "Sludge Bomb",
+  "type": "poison",
+  "power": 80,
+  "eps": 0,
+  "time": 2.3,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "sludge wave"],
+  "name": "Sludge Wave",
+  "type": "poison",
+  "power": 110,
+  "eps": 0,
+  "time": 3.2,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": [ "snarl"],
+  "name": "Snarl",
+  "type": "dark",
+  "power": 12,
+  "eps": 10.91,
+  "time": 1.1,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "solar beam"],
+  "name": "Solar Beam",
+  "type": "grass",
+  "power": 180,
+  "eps": 0,
+  "time": 4.9,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": [ "spark"],
+  "name": "Spark",
+  "type": "electric",
+  "power": 6,
+  "eps": 12.86,
+  "time": 0.7,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "splash"],
+  "name": "Splash",
+  "type": "water",
+  "power": 0,
+  "eps": 0,
+  "time": 1.73,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "steel wing"],
+  "name": "Steel Wing",
+  "type": "steel",
+  "power": 11,
+  "eps": 7.5,
+  "time": 0.8,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "stomp"],
+  "name": "Stomp",
+  "type": "normal",
+  "power": 55,
+  "eps": 0,
+  "time": 1.7,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "stone edge"],
+  "name": "Stone Edge",
+  "type": "rock",
+  "power": 100,
+  "eps": 0,
+  "time": 2.3,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": [ "struggle"],
+  "name": "Struggle",
+  "type": "normal",
+  "power": 35,
+  "eps": 0,
+  "time": 2.2,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "struggle bug"],
+  "name": "Struggle Bug",
+  "type": "bug",
+  "power": 15,
+  "eps": 10,
+  "time": 1.5,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "submission"],
+  "name": "Submission",
+  "type": "fighting",
+  "power": 60,
+  "eps": 0,
+  "time": 2.2,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "sucker punch"],
+  "name": "Sucker Punch",
+  "type": "dark",
+  "power": 7,
+  "eps": 11.43,
+  "time": 0.7,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "swift"],
+  "name": "Swift",
+  "type": "normal",
+  "power": 60,
+  "eps": 0,
+  "time": 2.8,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "tackle"],
+  "name": "Tackle",
+  "type": "normal",
+  "power": 5,
+  "eps": 10,
+  "time": 0.5,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "thunder"],
+  "name": "Thunder",
+  "type": "electric",
+  "power": 100,
+  "eps": 0,
+  "time": 2.4,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": [ "thunder punch"],
+  "name": "Thunder Punch",
+  "type": "electric",
+  "power": 45,
+  "eps": 0,
+  "time": 1.8,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "thunder shock"],
+  "name": "Thunder Shock",
+  "type": "electric",
+  "power": 5,
+  "eps": 13.33,
+  "time": 0.6,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "thunderbolt"],
+  "name": "Thunderbolt",
+  "type": "electric",
+  "power": 80,
+  "eps": 0,
+  "time": 2.5,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "transform"],
+  "name": "Transform",
+  "type": "normal",
+  "power": 0,
+  "eps": 0,
+  "time": 2.23,
+  "bars": 0,
+  "description": "Niet een aanvaleen Ditto gebruikt deze om te transformeren"
+}, {
+  "keys": [ "twister"],
+  "name": "Twister",
+  "type": "dragon",
+  "power": 45,
+  "eps": 0,
+  "time": 2.8,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "vice grip"],
+  "name": "Vice Grip",
+  "type": "normal",
+  "power": 35,
+  "eps": 0,
+  "time": 1.9,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "vine whip"],
+  "name": "Vine Whip",
+  "type": "grass",
+  "power": 7,
+  "eps": 10,
+  "time": 0.6,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "volt switch"],
+  "name": "Volt Switch",
+  "type": "electric",
+  "power": 20,
+  "eps": 10.87,
+  "time": 2.3,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "water gun"],
+  "name": "Water Gun",
+  "type": "water",
+  "power": 5,
+  "eps": 10,
+  "time": 0.5,
+  "bars": 0,
+  "description": "Sterker bij Blastoise"
+}, {
+  "keys": [ "water pulse"],
+  "name": "Water Pulse",
+  "type": "water",
+  "power": 70,
+  "eps": 0,
+  "time": 3.2,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "wild charge"],
+  "name": "Wild Charge",
+  "type": "electric",
+  "power": 90,
+  "eps": 0,
+  "time": 2.6,
+  "bars": 2,
+  "description": 0
+}, {
+  "keys": [ "wing attack"],
+  "name": "Wing Attack",
+  "type": "flying",
+  "power": 8,
+  "eps": 11.25,
+  "time": 0.8,
+  "bars": 0,
+  "description": 0
+}, {
+  "keys": [ "wrap"],
+  "name": "Wrap",
+  "type": "normal",
+  "power": 60,
+  "eps": 0,
+  "time": 2.9,
+  "bars": 3,
+  "description": "Beter dan de groen roze variant welke op dit moment niet geleerd kan worden"
+}, {
+  "keys": [ "x-scissor"],
+  "name": "X-Scissor",
+  "type": "bug",
+  "power": 45,
+  "eps": 0,
+  "time": 1.6,
+  "bars": 3,
+  "description": 0
+}, {
+  "keys": [ "zap cannon"],
+  "name": "Zap Cannon",
+  "type": "electric",
+  "power": 140,
+  "eps": 0,
+  "time": 3.7,
+  "bars": 1,
+  "description": 0
+}, {
+  "keys": [ "zen headbutt"],
+  "name": "Zen Headbutt",
+  "type": "psychic",
+  "power": 12,
+  "eps": 9.09,
+  "time": 1.1,
+  "bars": 0,
+  "description": 0
+}]

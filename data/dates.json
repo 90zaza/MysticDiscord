@@ -1,0 +1,309 @@
+[{
+  "keys": ["2016"],
+  "name": "Wat gebeurde er allemaal in het jaar:",
+  "sort": "overview",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_GO",
+  "date": "2016",
+  "description": "5 juli - launch\n10 sept - buddy pokemon\n16 sept - go plus\n26 okt - Halloween\n7 nov - daily bonusses\n21 nov - CP Rebalance\n23 nov - Thanksgiving event\n22 nov - ditto\n12 dec - gen 2 babies & holiday pikachu\n25 december - holiday event"
+}, {
+  "keys": ["start", "beginning", "launch"],
+  "name": "Launch Pokemon Go",
+  "sort": "",
+  "url": "http://pokemongolive.com/en/post/pokemon-ft-us-start",
+  "Date": "5 Juli 2016",
+  "description": "Pokemon Go is vanaf nu (via apk) te downloaden, de officiele release in nederland is pas op 15 oktober 2016."
+}, {
+  "keys": ["buddy", "buddy pokemon", "buddy pokémon"],
+  "name": "Buddy Pokémon",
+  "sort": "",
+  "url": "http://pokemongolive.com/en/post/ver-update-091016",
+  "date": "10 september 2016",
+  "description": "Vanaf nu kun je lopen met je buddy pokémon voor extra candy!"
+}, {
+  "keys": ["goplus", "go plus", "go+", "go +"],
+  "name": "Go Plus",
+  "sort": "",
+  "url": "http://pokemongolive.com/en/post/launch-pokemon-go-plus",
+  "date": "16 september 2016",
+  "description": "Vanaf nu is de Pokémon Go Plus beschikbaar in gelimiteerde hoeveelheid."
+}, {
+  "keys": ["halloween 2016", "halloween event 2016"],
+  "name": "Halloween event 2016",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/halloween2016",
+  "date": "26 okt - 1 november",
+  "description": "Het eerste Event van Pokémon Go was het Halloween Event. De voordelen waren:\n- Dubbel candy\n- 4x zo snel buddy candies\n- Meer spooky pokmeon"
+}, {
+  "keys": ["daily bonus", "daily reward", "daily rewards", "daily bonusses"],
+  "name": "Daily Bonus",
+  "sort": "",
+  "url": "http://pokemongolive.com/en/post/daily-bonus",
+  "date": "7 november 2016",
+  "description": "Vanaf nu geeft elke eerste gedraaide stop en gevangen pokemon een bonus, met de 7e achtereenvolgende dag een extra bonus."
+}, {
+  "keys": ["cp rebalance 2016", "stat rebalance 2016", "stats rebalance 2016", "cp change 2016", "stat change 2016", "cp adjustments 2016", "cp adjustment 2016"],
+  "name": "CP rebalance",
+  "sort": "",
+  "url": "https://pokemongolive.com/en/post/cp_update",
+  "date": "21 november 2016",
+  "description": "Eigenlijk zou Stat Rebalance een betere naam zijn, want vanaf dit moment werden de stats (att en defence base stats) van Pokémon in Pokémon go anders berekend."
+}, {
+  "keys": ["thanksgiving 2016", "thanksgiving event 2016"],
+  "name": "Thanksgiving event 2016",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/celebration-nov2016",
+  "date": "23 november - 30 november",
+  "description": "Het Thanksgiving Event was bedoeld als een bedankje naar ons, de spelers, voor onze bijdrage in het spel. De voordelen waren:\n- Dubbel xp\n- Dubbel stardust"
+}, {
+  "keys": ["ditto"],
+  "name": "Ditto gevonden",
+  "sort": "",
+  "url": "http://pokemongolive.com/en/post/ditto",
+  "date": "22 november 2016",
+  "description": "Ditto is gevonden en transformeerd vanuit Pidgey, Rattata, Magikarp en Zubat (nu anders)"
+}, {
+  "keys": ["gen 2 babies", "gen 2 baby pokemon", "santachu", "christmas pikachu", "holidaypikachu", "holiday pikachu"],
+  "name": "Gen 2 babies en Santachu",
+  "sort": "",
+  "url": "http://pokemongolive.com/en/post/johto-holiday",
+  "date": "12 december 2016",
+  "description": "Vanaf vandaag hatchen de baby pokemon van Gen 2 (pichu, togepi, cleffa, igglybuff, magby, smoochem en tyrogue) uit eitjes. Om dit te vieren zal tot 29 december de speciale Holiday Pikachu (pikachu met kerstmuts) te vinden zijn "
+}, {
+  "keys": ["holiday event 2016", "starter event 2016", "holiday 2016", "kerst 2016", "kerst event 2016"],
+  "name": "Holiday event 2016",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/holiday2016",
+  "date": "25 december - 3 januari",
+  "description": "Tijdens kerst en oud en nieuw was het kanto starter event van kracht. Voordelen waren:\n- Speciale kortingsboxen (3 tussen 25 en 30 dec, en daarna 3 tot 3 januari)\n- Grotere kans op baby pokemon uit eitjes\n- Een gratis eenmalige incubator uit de day streak pokestop\n- Grotere kans op het vinden van de Holiday Pikachu\n- Tussen 30 december en 8 januari spawnen de kanto starters meer\n- Tussen 30 december en 8 januari duren lure modules 60 minuten"
+}, {
+  "keys": ["2017"],
+  "name": "Wat gebeurde er allemaal in het jaar",
+  "sort": "overview",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Pokémon_GO",
+  "date": "2017",
+  "description": "8 feb - 15 feb: Valentijn event\n16 feb: gen 2 launch\n26 feb - 6 maart: Pokemon Day event\n22 maart - 29 maart: Water Festival event\n   - 22 maart: Shiny Magikarp\n13 april - 20 april: Eggstravaganza event\n5 mei - 8 mei: Gras Event\n18 mei - 25 mei: Adventure event\n6 juni: Eerste verjaardag(ash hat pikachu)\n13 juni - 20 juni: Solstices event\n22 juni: Gym rework\n29 juni: Raid battles\n22 juli: Go Fest\n22 juli - 24 juli: Go Fest event\n22 juli: Legendary raids\n5 aug - 21 aug: Safari Events in Europa:\n   - 16 sept: Oberhausen, Parijs & Barcelona\n   - 7 okt: Copenhagen & Praag\n   - 14 okt: Stokholm & Amstelveen\n16 aug: Shiny Pikachu release\n22 sept - 2 okt: Equinox event\n20 okt - 2 nov: Halloween event\n   - 20 okt: Shiny Sableye\n   - 26 okt: Shiny Duskull\n   - 31 okt: Shiny Shuppet\n5 nov - Raid Boss rotatie\n10 nov - Make Delft Blue again Winter"
+}, {
+  "keys": ["valentijn 2017", "valentijn event 2017", "pink event 2017", "roze event 2017"],
+  "name": "Valentijn event 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/valentines2017",
+  "date": "8 februari - 15 februari",
+  "description": "Het valentijn event wad het event van de roze pokémon, de voordelen waren dan ook:\n- Meer roze pokemon in het wild:\n   - Chansey\n   - Porygon\n   - Lickytung\n   - Exeggcute\n- Cleffa, Igglybuff en Smoochum komen vaker uit eitjes\n- Dubbel Candy\n- Buddy vind 2x zo snel candy\n- Lure's duren 6 uur"
+}, {
+  "keys": ["gen 2"],
+  "name": "Gen 2 launch",
+  "sort": "",
+  "url": "http://pokemongolive.com/en/post/johto-pokemon",
+  "date": "16 februari 2017",
+  "description": "De babies waren er al (12 december 2016) maar de rest van gen 2 (afgezien van smeargle, delibird en legendaries) is vanaf deze dag beschikbaar."
+}, {
+  "keys": ["pokemon day 2017", "pokémon day 2017", "festive pikachu", "partychu"],
+  "name": "Pokémon day 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/pokemonday2017",
+  "date": "26 februari - 6 maart",
+  "description": "Om Pokémon dag te vieren dragen alle pikachu's een feestmuts"
+}, {
+  "keys": ["water festival event 2017", "water event 2017", "magikarp hat", "magikarp hoed", "shiny magikarp", "shiny karp"],
+  "name": "Water Festival event 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/waterfestival2017",
+  "date": "22 maart - 29 maart",
+  "description": "Ter ere van het wereldwijde water festival is er een water event in Pokémon Go. De voordelen zijn:\n- Verhoogde water spawns (de eerste paar uur ook veel meer dratini's)\n- Vanaf nu is de Magikarp hoed te dragen\n- Shiny magikarp is vanaf nu te vangen"
+}, {
+  "keys": ["eggstravaganza 2017", "eggstravagenza 2017", "eggstravaganza event 2017"],
+  "name": "Eggstravaganza 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/eggstravaganza2017",
+  "date": "13 april - 20 april",
+  "description": "Als je langs de gigantische hoeveelheid woordgrappen heenleest, zie je de volgende voordelen:\n- Speciale pokemon uit 2km eitjes (lapras/ aero/ etc)\n- Dubbel xp\n- Lucky eggs 2x zo goedkoop in de shop"
+}, {
+  "keys": ["gras event 2017", "grass event 2017"],
+  "name": "Worldwide Bloom event 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/grassweekend2017",
+  "date": "5 mei - 8 mei",
+  "description": "Voor een korte periode heeft Professor Willow 'ontdekt' dat gras pokémon meer dan normaal spawnen."
+}, {
+  "keys": ["adventure event 2017", "rock event 2017", "expedition hoed", "expedition hoed", "adventure hat", "adventure hoed"],
+  "name": "Adventure (rock) event 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/adventureweek2017",
+  "date": "18 mei - 25 mei",
+  "description": "Een van de betere events, met de volgende voordelen:\n- Meer rock pokemon spawns, waaronder larvitar/ aerodactyl\n- Meer items uit pokestops\n- Pokéballs met 50% korting in de shop\n- Vanaf nu kun je de expedition hoed dragen"
+}, {
+  "keys": ["first anniversary", "eerste verjaardag", "ash hat pikachu", "ash pikachu"],
+  "name": "Eerste verjaardag van Pokemon Go",
+  "sort": "",
+  "url": "http://pokemongolive.com/en/post/birthday2017",
+  "date": "6 juli 2017",
+  "description": "Om de eerste verjaardag van Pokémon Go te vieren is flink uit de kast gehaald. Denk aan de Gym Rework en Raid battles. Daarnaast waren er tussen 6 juli en 24 juli kortingsboxen te kopen én de ash hat pikachu te vangen."
+}, {
+  "keys": ["solstices event 2017", "fire and ice event 2017"],
+  "name": "Solstices (fire & ice) event 2017",
+  "sort": "event",
+  "url": "http://pokemongolive.com/en/post/solstice2017",
+  "date": "13 juni - 20 juni",
+  "description": "Als onderdeel van de verjaardag van Pokémon Go vond het Solstice Event plaats. Dit betekende:\n- Meer vuur en ijs pokemon in het wild\n- x3 xp bonus voor vangbonussen\n- Lucky eggs zijn 50% goedkoper in de shop"
+}, {
+  "keys": ["gym rework"],
+  "name": "Gym Rework",
+  "sort": "",
+  "url": "http://pokemongolive.com/en/post/ver-update-062017",
+  "date": "22 juni",
+  "description": "Op deze dag gingen de gyms, die al een paar dagen leeg stonden, weer geopend. Iedereen ging als een gek door delft en uiteraard was vrijwel alles mooi blauw binnen een halfuurtje;)"
+}, {
+  "keys": ["raids", "raid battles", "raid boss"],
+  "name": "Raid battles",
+  "sort": "",
+  "url": "http://pokemongolive.com/en/post/raidsrollout",
+  "date": "29 juni",
+  "description": "Vanaf nu zijn raid bossen te verslaan in raid battles. Interessante raid bossen zijn onder andere Tyranitar, Lapras en Snorlax."
+}, {
+  "keys": ["go fest", "chicago go fest", "gofest"],
+  "name": "Chicago Go Fest 2017",
+  "sort": "",
+  "url": "http://pokemongolive.com/en/post/solstice2017",
+  "date": "22 juli",
+  "description": "Voor de verjaardag van Pokémon Go organiseerde Niantic het eerste (betaalde) real life event. Mensen in en buiten het event moesten samenspelen tijdens 3 timeslots van een halfuur om bonussen te verdienen waar de hele wereld van kon genieten. Op het event ging het om de types pokemon die je ving, het vangen van bijvoorbeeld vuur types gaf een candy bonus bij het event. Buiten het event gold dat hoe meer pokemon er gevangen werden, hoe langer het event duurde. Als er genoeg gevangen zou zijn kregen de mensen op het event de kans op de eerste legendary raid: het verslaan van een Lugia\n\nHelaas liep alles minder goed dan verwacht. Al vrij snel waren er verbindingsproblemen door de grote hoeveelheid mensen op een plek, waar Niantic op reageerde door het event gebied te vergroten, deelnemers een Lugia te geven, Lugia en articuno raids te starten (met 100% vangkans voor tickethouders), de ticket kosten terug te geven en voor het event alle bonussen voor een maximale tijd uit te keren (!date go fest event)."
+}, {
+  "keys": ["go fest event", "go fest"],
+  "name": "Het event na Chicago Go Fest 2017",
+  "sort": "event",
+  "url": "http://pokemongo.nianticlabs.com/en/post/legendaryrewards",
+  "date": "22 juli - 24 juli",
+  "description": "Tijdens Go Fest werd een event ‘verdient’ van 2 dagen met eigenlijk elke bonus die je kan bedenken, namelijk:\n- Dubbel stardust\n- Dubbel candy\n- Dubbel XP\n- Meer pokemon in het wild\n -Gehalveerde ei en buddy afstand."
+}, {
+  "keys": ["legendaries", "legendary raid", "legendary raids", "articuno", "moltres", "zapdos", "lugia", "ho oh", "ho-oh", "entei", "raikou", "suicune"],
+  "name": "Legendary raids",
+  "sort": "",
+  "url": "http://pokemongo.nianticlabs.com/en/post/exclusiveraids",
+  "date": "Vanaf 22 juli 2017",
+  "description": "Na het Go Fest werden Lugia en Articuno vrijgegeven, waarna andere legendaries volgde. De lijst is:\n23 juli – 31: aug Lugia\n23 juli – 30: juli Articuno\n31 juli – 7: aug Moltres\n8 aug – 14: aug Zapdos\n15 aug – 31 aug: Articuno, Zapdos, Moltres\nSeptember: Entei (Europa)\nOktober: Suicune (Europa)\nNovember: Raikou (Europa)"
+}, {
+  "keys": ["safari", "safari 2017", "safari praag", "safari amstelveen", "safari copenhagen"],
+  "name": "Safari event in Europa 2017",
+  "sort": "event",
+  "url": "http://pokemongo.nianticlabs.com/en/post/europesightings",
+  "date": "5 aug - 21 aug",
+  "description": "De serie van de safari events was waarschijnlijk het beste event voor europese spelers. Kangaskhan en Unown (E U R O P) spawnden in de unibail-rodamco winkelcentra van Amstelveen, Leidschendam en Zoetermeer. Daarnaast stonden in de weekenden van 12 en 19 augustus de lures permanent aan. Daar bleef het echter niet bij, er kwamen ook nog safari events waar je met een (gratis) ticket aan deel kon nemen. Hiervoor kreeg je een in game medaille, en absurde spawns van Chansey, Larvitar, Mareep en Pikachu en Magikarp met een verhoogde Shiny kans. Daarnaast waren er weer unowns te vinden (S A F R I) Ook kreeg je speciale 2km eitjes waar goede pokemon in konden zitten. Als je geen ticket had kon je ook mee genieten dooor simpelweg door de stad te lopen. De spawns buiten de winkelcentra waren minder, maar zeker de moeite waard. De locaties en tijden waren als volgt\n16 september - Oberhausen, Parijs, Barcelona\n7 oktober - Copenhagen, Praag\n14 oktober - Stokholm, Amstelveen"
+}, {
+  "keys": ["pikachu outbreak", "shiny pikachu"],
+  "name": "Shiny Pikachu release",
+  "sort": "",
+  "url": "http://pokemongo.nianticlabs.com/en/post/yokohamapark",
+  "date": "16 augustus 2017",
+  "description": "Na het Pikachu Outbreak event in japan (9 - 15 aug), waar shiny pikachu te vangen was, kon dit juweeltje wereldwijd gevangen worden."
+}, {
+  "keys": ["equinox 2017", "equinox 2017 event", "super incubator"],
+  "name": "Equinox event 2017",
+  "sort": "event",
+  "url": "http://pokemongo.nianticlabs.com/en/post/equinox2017",
+  "date": "22 sept - 2 okt",
+  "description": "Een van de betere events (wie wil er nou niet meer stardust) was het Equinox event. De voordelen waren:\n- Dubbel stardust\n- Speciale 2km eitjes (chansey/ larvitar/ mareep/ etc)\n- Speciale kortingsboxen in de shop met Lucky eggs, Lures en de nieuwe Super Incubators\n- Nieuwe pokedex entries geven 1500 xp"
+}, {
+  "keys": ["halloween 2017", "halloween event 2017", "shiny sableye", "shiny duskull", "mimikyu hoed", "mimikyu hat", "shiny shuppet"],
+  "name": "Halloween event 2017",
+  "sort": "event",
+  "url": "http://pokemongo.nianticlabs.com/en/post/halloween2017",
+  "date": "20 okt - 2 nov",
+  "description": "Het eerste tweede event: Halloween! Voor dit event is een nieuwe soundtrack toegevoegd die in de avonden speelt (lavender town). Tijdens deze avonden zijn er flink meer 'spooky' spawns, waaronder 5 gen 3 (met kans op shiny) pokemon. De voordelen waren:\n- Meer spooky pokemon (waaronder de gen 3 spookjes)\n- Dubbel Candy (ook voor buddy)\n- Shiny Sableye in het wild of uit 10 km eitjes\n- Pikachu en Pichu met een nieuwe hoed\n- Speciale kortingsboxen met raid passes en super incubators (t/m 6 nov)\n- Een nieuwe Mimikyu hoed voor je avatar\n- Op 26 okt werd shiny Duskull geintroduceerd\n- Op 31 okt werd shiny Shuppet geintroduceerd"
+}, {
+  "keys": ["raid boss rotatie", "raid boss rotation", "raid rotation", "raid rotatie"],
+  "name": "Raid Boss rotatie",
+  "sort": "",
+  "url": "https://www.reddit.com/r/TheSilphRoad/comments/7audxw/full_list_of_raid_bosses_as_of_115_utc_new_and_old/",
+  "date": "5 nov 2017",
+  "description": "29 juni 2017- Raid battles start\n5 nov 2017 - Eerste rotatie"
+}, {
+  "keys": ["thanksgiving 2017", "thanksgiving event 2017", "pokemon go travel 2017", "pokémon go travel 2017", "global catch challenge 2017"],
+  "name": "Global Catch Challenge (thanksgiving event)",
+  "sort": "event",
+  "url": "https://pokemongolive.com/en/post/pokemongotravel",
+  "date": "19 nov - 1 dec",
+  "description": "Tijdens dit event konden trainers wereldwijd hun eigen bonussen verdienen door tussen 19 en 26 november Pokémon te vangen. Bij 500, 1500 en 3000 miljoen Pokémon werden er bonnusen vrijgespeeld die direct ingingen en duurde tot 1 december, deze waren:\n21 nov: dubbel xp en 6 uur lures\n23 nov: dubbel stardust\n26 nov - 27 nov: Farfetch't"
+}, {
+  "keys": ["ex raids", "ex-raids", "exraids", "exraid", "mewtwo"],
+  "name": "EX Raids",
+  "sort": "",
+  "url": "https://pokemongolive.com/en/post/novdevupdate-raids",
+  "date": "15 aug - 21 nov - ",
+  "description": "Op 14 augustus werd in het Pokémon Go stadium event in Yokohama voor de eerste keer Mewtwo gevangen, die sinds dien in EX test raids beschikbaar was. De testfase eindigde op 21 november, waarna Mewtwo wereldwijd beschikbaar werd via EX raids."
+}, {
+  "keys": ["gen 3"],
+  "name": "Gen 3 Launch",
+  "sort": "",
+  "url": "",
+  "date": "xx dec 2017",
+  "description": "De 5 spookjes waren er al sinds halloween (20 okt 2017), maar de rest van gen 3 (behalve ??) is vanaf nu ook te verkrijgen."
+}, {
+  "keys": [""],
+  "name": "",
+  "sort": "",
+  "url": "",
+  "date": "",
+  "description": ""
+}, {
+  "keys": [""],
+  "name": "",
+  "sort": "",
+  "url": "",
+  "date": "",
+  "description": ""
+}, {
+  "keys": [""],
+  "name": "",
+  "sort": "",
+  "url": "",
+  "date": "",
+  "description": ""
+}, {
+  "keys": [""],
+  "name": "",
+  "sort": "",
+  "url": "",
+  "date": "",
+  "description": ""
+}, {
+  "keys": [""],
+  "name": "",
+  "sort": "",
+  "url": "",
+  "date": "",
+  "description": ""
+}, {
+  "keys": [""],
+  "name": "",
+  "sort": "",
+  "url": "",
+  "date": "",
+  "description": ""
+}, {
+  "keys": [""],
+  "name": "",
+  "sort": "",
+  "url": "",
+  "date": "",
+  "description": ""
+}, {
+  "keys": [""],
+  "name": "",
+  "sort": "",
+  "url": "",
+  "date": "",
+  "description": ""
+}, {
+  "keys": [""],
+  "name": "",
+  "sort": "",
+  "url": "",
+  "date": "",
+  "description": ""
+}, {
+  "keys": [""],
+  "name": "",
+  "sort": "",
+  "url": "",
+  "date": "",
+  "description": ""
+}]
