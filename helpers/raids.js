@@ -83,10 +83,6 @@ exports.scan = async function (msg) {
   try {
     message = new Message(msg);
 
-    // help
-    if (/help/.test(message.message.content)) {
-      printHelp(message);
-    }
     // join
     else if (/join/.test(message.message.content)) {
       joinRaid(message, message.message.content.match(/join (\d+)/)[1], message.message.author);
@@ -611,13 +607,3 @@ function matchRegexReturnFirst(string, regex) {
  * Explanation of the raid commands.
  * @param {*Message} message
  */
-function printHelp(message) {
-  let embed = new Discord.MessageEmbed()
-    .setTitle("**Hoe maak ik een raid aan?**")
-    .setColor(0xffffff)
-    .addField("Nieuwe Raid", "Typ hetvolgende in het raids_meldingen kanaal:\n[pokemon] g [gymnaam] e [eindtijd] b [vechttijd] h [hatchtijd]\nVoorbeeld: **snorlax g seats e 13:00**")
-    .addField("Bewerk een raid", "Hetzelfde als een nieuwe raid, maar dan begin je met het RaidID:\n[raidID] g [gymnaam] e [eindtijd] b [vechttijd] h [hatchtijd]\nVoorbeeld: **1 g evenwicht ijzer b 12:00**")
-    .addField("Meedoen", "Druk simpelweg op de + onder de raid");
-
-  message.message.channel.send({ embed });
-}

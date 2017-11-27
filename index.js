@@ -15,6 +15,7 @@ const raids = require("./helpers/raids.js");
 const settings = require("./settings.json");
 const Text = require("./helpers/text.js");
 
+const BigReplyResponse = require('./models/bigreply-response');
 const GymResponse = require('./models/gym-response');
 const Pokemons = require('./models/pokemons');
 const PokemonResponse = require('./models/pokemon-response');
@@ -24,14 +25,14 @@ const MusicResponse = require('./models/music-response');
 const GambleResponse = require('./models/gamble-response');
 const ChannelRolesResponse = require('./models/channel-roles-response');
 const TopResponse = require('./models/top-response');
-const DateResponse = require('./models/date-response');
 const ThemeResponse = require('./models/thema-response');
 const JokeOfTheDayResponse = require('./models/jokeoftheday-response');
 const TriviaOfTheDayResponse = require('./models/triviaoftheday-response');
 const EggResponse = require('./models/egg-response');
 const ChallengeResponse = require('./models/challenge-response');
 const WhosThatPokemonResponse = require('./models/whosthatpokemon-response');
-const MovesResponse = require('./models/moves-response')
+const MovesResponse = require('./models/moves-response');
+const DateResponse = require('./models/date-response');
 
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
@@ -75,20 +76,6 @@ client.on('message', async (msg) => {
   let msgPrefix = msg.content[0];
   if (prefixs.indexOf(msgPrefix) < 0) return;
 
-  //list of commands
-  if (msgText == 'help') {
-    let embed = new Discord.MessageEmbed()
-      .addField("Hey! Mijn naam is Blanche", "Naast het appraisen van jouw pokemon in game, kan ik jullie ook op deze discord assistentie verlenen. Ik reageer onder andere op de volgende commando's:")
-      .addField("!pokémon", "Hierbij krijg je informatie over de pokémon die je opvraagt")
-      .addField("!gymnaam", "Ik geef je de locatie van de gym")
-      .addField("!top type [dps/tdo/tank]", "Hiermee geef ik een top 10 voor het type dat je aanvraagt. All geeft de algemene top 10")
-      .addField("!counter pokemon", "Dit genereert een top 10 counters tegen raid bosses")
-      .addField("!datum gebeurtenis", "Hiermee vraag je de datum op van een bepaalde gebeurtenis. Je kunt ook een jaaroverzicht vragen met !datum jaar")
-      .addField("!+[regio/pokémon]", "Hiermee schrijf je jezelf in voor een regio of een pokémon die je interessant vind. Zie het speler_registratie kanaal")
-      .addField("raids", "zie het raids meldingen kanaal, of gebruik !raid help om op te zoeken hoe je een raid aanmaakt of bewerkt")
-    msg.channel.send({ embed });
-  }
-
   // new stuff
   new GymResponse(msg);
   new PokemonResponse(msg, pokemons);
@@ -98,12 +85,13 @@ client.on('message', async (msg) => {
   new ThemeResponse(msg);
   new JokeOfTheDayResponse(msg);
   new TriviaOfTheDayResponse(msg);
-  new DateResponse(msg);
   new TopResponse(msg);
   new EggResponse(msg);
   new ChallengeResponse(msg);
   new WhosThatPokemonResponse(msg);
   new MovesResponse(msg);
+  new BigReplyResponse(msg);
+  new DateResponse(msg);
 
   let verifiedrole = msg.guild.roles.find("name", "makingdelftblueagain");
   let moderatorrole = msg.guild.roles.find("name", "moderators");
