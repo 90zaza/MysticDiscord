@@ -84,7 +84,7 @@ exports.scan = async function (msg) {
     message = new Message(msg);
 
     // join
-    else if (/join/.test(message.message.content)) {
+    if (/join/.test(message.message.content)) {
       joinRaid(message, message.message.content.match(/join (\d+)/)[1], message.message.author);
     }
     // leave
