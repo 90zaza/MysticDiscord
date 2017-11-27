@@ -197,10 +197,11 @@ async function addRaid(message) {
               const parkrole = message.message.member.guild.roles.find("name", "Park");
               gymExtension = gymExtension + ` (${parkrole}🌲)`
             }
+            const member = message.message.member.nickname ? message.message.member.nickname : message.message.member.user.username;
             if (role) {
-              raidschannel.send(`Raid ${response.dataValues.idraids}: ${role}` + gymExtension);
+              raidschannel.send(`Raid ${response.dataValues.idraids}: ${role} ${gymExtension} (door ${member})`);
             } else {
-              raidschannel.send(`Raid ${response.dataValues.idraids}: ${newRaid.pokemon.name}` + gymExtension);
+              raidschannel.send(`Raid ${response.dataValues.idraids}: ${newRaid.pokemon.name} ${gymExtension} (door ${member})`);
             }
             // send reaction emojis
             await m.react("➕")
