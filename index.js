@@ -33,6 +33,7 @@ const ChallengeResponse = require('./models/challenge-response');
 const WhosThatPokemonResponse = require('./models/whosthatpokemon-response');
 const MovesResponse = require('./models/moves-response');
 const DateResponse = require('./models/date-response');
+const MentionReply = require('./models/mentionreply-response');
 
 //stuff that the bot should do once
 const pokemons = new Pokemons().get();
@@ -71,6 +72,8 @@ client.on('message', async (msg) => {
   var msgText = msg.content.toLowerCase().substr(1).trim();
   let prefixs = settings.prefixs;
   let moderator = settings.moderator;
+
+  new MentionReply(msg);
 
   //determine if the bot activates or not
   let msgPrefix = msg.content[0];
